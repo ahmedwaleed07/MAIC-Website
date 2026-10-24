@@ -14,20 +14,23 @@ function countries(){const names=new Intl.DisplayNames([state.lang],{type:'regio
 const country=(name,label)=>select(name,label,countries());
 function enhanceChoices(root){
 $$('select',root).forEach(control=>{
-let button=control.nextElementSibling;
-if(!button?.classList.contains('choice-trigger')){
-button=document.createElement('button');button.type='button';button.className='choice-trigger';button.setAttribute('aria-haspopup','dialog');
-control.classList.add('choice-source');control.tabIndex=-1;control.setAttribute('aria-hidden','true');control.after(button);
-button.onclick=()=>{
-const title=control.closest('label')?.querySelector('span')?.textContent||control.getAttribute('aria-label')||tr('اختر','Select');
-const picker=document.createElement('dialog');picker.className='choice-dialog';picker.setAttribute('aria-label',title);picker.dir=state.lang==='ar'?'rtl':'ltr';
-picker.innerHTML='<div class="choice-top"><h3>'+E(title)+'</h3><button type="button" aria-label="'+tr('إغلاق الاختيارات','Close choices')+'">×</button></div><input class="choice-search" type="search" aria-label="'+tr('بحث في الاختيارات','Search choices')+'" placeholder="'+tr('ابحث هنا…','Search…')+'"><div class="choice-list"></div>';
-document.body.append(picker);const list=picker.querySelector('.choice-list'),search=picker.querySelector('input');
-const draw=()=>{list.innerHTML='';const query=search.value.trim().toLocaleLowerCase();Array.from(control.options).filter(o=>o.value&&!o.disabled&&o.text.toLocaleLowerCase().includes(query)).forEach(o=>{const item=document.createElement('button');item.type='button';item.textContent=o.text;item.className=o.selected?'chosen':'';item.onclick=()=>{control.value=o.value;picker.close();picker.remove();control.dispatchEvent(new Event('change',{bubbles:true}));enhanceChoices(root);if(button.isConnected)button.focus();};list.append(item);});if(!list.children.length)list.textContent=tr('لا توجد نتائج','No matches');};
-picker.querySelector('.choice-top button').onclick=()=>{picker.close();picker.remove();button.focus();};picker.addEventListener('cancel',()=>{picker.remove();button.focus();});search.oninput=draw;draw();picker.showModal();search.focus();
-};
-}
-button.disabled=control.disabled;button.textContent=control.selectedOptions[0]?.textContent||tr('اختر','Select');button.setAttribute('aria-label',(control.closest('label')?.querySelector('span')?.textContent||control.getAttribute('aria-label')||tr('اختر','Select'))+': '+button.textContent);
+  let button=control.nextElementSibling;
+  if(!button?.classList.contains('choice-trigger')){
+    button=document.createElement('button');button.type='button';button.className='choice-trigger';button.setAttribute('aria-haspopup','dialog');
+    control.classList.add('choice-source');control.tabIndex=-1;control.setAttribute('aria-hidden','true');control.style.display='none';control.after(button);
+    button.addEventListener('mousedown',e=>{e.preventDefault();e.stopPropagation()});
+    button.addEventListener('click',e=>{
+      e.preventDefault();e.stopPropagation();
+      const title=control.closest('label')?.querySelector('span')?.textContent||control.getAttribute('aria-label')||tr('اختر','Select');
+      const searchable=Array.from(control.options).filter(o=>o.value).length>12;
+      const picker=document.createElement('dialog');picker.className='choice-dialog';picker.setAttribute('aria-label',title);picker.dir=state.lang==='ar'?'rtl':'ltr';
+      picker.innerHTML='<div class="choice-top"><h3>'+E(title)+'</h3><button type="button" aria-label="'+tr('إغلاق الاختيارات','Close choices')+'">×</button></div>'+(searchable?'<input class="choice-search" type="search" aria-label="'+tr('بحث في الاختيارات','Search choices')+'" placeholder="'+tr('ابحث هنا…','Search…')+'">':'')+'<div class="choice-list"></div>';
+      document.body.append(picker);const list=picker.querySelector('.choice-list'),search=picker.querySelector('.choice-search');
+      const draw=()=>{list.innerHTML='';const query=search?.value.trim().toLocaleLowerCase()||'';Array.from(control.options).filter(o=>o.value&&!o.disabled&&o.text.toLocaleLowerCase().includes(query)).forEach(o=>{const item=document.createElement('button');item.type='button';item.textContent=o.text;item.className=o.selected?'chosen':'';item.onclick=e=>{e.preventDefault();e.stopPropagation();control.value=o.value;picker.close();picker.remove();control.dispatchEvent(new Event('change',{bubbles:true}));enhanceChoices(root);if(button.isConnected)button.focus()};list.append(item)});if(!list.children.length)list.textContent=tr('لا توجد نتائج','No matches')};
+      picker.querySelector('.choice-top button').onclick=e=>{e.preventDefault();picker.close();picker.remove();button.focus()};picker.addEventListener('cancel',()=>{picker.remove();button.focus()});if(search)search.oninput=draw;draw();picker.showModal();if(search)search.focus();
+    });
+  }
+  button.disabled=control.disabled;button.textContent=control.selectedOptions[0]?.textContent||tr('اختر','Select');button.setAttribute('aria-label',(control.closest('label')?.querySelector('span')?.textContent||control.getAttribute('aria-label')||tr('اختر','Select'))+': '+button.textContent);
 });
 }
 function date(name,label){const now=new Date(),year=now.getFullYear();return '<fieldset class="reg-date"><legend>'+E(label)+' *</legend><div>'+select(name+'_day',tr('اليوم','Day'),Array.from({length:31},(_,i)=>[i+1,String(i+1),String(i+1)]))+select(name+'_month',tr('الشهر','Month'),Array.from({length:12},(_,i)=>[i+1,new Intl.DateTimeFormat(state.lang,{month:'long'}).format(new Date(2020,i,1)),new Intl.DateTimeFormat(state.lang,{month:'long'}).format(new Date(2020,i,1))]))+select(name+'_year',tr('السنة','Year'),Array.from({length:year-1899},(_,i)=>[year-i,String(year-i),String(year-i)]))+'</div></fieldset>';}
