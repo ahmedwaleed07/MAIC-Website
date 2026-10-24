@@ -41,9 +41,9 @@ body:has(dialog[open]){overflow:hidden}
 /* Mobile interaction polish: native selects never compete with branded pickers. */
 .registration-dialog .choice-source{display:none!important;pointer-events:none!important}
 .registration-dialog .choice-trigger{min-height:50px;touch-action:manipulation;-webkit-tap-highlight-color:transparent}
-.registration-dialog .choice-dialog{z-index:1000;inset:auto;position:fixed;top:50%;left:50%;transform:translate(-50%,-50%);width:min(460px,calc(100vw - 28px));max-height:min(76dvh,620px);margin:0}
-.registration-dialog .choice-dialog .choice-list{overscroll-behavior:contain;-webkit-overflow-scrolling:touch}
-.registration-dialog .choice-dialog .choice-list button{min-height:50px;touch-action:manipulation}
+.choice-dialog{z-index:1000;inset:auto;position:fixed;top:50%;left:50%;transform:translate(-50%,-50%);width:min(460px,calc(100vw - 28px));max-height:min(76dvh,620px);margin:0}
+.choice-dialog .choice-list{overscroll-behavior:contain;-webkit-overflow-scrolling:touch}
+.choice-dialog .choice-list button{min-height:50px;touch-action:manipulation}
 .registration-dialog .photo-upload input[type=file]{position:absolute;width:1px;height:1px;opacity:0;pointer-events:none}
 .registration-dialog .photo-upload label>span:nth-child(2){color:#7d5e2b;font-weight:600}
 .registration-dialog .photo-upload label{gap:10px}
@@ -64,7 +64,8 @@ body:has(dialog[open]){overflow:hidden}
   .registration-dialog .choice-trigger{font-size:15px;padding:9px 11px}
   .registration-dialog .terms{margin:19px 0 14px;padding:13px;font-size:13px}
   .registration-dialog .btn{min-height:50px}
-  .registration-dialog .dialog-x{position:sticky;top:0;margin-bottom:-34px}
-  .registration-dialog .choice-dialog{padding:17px;max-height:72dvh}
+  .registration-dialog .btn:not(.btn-gold){background:#fffdf8;color:#173044;border:1px solid #a98a55;box-shadow:0 4px 12px #10253712}
+  .registration-dialog .dialog-x{position:absolute;inset-inline-end:16px;top:16px;margin:0;z-index:5}
+  .choice-dialog{padding:17px;max-height:72dvh}
   .registration-dialog .choice-top h3{font-size:21px}
 }
