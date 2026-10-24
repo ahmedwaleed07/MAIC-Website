@@ -29,3 +29,32 @@ main{min-height:calc(100vh - 280px)}.scene{isolation:isolate;position:relative;m
 .mega-topic-grid button:hover{background:rgba(212,167,91,.13);border-color:var(--gold);color:var(--gold-lite)}
 .mega-topic-grid button svg{width:14px;height:14px;color:var(--gold)}
 @media(max-width:750px){.mega-subsections{padding:18px 22px}.mega-topic-grid{grid-template-columns:1fr;gap:8px}.mega-topic-grid button{min-height:45px}}
+
+/* MAIC reference-style accordion navigation */
+.mega-menu{left:0;right:0;top:169px;border:0;border-top:1px solid #dfe3e6;border-radius:0;background:#fff;color:#111;box-shadow:0 18px 38px rgba(0,0,0,.18);max-height:calc(100vh - 169px);animation:accordionReveal .2s ease}
+@keyframes accordionReveal{from{opacity:0;transform:translateY(-7px)}to{opacity:1;transform:translateY(0)}}
+.mega-bar{padding:18px clamp(24px,6vw,78px);background:#fff;color:#1b2430;border-bottom:1px solid #d9dde1;font:600 20px/1.2 Georgia,serif}
+.mega-bar button{color:#1b2430}
+.mega-content{display:block;min-height:0}
+.mega-primary{padding:0;background:#fff;border:0}
+.mega-subsections{display:none}
+.accordion-account,.accordion-trigger,.accordion-quick button{width:100%;min-height:64px;display:flex;align-items:center;gap:16px;padding:16px clamp(24px,6vw,78px);border:0;border-bottom:1px solid #d9dde1;background:#fff;color:#101820;text-align:left;font:600 18px/1.25 "Segoe UI",Arial,sans-serif}
+.accordion-account{color:#253b4d;background:#f7f8f9}
+.accordion-account span{flex:1}
+.accordion-account svg{width:20px;height:20px}
+.accordion-trigger{justify-content:space-between}
+.accordion-trigger>svg{width:20px;height:20px;color:#1b2430}
+.accordion-trigger.is-open{background:#fff;color:#071827}
+.accordion-panel{background:#fff;border-bottom:1px solid #d9dde1;padding:0 clamp(24px,6vw,78px) 12px}
+.accordion-panel-title{padding:20px 16px 14px;color:#2c3742;font:400 22px/1.3 "Segoe UI",Arial,sans-serif}
+.accordion-links{margin-left:16px;border-top:1px solid #d9dde1}
+.accordion-links button{width:100%;min-height:56px;display:flex;align-items:center;justify-content:space-between;gap:14px;padding:14px 16px;border:0;border-bottom:1px solid #d9dde1;background:#fff;color:#202a33;text-align:left;font:400 16px/1.35 "Segoe UI",Arial,sans-serif}
+.accordion-links button:hover,.accordion-links button:focus-visible{background:#f4f7f8;color:#8e6428}
+.accordion-links button svg{width:14px;height:14px;color:#8e6428}
+.accordion-signout{background:#fff;color:#7d4d4d;font-size:14px;min-height:48px}
+.accordion-quick{border-top:1px solid #d9dde1;background:#fff}
+.accordion-quick button{font-size:16px;min-height:58px}
+[lang="ar"] .accordion-account,[lang="ar"] .accordion-trigger,[lang="ar"] .accordion-quick button,[lang="ar"] .accordion-links button{text-align:right}
+[lang="ar"] .accordion-trigger>svg,[lang="ar"] .accordion-links button svg{transform:scaleX(-1)}
+@media(max-width:1050px){.mega-menu{top:144px;max-height:calc(100vh - 144px)}.mega-bar{padding-left:24px;padding-right:24px}.accordion-account,.accordion-trigger,.accordion-quick button{padding-left:26px;padding-right:26px}}
+@media(max-width:750px){.overlay{inset:158px 0 0;background:rgba(0,0,0,.18);backdrop-filter:none}.mega-menu{position:fixed;top:158px;left:0;right:0;bottom:0;max-height:none;overflow:auto}.mega-bar{padding:16px 24px;font-size:18px}.accordion-account,.accordion-trigger,.accordion-quick button{min-height:64px;padding:17px 26px;font-size:17px}.accordion-panel{padding:0 24px 12px}.accordion-panel-title{padding-left:26px;font-size:21px}.accordion-links{margin-left:26px}.accordion-links button{min-height:56px;padding-left:22px;padding-right:22px;font-size:16px}}
