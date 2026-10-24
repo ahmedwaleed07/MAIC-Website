@@ -1,5 +1,11 @@
 # Michigan Academy of Innovation and Creativity (MAIC)
 
+## Live pre-launch preview
+
+https://maic-website.pages.dev
+
+Deployed independently on Cloudflare Pages from the `main` branch of `ahmedwaleed07/MAIC-Website`. This is a preview, **not** the official launch. Authentication is demonstrative, agent information has no fabricated entries, and full native-language translations are still subject to review. `robots.txt` blocks indexing until launch approval.
+
 Independent, responsive website prototype with midnight-navy and antique-gold MAIC identity. This repository contains the actual source code for the prototype, not a screenshot.
 
 ## Preview locally
