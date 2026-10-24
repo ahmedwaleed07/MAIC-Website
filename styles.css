@@ -58,3 +58,17 @@ main{min-height:calc(100vh - 280px)}.scene{isolation:isolate;position:relative;m
 [lang="ar"] .accordion-trigger>svg,[lang="ar"] .accordion-links button svg{transform:scaleX(-1)}
 @media(max-width:1050px){.mega-menu{top:144px;max-height:calc(100vh - 144px)}.mega-bar{padding-left:24px;padding-right:24px}.accordion-account,.accordion-trigger,.accordion-quick button{padding-left:26px;padding-right:26px}}
 @media(max-width:750px){.overlay{inset:158px 0 0;background:rgba(0,0,0,.18);backdrop-filter:none}.mega-menu{position:fixed;top:158px;left:0;right:0;bottom:0;max-height:none;overflow:auto}.mega-bar{padding:16px 24px;font-size:18px}.accordion-account,.accordion-trigger,.accordion-quick button{min-height:64px;padding:17px 26px;font-size:17px}.accordion-panel{padding:0 24px 12px}.accordion-panel-title{padding-left:26px;font-size:21px}.accordion-links{margin-left:26px}.accordion-links button{min-height:56px;padding-left:22px;padding-right:22px;font-size:16px}}
+
+/* Inline accordion: all primary choices remain in the document flow. */
+#menuScrim{display:none!important}
+#megaMenu{position:relative;top:auto;left:auto;right:auto;bottom:auto;max-height:none;overflow:visible;width:100%;animation:none}
+#megaMenu .mega-content{display:block}
+#megaMenu .mega-primary{padding:0;border:0;background:#fff}
+#megaMenu .mega-primary button{color:#172330;background:#fff;border:0;border-bottom:1px solid #d5d9dd;border-radius:0;text-align:left;font-family:Arial,sans-serif}
+#megaMenu .mega-primary .accordion-trigger{padding:22px 26px;font-size:18px;font-weight:700;min-height:66px}
+#megaMenu .mega-primary .accordion-trigger.is-open{color:#846125}
+#megaMenu .mega-primary .accordion-links button{padding:18px 22px;font-size:16px;font-weight:400;min-height:58px}
+#megaMenu .accordion-panel{padding:0 24px 14px;background:#fff}
+#megaMenu .accordion-links{margin-left:24px}
+#megaMenu .accordion-trigger svg{color:#172330}
+#megaMenu .accordion-account{padding:20px 26px}
