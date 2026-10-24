@@ -12,6 +12,24 @@ const select=(name,label,items,required=true)=>'<label class="reg-field"><span>'
 const input=(name,label,type='text',required=true)=>'<label class="reg-field"><span>'+E(label)+(required?' *':'')+'</span><input name="'+name+'" type="'+type+'" '+(required?'required':'')+' maxlength="180" '+(type==='tel'?'inputmode="tel" pattern="[+0-9() .-]{7,25}"':'')+'></label>';
 function countries(){const names=new Intl.DisplayNames([state.lang],{type:'region'});return (window.MAIC_COUNTRIES||[]).map(c=>[c.code,names.of(c.code)||c.name,names.of(c.code)||c.name]).sort((a,b)=>a[1].localeCompare(b[1],state.lang));}
 const country=(name,label)=>select(name,label,countries());
+function enhanceChoices(root){
+$$('select',root).forEach(control=>{
+let button=control.nextElementSibling;
+if(!button?.classList.contains('choice-trigger')){
+button=document.createElement('button');button.type='button';button.className='choice-trigger';button.setAttribute('aria-haspopup','dialog');
+control.classList.add('choice-source');control.tabIndex=-1;control.setAttribute('aria-hidden','true');control.after(button);
+button.onclick=()=>{
+const title=control.closest('label')?.querySelector('span')?.textContent||control.getAttribute('aria-label')||tr('اختر','Select');
+const picker=document.createElement('dialog');picker.className='choice-dialog';picker.setAttribute('aria-label',title);picker.dir=state.lang==='ar'?'rtl':'ltr';
+picker.innerHTML='<div class="choice-top"><h3>'+E(title)+'</h3><button type="button" aria-label="'+tr('إغلاق الاختيارات','Close choices')+'">×</button></div><input class="choice-search" type="search" aria-label="'+tr('بحث في الاختيارات','Search choices')+'" placeholder="'+tr('ابحث هنا…','Search…')+'"><div class="choice-list"></div>';
+document.body.append(picker);const list=picker.querySelector('.choice-list'),search=picker.querySelector('input');
+const draw=()=>{list.innerHTML='';const query=search.value.trim().toLocaleLowerCase();Array.from(control.options).filter(o=>o.value&&!o.disabled&&o.text.toLocaleLowerCase().includes(query)).forEach(o=>{const item=document.createElement('button');item.type='button';item.textContent=o.text;item.className=o.selected?'chosen':'';item.onclick=()=>{control.value=o.value;picker.close();picker.remove();control.dispatchEvent(new Event('change',{bubbles:true}));enhanceChoices(root);if(button.isConnected)button.focus();};list.append(item);});if(!list.children.length)list.textContent=tr('لا توجد نتائج','No matches');};
+picker.querySelector('.choice-top button').onclick=()=>{picker.close();picker.remove();button.focus();};picker.addEventListener('cancel',()=>{picker.remove();button.focus();});search.oninput=draw;draw();picker.showModal();search.focus();
+};
+}
+button.disabled=control.disabled;button.textContent=control.selectedOptions[0]?.textContent||tr('اختر','Select');button.setAttribute('aria-label',(control.closest('label')?.querySelector('span')?.textContent||control.getAttribute('aria-label')||tr('اختر','Select'))+': '+button.textContent);
+});
+}
 function date(name,label){const now=new Date(),year=now.getFullYear();return '<fieldset class="reg-date"><legend>'+E(label)+' *</legend><div>'+select(name+'_day',tr('اليوم','Day'),Array.from({length:31},(_,i)=>[i+1,String(i+1),String(i+1)]))+select(name+'_month',tr('الشهر','Month'),Array.from({length:12},(_,i)=>[i+1,new Intl.DateTimeFormat(state.lang,{month:'long'}).format(new Date(2020,i,1)),new Intl.DateTimeFormat(state.lang,{month:'long'}).format(new Date(2020,i,1))]))+select(name+'_year',tr('السنة','Year'),Array.from({length:year-1899},(_,i)=>[year-i,String(year-i),String(year-i)]))+'</div></fieldset>';}
 const block=(num,title,body)=>'<section class="reg-section"><h3><small>'+num+'</small>'+E(title)+'</h3><div class="reg-grid">'+body+'</div></section>';
 function languageRow(){const id='lang'+sequence++;return '<fieldset class="repeat-card" data-language><legend>'+tr('لغة','Language')+'</legend><div class="reg-grid">'+select(id+'_name',tr('اللغة','Language'),languageOptions.map(([v,n])=>[v,n,n]).concat([['ru','الروسية','Russian'],['ku','الكردية','Kurdish'],['fa','الفارسية','Persian'],['other','أخرى','Other']]))+['writing','reading','speaking'].map((k,i)=>select(id+'_'+k,tr(['الكتابة','القراءة','التحدث'][i],['Writing','Reading','Speaking'][i]),levels)).join('')+'</div><button type="button" class="text-action" data-remove>'+tr('إزالة اللغة','Remove language')+'</button></fieldset>';}
@@ -52,10 +70,11 @@ $('#removePhoto').onclick=()=>{photo='';$('#profilePhoto').value='';showPhoto();
 $('#profilePhoto').onchange=async e=>{const file=e.target.files[0];if(!file)return;photoBusy=true;validate();try{if(!['image/jpeg','image/png','image/webp'].includes(file.type)||file.size>8*1024*1024)throw Error();const bitmap=await createImageBitmap(file);const canvas=document.createElement('canvas');canvas.width=canvas.height=320;const ctx=canvas.getContext('2d'),side=Math.min(bitmap.width,bitmap.height);ctx.drawImage(bitmap,(bitmap.width-side)/2,(bitmap.height-side)/2,side,side,0,0,320,320);photo=canvas.toDataURL('image/jpeg',.82);bitmap.close();$('#registrationStatus').textContent='';}catch{$('#registrationStatus').textContent=tr('اختر صورة JPG أو PNG أو WebP أقل من 8 MB.','Choose a JPG, PNG or WebP under 8 MB.');e.target.value='';}finally{photoBusy=false;showPhoto();validate();}};
 function showPhoto(){const p=$('#photoPreview');p.textContent='';if(photo){const img=document.createElement('img');img.src=photo;img.alt=tr('صورتك','Your photo');p.append(img);}else p.textContent=((f.elements.firstName.value.trim()[0]||'')+(f.elements.lastName.value.trim()[0]||'')).toUpperCase()||'AA';}
 function validate(){const noEducation=f.elements.education.value==='none';$$('input,select',$('#educationDetails')).forEach(el=>{el.disabled=noEducation;el.required=!noEducation;});const graduation=f.querySelector('[name="graduation_day"]').closest('fieldset');$$('select',graduation).forEach(el=>{el.disabled=noEducation;el.required=!noEducation;});f.elements.employer.disabled=f.elements.freelance.checked;f.elements.employer.required=!f.elements.freelance.checked;
+$$('input[type="text"]',f).forEach(el=>el.setCustomValidity(el.required&&!el.disabled&&!el.value.trim()?tr('هذا الحقل مطلوب','This field is required'):''));
 $$('.reg-date',f).forEach(group=>{const [day,month,year]=$$('select',group);day.setCustomValidity('');if(!day.disabled&&day.value&&month.value&&year.value){const d=new Date(+year.value,+month.value-1,+day.value),today=new Date();if(d.getMonth()!==+month.value-1||d>today)day.setCustomValidity(tr('اختر تاريخاً صحيحاً غير مستقبلي','Choose a valid date that is not in the future'));}});
 const selected=$$('input[name="interests"]:checked',f);$('#interestCount').textContent=selected.length+' / 10';$$('input[name="interests"]',f).forEach(el=>el.disabled=selected.length>=10&&!el.checked);
 $$('[data-language] [data-remove]',f).forEach(el=>el.disabled=$$('[data-language]',f).length===1);
-showPhoto();$('#completeRegistration').disabled=photoBusy||!f.checkValidity();}
+showPhoto();enhanceChoices(f);$('#completeRegistration').disabled=photoBusy||!f.checkValidity();}
 f.onsubmit=e=>{e.preventDefault();validate();if(!f.reportValidity()||$('#completeRegistration').disabled)return;const data=new FormData(f),fields=Object.fromEntries(data);delete fields.terms;delete fields.interests;
 const profile={firstName:fields.firstName.trim(),lastName:fields.lastName.trim(),email:fields.email.trim(),photo,fields,interests:data.getAll('interests'),demo:true,emailVerified:false,verificationStatus:'simulated',termsVersion:'preview-2026-10',termsAcceptedAt:new Date().toISOString()};
 try{localStorage.setItem('maic_demo_profile',JSON.stringify(profile));state.user=profile;}catch{$('#registrationStatus').textContent=tr('تعذّر الحفظ على هذا المتصفح. أتح مساحة تخزين ثم حاول مجدداً.','Cannot save in this browser. Free some storage and try again.');return;}
@@ -65,7 +84,7 @@ validate();dialog.showModal();
 const oldMenu=renderMenu;renderMenu=function(){oldMenu();if(state.user?.photo?.startsWith('data:image/jpeg;base64,')){const a=$('.member-avatar');if(a){a.textContent='';const img=document.createElement('img');img.src=state.user.photo;img.alt='';a.append(img);}}};
 // Language cards are direct choices, not disclosure controls.
 const oldLanguage=renderLanguage;renderLanguage=function(){return oldLanguage().replace(/<svg aria-hidden="true"[^>]*><use href="#i-chevron"\/><\/svg>/g,'');};
-const oldMain=renderMain;renderMain=function(){oldMain();$('#mainContent').animate([{opacity:.35,transform:'translateY(8px)'},{opacity:1,transform:'none'}],{duration:matchMedia('(prefers-reduced-motion: reduce)').matches?0:320});};
+const oldMain=renderMain;renderMain=function(){oldMain();enhanceChoices($('#mainContent'));$('#mainContent').animate([{opacity:.35,transform:'translateY(8px)'},{opacity:1,transform:'none'}],{duration:matchMedia('(prefers-reduced-motion: reduce)').matches?0:320});};
 renderAll();
 function intro(){
 const screen=document.createElement('dialog');screen.id='maicIntro';screen.setAttribute('aria-label',tr('مرحباً بك في الأكاديمية','Welcome to the academy'));
