@@ -22,12 +22,11 @@ $$('select',root).forEach(control=>{
     button.addEventListener('click',e=>{
       e.preventDefault();e.stopPropagation();
       const title=control.closest('label')?.querySelector('span')?.textContent||control.getAttribute('aria-label')||tr('اختر','Select');
-      const searchable=Array.from(control.options).filter(o=>o.value).length>12;
       const picker=document.createElement('dialog');picker.className='choice-dialog';picker.setAttribute('aria-label',title);picker.dir=state.lang==='ar'?'rtl':'ltr';
-      picker.innerHTML='<div class="choice-top"><h3>'+E(title)+'</h3><button type="button" aria-label="'+tr('إغلاق الاختيارات','Close choices')+'">×</button></div>'+(searchable?'<input class="choice-search" type="search" aria-label="'+tr('بحث في الاختيارات','Search choices')+'" placeholder="'+tr('ابحث هنا…','Search…')+'">':'')+'<div class="choice-list"></div>';
-      document.body.append(picker);const list=picker.querySelector('.choice-list'),search=picker.querySelector('.choice-search');
-      const draw=()=>{list.innerHTML='';const query=search?.value.trim().toLocaleLowerCase()||'';Array.from(control.options).filter(o=>o.value&&!o.disabled&&o.text.toLocaleLowerCase().includes(query)).forEach(o=>{const item=document.createElement('button');item.type='button';item.textContent=o.text;item.className=o.selected?'chosen':'';item.onclick=e=>{e.preventDefault();e.stopPropagation();control.value=o.value;picker.close();picker.remove();control.dispatchEvent(new Event('change',{bubbles:true}));enhanceChoices(root);if(button.isConnected)button.focus()};list.append(item)});if(!list.children.length)list.textContent=tr('لا توجد نتائج','No matches')};
-      picker.querySelector('.choice-top button').onclick=e=>{e.preventDefault();picker.close();picker.remove();button.focus()};picker.addEventListener('cancel',()=>{picker.remove();button.focus()});if(search)search.oninput=draw;draw();picker.showModal();if(search)search.focus();
+      picker.innerHTML='<div class="choice-top"><h3>'+E(title)+'</h3><button type="button" aria-label="'+tr('إغلاق الاختيارات','Close choices')+'">×</button></div><div class="choice-list" tabindex="0"></div>';
+      document.body.append(picker);const list=picker.querySelector('.choice-list');
+      const draw=()=>{list.innerHTML='';Array.from(control.options).filter(o=>o.value&&!o.disabled).forEach(o=>{const item=document.createElement('button');item.type='button';item.textContent=o.text;item.className=o.selected?'chosen':'';item.onclick=e=>{e.preventDefault();e.stopPropagation();control.value=o.value;picker.close();picker.remove();control.dispatchEvent(new Event('change',{bubbles:true}));enhanceChoices(root);if(button.isConnected)button.focus()};list.append(item)});if(!list.children.length)list.textContent=tr('لا توجد اختيارات','No choices')};
+      picker.querySelector('.choice-top button').onclick=e=>{e.preventDefault();picker.close();picker.remove();button.focus()};picker.addEventListener('cancel',()=>{picker.remove();button.focus()});draw();picker.showModal();list.focus();
     });
   }
   button.disabled=control.disabled;button.textContent=control.selectedOptions[0]?.textContent||tr('اختر','Select');button.setAttribute('aria-label',(control.closest('label')?.querySelector('span')?.textContent||control.getAttribute('aria-label')||tr('اختر','Select'))+': '+button.textContent);
