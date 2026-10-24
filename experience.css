@@ -37,3 +37,34 @@ body:has(dialog[open]){overflow:hidden}
 @keyframes cityLight{0%,16%{opacity:1}20%,100%{opacity:.12}}@keyframes emblemReveal{from{opacity:0;transform:rotateY(-30deg) translateY(12px)}to{opacity:1;transform:rotateY(0)}}@keyframes cloudDrift{to{transform:translateX(4%);opacity:.6}}
 @media(max-width:600px){.registration-dialog{padding:24px 18px}.registration-dialog h2{font-size:29px}.reg-grid{grid-template-columns:1fr}.interest-options{grid-template-columns:1fr}.reg-section h3{font-size:22px}.intro-content{padding-top:20px}.intro-emblems img{width:85px;height:85px}.intro-map .map-svg{max-height:220px}.member-row{padding:14px;gap:8px}.member-profile>span:last-child{font-size:14px}}
 @media(prefers-reduced-motion:reduce){.intro-clouds,.intro-map .map-spot,.intro-emblems img,.repeat-card,#megaMenu .accordion-panel{animation:none}.intro-emblems img{opacity:1}.intro-progress span{transition:none}}
+
+/* Mobile interaction polish: native selects never compete with branded pickers. */
+.registration-dialog .choice-source{display:none!important;pointer-events:none!important}
+.registration-dialog .choice-trigger{min-height:50px;touch-action:manipulation;-webkit-tap-highlight-color:transparent}
+.registration-dialog .choice-dialog{z-index:1000;inset:auto;position:fixed;top:50%;left:50%;transform:translate(-50%,-50%);width:min(460px,calc(100vw - 28px));max-height:min(76dvh,620px);margin:0}
+.registration-dialog .choice-dialog .choice-list{overscroll-behavior:contain;-webkit-overflow-scrolling:touch}
+.registration-dialog .choice-dialog .choice-list button{min-height:50px;touch-action:manipulation}
+.registration-dialog .photo-upload input[type=file]{position:absolute;width:1px;height:1px;opacity:0;pointer-events:none}
+.registration-dialog .photo-upload label>span:nth-child(2){color:#7d5e2b;font-weight:600}
+.registration-dialog .photo-upload label{gap:10px}
+.registration-dialog .photo-upload .profile-photo{cursor:pointer}
+.registration-dialog .registration-success{padding-top:18px}
+@media(max-width:600px){
+  .registration-dialog{width:calc(100vw - 12px);max-height:calc(100dvh - 18px);padding:22px 16px;border-radius:12px}
+  .registration-dialog h2{font-size:27px;line-height:1.18;margin:10px 0 12px;max-width:90%}
+  .registration-dialog .auth-kicker{font-size:9px;letter-spacing:.14em}
+  .registration-dialog .demo-note{font-size:12px;padding:10px 12px;margin-bottom:14px}
+  .registration-dialog .photo-upload{margin:13px auto 20px}
+  .registration-dialog .profile-photo{width:82px;height:82px;font-size:26px}
+  .registration-dialog .reg-section{margin-top:20px;padding-top:17px}
+  .registration-dialog .reg-section h3{font-size:21px;margin-bottom:15px;line-height:1.25}
+  .registration-dialog .reg-grid{gap:13px}
+  .registration-dialog .reg-field{gap:5px;font-size:14px}
+  .registration-dialog .reg-date>div{gap:6px}
+  .registration-dialog .choice-trigger{font-size:15px;padding:9px 11px}
+  .registration-dialog .terms{margin:19px 0 14px;padding:13px;font-size:13px}
+  .registration-dialog .btn{min-height:50px}
+  .registration-dialog .dialog-x{position:sticky;top:0;margin-bottom:-34px}
+  .registration-dialog .choice-dialog{padding:17px;max-height:72dvh}
+  .registration-dialog .choice-top h3{font-size:21px}
+}
