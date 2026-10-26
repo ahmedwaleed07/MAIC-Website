@@ -1,0 +1,37 @@
+/* MAIC Courses: navy / antique gold / ivory, fixed layout across languages. */
+.maic-courses-page{background:#061a2b;min-height:calc(100vh - 230px)}
+.maic-course-hero{position:relative;background:linear-gradient(90deg,#031728f2,#0a2235d9),url("./assets/michigan-heritage-montage.webp") center/cover;min-height:285px;display:flex;align-items:center;border-bottom:1px solid rgba(211,168,94,.35)}
+.maic-course-hero-inner{width:min(1160px,100%);margin:0 auto;padding:54px 0}
+.maic-course-heading{max-width:860px}.maic-course-heading h1{font:normal clamp(34px,4vw,58px)/1.15 Georgia,serif;color:#f6e2ba;margin:16px 0}
+.maic-course-heading p{font-size:17px;line-height:1.8;color:#e0e6eb;max-width:750px;margin:15px 0 0}
+.maic-course-content{padding-top:52px;padding-bottom:85px;background:linear-gradient(180deg,#071d30,#061827)}
+.maic-format-grid,.maic-course-grid{max-width:1160px;margin:0 auto;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
+.maic-format-card{min-height:320px;border:1px solid #8f7348;border-radius:10px;background:linear-gradient(145deg,#0e3047,#061a2b);color:#f8ebd4;text-align:left;padding:34px 28px;display:flex;flex-direction:column;align-items:flex-start;box-shadow:0 14px 32px #0004;transition:transform .18s,border-color .18s,box-shadow .18s}
+.maic-format-card:hover,.maic-format-card:focus-visible{transform:translateY(-4px);border-color:#f2cc87;box-shadow:0 18px 35px #0008}
+.maic-format-icon{height:64px;width:64px;display:grid;place-items:center;color:#e4b868;background:#d6a85b12;border:1px solid #d6a85b66;border-radius:50%}
+.maic-format-icon svg{height:32px;width:32px}
+.maic-format-card h2{font:normal clamp(23px,2.1vw,29px)/1.25 Georgia,serif;color:#f6deab;margin:24px 0 10px}
+.maic-format-card p{color:#d0dae2;line-height:1.7;font-size:15px;margin:0 0 24px}
+.maic-format-action{display:flex;gap:10px;align-items:center;margin-top:auto;color:#e7be77;font-weight:600;font-size:14px}
+.maic-format-action svg{width:16px;height:16px}
+.maic-course-back{display:flex;align-items:center;gap:9px;padding:7px 0;color:#f3d09a;border:0;background:transparent;font-size:14px;margin-bottom:23px}
+.maic-course-back svg{transform:rotate(180deg);width:16px;height:16px}
+.maic-course-listing{max-width:1160px;margin:auto}
+.maic-course-listing>h2{font:normal clamp(26px,3vw,37px)/1.25 Georgia,serif;color:#f4dcaf;margin:0 0 22px}
+.maic-course-empty{padding:26px;border:1px solid #c19a5b55;border-radius:8px;background:#102b40;color:#e0e6eb;line-height:1.7}
+.maic-course-listing>.maic-course-upcoming-heading{margin-top:46px}
+.maic-course-note,.maic-course-disclaimer{font-size:14px;line-height:1.7;color:#b8c6d1}
+.maic-course-note{margin:-7px 0 22px}
+.maic-course-disclaimer{border-top:1px solid #b38a4d55;padding-top:22px;margin-top:36px}
+.maic-course-tile{min-height:172px;border:1px solid #8c714b66;border-radius:8px;background:linear-gradient(155deg,#112e42,#071e30);padding:24px;display:flex;flex-direction:column;gap:16px}
+.maic-course-area{color:#d4b177;font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:.08em}
+.maic-course-tile h3{font:normal 23px/1.35 Georgia,serif;margin:0;color:#f4ead5}
+.maic-course-badge{align-self:flex-start;font-size:12px;color:#d5dfdf;background:#d9e5f114;border:1px solid #d9e5f133;border-radius:4px;padding:5px 10px;margin-top:auto}
+[lang="ar"] .maic-course-heading,[lang="ar"] .maic-format-card,[lang="ar"] .maic-course-listing,[lang="ar"] .maic-course-tile{text-align:right}
+[lang="ar"] .maic-format-card{align-items:flex-end}
+[lang="ar"] .maic-course-badge{align-self:flex-end}
+[lang="ar"] .maic-course-back{direction:rtl}
+[lang="ar"] .maic-course-heading h1,[lang="ar"] .maic-format-card h2,[lang="ar"] .maic-course-listing>h2,[lang="ar"] .maic-course-tile h3{font-family:Amiri,"Noto Naskh Arabic",serif}
+@media(max-width:900px){.maic-format-grid,.maic-course-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:620px){.maic-course-hero-inner{padding:38px 0}.maic-course-heading p{font-size:15px}.maic-course-content{padding-top:30px;padding-bottom:50px}.maic-format-grid,.maic-course-grid{grid-template-columns:1fr;gap:15px}.maic-format-card{min-height:265px;padding:26px 24px}.maic-course-tile{min-height:140px}}
+@media(prefers-reduced-motion:reduce){.maic-format-card{transition:none}}
