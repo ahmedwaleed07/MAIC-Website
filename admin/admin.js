@@ -12,7 +12,7 @@ educators:['Educators and Organizations','المعلمون والمؤسسات'],
 };
 const initialCourses=clone(MAIC_COURSE_CATALOG),initialAgents=clone(MAIC_ENROLLMENT_AGENTS);
 const initial=()=>({version:1,courses:clone(initialCourses),agents:clone(initialAgents),nav:mainNav.map(id=>({id,en:nativeNames[id][0],ar:nativeNames[id][1],visible:true,contentEn:'',contentAr:''}))});
-let draft=initial(),tab='overview',editing='';
+let draft=initial(),tab='overview',editing='',serverVersion=0,serverDocument=null,authenticated=false;
 function clean(v){
 if(!v||!Array.isArray(v.courses)||!Array.isArray(v.agents)||!Array.isArray(v.nav))throw Error('صيغة الملف غير صالحة.');
 if(v.courses.length>500||v.agents.length>150||v.nav.length>120)throw Error('الملف كبير جداً.');
@@ -34,7 +34,7 @@ return clone(v);
 }
 try{const s=localStorage.getItem(KEY);if(s)draft=clean(JSON.parse(s))}catch(e){console.warn('MAIC preview draft invalid',e)}
 function note(s){let t=$('.toast');if(t)t.remove();t=document.createElement('div');t.className='toast';t.textContent=s;t.setAttribute('role','status');document.body.append(t);setTimeout(()=>t.remove(),2600)}
-function save(){try{draft=clean(draft);localStorage.setItem(KEY,JSON.stringify(draft));$('#draftState').textContent='المسودة محفوظة محلياً';render();note('تم الحفظ محلياً. لم يتغير الموقع العام.');return true}catch(e){note(e.message);return false}}
+function save(){try{draft=clean(draft);localStorage.setItem(KEY,JSON.stringify(draft));$('#draftState').textContent='مسودة لم تُنشر';render();note('تم الحفظ محلياً. اضغط نشر حتى تظهر التغييرات للزوار.');return true}catch(e){note(e.message);return false}}
 function btn(title,action,cls=''){return '<button type="button" class="btn '+cls+'" data-action="'+E(action)+'">'+E(title)+'</button>'}
 function head(title,sub,buttons=''){return '<div class="page-head"><div><h1>'+E(title)+'</h1><p>'+E(sub)+'</p></div><div class="page-actions">'+buttons+'</div></div>'}
 function tag(s){const labels={preparing:'قيد الإعداد',published:'منشور بالمعاينة',archived:'مؤرشف',active:'نشط',inactive:'غير نشط'};return '<span class="pill '+E(s)+'">'+E(labels[s]||s)+'</span>'}
@@ -74,10 +74,10 @@ return head('الصفحات الإضافية','أضف صفحات نصية بسي
  '<div class="actions">'+btn('تعديل','edit-nav:'+n.id,'small')+btn('حذف','remove-page:'+n.id,'small danger')+'</div></div>').join(''):'<p>ماكو صفحات إضافية بعد. أضف صفحة تعريفية أو خدمة أو قسم جديد.</p>')+'</section>';
 }
 function settings(){
-return head('المعاينة والنسخ','نسخة احتياطية من تعديلاتك قبل النشر العام')+
+return head('المعاينة والنسخ','تحكم بالتعديلات المنشورة والمسودات المحفوظة')+
  '<section class="panel"><h2>معاينة حية على جهازك</h2><p>تگدر تشوف التغييرات بفتح الموقع من أزرار المعاينة. المسودة ما تنشر لزوار الموقع الآخرين.</p><div class="page-actions">'+btn('معاينة الرئيسية','preview','primary')+btn('معاينة الكورسات','preview-courses')+btn('معاينة الوكلاء','preview-agents')+'</div></section>'+
  '<section class="panel"><h2>تصدير واستيراد</h2><div class="page-actions">'+btn('تصدير JSON','export','primary')+btn('استيراد JSON','import')+btn('استرجاع الأصل','reset','danger')+'</div><input type="file" id="importFile" accept=".json,application/json" hidden /><textarea class="code-preview" readonly>'+E(JSON.stringify(draft,null,2))+'</textarea></section>'+
- '<section class="panel"><h2>النشر الحقيقي</h2><p>يحتاج ربط قاعدة بيانات MAIC وحساب مدير محمي وصلاحيات نشر وتسجيل نشاطات. ما راح نفتح مفتاح كتابة الموقع للعامة.</p><button class="btn primary" disabled>نشر التعديلات — غير مفعّل إلى حين تأمين الإدارة</button></section>';
+ '<section class="panel"><h2>نشر التعديلات للموقع الحقيقي</h2><p>النسخة المنشورة الحالية رقم '+serverVersion+'. عند النشر ينتقل كتالوج الكورسات والوكلاء والقائمة إلى قاعدة بيانات MAIC. تگدر تستخدم زر «تحميل المحتوى المنشور» للتراجع عن مسودتك الحالية.</p><div class="page-actions">'+btn('نشر المسودة الآن','publish','primary')+btn('تحميل آخر محتوى منشور','load-live')+'</div></section>';
 }
 const views={overview,courses,agents,structure,pages,settings};
 const titles={overview:'نظرة عامة',courses:'إدارة الكورسات',agents:'الوكلاء',structure:'هيكلة الموقع',pages:'الصفحات',settings:'المعاينة والنسخ'};
@@ -147,6 +147,75 @@ function move(id,n){const pos=draft.nav.findIndex(x=>x.id===id),j=pos+n;if(j<0||
 function preview(page='home'){
  const u=new URL('../index.html',location.href);u.searchParams.set('cms-preview','1');u.hash=page;window.open(u.toString(),'_blank','noopener');
 }
+
+async function serverCall(path,opts={}){
+ const response=await fetch(path,{credentials:'same-origin',cache:'no-store',...opts});
+ let body={};try{body=await response.json()}catch{}
+ if(!response.ok){const err=new Error(body.error||'تعذّر الاتصال بالخادم');err.status=response.status;throw err}
+ return body;
+}
+function showLogin(message=''){
+ authenticated=false;document.querySelector('.studio-shell').hidden=true;$('#adminLogin').hidden=false;
+ $('#adminLoginError').textContent=message;$('#adminPassword').value='';
+}
+async function loadLive(force=false){
+ try{
+  const result=await serverCall('/api/admin/content');
+  serverVersion=result.version;serverDocument=clean(result.document);
+  if(force){
+   if(!confirm('استبدال المسودة الحالية بنسخة الموقع المنشورة؟'))return;
+   draft=clone(serverDocument);localStorage.setItem(KEY,JSON.stringify(draft));
+   note('تم تحميل آخر نسخة منشورة، بدون نشر أي تغيير.');
+  }else if(!localStorage.getItem(KEY)){
+   draft=clone(serverDocument);
+   localStorage.setItem(KEY,JSON.stringify(draft));
+  }
+  $('#draftState').textContent='النسخة المنشورة رقم '+serverVersion;
+  render();
+ }catch(err){
+  if(err.status===401){showLogin('انتهت جلسة الإدارة؛ يرجى تسجيل الدخول مجدداً.');return}
+  note('فشل تحميل المحتوى المنشور: '+err.message);
+ }
+}
+async function enterDashboard(){
+ authenticated=true;$('#adminLogin').hidden=true;document.querySelector('.studio-shell').hidden=false;
+ await loadLive();render();
+}
+async function boot(){
+ try{await serverCall('/api/admin/session');await enterDashboard()}
+ catch(err){showLogin(err.status===401?'':'خدمة الإدارة غير متاحة حالياً. تأكد من الاتصال.')}
+}
+async function loginAdmin(e){
+ e.preventDefault();
+ const button=$('#adminLoginSubmit');button.disabled=true;button.textContent='جاري التحقق...';
+ try{
+  await serverCall('/api/admin/login',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({password:$('#adminPassword').value})});
+  $('#adminLoginError').textContent='';
+  await enterDashboard();
+ }catch(err){$('#adminLoginError').textContent=err.status===429?'محاولات كثيرة. حاول بعد ربع ساعة.':'تعذّر الدخول. تحقق من مفتاح المدير.'}
+ finally{button.disabled=false;button.textContent='دخول لوحة الإدارة'}
+}
+async function logoutAdmin(){
+ try{await serverCall('/api/admin/logout',{method:'POST',headers:{'Content-Type':'application/json'},body:'{}'})}catch{}
+ showLogin('تم تسجيل الخروج من الإدارة.');
+}
+async function publish(){
+ if(!authenticated||!serverVersion){note('تحتاج جلسة إدارة صالحة قبل النشر.');return}
+ let validated;try{validated=clean(draft)}catch(err){note('راجع البيانات أولاً: '+err.message);return}
+ if(!confirm('تأكيد نشر التعديلات على موقع MAIC لجميع الزوار؟'))return;
+ const btn=$('#publishButton');btn.disabled=true;btn.textContent='جاري النشر...';
+ try{
+  const result=await serverCall('/api/admin/content',{method:'PUT',headers:{'Content-Type':'application/json'},body:JSON.stringify({document:validated,expectedVersion:serverVersion})});
+  serverVersion=result.version;serverDocument=clone(validated);draft=clone(validated);
+  localStorage.setItem(KEY,JSON.stringify(draft));
+  $('#draftState').textContent='منشور · الإصدار '+serverVersion;note('تم النشر فعلياً للموقع. حدّث صفحة الموقع حتى تشوف التعديل.');render();
+ }catch(err){
+  if(err.status===401){showLogin('انتهت جلسة الدخول قبل النشر.');return}
+  if(err.status===409){note('صار تعديل أحدث على الموقع. حمّل النسخة المنشورة وراجع تغييراتك قبل إعادة النشر.')}
+  else note('تعذر النشر: '+err.message);
+ }finally{btn.disabled=false;btn.textContent='نشر التغييرات للموقع'}
+}
+
 function exportJson(){
  const blob=new Blob([JSON.stringify(draft,null,2)],{type:'application/json'}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download='MAIC_Admin_Draft.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);
 }
@@ -169,6 +238,8 @@ function clickAction(a){
  if(a==='preview-courses')return preview('courses');
  if(a==='preview-agents')return preview('agents');
  if(a==='export')return exportJson();
+ if(a==='publish')return publish();
+ if(a==='load-live')return loadLive(true);
  if(a==='import')return $('#importFile').click();
  if(a==='reset'){if(!confirm('استرجاع الأصل وحذف تعديلات مسودتك؟'))return;draft=initial();save()}
 }
@@ -185,5 +256,8 @@ $('#dialogClose').addEventListener('click',()=>$('#editDialog').close());
 $('#dialogCancel').addEventListener('click',()=>$('#editDialog').close());
 $('#previewButton').addEventListener('click',()=>preview());
 $('#mobileNavToggle').addEventListener('click',()=>$('.studio-sidebar').classList.toggle('is-open'));
-render();
+$('#adminLoginForm').addEventListener('submit',loginAdmin);
+$('#adminLogout').addEventListener('click',logoutAdmin);
+$('#publishButton').addEventListener('click',publish);
+boot();
 })();
