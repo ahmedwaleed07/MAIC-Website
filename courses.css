@@ -35,3 +35,6 @@
 @media(max-width:900px){.maic-format-grid,.maic-course-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:620px){.maic-course-hero-inner{padding:38px 0}.maic-course-heading p{font-size:15px}.maic-course-content{padding-top:30px;padding-bottom:50px}.maic-format-grid,.maic-course-grid{grid-template-columns:1fr;gap:15px}.maic-format-card{min-height:265px;padding:26px 24px}.maic-course-tile{min-height:140px}}
 @media(prefers-reduced-motion:reduce){.maic-format-card{transition:none}}
+
+.maic-course-info{max-width:1160px;margin:34px auto 0}.maic-course-tile .btn{margin-top:auto;align-self:flex-start}
+[lang=ar] .maic-course-tile .btn{align-self:flex-end}
