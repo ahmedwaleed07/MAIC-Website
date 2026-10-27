@@ -4,7 +4,7 @@
 
 https://maic-website.pages.dev
 
-Deployed independently on Cloudflare Pages from the `main` branch of `ahmedwaleed07/MAIC-Website`. This is a preview, **not** the official launch. Authentication is demonstrative, agent information has no fabricated entries, and full native-language translations are still subject to review. `robots.txt` blocks indexing until launch approval.
+Deployed independently on Cloudflare Pages from the `main` branch of `ahmedwaleed07/MAIC-Website`. This is a preview, **not** the official launch. Authentication and enrollment are demonstrative; Unity Bridge Services LLC is configured as the United States agent and worldwide fallback, while Iraq is assigned to ASAS 360° within the project's authorization plan. Full native-language translations and legally verified agent publication remain subject to review. `robots.txt` blocks indexing until launch approval.
 
 Independent, responsive website prototype with midnight-navy and antique-gold MAIC identity. This repository contains the actual source code for the prototype, not a screenshot.
 
@@ -26,13 +26,15 @@ Then open http://localhost:8080. No framework, build step, dependencies or API k
 - 29 language and regional options, Arabic first, with site-navigation translations; full professional translation of all content is **not** complete
 - American-English default copy, stable left-to-right element placement when switching to Arabic
 - Michigan city clock and optional live weather from Open-Meteo (only when internet is available)
-- Search/navigation among site sections, 249 country entries, authorized-agent page showing **no invented agents**
+- Search/navigation among site sections and country entries; agent-routing preview: US and countries without active local agent → Unity Bridge Services LLC; configured Iraq assignment → ASAS 360°
 - Local demonstration-only account state (not a secure authentication service)
+- Course directory: Self-Paced Online, Live Group Classes, One-to-One Private Classes. Course topics remain **in preparation**.
+- Enrollment-flow preview with country-assigned agent, agent-exclusive payment instruction, and MAIC-only course activation. No enrollment records or payments are processed.
 - Accessibility features and reduced-motion handling
 
 ## Not ready for a public production launch
 
-Real authentication, real educational program information, legally approved agent records, full translations and localized copy QA, privacy/terms, claims validation, and backend infrastructure are required. No exam-provider affiliation or official accreditation is implied by the UI.
+Real authentication, a MAIC-specific enrollment database and administration/agent access control, real educational program information, signed/verified agent appointments, full translations and localized copy QA, privacy/terms, claims validation, and backend infrastructure are required. See [Enrollment Policy](docs/ENROLLMENT_POLICY.md). No exam-provider affiliation or official accreditation is implied by the UI.
 
 ## Deployment
 
