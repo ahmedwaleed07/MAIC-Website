@@ -9,7 +9,18 @@
 <link rel="stylesheet" href="../admin/admin.css"/>
 </head>
 <body>
-<div class="studio-shell">
+<section id="adminLogin" class="maic-admin-login" aria-label="تسجيل دخول إدارة MAIC">
+ <form id="adminLoginForm" class="maic-login-panel">
+  <div class="login-logo"><span>MAIC</span><small>ADMINISTRATION</small></div>
+  <h1>تسجيل دخول الإدارة</h1>
+  <p>هذه اللوحة مخصصة لإدارة أكاديمية MAIC فقط. سجّل دخولك حتى تگدر تعدّل وتنشر المحتوى.</p>
+  <label>مفتاح دخول المدير <input id="adminPassword" name="password" type="password" autocomplete="current-password" required minlength="20" placeholder="مفتاح الإدارة السري"/></label>
+  <p id="adminLoginError" class="login-error" role="status"></p>
+  <button class="btn primary" id="adminLoginSubmit" type="submit">دخول لوحة الإدارة</button>
+  <small>الجلسة محمية وتنتهي تلقائياً. لا تشارك مفتاح الإدارة مع الآخرين.</small>
+ </form>
+</section>
+<div class="studio-shell" hidden>
 <aside class="studio-sidebar">
   <a class="studio-brand" href="../index.html" target="_blank" rel="noopener"><img src="../assets/maic-official-crest.png" alt="MAIC"/><span><b>MAIC</b><small>ADMIN STUDIO</small></span></a>
   <div class="studio-sidebar-head">إدارة محتوى الأكاديمية</div>
@@ -27,9 +38,9 @@
 <header class="studio-topbar">
   <button class="mobile-nav-toggle" id="mobileNavToggle" type="button" aria-label="فتح القائمة">☰</button>
   <div class="studio-top-title"><small>MICHIGAN ACADEMY OF INNOVATION AND CREATIVITY</small><strong id="studioTitle">نظرة عامة</strong></div>
-  <div class="studio-top-actions"><span id="draftState" class="draft-state">مسودة محفوظة محلياً</span><button id="previewButton" class="btn" type="button">معاينة الموقع ↗</button></div>
+  <div class="studio-top-actions"><span id="draftState" class="draft-state">جارِ تحميل المحتوى</span><button id="publishButton" class="btn primary" type="button">نشر التغييرات للموقع</button><button id="previewButton" class="btn" type="button">معاينة ↗</button><button id="adminLogout" class="btn secondary" type="button">خروج</button></div>
 </header>
-<div class="studio-alert"><strong>نسخة تحضيرية.</strong> تگدر تضيف وتحذف وتعدل وتعاين البيانات، لكن ماكو نشر مباشر أو إدارة حسابات حقيقية بعد. المعاينة على جهازك فقط.</div>
+<div class="studio-alert"><strong>إدارة محتوى MAIC:</strong> التغييرات تنحفظ كمسودة على جهازك أولاً. من تضغط «نشر التغييرات للموقع» تنحفظ بقاعدة بيانات الأكاديمية ويشوفها زوار الموقع بعد تحديث الصفحة. هذا القسم لا يفعّل دخول الطلاب أو الدفع.</div>
 <main id="studioMain" tabindex="-1"></main>
 </div>
 </div>
