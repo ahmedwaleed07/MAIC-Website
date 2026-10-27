@@ -36,8 +36,8 @@ function maicCoursesFormatCard(mode){
  return '<button class="maic-format-card" type="button" data-nav="'+escapeHTML(mode.route)+'"><span class="maic-format-icon">'+icon(mode.icon)+'</span><h2>'+escapeHTML(maicCoursesModeLabel(mode))+'</h2><p>'+escapeHTML(maicCoursesModeDescription(mode))+'</p><span class="maic-format-action">'+escapeHTML(maicCoursesT('explore'))+icon('chevron')+'</span></button>';
 }
 function maicCourseTile(course){
- const ar=state.lang==='ar';
- return '<article class="maic-course-tile"><span class="maic-course-area">'+escapeHTML(ar?course.areaAr:course.areaEn)+'</span><h3>'+escapeHTML(ar?course.ar:course.en)+'</h3><span class="maic-course-badge">'+escapeHTML(maicCoursesT('preparing'))+'</span></article>';
+ const ar=state.lang==='ar';const desc=ar?course.descriptionAr:course.descriptionEn;
+ return '<article class="maic-course-tile"><span class="maic-course-area">'+escapeHTML(ar?course.areaAr:course.areaEn)+'</span><h3>'+escapeHTML(ar?course.ar:course.en)+'</h3>'+(desc?'<p class="maic-course-description">'+escapeHTML(desc)+'</p>':'')+(course.duration?'<small class="maic-course-duration">'+escapeHTML(course.duration)+'</small>':'')+'<span class="maic-course-badge">'+escapeHTML(maicCoursesT('preparing'))+'</span></article>';
 }
 function renderCoursesPage(id){
  const mode=MAIC_COURSE_MODES.find(x=>x.route===id);
@@ -47,6 +47,6 @@ function renderCoursesPage(id){
  const courses=MAIC_COURSE_CATALOG.filter(x=>x.mode.includes(mode.id));
  const published=courses.filter(x=>x.status==='published');
  const preparing=courses.filter(x=>x.status==='preparing');
- const liveCards=published.map(c=>'<article class="maic-course-tile"><span class="maic-course-area">'+escapeHTML(state.lang==='ar'?c.areaAr:c.areaEn)+'</span><h3>'+escapeHTML(state.lang==='ar'?c.ar:c.en)+'</h3><button class="btn" type="button" data-nav="enrollment">'+escapeHTML(maicCoursesT('enrollInfo'))+'</button></article>').join('');
+ const liveCards=published.map(c=>{const description=state.lang==='ar'?c.descriptionAr:c.descriptionEn;return '<article class="maic-course-tile"><span class="maic-course-area">'+escapeHTML(state.lang==='ar'?c.areaAr:c.areaEn)+'</span><h3>'+escapeHTML(state.lang==='ar'?c.ar:c.en)+'</h3>'+(description?'<p class="maic-course-description">'+escapeHTML(description)+'</p>':'')+(c.duration?'<small class="maic-course-duration">'+escapeHTML(c.duration)+'</small>':'')+'<button class="btn" type="button" data-nav="enrollment">'+escapeHTML(maicCoursesT('enrollInfo'))+'</button></article>'}).join('');
  return '<div class="maic-courses-page">'+intro+'<section class="maic-course-content page-pad"><div class="maic-course-listing"><h2>'+escapeHTML(maicCoursesT('available'))+'</h2>'+(published.length?'<div class="maic-course-grid">'+liveCards+'</div>':'<p class="maic-course-empty" role="status">'+escapeHTML(maicCoursesT('empty'))+'</p>')+(preparing.length?'<h2 class="maic-course-upcoming-heading">'+escapeHTML(maicCoursesT('upcoming'))+'</h2><p class="maic-course-note">'+escapeHTML(maicCoursesT('planned'))+'</p><div class="maic-course-grid">'+preparing.map(maicCourseTile).join('')+'</div>':'')+'<div class="maic-course-info"><button class="btn" type="button" data-nav="enrollment">'+escapeHTML(maicCoursesT('enrollInfo'))+icon('chevron')+'</button></div><p class="maic-course-disclaimer">'+escapeHTML(maicCoursesT('certificate'))+' '+escapeHTML(maicCoursesT('details'))+'</p></div></section></div>';
 }
