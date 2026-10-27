@@ -33,3 +33,23 @@ dialog{width:min(710px,95vw);max-height:90vh;overflow-y:auto;border:1px solid #d
 #publishButton{white-space:nowrap}
 .studio-sidebar .side-hint{color:#aab9c5}
 @media(max-width:780px){.studio-top-actions{flex-wrap:wrap;justify-content:flex-end}#publishButton{font-size:12px;padding:7px 9px;min-height:34px}#adminLogout{font-size:12px;padding:7px 9px;min-height:34px}}
+
+/* Extended content editors */
+#editDialog{width:min(920px,96vw);max-height:min(94vh,1050px)}
+#editDialog .dialog-head{position:sticky;top:-26px;z-index:2;background:#fff;padding-top:12px}
+.editor-section{margin:0 0 24px;padding:0 0 24px;border-bottom:1px solid #e2e7e9}
+.editor-section:last-child{margin-bottom:0;padding-bottom:0;border-bottom:0}
+.editor-section h3{font-size:18px;color:#193b50;margin:0 0 14px}
+.editor-help{margin:4px 0 14px;color:#647888;font-size:13px;line-height:1.85}
+.editor-help.boxed{padding:12px 15px;border-radius:8px;border:1px solid #e2cc9b;background:#fffbef;color:#685226;margin-top:16px}
+.editor-section .edit-grid{align-items:start}
+.editor-section textarea{min-height:105px;line-height:1.65}
+.course-mode-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:11px}
+.course-mode-option{display:flex;gap:12px;align-items:flex-start;padding:17px 14px;border:1px solid #c9d5dc;border-radius:11px;cursor:pointer;background:#f9fbfc;min-width:0}
+.course-mode-option:has(input:checked){background:#fff6e4;border-color:#bc9356;box-shadow:inset 0 0 0 1px #bc93565e}
+.course-mode-option input{width:20px;height:20px;flex:none;accent-color:#b88e4b;margin:2px 0 0}
+.course-mode-copy{display:flex;flex-direction:column;gap:4px}
+.course-mode-copy strong{color:#193c53;font-size:15px}.course-mode-copy small{color:#4b6478;direction:ltr;text-align:right;font-size:12px}.course-mode-copy em{font-style:normal;font-size:12px;color:#5b6f7d;line-height:1.6}
+.agent-logo-preview{width:148px;height:148px;display:grid;place-items:center;border-radius:50%;overflow:hidden;background:#fffaf1;border:4px solid #c9a56d;box-shadow:0 6px 22px #0002;margin:10px auto 22px}
+.agent-logo-preview img{display:block;max-width:100%;max-height:100%;width:100%;height:100%;object-fit:contain}
+@media(max-width:700px){.course-mode-grid{grid-template-columns:1fr}.studio-edit-form{padding:20px}.editor-section{margin-bottom:18px;padding-bottom:18px}}
