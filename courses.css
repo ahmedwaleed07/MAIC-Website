@@ -40,3 +40,23 @@
 [lang=ar] .maic-course-tile .btn{align-self:flex-end}
 
 .maic-course-description{font-size:14px;line-height:1.75;color:#d4e0e9;margin:0 0 4px}.maic-course-duration{color:#dfbd82;font-size:12px}
+
+/* Individual course details created from MAIC Admin */
+.maic-course-details-btn{margin-top:auto;align-self:flex-start}
+.maic-detail-container{max-width:1090px;margin:0 auto}
+.maic-detail-facts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-bottom:32px}
+.maic-detail-fact{min-height:88px;display:flex;flex-direction:column;gap:8px;background:linear-gradient(145deg,#102d44,#092336);border:1px solid #bc935766;border-radius:9px;padding:17px 19px}
+.maic-detail-fact span{font-size:12px;color:#d4b785}
+.maic-detail-fact strong{font-size:17px;line-height:1.5;color:#f7ead6;overflow-wrap:anywhere}
+.maic-detail-section{border:1px solid #af8b5244;background:#0a2639;border-radius:10px;padding:23px 28px;margin:18px 0}
+.maic-detail-section h2{font:normal clamp(23px,2.5vw,30px)/1.35 Georgia,serif;color:#f5d8a7;margin:0 0 18px}
+.maic-detail-section ul{padding-inline-start:26px;margin:0;display:grid;gap:12px}
+.maic-detail-section li{color:#e2eaf1;line-height:1.85;white-space:pre-wrap}
+.maic-detail-payment{margin:28px 0 0;padding:24px 28px;border:1px solid #c3a26c66;border-radius:10px;background:#0f3042}
+.maic-detail-payment p{line-height:1.8;color:#dfebf3}
+.maic-detail-status{color:#f3d49b!important;font-size:14px}
+.maic-detail-payment .btn{margin-top:7px}
+[lang="ar"] .maic-course-details-btn{align-self:flex-end}
+[lang="ar"] .maic-detail-section h2{font-family:Amiri,"Noto Naskh Arabic",serif}
+@media(max-width:850px){.maic-detail-facts{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:520px){.maic-detail-facts{grid-template-columns:1fr}.maic-detail-section,.maic-detail-payment{padding:19px 17px}}
