@@ -45,7 +45,7 @@ function maicEnrollmentCountryNames(){
 }
 function maicEnrollmentAgentText(assigned){
   if(!assigned)return '<p>'+escapeHTML(maicEnrollT('selection'))+'</p>';
-  return '<div class="maic-enroll-agent-name">'+escapeHTML(assigned.agent.name)+'</div><span class="maic-enroll-assignment">'+escapeHTML(maicEnrollT(assigned.isFallback?'fallback':'local'))+'</span><p>'+escapeHTML(maicEnrollT('pay'))+'</p>';
+  return maicRenderAgentCard(assigned,state.lang==='ar')+'<p class="maic-agent-card-policy">'+escapeHTML(maicEnrollT('pay'))+'</p>';
 }
 function renderEnrollmentPage(){
  const course=MAIC_COURSE_CATALOG.map(c=>'<option value="'+escapeHTML(c.id)+'">'+escapeHTML(state.lang==='ar'?c.ar:c.en)+'</option>').join('');
