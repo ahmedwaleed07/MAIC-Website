@@ -129,3 +129,7 @@ main{min-height:calc(100vh - 280px)}.scene{isolation:isolate;position:relative;m
 [lang=ar] .michigan-lightbox-copy{text-align:right;direction:rtl}
 [lang=ar] .michigan-lightbox-close{right:auto;left:16px}
 @media(max-width:700px){.michigan-lightbox{padding:12px}.michigan-lightbox-panel{grid-template-columns:1fr;max-height:92vh}.michigan-lightbox-image{min-height:300px;height:42vh}.michigan-lightbox-copy{padding:24px 22px 30px}.michigan-lightbox-copy h2{font-size:30px}.michigan-lightbox-copy p{font-size:15px;line-height:1.7}.michigan-lightbox-close{top:10px;right:10px}[lang=ar] .michigan-lightbox-close{right:auto;left:10px}}
+
+/* Browser-only MAIC Studio preview indicator and simple editorial pages */
+.maic-studio-preview-ribbon{position:fixed;z-index:900;bottom:0;left:0;right:0;padding:9px 20px;background:#b08951;color:#041827;text-align:center;font:700 11px Georgia,serif;letter-spacing:.09em;box-shadow:0 -4px 20px #0005;pointer-events:none}
+.maic-cms-custom-page .content-panel{max-width:980px}.maic-cms-custom-page .content-panel p{white-space:pre-wrap;line-height:1.95;margin-bottom:22px}.maic-cms-newline{display:block}
