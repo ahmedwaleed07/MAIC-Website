@@ -1,0 +1,42 @@
+/* MAIC enrollment preview — no backend, no payments, no stored learner PII. */
+.maic-enrollment-page{background:#071b2d;min-height:70vh;color:#f6ead3}
+.maic-enrollment-hero{padding-top:70px;padding-bottom:55px;background:linear-gradient(90deg,#041627ec,#092438dc),url('./assets/michigan-heritage-montage.webp') center/cover;border-bottom:1px solid #bc91514d}
+.maic-enrollment-wrap{max-width:1130px;margin:auto}
+.maic-enrollment-wrap h1{font:normal clamp(36px,4.5vw,60px)/1.15 Georgia,serif;color:#f8ddad;margin:15px 0}
+.maic-enrollment-wrap>p{max-width:760px;font-size:17px;line-height:1.75;color:#e8eaf0}
+.maic-enrollment-disclaimer{margin-top:24px;border-left:3px solid #d8b16d;padding:14px 18px;background:#081e32cf;color:#f2e1c2;line-height:1.6}
+.maic-enrollment-body{padding-top:42px;padding-bottom:80px}
+.maic-enrollment-layout{max-width:1130px;margin:0 auto;display:grid;grid-template-columns:minmax(0,1.6fr) minmax(260px,.85fr);gap:28px;align-items:start}
+.maic-enrollment-form,.maic-enroll-explainer,.maic-enroll-summary{border:1px solid #b58f4c83;border-radius:10px;background:#0c263a;padding:clamp(20px,3vw,36px)}
+.maic-enroll-step+ .maic-enroll-step{border-top:1px solid #d8ae6a44;margin-top:28px;padding-top:26px}
+.maic-enrollment-form h2,.maic-enroll-explainer h2,.maic-enroll-summary h2{font:normal 27px/1.3 Georgia,serif;color:#f4d6a0;margin:0 0 20px}
+.maic-enrollment-form p{color:#d0dae3;line-height:1.65}
+.maic-enrollment-form label{display:flex;flex-direction:column;gap:8px;font-size:14px;font-weight:600;color:#e9e6df;margin-bottom:17px}
+.maic-enroll-fields{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 18px}
+.maic-enrollment-form input:not([type=checkbox]),.maic-enrollment-form select,.maic-enrollment-form textarea{width:100%;min-height:47px;border:1px solid #a69170;border-radius:5px;background:#fdfbf7;color:#152b3c;padding:10px 12px;font-family:inherit}
+.maic-enrollment-form textarea{resize:vertical}
+.maic-enroll-warning{font-size:13px;border:1px solid #a98b595e;background:#ad8b3320;border-radius:6px;padding:14px;margin:12px 0 0}
+.maic-enroll-agent{border:1px solid #c39b6299;border-radius:7px;padding:21px;background:linear-gradient(135deg,#0d334a,#0b2335)}
+.maic-enroll-agent>p{margin:10px 0 0}
+.maic-enroll-agent-name{font:normal 23px Georgia,serif;color:#f8d89d}
+.maic-enroll-assignment{display:inline-block;color:#d0dbe2;font-size:12px;margin-top:9px}
+.maic-enroll-ack{display:flex!important;flex-direction:row!important;align-items:flex-start;gap:12px!important;font-weight:400!important;line-height:1.65;margin:20px 0!important}
+.maic-enroll-ack input{width:18px;height:18px;margin-top:3px;flex:none}
+.maic-enroll-explainer{position:sticky;top:20px}
+.maic-enroll-explainer ol{list-style:none;padding:0;margin:24px 0}
+.maic-enroll-explainer li{display:flex;gap:12px;align-items:flex-start;line-height:1.55;margin-bottom:21px;color:#e3e8ec}
+.maic-enroll-explainer li span{width:28px;height:28px;flex:none;display:grid;place-items:center;border:1px solid #d8b16d;color:#f4d09a;border-radius:50%}
+.maic-enroll-explainer p{color:#bbccd7;font-size:13px;line-height:1.75}
+.maic-enroll-explainer button{margin-top:15px}
+.maic-enroll-summary{margin-top:23px;background:#0d3442}
+.maic-enroll-summary p{line-height:1.7}
+.maic-agent-directory-card{margin-top:24px;padding:25px;border-radius:8px;background:#102b40;border:1px solid #ab82493d;color:#f4ebd8}
+.maic-agent-directory-card h3{font:normal 25px Georgia,serif;color:#f3cf94;margin:0 0 10px}
+.maic-agent-directory-card p{line-height:1.75;margin:8px 0}
+.maic-agent-directory-card button{margin-top:12px}
+[lang="ar"] .maic-enrollment-page,[lang="ar"] .maic-agent-directory-card{text-align:right}
+[lang="ar"] .maic-enrollment-wrap h1,[lang="ar"] .maic-enrollment-form h2,[lang="ar"] .maic-enroll-explainer h2,[lang="ar"] .maic-enroll-summary h2,[lang="ar"] .maic-enroll-agent-name,[lang="ar"] .maic-agent-directory-card h3{font-family:Amiri,'Noto Naskh Arabic',serif}
+[lang="ar"] .maic-enrollment-disclaimer{border-left:0;border-right:3px solid #d8b16d}
+[lang="ar"] .maic-enroll-ack{direction:rtl}
+@media(max-width:860px){.maic-enrollment-layout{grid-template-columns:1fr}.maic-enroll-explainer{position:static}}
+@media(max-width:580px){.maic-enrollment-hero{padding-top:40px;padding-bottom:30px}.maic-enroll-fields{grid-template-columns:1fr}.maic-enrollment-body{padding-top:24px;padding-bottom:38px}.maic-enrollment-form,.maic-enroll-explainer{padding:19px}}
