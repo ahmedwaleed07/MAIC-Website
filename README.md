@@ -1,5 +1,11 @@
 # Michigan Academy of Innovation and Creativity (MAIC)
 
+## Content management
+
+MAIC now has a centrally published **Cloudflare Pages + D1** content catalog. The [MAIC Admin Studio](https://maic-website.pages.dev/admin/) supports owner login and revision-controlled publishing. Website changes appear to visitors after a refresh, while local unsaved drafts are isolated. See [Admin Studio documentation](admin/README.md).
+
+This is **content publishing only**; student authentication, agent payment evidence, actual enrollment, and MAIC-only activation still require a separately secured back end.
+
 ## Live pre-launch preview
 
 https://maic-website.pages.dev
