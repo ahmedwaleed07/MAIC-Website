@@ -1,26 +1,40 @@
-# MAIC Admin Studio — October 2026
+# MAIC Admin Studio — authenticated content publishing
 
-Visit `/admin/` on the MAIC Pages preview. This is an **interactive local-draft studio**, not a production CMS or authenticated administration system. The link is not included in the public menu. No privileged API keys or passwords are shipped to visitors.
+MAIC uses **Cloudflare Pages Functions** and its separate **US-jurisdiction D1** database (`maic-content`) for centrally published website content.
 
-## Capabilities implemented
+**Administrator URL:** https://maic-website.pages.dev/admin/
 
-- **Courses:** Add, edit, duplicate, archive, remove, and assign formats (self-paced, group class, one-to-one), bilingual labels, descriptions, subject, duration and preview-only publication state.
-- **Agents:** Edit official display details, circular logo path, website, contact email, telephone, country, city and state; assign active agents per country. Keep Unity Bridge active as US and default agent; Iraq currently uses ASAS 360° in project's planned assignments.
-- **Structure:** Reorder, rename and hide primary menu items in the local preview, without deleting the built-in page source.
-- **Pages:** Add, edit or delete bilingual simple-text custom pages in the local preview.
-- **Settings:** Export/import JSON, reset local drafts, open preview of the public site locally using `?cms-preview=1`.
+## Owner authentication
 
-Data is stored only in `localStorage` using key `maic_studio_draft_v1`. The public website reads this data **only** when the preview query flag is explicitly set and a valid local draft exists. Other visitors and public pages remain unchanged. Clearing browser storage clears drafts unless a JSON backup exists.
+- An administrator password is validated server-side by salted PBKDF2 SHA-256; it is not embedded in website scripts or repository files.
+- Session authentication uses a signed, short-lived (8h), `Secure; HttpOnly; SameSite=Strict` cookie. There is an origin check for state-changing requests, and a D1-backed rate limit on login attempts.
+- The admin screen remains hidden until a valid authenticated session is confirmed.
+- Cloudflare Access has not been enabled for this account. This is a standalone login; MAIC can later add Zero Trust/MFA for higher assurance. Rotate/bootstrap credentials by updating Cloudflare Pages secrets.
 
-## Security and deployment boundary
+## Editorial workflow
 
-The studio is publicly readable UI, but has **no server-side write endpoint**, no learner account access, no student PII, no payment processing, and no real publishing. **Do not interpret its appearance as access control.** Admin login and role-based access require a secure backend before production.
+1. Owner logs in to `/admin/`.
+2. Load the current published content (base revision).
+3. Add, edit, duplicate or remove courses; edit agents; reorder and hide menu items; create bilingual simple-text custom pages.
+4. Save draft to local browser; preview with `?cms-preview=1` or export JSON.
+5. Click **Publish**. The owner-only endpoint validates the content, checks the expected revision to avoid overwrites, stores it in D1, and writes a revision history entry.
+6. The public site reads `GET /api/content` on load; after refresh, visitors get the latest published version. If the service is unavailable, the original repository catalog remains as a fallback.
 
-To enable live publishing later, implement:
-1. Authenticate administrators with verified accounts and MFA; enforce authorization on the server.
-2. Durable MAIC content store (e.g. D1 with Cloudflare Pages Functions) and write API behind admin authorization.
-3. Validated input, server-side normalization, per-action audit log, versioned drafts, preview, and publish/revert operations.
-4. Public read endpoint serving *approved published* content, with the current static defaults as migration seed.
-5. Secure image upload and independent confirmation of agency authorization, course material licenses and instructor availability.
+**Important:** This CMS publishes catalog information and website layout, **not** student account activation, enrollment receipt verification, payment, group-class availability, Zoom links or certificates. All of those are still separate development work.
 
-Do not add an unauthenticated write API, frontend-only hardcoded password, client-side secret, or anonymous publishing token.
+## API routes
+
+- `GET /api/content`: public published content only
+- `POST /api/admin/login`: rate-limited owner password login
+- `GET /api/admin/session`: check authenticated status
+- `POST /api/admin/logout`: clear owner session
+- `GET /api/admin/content`: owner-only current document
+- `PUT /api/admin/content`: owner-only, validated revision-controlled publishing
+
+## Operational safeguards
+
+- Do not commit admin passwords, cookie-signing secrets, or service API tokens to GitHub.
+- Back up the JSON before making major changes.
+- Use Cloudflare Pages environment secrets and the `MAIC_DB` D1 binding for production.
+- Review the website after publishing; custom pages currently support plain text only, not rich text or arbitrary HTML.
+- Do not issue payments or accept students before authorized agents, courses, refund/terms and a secure LMS are approved.
