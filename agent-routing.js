@@ -34,5 +34,6 @@ function maicRenderAgentCard(assigned,ar){
  ];
  if(stateValue)details.push(['pin',label.state,safe(stateValue)]);
  const rows=details.map(([glyph,k,v])=>'<div class="maic-agent-detail">'+icon(glyph)+'<dt>'+safe(k)+'</dt><dd>'+v+'</dd></div>').join('');
- return '<article class="maic-agent-card" aria-label="'+safe(a.name)+'"><div class="maic-agent-card-top"><div class="maic-agent-logo-frame"><img src="'+safe(a.logo)+'" alt="'+safe(a.name)+' logo" width="144" height="144" loading="lazy" decoding="async" /></div><div class="maic-agent-ident"><span class="maic-agent-overline">MAIC · ENROLLMENT AGENT</span><h3>'+safe(a.name)+'</h3><p class="maic-agent-role">'+safe(assigned.isFallback?label.fallback:label.local)+'</p></div></div><dl class="maic-agent-details">'+rows+'</dl></article>';
+ const logo=a.logo?'<img src="'+safe(a.logo)+'" alt="'+safe(a.name)+' logo" width="144" height="144" loading="lazy" decoding="async" />':'<span class="maic-agent-logo-letters">'+safe(a.name.split(/\s+/).slice(0,2).map(x=>x.charAt(0)).join('').toUpperCase())+'</span>';
+ return '<article class="maic-agent-card" aria-label="'+safe(a.name)+'"><div class="maic-agent-card-top"><div class="maic-agent-logo-frame">'+logo+'</div><div class="maic-agent-ident"><span class="maic-agent-overline">MAIC · ENROLLMENT AGENT</span><h3>'+safe(a.name)+'</h3><p class="maic-agent-role">'+safe(assigned.isFallback?label.fallback:label.local)+'</p></div></div><dl class="maic-agent-details">'+rows+'</dl></article>';
 }
