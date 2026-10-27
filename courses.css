@@ -38,3 +38,5 @@
 
 .maic-course-info{max-width:1160px;margin:34px auto 0}.maic-course-tile .btn{margin-top:auto;align-self:flex-start}
 [lang=ar] .maic-course-tile .btn{align-self:flex-end}
+
+.maic-course-description{font-size:14px;line-height:1.75;color:#d4e0e9;margin:0 0 4px}.maic-course-duration{color:#dfbd82;font-size:12px}
