@@ -11,9 +11,9 @@
 <body>
 <section id="adminLogin" class="maic-admin-login" aria-label="تسجيل دخول إدارة MAIC">
  <form id="adminLoginForm" class="maic-login-panel">
-  <div class="login-logo"><span>MAIC</span><small>ADMINISTRATION</small></div>
+  <div class="login-logo"><span>MAIC</span><small>الإدارة</small></div>
   <h1>تسجيل دخول الإدارة</h1>
-  <p>هذه اللوحة مخصصة لإدارة أكاديمية MAIC فقط. سجّل دخولك حتى تگدر تعدّل وتنشر المحتوى.</p>
+  <p>هذه اللوحة مخصصة لإدارة محتوى الأكاديمية ونشره.</p>
   <label>مفتاح دخول المدير <input id="adminPassword" name="password" type="password" autocomplete="current-password" required minlength="20" placeholder="مفتاح الإدارة السري"/></label>
   <p id="adminLoginError" class="login-error" role="status"></p>
   <button class="btn primary" id="adminLoginSubmit" type="submit">دخول لوحة الإدارة</button>
@@ -22,17 +22,16 @@
 </section>
 <div class="studio-shell" hidden>
 <aside class="studio-sidebar">
-  <a class="studio-brand" href="../index.html" target="_blank" rel="noopener"><img src="../assets/maic-official-crest.png" alt="MAIC"/><span><b>MAIC</b><small>ADMIN STUDIO</small></span></a>
+  <a class="studio-brand" href="../index.html" target="_blank" rel="noopener"><img src="../assets/maic-crest-flat.svg" alt="MAIC"/><span><b>MAIC</b><small>لوحة الإدارة</small></span></a>
   <div class="studio-sidebar-head">إدارة محتوى الأكاديمية</div>
   <nav id="studioNav" aria-label="قائمة الإدارة">
     <button data-tab="overview" class="is-active"><span class="nav-icon">◫</span> نظرة عامة</button>
-    <button data-tab="courses"><span class="nav-icon">▤</span> إدارة الكورسات</button>
+    <button data-tab="courses"><span class="nav-icon">▤</span> إدارة الدورات</button>
     <button data-tab="agents"><span class="nav-icon">◎</span> الوكلاء</button>
-    <button data-tab="structure"><span class="nav-icon">☷</span> هيكلة الموقع</button>
-    <button data-tab="pages"><span class="nav-icon">▧</span> الصفحات المخصصة</button>
-    <button data-tab="settings"><span class="nav-icon">◇</span> المعاينة والنسخ</button>
+    <button data-tab="structure"><span class="nav-icon">☷</span> الصفحات والقائمة</button>
+    <button data-tab="settings"><span class="nav-icon">◇</span> النسخ والاستعادة</button>
   </nav>
-  <div class="studio-side-bottom"><span class="studio-status-light"></span> مساحة تطوير — ليست لوحة إنتاج<div class="side-hint">كل تعديل يبقى بجهازك فقط إلى حين ربط النشر الآمن.</div></div>
+  <div class="studio-side-bottom"><span class="studio-status-light"></span> إدارة محتوى الموقع<div class="side-hint">احفظ مسودتك، راجعها، ثم انشرها من الزر العلوي.</div></div>
 </aside>
 <div class="studio-workspace">
 <header class="studio-topbar">
@@ -40,12 +39,12 @@
   <div class="studio-top-title"><small>MICHIGAN ACADEMY OF INNOVATION AND CREATIVITY</small><strong id="studioTitle">نظرة عامة</strong></div>
   <div class="studio-top-actions"><span id="draftState" class="draft-state">جارِ تحميل المحتوى</span><button id="publishButton" class="btn primary" type="button">نشر التغييرات للموقع</button><button id="previewButton" class="btn" type="button">معاينة ↗</button><button id="adminLogout" class="btn secondary" type="button">خروج</button></div>
 </header>
-<div class="studio-alert"><strong>إدارة محتوى MAIC:</strong> التغييرات تنحفظ كمسودة على جهازك أولاً. من تضغط «نشر التغييرات للموقع» تنحفظ بقاعدة بيانات الأكاديمية ويشوفها زوار الموقع بعد تحديث الصفحة. هذا القسم لا يفعّل دخول الطلاب أو الدفع.</div>
+<div class="studio-alert"><strong>إدارة محتوى MAIC:</strong> احفظ تعديلاتك في المسودة، راجعها عبر المعاينة، ثم انشرها للزوار من الزر العلوي. حالة الحفظ تظهر بجانب زر النشر.</div>
 <main id="studioMain" tabindex="-1"></main>
 </div>
 </div>
 <dialog id="editDialog">
- <form id="editForm" class="studio-edit-form"><div class="dialog-head"><div><small id="dialogKicker">MAIC CONTENT EDITOR</small><h2 id="dialogTitle">تعديل المحتوى</h2></div><button id="dialogClose" class="close-btn" type="button" aria-label="إغلاق">✕</button></div><div id="dialogFields"></div><div class="dialog-actions"><button class="btn secondary" type="button" id="dialogCancel">إلغاء</button><button class="btn primary" type="submit">حفظ المسودة</button></div></form>
+ <form id="editForm" class="studio-edit-form"><div class="dialog-head"><div><small id="dialogKicker">محرر المحتوى</small><h2 id="dialogTitle">تعديل المحتوى</h2></div><button id="dialogClose" class="close-btn" type="button" aria-label="إغلاق">✕</button></div><div id="dialogFields"></div><div class="dialog-actions"><button class="btn secondary" type="button" id="dialogCancel">إلغاء</button><button class="btn primary" type="submit">حفظ المسودة</button></div></form>
 </dialog>
 <script src="../data/countries.js"></script>
 <script src="../agent-routing.js"></script>

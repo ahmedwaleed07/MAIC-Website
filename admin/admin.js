@@ -5,14 +5,14 @@ const $=s=>document.querySelector(s);
 const E=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const clone=x=>JSON.parse(JSON.stringify(x));
 const genId=p=>p+'-'+Date.now().toString(36)+'-'+Math.random().toString(36).slice(2,7);
-const mainNav=['home','michigan','courses','educators','learners','products','community','about','careers','agents','support','languages'];
+const mainNav=['home','courses','about','agents','support','contact','languages','michigan'];
 const nativeNames={
-home:['Home','الرئيسية'],michigan:['Michigan','ولاية مشيغان'],courses:['Courses','كورسات'],
-educators:['Educators and Organizations','المعلمون والمؤسسات'],learners:['Learners','المتعلمون'],products:['Learning Products','المنتجات التعليمية'],community:['Community','المجتمع'],about:['About Us','من نحن'],careers:['Careers','الوظائف'],agents:['Our Agents','وكلاؤنا'],support:['Support','الدعم'],languages:['Languages','اللغات']
+home:['Home','الرئيسية'],michigan:['Michigan','مشيغان'],courses:['Courses','الدورات'],
+educators:['Educators and Organizations','المعلمون والمؤسسات'],learners:['Learners','المتعلمون'],products:['Learning Products','المنتجات التعليمية'],community:['Community','المجتمع'],about:['About Us','من نحن'],careers:['Careers','الوظائف'],agents:['Our Agents','وكلاؤنا'],support:['Help & FAQ','المساعدة والأسئلة الشائعة'],languages:['Languages','اللغات'],contact:['Contact Us','تواصل معنا']
 };
 const initialCourses=clone(MAIC_COURSE_CATALOG),initialAgents=clone(MAIC_ENROLLMENT_AGENTS);
-const initial=()=>({version:1,courses:clone(initialCourses),agents:clone(initialAgents),nav:mainNav.map(id=>({id,en:nativeNames[id][0],ar:nativeNames[id][1],visible:true,contentEn:'',contentAr:''}))});
-let draft=initial(),tab='overview',editing='',serverVersion=0,serverDocument=null,authenticated=false;
+const initial=()=>({version:1,courses:clone(initialCourses),agents:clone(initialAgents),nav:mainNav.map(id=>({id,en:nativeNames[id][0],ar:nativeNames[id][1],visible:!['educators','learners','products','community','careers'].includes(id),contentEn:'',contentAr:''}))});
+let draft=initial(),tab='overview',editing='',serverVersion=0,serverDocument=null,authenticated=false,busy=false,courseQuery='',courseScope='current';
 function clean(v){
 if(!v||!Array.isArray(v.courses)||!Array.isArray(v.agents)||!Array.isArray(v.nav))throw Error('صيغة الملف غير صالحة.');
 if(v.courses.length>500||v.agents.length>150||v.nav.length>120)throw Error('الملف كبير جداً.');
@@ -33,28 +33,30 @@ for(const a of v.agents){
 if(!v.agents.some(a=>a.id==='unity-bridge'&&a.country==='US'&&a.active))throw Error('Unity Bridge يجب أن يبقى وكيل الولايات المتحدة والبديل الدولي.');
 if(v.agents.filter(a=>a.active).some((a,i,arr)=>arr.some((b,j)=>j!==i&&a.country===b.country)))throw Error('لا يجوز وجود وكيلين نشطين للبلد نفسه.');
 for(const n of v.nav)if(!n.id||!n.en||!n.ar||!/^(custom:)?[a-z0-9-]{2,80}$/.test(n.id))throw Error('بيانات صفحة غير صالحة.');
+v.nav=v.nav.filter(n=>!['educators','learners','products','community','careers'].includes(n.id)||n.contentAr||n.contentEn);
+if(!v.nav.some(n=>n.id==='contact'))v.nav.push({id:'contact',ar:'تواصل معنا',en:'Contact Us',visible:true,contentAr:'',contentEn:''});
 if(mainNav.some(id=>!v.nav.some(n=>n.id===id)))throw Error('صفحة أساسية مفقودة. يمكن إخفاؤها بدلاً من حذفها.');
 return clone(v);
 }
 try{const s=localStorage.getItem(KEY);if(s)draft=clean(JSON.parse(s))}catch(e){console.warn('MAIC preview draft invalid',e)}
 function note(s){let t=$('.toast');if(t)t.remove();t=document.createElement('div');t.className='toast';t.textContent=s;t.setAttribute('role','status');document.body.append(t);setTimeout(()=>t.remove(),2600)}
-function save(){try{draft=clean(draft);localStorage.setItem(KEY,JSON.stringify(draft));$('#draftState').textContent='مسودة لم تُنشر';render();note('تم الحفظ محلياً. اضغط نشر حتى تظهر التغييرات للزوار.');return true}catch(e){note(e.message);return false}}
+function save(){try{draft=clean(draft);localStorage.setItem(KEY,JSON.stringify(draft));render();note('تم الحفظ محلياً. اضغط نشر حتى تظهر التغييرات للزوار.');return true}catch(e){note(e.message);return false}}
 function btn(title,action,cls=''){return '<button type="button" class="btn '+cls+'" data-action="'+E(action)+'">'+E(title)+'</button>'}
 function head(title,sub,buttons=''){return '<div class="page-head"><div><h1>'+E(title)+'</h1><p>'+E(sub)+'</p></div><div class="page-actions">'+buttons+'</div></div>'}
-function tag(s){const labels={preparing:'قيد الإعداد',published:'منشور بالمعاينة',archived:'مؤرشف',active:'نشط',inactive:'غير نشط'};return '<span class="pill '+E(s)+'">'+E(labels[s]||s)+'</span>'}
+function tag(s){const labels={preparing:'قيد الإعداد',published:'ظاهر بالكتالوج',archived:'مؤرشف',active:'نشط',inactive:'غير نشط'};return '<span class="pill '+E(s)+'">'+E(labels[s]||s)+'</span>'}
 function format(m){return (m||[]).map(k=>({'self-paced':'ذاتي أونلاين',group:'جماعي مباشر','one-on-one':'فردي خاص'})[k]||k).join('، ')}
 function overview(){
- const published=draft.courses.filter(c=>c.status==='published').length;
- return head('نظرة عامة','إدارة كتالوج دورات MAIC ودليل الوكلاء وهيكلة الموقع',btn('إضافة كورس','new-course','primary')+btn('إضافة وكيل','new-agent'))+
- '<div class="metrics">'+[['إجمالي الكورسات',draft.courses.length],['منشور في المعاينة',published],['الوكلاء',draft.agents.length],['صفحات القائمة',draft.nav.length]].map(x=>'<div class="metric"><small>'+E(x[0])+'</small><strong>'+x[1]+'</strong><span>مسودة إدارة محتوى</span></div>').join('')+'</div>'+
- '<section class="panel"><h2>إدارة سريعة</h2><div class="page-actions">'+btn('الكورسات','tab:courses')+btn('الوكلاء','tab:agents')+btn('هيكلة القائمة','tab:structure')+btn('الصفحات','tab:pages')+'</div></section>'+
- '<section class="panel"><h2>نظام تسجيل المتعلّمين</h2><p>يدفع الطالب للوكيل المعتمد حصراً، والوكيل يؤكد الاستلام، وإدارة MAIC هي الوحيدة التي تفعّل الكورس. Unity Bridge Services LLC وكيل الولايات المتحدة والبديل الدولي.</p></section>';
+ const formats=new Set(draft.courses.filter(c=>c.status!=='archived').flatMap(c=>c.mode)).size;
+ return head('نظرة عامة','إدارة محتوى الأكاديمية من مساحة واحدة')+
+ '<div class="metrics">'+[['الدورات النشطة',draft.courses.filter(c=>c.status!=='archived').length],['صيغ التعلم',formats],['الوكلاء النشطون',draft.agents.filter(a=>a.active).length],['الصفحات الظاهرة',draft.nav.filter(n=>n.visible).length]].map(x=>'<div class="metric"><small>'+E(x[0])+'</small><strong>'+x[1]+'</strong></div>').join('')+'</div>'+
+ '<section class="panel"><h2>مسار العمل</h2><ol class="workflow-steps"><li>عدّل الدورات والوكلاء والصفحات من القائمة الجانبية.</li><li>احفظ المسودة داخل محرر المحتوى.</li><li>راجع النتيجة عبر زر المعاينة العلوي.</li><li>انشر التغييرات من زر النشر العلوي.</li></ol></section>'+
+ '<section class="panel"><h2>جاهزية الإطلاق</h2><p>الدورات الأولية تحتوي على أهداف ومحاور ومتطلبات. افتح التسجيل بعد رفع المواد التعليمية وتحديد الرسوم والمدة والمدرب.</p><p>واجهة الموقع متعددة اللغات. تعديل نصوص جديدة بعد هذه المراجعة يتطلب تحديث ترجماتها قبل الإطلاق.</p></section>';
 }
 function courses(){
-return head('إدارة الكورسات','أضف أو عدّل أو احذف الكورسات وحدد نوع التعلّم وحالة عرضها',btn('+ كورس جديد','new-course','primary'))+
- '<section class="panel"><h2>الكتالوج ('+draft.courses.length+')</h2><div class="table-wrap"><table class="data-table"><thead><tr><th>الدورة</th><th>الأنواع</th><th>التصنيف</th><th>الحالة</th><th>التحكم</th></tr></thead><tbody>'+
- draft.courses.map(c=>'<tr><td><b>'+E(c.ar)+'</b><small>'+E(c.en)+'</small></td><td>'+E(format(c.mode))+'</td><td>'+E(c.areaAr||c.areaEn||'—')+'</td><td>'+tag(c.status)+'</td><td><div class="actions">'+btn('تعديل','edit-course:'+c.id,'small')+btn('نسخ','copy-course:'+c.id,'small')+btn('حذف','remove-course:'+c.id,'small danger')+'</div></td></tr>').join('')+
- '</tbody></table></div></section><div class="callout">الدورات المنشورة في المسودة تظهر فقط بمعاينة جهازك؛ لا يوجد تسجيل حقيقي ولا تحصيل رسوم على الموقع.</div>';
+return head('إدارة الدورات','أضف أو عدّل أو احذف الدورات وحدد نوع التعلّم وحالة عرضها',btn('+ دورة جديدة','new-course','primary'))+
+ '<section class="panel"><label class="admin-filter">بحث في الدورات<input id="courseFilter" type="search" value="'+E(courseQuery)+'" placeholder="اسم الدورة أو التصنيف" /></label><label class="admin-filter">العرض<select id="courseScope"><option value="current" '+(courseScope==='current'?'selected':'')+'>الدورات الحالية</option><option value="archived" '+(courseScope==='archived'?'selected':'')+'>الأرشيف</option><option value="all" '+(courseScope==='all'?'selected':'')+'>الكل</option></select></label><h2>الكتالوج ('+draft.courses.length+')</h2><div class="table-wrap"><table class="data-table"><thead><tr><th>الدورة</th><th>الأنواع</th><th>التصنيف</th><th>الحالة</th><th>التحكم</th></tr></thead><tbody>'+
+ draft.courses.filter(c=>courseScope==='all'||(courseScope==='archived'?c.status==='archived':c.status!=='archived')).filter(c=>(c.ar+' '+c.en+' '+c.areaAr+' '+c.areaEn).toLowerCase().includes(courseQuery.toLowerCase())).map(c=>'<tr><td><b>'+E(c.ar)+'</b><small>'+E(c.en)+'</small></td><td>'+E(format(c.mode))+'</td><td>'+E(c.areaAr||c.areaEn||'—')+'</td><td>'+tag(c.status)+'</td><td><div class="actions">'+btn('تعديل','edit-course:'+c.id,'small')+btn('حذف','remove-course:'+c.id,'small danger')+'</div></td></tr>').join('')+
+ '</tbody></table></div></section><div class="callout">حالة الدورة تحدد عرضها في الكتالوج. الحفظ يحدّث المسودة؛ زر النشر العلوي يحدّث الموقع. الدورات المؤرشفة لا تظهر للزوار.</div>';
 }
 function agents(){
 return head('إدارة الوكلاء','الاسم والشعار والبلد والمدينة والموقع والإيميل والهاتف والتخصيص',btn('+ وكيل جديد','new-agent','primary'))+
@@ -66,26 +68,19 @@ return '<article class="agent-box"><div class="agent-header"><img src="'+E(image
  '<div class="callout">Unity Bridge هو الوكيل الأمريكي والبديل الدولي، لذلك يبقى فعال دائماً. التعديل والحذف هنا لا يغيّران عقود الاعتماد الحقيقية.</div>';
 }
 function structure(){
-return head('هيكلة القائمة','رتب الأقسام الرئيسية وعدل عنوانها أو أخفها من القائمة',btn('معاينة','preview'))+
+return head('الصفحات والقائمة','مكان واحد لإدارة العناوين والترتيب والمحتوى والظهور',btn('+ صفحة جديدة','new-page','primary'))+
  '<section class="panel"><h2>ترتيب عناصر القائمة</h2><div class="structure-list">'+draft.nav.map((n,i)=>
- '<div class="structure-row"><span class="structure-num">'+(i+1)+'</span><div class="structure-label"><b>'+E(n.ar)+'</b><small>'+E(n.en)+' · '+E(n.id)+'</small></div><div class="structure-tools"><label><input type="checkbox" data-visible="'+E(n.id)+'" '+(n.visible?'checked':'')+' /> ظاهر</label>'+btn('↑','up:'+n.id,'small')+btn('↓','down:'+n.id,'small')+btn('تعديل','edit-nav:'+n.id,'small')+'</div></div>').join('')+'</div></section><div class="callout">إخفاء عنصر يعني إخفاءه من القائمة، مو حذف الصفحة الأصلية من كود الموقع.</div>';
-}
-function pages(){
-const custom=draft.nav.filter(x=>x.id.startsWith('custom:'));
-return head('الصفحات الإضافية','أضف صفحات نصية بسيطة للعربي والإنكليزي',btn('+ صفحة جديدة','new-page','primary'))+
- '<section class="panel"><h2>صفحات مخصصة ('+custom.length+')</h2>'+(custom.length?custom.map(n=>
- '<div class="structure-row"><div class="structure-label"><b>'+E(n.ar)+'</b><small>'+E(n.en)+'</small></div>'+tag(n.visible?'active':'inactive')+
- '<div class="actions">'+btn('تعديل','edit-nav:'+n.id,'small')+btn('حذف','remove-page:'+n.id,'small danger')+'</div></div>').join(''):'<p>ماكو صفحات إضافية بعد. أضف صفحة تعريفية أو خدمة أو قسم جديد.</p>')+'</section>';
+ '<div class="structure-row"><span class="structure-num">'+(i+1)+'</span><div class="structure-label"><b>'+E(n.ar)+'</b><small>'+E(n.en)+' · '+E(n.id)+'</small></div><div class="structure-tools"><label><input type="checkbox" data-visible="'+E(n.id)+'" '+(n.visible?'checked':'')+' /> ظاهر</label>'+(i>0?btn('↑','up:'+n.id,'small'):'')+(i<draft.nav.length-1?btn('↓','down:'+n.id,'small'):'')+btn('تعديل','edit-nav:'+n.id,'small')+(n.id.startsWith('custom:')?btn('حذف','remove-page:'+n.id,'small danger'):'')+'</div></div>').join('')+'</div></section><div class="callout">إخفاء عنصر يعني إخفاءه من القائمة، مو حذف الصفحة الأصلية من كود الموقع.</div>';
 }
 function settings(){
-return head('المعاينة والنسخ','تحكم بالتعديلات المنشورة والمسودات المحفوظة')+
- '<section class="panel"><h2>معاينة حية على جهازك</h2><p>تگدر تشوف التغييرات بفتح الموقع من أزرار المعاينة. المسودة ما تنشر لزوار الموقع الآخرين.</p><div class="page-actions">'+btn('معاينة الرئيسية','preview','primary')+btn('معاينة الكورسات','preview-courses')+btn('معاينة الوكلاء','preview-agents')+'</div></section>'+
- '<section class="panel"><h2>تصدير واستيراد</h2><div class="page-actions">'+btn('تصدير JSON','export','primary')+btn('استيراد JSON','import')+btn('استرجاع الأصل','reset','danger')+'</div><input type="file" id="importFile" accept=".json,application/json" hidden /><textarea class="code-preview" readonly>'+E(JSON.stringify(draft,null,2))+'</textarea></section>'+
- '<section class="panel"><h2>نشر التعديلات للموقع الحقيقي</h2><p>النسخة المنشورة الحالية رقم '+serverVersion+'. عند النشر ينتقل كتالوج الكورسات والوكلاء والقائمة إلى قاعدة بيانات MAIC. تگدر تستخدم زر «تحميل المحتوى المنشور» للتراجع عن مسودتك الحالية.</p><div class="page-actions">'+btn('نشر المسودة الآن','publish','primary')+btn('تحميل آخر محتوى منشور','load-live')+'</div></section>';
+return head('النسخ والاستعادة','نسخة احتياطية من المسودة أو استعادة المحتوى المنشور')+
+ '<section class="panel"><h2>حفظ نسخة احتياطية واستيرادها</h2><p>صدّر المسودة قبل تغييرات كبيرة. الاستيراد يستبدل المسودة بعد التأكيد ولا ينشر تلقائياً.</p><div class="page-actions">'+btn('تصدير المسودة','export','primary')+btn('استيراد نسخة','import')+'</div><input type="file" id="importFile" accept=".json,application/json" hidden /></section>'+
+ '<section class="panel"><h2>استعادة المحتوى المنشور</h2><p>نسخة الموقع المنشورة رقم '+serverVersion+'. استعادتها تستبدل المسودة المحلية فقط.</p><div class="page-actions">'+btn('استعادة آخر نسخة منشورة','load-live')+'</div></section>';
 }
-const views={overview,courses,agents,structure,pages,settings};
-const titles={overview:'نظرة عامة',courses:'إدارة الكورسات',agents:'الوكلاء',structure:'هيكلة الموقع',pages:'الصفحات',settings:'المعاينة والنسخ'};
-function render(){$('#studioMain').innerHTML=views[tab]();$('#studioTitle').textContent=titles[tab];document.querySelectorAll('#studioNav [data-tab]').forEach(b=>b.classList.toggle('is-active',b.dataset.tab===tab))}
+const views={overview,courses,agents,structure,settings};
+const titles={overview:'نظرة عامة',courses:'إدارة الدورات',agents:'الوكلاء',structure:'الصفحات والقائمة',settings:'النسخ والاستعادة'};
+function syncState(){const dirty=!serverDocument||JSON.stringify(draft)!==JSON.stringify(serverDocument);$('#draftState').textContent=busy?'جارٍ النشر':dirty?'مسودة غير منشورة':'محدّث · الإصدار '+serverVersion;$('#publishButton').disabled=busy||!authenticated||!serverDocument||!dirty;}
+function render(){syncState();$('#studioMain').innerHTML=views[tab]();$('#studioTitle').textContent=titles[tab];document.querySelectorAll('#studioNav [data-tab]').forEach(b=>b.classList.toggle('is-active',b.dataset.tab===tab))}
 function switchTab(t){if(!views[t])return;tab=t;render();$('.studio-sidebar').classList.remove('is-open')}
 function field(label,key,v='',type='text',required=false,wide=false){
 return '<label class="'+(wide?'full':'')+'">'+E(label)+'<input type="'+type+'" name="'+E(key)+'" value="'+E(v??'')+'" maxlength="300" '+(required?'required':'')+' /></label>';
@@ -97,18 +92,18 @@ editing=kind+'|'+id;
 let fields='',title='';
 if(kind==='course'){
  const c=draft.courses.find(x=>x.id===id)||{ar:'',en:'',areaAr:'',areaEn:'',descriptionAr:'',descriptionEn:'',objectivesAr:'',objectivesEn:'',syllabusAr:'',syllabusEn:'',requirementsAr:'',requirementsEn:'',instructor:'',duration:'',level:'all',courseLanguage:'ar',feeAmount:'',feeCurrency:'USD',mode:['self-paced'],status:'preparing'};
- title=id?'تعديل تفاصيل الكورس':'إضافة كورس جديد';
- fields='<section class="editor-section"><h3>١. معلومات الكورس</h3><div class="edit-grid">'+
- field('اسم الكورس بالعربي *','ar',c.ar,'text',true)+field('Course name (English) *','en',c.en,'text',true)+
+ title=id?'تعديل تفاصيل الدورة':'إضافة دورة جديدة';
+ fields='<section class="editor-section"><h3>١. معلومات الدورة</h3><div class="edit-grid">'+
+ field('اسم الدورة بالعربي *','ar',c.ar,'text',true)+field('Course name (English) *','en',c.en,'text',true)+
  field('التصنيف بالعربي','areaAr',c.areaAr)+field('Category in English','areaEn',c.areaEn)+
- textarea('نبذة عن الكورس بالعربي','descriptionAr',c.descriptionAr)+textarea('Course summary in English','descriptionEn',c.descriptionEn)+
+ textarea('نبذة عن الدورة بالعربي','descriptionAr',c.descriptionAr)+textarea('Course summary in English','descriptionEn',c.descriptionEn)+
  '</div></section>'+
- '<section class="editor-section"><h3>٢. نوع الدورة وطريقة تقديمها *</h3><p class="editor-help">تگدر تختار نوع واحد أو أكثر؛ الكورس يظهر تحت كل نوع تحدده في قائمة الموقع.</p>'+
+ '<section class="editor-section"><h3>٢. نوع الدورة وطريقة تقديمها *</h3><p class="editor-help">تگدر تختار نوع واحد أو أكثر؛ الدورة يظهر تحت كل نوع تحدده في قائمة الموقع.</p>'+
  '<div class="course-mode-grid">'+MAIC_COURSE_MODES.map((m,i)=>'<label class="course-mode-option"><input type="checkbox" name="mode" value="'+E(m.id)+'" '+(c.mode.includes(m.id)?'checked':'')+' /><span class="course-mode-copy"><strong>'+E(m.ar)+'</strong><small>'+E(m.en)+'</small><em>'+E(['دروس مسجلة ومواد واختبارات داخل الموقع','محاضر مباشر مع مجموعة طلبة بموعد محدد','مدرب مع طالب واحد بشكل خاص'][i])+'</em></span></label>').join('')+'</div></section>'+
  '<section class="editor-section"><h3>٣. معلومات الدراسة</h3><div class="edit-grid">'+
  select('مستوى الدورة','level',c.level||'all',[['all','جميع المستويات'],['beginner','مبتدئ'],['intermediate','متوسط'],['advanced','متقدم']])+
  select('لغة تقديم الدورة','courseLanguage',c.courseLanguage||'ar',[['ar','العربية'],['en','الإنكليزية'],['bilingual','العربية والإنكليزية'],['other','لغة أخرى']])+
- field('مدة الكورس (مثلاً: 6 أسابيع)','duration',c.duration)+
+ field('مدة الدورة (مثلاً: 6 أسابيع)','duration',c.duration)+
  field('اسم المحاضر / المدرب','instructor',c.instructor)+
  textarea('الأهداف التعليمية (كل هدف بسطر) — عربي','objectivesAr',c.objectivesAr)+
  textarea('Learning objectives — English','objectivesEn',c.objectivesEn)+
@@ -120,7 +115,7 @@ if(kind==='course'){
  '<section class="editor-section"><h3>٤. الرسوم وحالة النشر</h3><div class="edit-grid">'+
  field('رسوم الدورة (اختياري — دفع للوكيل حصراً)','feeAmount',c.feeAmount,'text')+
  select('عملة الرسوم','feeCurrency',c.feeCurrency||'USD',[['USD','USD · دولار أمريكي'],['IQD','IQD · دينار عراقي'],['EUR','EUR · يورو'],['GBP','GBP · جنيه إسترليني'],['CAD','CAD · دولار كندي'],['AED','AED · درهم إماراتي'],['SAR','SAR · ريال سعودي']])+
- select('حالة عرض الكورس','status',c.status,[['preparing','قيد الإعداد'],['published','منشور بكتالوج الموقع'],['archived','مؤرشف / غير ظاهر']])+
+ select('حالة عرض الدورة','status',c.status,[['preparing','قيد الإعداد'],['published','منشور بكتالوج الموقع'],['archived','مؤرشف / غير ظاهر']])+
  '</div><div class="editor-help boxed">الرسوم تظهر كمعلومات فقط. الدفع يبقى للوكيل المعتمد، وتفعيل الدورة حصراً من إدارة MAIC. نشر الدورة هنا ما يعني فتح التسجيل الإلكتروني.</div></section>';
 }
 if(kind==='agent'){
@@ -216,7 +211,7 @@ async function loadLive(force=false){
    draft=clone(serverDocument);
    localStorage.setItem(KEY,JSON.stringify(draft));
   }
-  $('#draftState').textContent='النسخة المنشورة رقم '+serverVersion;
+  if(JSON.stringify(draft)!==JSON.stringify(serverDocument))note('توجد مسودة محلية مختلفة. راجعها قبل النشر، أو استعد النسخة المنشورة من النسخ والاستعادة.');
   render();
  }catch(err){
   if(err.status===401){showLogin('انتهت جلسة الإدارة؛ يرجى تسجيل الدخول مجدداً.');return}
@@ -246,10 +241,11 @@ async function logoutAdmin(){
  showLogin('تم تسجيل الخروج من الإدارة.');
 }
 async function publish(){
+ if(busy)return;
  if(!authenticated||!serverVersion){note('تحتاج جلسة إدارة صالحة قبل النشر.');return}
  let validated;try{validated=clean(draft)}catch(err){note('راجع البيانات أولاً: '+err.message);return}
  if(!confirm('تأكيد نشر التعديلات على موقع MAIC لجميع الزوار؟'))return;
- const btn=$('#publishButton');btn.disabled=true;btn.textContent='جاري النشر...';
+ busy=true;const btn=$('#publishButton');btn.disabled=true;btn.textContent='جاري النشر...';
  try{
   const result=await serverCall('/api/admin/content',{method:'PUT',headers:{'Content-Type':'application/json'},body:JSON.stringify({document:validated,expectedVersion:serverVersion})});
   serverVersion=result.version;serverDocument=clone(validated);draft=clone(validated);
@@ -259,7 +255,7 @@ async function publish(){
   if(err.status===401){showLogin('انتهت جلسة الدخول قبل النشر.');return}
   if(err.status===409){note('صار تعديل أحدث على الموقع. حمّل النسخة المنشورة وراجع تغييراتك قبل إعادة النشر.')}
   else note('تعذر النشر: '+err.message);
- }finally{btn.disabled=false;btn.textContent='نشر التغييرات للموقع'}
+ }finally{busy=false;btn.textContent='نشر التغييرات للموقع';syncState()}
 }
 
 function exportJson(){
@@ -272,7 +268,6 @@ function clickAction(a){
  if(a==='new-agent')return openEditor('agent');
  if(a==='new-page')return openEditor('nav');
  if(kind==='edit-course')return openEditor('course',id);
- if(kind==='copy-course'){const c=draft.courses.find(x=>x.id===id);if(!c)return;draft.courses.push({...clone(c),id:genId('course'),ar:c.ar+' (نسخة)',en:c.en+' (Copy)',status:'preparing'});return save()}
  if(kind==='edit-agent')return openEditor('agent',id);
  if(kind==='edit-nav')return openEditor('nav',id);
  if(kind==='remove-course')return remove('course',id);
@@ -281,23 +276,20 @@ function clickAction(a){
  if(kind==='up')return move(id,-1);
  if(kind==='down')return move(id,1);
  if(a==='preview')return preview();
- if(a==='preview-courses')return preview('courses');
- if(a==='preview-agents')return preview('agents');
  if(a==='export')return exportJson();
- if(a==='publish')return publish();
  if(a==='load-live')return loadLive(true);
  if(a==='import')return $('#importFile').click();
- if(a==='reset'){if(!confirm('استرجاع الأصل وحذف تعديلات مسودتك؟'))return;draft=initial();save()}
 }
 document.addEventListener('click',e=>{const a=e.target.closest('[data-action]');if(a)return clickAction(a.dataset.action);const n=e.target.closest('[data-tab]');if(n)return switchTab(n.dataset.tab)});
 document.addEventListener('change',e=>{
+ if(e.target.id==='courseScope'){courseScope=e.target.value;render();return}
  const vis=e.target.closest('[data-visible]');if(vis){const n=draft.nav.find(x=>x.id===vis.dataset.visible);if(n){n.visible=vis.checked;save()}}
  if(e.target.id==='importFile'){
  const f=e.target.files[0];if(!f)return;if(f.size>400000){note('حجم الملف كبير جداً.');return}
  const r=new FileReader();r.onload=()=>{try{const p=clean(JSON.parse(r.result));if(!confirm('استبدال مسودتك الحالية؟'))return;draft=p;save()}catch(err){note(err.message)}};r.readAsText(f);e.target.value='';
  }
 });
-document.addEventListener('input',e=>{if(e.target?.name==='logo'&&editing.startsWith('agent|')){const img=$('#agentLogoPreview');if(img){const value=e.target.value.trim();if(value.startsWith('https://')||value.startsWith('./assets/agents/')||value.startsWith('/assets/agents/'))img.src=value.replace(/^\.\/assets\//,'../assets/');}}});
+document.addEventListener('input',e=>{if(e.target.id==='courseFilter'){courseQuery=e.target.value;const pos=e.target.selectionStart;render();const el=$('#courseFilter');el.focus();el.setSelectionRange(pos,pos);return}if(e.target?.name==='logo'&&editing.startsWith('agent|')){const img=$('#agentLogoPreview');if(img){const value=e.target.value.trim();if(value.startsWith('https://')||value.startsWith('./assets/agents/')||value.startsWith('/assets/agents/'))img.src=value.replace(/^\.\/assets\//,'../assets/');}}});
 $('#editForm').addEventListener('submit',editSave);
 $('#dialogClose').addEventListener('click',()=>$('#editDialog').close());
 $('#dialogCancel').addEventListener('click',()=>$('#editDialog').close());

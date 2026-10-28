@@ -53,3 +53,8 @@ dialog{width:min(710px,95vw);max-height:90vh;overflow-y:auto;border:1px solid #d
 .agent-logo-preview{width:148px;height:148px;display:grid;place-items:center;border-radius:50%;overflow:hidden;background:#fffaf1;border:4px solid #c9a56d;box-shadow:0 6px 22px #0002;margin:10px auto 22px}
 .agent-logo-preview img{display:block;max-width:100%;max-height:100%;width:100%;height:100%;object-fit:contain}
 @media(max-width:700px){.course-mode-grid{grid-template-columns:1fr}.studio-edit-form{padding:20px}.editor-section{margin-bottom:18px;padding-bottom:18px}}
+
+/* Review pass: one publish control, one preview control, merged page management. */
+.admin-filter{display:flex;flex-direction:column;gap:9px;max-width:520px;margin-bottom:22px}.admin-filter input{padding:12px;border:1px solid #bdc6cd;border-radius:6px;font:inherit;background:#fff;color:#142c3e}.workflow-steps{line-height:2.4;padding-inline-start:25px}.studio-top-actions{flex-wrap:wrap}.structure-tools{flex-wrap:wrap}.studio-brand img{object-fit:contain}.studio-side-bottom{line-height:1.8}.studio-alert{font-size:13px}.data-table td{vertical-align:middle}.data-table .actions{flex-wrap:nowrap}.studio-topbar{gap:16px}@media(max-width:650px){.studio-topbar{align-items:flex-start}.studio-top-actions{gap:6px}.studio-top-actions .btn{font-size:11px;padding:9px}.studio-top-title small{display:none}.structure-row{align-items:flex-start;gap:12px}}
+
+.admin-filter select{padding:11px;border:1px solid #bdc6cd;border-radius:6px;background:#fff;color:#142c3e;font:inherit}

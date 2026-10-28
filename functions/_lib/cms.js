@@ -98,7 +98,7 @@ export function validateDocument(src){
  if(!str(n.ar,100)||!str(n.en,100))throw Error('Menu title required');
  return {id:n.id,ar:str(n.ar,100),en:str(n.en,100),visible:n.visible!==false,contentAr:str(n.contentAr,5000),contentEn:str(n.contentEn,5000)};
  });
- const required=['home','michigan','courses','educators','learners','products','community','about','careers','agents','support','languages'];
+ const required=['home','courses','about','agents','support','contact','languages','michigan'];
  if(required.some(id=>!ids.has(id)))throw Error('Missing required menu');
  return {version:1,courses,agents,nav};
 }
