@@ -112,7 +112,20 @@
     "crestAlt": "Emblém akademie MAIC",
     "sealAlt": "Emblém Spojených států",
     "preview": "Náhled na místní návrh",
-    "networkError": "Stránka se nemohla načíst. Obnovte a zkuste to znovu."
+    "networkError": "Stránka se nemohla načíst. Obnovte a zkuste to znovu.",
+    "library": "Knihovna MAIC",
+    "libraryIntro": "Prohlédněte si bezplatné i placené knihy podle oboru",
+    "libraryBusiness": "Řízení podniků",
+    "libraryOrganizations": "Řízení organizací",
+    "exploreBooks": "Prohlédnout knihy",
+    "free": "Zdarma",
+    "paid": "Placené",
+    "allBooks": "Všechny knihy",
+    "noBooks": "Knihy se zde zobrazí po zveřejnění",
+    "readBook": "Číst knihu",
+    "requestBook": "Dotaz k této knize",
+    "backLibrary": "Zpět do knihovny",
+    "preferenceHint": "Vyberte jazyk a zemi pobytu pro relevantní obsah a nabídky. Volby se ukládají na tomto zařízení."
   },
   "text": {
     "Home": "Domů",

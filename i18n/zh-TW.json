@@ -112,7 +112,20 @@
     "crestAlt": "MAIC學院徽章",
     "sealAlt": "美國徽章",
     "preview": "當地草案預覽",
-    "networkError": "此頁面無法加載。請刷新並重試。"
+    "networkError": "此頁面無法加載。請刷新並重試。",
+    "library": "MAIC圖書館",
+    "libraryIntro": "按專業領域瀏覽免費和付費圖書",
+    "libraryBusiness": "企業管理",
+    "libraryOrganizations": "組織管理",
+    "exploreBooks": "瀏覽圖書",
+    "free": "免費",
+    "paid": "付費",
+    "allBooks": "所有圖書",
+    "noBooks": "圖書發布後將在此顯示",
+    "readBook": "閱讀圖書",
+    "requestBook": "洽詢此書",
+    "backLibrary": "返回圖書館",
+    "preferenceHint": "請選擇語言和居住國，以查看相關內容與優惠。您的選擇將儲存在此裝置上。"
   },
   "text": {
     "Home": "首頁",

@@ -5,14 +5,31 @@ const $=s=>document.querySelector(s);
 const E=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const clone=x=>JSON.parse(JSON.stringify(x));
 const genId=p=>p+'-'+Date.now().toString(36)+'-'+Math.random().toString(36).slice(2,7);
-const mainNav=['home','courses','about','agents','support','contact','languages','michigan'];
+const mainNav=['home','library','courses','about','agents','support','contact','languages','michigan'];
 const nativeNames={
-home:['Home','الرئيسية'],michigan:['Michigan','مشيغان'],courses:['Courses','الدورات'],
+library:['MAIC Library','مكتبة MAIC'],home:['Home','الرئيسية'],michigan:['Michigan','مشيغان'],courses:['Courses','الدورات'],
 educators:['Educators and Organizations','المعلمون والمؤسسات'],learners:['Learners','المتعلمون'],products:['Learning Products','المنتجات التعليمية'],community:['Community','المجتمع'],about:['About Us','من نحن'],careers:['Careers','الوظائف'],agents:['Our Agents','وكلاؤنا'],support:['Help & FAQ','المساعدة والأسئلة الشائعة'],languages:['Languages','اللغات'],contact:['Contact Us','تواصل معنا']
 };
 const initialCourses=clone(MAIC_COURSE_CATALOG),initialAgents=clone(MAIC_ENROLLMENT_AGENTS);
-const initial=()=>({version:1,courses:clone(initialCourses),agents:clone(initialAgents),nav:mainNav.map(id=>({id,en:nativeNames[id][0],ar:nativeNames[id][1],visible:!['educators','learners','products','community','careers'].includes(id),contentEn:'',contentAr:''}))});
+const initial=()=>({version:1,books:[],messages:[],courses:clone(initialCourses),agents:clone(initialAgents),nav:mainNav.map(id=>({id,en:nativeNames[id][0],ar:nativeNames[id][1],visible:!['educators','learners','products','community','careers'].includes(id),contentEn:'',contentAr:''}))});
 let draft=initial(),tab='overview',editing='',serverVersion=0,serverDocument=null,authenticated=false,busy=false,courseQuery='',courseScope='current';
+function books(){return head('مكتبة MAIC','إضافة الكتب وتصنيفها وتحديد المجاني والمدفوع',btn('+ كتاب جديد','new-book','primary'))+'<section class="panel"><div class="table-wrap"><table class="data-table"><thead><tr><th>الكتاب</th><th>التخصص</th><th>الإتاحة</th><th>الحالة</th><th>التحكم</th></tr></thead><tbody>'+draft.books.map(b=>'<tr><td>'+E(b.titleAr)+'<small>'+E(b.titleEn)+'</small></td><td>'+E(bookCategoryLabel(b.category))+'</td><td>'+E(b.access==='free'?'مجاني':b.price+' '+b.currency)+'</td><td>'+E(b.active?'ظاهر':'مخفي')+'</td><td>'+btn('تعديل','edit-book:'+b.id,'small')+btn('حذف','remove-book:'+b.id,'small danger')+'</td></tr>').join('')+'</tbody></table></div><p>الكتب المجانية تفتح الرابط الذي تضيفه. الكتب المدفوعة تعرض السعر وتتيح الاستفسار لدى الوكيل المخصص؛ لا تُستحصل مدفوعات عبر الموقع.</p></section>'}
+const bookCategories=[['business','إدارة الأعمال'],['projects','إدارة المشاريع'],['organizations','إدارة المؤسسات'],['hr','الموارد البشرية']];
+function bookCategoryLabel(id){return bookCategories.find(c=>c[0]===id)?.[1]||id}
+const messageRegions={gulf:['BH','KW','OM','QA','SA','AE'],arab:['DZ','BH','KM','DJ','EG','IQ','JO','KW','LB','LY','MR','MA','OM','PS','QA','SA','SO','SD','SY','TN','AE','YE'],europe:['AT','BE','BG','HR','CY','CZ','DK','EE','FI','FR','DE','GR','HU','IE','IT','LV','LT','LU','MT','NL','PL','PT','RO','SK','SI','ES','SE']};
+function messages(){return head('الرسائل والعروض','استهداف بلد واحد أو مجموعة بلدان أو جميع الزوار',btn('+ رسالة جديدة','new-message','primary'))+'<section class="panel">'+draft.messages.map(m=>'<article><h2>'+E(m.titleAr)+'</h2><p>'+E(m.bodyAr)+'</p><p>'+E(m.countries.length?m.countries.map(c=>new Intl.DisplayNames(['ar'],{type:'region'}).of(c)).join('، '):'جميع البلدان')+' · '+E(m.active?'مفعّلة':'غير مفعّلة')+'</p>'+btn('تعديل','edit-message:'+m.id,'small')+btn('حذف','remove-message:'+m.id,'small danger')+'</article>').join('')+'<p>تظهر الرسالة حسب بلد الإقامة الذي يختاره الزائر، وليس بناءً على تحديد موقعه تلقائياً. تُسجّل مواعيد النشر والانتهاء بتوقيت UTC.</p></section>'}
+function validateExtras(v){
+ v.books??=[];v.messages??=[];
+ if(!Array.isArray(v.books)||!Array.isArray(v.messages)||v.books.length>300||v.messages.length>100)throw Error('تجاوزت الحد المسموح به للكتب أو الرسائل.');
+ if(new Set(v.books.map(b=>b.id)).size!==v.books.length||new Set(v.messages.map(m=>m.id)).size!==v.messages.length)throw Error('يوجد معرّف مكرر.');
+ for(const b of v.books){
+  if(!b.titleAr||!b.titleEn||!bookCategories.some(c=>c[0]===b.category)||!['free','paid'].includes(b.access))throw Error('بيانات الكتاب غير مكتملة.');
+  if(b.access==='free'){try{const u=new URL(b.freeUrl);if(u.protocol!=='https:'||u.username||u.password)throw Error()}catch{throw Error('أضف رابط HTTPS صالحاً للكتاب المجاني.')}}
+  if(b.access==='paid'&&(!/^(?:0|[1-9][0-9]{0,7})(?:\.[0-9]{1,2})?$/.test(String(b.price))||Number(b.price)<=0))throw Error('أدخل سعراً صحيحاً أكبر من الصفر للكتاب المدفوع.');
+ }
+ for(const m of v.messages){if(!m.titleAr||!m.titleEn||!m.bodyAr||!m.bodyEn||!Array.isArray(m.countries)||m.countries.some(c=>!/^[A-Z]{2}$/.test(c)))throw Error('بيانات الرسالة غير مكتملة.');if(m.startsAt&&!Number.isFinite(Date.parse(m.startsAt))||m.endsAt&&!Number.isFinite(Date.parse(m.endsAt))||m.startsAt&&m.endsAt&&Date.parse(m.endsAt)<=Date.parse(m.startsAt))throw Error('تحقق من مواعيد بدء الرسالة وانتهائها.');}
+}
+
 function clean(v){
 if(!v||!Array.isArray(v.courses)||!Array.isArray(v.agents)||!Array.isArray(v.nav))throw Error('صيغة الملف غير صالحة.');
 if(v.courses.length>500||v.agents.length>150||v.nav.length>120)throw Error('الملف كبير جداً.');
@@ -35,6 +52,8 @@ if(v.agents.filter(a=>a.active).some((a,i,arr)=>arr.some((b,j)=>j!==i&&a.country
 for(const n of v.nav)if(!n.id||!n.en||!n.ar||!/^(custom:)?[a-z0-9-]{2,80}$/.test(n.id))throw Error('بيانات صفحة غير صالحة.');
 v.nav=v.nav.filter(n=>!['educators','learners','products','community','careers'].includes(n.id)||n.contentAr||n.contentEn);
 if(!v.nav.some(n=>n.id==='contact'))v.nav.push({id:'contact',ar:'تواصل معنا',en:'Contact Us',visible:true,contentAr:'',contentEn:''});
+if(!v.nav.some(n=>n.id==='library'))v.nav.splice(1,0,{id:'library',ar:'مكتبة MAIC',en:'MAIC Library',visible:true,contentAr:'',contentEn:''});
+validateExtras(v);
 if(mainNav.some(id=>!v.nav.some(n=>n.id===id)))throw Error('صفحة أساسية مفقودة. يمكن إخفاؤها بدلاً من حذفها.');
 return clone(v);
 }
@@ -77,8 +96,8 @@ return head('النسخ والاستعادة','نسخة احتياطية من ا
  '<section class="panel"><h2>حفظ نسخة احتياطية واستيرادها</h2><p>صدّر المسودة قبل تغييرات كبيرة. الاستيراد يستبدل المسودة بعد التأكيد ولا ينشر تلقائياً.</p><div class="page-actions">'+btn('تصدير المسودة','export','primary')+btn('استيراد نسخة','import')+'</div><input type="file" id="importFile" accept=".json,application/json" hidden /></section>'+
  '<section class="panel"><h2>استعادة المحتوى المنشور</h2><p>نسخة الموقع المنشورة رقم '+serverVersion+'. استعادتها تستبدل المسودة المحلية فقط.</p><div class="page-actions">'+btn('استعادة آخر نسخة منشورة','load-live')+'</div></section>';
 }
-const views={overview,courses,agents,structure,settings};
-const titles={overview:'نظرة عامة',courses:'إدارة الدورات',agents:'الوكلاء',structure:'الصفحات والقائمة',settings:'النسخ والاستعادة'};
+const views={overview,courses,books,messages,agents,structure,settings};
+const titles={books:'مكتبة MAIC',messages:'الرسائل والعروض',overview:'نظرة عامة',courses:'إدارة الدورات',agents:'الوكلاء',structure:'الصفحات والقائمة',settings:'النسخ والاستعادة'};
 function syncState(){const dirty=!serverDocument||JSON.stringify(draft)!==JSON.stringify(serverDocument);$('#draftState').textContent=busy?'جارٍ النشر':dirty?'مسودة غير منشورة':'محدّث · الإصدار '+serverVersion;$('#publishButton').disabled=busy||!authenticated||!serverDocument||!dirty;}
 function render(){syncState();$('#studioMain').innerHTML=views[tab]();$('#studioTitle').textContent=titles[tab];document.querySelectorAll('#studioNav [data-tab]').forEach(b=>b.classList.toggle('is-active',b.dataset.tab===tab))}
 function switchTab(t){if(!views[t])return;tab=t;render();$('.studio-sidebar').classList.remove('is-open')}
@@ -145,6 +164,15 @@ if(kind==='nav'){
  fields=field('الاسم بالعربية *','ar',n.ar,'text',true)+field('English name *','en',n.en,'text',true)+select('الحالة','visible',n.visible?'yes':'no',[['yes','ظاهر'],['no','مخفي']]);
  if(!id||id.startsWith('custom:'))fields+=textarea('محتوى الصفحة بالعربية','contentAr',n.contentAr)+textarea('Page content in English','contentEn',n.contentEn);
 }
+if(kind==='book'){
+ const b=draft.books.find(x=>x.id===id)||{category:'business',access:'free',active:false,currency:'USD'};title=id?'تعديل الكتاب':'إضافة كتاب';
+ fields=field('عنوان الكتاب بالعربية *','titleAr',b.titleAr,'text',true)+field('عنوان الكتاب بالإنكليزية *','titleEn',b.titleEn,'text',true)+select('التخصص','category',b.category,bookCategories)+field('المؤلف','author',b.author)+textarea('الوصف بالعربية','descriptionAr',b.descriptionAr)+textarea('الوصف بالإنكليزية','descriptionEn',b.descriptionEn)+select('الإتاحة','access',b.access,[['free','مجاني'],['paid','مدفوع']])+field('السعر — للكتب المدفوعة','price',b.price)+select('العملة','currency',b.currency,[['USD','دولار أمريكي'],['IQD','دينار عراقي'],['EUR','يورو'],['GBP','جنيه إسترليني'],['CAD','دولار كندي'],['AED','درهم إماراتي'],['SAR','ريال سعودي']])+field('رابط القراءة أو التحميل — للكتاب المجاني فقط','freeUrl',b.freeUrl,'url',false,true)+select('حالة النشر','active',b.active?'yes':'no',[['yes','ظاهر'],['no','مخفي']])+'<p class="full">أضف فقط الكتب التي تملك حق عرضها أو توزيعها. لا تضف ملفات الكتب المدفوعة إلى رابط عام؛ الاستفسار عنها يُوجّه إلى الوكيل المخصص.</p>';
+}
+if(kind==='message'){
+ const m=draft.messages.find(x=>x.id===id)||{countries:[],active:false};title=id?'تعديل الرسالة':'إضافة رسالة أو عرض';const regionOptions=[['custom','اختيار بلدان يدوياً'],['global','جميع البلدان'],['gulf','دول مجلس التعاون الخليجي'],['arab','البلدان العربية'],['europe','الاتحاد الأوروبي']];
+ fields=field('العنوان بالعربية *','titleAr',m.titleAr,'text',true)+field('العنوان بالإنكليزية *','titleEn',m.titleEn,'text',true)+textarea('النص بالعربية *','bodyAr',m.bodyAr)+textarea('النص بالإنكليزية *','bodyEn',m.bodyEn)+select('تحديد مجموعة بلدان','messageRegion','custom',regionOptions)+'<label class="full">البلدان المستهدفة — اتركها دون تحديد لجميع البلدان<select id="messageCountries" name="countries" multiple size="7">'+(window.MAIC_COUNTRIES||[]).map(c=>'<option value="'+c.code+'" '+(m.countries.includes(c.code)?'selected':'')+'>'+E(new Intl.DisplayNames(['ar'],{type:'region'}).of(c.code))+'</option>').join('')+'</select></label>'+field('بداية العرض — بتوقيت UTC، اختياري','startsAt',m.startsAt,'text')+field('نهاية العرض — بتوقيت UTC، اختياري','endsAt',m.endsAt,'text')+select('حالة الرسالة','active',m.active?'yes':'no',[['yes','مفعّلة'],['no','غير مفعّلة']])+'<p class="full">مثال للموعد: 2026-11-01T09:00:00Z. يُحدّد البلد من اختيار الزائر في شاشة البداية.</p>';
+}
+
 $('#dialogTitle').textContent=title;$('#dialogFields').innerHTML='<div class="edit-grid">'+fields+'</div>';$('#editDialog').showModal();
 }
 function editSave(e){
@@ -175,12 +203,21 @@ function editSave(e){
  const n={id:id||'custom:'+genId('page'),ar:v('ar'),en:v('en'),visible:v('visible')==='yes',contentAr:v('contentAr'),contentEn:v('contentEn')};
  next.nav=id?next.nav.map(x=>x.id===id?{...x,...n}:x):[...next.nav,n];
  }
+ if(kind==='book'){
+  const b={id:id||genId('book'),titleAr:v('titleAr'),titleEn:v('titleEn'),descriptionAr:v('descriptionAr'),descriptionEn:v('descriptionEn'),category:v('category'),author:v('author'),access:v('access'),price:v('access')==='free'?'0':v('price'),currency:v('currency'),freeUrl:v('access')==='free'?v('freeUrl'):'',active:v('active')==='yes'};
+  next.books=id?next.books.map(x=>x.id===id?b:x):[...next.books,b];
+ }
+ if(kind==='message'){
+  const m={id:id||genId('message'),titleAr:v('titleAr'),titleEn:v('titleEn'),bodyAr:v('bodyAr'),bodyEn:v('bodyEn'),countries:data.getAll('countries'),startsAt:v('startsAt'),endsAt:v('endsAt'),active:v('active')==='yes'};
+  next.messages=id?next.messages.map(x=>x.id===id?m:x):[...next.messages,m];
+ }
+
  const old=draft;draft=next;if(save())$('#editDialog').close();else draft=old;
 }
 function remove(kind,id){
  if(kind==='agent'&&id==='unity-bridge'){note('Unity Bridge وكيل أساسي، ولا يمكن حذفه.');return}
  if(!confirm('حذف من المسودة المحلية فقط؟'))return;
- const prop=kind==='course'?'courses':kind==='agent'?'agents':'nav',next=clone(draft);
+ const prop=kind==='book'?'books':kind==='message'?'messages':kind==='course'?'courses':kind==='agent'?'agents':'nav',next=clone(draft);
  next[prop]=next[prop].filter(x=>x.id!==id);
  const old=draft;draft=next;if(!save())draft=old;
 }
@@ -264,6 +301,12 @@ function exportJson(){
 function clickAction(a){
  const sep=a.indexOf(':'),kind=sep>=0?a.slice(0,sep):a,id=sep>=0?a.slice(sep+1):'';
  if(kind==='tab')return switchTab(id);
+ if(a==='new-book')return openEditor('book');
+ if(a==='new-message')return openEditor('message');
+ if(kind==='edit-book')return openEditor('book',id);
+ if(kind==='edit-message')return openEditor('message',id);
+ if(kind==='remove-book')return remove('book',id);
+ if(kind==='remove-message')return remove('message',id);
  if(a==='new-course')return openEditor('course');
  if(a==='new-agent')return openEditor('agent');
  if(a==='new-page')return openEditor('nav');
@@ -282,6 +325,7 @@ function clickAction(a){
 }
 document.addEventListener('click',e=>{const a=e.target.closest('[data-action]');if(a)return clickAction(a.dataset.action);const n=e.target.closest('[data-tab]');if(n)return switchTab(n.dataset.tab)});
 document.addEventListener('change',e=>{
+ if(e.target.name==='messageRegion'){const countries=messageRegions[e.target.value]||[];document.querySelectorAll('#messageCountries option').forEach(o=>o.selected=countries.includes(o.value));return}
  if(e.target.id==='courseScope'){courseScope=e.target.value;render();return}
  const vis=e.target.closest('[data-visible]');if(vis){const n=draft.nav.find(x=>x.id===vis.dataset.visible);if(n){n.visible=vis.checked;save()}}
  if(e.target.id==='importFile'){

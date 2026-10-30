@@ -112,7 +112,20 @@
     "crestAlt": "MAICアカデミーのロゴ",
     "sealAlt": "アメリカ合衆国ロゴ",
     "preview": "ローカルドラフトプレビュー",
-    "networkError": "このページは読み込めませんでした。更新して再度お試しください。"
+    "networkError": "このページは読み込めませんでした。更新して再度お試しください。",
+    "library": "MAICライブラリー",
+    "libraryIntro": "専門分野別に無料・有料の書籍を探せます",
+    "libraryBusiness": "経営管理",
+    "libraryOrganizations": "組織管理",
+    "exploreBooks": "書籍を見る",
+    "free": "無料",
+    "paid": "有料",
+    "allBooks": "すべての書籍",
+    "noBooks": "公開された書籍がここに表示されます",
+    "readBook": "書籍を読む",
+    "requestBook": "この書籍について問い合わせる",
+    "backLibrary": "ライブラリーに戻る",
+    "preferenceHint": "言語と居住国を選択すると、関連するコンテンツや特典が表示されます。選択内容はこの端末に保存されます。"
   },
   "text": {
     "Home": "ホーム",

@@ -100,7 +100,26 @@ export function validateDocument(src){
  });
  const required=['home','courses','about','agents','support','contact','languages','michigan'];
  if(required.some(id=>!ids.has(id)))throw Error('Missing required menu');
- return {version:1,courses,agents,nav};
+ const bookCategories=new Set(['business','projects','organizations','hr']);
+ const https=value=>{try{const u=new URL(value);return u.protocol==='https:'&&!u.username&&!u.password}catch{return false}};
+ const rawBooks=src.books??[],rawMessages=src.messages??[];
+ if(!Array.isArray(rawBooks)||!Array.isArray(rawMessages)||rawBooks.length>300||rawMessages.length>100)throw Error('Catalog library size limit');
+ const extras=new Set();
+ const books=rawBooks.map(b=>{
+  if(!b||!/^[-a-z0-9]{2,80}$/.test(b.id||'')||extras.has(b.id)||!bookCategories.has(b.category)||!['free','paid'].includes(b.access)||!str(b.titleAr,180)||!str(b.titleEn,180))throw Error('Invalid book');extras.add(b.id);
+  const price=String(b.price??'');if(b.access==='paid'&&(!/^(?:0|[1-9][0-9]{0,7})(?:\.[0-9]{1,2})?$/.test(price)||Number(price)<=0))throw Error('Invalid book price');
+  if(!['USD','IQD','EUR','GBP','CAD','AED','SAR'].includes(b.currency||'USD'))throw Error('Invalid book currency');
+  const freeUrl=b.access==='free'?str(b.freeUrl,1000):'';if(b.access==='free'&&!https(freeUrl))throw Error('Invalid free book URL');
+  return {id:b.id,category:b.category,titleAr:str(b.titleAr,180),titleEn:str(b.titleEn,180),descriptionAr:str(b.descriptionAr,3000),descriptionEn:str(b.descriptionEn,3000),author:str(b.author,180),access:b.access,price:b.access==='free'?'0':price,currency:b.currency||'USD',freeUrl,active:b.active===true};
+ });
+ extras.clear();
+ const messages=rawMessages.map(m=>{
+  if(!m||!/^[-a-z0-9]{2,80}$/.test(m.id||'')||extras.has(m.id)||!str(m.titleAr,180)||!str(m.titleEn,180)||!str(m.bodyAr,3000)||!str(m.bodyEn,3000))throw Error('Invalid message');extras.add(m.id);
+  if(!Array.isArray(m.countries)||m.countries.length>249||m.countries.some(c=>!/^[A-Z]{2}$/.test(c)))throw Error('Invalid message country');
+  const startsAt=str(m.startsAt,40),endsAt=str(m.endsAt,40);if((startsAt&&!Number.isFinite(Date.parse(startsAt)))||(endsAt&&!Number.isFinite(Date.parse(endsAt)))||(startsAt&&endsAt&&Date.parse(endsAt)<=Date.parse(startsAt)))throw Error('Invalid message dates');
+  return {id:m.id,titleAr:str(m.titleAr,180),titleEn:str(m.titleEn,180),bodyAr:str(m.bodyAr,3000),bodyEn:str(m.bodyEn,3000),countries:[...new Set(m.countries)],active:m.active===true,startsAt,endsAt};
+ });
+ return {version:1,courses,agents,nav,books,messages};
 }
 export async function rateLimit(db,request){
  const ip=request.headers.get('CF-Connecting-IP')||'unknown';

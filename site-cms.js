@@ -19,6 +19,7 @@ function maicCmsApply(d){
  MAIC_COURSE_CATALOG.splice(0,MAIC_COURSE_CATALOG.length,...courses);
  MAIC_ENROLLMENT_AGENTS.splice(0,MAIC_ENROLLMENT_AGENTS.length,...agents);
  maicStudioDraft={nav:d.nav};
+ maicLibraryBooks=Array.isArray(d.books)?d.books:[];maicCountryMessages=Array.isArray(d.messages)?d.messages:[];
  return true;
 }
 async function maicCmsLoad(){

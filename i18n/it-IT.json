@@ -112,7 +112,20 @@
     "crestAlt": "Emblema dell'Accademia MAIC",
     "sealAlt": "Emblema degli Stati Uniti",
     "preview": "Anteprima del draft locale",
-    "networkError": "La pagina non è stata caricata. Ricarica e riprova."
+    "networkError": "La pagina non è stata caricata. Ricarica e riprova.",
+    "library": "Biblioteca MAIC",
+    "libraryIntro": "Esplora libri gratuiti e a pagamento per specializzazione",
+    "libraryBusiness": "Gestione aziendale",
+    "libraryOrganizations": "Gestione delle organizzazioni",
+    "exploreBooks": "Esplora i libri",
+    "free": "Gratuito",
+    "paid": "A pagamento",
+    "allBooks": "Tutti i libri",
+    "noBooks": "I libri appariranno qui dopo la pubblicazione",
+    "readBook": "Leggi il libro",
+    "requestBook": "Chiedi informazioni sul libro",
+    "backLibrary": "Torna alla biblioteca",
+    "preferenceHint": "Scegli lingua e paese di residenza per contenuti e offerte pertinenti. Le preferenze vengono salvate su questo dispositivo."
   },
   "text": {
     "Home": "Pagina iniziale",

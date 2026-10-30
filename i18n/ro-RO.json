@@ -112,7 +112,20 @@
     "crestAlt": "Emblema Academiei MAIC",
     "sealAlt": "Emblema Statelor Unite",
     "preview": "Previzualizare draft locală",
-    "networkError": "Pagina nu a putut fi încărcată. Vă rugăm să reîncărcați și să încercați din nou."
+    "networkError": "Pagina nu a putut fi încărcată. Vă rugăm să reîncărcați și să încercați din nou.",
+    "library": "Biblioteca MAIC",
+    "libraryIntro": "Explorează cărți gratuite și contra cost după specializare",
+    "libraryBusiness": "Managementul afacerilor",
+    "libraryOrganizations": "Managementul organizațiilor",
+    "exploreBooks": "Explorează cărțile",
+    "free": "Gratuit",
+    "paid": "Contra cost",
+    "allBooks": "Toate cărțile",
+    "noBooks": "Cărțile vor apărea aici după publicare",
+    "readBook": "Citește cartea",
+    "requestBook": "Întreabă despre această carte",
+    "backLibrary": "Înapoi la bibliotecă",
+    "preferenceHint": "Alege limba și țara de reședință pentru conținut și oferte relevante. Alegerile sunt salvate pe acest dispozitiv."
   },
   "text": {
     "Home": "Acasă",

@@ -112,7 +112,20 @@
     "crestAlt": "MAIC akademi sembolü",
     "sealAlt": "Birleşik Devletler sembolü",
     "preview": "Yerel taslak ön izleme",
-    "networkError": "Sayfa yüklenemedi. Lütfen yeniden yükle ve tekrar deneyin."
+    "networkError": "Sayfa yüklenemedi. Lütfen yeniden yükle ve tekrar deneyin.",
+    "library": "MAIC Kütüphanesi",
+    "libraryIntro": "Uzmanlık alanına göre ücretsiz ve ücretli kitapları keşfedin",
+    "libraryBusiness": "İşletme Yönetimi",
+    "libraryOrganizations": "Kurum Yönetimi",
+    "exploreBooks": "Kitapları keşfet",
+    "free": "Ücretsiz",
+    "paid": "Ücretli",
+    "allBooks": "Tüm kitaplar",
+    "noBooks": "Kitaplar yayımlandığında burada görünecek",
+    "readBook": "Kitabı oku",
+    "requestBook": "Bu kitap hakkında bilgi al",
+    "backLibrary": "Kütüphaneye dön",
+    "preferenceHint": "İlgili içerik ve teklifleri görmek için dilinizi ve ikamet ülkenizi seçin. Tercihleriniz bu cihazda saklanır."
   },
   "text": {
     "Home": "Ana Sayfa",

@@ -112,7 +112,20 @@
     "crestAlt": "Escudo de la academia MAIC",
     "sealAlt": "Escudo de Estados Unidos",
     "preview": "Vista previa del borrador local",
-    "networkError": "La página no pudo cargarse. Refresque y pruebe de nuevo."
+    "networkError": "La página no pudo cargarse. Refresque y pruebe de nuevo.",
+    "library": "Biblioteca MAIC",
+    "libraryIntro": "Descubre libros gratuitos y de pago por especialidad",
+    "libraryBusiness": "Administración de empresas",
+    "libraryOrganizations": "Gestión de organizaciones",
+    "exploreBooks": "Ver libros",
+    "free": "Gratis",
+    "paid": "De pago",
+    "allBooks": "Todos los libros",
+    "noBooks": "Los libros aparecerán aquí cuando se publiquen",
+    "readBook": "Leer libro",
+    "requestBook": "Consultar sobre este libro",
+    "backLibrary": "Volver a la biblioteca",
+    "preferenceHint": "Elige tu idioma y país de residencia para ver contenidos y ofertas relevantes. Tus preferencias se guardan en este dispositivo."
   },
   "text": {
     "Home": "Inicio",

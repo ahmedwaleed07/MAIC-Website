@@ -112,7 +112,20 @@
     "crestAlt": "MAIC academy emblem",
     "sealAlt": "United States emblem",
     "preview": "Local draft preview",
-    "networkError": "The page could not load. Please refresh and try again."
+    "networkError": "The page could not load. Please refresh and try again.",
+    "library": "MAIC Library",
+    "libraryIntro": "Explore books by specialization, with free and paid titles",
+    "libraryBusiness": "Business Management",
+    "libraryOrganizations": "Organizational Management",
+    "exploreBooks": "Explore books",
+    "free": "Free",
+    "paid": "Paid",
+    "allBooks": "All books",
+    "noBooks": "Books will appear here when published",
+    "readBook": "Read book",
+    "requestBook": "Ask about this book",
+    "backLibrary": "Back to library",
+    "preferenceHint": "Choose your language and country of residence to see relevant content and offers. Your choices are saved on this device."
   },
   "text": {
     "Home": "Home",

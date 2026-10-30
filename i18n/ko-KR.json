@@ -112,7 +112,20 @@
     "crestAlt": "MAIC 아카데미 엠블럼",
     "sealAlt": "미국 엠블럼",
     "preview": "현지 드래프트 미리보기",
-    "networkError": "페이지를 로드할 수 없습니다. 새로 고침 후 다시 시도하십시오."
+    "networkError": "페이지를 로드할 수 없습니다. 새로 고침 후 다시 시도하십시오.",
+    "library": "MAIC 도서관",
+    "libraryIntro": "전문 분야별 무료 및 유료 도서를 살펴보세요",
+    "libraryBusiness": "경영 관리",
+    "libraryOrganizations": "조직 관리",
+    "exploreBooks": "도서 보기",
+    "free": "무료",
+    "paid": "유료",
+    "allBooks": "모든 도서",
+    "noBooks": "출간된 도서가 여기에 표시됩니다",
+    "readBook": "도서 읽기",
+    "requestBook": "이 도서 문의하기",
+    "backLibrary": "도서관으로 돌아가기",
+    "preferenceHint": "관련 콘텐츠와 혜택을 보려면 언어와 거주 국가를 선택하세요. 선택 사항은 이 기기에 저장됩니다."
   },
   "text": {
     "Home": "홈",

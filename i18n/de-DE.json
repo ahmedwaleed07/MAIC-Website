@@ -112,7 +112,20 @@
     "crestAlt": "MAIC-Akademie-Emblem",
     "sealAlt": "Emblem der Vereinigten Staaten",
     "preview": "Lokaler Entwurfsvorschau",
-    "networkError": "Die Seite konnte nicht geladen werden. Bitte aktualisieren und erneut versuchen."
+    "networkError": "Die Seite konnte nicht geladen werden. Bitte aktualisieren und erneut versuchen.",
+    "library": "MAIC-Bibliothek",
+    "libraryIntro": "Entdecken Sie kostenlose und kostenpflichtige Bücher nach Fachgebiet",
+    "libraryBusiness": "Betriebswirtschaft",
+    "libraryOrganizations": "Organisationsmanagement",
+    "exploreBooks": "Bücher entdecken",
+    "free": "Kostenlos",
+    "paid": "Kostenpflichtig",
+    "allBooks": "Alle Bücher",
+    "noBooks": "Bücher erscheinen hier nach ihrer Veröffentlichung",
+    "readBook": "Buch lesen",
+    "requestBook": "Zu diesem Buch anfragen",
+    "backLibrary": "Zurück zur Bibliothek",
+    "preferenceHint": "Wählen Sie Sprache und Wohnsitzland für passende Inhalte und Angebote. Ihre Auswahl wird auf diesem Gerät gespeichert."
   },
   "text": {
     "Home": "Startseite",

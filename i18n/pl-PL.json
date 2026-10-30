@@ -112,7 +112,20 @@
     "crestAlt": "Emblemat MAIC",
     "sealAlt": "Emblemat Stanów Zjednoczonych",
     "preview": "Przegląd lokalnego draftu",
-    "networkError": "Strona nie mogła zostać załadowana. Odśwież i spróbuj ponownie."
+    "networkError": "Strona nie mogła zostać załadowana. Odśwież i spróbuj ponownie.",
+    "library": "Biblioteka MAIC",
+    "libraryIntro": "Odkryj bezpłatne i płatne książki według specjalizacji",
+    "libraryBusiness": "Zarządzanie biznesem",
+    "libraryOrganizations": "Zarządzanie organizacjami",
+    "exploreBooks": "Przeglądaj książki",
+    "free": "Bezpłatne",
+    "paid": "Płatne",
+    "allBooks": "Wszystkie książki",
+    "noBooks": "Książki pojawią się tutaj po publikacji",
+    "readBook": "Czytaj książkę",
+    "requestBook": "Zapytaj o tę książkę",
+    "backLibrary": "Powrót do biblioteki",
+    "preferenceHint": "Wybierz język i kraj zamieszkania, aby zobaczyć odpowiednie treści i oferty. Wybór zostanie zapisany na tym urządzeniu."
   },
   "text": {
     "Home": "Strona główna",

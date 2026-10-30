@@ -112,7 +112,20 @@
     "crestAlt": "MAIC-opleidingsembleem",
     "sealAlt": "Embleem van de Verenigde Staten",
     "preview": "Lokale draft-voorbeeld",
-    "networkError": "De pagina kon niet worden geladen. Vernieuw de pagina en probeer het opnieuw."
+    "networkError": "De pagina kon niet worden geladen. Vernieuw de pagina en probeer het opnieuw.",
+    "library": "MAIC-bibliotheek",
+    "libraryIntro": "Ontdek gratis en betaalde boeken per vakgebied",
+    "libraryBusiness": "Bedrijfsmanagement",
+    "libraryOrganizations": "Organisatiemanagement",
+    "exploreBooks": "Boeken bekijken",
+    "free": "Gratis",
+    "paid": "Betaald",
+    "allBooks": "Alle boeken",
+    "noBooks": "Boeken verschijnen hier na publicatie",
+    "readBook": "Boek lezen",
+    "requestBook": "Vraag naar dit boek",
+    "backLibrary": "Terug naar de bibliotheek",
+    "preferenceHint": "Kies uw taal en woonland voor relevante inhoud en aanbiedingen. Uw keuzes worden op dit apparaat opgeslagen."
   },
   "text": {
     "Home": "Startpagina",

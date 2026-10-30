@@ -112,7 +112,20 @@
     "crestAlt": "Biểu tượng học viện MAIC",
     "sealAlt": "Biểu tượng Hoa Kỳ",
     "preview": "Tổng quan về bản nháp địa phương",
-    "networkError": "Trang không thể tải. Vui lòng làm mới và thử lại."
+    "networkError": "Trang không thể tải. Vui lòng làm mới và thử lại.",
+    "library": "Thư viện MAIC",
+    "libraryIntro": "Khám phá sách miễn phí và trả phí theo chuyên ngành",
+    "libraryBusiness": "Quản trị kinh doanh",
+    "libraryOrganizations": "Quản trị tổ chức",
+    "exploreBooks": "Khám phá sách",
+    "free": "Miễn phí",
+    "paid": "Trả phí",
+    "allBooks": "Tất cả sách",
+    "noBooks": "Sách sẽ xuất hiện ở đây khi được xuất bản",
+    "readBook": "Đọc sách",
+    "requestBook": "Hỏi về sách này",
+    "backLibrary": "Trở lại thư viện",
+    "preferenceHint": "Chọn ngôn ngữ và quốc gia cư trú để xem nội dung và ưu đãi phù hợp. Lựa chọn được lưu trên thiết bị này."
   },
   "text": {
     "Home": "Trang chủ",
