@@ -7,13 +7,13 @@ const clone=x=>JSON.parse(JSON.stringify(x));
 const genId=p=>p+'-'+Date.now().toString(36)+'-'+Math.random().toString(36).slice(2,7);
 const mainNav=['home','library','courses','about','agents','support','contact','languages','michigan'];
 const nativeNames={
-library:['MAIC Library','مكتبة MAIC'],home:['Home','الرئيسية'],michigan:['Michigan','مشيغان'],courses:['Courses','الدورات'],
+library:['MAIC Library','مكتبة مايك'],home:['Home','الرئيسية'],michigan:['Michigan','مشيغان'],courses:['Courses','الدورات'],
 educators:['Educators and Organizations','المعلمون والمؤسسات'],learners:['Learners','المتعلمون'],products:['Learning Products','المنتجات التعليمية'],community:['Community','المجتمع'],about:['About Us','من نحن'],careers:['Careers','الوظائف'],agents:['Our Agents','وكلاؤنا'],support:['Help & FAQ','المساعدة والأسئلة الشائعة'],languages:['Languages','اللغات'],contact:['Contact Us','تواصل معنا']
 };
 const initialCourses=clone(MAIC_COURSE_CATALOG),initialAgents=clone(MAIC_ENROLLMENT_AGENTS);
 const initial=()=>({version:1,books:[],messages:[],courses:clone(initialCourses),agents:clone(initialAgents),nav:mainNav.map(id=>({id,en:nativeNames[id][0],ar:nativeNames[id][1],visible:!['educators','learners','products','community','careers'].includes(id),contentEn:'',contentAr:''}))});
 let draft=initial(),tab='overview',editing='',serverVersion=0,serverDocument=null,authenticated=false,busy=false,courseQuery='',courseScope='current';
-function books(){return head('مكتبة MAIC','إضافة الكتب وتصنيفها وتحديد المجاني والمدفوع',btn('+ كتاب جديد','new-book','primary'))+'<section class="panel"><div class="table-wrap"><table class="data-table"><thead><tr><th>الكتاب</th><th>التخصص</th><th>الإتاحة</th><th>الحالة</th><th>التحكم</th></tr></thead><tbody>'+draft.books.map(b=>'<tr><td>'+E(b.titleAr)+'<small>'+E(b.titleEn)+'</small></td><td>'+E(bookCategoryLabel(b.category))+'</td><td>'+E(b.access==='free'?'مجاني':b.price+' '+b.currency)+'</td><td>'+E(b.active?'ظاهر':'مخفي')+'</td><td>'+btn('تعديل','edit-book:'+b.id,'small')+btn('حذف','remove-book:'+b.id,'small danger')+'</td></tr>').join('')+'</tbody></table></div><p>الكتب المجانية تفتح الرابط الذي تضيفه. الكتب المدفوعة تعرض السعر وتتيح الاستفسار لدى الوكيل المخصص؛ لا تُستحصل مدفوعات عبر الموقع.</p></section>'}
+function books(){return head('مكتبة مايك','إضافة الكتب وتصنيفها وتحديد المجاني والمدفوع',btn('+ كتاب جديد','new-book','primary'))+'<section class="panel"><div class="table-wrap"><table class="data-table"><thead><tr><th>الكتاب</th><th>التخصص</th><th>الإتاحة</th><th>الحالة</th><th>التحكم</th></tr></thead><tbody>'+draft.books.map(b=>'<tr><td>'+E(b.titleAr)+'<small>'+E(b.titleEn)+'</small></td><td>'+E(bookCategoryLabel(b.category))+'</td><td>'+E(b.access==='free'?'مجاني':b.price+' '+b.currency)+'</td><td>'+E(b.active?'ظاهر':'مخفي')+'</td><td>'+btn('تعديل','edit-book:'+b.id,'small')+btn('حذف','remove-book:'+b.id,'small danger')+'</td></tr>').join('')+'</tbody></table></div><p>الكتب المجانية تفتح الرابط الذي تضيفه. الكتب المدفوعة تعرض السعر وتتيح الاستفسار لدى الوكيل المخصص؛ لا تُستحصل مدفوعات عبر الموقع.</p></section>'}
 const bookCategories=[['business','إدارة الأعمال'],['projects','إدارة المشاريع'],['organizations','إدارة المؤسسات'],['hr','الموارد البشرية']];
 function bookCategoryLabel(id){return bookCategories.find(c=>c[0]===id)?.[1]||id}
 const messageRegions={gulf:['BH','KW','OM','QA','SA','AE'],arab:['DZ','BH','KM','DJ','EG','IQ','JO','KW','LB','LY','MR','MA','OM','PS','QA','SA','SO','SD','SY','TN','AE','YE'],europe:['AT','BE','BG','HR','CY','CZ','DK','EE','FI','FR','DE','GR','HU','IE','IT','LV','LT','LU','MT','NL','PL','PT','RO','SK','SI','ES','SE']};
@@ -52,7 +52,7 @@ if(v.agents.filter(a=>a.active).some((a,i,arr)=>arr.some((b,j)=>j!==i&&a.country
 for(const n of v.nav)if(!n.id||!n.en||!n.ar||!/^(custom:)?[a-z0-9-]{2,80}$/.test(n.id))throw Error('بيانات صفحة غير صالحة.');
 v.nav=v.nav.filter(n=>!['educators','learners','products','community','careers'].includes(n.id)||n.contentAr||n.contentEn);
 if(!v.nav.some(n=>n.id==='contact'))v.nav.push({id:'contact',ar:'تواصل معنا',en:'Contact Us',visible:true,contentAr:'',contentEn:''});
-if(!v.nav.some(n=>n.id==='library'))v.nav.splice(1,0,{id:'library',ar:'مكتبة MAIC',en:'MAIC Library',visible:true,contentAr:'',contentEn:''});
+if(!v.nav.some(n=>n.id==='library'))v.nav.splice(1,0,{id:'library',ar:'مكتبة مايك',en:'MAIC Library',visible:true,contentAr:'',contentEn:''});
 validateExtras(v);
 if(mainNav.some(id=>!v.nav.some(n=>n.id===id)))throw Error('صفحة أساسية مفقودة. يمكن إخفاؤها بدلاً من حذفها.');
 return clone(v);
@@ -97,7 +97,7 @@ return head('النسخ والاستعادة','نسخة احتياطية من ا
  '<section class="panel"><h2>استعادة المحتوى المنشور</h2><p>نسخة الموقع المنشورة رقم '+serverVersion+'. استعادتها تستبدل المسودة المحلية فقط.</p><div class="page-actions">'+btn('استعادة آخر نسخة منشورة','load-live')+'</div></section>';
 }
 const views={overview,courses,books,messages,agents,structure,settings};
-const titles={books:'مكتبة MAIC',messages:'الرسائل والعروض',overview:'نظرة عامة',courses:'إدارة الدورات',agents:'الوكلاء',structure:'الصفحات والقائمة',settings:'النسخ والاستعادة'};
+const titles={books:'مكتبة مايك',messages:'الرسائل والعروض',overview:'نظرة عامة',courses:'إدارة الدورات',agents:'الوكلاء',structure:'الصفحات والقائمة',settings:'النسخ والاستعادة'};
 function syncState(){const dirty=!serverDocument||JSON.stringify(draft)!==JSON.stringify(serverDocument);$('#draftState').textContent=busy?'جارٍ النشر':dirty?'مسودة غير منشورة':'محدّث · الإصدار '+serverVersion;$('#publishButton').disabled=busy||!authenticated||!serverDocument||!dirty;}
 function render(){syncState();$('#studioMain').innerHTML=views[tab]();$('#studioTitle').textContent=titles[tab];document.querySelectorAll('#studioNav [data-tab]').forEach(b=>b.classList.toggle('is-active',b.dataset.tab===tab))}
 function switchTab(t){if(!views[t])return;tab=t;render();$('.studio-sidebar').classList.remove('is-open')}
