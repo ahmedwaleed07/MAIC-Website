@@ -1,7 +1,7 @@
 'use strict';
 (()=>{
 const screen=document.createElement('dialog');screen.id='maicIntro';
-screen.innerHTML='<div class="intro-landmark"></div><div class="intro-content"><div class="intro-emblems"><img src="./assets/maic-official-crest.png" alt="" width="155" height="155"><img src="./assets/us-great-seal.svg" alt="" width="155" height="155"></div><h1 id="introAcademy" lang="en" dir="ltr">MAIC</h1><p class="intro-motto" id="introMotto" lang="en" dir="ltr"></p><div class="intro-progress" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><span></span></div><form id="introPreferences" class="intro-preferences"><label for="introLanguage"><span id="introLanguageLabel"></span><select id="introLanguage" required></select></label><label for="introCountry"><span id="introCountryLabel"></span><select id="introCountry" required></select></label></form><p class="intro-preference-hint" id="introPreferenceHint"></p><p id="introStatus" role="status"></p><button class="btn btn-gold" id="enterAcademy" type="submit" form="introPreferences" disabled>…</button></div>';
+screen.innerHTML='<div class="intro-landmark"></div><div class="intro-content"><div class="intro-emblems"><img src="./assets/maic-official-crest.png" alt="" width="155" height="155"><img src="./assets/us-great-seal.svg" alt="" width="155" height="155"></div><h1 id="introAcademy" lang="en" dir="ltr">MAIC</h1><p class="intro-motto" id="introMotto" lang="en" dir="ltr"></p><div class="intro-progress" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><span></span></div><form id="introPreferences" class="intro-preferences"><label for="introCountry"><span id="introCountryLabel"></span><select id="introCountry" required></select></label><label for="introLanguage"><span id="introLanguageLabel"></span><select id="introLanguage" required></select></label></form><p class="intro-preference-hint" id="introPreferenceHint"></p><p id="introStatus" role="status"></p><button class="btn btn-gold" id="enterAcademy" type="submit" form="introPreferences" disabled>…</button></div>';
 document.body.append(screen);screen.showModal();
 let loaded=false,changing=false;
 function update(){
@@ -17,6 +17,6 @@ $('#introCountry').addEventListener('change',e=>{if(setVisitorCountry(e.target.v
 $('#introPreferences').addEventListener('submit',e=>{e.preventDefault();if(changing||!loaded||!setVisitorCountry($('#introCountry').value))return;renderAll();screen.close();screen.remove();$('#mainContent').focus({preventScroll:true})});
 screen.addEventListener('cancel',e=>e.preventDefault());
 const images=Promise.allSettled([...screen.querySelectorAll('img')].map(img=>img.decode()));
-const ready=()=>{loaded=true;if(!(window.MAIC_COUNTRIES||[]).some(c=>c.code===state.selectedCountry))state.selectedCountry='';update();$('#introLanguage').focus()};
+const ready=()=>{loaded=true;if(!(window.MAIC_COUNTRIES||[]).some(c=>c.code===state.selectedCountry))state.selectedCountry='';update();$('#introCountry').focus()};
 if(window.MAIC_READY)images.then(ready);else window.addEventListener('maic-ready',()=>images.then(ready),{once:true});
 })();
