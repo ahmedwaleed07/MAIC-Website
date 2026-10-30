@@ -40,11 +40,11 @@ return clone(v);
 }
 try{const s=localStorage.getItem(KEY);if(s)draft=clean(JSON.parse(s))}catch(e){console.warn('MAIC preview draft invalid',e)}
 function note(s){let t=$('.toast');if(t)t.remove();t=document.createElement('div');t.className='toast';t.textContent=s;t.setAttribute('role','status');document.body.append(t);setTimeout(()=>t.remove(),2600)}
-function save(){try{draft=clean(draft);localStorage.setItem(KEY,JSON.stringify(draft));render();note('تم الحفظ محلياً. اضغط نشر حتى تظهر التغييرات للزوار.');return true}catch(e){note(e.message);return false}}
+function save(){try{draft=clean(draft);localStorage.setItem(KEY,JSON.stringify(draft));render();note('تم الحفظ محلياً. اضغط على زر النشر لإظهار التغييرات للزوار.');return true}catch(e){note(e.message);return false}}
 function btn(title,action,cls=''){return '<button type="button" class="btn '+cls+'" data-action="'+E(action)+'">'+E(title)+'</button>'}
 function head(title,sub,buttons=''){return '<div class="page-head"><div><h1>'+E(title)+'</h1><p>'+E(sub)+'</p></div><div class="page-actions">'+buttons+'</div></div>'}
-function tag(s){const labels={preparing:'قيد الإعداد',published:'ظاهر بالكتالوج',archived:'مؤرشف',active:'نشط',inactive:'غير نشط'};return '<span class="pill '+E(s)+'">'+E(labels[s]||s)+'</span>'}
-function format(m){return (m||[]).map(k=>({'self-paced':'ذاتي أونلاين',group:'جماعي مباشر','one-on-one':'فردي خاص'})[k]||k).join('، ')}
+function tag(s){const labels={preparing:'قيد الإعداد',published:'معروض في دليل الدورات',archived:'مؤرشف',active:'نشط',inactive:'غير نشط'};return '<span class="pill '+E(s)+'">'+E(labels[s]||s)+'</span>'}
+function format(m){return (m||[]).map(k=>({'self-paced':'تعلّم ذاتي عبر الإنترنت',group:'جماعي مباشر','one-on-one':'فردي خاص'})[k]||k).join('، ')}
 function overview(){
  const formats=new Set(draft.courses.filter(c=>c.status!=='archived').flatMap(c=>c.mode)).size;
  return head('نظرة عامة','إدارة محتوى الأكاديمية من مساحة واحدة')+
@@ -59,18 +59,18 @@ return head('إدارة الدورات','أضف أو عدّل أو احذف ال
  '</tbody></table></div></section><div class="callout">حالة الدورة تحدد عرضها في الكتالوج. الحفظ يحدّث المسودة؛ زر النشر العلوي يحدّث الموقع. الدورات المؤرشفة لا تظهر للزوار.</div>';
 }
 function agents(){
-return head('إدارة الوكلاء','الاسم والشعار والبلد والمدينة والموقع والإيميل والهاتف والتخصيص',btn('+ وكيل جديد','new-agent','primary'))+
+return head('إدارة الوكلاء','الاسم والشعار والبلد والمدينة والموقع والبريد الإلكتروني والهاتف والتخصيص',btn('+ وكيل جديد','new-agent','primary'))+
  '<div class="agent-list">'+draft.agents.map(a=>{
 const image=String(a.logo||'../assets/maic-official-crest.png').replace(/^\.\/assets\//,'../assets/');
 return '<article class="agent-box"><div class="agent-header"><img src="'+E(image)+'" alt="'+E(a.name)+'" /><div><h3>'+E(a.name)+'</h3>'+tag(a.active?'active':'inactive')+' <small>'+E(a.country)+'</small></div></div><dl>'+
- [['البلد',a.countryAr||a.country],['المدينة',a.cityAr||'غير محددة'],['الموقع',a.website],['الإيميل',a.email],['الهاتف',a.phone]].map(([title,val])=>'<div><dt>'+E(title)+'</dt><dd>'+E(val)+'</dd></div>').join('')+
+ [['البلد',a.countryAr||a.country],['المدينة',a.cityAr||'غير محددة'],['الموقع',a.website],['البريد الإلكتروني',a.email],['الهاتف',a.phone]].map(([title,val])=>'<div><dt>'+E(title)+'</dt><dd>'+E(val)+'</dd></div>').join('')+
  '</dl><div class="actions">'+btn('تعديل','edit-agent:'+a.id,'small')+btn('حذف','remove-agent:'+a.id,'small danger')+'</div></article>'}).join('')+'</div>'+
- '<div class="callout">Unity Bridge هو الوكيل الأمريكي والبديل الدولي، لذلك يبقى فعال دائماً. التعديل والحذف هنا لا يغيّران عقود الاعتماد الحقيقية.</div>';
+ '<div class="callout">Unity Bridge هو الوكيل الأمريكي والبديل الدولي، لذلك يبقى نشطاً دائماً. التعديل والحذف هنا لا يغيّران عقود الاعتماد الحقيقية.</div>';
 }
 function structure(){
 return head('الصفحات والقائمة','مكان واحد لإدارة العناوين والترتيب والمحتوى والظهور',btn('+ صفحة جديدة','new-page','primary'))+
  '<section class="panel"><h2>ترتيب عناصر القائمة</h2><div class="structure-list">'+draft.nav.map((n,i)=>
- '<div class="structure-row"><span class="structure-num">'+(i+1)+'</span><div class="structure-label"><b>'+E(n.ar)+'</b><small>'+E(n.en)+' · '+E(n.id)+'</small></div><div class="structure-tools"><label><input type="checkbox" data-visible="'+E(n.id)+'" '+(n.visible?'checked':'')+' /> ظاهر</label>'+(i>0?btn('↑','up:'+n.id,'small'):'')+(i<draft.nav.length-1?btn('↓','down:'+n.id,'small'):'')+btn('تعديل','edit-nav:'+n.id,'small')+(n.id.startsWith('custom:')?btn('حذف','remove-page:'+n.id,'small danger'):'')+'</div></div>').join('')+'</div></section><div class="callout">إخفاء عنصر يعني إخفاءه من القائمة، مو حذف الصفحة الأصلية من كود الموقع.</div>';
+ '<div class="structure-row"><span class="structure-num">'+(i+1)+'</span><div class="structure-label"><b>'+E(n.ar)+'</b><small>'+E(n.en)+' · '+E(n.id)+'</small></div><div class="structure-tools"><label><input type="checkbox" data-visible="'+E(n.id)+'" '+(n.visible?'checked':'')+' /> ظاهر</label>'+(i>0?btn('↑','up:'+n.id,'small'):'')+(i<draft.nav.length-1?btn('↓','down:'+n.id,'small'):'')+btn('تعديل','edit-nav:'+n.id,'small')+(n.id.startsWith('custom:')?btn('حذف','remove-page:'+n.id,'small danger'):'')+'</div></div>').join('')+'</div></section><div class="callout">يؤدي إخفاء العنصر إلى إزالته من القائمة دون حذف الصفحة الأصلية من الشيفرة البرمجية للموقع.</div>';
 }
 function settings(){
 return head('النسخ والاستعادة','نسخة احتياطية من المسودة أو استعادة المحتوى المنشور')+
@@ -94,29 +94,29 @@ if(kind==='course'){
  const c=draft.courses.find(x=>x.id===id)||{ar:'',en:'',areaAr:'',areaEn:'',descriptionAr:'',descriptionEn:'',objectivesAr:'',objectivesEn:'',syllabusAr:'',syllabusEn:'',requirementsAr:'',requirementsEn:'',instructor:'',duration:'',level:'all',courseLanguage:'ar',feeAmount:'',feeCurrency:'USD',mode:['self-paced'],status:'preparing'};
  title=id?'تعديل تفاصيل الدورة':'إضافة دورة جديدة';
  fields='<section class="editor-section"><h3>١. معلومات الدورة</h3><div class="edit-grid">'+
- field('اسم الدورة بالعربي *','ar',c.ar,'text',true)+field('Course name (English) *','en',c.en,'text',true)+
- field('التصنيف بالعربي','areaAr',c.areaAr)+field('Category in English','areaEn',c.areaEn)+
- textarea('نبذة عن الدورة بالعربي','descriptionAr',c.descriptionAr)+textarea('Course summary in English','descriptionEn',c.descriptionEn)+
+ field('اسم الدورة بالعربية *','ar',c.ar,'text',true)+field('Course name (English) *','en',c.en,'text',true)+
+ field('التصنيف بالعربية','areaAr',c.areaAr)+field('Category in English','areaEn',c.areaEn)+
+ textarea('نبذة عن الدورة بالعربية','descriptionAr',c.descriptionAr)+textarea('Course summary in English','descriptionEn',c.descriptionEn)+
  '</div></section>'+
- '<section class="editor-section"><h3>٢. نوع الدورة وطريقة تقديمها *</h3><p class="editor-help">تگدر تختار نوع واحد أو أكثر؛ الدورة يظهر تحت كل نوع تحدده في قائمة الموقع.</p>'+
- '<div class="course-mode-grid">'+MAIC_COURSE_MODES.map((m,i)=>'<label class="course-mode-option"><input type="checkbox" name="mode" value="'+E(m.id)+'" '+(c.mode.includes(m.id)?'checked':'')+' /><span class="course-mode-copy"><strong>'+E(m.ar)+'</strong><small>'+E(m.en)+'</small><em>'+E(['دروس مسجلة ومواد واختبارات داخل الموقع','محاضر مباشر مع مجموعة طلبة بموعد محدد','مدرب مع طالب واحد بشكل خاص'][i])+'</em></span></label>').join('')+'</div></section>'+
+ '<section class="editor-section"><h3>٢. نوع الدورة وطريقة تقديمها *</h3><p class="editor-help">يمكنك اختيار نوع واحد أو أكثر؛ وتظهر الدورة ضمن كل نوع تحدده في قائمة الموقع.</p>'+
+ '<div class="course-mode-grid">'+MAIC_COURSE_MODES.map((m,i)=>'<label class="course-mode-option"><input type="checkbox" name="mode" value="'+E(m.id)+'" '+(c.mode.includes(m.id)?'checked':'')+' /><span class="course-mode-copy"><strong>'+E(m.ar)+'</strong><small>'+E(m.en)+'</small><em>'+E(['دروس مسجلة ومواد واختبارات داخل الموقع','دروس مباشرة مع محاضر ومجموعة من المتعلّمين في موعد محدد','جلسات فردية مع مدرّب ومتعلّم واحد'][i])+'</em></span></label>').join('')+'</div></section>'+
  '<section class="editor-section"><h3>٣. معلومات الدراسة</h3><div class="edit-grid">'+
  select('مستوى الدورة','level',c.level||'all',[['all','جميع المستويات'],['beginner','مبتدئ'],['intermediate','متوسط'],['advanced','متقدم']])+
  select('لغة تقديم الدورة','courseLanguage',c.courseLanguage||'ar',[['ar','العربية'],['en','الإنكليزية'],['bilingual','العربية والإنكليزية'],['other','لغة أخرى']])+
  field('مدة الدورة (مثلاً: 6 أسابيع)','duration',c.duration)+
  field('اسم المحاضر / المدرب','instructor',c.instructor)+
- textarea('الأهداف التعليمية (كل هدف بسطر) — عربي','objectivesAr',c.objectivesAr)+
+ textarea('الأهداف التعليمية (كل هدف في سطر مستقل) — عربي','objectivesAr',c.objectivesAr)+
  textarea('Learning objectives — English','objectivesEn',c.objectivesEn)+
- textarea('المنهج ووحدات الدورة (كل وحدة بسطر) — عربي','syllabusAr',c.syllabusAr)+
+ textarea('المنهج ووحدات الدورة (كل وحدة في سطر مستقل) — عربي','syllabusAr',c.syllabusAr)+
  textarea('Course syllabus / modules — English','syllabusEn',c.syllabusEn)+
- textarea('متطلبات الالتحاق بالعربي','requirementsAr',c.requirementsAr)+
+ textarea('متطلبات الالتحاق بالعربية','requirementsAr',c.requirementsAr)+
  textarea('Prerequisites in English','requirementsEn',c.requirementsEn)+
  '</div></section>'+
  '<section class="editor-section"><h3>٤. الرسوم وحالة النشر</h3><div class="edit-grid">'+
  field('رسوم الدورة (اختياري — دفع للوكيل حصراً)','feeAmount',c.feeAmount,'text')+
  select('عملة الرسوم','feeCurrency',c.feeCurrency||'USD',[['USD','USD · دولار أمريكي'],['IQD','IQD · دينار عراقي'],['EUR','EUR · يورو'],['GBP','GBP · جنيه إسترليني'],['CAD','CAD · دولار كندي'],['AED','AED · درهم إماراتي'],['SAR','SAR · ريال سعودي']])+
- select('حالة عرض الدورة','status',c.status,[['preparing','قيد الإعداد'],['published','منشور بكتالوج الموقع'],['archived','مؤرشف / غير ظاهر']])+
- '</div><div class="editor-help boxed">الرسوم تظهر كمعلومات فقط. الدفع يبقى للوكيل المعتمد، وتفعيل الدورة حصراً من إدارة MAIC. نشر الدورة هنا ما يعني فتح التسجيل الإلكتروني.</div></section>';
+ select('حالة عرض الدورة','status',c.status,[['preparing','قيد الإعداد'],['published','منشور في دليل الدورات بالموقع'],['archived','مؤرشف / غير ظاهر']])+
+ '</div><div class="editor-help boxed">تُعرض الرسوم للمعلومات فقط. تُدفع الرسوم للوكيل المعتمد، وتختص إدارة MAIC وحدها بتفعيل الدورة. ولا يعني نشر الدورة هنا فتح التسجيل الإلكتروني.</div></section>';
 }
 if(kind==='agent'){
  const a=draft.agents.find(x=>x.id===id)||{name:'',country:'',countryAr:'',countryEn:'',cityAr:'',cityEn:'',stateAr:'',stateEn:'',website:'https://',email:'',phone:'',logo:'',active:false};
@@ -125,25 +125,25 @@ if(kind==='agent'){
  field('اسم الشركة / الوكيل المعتمد *','name',a.name,'text',true,true)+
  select('الدولة المخصصة *','country',a.country,[['','اختر الدولة'],...(window.MAIC_COUNTRIES||[]).map(c=>[c.code,c.name])])+
  select('حالة ظهور الوكيل','active',a.active?'yes':'no',[['yes','نشط ومعتمد للتوجيه'],['no','غير نشط — لا يوجّه إليه الطلاب']])+
- field('اسم البلد بالعربي','countryAr',a.countryAr)+field('Country name English','countryEn',a.countryEn)+
- field('المدينة بالعربي','cityAr',a.cityAr)+field('City English','cityEn',a.cityEn)+
- field('الولاية أو المحافظة بالعربي','stateAr',a.stateAr)+field('State / Region English','stateEn',a.stateEn)+
+ field('اسم البلد بالعربية','countryAr',a.countryAr)+field('Country name English','countryEn',a.countryEn)+
+ field('المدينة بالعربية','cityAr',a.cityAr)+field('City English','cityEn',a.cityEn)+
+ field('الولاية أو المحافظة بالعربية','stateAr',a.stateAr)+field('State / Region English','stateEn',a.stateEn)+
  '</div></section>'+
  '<section class="editor-section"><h3>٢. معلومات التواصل الرسمية</h3><div class="edit-grid">'+
  field('الموقع الرسمي *','website',a.website,'url',true,true)+
- field('إيميل التواصل *','email',a.email,'email',true)+
+ field('البريد الإلكتروني للتواصل *','email',a.email,'email',true)+
  field('رقم التواصل مع مفتاح البلد *','phone',a.phone,'tel',true)+
  '</div></section>'+
  '<section class="editor-section"><h3>٣. شعار الوكيل</h3>'+
  '<div class="agent-logo-preview"><img id="agentLogoPreview" alt="معاينة شعار الوكيل" src="'+E(String(a.logo||'../assets/maic-official-crest.png').replace(/^\.\/assets\//,'../assets/'))+'" /></div>'+
  '<div class="edit-grid">'+field('رابط صورة الشعار أو مسار الصورة بالموقع','logo',a.logo,'text',false,true)+'</div>'+
- '<p class="editor-help">ضع رابط صورة HTTPS مباشر، أو مسار الشعار الموجود على الموقع مثل ./assets/agents/asas360.webp. تظهر الصورة دائرية بالكارد.</p></section>';
+ '<p class="editor-help">ضع رابط صورة HTTPS مباشر، أو مسار الشعار الموجود على الموقع مثل ./assets/agents/asas360.webp. تظهر الصورة داخل إطار دائري في البطاقة.</p></section>';
 }
 if(kind==='nav'){
  const n=draft.nav.find(x=>x.id===id)||{ar:'',en:'',visible:true,contentAr:'',contentEn:''};
  title=id?'تعديل القائمة':'إضافة صفحة';
- fields=field('الاسم بالعربي *','ar',n.ar,'text',true)+field('English name *','en',n.en,'text',true)+select('الحالة','visible',n.visible?'yes':'no',[['yes','ظاهر'],['no','مخفي']]);
- if(!id||id.startsWith('custom:'))fields+=textarea('محتوى الصفحة بالعربي','contentAr',n.contentAr)+textarea('Page content in English','contentEn',n.contentEn);
+ fields=field('الاسم بالعربية *','ar',n.ar,'text',true)+field('English name *','en',n.en,'text',true)+select('الحالة','visible',n.visible?'yes':'no',[['yes','ظاهر'],['no','مخفي']]);
+ if(!id||id.startsWith('custom:'))fields+=textarea('محتوى الصفحة بالعربية','contentAr',n.contentAr)+textarea('Page content in English','contentEn',n.contentEn);
 }
 $('#dialogTitle').textContent=title;$('#dialogFields').innerHTML='<div class="edit-grid">'+fields+'</div>';$('#editDialog').showModal();
 }
@@ -160,7 +160,7 @@ function editSave(e){
   requirementsAr:v('requirementsAr'),requirementsEn:v('requirementsEn'),
   instructor:v('instructor'),duration:v('duration'),level:v('level'),courseLanguage:v('courseLanguage'),
   feeAmount:v('feeAmount'),feeCurrency:v('feeCurrency'),mode,status:v('status')};
- if(c.feeAmount&&(!/^(?:0|[1-9][0-9]{0,7})(?:\.[0-9]{1,2})?$/.test(c.feeAmount)||Number(c.feeAmount)>10000000)){note('راجع مبلغ الرسوم. اكتب الرقم بدون فواصل أو اتركه فارغ.');return}
+ if(c.feeAmount&&(!/^(?:0|[1-9][0-9]{0,7})(?:\.[0-9]{1,2})?$/.test(c.feeAmount)||Number(c.feeAmount)>10000000)){note('راجع مبلغ الرسوم. اكتب الرقم دون فواصل أو اترك الحقل فارغاً.');return}
  next.courses=id?next.courses.map(x=>x.id===id?c:x):[...next.courses,c];
  }
  if(kind==='agent'){
@@ -178,7 +178,7 @@ function editSave(e){
  const old=draft;draft=next;if(save())$('#editDialog').close();else draft=old;
 }
 function remove(kind,id){
- if(kind==='agent'&&id==='unity-bridge'){note('Unity Bridge وكيل أساسي، ما ينحذف.');return}
+ if(kind==='agent'&&id==='unity-bridge'){note('Unity Bridge وكيل أساسي، ولا يمكن حذفه.');return}
  if(!confirm('حذف من المسودة المحلية فقط؟'))return;
  const prop=kind==='course'?'courses':kind==='agent'?'agents':'nav',next=clone(draft);
  next[prop]=next[prop].filter(x=>x.id!==id);
@@ -206,7 +206,7 @@ async function loadLive(force=false){
   if(force){
    if(!confirm('استبدال المسودة الحالية بنسخة الموقع المنشورة؟'))return;
    draft=clone(serverDocument);localStorage.setItem(KEY,JSON.stringify(draft));
-   note('تم تحميل آخر نسخة منشورة، بدون نشر أي تغيير.');
+   note('تم تحميل أحدث نسخة منشورة دون نشر أي تغيير.');
   }else if(!localStorage.getItem(KEY)){
    draft=clone(serverDocument);
    localStorage.setItem(KEY,JSON.stringify(draft));
@@ -228,12 +228,12 @@ async function boot(){
 }
 async function loginAdmin(e){
  e.preventDefault();
- const button=$('#adminLoginSubmit');button.disabled=true;button.textContent='جاري التحقق...';
+ const button=$('#adminLoginSubmit');button.disabled=true;button.textContent='جارٍ التحقق...';
  try{
   await serverCall('/api/admin/login',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({password:$('#adminPassword').value})});
   $('#adminLoginError').textContent='';
   await enterDashboard();
- }catch(err){$('#adminLoginError').textContent=err.status===429?'محاولات كثيرة. حاول بعد ربع ساعة.':'تعذّر الدخول. تحقق من مفتاح المدير.'}
+ }catch(err){$('#adminLoginError').textContent=err.status===429?'تجاوزت الحد المسموح به لمحاولات تسجيل الدخول. يُرجى المحاولة بعد خمس عشرة دقيقة.':'تعذّر الدخول. تحقق من مفتاح المدير.'}
  finally{button.disabled=false;button.textContent='دخول لوحة الإدارة'}
 }
 async function logoutAdmin(){
@@ -242,20 +242,20 @@ async function logoutAdmin(){
 }
 async function publish(){
  if(busy)return;
- if(!authenticated||!serverVersion){note('تحتاج جلسة إدارة صالحة قبل النشر.');return}
+ if(!authenticated||!serverVersion){note('يلزم تسجيل الدخول إلى لوحة الإدارة قبل النشر.');return}
  let validated;try{validated=clean(draft)}catch(err){note('راجع البيانات أولاً: '+err.message);return}
  if(!confirm('تأكيد نشر التعديلات على موقع MAIC لجميع الزوار؟'))return;
- busy=true;const btn=$('#publishButton');btn.disabled=true;btn.textContent='جاري النشر...';
+ busy=true;const btn=$('#publishButton');btn.disabled=true;btn.textContent='جارٍ النشر...';
  try{
   const result=await serverCall('/api/admin/content',{method:'PUT',headers:{'Content-Type':'application/json'},body:JSON.stringify({document:validated,expectedVersion:serverVersion})});
   serverVersion=result.version;serverDocument=clone(validated);draft=clone(validated);
   localStorage.setItem(KEY,JSON.stringify(draft));
-  $('#draftState').textContent='منشور · الإصدار '+serverVersion;note('تم النشر فعلياً للموقع. حدّث صفحة الموقع حتى تشوف التعديل.');render();
+  $('#draftState').textContent='منشور · الإصدار '+serverVersion;note('تم نشر التغييرات على الموقع. حدّث الصفحة لعرض التعديلات.');render();
  }catch(err){
   if(err.status===401){showLogin('انتهت جلسة الدخول قبل النشر.');return}
-  if(err.status===409){note('صار تعديل أحدث على الموقع. حمّل النسخة المنشورة وراجع تغييراتك قبل إعادة النشر.')}
+  if(err.status===409){note('توجد تعديلات أحدث على الموقع. حمّل النسخة المنشورة وراجع تغييراتك قبل إعادة النشر.')}
   else note('تعذر النشر: '+err.message);
- }finally{busy=false;btn.textContent='نشر التغييرات للموقع';syncState()}
+ }finally{busy=false;btn.textContent='نشر التغييرات على الموقع';syncState()}
 }
 
 function exportJson(){
