@@ -1,7 +1,7 @@
 'use strict';
 (()=>{
 const screen=document.createElement('dialog');screen.id='maicIntro';
-screen.innerHTML='<div class="intro-landmark"></div><div class="intro-content"><div class="intro-emblems"><img src="./assets/maic-official-crest.png" alt="" width="180" height="180"><img src="./assets/us-great-seal.svg" alt="" width="180" height="180"></div><h1 id="introAcademy">MAIC</h1><p class="intro-motto" id="introMotto"></p><div class="intro-progress" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><span></span></div><p id="introStatus" role="status"></p><button class="btn btn-gold" id="enterAcademy" type="button" disabled>…</button></div>';
+screen.innerHTML='<div class="intro-landmark"></div><div class="intro-content"><div class="intro-emblems"><img src="./assets/maic-official-crest.png" alt="" width="180" height="180"><img src="./assets/us-great-seal.svg" alt="" width="180" height="180"></div><h1 id="introAcademy" lang="en" dir="ltr">MAIC</h1><p class="intro-motto" id="introMotto" lang="en" dir="ltr"></p><div class="intro-progress" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><span></span></div><p id="introStatus" role="status"></p><button class="btn btn-gold" id="enterAcademy" type="button" disabled>…</button></div>';
 document.body.append(screen);screen.showModal();
 const close=()=>{screen.close();screen.remove();$('#mainContent').focus({preventScroll:true})};
 $('#enterAcademy').addEventListener('click',close);
