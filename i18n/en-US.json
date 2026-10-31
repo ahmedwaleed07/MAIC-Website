@@ -148,7 +148,8 @@
     "libraryMarketing": "Marketing",
     "libraryPublicRelations": "Public Relations",
     "libraryCriticalThinking": "Critical Thinking",
-    "libraryStrategicManagement": "Strategic Management"
+    "libraryStrategicManagement": "Strategic Management",
+    "proposedDuration": "Proposed duration"
   },
   "text": {
     "Home": "Home",

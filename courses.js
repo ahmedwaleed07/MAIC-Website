@@ -49,7 +49,10 @@ const MAIC_COURSE_CATALOG=[
     "duration": "",
     "instructor": "",
     "feeAmount": "",
-    "feeCurrency": "USD"
+    "feeCurrency": "USD",
+    "imageSlot": "marketing",
+    "durationHours": 3,
+    "durationProposed": true
   },
   {
     "id": "management-foundations",
@@ -74,7 +77,10 @@ const MAIC_COURSE_CATALOG=[
     "duration": "",
     "instructor": "",
     "feeAmount": "",
-    "feeCurrency": "USD"
+    "feeCurrency": "USD",
+    "imageSlot": "management",
+    "durationHours": 3,
+    "durationProposed": true
   },
   {
     "id": "human-resources",
@@ -99,7 +105,10 @@ const MAIC_COURSE_CATALOG=[
     "duration": "",
     "instructor": "",
     "feeAmount": "",
-    "feeCurrency": "USD"
+    "feeCurrency": "USD",
+    "imageSlot": "hr",
+    "durationHours": 3,
+    "durationProposed": true
   },
   {
     "id": "business-finance-accounting",

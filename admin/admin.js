@@ -123,6 +123,7 @@ if(kind==='course'){
  select('مستوى الدورة','level',c.level||'all',[['all','جميع المستويات'],['beginner','مبتدئ'],['intermediate','متوسط'],['advanced','متقدم']])+
  select('لغة تقديم الدورة','courseLanguage',c.courseLanguage||'ar',[['ar','العربية'],['en','الإنكليزية'],['bilingual','العربية والإنكليزية'],['other','لغة أخرى']])+
  field('مدة الدورة (مثلاً: 6 أسابيع)','duration',c.duration)+
+ field('المدة بالساعات — اختياري','durationHours',c.durationHours??'','number')+select('اعتماد المدة','durationProposed',c.durationProposed?'yes':'no',[['yes','مدة مقترحة'],['no','مدة معتمدة']])+select('الصورة المعتمدة','imageSlot',c.imageSlot||'',[['','دون صورة'],['management','مهارات الإدارة الأساسية'],['marketing','التسويق والاتصالات'],['hr','الموارد البشرية']])+
  field('اسم المحاضر / المدرب','instructor',c.instructor)+
  textarea('الأهداف التعليمية (كل هدف في سطر مستقل) — عربي','objectivesAr',c.objectivesAr)+
  textarea('Learning objectives — English','objectivesEn',c.objectivesEn)+
@@ -186,7 +187,7 @@ function editSave(e){
   objectivesAr:v('objectivesAr'),objectivesEn:v('objectivesEn'),
   syllabusAr:v('syllabusAr'),syllabusEn:v('syllabusEn'),
   requirementsAr:v('requirementsAr'),requirementsEn:v('requirementsEn'),
-  instructor:v('instructor'),duration:v('duration'),level:v('level'),courseLanguage:v('courseLanguage'),
+  instructor:v('instructor'),duration:v('duration'),durationHours:v('durationHours')?Number(v('durationHours')):null,durationProposed:v('durationProposed')==='yes',imageSlot:v('imageSlot'),level:v('level'),courseLanguage:v('courseLanguage'),
   feeAmount:v('feeAmount'),feeCurrency:v('feeCurrency'),mode,status:v('status')};
  if(c.feeAmount&&(!/^(?:0|[1-9][0-9]{0,7})(?:\.[0-9]{1,2})?$/.test(c.feeAmount)||Number(c.feeAmount)>10000000)){note('راجع مبلغ الرسوم. اكتب الرقم دون فواصل أو اترك الحقل فارغاً.');return}
  next.courses=id?next.courses.map(x=>x.id===id?c:x):[...next.courses,c];

@@ -136,7 +136,8 @@
     "libraryMarketing": "การตลาด",
     "libraryPublicRelations": "การประชาสัมพันธ์",
     "libraryCriticalThinking": "การคิดเชิงวิพากษ์",
-    "libraryStrategicManagement": "การจัดการเชิงกลยุทธ์"
+    "libraryStrategicManagement": "การจัดการเชิงกลยุทธ์",
+    "proposedDuration": "ระยะเวลาที่เสนอ"
   },
   "text": {
     "Home": "หน้าหลัก",

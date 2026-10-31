@@ -136,7 +136,8 @@
     "libraryMarketing": "Marketing",
     "libraryPublicRelations": "Öffentlichkeitsarbeit",
     "libraryCriticalThinking": "Kritisches Denken",
-    "libraryStrategicManagement": "Strategisches Management"
+    "libraryStrategicManagement": "Strategisches Management",
+    "proposedDuration": "Vorgeschlagene Dauer"
   },
   "text": {
     "Home": "Startseite",

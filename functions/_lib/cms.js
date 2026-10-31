@@ -65,12 +65,14 @@ export function validateDocument(src){
   const currency=str(c.feeCurrency,10)||'USD';if(!['USD','IQD','EUR','GBP','CAD','AED','SAR'].includes(currency))throw Error('Invalid fee currency');
   const feeAmount=str(c.feeAmount,20);
   if(feeAmount&&(!/^(?:0|[1-9][0-9]{0,7})(?:\.[0-9]{1,2})?$/.test(feeAmount)||Number(feeAmount)>10000000))throw Error('Invalid course fee');
+  const imageSlot=str(c.imageSlot,30);if(imageSlot&&!['management','marketing','hr'].includes(imageSlot))throw Error('Invalid course image');
+  const durationHours=c.durationHours==null||c.durationHours===''?null:Number(c.durationHours);if(durationHours!==null&&(!Number.isFinite(durationHours)||durationHours<=0||durationHours>10000))throw Error('Invalid duration hours');
   return {id:c.id,ar:str(c.ar,130),en:str(c.en,130),areaAr:str(c.areaAr,100),areaEn:str(c.areaEn,100),
    descriptionAr:str(c.descriptionAr,5000),descriptionEn:str(c.descriptionEn,5000),
    objectivesAr:str(c.objectivesAr,5000),objectivesEn:str(c.objectivesEn,5000),
    syllabusAr:str(c.syllabusAr,5000),syllabusEn:str(c.syllabusEn,5000),
    requirementsAr:str(c.requirementsAr,2000),requirementsEn:str(c.requirementsEn,2000),
-   instructor:str(c.instructor,180),duration:str(c.duration,100),level,courseLanguage,
+   instructor:str(c.instructor,180),duration:str(c.duration,100),durationHours,durationProposed:c.durationProposed===true,imageSlot,level,courseLanguage,
    feeAmount,feeCurrency:currency,mode,status};
  });
  ids.clear();
