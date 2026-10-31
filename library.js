@@ -9,7 +9,12 @@ const MAIC_LIBRARY_CATEGORIES=[
  {id:'cloud-computing',key:'libraryCloudComputing'},
  {id:'advanced-programming',key:'libraryAdvancedProgramming'},
  {id:'cryptography',key:'libraryCryptography'},
- {id:'telecommunications',key:'libraryTelecommunications'}
+ {id:'telecommunications',key:'libraryTelecommunications'},
+ {id:'translation',key:'libraryTranslation'},
+ {id:'marketing',key:'libraryMarketing'},
+ {id:'public-relations',key:'libraryPublicRelations'},
+ {id:'critical-thinking',key:'libraryCriticalThinking'},
+ {id:'strategic-management',key:'libraryStrategicManagement'}
 ];
 let maicLibraryBooks=[],maicCountryMessages=[],maicBookFilter='all';
 function maicContentText(item,key){const localized=item.translations?.[state.lang]?.[key];return localized||(state.lang==='ar'?item[key+'Ar']:item[key+'En'])||item[key+'En']||item[key+'Ar']||''}
@@ -19,6 +24,11 @@ function maicCountryMessageVisible(item,country,now=Date.now()){
 }
 function renderCountryMessages(){const messages=maicCountryMessages.filter(m=>maicCountryMessageVisible(m,state.selectedCountry));return messages.length?'<aside class="maic-country-messages" aria-live="polite">'+messages.map(m=>'<article class="content-panel"><h2>'+escapeHTML(formatHeading(maicContentText(m,'title')))+'</h2><p dir="auto">'+escapeHTML(maicContentText(m,'body'))+'</p></article>').join('')+'</aside>':''}
 function libraryCategoryName(c){return c.key?t(c.key):tx(c.text)}
+function maicBookLanguage(code){
+ if(code==='ar')return t('bookArabic');if(code==='en')return t('bookEnglish');
+ if(typeof code!=='string'||!/^[-a-zA-Z0-9]{2,20}$/.test(code))return t('bookNotStated');
+ try{const label=new Intl.DisplayNames([state.lang],{type:'language',fallback:'none'}).of(code);return label||t('bookNotStated')}catch{return t('bookNotStated')}
+}
 function libraryPageTitle(){const c=MAIC_LIBRARY_CATEGORIES.find(c=>state.page==='library:'+c.id);return c?libraryCategoryName(c):t('library')}
 function maicBookCover(book,title){
  const url=/^https:\/\//i.test(book.coverUrl||'')?book.coverUrl:'';
@@ -37,7 +47,7 @@ function renderLibrary(){
  const assigned=maicAssignAgent(state.selectedCountry),email=assigned?.agent?.email||CONTACT;
  const safeFree=b.access==='free'&&/^https:\/\//i.test(b.freeUrl||'');
  const href=safeFree?b.freeUrl:'mailto:'+email+'?subject='+encodeURIComponent('MAIC Library — '+(b.titleEn||b.titleAr));
- const lang=b.language==='ar'?t('bookArabic'):b.language==='en'?t('bookEnglish'):(b.language||t('bookNotStated'));
+ const lang=maicBookLanguage(b.language);
  const row=(label,value)=>'<div><dt>'+escapeHTML(t(label))+'</dt><dd dir="auto">'+escapeHTML(value||t('bookNotStated'))+'</dd></div>';
  const metadata='<dl class="maic-book-metadata">'+row('bookAuthor',b.author)+row('bookYear',b.year)+row('bookSpecialty',libraryCategoryName(category))+row('bookPublisher',b.publisher)+row('bookLanguage',lang)+'</dl>';
  const bio=maicContentText(b,'authorBio')||t('bookBioUnavailable');

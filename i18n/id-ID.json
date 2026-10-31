@@ -131,7 +131,12 @@
     "libraryCloudComputing": "Komputasi Awan",
     "libraryAdvancedProgramming": "Pemrograman Lanjutan",
     "libraryCryptography": "Kriptografi",
-    "libraryTelecommunications": "Telekomunikasi"
+    "libraryTelecommunications": "Telekomunikasi",
+    "libraryTranslation": "Penerjemahan",
+    "libraryMarketing": "Pemasaran",
+    "libraryPublicRelations": "Hubungan masyarakat",
+    "libraryCriticalThinking": "Berpikir kritis",
+    "libraryStrategicManagement": "Manajemen strategis"
   },
   "text": {
     "Home": "Beranda",

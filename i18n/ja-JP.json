@@ -131,7 +131,12 @@
     "libraryCloudComputing": "クラウドコンピューティング",
     "libraryAdvancedProgramming": "高度なプログラミング",
     "libraryCryptography": "暗号技術",
-    "libraryTelecommunications": "電気通信"
+    "libraryTelecommunications": "電気通信",
+    "libraryTranslation": "翻訳",
+    "libraryMarketing": "マーケティング",
+    "libraryPublicRelations": "広報",
+    "libraryCriticalThinking": "批判的思考",
+    "libraryStrategicManagement": "戦略経営"
   },
   "text": {
     "Home": "ホーム",

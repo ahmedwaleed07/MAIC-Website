@@ -131,7 +131,12 @@
     "libraryCloudComputing": "Điện toán đám mây",
     "libraryAdvancedProgramming": "Lập trình nâng cao",
     "libraryCryptography": "Mật mã học",
-    "libraryTelecommunications": "Viễn thông"
+    "libraryTelecommunications": "Viễn thông",
+    "libraryTranslation": "Biên dịch",
+    "libraryMarketing": "Tiếp thị",
+    "libraryPublicRelations": "Quan hệ công chúng",
+    "libraryCriticalThinking": "Tư duy phản biện",
+    "libraryStrategicManagement": "Quản trị chiến lược"
   },
   "text": {
     "Home": "Trang chủ",

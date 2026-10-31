@@ -131,7 +131,12 @@
     "libraryCloudComputing": "Cloudcomputing",
     "libraryAdvancedProgramming": "Geavanceerd programmeren",
     "libraryCryptography": "Cryptografie",
-    "libraryTelecommunications": "Telecommunicatie"
+    "libraryTelecommunications": "Telecommunicatie",
+    "libraryTranslation": "Vertaling",
+    "libraryMarketing": "Marketing",
+    "libraryPublicRelations": "Public relations",
+    "libraryCriticalThinking": "Kritisch denken",
+    "libraryStrategicManagement": "Strategisch management"
   },
   "text": {
     "Home": "Startpagina",

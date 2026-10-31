@@ -131,7 +131,12 @@
     "libraryCloudComputing": "Przetwarzanie w chmurze",
     "libraryAdvancedProgramming": "Zaawansowane programowanie",
     "libraryCryptography": "Kryptografia",
-    "libraryTelecommunications": "Telekomunikacja"
+    "libraryTelecommunications": "Telekomunikacja",
+    "libraryTranslation": "Tłumaczenie",
+    "libraryMarketing": "Marketing",
+    "libraryPublicRelations": "Public relations",
+    "libraryCriticalThinking": "Myślenie krytyczne",
+    "libraryStrategicManagement": "Zarządzanie strategiczne"
   },
   "text": {
     "Home": "Strona główna",

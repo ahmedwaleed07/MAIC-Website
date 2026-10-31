@@ -131,7 +131,12 @@
     "libraryCloudComputing": "Υπολογιστικό νέφος",
     "libraryAdvancedProgramming": "Προχωρημένος προγραμματισμός",
     "libraryCryptography": "Κρυπτογραφία",
-    "libraryTelecommunications": "Τηλεπικοινωνίες"
+    "libraryTelecommunications": "Τηλεπικοινωνίες",
+    "libraryTranslation": "Μετάφραση",
+    "libraryMarketing": "Μάρκετινγκ",
+    "libraryPublicRelations": "Δημόσιες σχέσεις",
+    "libraryCriticalThinking": "Κριτική σκέψη",
+    "libraryStrategicManagement": "Στρατηγική διοίκηση"
   },
   "text": {
     "Home": "Αρχική",

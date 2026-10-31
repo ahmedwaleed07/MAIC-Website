@@ -143,7 +143,12 @@
     "libraryCloudComputing": "الحوسبة السحابية",
     "libraryAdvancedProgramming": "البرمجة المتقدمة",
     "libraryCryptography": "التشفير",
-    "libraryTelecommunications": "الاتصالات"
+    "libraryTelecommunications": "الاتصالات",
+    "libraryTranslation": "الترجمة",
+    "libraryMarketing": "التسويق",
+    "libraryPublicRelations": "العلاقات العامة",
+    "libraryCriticalThinking": "التفكير النقدي",
+    "libraryStrategicManagement": "الإدارة الاستراتيجية"
   },
   "text": {
     "Home": "الرئيسية",

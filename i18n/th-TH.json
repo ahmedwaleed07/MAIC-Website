@@ -131,7 +131,12 @@
     "libraryCloudComputing": "การประมวลผลแบบคลาวด์",
     "libraryAdvancedProgramming": "การเขียนโปรแกรมขั้นสูง",
     "libraryCryptography": "วิทยาการเข้ารหัสลับ",
-    "libraryTelecommunications": "โทรคมนาคม"
+    "libraryTelecommunications": "โทรคมนาคม",
+    "libraryTranslation": "การแปล",
+    "libraryMarketing": "การตลาด",
+    "libraryPublicRelations": "การประชาสัมพันธ์",
+    "libraryCriticalThinking": "การคิดเชิงวิพากษ์",
+    "libraryStrategicManagement": "การจัดการเชิงกลยุทธ์"
   },
   "text": {
     "Home": "หน้าหลัก",

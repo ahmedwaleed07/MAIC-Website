@@ -131,7 +131,12 @@
     "libraryCloudComputing": "Cloud computing",
     "libraryAdvancedProgramming": "Programare avansată",
     "libraryCryptography": "Criptografie",
-    "libraryTelecommunications": "Telecomunicații"
+    "libraryTelecommunications": "Telecomunicații",
+    "libraryTranslation": "Traducere",
+    "libraryMarketing": "Marketing",
+    "libraryPublicRelations": "Relații publice",
+    "libraryCriticalThinking": "Gândire critică",
+    "libraryStrategicManagement": "Management strategic"
   },
   "text": {
     "Home": "Acasă",

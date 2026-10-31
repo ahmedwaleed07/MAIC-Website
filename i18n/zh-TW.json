@@ -131,7 +131,12 @@
     "libraryCloudComputing": "雲端運算",
     "libraryAdvancedProgramming": "進階程式設計",
     "libraryCryptography": "密碼學",
-    "libraryTelecommunications": "電信"
+    "libraryTelecommunications": "電信",
+    "libraryTranslation": "翻譯",
+    "libraryMarketing": "行銷",
+    "libraryPublicRelations": "公共關係",
+    "libraryCriticalThinking": "批判性思考",
+    "libraryStrategicManagement": "策略管理"
   },
   "text": {
     "Home": "首頁",

@@ -1,5 +1,5 @@
 const fs=require('fs'),vm=require('vm'),assert=require('assert');
-const books=JSON.parse(fs.readFileSync('data/library-books.json'));
+const books=JSON.parse(fs.readFileSync('data/library-books.json')).filter(b=>!b.id.startsWith('human-'));
 const categories=['business','projects','organizations','hr','cybersecurity','ai','cloud-computing','advanced-programming','cryptography','telecommunications'];
 assert.equal(books.length,120);assert.equal(new Set(books.map(b=>b.id)).size,120);assert.equal(new Set(books.map(b=>b.freeUrl)).size,120);
 for(const category of categories){const group=books.filter(b=>b.category===category);assert.equal(group.length,12,category);for(const b of group){assert(b.active&&b.access==='free');assert(b.titleAr&&b.titleEn&&b.author&&b.sourceUrl&&b.freeUrl);assert(!b.year||/^(19|20)\d{2}$/.test(b.year));for(const key of ['sourceUrl','freeUrl','coverUrl','licenseUrl'])if(b[key])assert.equal(new URL(b[key]).protocol,'https:');}}

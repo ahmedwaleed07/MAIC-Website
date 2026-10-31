@@ -131,7 +131,12 @@
     "libraryCloudComputing": "क्लाउड कंप्यूटिंग",
     "libraryAdvancedProgramming": "उन्नत प्रोग्रामिंग",
     "libraryCryptography": "क्रिप्टोग्राफी",
-    "libraryTelecommunications": "दूरसंचार"
+    "libraryTelecommunications": "दूरसंचार",
+    "libraryTranslation": "अनुवाद",
+    "libraryMarketing": "विपणन",
+    "libraryPublicRelations": "जनसंपर्क",
+    "libraryCriticalThinking": "आलोचनात्मक चिंतन",
+    "libraryStrategicManagement": "रणनीतिक प्रबंधन"
   },
   "text": {
     "Home": "गृह पृष्ठ",

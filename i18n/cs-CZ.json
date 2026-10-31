@@ -131,7 +131,12 @@
     "libraryCloudComputing": "Cloud computing",
     "libraryAdvancedProgramming": "Pokročilé programování",
     "libraryCryptography": "Kryptografie",
-    "libraryTelecommunications": "Telekomunikace"
+    "libraryTelecommunications": "Telekomunikace",
+    "libraryTranslation": "Překlad",
+    "libraryMarketing": "Marketing",
+    "libraryPublicRelations": "Vztahy s veřejností",
+    "libraryCriticalThinking": "Kritické myšlení",
+    "libraryStrategicManagement": "Strategické řízení"
   },
   "text": {
     "Home": "Domů",

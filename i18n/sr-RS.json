@@ -131,7 +131,12 @@
     "libraryCloudComputing": "Рачунарство у облаку",
     "libraryAdvancedProgramming": "Напредно програмирање",
     "libraryCryptography": "Криптографија",
-    "libraryTelecommunications": "Телекомуникације"
+    "libraryTelecommunications": "Телекомуникације",
+    "libraryTranslation": "Превођење",
+    "libraryMarketing": "Маркетинг",
+    "libraryPublicRelations": "Односи с јавношћу",
+    "libraryCriticalThinking": "Критичко мишљење",
+    "libraryStrategicManagement": "Стратешко управљање"
   },
   "text": {
     "Home": "Почетна",

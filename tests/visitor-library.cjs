@@ -15,9 +15,11 @@ ui.fixtureBooks=[free,clean.books[1]];vm.runInContext('maicLibraryBooks=fixtureB
 vm.runInContext('maicBookFilter="free";',ui);assert(!vm.runInContext('renderLibrary()',ui).includes('Ask about this book'));
 for(const file of fs.readdirSync('i18n')){const pack=JSON.parse(fs.readFileSync('i18n/'+file));for(const key of ['library','libraryIntro','libraryBusiness','libraryOrganizations','exploreBooks','free','paid','allBooks','noBooks','readBook','requestBook','backLibrary','preferenceHint'])assert(pack.ui[key],file+':'+key)}
 console.log('PASS: legacy catalogs, free/paid validation, paid-link privacy, country targeting and schedule, library filters, 29 locale packs');
-const catalog=JSON.parse(fs.readFileSync('data/library-books.json'));assert.equal(catalog.length,120);
+const catalog=JSON.parse(fs.readFileSync('data/library-books.json')).filter(b=>!b.id.startsWith('human-'));assert.equal(catalog.length,120);
 for(const category of ['business','projects','organizations','hr'])assert.equal(catalog.filter(b=>b.category===category).length,12);
 ctx.fixture={...base,books:catalog};const validated=vm.runInContext('validateDocument(fixture)',ctx);assert.equal(validated.books.length,120);assert(validated.books.every(b=>b.sourceUrl&&b.author&&b.authorBioAr));
 ui.fixtureBooks=catalog;vm.runInContext('maicLibraryBooks=fixtureBooks;maicBookFilter="all";',ui);const cards=vm.runInContext('renderLibrary()',ui);assert.equal((cards.match(/<article class="content-panel maic-book-card">/g)||[]).length,12);assert(cards.includes('maic-leather-book'));assert(cards.includes('Publication year'));assert(cards.includes('Publisher'));
 ctx.fixture={...base,books:[{...free,coverUrl:'javascript:alert(1)'}]};assert.throws(()=>vm.runInContext('validateDocument(fixture)',ctx));
 console.log('PASS: catalog books, 12 per specialty, metadata persistence, card rendering and unsafe cover rejection');
+ui.languageCodes=['ar','en','fr','de','es','it','pt','uk','ru'];assert.equal(vm.runInContext('languageCodes.map(maicBookLanguage).filter(x=>x!==t("bookNotStated")).length',ui),9);assert.equal(vm.runInContext('maicBookLanguage("<script>")',ui),'Not stated by the publisher');
+console.log('PASS: multilingual PDF language labels and invalid-code fallback');

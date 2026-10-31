@@ -131,7 +131,12 @@
     "libraryCloudComputing": "Хмарні обчислення",
     "libraryAdvancedProgramming": "Поглиблене програмування",
     "libraryCryptography": "Криптографія",
-    "libraryTelecommunications": "Телекомунікації"
+    "libraryTelecommunications": "Телекомунікації",
+    "libraryTranslation": "Переклад",
+    "libraryMarketing": "Маркетинг",
+    "libraryPublicRelations": "Зв’язки з громадськістю",
+    "libraryCriticalThinking": "Критичне мислення",
+    "libraryStrategicManagement": "Стратегічне управління"
   },
   "text": {
     "Home": "Головна",

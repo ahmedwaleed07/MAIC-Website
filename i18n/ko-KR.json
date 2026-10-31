@@ -131,7 +131,12 @@
     "libraryCloudComputing": "클라우드 컴퓨팅",
     "libraryAdvancedProgramming": "고급 프로그래밍",
     "libraryCryptography": "암호학",
-    "libraryTelecommunications": "통신"
+    "libraryTelecommunications": "통신",
+    "libraryTranslation": "번역",
+    "libraryMarketing": "마케팅",
+    "libraryPublicRelations": "홍보",
+    "libraryCriticalThinking": "비판적 사고",
+    "libraryStrategicManagement": "전략 경영"
   },
   "text": {
     "Home": "홈",

@@ -131,7 +131,12 @@
     "libraryCloudComputing": "Bulut Bilişim",
     "libraryAdvancedProgramming": "İleri Programlama",
     "libraryCryptography": "Kriptografi",
-    "libraryTelecommunications": "Telekomünikasyon"
+    "libraryTelecommunications": "Telekomünikasyon",
+    "libraryTranslation": "Çeviri",
+    "libraryMarketing": "Pazarlama",
+    "libraryPublicRelations": "Halkla ilişkiler",
+    "libraryCriticalThinking": "Eleştirel düşünme",
+    "libraryStrategicManagement": "Stratejik yönetim"
   },
   "text": {
     "Home": "Ana Sayfa",
