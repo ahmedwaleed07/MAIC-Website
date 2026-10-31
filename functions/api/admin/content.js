@@ -12,11 +12,11 @@ export async function onRequestPut({request,env}){
  if(!validOrigin(request))return json({error:'Origin rejected'},403);
  if(!await isAdmin(request,env))return json({error:'Unauthorized'},401);
  if(!env.MAIC_DB)return json({error:'Database not bound'},503);
- const max=240000;
+ const max=1048576;
  if(Number(request.headers.get('Content-Length')||0)>max)return json({error:'Document too large'},413);
  try{
   const bodyText=await request.text();
-  if(bodyText.length>max)return json({error:'Document too large'},413);
+  if(new TextEncoder().encode(bodyText).byteLength>max)return json({error:'Document too large'},413);
   const body=JSON.parse(bodyText);
   const expected=Number(body.expectedVersion);
   if(!Number.isSafeInteger(expected)||expected<1)return json({error:'Invalid revision'},400);

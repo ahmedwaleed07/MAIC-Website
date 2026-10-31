@@ -125,7 +125,13 @@
     "readBook": "Boek lezen",
     "requestBook": "Vraag naar dit boek",
     "backLibrary": "Terug naar de bibliotheek",
-    "preferenceHint": "Kies uw taal en woonland voor relevante inhoud en aanbiedingen. Uw keuzes worden op dit apparaat opgeslagen."
+    "preferenceHint": "Kies uw taal en woonland voor relevante inhoud en aanbiedingen. Uw keuzes worden op dit apparaat opgeslagen.",
+    "libraryCybersecurity": "Cyberbeveiliging",
+    "libraryAI": "Kunstmatige intelligentie",
+    "libraryCloudComputing": "Cloudcomputing",
+    "libraryAdvancedProgramming": "Geavanceerd programmeren",
+    "libraryCryptography": "Cryptografie",
+    "libraryTelecommunications": "Telecommunicatie"
   },
   "text": {
     "Home": "Startpagina",

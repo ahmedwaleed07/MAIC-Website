@@ -125,7 +125,13 @@
     "readBook": "阅读图书",
     "requestBook": "咨询此书",
     "backLibrary": "返回图书馆",
-    "preferenceHint": "请选择语言和居住国，以查看相关内容和优惠。您的选择将保存在此设备上。"
+    "preferenceHint": "请选择语言和居住国，以查看相关内容和优惠。您的选择将保存在此设备上。",
+    "libraryCybersecurity": "网络安全",
+    "libraryAI": "人工智能",
+    "libraryCloudComputing": "云计算",
+    "libraryAdvancedProgramming": "高级编程",
+    "libraryCryptography": "密码学",
+    "libraryTelecommunications": "电信"
   },
   "text": {
     "Home": "首页",

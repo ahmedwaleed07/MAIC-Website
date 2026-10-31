@@ -125,7 +125,13 @@
     "readBook": "閱讀圖書",
     "requestBook": "洽詢此書",
     "backLibrary": "返回圖書館",
-    "preferenceHint": "請選擇語言和居住國，以查看相關內容與優惠。您的選擇將儲存在此裝置上。"
+    "preferenceHint": "請選擇語言和居住國，以查看相關內容與優惠。您的選擇將儲存在此裝置上。",
+    "libraryCybersecurity": "網路安全",
+    "libraryAI": "人工智慧",
+    "libraryCloudComputing": "雲端運算",
+    "libraryAdvancedProgramming": "進階程式設計",
+    "libraryCryptography": "密碼學",
+    "libraryTelecommunications": "電信"
   },
   "text": {
     "Home": "首頁",

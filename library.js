@@ -3,7 +3,13 @@ const MAIC_LIBRARY_CATEGORIES=[
  {id:'business',key:'libraryBusiness'},
  {id:'projects',text:'Project Management'},
  {id:'organizations',key:'libraryOrganizations'},
- {id:'hr',text:'Human Resources'}
+ {id:'hr',text:'Human Resources'},
+ {id:'cybersecurity',key:'libraryCybersecurity'},
+ {id:'ai',key:'libraryAI'},
+ {id:'cloud-computing',key:'libraryCloudComputing'},
+ {id:'advanced-programming',key:'libraryAdvancedProgramming'},
+ {id:'cryptography',key:'libraryCryptography'},
+ {id:'telecommunications',key:'libraryTelecommunications'}
 ];
 let maicLibraryBooks=[],maicCountryMessages=[],maicBookFilter='all';
 function maicContentText(item,key){const localized=item.translations?.[state.lang]?.[key];return localized||(state.lang==='ar'?item[key+'Ar']:item[key+'En'])||item[key+'En']||item[key+'Ar']||''}

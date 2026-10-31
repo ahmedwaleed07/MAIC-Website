@@ -125,7 +125,13 @@
     "readBook": "Číst knihu",
     "requestBook": "Dotaz k této knize",
     "backLibrary": "Zpět do knihovny",
-    "preferenceHint": "Vyberte jazyk a zemi pobytu pro relevantní obsah a nabídky. Volby se ukládají na tomto zařízení."
+    "preferenceHint": "Vyberte jazyk a zemi pobytu pro relevantní obsah a nabídky. Volby se ukládají na tomto zařízení.",
+    "libraryCybersecurity": "Kybernetická bezpečnost",
+    "libraryAI": "Umělá inteligence",
+    "libraryCloudComputing": "Cloud computing",
+    "libraryAdvancedProgramming": "Pokročilé programování",
+    "libraryCryptography": "Kryptografie",
+    "libraryTelecommunications": "Telekomunikace"
   },
   "text": {
     "Home": "Domů",

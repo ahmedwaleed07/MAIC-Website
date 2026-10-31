@@ -100,7 +100,7 @@ export function validateDocument(src){
  });
  const required=['home','courses','about','agents','support','contact','languages','michigan'];
  if(required.some(id=>!ids.has(id)))throw Error('Missing required menu');
- const bookCategories=new Set(['business','projects','organizations','hr']);
+ const bookCategories=new Set(['business','projects','organizations','hr','cybersecurity','ai','cloud-computing','advanced-programming','cryptography','telecommunications']);
  const https=value=>{try{const u=new URL(value);return u.protocol==='https:'&&!u.username&&!u.password}catch{return false}};
  const rawBooks=src.books??[],rawMessages=src.messages??[];
  if(!Array.isArray(rawBooks)||!Array.isArray(rawMessages)||rawBooks.length>300||rawMessages.length>100)throw Error('Catalog library size limit');

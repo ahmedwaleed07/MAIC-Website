@@ -125,7 +125,13 @@
     "readBook": "Baca buku",
     "requestBook": "Tanyakan buku ini",
     "backLibrary": "Kembali ke perpustakaan",
-    "preferenceHint": "Pilih bahasa dan negara tempat tinggal untuk melihat konten dan penawaran yang relevan. Pilihan disimpan di perangkat ini."
+    "preferenceHint": "Pilih bahasa dan negara tempat tinggal untuk melihat konten dan penawaran yang relevan. Pilihan disimpan di perangkat ini.",
+    "libraryCybersecurity": "Keamanan Siber",
+    "libraryAI": "Kecerdasan Buatan",
+    "libraryCloudComputing": "Komputasi Awan",
+    "libraryAdvancedProgramming": "Pemrograman Lanjutan",
+    "libraryCryptography": "Kriptografi",
+    "libraryTelecommunications": "Telekomunikasi"
   },
   "text": {
     "Home": "Beranda",

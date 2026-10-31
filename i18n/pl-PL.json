@@ -125,7 +125,13 @@
     "readBook": "Czytaj książkę",
     "requestBook": "Zapytaj o tę książkę",
     "backLibrary": "Powrót do biblioteki",
-    "preferenceHint": "Wybierz język i kraj zamieszkania, aby zobaczyć odpowiednie treści i oferty. Wybór zostanie zapisany na tym urządzeniu."
+    "preferenceHint": "Wybierz język i kraj zamieszkania, aby zobaczyć odpowiednie treści i oferty. Wybór zostanie zapisany na tym urządzeniu.",
+    "libraryCybersecurity": "Cyberbezpieczeństwo",
+    "libraryAI": "Sztuczna inteligencja",
+    "libraryCloudComputing": "Przetwarzanie w chmurze",
+    "libraryAdvancedProgramming": "Zaawansowane programowanie",
+    "libraryCryptography": "Kryptografia",
+    "libraryTelecommunications": "Telekomunikacja"
   },
   "text": {
     "Home": "Strona główna",

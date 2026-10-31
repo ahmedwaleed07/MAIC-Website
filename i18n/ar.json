@@ -137,7 +137,13 @@
     "bookNotStated": "غير مذكور لدى الناشر",
     "bookAboutAuthor": "نبذة عن المؤلف",
     "bookBioUnavailable": "لم يوفّر الناشر نبذة موثّقة عن المؤلف",
-    "bookSource": "الناشر وتفاصيل الكتاب"
+    "bookSource": "الناشر وتفاصيل الكتاب",
+    "libraryCybersecurity": "الأمن السيبراني",
+    "libraryAI": "الذكاء الاصطناعي",
+    "libraryCloudComputing": "الحوسبة السحابية",
+    "libraryAdvancedProgramming": "البرمجة المتقدمة",
+    "libraryCryptography": "التشفير",
+    "libraryTelecommunications": "الاتصالات"
   },
   "text": {
     "Home": "الرئيسية",

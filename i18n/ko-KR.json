@@ -125,7 +125,13 @@
     "readBook": "도서 읽기",
     "requestBook": "이 도서 문의하기",
     "backLibrary": "도서관으로 돌아가기",
-    "preferenceHint": "관련 콘텐츠와 혜택을 보려면 언어와 거주 국가를 선택하세요. 선택 사항은 이 기기에 저장됩니다."
+    "preferenceHint": "관련 콘텐츠와 혜택을 보려면 언어와 거주 국가를 선택하세요. 선택 사항은 이 기기에 저장됩니다.",
+    "libraryCybersecurity": "사이버 보안",
+    "libraryAI": "인공지능",
+    "libraryCloudComputing": "클라우드 컴퓨팅",
+    "libraryAdvancedProgramming": "고급 프로그래밍",
+    "libraryCryptography": "암호학",
+    "libraryTelecommunications": "통신"
   },
   "text": {
     "Home": "홈",

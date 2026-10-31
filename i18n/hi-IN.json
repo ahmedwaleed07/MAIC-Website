@@ -125,7 +125,13 @@
     "readBook": "पुस्तक पढ़ें",
     "requestBook": "इस पुस्तक के बारे में पूछें",
     "backLibrary": "पुस्तकालय में लौटें",
-    "preferenceHint": "उपयुक्त सामग्री और ऑफ़र देखने के लिए भाषा और निवास देश चुनें। आपके विकल्प इस डिवाइस पर सहेजे जाते हैं।"
+    "preferenceHint": "उपयुक्त सामग्री और ऑफ़र देखने के लिए भाषा और निवास देश चुनें। आपके विकल्प इस डिवाइस पर सहेजे जाते हैं।",
+    "libraryCybersecurity": "साइबर सुरक्षा",
+    "libraryAI": "कृत्रिम बुद्धिमत्ता",
+    "libraryCloudComputing": "क्लाउड कंप्यूटिंग",
+    "libraryAdvancedProgramming": "उन्नत प्रोग्रामिंग",
+    "libraryCryptography": "क्रिप्टोग्राफी",
+    "libraryTelecommunications": "दूरसंचार"
   },
   "text": {
     "Home": "गृह पृष्ठ",

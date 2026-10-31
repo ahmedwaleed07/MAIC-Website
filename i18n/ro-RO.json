@@ -125,7 +125,13 @@
     "readBook": "Citește cartea",
     "requestBook": "Întreabă despre această carte",
     "backLibrary": "Înapoi la bibliotecă",
-    "preferenceHint": "Alege limba și țara de reședință pentru conținut și oferte relevante. Alegerile sunt salvate pe acest dispozitiv."
+    "preferenceHint": "Alege limba și țara de reședință pentru conținut și oferte relevante. Alegerile sunt salvate pe acest dispozitiv.",
+    "libraryCybersecurity": "Securitate cibernetică",
+    "libraryAI": "Inteligență artificială",
+    "libraryCloudComputing": "Cloud computing",
+    "libraryAdvancedProgramming": "Programare avansată",
+    "libraryCryptography": "Criptografie",
+    "libraryTelecommunications": "Telecomunicații"
   },
   "text": {
     "Home": "Acasă",

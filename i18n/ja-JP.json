@@ -125,7 +125,13 @@
     "readBook": "書籍を読む",
     "requestBook": "この書籍について問い合わせる",
     "backLibrary": "ライブラリーに戻る",
-    "preferenceHint": "言語と居住国を選択すると、関連するコンテンツや特典が表示されます。選択内容はこの端末に保存されます。"
+    "preferenceHint": "言語と居住国を選択すると、関連するコンテンツや特典が表示されます。選択内容はこの端末に保存されます。",
+    "libraryCybersecurity": "サイバーセキュリティ",
+    "libraryAI": "人工知能",
+    "libraryCloudComputing": "クラウドコンピューティング",
+    "libraryAdvancedProgramming": "高度なプログラミング",
+    "libraryCryptography": "暗号技術",
+    "libraryTelecommunications": "電気通信"
   },
   "text": {
     "Home": "ホーム",

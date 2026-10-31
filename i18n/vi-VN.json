@@ -125,7 +125,13 @@
     "readBook": "Đọc sách",
     "requestBook": "Hỏi về sách này",
     "backLibrary": "Trở lại thư viện",
-    "preferenceHint": "Chọn ngôn ngữ và quốc gia cư trú để xem nội dung và ưu đãi phù hợp. Lựa chọn được lưu trên thiết bị này."
+    "preferenceHint": "Chọn ngôn ngữ và quốc gia cư trú để xem nội dung và ưu đãi phù hợp. Lựa chọn được lưu trên thiết bị này.",
+    "libraryCybersecurity": "An ninh mạng",
+    "libraryAI": "Trí tuệ nhân tạo",
+    "libraryCloudComputing": "Điện toán đám mây",
+    "libraryAdvancedProgramming": "Lập trình nâng cao",
+    "libraryCryptography": "Mật mã học",
+    "libraryTelecommunications": "Viễn thông"
   },
   "text": {
     "Home": "Trang chủ",

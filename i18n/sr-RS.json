@@ -125,7 +125,13 @@
     "readBook": "Читај књигу",
     "requestBook": "Упит о овој књизи",
     "backLibrary": "Назад у библиотеку",
-    "preferenceHint": "Изаберите језик и државу пребивалишта за релевантан садржај и понуде. Избор се чува на овом уређају."
+    "preferenceHint": "Изаберите језик и државу пребивалишта за релевантан садржај и понуде. Избор се чува на овом уређају.",
+    "libraryCybersecurity": "Сајбер безбедност",
+    "libraryAI": "Вештачка интелигенција",
+    "libraryCloudComputing": "Рачунарство у облаку",
+    "libraryAdvancedProgramming": "Напредно програмирање",
+    "libraryCryptography": "Криптографија",
+    "libraryTelecommunications": "Телекомуникације"
   },
   "text": {
     "Home": "Почетна",

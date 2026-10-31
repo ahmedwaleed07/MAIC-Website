@@ -137,7 +137,13 @@
     "bookNotStated": "Not stated by the publisher",
     "bookAboutAuthor": "About the author",
     "bookBioUnavailable": "The publisher has not provided a verified author biography.",
-    "bookSource": "Publisher and book details"
+    "bookSource": "Publisher and book details",
+    "libraryCybersecurity": "Cybersecurity",
+    "libraryAI": "Artificial Intelligence",
+    "libraryCloudComputing": "Cloud Computing",
+    "libraryAdvancedProgramming": "Advanced Programming",
+    "libraryCryptography": "Cryptography",
+    "libraryTelecommunications": "Telecommunications"
   },
   "text": {
     "Home": "Home",

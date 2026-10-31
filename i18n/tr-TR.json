@@ -125,7 +125,13 @@
     "readBook": "Kitabı oku",
     "requestBook": "Bu kitap hakkında bilgi al",
     "backLibrary": "Kütüphaneye dön",
-    "preferenceHint": "İlgili içerik ve teklifleri görmek için dilinizi ve ikamet ülkenizi seçin. Tercihleriniz bu cihazda saklanır."
+    "preferenceHint": "İlgili içerik ve teklifleri görmek için dilinizi ve ikamet ülkenizi seçin. Tercihleriniz bu cihazda saklanır.",
+    "libraryCybersecurity": "Siber Güvenlik",
+    "libraryAI": "Yapay Zekâ",
+    "libraryCloudComputing": "Bulut Bilişim",
+    "libraryAdvancedProgramming": "İleri Programlama",
+    "libraryCryptography": "Kriptografi",
+    "libraryTelecommunications": "Telekomünikasyon"
   },
   "text": {
     "Home": "Ana Sayfa",
