@@ -110,7 +110,10 @@ export function validateDocument(src){
   const price=String(b.price??'');if(b.access==='paid'&&(!/^(?:0|[1-9][0-9]{0,7})(?:\.[0-9]{1,2})?$/.test(price)||Number(price)<=0))throw Error('Invalid book price');
   if(!['USD','IQD','EUR','GBP','CAD','AED','SAR'].includes(b.currency||'USD'))throw Error('Invalid book currency');
   const freeUrl=b.access==='free'?str(b.freeUrl,1000):'';if(b.access==='free'&&!https(freeUrl))throw Error('Invalid free book URL');
-  return {id:b.id,category:b.category,titleAr:str(b.titleAr,180),titleEn:str(b.titleEn,180),descriptionAr:str(b.descriptionAr,3000),descriptionEn:str(b.descriptionEn,3000),author:str(b.author,180),access:b.access,price:b.access==='free'?'0':price,currency:b.currency||'USD',freeUrl,active:b.active===true};
+  const coverUrl=str(b.coverUrl,1000),sourceUrl=str(b.sourceUrl,1000),licenseUrl=str(b.licenseUrl,1000);
+  if([coverUrl,sourceUrl,licenseUrl].some(u=>u&&!https(u)))throw Error('Invalid book metadata URL');
+  const year=str(b.year,4);if(year&&!/^(?:19|20)\d{2}$/.test(year))throw Error('Invalid publication year');
+  return {id:b.id,category:b.category,titleAr:str(b.titleAr,180),titleEn:str(b.titleEn,180),descriptionAr:str(b.descriptionAr,3000),descriptionEn:str(b.descriptionEn,3000),author:str(b.author,500),year,publisher:str(b.publisher,250),coverUrl,sourceUrl,licenseUrl,language:str(b.language,20),authorBioAr:str(b.authorBioAr,1000),authorBioEn:str(b.authorBioEn,1000),access:b.access,price:b.access==='free'?'0':price,currency:b.currency||'USD',freeUrl,active:b.active===true};
  });
  extras.clear();
  const messages=rawMessages.map(m=>{

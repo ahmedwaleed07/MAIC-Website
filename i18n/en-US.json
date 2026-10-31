@@ -125,7 +125,19 @@
     "readBook": "Read book",
     "requestBook": "Ask about this book",
     "backLibrary": "Back to library",
-    "preferenceHint": "Choose your language and country of residence to see relevant content and offers. Your choices are saved on this device."
+    "preferenceHint": "Choose your language and country of residence to see relevant content and offers. Your choices are saved on this device.",
+    "bookCover": "Book cover",
+    "bookAuthor": "Author",
+    "bookYear": "Publication year",
+    "bookSpecialty": "Specialty",
+    "bookPublisher": "Publisher",
+    "bookLanguage": "PDF language",
+    "bookArabic": "Arabic",
+    "bookEnglish": "English",
+    "bookNotStated": "Not stated by the publisher",
+    "bookAboutAuthor": "About the author",
+    "bookBioUnavailable": "The publisher has not provided a verified author biography.",
+    "bookSource": "Publisher and book details"
   },
   "text": {
     "Home": "Home",

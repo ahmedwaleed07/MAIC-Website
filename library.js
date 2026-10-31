@@ -14,6 +14,11 @@ function maicCountryMessageVisible(item,country,now=Date.now()){
 function renderCountryMessages(){const messages=maicCountryMessages.filter(m=>maicCountryMessageVisible(m,state.selectedCountry));return messages.length?'<aside class="maic-country-messages" aria-live="polite">'+messages.map(m=>'<article class="content-panel"><h2>'+escapeHTML(formatHeading(maicContentText(m,'title')))+'</h2><p dir="auto">'+escapeHTML(maicContentText(m,'body'))+'</p></article>').join('')+'</aside>':''}
 function libraryCategoryName(c){return c.key?t(c.key):tx(c.text)}
 function libraryPageTitle(){const c=MAIC_LIBRARY_CATEGORIES.find(c=>state.page==='library:'+c.id);return c?libraryCategoryName(c):t('library')}
+function maicBookCover(book,title){
+ const url=/^https:\/\//i.test(book.coverUrl||'')?book.coverUrl:'';
+ return '<div class="maic-book-cover" role="img" aria-label="'+escapeHTML(t('bookCover')+': '+title)+'"><div class="maic-leather-book" aria-hidden="true"><span class="maic-cover-brand">MAIC</span><span class="maic-cover-ornament">✦</span><span class="maic-cover-title" dir="auto">'+escapeHTML(title)+'</span><span class="maic-cover-ornament">✦</span><span class="maic-cover-motto">Innovate. Create. Lead.</span></div>'+(url?'<img class="maic-original-cover" src="'+escapeHTML(url)+'" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">':'')+'</div>';
+}
+document.addEventListener('error',event=>{if(event.target?.classList?.contains('maic-original-cover'))event.target.remove()},true);
 function renderLibrary(){
  const category=state.page.startsWith('library:')?MAIC_LIBRARY_CATEGORIES.find(c=>c.id===state.page.slice(8)):null;
  if(state.page.startsWith('library:')&&!category)return renderNotFound();
@@ -26,7 +31,12 @@ function renderLibrary(){
  const assigned=maicAssignAgent(state.selectedCountry),email=assigned?.agent?.email||CONTACT;
  const safeFree=b.access==='free'&&/^https:\/\//i.test(b.freeUrl||'');
  const href=safeFree?b.freeUrl:'mailto:'+email+'?subject='+encodeURIComponent('MAIC Library — '+(b.titleEn||b.titleAr));
- return '<article class="content-panel maic-book-card"><span class="maic-course-badge">'+escapeHTML(price)+'</span><h2>'+escapeHTML(formatHeading(title))+'</h2>'+(b.author?'<p dir="auto">'+escapeHTML(b.author)+'</p>':'')+'<p dir="auto">'+escapeHTML(description)+'</p><a class="btn btn-gold" href="'+escapeHTML(href)+'" '+(safeFree?'target="_blank" rel="noopener noreferrer"':'')+'>'+escapeHTML(t(safeFree?'readBook':'requestBook'))+icon(safeFree?'external':'mail')+'</a></article>';
+ const lang=b.language==='ar'?t('bookArabic'):b.language==='en'?t('bookEnglish'):(b.language||t('bookNotStated'));
+ const row=(label,value)=>'<div><dt>'+escapeHTML(t(label))+'</dt><dd dir="auto">'+escapeHTML(value||t('bookNotStated'))+'</dd></div>';
+ const metadata='<dl class="maic-book-metadata">'+row('bookAuthor',b.author)+row('bookYear',b.year)+row('bookSpecialty',libraryCategoryName(category))+row('bookPublisher',b.publisher)+row('bookLanguage',lang)+'</dl>';
+ const bio=maicContentText(b,'authorBio')||t('bookBioUnavailable');
+ const provenance=/^https:\/\//i.test(b.sourceUrl||'')?'<a class="maic-book-source" href="'+escapeHTML(b.sourceUrl)+'" target="_blank" rel="noopener noreferrer">'+escapeHTML(t('bookSource'))+icon('external')+'</a>':'';
+ return '<article class="content-panel maic-book-card">'+maicBookCover(b,title)+'<div class="maic-book-content"><span class="maic-course-badge">'+escapeHTML(price)+'</span><h2>'+escapeHTML(formatHeading(title))+'</h2>'+metadata+'<p class="maic-book-summary" dir="auto">'+escapeHTML(description)+'</p><details class="maic-author-bio"><summary>'+escapeHTML(t('bookAboutAuthor'))+'</summary><p dir="auto">'+escapeHTML(bio)+'</p></details>'+provenance+'<a class="btn btn-gold" href="'+escapeHTML(href)+'" '+(safeFree?'target="_blank" rel="noopener noreferrer"':'')+'>'+escapeHTML(t(safeFree?'readBook':'requestBook'))+icon(safeFree?'external':'mail')+'</a></div></article>';
  }).join('');
  return pageShell(libraryCategoryName(category),'','<div class="detail-back">'+action('library','backLibrary')+'</div><div class="maic-book-filters" role="group" aria-label="'+escapeHTML(t('library'))+'">'+filters+'</div><div class="maic-library-grid" aria-live="polite">'+(cards||'<p class="content-panel">'+escapeHTML(t('noBooks'))+'</p>')+'</div>');
 }
