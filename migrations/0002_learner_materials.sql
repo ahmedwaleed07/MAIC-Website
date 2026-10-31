@@ -1,0 +1,10 @@
+CREATE TABLE IF NOT EXISTS learning_students(id TEXT PRIMARY KEY,email TEXT NOT NULL UNIQUE,first_name TEXT NOT NULL,middle_name TEXT NOT NULL DEFAULT '',last_name TEXT NOT NULL,dob TEXT NOT NULL,country TEXT NOT NULL,phone TEXT NOT NULL,education TEXT NOT NULL,password_salt TEXT NOT NULL,password_hash TEXT NOT NULL,enabled INTEGER NOT NULL DEFAULT 1,created_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP);
+CREATE TABLE IF NOT EXISTS learning_sessions(token_hash TEXT PRIMARY KEY,student_id TEXT NOT NULL REFERENCES learning_students(id) ON DELETE CASCADE,expires_at INTEGER NOT NULL);
+CREATE INDEX IF NOT EXISTS learning_session_student ON learning_sessions(student_id);
+CREATE TABLE IF NOT EXISTS learning_enrollments(student_id TEXT NOT NULL REFERENCES learning_students(id) ON DELETE CASCADE,course_id TEXT NOT NULL,status TEXT NOT NULL CHECK(status IN ('active','revoked')),agent_id TEXT NOT NULL,confirmation_ref TEXT NOT NULL,activated_at TEXT NOT NULL,updated_at TEXT NOT NULL,PRIMARY KEY(student_id,course_id));
+CREATE TABLE IF NOT EXISTS learning_audit(id TEXT PRIMARY KEY,student_id TEXT NOT NULL,course_id TEXT NOT NULL,action TEXT NOT NULL,agent_id TEXT NOT NULL,confirmation_ref TEXT NOT NULL,created_at TEXT NOT NULL);
+CREATE TABLE IF NOT EXISTS learning_rate_limits(subject TEXT PRIMARY KEY,attempts INTEGER NOT NULL,window_start INTEGER NOT NULL);
+CREATE TABLE IF NOT EXISTS learning_materials(course_id TEXT PRIMARY KEY,version TEXT NOT NULL,title TEXT NOT NULL,language TEXT NOT NULL,pages INTEGER NOT NULL,bytes INTEGER NOT NULL,sha256 TEXT NOT NULL,chunk_count INTEGER NOT NULL,updated_at TEXT NOT NULL);
+CREATE TABLE IF NOT EXISTS learning_material_chunks(course_id TEXT NOT NULL,version TEXT NOT NULL,part INTEGER NOT NULL,payload TEXT NOT NULL,PRIMARY KEY(course_id,version,part));
+CREATE TABLE IF NOT EXISTS learning_requests(student_id TEXT NOT NULL REFERENCES learning_students(id) ON DELETE CASCADE,course_id TEXT NOT NULL,created_at TEXT NOT NULL,PRIMARY KEY(student_id,course_id));
+CREATE TABLE IF NOT EXISTS learning_owner_challenges(digest TEXT PRIMARY KEY,expires_at INTEGER NOT NULL);

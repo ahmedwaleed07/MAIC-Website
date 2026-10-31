@@ -268,7 +268,14 @@ async function loginAdmin(e){
  e.preventDefault();
  const button=$('#adminLoginSubmit');button.disabled=true;button.textContent='جارٍ التحقق...';
  try{
-  await serverCall('/api/admin/login',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({password:$('#adminPassword').value})});
+  const challenge=await serverCall('/api/admin/challenge');
+  const enc=new TextEncoder(),fromHex=s=>Uint8Array.from(s.match(/../g),x=>parseInt(x,16));
+  const passwordKey=await crypto.subtle.importKey('raw',enc.encode($('#adminPassword').value),'PBKDF2',false,['deriveBits']);
+  const derived=await crypto.subtle.deriveBits({name:'PBKDF2',salt:fromHex(challenge.salt),iterations:180000,hash:'SHA-256'},passwordKey,256);
+  const proofKey=await crypto.subtle.importKey('raw',derived,{name:'HMAC',hash:'SHA-256'},false,['sign']);
+  const proof=Array.from(new Uint8Array(await crypto.subtle.sign('HMAC',proofKey,enc.encode(challenge.challenge+'|'+location.origin))),x=>x.toString(16).padStart(2,'0')).join('');
+  await serverCall('/api/admin/login',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({challenge:challenge.challenge,proof})});
+  $('#adminPassword').value='';
   $('#adminLoginError').textContent='';
   await enterDashboard();
  }catch(err){$('#adminLoginError').textContent=err.status===429?'تجاوزت الحد المسموح به لمحاولات تسجيل الدخول. يُرجى المحاولة بعد خمس عشرة دقيقة.':'تعذّر الدخول. تحقق من مفتاح المدير.'}
