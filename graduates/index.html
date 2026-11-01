@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow"><title>MAIC | Graduates</title>
+<style>
+:root{color-scheme:dark}*{box-sizing:border-box}body{margin:0;background:#081c30;color:#f4efe4;font:16px/1.6 system-ui,Arial}header,main,footer{max-width:1080px;margin:auto;padding:25px 24px}header{display:flex;align-items:center;gap:18px;border-bottom:1px solid #b79958}header img{width:76px;height:76px;object-fit:contain}header a,main a,footer a{color:#e3c58b}small,.muted{color:#d2b987}h1{font:normal clamp(30px,4vw,43px) Georgia,serif;color:#e7c88c}#list{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:16px;margin-top:26px}.graduate{border:1px solid #b7995880;background:#10283f;border-radius:12px;padding:20px}.graduate h2{font:normal 22px Georgia,serif;color:#f0d4a0}.graduate p{margin:8px 0}.graduate a{display:inline-block;margin-top:8px}.notice{color:#d2b987}button{background:#d3b777;color:#091e32;border:0;border-radius:8px;padding:12px 25px;font-weight:700;cursor:pointer}button[hidden]{display:none}
+</style></head><body>
+<header><img src="/assets/maic-official-crest.png" alt="MAIC approved academic crest"><div><strong>MICHIGAN ACADEMY OF INNOVATION AND CREATIVITY</strong><br><small>Innovate. Create. Lead.</small></div></header>
+<main><p class="muted">OFFICIAL VERIFICATION</p><h1>MAIC Graduate Register</h1><p>Public records are shown only when the graduate has consented to publication. Each certificate has its own direct verification link.</p><div id="list" aria-live="polite"><p class="notice">Loading records…</p></div><p><button id="more" hidden type="button">Load more graduates</button></p></main>
+<footer><a href="/">MAIC home</a> · <a href="/learner/certificates.html">My Certificates</a></footer>
+<script>
+const list=document.querySelector('#list'),more=document.querySelector('#more');let offset=0;
+function cell(tag,txt){const e=document.createElement(tag);e.textContent=txt;return e}
+async function load(){
+ more.disabled=true;
+ try{
+  const r=await fetch('/api/graduates?offset='+offset,{cache:'no-store'});if(!r.ok)throw Error('Unavailable');
+  const data=await r.json();
+  if(offset===0)list.replaceChildren();
+  for(const g of data.graduates){
+   const a=document.createElement('article');a.className='graduate';
+   a.append(cell('h2',g.graduate_full_name),cell('p',g.course_title),cell('p',g.certificate_type==='completion'?'Certificate of Completion':'Certificate of Participation'),cell('p','Country: '+g.graduate_country),cell('p','Authorized agent: '+g.agent_name));
+   const link=document.createElement('a');link.href='/graduates/'+encodeURIComponent(g.verification_token);link.textContent='Verify certificate';a.append(link);list.append(a);
+  }
+  offset=data.nextOffset??offset;more.hidden=data.nextOffset==null;
+  if(!list.children.length)list.append(cell('p','No public graduate records are available yet.'));
+ }catch{if(offset===0)list.replaceChildren(cell('p','The public graduate register is not available yet.'));}
+ finally{more.disabled=false}
+}
+more.addEventListener('click',load);load();
+</script></body></html>
