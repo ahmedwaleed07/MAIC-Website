@@ -10,9 +10,10 @@ async function load(){
   status.textContent='عدد اشتراكات المتعلمين: '+model.students.length+(model.issuanceConfigured?' · خدمة الإصدار مهيأة':' · إصدار PDF غير مفعّل');
   for(const s of model.students){
    const c=courses.find(x=>x.id===s.course_id);if(!c)continue;
+   if(!c.mode.includes(s.delivery_mode))continue;
    const card=el('article'),name=[s.first_name,s.middle_name,s.last_name].filter(Boolean).join(' ');
    card.append(el('h2',name+' — '+c.en),el('p','البلد: '+s.country+' · الوكيل: '+s.agent_id));
-   const form=el('div');form.className='groups';const label=el('label','نوع الدراسة');const select=document.createElement('select');for(const m of c.mode){const o=el('option',modes[m]||m);o.value=m;select.append(o)}label.append(select);
+   const form=el('div');form.className='groups';const label=el('label','نوع الدراسة');const select=document.createElement('select');for(const m of c.mode.filter(x=>x===s.delivery_mode)){const o=el('option',modes[m]||m);o.value=m;select.append(o)}label.append(select);
    const evidenceLabel=el('label','مرجع إثبات الإكمال');const evidence=document.createElement('input');evidence.placeholder='مرجع تقرير المدرس أو الاختبار';evidence.maxLength=500;evidenceLabel.append(evidence);form.append(label,evidenceLabel);
    const details=el('div');form.append(details);card.append(form);root.append(card);
    function update(){
