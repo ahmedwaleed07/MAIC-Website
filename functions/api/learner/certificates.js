@@ -4,7 +4,7 @@ export async function onRequestGet({request,env}){
  try{
   const student=await session(request,env);if(!student)return json({error:'login_required'},401);
   const certificates=(await env.MAIC_DB.prepare(
-   "SELECT id,certificate_number,course_title,course_mode,certificate_type,graduate_full_name,graduate_country,agent_name,verification_token,status,issued_at,public_consent,CASE WHEN pdf_storage_key IS NOT NULL THEN 1 ELSE 0 END AS pdf_ready FROM learning_certificates WHERE student_id=? ORDER BY issued_at DESC"
+   "SELECT id,certificate_number,course_title,course_mode,certificate_type,graduate_full_name,graduate_country,agent_name,verification_token,status,issued_at,public_consent,CASE WHEN pdf_storage_key IS NOT NULL THEN 1 ELSE 0 END AS pdf_ready FROM learning_certificates WHERE student_id=? AND pdf_storage_key IS NOT NULL ORDER BY issued_at DESC"
   ).bind(student.id).all()).results;
   const originals=(await env.MAIC_DB.prepare(
    "SELECT id,certificate_id,status,fee_amount,fee_currency,tracking_reference,created_at,updated_at FROM learning_original_requests WHERE student_id=? ORDER BY created_at DESC"
@@ -19,7 +19,7 @@ export async function onRequestPost({request,env}){
   if(await limited(request,env.MAIC_DB,'certificates',12))return json({error:'rate_limited'},429);
   const d=await body(request);
   if(!validId(d.certificateId))return json({error:'invalid_certificate'},400);
-  const cert=await env.MAIC_DB.prepare("SELECT id,agent_id,status,public_consent FROM learning_certificates WHERE id=? AND student_id=?").bind(d.certificateId,student.id).first();
+  const cert=await env.MAIC_DB.prepare("SELECT id,agent_id,status,public_consent,pdf_storage_key FROM learning_certificates WHERE id=? AND student_id=?").bind(d.certificateId,student.id).first();
   if(!cert)return json({error:'not_available'},404);
   if(d.action==='set-publication'){
    if(typeof d.consent!=='boolean')return json({error:'invalid_consent'},400);
@@ -28,7 +28,7 @@ export async function onRequestPost({request,env}){
    return json({saved:true,publicConsent:d.consent});
   }
   if(d.action!=='request-original')return json({error:'invalid_action'},400);
-  if(cert.status!=='issued')return json({error:'not_available'},409);
+  if(cert.status!=='issued'||!cert.pdf_storage_key)return json({error:'not_available'},409);
   const name=typeof d.recipientName==='string'?d.recipientName.trim():'',phone=typeof d.recipientPhone==='string'?d.recipientPhone.trim():'',address=typeof d.address==='string'?d.address.trim():'',country=typeof d.country==='string'?d.country.trim().toUpperCase():'',postal=typeof d.postalCode==='string'?d.postalCode.trim():'';
   if(name.length<3||name.length>180||!/^\+?[\d ()-]{7,40}$/.test(phone)||address.length<12||address.length>1000||!/^[A-Z]{2}$/.test(country)||postal.length>30)return json({error:'invalid_shipping_details'},400);
   const active=await env.MAIC_DB.prepare("SELECT id FROM learning_original_requests WHERE certificate_id=? AND student_id=? AND status NOT IN ('delivered','cancelled') LIMIT 1").bind(cert.id,student.id).first();
