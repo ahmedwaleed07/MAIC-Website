@@ -87,10 +87,10 @@ async function load(){
      }));
     }else if(completion.status==='verified'){
      const b=button('إصدار شهادة إكمال',async()=>{
-      if(!confirm('إصدار شهادة رسمية لهذا المتعلم؟'))return;
-      await api('/api/admin/completions',{...payload,action:'issue',certificateType:'completion'})
+      if(!confirm('إنشاء سجل شهادة الإكمال تمهيداً لإضافة التواقيع الثلاثة؟ لن تظهر للمتعلم ولن تصبح صالحة إلا بعد حفظ النسخة الموقعة.'))return;
+      await api('/api/admin/completions',{...payload,action:'issue',certificateType:'completion',confirmApprovedTemplate:true})
      });
-     b.disabled=!model.issuanceConfigured;b.title=b.disabled?'ربط قالب الشهادة والـPDF مطلوب قبل الإصدار':'';details.append(b,el('p','الإكمال موثّق، وسيكون إصدار الشهادة بعد تجهيز القالب الرسمي'))
+     b.disabled=!model.issuanceConfigured;b.title=b.disabled?'تم إيقاف إصدار الشهادات مؤقتاً من إدارة النظام':'';details.append(b,el('p','القالب الرسمي معتمد. يُنشأ رقم الشهادة وQR ثم تُرفق التواقيع الثلاثة قبل ظهور الشهادة للمتعلم'))
     }
    }select.onchange=update;update();
   }
