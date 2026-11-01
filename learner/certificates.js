@@ -27,10 +27,11 @@ async function load(){
    const publication=elt('button',c.public_consent?t('unshare'):t('share'),'secondary');
    publication.addEventListener('click',async()=>{if(!c.public_consent&&!confirm(t('consent')))return;publication.disabled=true;try{await api({action:'set-publication',certificateId:c.id,consent:!c.public_consent});await load()}catch{status.textContent=t('error')}finally{publication.disabled=false}});
    actions.append(publication);
-   const request=elt('button',t('order'),'secondary');actions.append(request);article.append(actions);
+   const request=elt('button',t('order'),'secondary');article.append(actions);
    const existing=data.originals.find(o=>o.certificate_id===c.id&&o.status!=='cancelled');
    if(existing){article.append(elt('p',t('status')+': '+existing.status+(existing.fee_amount?' · '+existing.fee_amount+' '+existing.fee_currency:'')))}
    else if(c.status==='issued'){
+    actions.append(request);
     const form=elt('form',null,'form');form.hidden=true;
     const fields=[['recipientName',t('recipient'),'text',true],['recipientPhone',t('phone'),'tel',true],['address',t('address'),'textarea',true],['country',t('country'),'text',true],['postalCode',t('postal'),'text',false]];
     for(const [key,label,type,required] of fields){const wrapper=elt('label',label),input=document.createElement(type==='textarea'?'textarea':'input');input.name=key;if(type!=='textarea')input.type=type;input.required=required;if(key==='country'){input.maxLength=2;input.placeholder='IQ'}wrapper.append(input);form.append(wrapper)}
