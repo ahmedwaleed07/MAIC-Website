@@ -50,8 +50,8 @@
     ctx.drawImage(sig,centers[i]-width/2,892-height,width,height);
    }
   }else{
-   ctx.save();ctx.translate(768,775);ctx.rotate(-0.09);ctx.textAlign='center';ctx.fillStyle='rgba(105,27,27,.72)';
-   ctx.font='bold 29px Arial,sans-serif';ctx.fillText('DRAFT - SIGNATURES PENDING',0,0);ctx.restore();
+   ctx.save();ctx.translate(768,860);ctx.rotate(-0.09);ctx.textAlign='center';ctx.fillStyle='rgba(105,27,27,.72)';
+   ctx.font='bold 25px Arial,sans-serif';ctx.fillText('DRAFT - SIGNATURES PENDING',0,0);ctx.restore();
   }
   return cv;
  }
