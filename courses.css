@@ -69,3 +69,12 @@
 @media(min-width:1150px){.maic-course-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}@media(max-width:650px){.maic-course-card-body{padding:22px}.maic-course-card-body h3{font-size:24px}}
 
 .maic-delivery-option{border-inline-start:3px solid #c6a36b;padding:10px 16px;margin:14px 0;background:#15334a}.maic-delivery-option strong{display:block;color:#f5d8a7}.maic-delivery-option p{margin:6px 0 0;line-height:1.7}.maic-course-links a{color:#f5d8a7;text-decoration:underline;text-underline-offset:4px}
+
+/* Keep course opening schedules visible in the three-mode catalog (all supported locales). */
+.maic-mode-filter-list{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;align-items:stretch;margin:26px 0}
+.maic-mode-filter-item{min-width:0;display:flex;flex-direction:column;align-items:stretch;gap:8px}
+.maic-mode-filter-item>.btn{width:100%;min-height:48px;justify-content:center;text-align:center}
+.maic-mode-availability{color:#e5c991;font-size:13px;line-height:1.55;text-align:center;margin:0 4px;overflow-wrap:anywhere}
+.maic-course-mode-notice{margin:12px 0 25px;color:#e5c991;font-size:15px;line-height:1.65}
+@media(max-width:830px){.maic-mode-filter-list{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:520px){.maic-mode-filter-list{grid-template-columns:1fr;gap:18px}.maic-mode-filter-item{gap:5px}}
