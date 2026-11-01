@@ -13,6 +13,14 @@ function draw(){
  document.querySelector('#materials').innerHTML='<h2>المواد المحفوظة في التخزين الخاص</h2><p>لا تُعرض روابط عامة للملفات، ويُفحص الاشتراك عند كل طلب فتح</p>'+model.materials.map(m=>`<p>${E(m.title)} · ${m.pages} صفحة · ${E(m.language)}</p>`).join('');
 }
 async function load(){const [catalog,data]=await Promise.all([api('/api/content'),api('/api/admin/learners')]);live=catalog.document;model=data;draw();}
+document.addEventListener('change',e=>{
+ if(e.target.name!=='courseId'||!live)return;
+ const course=live.courses.find(c=>c.id===e.target.value),target=e.target.closest('form')?.querySelector('[name=deliveryMode]');
+ if(!target)return;target.replaceChildren();
+ for(const mode of course?.mode||[]){
+  const option=document.createElement('option');option.value=mode;option.textContent=({'self-paced':'Self-Paced Online',group:'Live Group Classroom','one-on-one':'One-on-One Private'})[mode]||mode;target.append(option);
+ }
+});
 document.addEventListener('submit',async e=>{if(!e.target.matches('[data-activate]'))return;e.preventDefault();const f=e.target,b=f.querySelector('button'),d=Object.fromEntries(new FormData(f));b.disabled=true;try{await api('/api/admin/learners',{studentId:f.dataset.activate,courseId:d.courseId,agentId:d.agentId,confirmationRef:d.confirmationRef,agentConfirmed:d.agentConfirmed==='on',identityVerified:d.identityVerified==='on',deliveryMode:d.deliveryMode,action:'activate'});await load();tell('تم تفعيل المادة العلمية للدورة المحددة');}catch{f.querySelector('.error').textContent='تعذر التفعيل. تحقق من الجلسة وتأكيد الوكيل والبيانات ثم أعد المحاولة';}finally{b.disabled=false;}});
 document.addEventListener('click',async e=>{const b=e.target.closest('[data-revoke]');if(!b)return;if(!confirm('هل تريد إلغاء وصول هذا الطالب إلى المادة العلمية لهذه الدورة؟'))return;b.disabled=true;try{await api('/api/admin/learners',{studentId:b.dataset.revoke,courseId:b.dataset.course,action:'revoke'});await load();tell('أُلغي الوصول إلى المادة العلمية للدورة المحددة');}catch{tell('تعذر إلغاء الوصول، يرجى إعادة المحاولة');b.disabled=false;}});
 load().catch(e=>{tell(e.status===401?'يلزم تسجيل الدخول إلى لوحة الإدارة أولاً':'تعذر تحميل بيانات الطلاب');document.querySelector('#students').innerHTML='<a class="button" href="./">الانتقال إلى تسجيل دخول الإدارة</a>';});
