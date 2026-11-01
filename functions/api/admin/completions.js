@@ -8,7 +8,7 @@ export async function onRequestGet({request,env}){
  try{
   const students=(await env.MAIC_DB.prepare("SELECT s.id,s.first_name,s.middle_name,s.last_name,s.country,e.course_id,e.status AS enrollment_status,e.agent_id,e.activated_at,COALESCE(m.delivery_mode,'self-paced') AS delivery_mode FROM learning_students s JOIN learning_enrollments e ON e.student_id=s.id LEFT JOIN learning_enrollment_modes m ON m.student_id=e.student_id AND m.course_id=e.course_id WHERE e.status='active' ORDER BY e.activated_at DESC LIMIT 500").all()).results;
   const completions=(await env.MAIC_DB.prepare("SELECT * FROM learning_completions ORDER BY created_at DESC LIMIT 500").all()).results;
-  const certificates=(await env.MAIC_DB.prepare("SELECT id,certificate_number,completion_id,student_id,course_id,course_mode,certificate_type,graduate_full_name,verification_token,issued_at,status FROM learning_certificates ORDER BY issued_at DESC LIMIT 500").all()).results;
+  const certificates=(await env.MAIC_DB.prepare("SELECT id,certificate_number,completion_id,student_id,course_id,course_mode,certificate_type,graduate_full_name,course_title,verification_token,issued_at,status,CASE WHEN pdf_storage_key IS NULL THEN 0 ELSE 1 END AS pdf_ready FROM learning_certificates ORDER BY issued_at DESC LIMIT 500").all()).results;
   return json({students,completions,certificates,issuanceConfigured:env.MAIC_CERTIFICATE_ISSUANCE_ENABLED==='true'});
  }catch{return json({error:'unavailable'},503)}
 }
