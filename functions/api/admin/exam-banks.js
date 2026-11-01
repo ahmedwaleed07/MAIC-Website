@@ -37,6 +37,16 @@ export async function onRequestPost({request,env}){
  if(!await isAdmin(request,env))return json({error:'unauthorized'},401);
  try{
   const d=await parseJSON(request),course=d.courseId,db=env.MAIC_DB;
+  if(d.action==='withdraw'){
+   if(!validId(course))return json({error:'invalid_course'},400);
+   const current=await db.prepare("SELECT version FROM learning_exam_active WHERE course_id=?").bind(course).first();
+   if(!current)return json({error:'no_active_bank'},404);
+   await db.batch([
+    db.prepare("UPDATE learning_exam_banks SET status='withdrawn' WHERE course_id=? AND version=? AND status='approved'").bind(course,current.version),
+    db.prepare("DELETE FROM learning_exam_active WHERE course_id=? AND version=?").bind(course,current.version)
+   ]);
+   return json({withdrawn:true,courseId:course});
+  }
   if(d.format!=='maic-mcq-v1'||!validId(course)||!Array.isArray(d.questions)||d.questions.length!==100)return json({error:'exactly_100_questions_required'},400);
   if(d.pdfFormatReviewed!==true||d.sourceReviewed!==true||d.academicQualityReviewed!==true)return json({error:'academic_and_pdf_review_required'},400);
   const reviewer=typeof d.reviewedBy==='string'?d.reviewedBy.trim():'';
