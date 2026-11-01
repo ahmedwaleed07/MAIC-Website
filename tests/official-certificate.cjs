@@ -19,7 +19,7 @@ test('official issuer uses the exact approved asset and a record-specific token'
 test('different certificate tokens produce different QR patterns',()=>{
  const code=fs.readFileSync(path.join(base,'vendor/qrcode.js'),'utf8');
  const make=new Function(code+';return qrcode;')();
- const url=t=>'https://maic-website.pages.dev/graduates/'+t.repeat(64);
+ const url=t=>'https://www.maic-edu.org/graduates/'+t.repeat(64);
  const codes=['a','b'].map(ch=>{const qr=make(0,'M');qr.addData(url(ch));qr.make();return qr.createSvgTag({cellSize:3,margin:4})});
  assert.notEqual(codes[0],codes[1]);
  assert.ok(codes[0].startsWith('<svg'));
@@ -29,3 +29,5 @@ test('public and learner views gate validity on signed PDF presence',()=>{
   assert.ok(fs.readFileSync(path.join(base,file),'utf8').includes('pdf_storage_key'),'Missing signed PDF gate: '+file);
  }
 });
+
+test('issued QR links use MAIC verified custom domain, not a preview hostname',()=>{for(const file of ['admin/certificate-renderer.js','admin/completions.js']){const src=fs.readFileSync(path.join(base,file),'utf8');assert.ok(src.includes("'https://www.maic-edu.org'"), 'Missing official domain: '+file)}});
