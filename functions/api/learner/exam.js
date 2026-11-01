@@ -12,8 +12,11 @@ async function context(db,student,course){
  const m=await db.prepare('SELECT sha256 FROM learning_materials WHERE course_id=?').bind(course).first();
  if(!m)return {error:'material_not_ready',code:409};
  const active=await db.prepare("SELECT b.course_id,b.version,b.source_sha256,b.question_count,b.status FROM learning_exam_active a JOIN learning_exam_banks b ON a.course_id=b.course_id AND a.version=b.version WHERE a.course_id=? AND b.status='approved' AND b.question_count=100").bind(course).first();
+ const ongoing=await db.prepare("SELECT version FROM learning_exam_attempts WHERE student_id=? AND course_id=? AND state='in_progress' ORDER BY started_at DESC LIMIT 1").bind(student.id,course).first();
+ const pendingBank=ongoing?await db.prepare("SELECT course_id,version,source_sha256,question_count,status FROM learning_exam_banks WHERE course_id=? AND version=? AND status='approved' AND question_count=100").bind(course,ongoing.version).first():null;
+ const chosen=pendingBank?.source_sha256===m.sha256?pendingBank:active;
  const study=await db.prepare('SELECT source_sha256,first_opened_at,confirmed_reviewed_at FROM learning_material_study WHERE student_id=? AND course_id=?').bind(student.id,course).first();
- return {material:m,bank:active&&active.source_sha256===m.sha256?active:null,studied:study?.source_sha256===m.sha256&&!!study?.first_opened_at&&!!study?.confirmed_reviewed_at};
+ return {material:m,bank:chosen&&chosen.source_sha256===m.sha256?chosen:null,studied:study?.source_sha256===m.sha256&&!!study?.first_opened_at&&!!study?.confirmed_reviewed_at};
 }
 async function attemptView(db,attempt){
  if(attempt.state==='submitted')return {state:'submitted',total:100,correct:attempt.correct_count,score:attempt.score_percent};
