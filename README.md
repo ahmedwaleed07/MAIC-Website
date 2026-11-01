@@ -56,3 +56,13 @@ Static files. Netlify: publish repository root with no build command. Cloudflare
 `countryCode`, `officialName`, `contactPerson`, `logoOrPhoto`, `email`, optional `website`, `telephone`, `address`, `verified`, `publishedAt`.
 
 No private data, credentials or real agent records are stored in the repository.
+
+## Graduate registry and credential workflows (November 2026)
+
+- Shared course-format display: Self-Paced, Live Group Classroom, and One-on-One; MAIC Admin selects the actual format on enrollment activation.
+- Private authenticated learner area: [`/learner/certificates.html`](learner/certificates.html) for completed certificates, consent-controlled public verification links, secure PDF download and printed-original requests.
+- Public opt-in registry: [`/graduates/`](graduates/index.html) and `/graduates/{verification-token}`. Unique QR SVGs are created locally via the MIT-licensed vendored QR generator for approved certificates.
+- Staff-only pages: [`/admin/completions.html`](admin/completions.html) for reviewed evidence and certificates and [`/admin/originals.html`](admin/originals.html) for print/shipping requests.
+- Database migrations 0003, 0004 and 0005 create the needed D1 records and were applied to MAIC's currently configured D1 account.
+- **Important:** No authentic issued certificates have been produced by this change. The original approved signed PDF artwork is not present as a reusable source template in this repository. Issuance is feature-gated OFF until reviewed. Approval of course completion is not automatic, and queued agent notifications have no outbound email delivery yet. Never tell learners to pay any shipping fee until a designated agent provides a confirmed quote.
+- R2 is not enabled in the linked Cloudflare account; private approved PDF uploads/downloads can use D1 storage. See [`docs/COURSE_CERTIFICATE_SYSTEM.md`](docs/COURSE_CERTIFICATE_SYSTEM.md).
