@@ -1,0 +1,23 @@
+<!doctype html><html lang="ar" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow"><title>MAIC Admin | 100 MCQ</title>
+<style>body{margin:0;background:#071827;color:#f4efe5;font:16px/1.8 system-ui,Arial}header,main{max-width:1100px;margin:auto;padding:24px}header{border-bottom:1px solid #bfa069}h1,h2{color:#e7c88b}a{color:#e9ce99}.card{padding:24px;background:#0e2a42;border:1px solid #ad915c;border-radius:11px;margin:20px 0}label{display:block;margin:12px 0}input,select{font:inherit;padding:8px 12px;border-radius:7px;max-width:100%;color:#152538;background:#faf7f0}input[type=checkbox]{width:auto;accent-color:#bd9956}input[type=file]{width:100%}button{padding:12px 22px;background:#dbbf86;border:0;border-radius:8px;font-weight:700;cursor:pointer;color:#10233b}button:disabled{opacity:.45}small,.muted{color:#d8c5a3}pre{white-space:pre-wrap;overflow-wrap:anywhere;background:#071827;padding:14px;border-radius:8px}#message{min-height:24px}</style>
+</head><body><header><a href="./">لوحة الإدارة</a> · <a href="./completions.html">إدارة الشهادات</a><h1>بنوك اختبارات MAIC — ١٠٠ سؤال</h1><p>يجب مراجعة المادة العلمية والأسئلة ومفاتيح الإجابة علمياً قبل الاعتماد. لا يُنشر أي اختبار ناقص أو تجريبي للمتعلمين.</p></header>
+<main><div class="card"><h2>حالة الكورسات</h2><div id="banks">جارٍ التحميل…</div></div>
+<form class="card" id="upload"><h2>رفع اختبار مُراجع</h2><label>الدورة<select id="course" required><option value="">—</option></select></label><label>ملف بنك الأسئلة بصيغة JSON<input id="bankfile" type="file" accept=".json,application/json" required></label><label>اسم المسؤول عن المراجعة<input id="reviewer" type="text" maxlength="150" required></label>
+<p class="muted">كل اختبار: 100 سؤال بالضبط؛ لكل سؤال أربعة اختيارات وواحدة أو أكثر صحيحة. يجب تحديد صفحة المادة المصدر وشرح سبب الإجابة الصحيحة، مع صياغة علمية دقيقة ومشتتات قوية غير ملتبسة.</p>
+<label><input type="checkbox" id="pdfChecked" required> تحققت من أن PDF لهذه الدورة رسمي وبالأبيض والأسود، والمتن Times New Roman بحجم 12 وشعار MAIC الأصلي</label>
+<label><input type="checkbox" id="sourceChecked" required> راجعت الأسئلة المئة مقابل محتوى المادة العلمية نفسها وتحققت من مراجع الصفحات</label>
+<label><input type="checkbox" id="qualityChecked" required> راجعت خيارات الإجابة وتأكدت من عدم وجود أسئلة مضللة أو إجابات صحيحة ناقصة</label>
+<button id="send" type="submit">اعتماد 100 سؤال ونشر الاختبار</button><p id="message" role="status"></p></form>
+<div class="card"><h2>مثال لبنية السؤال في ملف JSON</h2><pre>{
+  "format": "maic-mcq-v1",
+  "questions": [
+    {
+      "stem": "Which planning practice best supports scope control?",
+      "options": ["A", "B", "C", "D"],
+      "correct": [0, 2],
+      "page": 5,
+      "rationale": "Explain precisely why these options follow the approved course material."
+    }
+  ]
+}</pre><p class="muted">المثال للشرح فقط، ولا يمكن نشره لأنه لا يحتوي على 100 سؤال.</p></div></main>
+<script src="./exam-banks.js"></script></body></html>
