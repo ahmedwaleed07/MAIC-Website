@@ -20,7 +20,7 @@ export async function onRequestPost({request,env}){
   const d=await body(request);
   if(!validId(d.certificateId))return json({error:'invalid_certificate'},400);
   const cert=await env.MAIC_DB.prepare("SELECT id,agent_id,status,public_consent FROM learning_certificates WHERE id=? AND student_id=?").bind(d.certificateId,student.id).first();
-  if(!cert||cert.status!=='issued')return json({error:'not_available'},404);
+  if(!cert)return json({error:'not_available'},404);
   if(d.action==='set-publication'){
    if(typeof d.consent!=='boolean')return json({error:'invalid_consent'},400);
    await env.MAIC_DB.prepare("UPDATE learning_certificates SET public_consent=?,consent_at=? WHERE id=? AND student_id=?")
@@ -28,6 +28,7 @@ export async function onRequestPost({request,env}){
    return json({saved:true,publicConsent:d.consent});
   }
   if(d.action!=='request-original')return json({error:'invalid_action'},400);
+  if(cert.status!=='issued')return json({error:'not_available'},409);
   const name=typeof d.recipientName==='string'?d.recipientName.trim():'',phone=typeof d.recipientPhone==='string'?d.recipientPhone.trim():'',address=typeof d.address==='string'?d.address.trim():'',country=typeof d.country==='string'?d.country.trim().toUpperCase():'',postal=typeof d.postalCode==='string'?d.postalCode.trim():'';
   if(name.length<3||name.length>180||!/^\+?[\d ()-]{7,40}$/.test(phone)||address.length<12||address.length>1000||!/^[A-Z]{2}$/.test(country)||postal.length>30)return json({error:'invalid_shipping_details'},400);
   const active=await env.MAIC_DB.prepare("SELECT id FROM learning_original_requests WHERE certificate_id=? AND student_id=? AND status NOT IN ('delivered','cancelled') LIMIT 1").bind(cert.id,student.id).first();
