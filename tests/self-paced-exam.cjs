@@ -31,7 +31,7 @@ test('material review and question bank approval gate the exam',()=>{
  const server=load('functions/api/learner/exam.js'),review=load('functions/api/admin/exam-banks.js');
  assert.match(server,/reviewed/);
  assert.match(server,/mode\.delivery_mode!=='self-paced'/);
- assert.match(server,/active\.source_sha256===m\.sha256/);
+ assert.match(server,/chosen&&chosen\.source_sha256===m\.sha256/);
  assert.match(review,/d\.pdfFormatReviewed!==true/);
  assert.match(review,/d\.sourceReviewed!==true/);
  assert.match(review,/d\.academicQualityReviewed!==true/);
