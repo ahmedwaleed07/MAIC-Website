@@ -14,7 +14,7 @@ const h=(tag,txt,cls)=>{const e=document.createElement(tag);if(txt!==undefined)e
 function card(){const d=h('section',undefined,'exam-card');exam.replaceChildren(d);return d}
 function link(text,url){const a=h('a',text,'button');a.href=url;return a}
 function message(s){feedback.textContent=s||''}
-function action(text,fn){const b=h('button',text);b.type='button';b.addEventListener('click',async()=>{b.disabled=true;message('');try{await fn()}catch(e){message(e.message||tr('error'));b.disabled=false}});return b}
+function action(text,fn){const b=h('button',text);b.type='button';b.addEventListener('click',async()=>{b.disabled=true;message('');try{await fn()}catch(e){message(e.message||tr('error'))}finally{b.disabled=false}});return b}
 async function request(path,body){
  const res=await fetch(path,{method:body?'POST':'GET',credentials:'same-origin',cache:'no-store',headers:body?{'Content-Type':'application/json'}:{},body:body?JSON.stringify(body):undefined});
  let data={};try{data=await res.json()}catch{}
