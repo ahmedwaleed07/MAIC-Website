@@ -1,8 +1,8 @@
 import {json} from '../_lib/cms.js';
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;','"':'&quot;',"'":'&#39;'}[c]));
 function html(row){
- const status=row.status==='issued'?'Valid':row.status==='revoked'?'Revoked':'Corrected';
- const rows=row.public_consent?[
+ const status=row.status==='issued'?(row.pdf_ready?'Valid':'Pending final signed PDF'):row.status==='revoked'?'Revoked':'Corrected';
+ const rows=row.public_consent&&row.pdf_ready?[
   ['Full name',row.graduate_full_name],['Course',row.course_title],
   ['Certificate type',row.certificate_type==='completion'?'Certificate of Completion':'Certificate of Participation'],
   ['Country',row.graduate_country],['Authorized agent',row.agent_name],
@@ -22,7 +22,7 @@ export async function onRequestGet({params,env}){
  if(typeof token!=='string'||!/^[a-f0-9]{64}$/.test(token))return new Response('Not found',{status:404});
  try{
   if(!env.MAIC_DB)return json({error:'unavailable'},503);
-  const row=await env.MAIC_DB.prepare("SELECT certificate_number,graduate_full_name,course_title,certificate_type,graduate_country,agent_name,issued_at,status,public_consent FROM learning_certificates WHERE verification_token=?").bind(token).first();
+  const row=await env.MAIC_DB.prepare("SELECT certificate_number,graduate_full_name,course_title,certificate_type,graduate_country,agent_name,issued_at,status,public_consent,CASE WHEN pdf_storage_key IS NOT NULL THEN 1 ELSE 0 END AS pdf_ready FROM learning_certificates WHERE verification_token=?").bind(token).first();
   if(!row)return new Response('Certificate record not found',{status:404,headers:{'Cache-Control':'no-store'}});
   return new Response(html(row),{status:200,headers:{'Content-Type':'text/html; charset=utf-8','Cache-Control':'no-store','Referrer-Policy':'no-referrer','X-Content-Type-Options':'nosniff','Content-Security-Policy':"default-src 'none'; img-src 'self'; style-src 'unsafe-inline'; base-uri 'none'; form-action 'none'; frame-ancestors 'none'"}});
  }catch{return json({error:'unavailable'},503);}
