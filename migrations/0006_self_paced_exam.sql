@@ -54,3 +54,13 @@ CREATE TABLE IF NOT EXISTS learning_exam_answers (
  PRIMARY KEY(attempt_id,ordinal)
 );
 -- No public answer key. The whole test is graded only on final submission.
+
+CREATE TABLE IF NOT EXISTS learning_material_study (
+ student_id TEXT NOT NULL REFERENCES learning_students(id),
+ course_id TEXT NOT NULL,
+ source_sha256 TEXT NOT NULL,
+ first_opened_at TEXT,
+ confirmed_reviewed_at TEXT,
+ updated_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP,
+ PRIMARY KEY(student_id,course_id)
+);
