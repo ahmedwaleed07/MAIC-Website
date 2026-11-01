@@ -37,7 +37,7 @@ async function load(){
     for(const [key,label,type,required] of fields){const wrapper=elt('label',label),input=document.createElement(type==='textarea'?'textarea':'input');input.name=key;if(type!=='textarea')input.type=type;input.required=required;if(key==='country'){input.maxLength=2;input.placeholder='IQ'}wrapper.append(input);form.append(wrapper)}
     const send=elt('button',t('submit'));send.type='submit';form.append(send);
     request.addEventListener('click',()=>{form.hidden=!form.hidden});
-    form.addEventListener('submit',async e=>{e.preventDefault();send.disabled=true;try{const d=Object.fromEntries(new FormData(form));await api({action:'request-original',certificateId:c.id,...d});status.textContent=t('requested');await load()}catch{status.textContent=t('error')}finally{send.disabled=false}});
+    form.addEventListener('submit',async e=>{e.preventDefault();send.disabled=true;try{const d=Object.fromEntries(new FormData(form));await api({action:'request-original',certificateId:c.id,...d});await load();status.textContent=t('requested')}catch{status.textContent=t('error')}finally{send.disabled=false}});
     article.append(form);
    }
    root.append(article);
