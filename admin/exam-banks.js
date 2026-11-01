@@ -8,7 +8,19 @@ async function refresh(){
  materials=d.materials;list.replaceChildren();course.replaceChildren(el('option','—'));course.lastElementChild.value='';
  for(const m of materials){
   const p=el('p',m.title+' — '+(m.status==='approved'?'100 سؤال معتمد':'بانتظار بنك الأسئلة المعتمد'));
-  list.append(p);const o=el('option',m.title);o.value=m.course_id;course.append(o);
+  list.append(p);
+  if(m.status==='approved'){
+   const stop=el('button','إيقاف هذا الاختبار');stop.type='button';
+   stop.addEventListener('click',async()=>{
+    if(!confirm('هل تؤكد إيقاف هذا الاختبار ومنع المتعلمين من استكماله إلى حين اعتماد نسخة مصححة؟'))return;
+    stop.disabled=true;
+    try{
+     const res=await fetch('/api/admin/exam-banks',{method:'POST',credentials:'same-origin',headers:{'Content-Type':'application/json'},body:JSON.stringify({action:'withdraw',courseId:m.course_id})});
+     if(!res.ok)throw Error('تعذر الإيقاف');await refresh();
+    }catch(e){status.textContent=e.message;stop.disabled=false}
+   });list.append(stop);
+  }
+  const o=el('option',m.title);o.value=m.course_id;course.append(o);
  }
  if(!materials.length)list.append(el('p','لم توجد مواد مسجلة للدورات'));
 }
