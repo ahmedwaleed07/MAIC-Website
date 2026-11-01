@@ -33,6 +33,36 @@ async function load(){
       }));
      }
      if(cert.status==='issued'){
+      if(cert.certificate_type==='completion'&&window.MAICCertificateRenderer){
+       const card=document.createElement('div');card.style.cssText='margin:18px 0;padding:12px;border:1px solid #b4976170;border-radius:9px';
+       const preview=document.createElement('img');preview.src=MAICCertificateRenderer.asset;
+       preview.alt='قالب شهادة إكمال MAIC الرسمي بمربع QR فارغ، يملأ عند الإصدار';
+       preview.style.cssText='max-width:100%;width:560px;display:block;border:1px solid #b49761;border-radius:6px';
+       card.append(preview,el('p','قالب الإكمال الرسمي المعتمد · رقم QR خاص بهذه الشهادة · شهادة غير موقّعة لا تُصدر كنسخة نهائية'));
+       card.append(button('تنزيل مسودة PDF مع QR الخاص بالطالب',async()=>{
+        const result=await MAICCertificateRenderer.render(cert,[],true);
+        MAICCertificateRenderer.download(result.pdf,cert.certificate_number+'-DRAFT.pdf');
+       }));
+       const signatureLabels=['توقيع الرئيس President','توقيع رئيس القسم Head of Department','توقيع الوكيل Authorized Agent'],signatures=[];
+       for(const labelText of signatureLabels){
+        const label=document.createElement('label');label.style.cssText='display:grid;gap:4px;margin-block:8px';label.append(document.createTextNode(labelText));
+        const file=document.createElement('input');file.type='file';file.accept='image/png,image/jpeg,image/webp';file.setAttribute('aria-label',labelText);label.append(file);card.append(label);signatures.push(file);
+       }
+       card.append(button('إنشاء وحفظ PDF الرسمي بالتواقيع الثلاثة و QR',async()=>{
+        if(!signatures.every(input=>input.files&&input.files[0]))throw Error('يجب اختيار صور التواقيع الأصلية الثلاثة قبل الحفظ');
+        if(!confirm('هل تملك الصلاحية لاعتماد هذه التواقيع الأصلية الثلاثة على شهادة هذا المتعلم؟'))return;
+        const result=await MAICCertificateRenderer.render(cert,signatures.map(input=>input.files[0]),false);
+        const response=await fetch('/api/admin/certificate-upload?id='+encodeURIComponent(cert.id),{
+         method:'POST',credentials:'same-origin',
+         headers:{'Content-Type':'application/pdf','X-MAIC-Approved-Template':'confirmed'},
+         body:result.pdf
+        });
+        const outcome=await response.json();if(!response.ok)throw Error(outcome.error||'upload_failed');
+        status.textContent='حُفظت الشهادة الأصلية مع QR والتواقيع الثلاثة في الحساب الخاص بالمتعلم';
+       }));
+       if(cert.pdf_ready)card.append(el('p','نسخة PDF الأصلية محفوظة في حساب المتعلم'));
+       details.append(card);
+      }
       const picker=document.createElement('input');picker.type='file';picker.accept='application/pdf';picker.setAttribute('aria-label','ملف الشهادة الأصلي PDF');details.append(picker);
       details.append(button('اعتماد ورفع PDF الأصلي',async()=>{
        const pdf=picker.files?.[0];if(!pdf||pdf.size>2500000)throw Error('اختر ملف PDF لا يتجاوز 2.5 MB');
