@@ -87,7 +87,7 @@
  }
  async function render(cert,files=[],draft=true){
   if(typeof qrcode!=='function')throw Error('The local QR generator is unavailable');
-  const url=new URL('/graduates/'+encodeURIComponent(cert.verification_token),location.origin).href;
+  const url=new URL('/graduates/'+encodeURIComponent(cert.verification_token),'https://www.maic-edu.org').href;
   const qr=qrcode(0,'M');qr.addData(url);qr.make();
   const cv=await paint(cert,files,draft);
   const raw=atob(cv.toDataURL('image/jpeg',.94).split(',')[1]);const jpg=new Uint8Array(raw.length);
