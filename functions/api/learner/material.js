@@ -17,6 +17,7 @@ export async function onRequest({request,env}){
   const data=new Uint8Array(meta.bytes);let pos=0;
   for(const r of rows){const chunk=Buffer.from(r.payload,'base64');if(pos+chunk.length>data.length)return json({error:'not_ready'},503);data.set(chunk,pos);pos+=chunk.length;}
   if(pos!==meta.bytes)return json({error:'not_ready'},503);
+  await env.MAIC_DB.prepare("INSERT INTO learning_material_study(student_id,course_id,source_sha256,first_opened_at,updated_at) VALUES(?,?,?,?,?) ON CONFLICT(student_id,course_id) DO UPDATE SET source_sha256=excluded.source_sha256,first_opened_at=CASE WHEN source_sha256=excluded.source_sha256 THEN COALESCE(first_opened_at,excluded.first_opened_at) ELSE excluded.first_opened_at END,confirmed_reviewed_at=CASE WHEN source_sha256=excluded.source_sha256 THEN confirmed_reviewed_at ELSE NULL END,updated_at=excluded.updated_at").bind(student.id,id,meta.sha256,new Date().toISOString(),new Date().toISOString()).run();
   return new Response(data.subarray(start,end+1),{status:range?206:200,headers});
  }catch{return json({error:'unavailable'},503);}
 }
