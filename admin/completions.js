@@ -22,7 +22,7 @@ async function load(){
     details.append(el('p','حالة الإكمال: '+(completion?.status||'لم يكتمل')));
     if(cert){
      details.append(el('p','الشهادة: '+cert.certificate_number+' · '+cert.status));
-     const url=new URL('/graduates/'+encodeURIComponent(cert.verification_token||''),location.origin).href;
+     const url=new URL('/graduates/'+encodeURIComponent(cert.verification_token||''),'https://www.maic-edu.org').href;
      if(cert.verification_token&&typeof qrcode==='function'){
       const qr=qrcode(0,'M');qr.addData(url);qr.make();
       const svg=qr.createSvgTag({cellSize:5,margin:2});
