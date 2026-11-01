@@ -9,7 +9,7 @@ export async function onRequestGet({request,env}){
   const students=(await env.MAIC_DB.prepare("SELECT s.id,s.first_name,s.middle_name,s.last_name,s.country,e.course_id,e.status AS enrollment_status,e.agent_id,e.activated_at,COALESCE(m.delivery_mode,'self-paced') AS delivery_mode FROM learning_students s JOIN learning_enrollments e ON e.student_id=s.id LEFT JOIN learning_enrollment_modes m ON m.student_id=e.student_id AND m.course_id=e.course_id WHERE e.status='active' ORDER BY e.activated_at DESC LIMIT 500").all()).results;
   const completions=(await env.MAIC_DB.prepare("SELECT * FROM learning_completions ORDER BY created_at DESC LIMIT 500").all()).results;
   const certificates=(await env.MAIC_DB.prepare("SELECT id,certificate_number,completion_id,student_id,course_id,course_mode,certificate_type,graduate_full_name,course_title,verification_token,issued_at,status,CASE WHEN pdf_storage_key IS NULL THEN 0 ELSE 1 END AS pdf_ready FROM learning_certificates ORDER BY issued_at DESC LIMIT 500").all()).results;
-  return json({students,completions,certificates,issuanceConfigured:env.MAIC_CERTIFICATE_ISSUANCE_ENABLED==='true'});
+  return json({students,completions,certificates,issuanceConfigured:env.MAIC_CERTIFICATE_ISSUANCE_ENABLED!=='false',approvedTemplate:'MAIC-COMPLETION-2026-11-01'});
  }catch{return json({error:'unavailable'},503)}
 }
 export async function onRequestPost({request,env}){
@@ -50,12 +50,13 @@ export async function onRequestPost({request,env}){
   if(existing.status!=='verified')return json({error:'verification_required'},409);
   const prior=await db.prepare("SELECT certificate_number FROM learning_certificates WHERE completion_id=?").bind(existing.id).first();
   if(prior)return json({error:'certificate_exists',certificateNumber:prior.certificate_number},409);
-  if(env.MAIC_CERTIFICATE_ISSUANCE_ENABLED!=='true')return json({error:'approved_template_not_configured'},503);
-  if(!['completion','participation'].includes(d.certificateType))return json({error:'certificate_type'},400);
+  if(env.MAIC_CERTIFICATE_ISSUANCE_ENABLED==='false')return json({error:'issuance_paused'},503);
+  if(d.confirmApprovedTemplate!==true)return json({error:'template_confirmation_required'},400);
+  if(d.certificateType!=='completion')return json({error:'completion_template_only'},400);
   const agent=doc.agents.find(a=>a.id===enrolled.agent_id);if(!agent)return json({error:'agent_not_found'},409);
   const fullName=[enrolled.first_name,enrolled.middle_name,enrolled.last_name].filter(Boolean).join(' ');
-  const number='MAIC-'+new Date().getUTCFullYear()+'-'+randomHex(6).toUpperCase(),token=randomHex(32);
-  await db.prepare("INSERT INTO learning_certificates(id,certificate_number,completion_id,student_id,course_id,course_mode,certificate_type,graduate_full_name,course_title,graduate_country,agent_id,agent_name,verification_token,status,public_consent,issued_at) VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,'issued',0,?)").bind(crypto.randomUUID(),number,existing.id,d.studentId,d.courseId,d.mode,d.certificateType,fullName,course.en,enrolled.country,agent.id,agent.name,token,now).run();
-  return json({saved:true,status:'issued',certificateNumber:number});
+  const number='MAIC-'+new Date().getUTCFullYear()+'-'+randomHex(6).toUpperCase(),token=randomHex(32),certificateId=crypto.randomUUID();
+  await db.prepare("INSERT INTO learning_certificates(id,certificate_number,completion_id,student_id,course_id,course_mode,certificate_type,graduate_full_name,course_title,graduate_country,agent_id,agent_name,verification_token,status,public_consent,issued_at) VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,'issued',0,?)").bind(certificateId,number,existing.id,d.studentId,d.courseId,d.mode,d.certificateType,fullName,course.en,enrolled.country,agent.id,agent.name,token,now).run();
+  return json({saved:true,status:'awaiting_signed_pdf',certificateNumber:number,certificateId});
  }catch{return json({error:'unavailable'},503)}
 }
