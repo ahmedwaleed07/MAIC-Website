@@ -26,6 +26,7 @@ CREATE TABLE IF NOT EXISTS learning_completions (
  created_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP,
  UNIQUE(student_id,course_id,mode,run_id)
 );
+CREATE UNIQUE INDEX IF NOT EXISTS idx_maic_completions_self_run ON learning_completions(student_id,course_id,mode) WHERE run_id IS NULL;
 CREATE INDEX IF NOT EXISTS idx_maic_completions_student ON learning_completions(student_id);
 CREATE TABLE IF NOT EXISTS learning_certificates (
  id TEXT PRIMARY KEY, certificate_number TEXT NOT NULL UNIQUE,
@@ -59,6 +60,7 @@ CREATE TABLE IF NOT EXISTS learning_original_requests (
  tracking_reference TEXT,
  created_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP, updated_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP
 );
+CREATE UNIQUE INDEX IF NOT EXISTS idx_maic_original_single_open ON learning_original_requests(certificate_id,student_id) WHERE status NOT IN ('delivered','cancelled');
 CREATE INDEX IF NOT EXISTS idx_maic_original_requests_agent ON learning_original_requests(agent_id,status);
 CREATE TABLE IF NOT EXISTS learning_agent_notifications (
  id TEXT PRIMARY KEY,agent_id TEXT NOT NULL, request_id TEXT NOT NULL REFERENCES learning_original_requests(id),
