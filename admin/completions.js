@@ -19,7 +19,29 @@ async function load(){
     details.replaceChildren();const completion=model.completions.find(x=>x.student_id===s.id&&x.course_id===s.course_id&&x.mode===select.value);
     const cert=completion&&model.certificates.find(x=>x.completion_id===completion.id);
     details.append(el('p','حالة الإكمال: '+(completion?.status||'لم يكتمل')));
-    if(cert){details.append(el('p','الشهادة: '+cert.certificate_number+' · '+cert.status));return}
+    if(cert){
+     details.append(el('p','الشهادة: '+cert.certificate_number+' · '+cert.status));
+     const url=new URL('/graduates/'+encodeURIComponent(cert.verification_token||''),location.origin).href;
+     if(cert.verification_token&&typeof qrcode==='function'){
+      const qr=qrcode(0,'M');qr.addData(url);qr.make();
+      const svg=qr.createSvgTag({cellSize:5,margin:2});
+      const wrap=el('div');wrap.innerHTML=svg;details.append(wrap);
+      details.append(button('تنزيل QR بصيغة SVG',async()=>{
+       const blob=new Blob([svg],{type:'image/svg+xml'}),src=URL.createObjectURL(blob),a=document.createElement('a');
+       a.href=src;a.download=cert.certificate_number+'-QR.svg';a.click();setTimeout(()=>URL.revokeObjectURL(src),1000);
+      }));
+     }
+     if(cert.status==='issued'){
+      const picker=document.createElement('input');picker.type='file';picker.accept='application/pdf';picker.setAttribute('aria-label','ملف الشهادة الأصلي PDF');details.append(picker);
+      details.append(button('اعتماد ورفع PDF الأصلي',async()=>{
+       const pdf=picker.files?.[0];if(!pdf||pdf.size>2500000)throw Error('اختر ملف PDF لا يتجاوز 2.5 MB');
+       if(!confirm('هل هذا هو قالب الشهادة الأصلية المعتمد ويتضمن التواقيع الثلاثة ورمز QR الصحيح؟'))return;
+       const response=await fetch('/api/admin/certificate-upload?id='+encodeURIComponent(cert.id),{method:'POST',credentials:'same-origin',headers:{'Content-Type':'application/pdf','X-MAIC-Approved-Template':'confirmed'},body:pdf});
+       const result=await response.json();if(!response.ok)throw Error(result.error||'upload_failed');
+      }));
+     }
+     return
+    }
     const payload={studentId:s.id,courseId:s.course_id,mode:select.value};
     if(!completion||completion.status==='in_progress'||completion.status==='rejected'){
      details.append(button('توثيق إكمال الدورة',async()=>{
