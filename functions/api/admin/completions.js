@@ -6,7 +6,7 @@ async function completion(db,id){return db.prepare("SELECT * FROM learning_compl
 export async function onRequestGet({request,env}){
  if(!await isAdmin(request,env))return json({error:'unauthorized'},401);
  try{
-  const students=(await env.MAIC_DB.prepare("SELECT s.id,s.first_name,s.middle_name,s.last_name,s.country,e.course_id,e.status AS enrollment_status,e.agent_id,e.activated_at FROM learning_students s JOIN learning_enrollments e ON e.student_id=s.id WHERE e.status='active' ORDER BY e.activated_at DESC LIMIT 500").all()).results;
+  const students=(await env.MAIC_DB.prepare("SELECT s.id,s.first_name,s.middle_name,s.last_name,s.country,e.course_id,e.status AS enrollment_status,e.agent_id,e.activated_at,COALESCE(m.delivery_mode,'self-paced') AS delivery_mode FROM learning_students s JOIN learning_enrollments e ON e.student_id=s.id LEFT JOIN learning_enrollment_modes m ON m.student_id=e.student_id AND m.course_id=e.course_id WHERE e.status='active' ORDER BY e.activated_at DESC LIMIT 500").all()).results;
   const completions=(await env.MAIC_DB.prepare("SELECT * FROM learning_completions ORDER BY created_at DESC LIMIT 500").all()).results;
   const certificates=(await env.MAIC_DB.prepare("SELECT id,certificate_number,completion_id,student_id,course_id,course_mode,certificate_type,graduate_full_name,verification_token,issued_at,status FROM learning_certificates ORDER BY issued_at DESC LIMIT 500").all()).results;
   return json({students,completions,certificates,issuanceConfigured:env.MAIC_CERTIFICATE_ISSUANCE_ENABLED==='true'});
@@ -27,6 +27,8 @@ export async function onRequestPost({request,env}){
   const doc=await catalog(db),course=doc.courses.find(x=>x.id===d.courseId&&x.status!=='archived'&&x.mode.includes(d.mode));if(!course)return json({error:'course_mode_unavailable'},400);
   const enrolled=await db.prepare("SELECT e.agent_id,s.first_name,s.middle_name,s.last_name,s.country FROM learning_enrollments e JOIN learning_students s ON s.id=e.student_id WHERE e.student_id=? AND e.course_id=? AND e.status='active' AND s.enabled=1").bind(d.studentId,d.courseId).first();
   if(!enrolled)return json({error:'enrollment_inactive'},409);
+  const selected=await db.prepare('SELECT delivery_mode FROM learning_enrollment_modes WHERE student_id=? AND course_id=?').bind(d.studentId,d.courseId).first();
+  if((selected?.delivery_mode||'self-paced')!==d.mode)return json({error:'mode_mismatch'},409);
   const existing=await db.prepare("SELECT * FROM learning_completions WHERE student_id=? AND course_id=? AND mode=? AND run_id IS NULL").bind(d.studentId,d.courseId,d.mode).first();
   if(d.action==='complete'){
    if(typeof d.evidenceRef!=='string'||d.evidenceRef.trim().length<5||d.evidenceRef.length>500)return json({error:'evidence_required'},400);
