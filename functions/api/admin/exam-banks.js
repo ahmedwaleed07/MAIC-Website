@@ -1,5 +1,6 @@
 import {json,isAdmin,validOrigin} from '../../_lib/cms.js';
 import {catalog} from '../../_lib/learning.js';
+import {countNearDuplicateQuestionPairs} from '../../_lib/exam-quality.js';
 const validId=x=>typeof x==='string'&&/^[-a-z0-9]{2,80}$/.test(x);
 async function parseJSON(request){
  const type=(request.headers.get('Content-Type')||'').split(';')[0];
@@ -68,6 +69,7 @@ export async function onRequestPost({request,env}){
     openingFamilies.set(prefix,(openingFamilies.get(prefix)||0)+1);
    }
    if(Math.max(...openingFamilies.values())>14)throw Error('excessive_repeated_question_templates');
+   if(countNearDuplicateQuestionPairs(questions.map(q=>q.stem),0.85,12)>12)throw Error('excessive_near_duplicate_questions');
   }catch(e){return json({error:String(e.message||e).slice(0,120)},400)}
   const version=crypto.randomUUID(),now=new Date().toISOString();
   await db.prepare("INSERT INTO learning_exam_banks(course_id,version,source_sha256,status,question_count,created_at) VALUES(?,?,?,'draft',0,?)").bind(course,version,m.sha256,now).run();
