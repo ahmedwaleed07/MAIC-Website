@@ -64,7 +64,7 @@ export async function onRequestPost({request,env}){
    // be recycled over and over merely to meet the 100-item count.
    const openingFamilies=new Map();
    for(const q of questions){
-    const prefix=q.stem.toLocaleLowerCase('en').replace(/\\s+/g,' ').slice(0,34);
+    const prefix=q.stem.toLocaleLowerCase('en').replace(/\s+/g,' ').slice(0,34);
     openingFamilies.set(prefix,(openingFamilies.get(prefix)||0)+1);
    }
    if(Math.max(...openingFamilies.values())>14)throw Error('excessive_repeated_question_templates');
