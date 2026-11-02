@@ -48,7 +48,7 @@ async function call(fx,method,data,search='',override={}){
 }
 function question(i){
  const unique=cryptoNode.createHash('sha256').update('independent-test-question-'+i).digest('hex').slice(0,40);
- return {stem:unique+' How should an academic reviewer distinguish this project process and its outcome?',options:['Result based on documented evidence','Unsupported absolute guarantee','Verified decision point','Unrelated variable'],correct:[0,2],page:i%12+1,rationale:'This is a strictly synthetic training fixture, not a real exam answer.'};
+ return {stem:unique+' How should an academic reviewer distinguish this project process and its outcome?',options:['Result based on documented evidence in case '+i,'Unsupported absolute guarantee for case '+i,'Verified decision point in case '+i,'Unrelated variable for case '+i],correct:[0,2],page:i%12+1,rationale:'This is a strictly synthetic training fixture, not a real exam answer.'};
 }
 test('drafting 100 source-verified questions cannot activate exam without a different reviewer',async()=>{
  const fx=await fixture();
