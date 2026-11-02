@@ -29,7 +29,7 @@ form.addEventListener('submit',async event=>{
   if(!document.querySelector('#checkContent').checked||!document.querySelector('#checkStyle').checked)throw Error('يجب اعتماد مراجعة المادة والخط والهوية أولاً');
   if(!confirm('تأكيد: تم تدقيق الملف علمياً وصفحة بصفحة؛ هل تريد استبدال نسخة الدورة '+selected.title+' الموجودة في موقع MAIC؟'))return;
   const response=await fetch('/api/admin/course-material?course='+encodeURIComponent(selected.course_id),{
-    method:'POST',credentials:'same-origin',headers:{'Content-Type':'application/pdf','X-MAIC-Reviewed':'yes','X-MAIC-Format':'Tinos12-BW','X-MAIC-Reviewer':reviewer},body:doc
+    method:'POST',credentials:'same-origin',headers:{'Content-Type':'application/pdf','X-MAIC-Reviewed':'yes','X-MAIC-Format':'Tinos12-BW','X-MAIC-Reviewer':encodeURIComponent(reviewer)},body:doc
   });
   const result=await response.json();if(!response.ok)throw Error(result.error||'upload_failed');
   message.textContent=result.unchanged?'هذا نفس الملف المخزن حالياً ولم يتغير شيء':'تم رفع الملف المعتمد وتحديث بصمته: '+result.sha256;
