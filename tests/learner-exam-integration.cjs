@@ -60,7 +60,7 @@ function fixture(){
 }
 async function invoke(handler,fx,pathSuffix,method='GET',data,extraHeaders={}){
   const headers={...fx.headers,...extraHeaders};
-  if(method==='POST'){headers['Origin']='https://www.maic-edu.org';headers['Content-Type']='application/json';}
+  if(method==='POST'){headers['Origin']=headers['Origin']||'https://www.maic-edu.org';headers['Content-Type']='application/json';}
   const request=new Request('https://www.maic-edu.org'+pathSuffix,{method,headers,body:data?JSON.stringify(data):undefined});
   const response=await handler({request,env:fx.env});
   const value=response.headers.get('content-type')?.includes('application/json')?await response.json():await response.arrayBuffer();
