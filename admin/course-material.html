@@ -1,0 +1,13 @@
+<!doctype html><html lang="ar" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow"><title>MAIC | Academic Manual Approval</title>
+<style>body{background:#071a2a;color:#f7efe2;font:16px/1.8 system-ui,Arial;margin:0}header,main{padding:24px;max-width:1100px;margin:auto}header{border-bottom:1px solid #b99b69}h1,h2{color:#e6c88f}a{color:#e7cb98}article{border:1px solid #a88a54;border-radius:12px;padding:22px;background:#112c42;margin:18px 0}label{display:block;margin:14px 0}input,select{font:inherit;padding:10px;border-radius:7px;max-width:100%;color:#142b3d;background:#f4f0e7}input[type=checkbox]{accent-color:#d4b679;margin-inline-end:12px}button{font:inherit;padding:12px 19px;border:0;border-radius:8px;background:#ddc085;color:#071a2a;font-weight:bold;cursor:pointer}button:disabled{opacity:.5;cursor:not-allowed}p{max-width:900px}.muted{color:#cfceb9}.row{padding:8px 0;border-bottom:1px solid #bca06d32;overflow-wrap:anywhere}#message{min-height:35px}</style></head><body>
+<header><a href="./">لوحة MAIC Admin</a> · <a href="./exam-banks.html">بنوك الأسئلة</a><h1>اعتماد النسخة النهائية للمادة العلمية</h1><p>لا تُنشر مسودات المواد تلقائياً. يختار مسؤول الأكاديمية نسخة PDF ذات 12 صفحة، ويتحقق من الهوية والمحتوى العلمي وخط Tinos حجم 12، ثم يرفع النسخة المعتمدة حصراً.</p></header>
+<main><article><h2>المواد الموجودة حالياً</h2><div id="materials">جارٍ التحميل…</div></article>
+<article><h2>ترقية المادة العلمية</h2><form id="manual"><label>اختر الدورة<select id="course" required><option value="">—</option></select></label>
+<label>ملف المادة العلميّة PDF<input id="file" type="file" accept="application/pdf,.pdf" required></label>
+<label>اسم المسؤول عن المراجعة<input id="reviewer" type="text" autocomplete="name" required maxlength="150" placeholder="المراجع الأكاديمي المعتمد"></label>
+<label><input id="checkContent" type="checkbox" required> راجعت المادة العلمية صفحة بصفحة، والأمثلة، والمصادر، وحقوق المحتوى، ولا تحتوي دعاية أو قوالب لجهة منافسة</label>
+<label><input id="checkStyle" type="checkbox" required> تأكدت من وجود شعار MAIC الأصلي ونسخة أبيض وأسود، وأن متن المادة Tinos حجم 12 وأن الملف يتكون من 12 صفحة</label>
+<p class="muted">منعاً لانقطاع الدراسة، يمنع النظام استبدال ملف دورة تحتوي اشتراكات مفعّلة أو امتحانات جارية. لا يغيّر هذا الإجراء شهادات المتعلمين أو مفاتيح إجابات الاختبارات.</p>
+<button id="upload" type="submit">اعتماد النسخة ورفعها إلى الموقع</button><p id="message" role="status"></p></form></article>
+<article><h2>سجل مراجعات المواد</h2><div id="history"></div></article>
+</main><script src="./course-material.js"></script></body></html>
