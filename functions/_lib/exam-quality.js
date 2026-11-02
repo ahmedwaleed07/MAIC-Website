@@ -26,3 +26,20 @@ export function countNearDuplicateQuestionPairs(stems,threshold=0.85,stopAfter=1
  }
  return near;
 }
+
+
+// More important than superficial stem rewriting: detect recurring answer sets.
+// Reusing 3+ unchanged distractors across many items can make answers predictable.
+export function countOverlappingOptionPairs(questions,minOverlap=3,stopAfter=12){
+ if(!Array.isArray(questions)||questions.length>100||questions.some(q=>!q||!Array.isArray(q.options)||q.options.length!==4))throw new Error('invalid_options');
+ const sets=questions.map(q=>new Set(q.options.map(normalizeStem)));
+ let pairs=0;
+ for(let i=0;i<sets.length;i++){
+  for(let j=i+1;j<sets.length;j++){
+   let shared=0;
+   for(const option of sets[i])if(sets[j].has(option))shared++;
+   if(shared>=minOverlap&&++pairs>stopAfter)return pairs;
+  }
+ }
+ return pairs;
+}
