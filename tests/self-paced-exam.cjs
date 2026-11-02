@@ -36,12 +36,12 @@ test('material review and question bank approval gate the exam',()=>{
  assert.match(review,/d\.sourceReviewed!==true/);
  assert.match(review,/d\.academicQualityReviewed!==true/);
 });
-test('MAIC PDF template requires genuine Times New Roman and the approved wordmark font',()=>{
+test('MAIC PDF template uses the approved Tinos 12 and the authentic crest',()=>{
  const script=load('tools/create_maic_course_pdf.py');
  assert.match(script,/fontSize=12/);
- assert.match(script,/Times New Roman/);
- assert.match(script,/--times-regular/);
- assert.match(script,/--times-bold/);
+ assert.match(script,/Tinos/);
+ assert.match(script,/--tinos-regular/);
+ assert.match(script,/--tinos-bold/);
  assert.match(script,/--brand-font/);
  assert.match(script,/ImageOps\.grayscale/);
 });

@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
 """Render an academically reviewed MAIC course manual as grayscale PDF.
 
-Requires licensed Times New Roman regular/bold and MAIC brand heading font
-from the operator's local system. Font binaries are never bundled in GitHub.
+Uses Tinos Regular/Bold 12pt for the scientific body as approved for MAIC on Nov 2, 2026.
+The crest image must contain the original official brand wordmark; font binaries
+are never bundled in GitHub.
 This script does NOT produce or fact-check educational text itself.
 """
 import argparse
@@ -56,19 +57,20 @@ def parse_input(path):
 
 
 def build(args):
-    font("MAIC-TNR", args.times_regular)
-    font("MAIC-TNR-Bold", args.times_bold)
-    font("MAIC-Brand", args.brand_font)
+    font("MAIC-Tinos", args.tinos_regular)
+    font("MAIC-Tinos-Bold", args.tinos_bold)
+    if args.brand_font:
+        font("MAIC-Brand", args.brand_font)
     data = parse_input(args.input)
-    body = ParagraphStyle("TNR12", fontName="MAIC-TNR", fontSize=12, leading=17,
+    body = ParagraphStyle("Tinos12", fontName="MAIC-Tinos", fontSize=12, leading=17,
                           textColor=colors.black, spaceAfter=10, alignment=TA_LEFT)
-    heading = ParagraphStyle("Heading", parent=body, fontName="MAIC-TNR-Bold",
+    heading = ParagraphStyle("Heading", parent=body, fontName="MAIC-Tinos-Bold",
                              fontSize=15, leading=19, spaceBefore=18, spaceAfter=9)
-    cover_title = ParagraphStyle("CoverTitle", parent=body, fontName="MAIC-Brand",
+    cover_title = ParagraphStyle("CoverTitle", parent=body, fontName="MAIC-Brand" if args.brand_font else "MAIC-Tinos-Bold",
                                  fontSize=22, leading=28, alignment=TA_CENTER)
-    academy = ParagraphStyle("Academy", parent=body, fontName="MAIC-Brand",
+    academy = ParagraphStyle("Academy", parent=body, fontName="MAIC-Brand" if args.brand_font else "MAIC-Tinos-Bold",
                              fontSize=13, leading=18, alignment=TA_CENTER)
-    sub = ParagraphStyle("Sub", parent=body, fontName="MAIC-TNR",
+    sub = ParagraphStyle("Sub", parent=body, fontName="MAIC-Tinos",
                          fontSize=12, leading=18, alignment=TA_CENTER)
     story = []
     logo = grayscale_logo(args.crest)
@@ -77,7 +79,7 @@ def build(args):
                   Paragraph("MICHIGAN ACADEMY OF INNOVATION AND CREATIVITY", academy),
                   Spacer(1,13),Paragraph("Innovate. Create. Lead.", sub),
                   Spacer(1,58),Paragraph(escape(data["title"]), cover_title),
-                  Spacer(1,34),Paragraph("OFFICIAL COURSE STUDY MANUAL", sub),
+                  Spacer(1,34),Paragraph("COURSE STUDY MANUAL", sub),
                   Spacer(1,10),Paragraph("Course language: English", sub),
                   Spacer(1,64),Paragraph("Copyright MAIC. All rights reserved.", sub),
                   PageBreak()])
@@ -92,7 +94,7 @@ def build(args):
                     story.append(Paragraph("• "+escape(str(entry)),body))
     def footer(c,doc):
         c.saveState()
-        c.setFont("MAIC-TNR", 9)
+        c.setFont("MAIC-Tinos", 9)
         c.setFillColor(colors.black)
         c.line(50,45,562,45)
         c.drawString(50,31,"MAIC — Academic course manual")
@@ -117,8 +119,8 @@ if __name__=="__main__":
     ap.add_argument("--input",required=True,help="Academic-reviewed course source JSON")
     ap.add_argument("--output",required=True,help="Output PDF path")
     ap.add_argument("--crest",required=True,help="MAIC approved original crest PNG/JPG")
-    ap.add_argument("--times-regular",required=True,help="Licensed Times New Roman regular TTF/OTF")
-    ap.add_argument("--times-bold",required=True,help="Licensed Times New Roman bold TTF/OTF")
-    ap.add_argument("--brand-font",required=True,help="MAIC approved original logo-heading font")
+    ap.add_argument("--tinos-regular",required=True,help="Tinos Regular TTF/OTF")
+    ap.add_argument("--tinos-bold",required=True,help="Tinos Bold TTF/OTF")
+    ap.add_argument("--brand-font",help="Optional approved MAIC heading font (the crest image must contain the authentic wordmark)")
     ap.add_argument("--expect-pages",type=int,default=12,help="Expected substantive page count (default 12)")
     build(ap.parse_args())
