@@ -4,7 +4,7 @@
 <main><div class="card"><h2>حالة الكورسات</h2><div id="banks">جارٍ التحميل…</div></div>
 <form class="card" id="upload"><h2>رفع اختبار مُراجع</h2><label>الدورة<select id="course" required><option value="">—</option></select></label><label>ملف بنك الأسئلة بصيغة JSON<input id="bankfile" type="file" accept=".json,application/json" required></label><label>اسم المسؤول عن المراجعة<input id="reviewer" type="text" maxlength="150" required></label>
 <p class="muted">كل اختبار: 100 سؤال بالضبط؛ لكل سؤال أربعة اختيارات وواحدة أو أكثر صحيحة. يجب تحديد صفحة المادة المصدر وشرح سبب الإجابة الصحيحة، مع صياغة علمية دقيقة ومشتتات قوية غير ملتبسة.</p>
-<label><input type="checkbox" id="pdfChecked" required> تحققت من أن PDF لهذه الدورة رسمي وبالأبيض والأسود، والمتن Times New Roman بحجم 12 وشعار MAIC الأصلي</label>
+<label><input type="checkbox" id="pdfChecked" required> تحققت من أن PDF لهذه الدورة رسمي وبالأبيض والأسود، والمتن Tinos بحجم 12 وشعار MAIC الأصلي</label>
 <label><input type="checkbox" id="sourceChecked" required> راجعت الأسئلة المئة مقابل محتوى المادة العلمية نفسها وتحققت من مراجع الصفحات</label>
 <label><input type="checkbox" id="qualityChecked" required> راجعت خيارات الإجابة وتأكدت من عدم وجود أسئلة مضللة أو إجابات صحيحة ناقصة</label>
 <button id="send" type="submit">اعتماد 100 سؤال ونشر الاختبار</button><p id="message" role="status"></p></form>
