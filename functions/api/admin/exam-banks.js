@@ -60,6 +60,14 @@ export async function onRequestPost({request,env}){
    questions=d.questions.map((q,i)=>normalizeQuestion(q,i+1,m.pages));
    const stems=new Set(questions.map(q=>q.stem.trim().toLocaleLowerCase('en')));
    if(stems.size!==100)throw Error('duplicate_stems');
+   // Protect MAIC's academic quality: the same template opening must not
+   // be recycled over and over merely to meet the 100-item count.
+   const openingFamilies=new Map();
+   for(const q of questions){
+    const prefix=q.stem.toLocaleLowerCase('en').replace(/\\s+/g,' ').slice(0,34);
+    openingFamilies.set(prefix,(openingFamilies.get(prefix)||0)+1);
+   }
+   if(Math.max(...openingFamilies.values())>14)throw Error('excessive_repeated_question_templates');
   }catch(e){return json({error:String(e.message||e).slice(0,120)},400)}
   const version=crypto.randomUUID(),now=new Date().toISOString();
   await db.prepare("INSERT INTO learning_exam_banks(course_id,version,source_sha256,status,question_count,created_at) VALUES(?,?,?,'draft',0,?)").bind(course,version,m.sha256,now).run();
