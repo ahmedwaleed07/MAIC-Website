@@ -25,7 +25,7 @@ test('admin approval requires content and style review, no auto-publish',()=>{
 });
 test('recycled question families are blocked, despite 100 valid records',()=>{
  const src=read('functions/api/admin/exam-banks.js');
- assert.match(src,/excessive_repeated_question_templates/);
- assert.match(src,/openingFamilies/);
- assert.match(src,/openingFamilies\.values\(\)/);
+ assert.match(src,/repetitive_questions_block_approval/);
+ assert.match(src,/maxOpening/);
+ assert.match(src,/nearPairs/);
 });
