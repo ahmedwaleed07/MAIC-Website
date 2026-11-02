@@ -48,7 +48,7 @@ upload.addEventListener('submit',async e=>{
   if(bank.format!=='maic-mcq-v1'||!Array.isArray(bank.questions)||bank.questions.length!==100)throw Error('يجب أن يحتوي الملف على مائة سؤال بالضبط');
   if(!confirm('سيتم حفظ المسودة للمراجعة فقط دون ظهورها للطلاب. هل تريد المتابعة؟'))return;
   const result=await api({action:'stage',format:bank.format,questions:bank.questions,courseId:selected.course_id,sourceSha256:selected.sha256,preparedBy:preparer});
-  stageMessage.textContent='حُفظت مسودة 100 سؤال، وهي غير منشورة. مؤشر التشابه: '+result.quality.nearPairs+' زوج';
+  stageMessage.textContent='حُفظت مسودة 100 سؤال، وهي غير منشورة. تشابه الصياغة: '+result.quality.nearPairs+' زوج؛ تكرار 3 خيارات أو أكثر: '+result.quality.optionOverlapPairs+' زوج';
   upload.reset();await refresh();
  }catch(error){stageMessage.textContent='تعذر حفظ المسودة: '+error.message}finally{submit.disabled=false}
 });
@@ -57,7 +57,7 @@ async function openDraft(courseId,version){
  details.replaceChildren();
  details.append(node('h3','مراجعة جميع الأسئلة — '+courseId),node('p','المُعدّ: '+data.bank.prepared_by));
  const quality=data.quality;
- const health=node('p','بصمة المادة: '+(data.sourceMatch?'مطابقة':'مختلفة')+' · الأسئلة المتشابهة: '+(quality?.nearPairs??'غير متاح')+' زوج · الحد الأعلى لتكرار بداية السؤال: '+(quality?.maxOpening??'-'),'review-status');
+ const health=node('p','بصمة المادة: '+(data.sourceMatch?'مطابقة':'مختلفة')+' · الأسئلة المتشابهة: '+(quality?.nearPairs??'غير متاح')+' زوج · تكرار 3 خيارات: '+(quality?.optionOverlapPairs??'غير متاح')+' زوج · الحد الأعلى لتكرار البداية: '+(quality?.maxOpening??'-'),'review-status');
  details.append(health);
  if(!data.sourceMatch||!quality?.canApprove)details.append(node('p','لا يمكن اعتماد هذا البنك: النسخة المصدر مختلفة أو مستوى تكرار الأسئلة مرتفع. يلزم رفع مسودة مصححة.','review-status'));
  for(const q of data.questions){
