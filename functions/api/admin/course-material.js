@@ -18,7 +18,7 @@ export async function onRequestPost({request,env}){
  const url=new URL(request.url),course=url.searchParams.get('course')||'';
  if(!/^[-a-z0-9]{2,80}$/.test(course))return json({error:'invalid_course'},400);
  if(request.headers.get('X-MAIC-Reviewed')!=='yes'||request.headers.get('X-MAIC-Format')!=='Tinos12-BW')return json({error:'academic_review_required'},409);
- const reviewer=(request.headers.get('X-MAIC-Reviewer')||'').trim();
+ let reviewer='';try{reviewer=decodeURIComponent(request.headers.get('X-MAIC-Reviewer')||'').trim()}catch{return json({error:'reviewer_required'},400)}
  if(reviewer.length<3||reviewer.length>150||!(/^[\p{L}\p{M} .'-]+$/u).test(reviewer))return json({error:'reviewer_required'},400);
  const sizeHeader=Number(request.headers.get('Content-Length')||'0');
  if(sizeHeader>MAX)return json({error:'pdf_too_large'},413);
