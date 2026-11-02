@@ -40,3 +40,19 @@ These are technical *pair counts*, not numbers of defective questions. The impor
 5. Preserve six-path MAIC certificate requirements and leave official issuance feature-gated until separately approved.
 
 This is a safeguard and quality update, not an assertion that academic content or live exams are launch-ready.
+
+
+## Editorial progress update — 2 November 2026, second batch
+
+The two reworded private 100-question banks (Operations & Service Strategy and Strategic Planning & Execution) have now received a **manual, scenario-specific editorial rewrite of all four answer options on items 1–40 of each bank**: 80 rewritten items, 320 rewritten answer choices. Items 41–100 of each bank still require this pass.
+
+Review metrics for **pairs sharing at least three exactly identical answer choices**:
+- Operations Strategy: **74 → 44** pairs.
+- Strategic Planning: **75 → 45** pairs.
+- Stem similarity at character-trigram Dice >=85% remains 0 pairs in both, but this does NOT prove concept diversity or correctness.
+
+Each bank remains 100 items, with the original draft answer key positions **preserved but NOT verified**. Both have SHA-256 identifiers matching their locally regenerated Tinos 12 manuals; the production D1 PDFs still use older versions, so do not activate these draft banks.
+
+Internal academic review artifacts were prepared **outside the public repository**: two confidential 100-item PDF review booklets (with clearly marked draft answer keys and reviewer decision lines), the 80-question change log, two private answer-key JSON files, and candidate source-passage excerpts. A lexical passage finder surfaced 55 candidate matches and 25 weak matches; these are only finding aids, not evidence of correctness.
+
+**Nonnegotiable release gates:** independently validate each correct choice and distractor against its complete source page; finish items 41–100; reduce excessive option reuse and semantic duplication; approve the exact Tinos PDF and promote it; then stage and separately approve the 100-item bank under the two-stage workflow. Finally complete a nonproduction browser-based learner test. No draft answer keys are stored in GitHub or published to students, and no original MAIC identity asset has been modified.
