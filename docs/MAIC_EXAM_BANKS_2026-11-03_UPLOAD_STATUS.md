@@ -1,30 +1,20 @@
-# MAIC academic exam question upload status — 3 November 2026
+# MAIC — Complete private examination draft-bank inventory (3 November 2026)
 
-**This is a private academic-data workflow; never upload correct-answer files to public GitHub or a learner-visible route.**
+## Verified production D1 status
+- **36/36 course draft banks uploaded**, 100 MCQs each, **3,600 draft questions total**.
+- **36** corresponding current material records, **36** draft-review signoff records recording the preparer, **0 activated examinations**, and **0 learner records**.
+- Every bank includes 100 distinct ordinals, four answer options, provisional correct-answer masks, explanations and source page numbers. Direct D1 validation found **0** missing/invalid answer masks, source pages, stems, rationales or exactly duplicated options.
+- All 36 draft bank source SHA-256 values currently **differ from the live published D1 PDF versions**. A bank CANNOT be academically approved or opened until the matching new Tinos12 source PDF is independently reviewed and promoted.
+- The protected existing MAIC administration page /admin/exam-banks.html reads these records directly and now displays 36 complete drafts and no unwritten banks.
 
-## Uploaded to Cloudflare D1
+## Provenance and quality limits
+- Ten banks (1,000 items) were authored in earlier academic drafting stages.
+- The remaining **26 banks (2,600 questions)** were generated in this session from the actual four-topic, 12-page Tinos course manuscripts using structured source-based decision questions. Their exact source PDF hash is saved in each bank.
+- These 26 banks are **NOT academically reviewed** and in places are still visibly **template-driven and need substantial substantive editing**. A mechanical 100-question count, absence of literal duplicates and reference to a source excerpt are **not** evidence of 100 reliable assessments. No learner should be examined using these drafts before detailed editorial review and independent factual evaluation.
+- The new 26-bank local audit checked 100-item counts, four distinct choices, 1–3 provisional correct choices, source pages, minimum rationale length and highly similar stems. The comprehensive confidential package also contains an independent structural QA manifest of all 36. No unverified official academic endorsement is claimed.
+- Source-PDF match was checked byte-for-byte and SHA-256 against **the exact candidate PDF included for each bank** in a private reviewer ZIP. This resolves earlier local-file provenance confusion, but **does not** mean the live D1 teaching PDF matches the draft.
 
-Ten complete 100-question MCQ banks are now stored directly in MAIC's existing D1 academic exam tables as `draft` records, each with a documented preparer and separate academic review requirement:
-
-| Course ID | Questions in D1 | Status | PDF source match against CURRENT published D1 material |
-|---|---:|---|---|
-| applied-problem-solving | 100 | draft | No |
-| business-finance-accounting | 100 | draft | No |
-| digital-marketing | 100 | draft | No |
-| digital-project-delivery | 100 | draft | No |
-| human-resources | 100 | draft | No |
-| management-foundations | 100 | draft | No |
-| operations-strategy | 100 | draft | No |
-| project-management | 100 | draft | No |
-| risk-for-managers | 100 | draft | No |
-| strategic-planning | 100 | draft | No |
-
-**Verified aggregate from D1:** 36 live material records, 10 stored draft banks, 1,000 stored exam questions, 0 active exams, 0 learner records. Each stored candidate is matched to a different Tinos12 review PDF by SHA-256 than the older material currently in the live database. Approval therefore remains impossible until the correct reviewed Tinos12 PDF is promoted.
-
-Newly completed: Risk-Aware Management Decisions now has 100 source-linked draft questions, including 76 new items; 42 one-answer, 17 two-answer, and 41 three-answer questions. The answers are provisional and **not independently reviewed**.
-
-## Still unwritten (26 banks × 100 questions)
-
+## New 26 course-specific draft banks
 - collaborative-leadership
 - competitive-advantage
 - digital-transformation
@@ -52,23 +42,24 @@ Newly completed: Risk-Aware Management Decisions now has 100 source-linked draft
 - time-workload-management
 - workplace-team-collaboration
 
-Total substantive MAIC academic test target: 36 × 100 = 3,600; completed 10 × 100 = 1,000 draft questions (27.78%), leaving 2,600 questions. **Do not generate copied, repeated or trivial filler items merely to reach the number.** Each bank needs its own original, source-based cases, assessment design, correct key, explanations, page references and independent academic review.
+## Previously staged ten draft banks
+- applied-problem-solving
+- business-finance-accounting
+- digital-marketing
+- digital-project-delivery
+- human-resources
+- management-foundations
+- operations-strategy
+- project-management
+- risk-for-managers
+- strategic-planning
 
-## Academic and operational gates
+## Mandatory release conditions
+1. MAIC academic reviewer checks the 36 candidate source manuals page by page for factual accuracy, intellectual-property rights, course identity, original MAIC crest and Tinos12 typography.
+2. Review the remaining 2,600 machine-structured questions for **genuine depth, case diversity and fair, unambiguous answer choices**. Rewrite any repetitive or trivial item; independently verify ALL 3,600 provisional answer keys and rationales against the teaching text.
+3. Approve and promote only the corresponding finalized course PDFs on the owner-only material page. Never replace an active learner's source in mid-study.
+4. Run the two-stage preparer/independent-academic-review workflow for each 100-item bank. Do not approve an answer bank that fails source SHA checks or quality tests.
+5. Perform an isolated full-browser student test using a nonproduction learner account before launching; verify 100 forward-only steps, correct multiselect scoring and result only after the final question.
+6. Official certificates remain subject to MAIC's separate six-certificate eligibility requirements and approved signed template.
 
-1. Review and approve each Tinos12 source PDF for MAIC visual identity, accurate course content, fonts, rights and exact-page quality.
-2. Promote the approved PDF through MAIC Admin; match its SHA-256 with its corresponding bank.
-3. Independently review all 100 questions and answer keys in the protected admin interface. Reviewer must not be the preparer.
-4. Check duplication and source references, then explicitly approve. The website must not allow draft banks for learners.
-5. Conduct end-to-end testing with a nonproduction learner account, including 100 next-only submissions and final-only evaluation; no actual certificates until MAIC eligibility checks are satisfied.
-6. Continue course-specific authoring for the 26 incomplete banks rather than inventing academic review.
-
-The existing logo, MAIC color palette, multilingual public UI, certificate art, and crest were not modified.
-
-## Course-specific authored additions on 3 November 2026
-
-Three more 100-item banks were written from the actual 12-page Tinos source manuals and uploaded as restricted D1 drafts: Applied Problem Solving, Business Finance & Accounting, and Digital Project Delivery. Their provisional answer keys are stored in D1 and in private review files only. The three banks contain exactly 300 course-based MCQs, with zero near-identical question-stem pairs at 85% Dice similarity; the three-option-overlap check returns 0, 0 and 0 respectively. Numerical finance examples were recalculated in their worked explanations. **No independent academic signoff has occurred and some answer interpretations may still need correction.**
-
-To prevent low-quality automated question sets from being approved, the academic QA gate now counts questions whose *stems* simply ask what is written on an identified source page; more than 12 of these location-recall items blocks final approval. This complements stem and option-reuse checking and does not substitute for academic review.
-
-All ten bank source SHA-256 values still differ from corresponding currently published PDFs; these are candidate sources and no exam has been activated. Do not replace the existing MAIC crest, brand colors, course menu styling or official certificate artwork.
+**Security:** The 36 full-answer bank JSON files and matching candidate source PDFs are **NOT committed to public GitHub**. They are kept as confidential MAIC private Library review files and D1 draft tables. The original MAIC crest, existing colors, public site artwork and certificate templates were not altered.
