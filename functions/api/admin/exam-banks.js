@@ -43,7 +43,7 @@ function quality(questions){
  const nearPairs=countNearDuplicateQuestionPairs(questions.map(q=>q.stem),0.85,12);
  const optionOverlapPairs=countOverlappingOptionPairs(questions.map(q=>({options:q.options||[q.option_a,q.option_b,q.option_c,q.option_d]})),3,12);
  // A final assessment must measure understanding, not ask where a sentence is printed.
- const sourceRecallItems=questions.filter(q=>/\\bpage\\s*\\d{1,3}\\b/i.test(q.stem)).length;
+ const sourceRecallItems=questions.filter(q=>/\bpage\s*\d{1,3}\b/i.test(q.stem)).length;
  return {maxOpening,nearPairs,optionOverlapPairs,sourceRecallItems,canApprove:maxOpening<=14&&nearPairs<=12&&optionOverlapPairs<=12&&sourceRecallItems<=12};
 }
 async function list(db){
