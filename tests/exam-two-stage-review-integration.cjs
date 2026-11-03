@@ -28,7 +28,7 @@ class D1{
 async function fixture(){
  const sqlite=new DatabaseSync(':memory:');
  sqlite.exec('PRAGMA foreign_keys=ON');
- for(const f of ['0002_learner_materials.sql','0006_self_paced_exam.sql','0008_exam_two_stage_review.sql','0009_exam_item_academic_reviews.sql']){
+ for(const f of ['0002_learner_materials.sql','0006_self_paced_exam.sql','0008_exam_two_stage_review.sql','0009_exam_item_academic_reviews.sql','0010_exam_draft_item_correction_history.sql','0011_exam_quality_issue_queue.sql']){
   sqlite.exec(fs.readFileSync(path.join(root,'migrations',f),'utf8'));
  }
  sqlite.exec('CREATE TABLE cms_documents(id TEXT PRIMARY KEY, content TEXT NOT NULL)');
@@ -58,6 +58,7 @@ test('drafting 100 source-verified questions cannot activate exam without a diff
   response=await call(fx,'POST',{action:'stage',courseId:'project-management',format:'maic-mcq-v1',sourceSha256:'a'.repeat(64),preparedBy:'First Academic',questions:Array.from({length:100},(_,i)=>question(i+1))});
   assert.equal(response.status,200,JSON.stringify(response.body));assert.equal(response.body.staged,true);assert.equal(response.body.approved,false);
   const version=response.body.version;
+  fx.sqlite.prepare("INSERT INTO learning_exam_quality_issues(course_id,version,ordinal,issue_code,severity,detail,detected_at) VALUES(?,?,27,'TEMPLATE_BASED_ASSESSMENT','blocker','Rewrite a machine-templated item','2026-10-01 00:00:00')").run('project-management',version);
   assert.equal(fx.sqlite.prepare("SELECT COUNT(*) AS n FROM learning_exam_active").get().n,0);
   assert.equal(fx.sqlite.prepare("SELECT status FROM learning_exam_banks WHERE version=?").get(version).status,'draft');
   assert.equal(fx.sqlite.prepare("SELECT COUNT(*) AS n FROM learning_exam_questions WHERE version=?").get(version).n,100);
@@ -83,9 +84,34 @@ test('drafting 100 source-verified questions cannot activate exam without a diff
   }
   response=await call(fx,'POST',{...approval,reviewedBy:'Second Academic'});
   assert.equal(response.status,409);assert.equal(response.body.error,'100_individual_reviews_required');
+  // A flagged question cannot be approved until it is substantially edited.
   response=await call(fx,'POST',{action:'review-item',courseId:'project-management',version,ordinal:27,
    reviewedBy:'Second Academic',verdict:'approved',
-   reviewNotes:'The correction was checked against the cited material and each distractor was reviewed.',
+   reviewNotes:'This item has not yet been corrected, therefore academic approval must fail.',
+   sourceConfirmed:true,keyConfirmed:true,distractorsConfirmed:true});
+  assert.equal(response.status,409);
+  assert.equal(response.body.error,'item_has_unresolved_academic_issues');
+  const editor=await import(pathToFileURL(path.join(root,'functions/api/admin/exam-edit.js')).href);
+  const editGet=new Request('https://www.maic-edu.org/api/admin/exam-edit?course=project-management&version='+encodeURIComponent(version)+'&ordinal=27',
+   {headers:{Cookie:fx.cookie}});
+  const currentResponse=await editor.onRequestGet({request:editGet,env:fx.env});
+  assert.equal(currentResponse.status,200);
+  const current=await currentResponse.json();
+  const revised={...current.question,stem:current.question.stem+' The revised case identifies the independent evidence and asks a narrower decision.'};
+  const editRequest=new Request('https://www.maic-edu.org/api/admin/exam-edit',{
+   method:'POST',headers:{Cookie:fx.cookie,Origin:'https://www.maic-edu.org','Content-Type':'application/json'},
+   body:JSON.stringify({courseId:'project-management',version,ordinal:27,expectedHash:current.fingerprint,
+    editor:'Academic Editor',reason:'The original wording was a superficial template; the case was narrowed to a supported decision.',question:revised})});
+  const save=await editor.onRequestPost({request:editRequest,env:fx.env});
+  assert.equal(save.status,200,JSON.stringify(await save.clone().json()));
+  assert.equal(fx.sqlite.prepare("SELECT COUNT(*) AS n FROM learning_exam_item_corrections WHERE ordinal=27").get().n,1);
+  response=await call(fx,'POST',{action:'resolve-issue',courseId:'project-management',version,ordinal:27,
+    issueCode:'TEMPLATE_BASED_ASSESSMENT',reviewedBy:'Second Academic',
+    reviewNotes:'The exact revised text and every answer option were checked against the published source and no cue pattern remained.'});
+  assert.equal(response.status,200,JSON.stringify(response.body));
+  response=await call(fx,'POST',{action:'review-item',courseId:'project-management',version,ordinal:27,
+   reviewedBy:'Second Academic',verdict:'approved',
+   reviewNotes:'The corrected evidence-based item was checked against the cited material and every distractor.',
    sourceConfirmed:true,keyConfirmed:true,distractorsConfirmed:true});
   assert.equal(response.status,200);
   response=await call(fx,'POST',{...approval,reviewedBy:'Second Academic'});
