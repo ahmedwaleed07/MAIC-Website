@@ -43,3 +43,22 @@ export function countOverlappingOptionPairs(questions,minOverlap=3,stopAfter=12)
  }
  return pairs;
 }
+
+
+// Check answer-cue leakage in machine-structured MCQs. A high count means the
+// questions are solvable from stylistic red flags instead of the course content.
+// This is a minimum release gate, not a replacement for independent academic review.
+export function checkTemplateDraftCues(questions){
+ if(!Array.isArray(questions)||questions.length>100||
+    questions.some(q=>!q||typeof q.stem!=='string'||!Array.isArray(q.options)||q.options.length!==4))
+   throw new Error('invalid_questions');
+ const cue=/^(?:assume that|substitute a favorable|treat the (?:decision|observation|listed)|use the (?:observation|shortcut|absence)|choose the desired|claim that|ignore (?:whether|remaining)|allow the final|prefer the common|conclude that)\b/i;
+ let draftingDisclaimers=0,flaggedItemCount=0,stronglyCueDominatedItems=0;
+ for(const q of questions){
+  if(/this is an ai-assisted draft/i.test(String(q.rationale||'')))draftingDisclaimers++;
+  const n=q.options.filter(o=>cue.test(String(o))).length;
+  if(n>=1)flaggedItemCount++;
+  if(n>=2)stronglyCueDominatedItems++;
+ }
+ return {draftingDisclaimers,flaggedItemCount,stronglyCueDominatedItems,canApprove:draftingDisclaimers===0&&stronglyCueDominatedItems<=12};
+}
