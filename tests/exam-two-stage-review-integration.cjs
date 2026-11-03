@@ -28,7 +28,7 @@ class D1{
 async function fixture(){
  const sqlite=new DatabaseSync(':memory:');
  sqlite.exec('PRAGMA foreign_keys=ON');
- for(const f of ['0002_learner_materials.sql','0006_self_paced_exam.sql','0008_exam_two_stage_review.sql','0009_exam_item_academic_reviews.sql','0010_exam_draft_item_correction_history.sql','0011_exam_quality_issue_queue.sql']){
+ for(const f of ['0002_learner_materials.sql','0006_self_paced_exam.sql','0008_exam_two_stage_review.sql','0009_exam_item_academic_reviews.sql','0010_exam_draft_item_correction_history.sql','0011_exam_quality_issue_queue.sql','0011_exam_quality_issue_queue.sql']){
   sqlite.exec(fs.readFileSync(path.join(root,'migrations',f),'utf8'));
  }
  sqlite.exec('CREATE TABLE cms_documents(id TEXT PRIMARY KEY, content TEXT NOT NULL)');
@@ -91,6 +91,11 @@ test('drafting 100 source-verified questions cannot activate exam without a diff
    sourceConfirmed:true,keyConfirmed:true,distractorsConfirmed:true});
   assert.equal(response.status,409);
   assert.equal(response.body.error,'item_has_unresolved_academic_issues');
+  response=await call(fx,'POST',{action:'resolve-issue',courseId:'project-management',version,ordinal:27,
+    issueCode:'TEMPLATE_BASED_ASSESSMENT',reviewedBy:'Second Academic',
+    reviewNotes:'Attempted clearance without a recorded change; server must reject this request.'});
+  assert.equal(response.status,409);
+  assert.equal(response.body.error,'actual_recorded_correction_required');
   const editor=await import(pathToFileURL(path.join(root,'functions/api/admin/exam-edit.js')).href);
   const editGet=new Request('https://www.maic-edu.org/api/admin/exam-edit?course=project-management&version='+encodeURIComponent(version)+'&ordinal=27',
    {headers:{Cookie:fx.cookie}});
