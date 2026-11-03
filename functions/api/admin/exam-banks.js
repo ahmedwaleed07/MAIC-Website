@@ -117,8 +117,8 @@ export async function onRequestPost({request,env}){
    const hash=await fingerprintExamItem(question);
    const revision=await db.prepare("SELECT revised_sha256,corrected_at FROM learning_exam_item_corrections WHERE course_id=? AND version=? AND ordinal=? AND strftime('%s',corrected_at)>=strftime('%s',?) ORDER BY corrected_at DESC LIMIT 1").bind(course,d.version,d.ordinal,issue.detected_at).first();
    if(!revision||revision.revised_sha256!==hash)return json({error:'actual_recorded_correction_required'},409);
-   const checks=quality([question]);
-   if(checks.draftingDisclaimers||checks.stronglyCueDominatedItems||checks.sourceRecallItems||question.stem.length>300)return json({error:'template_or_overlong_problem_remains'},422);
+   const checks=checkTemplateDraftCues([{stem:question.stem,options:[question.option_a,question.option_b,question.option_c,question.option_d],rationale:question.rationale}]);
+   if(checks.draftingDisclaimers||checks.stronglyCueDominatedItems||/\bpage\s*\d{1,3}\b/i.test(question.stem)||question.stem.length>300)return json({error:'template_or_overlong_problem_remains'},422);
    const now=new Date().toISOString();
    const update=await db.prepare('UPDATE learning_exam_quality_issues SET resolved_at=?,resolved_by=?,resolution_notes=? WHERE course_id=? AND version=? AND ordinal=? AND issue_code=? AND resolved_at IS NULL')
     .bind(now,d.reviewedBy.trim(),notes,course,d.version,d.ordinal,d.issueCode).run();
