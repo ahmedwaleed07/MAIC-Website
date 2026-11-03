@@ -1,5 +1,6 @@
 import {json,isAdmin,validOrigin} from '../../_lib/cms.js';
 import {catalog} from '../../_lib/learning.js';
+import {fingerprintExamItem,reviewInputValid,countVerifiedItemReviews} from '../../_lib/exam-item-review.js';
 import {countNearDuplicateQuestionPairs,countOverlappingOptionPairs,checkTemplateDraftCues} from '../../_lib/exam-quality.js';
 
 const validId=x=>typeof x==='string'&&/^[-a-z0-9]{2,80}$/.test(x);
@@ -63,7 +64,8 @@ export async function onRequestGet({request,env}){
   const source=await db.prepare('SELECT sha256,pages FROM learning_materials WHERE course_id=?').bind(course).first();
   const rows=(await db.prepare("SELECT ordinal,stem,option_a,option_b,option_c,option_d,correct_mask,source_page,rationale FROM learning_exam_questions WHERE course_id=? AND version=? ORDER BY ordinal").bind(course,version).all()).results;
   const questions=rows.map(r=>({ordinal:r.ordinal,stem:r.stem,options:[r.option_a,r.option_b,r.option_c,r.option_d],correct:[0,1,2,3].filter(i=>r.correct_mask&(1<<i)),page:r.source_page,rationale:r.rationale}));
-  return json({bank:{course_id:bank.course_id,version:bank.version,status:bank.status,question_count:bank.question_count,source_sha256:bank.source_sha256,prepared_by:bank.prepared_by,reviewed_by:bank.reviewed_by,review_notes:bank.review_notes},sourceMatch:source?.sha256===bank.source_sha256,questions,quality:questions.length===100?quality(questions):null});
+  const itemReviews=(await db.prepare("SELECT ordinal,reviewed_by,verdict,review_notes,reviewed_at FROM learning_exam_item_reviews WHERE course_id=? AND version=? ORDER BY ordinal").bind(course,version).all()).results;
+  return json({bank:{course_id:bank.course_id,version:bank.version,status:bank.status,question_count:bank.question_count,source_sha256:bank.source_sha256,prepared_by:bank.prepared_by,reviewed_by:bank.reviewed_by,review_notes:bank.review_notes},sourceMatch:source?.sha256===bank.source_sha256,questions,quality:questions.length===100?quality(questions):null,itemReviews,reviewProgress:{recorded:itemReviews.length,approved:itemReviews.filter(r=>r.verdict==='approved').length,needsRevision:itemReviews.filter(r=>r.verdict==='revise').length}});
  }catch{return json({error:'unavailable'},503)}
 }
 export async function onRequestPost({request,env}){
@@ -81,6 +83,22 @@ export async function onRequestPost({request,env}){
    ]);
    return json({withdrawn:true,courseId:course});
   }
+  if(d.action==='review-item'){
+   if(!validId(course)||typeof d.version!=='string'||!/^[\w-]{8,100}$/.test(d.version)||!reviewInputValid(d))return json({error:'invalid_item_review'},400);
+   const bank=await db.prepare("SELECT b.status,b.source_sha256,s.prepared_by FROM learning_exam_banks b JOIN learning_exam_review_signoffs s ON s.course_id=b.course_id AND s.version=b.version WHERE b.course_id=? AND b.version=?").bind(course,d.version).first();
+   if(!bank||bank.status!=='draft')return json({error:'draft_bank_required'},409);
+   const reviewer=d.reviewedBy.trim();
+   if(reviewer.toLocaleLowerCase('en')===bank.prepared_by.trim().toLocaleLowerCase('en'))return json({error:'independent_reviewer_required'},409);
+   const source=await db.prepare('SELECT sha256 FROM learning_materials WHERE course_id=?').bind(course).first();
+   if(d.verdict==='approved'&&source?.sha256!==bank.source_sha256)return json({error:'source_material_mismatch'},409);
+   const q=await db.prepare('SELECT ordinal,stem,option_a,option_b,option_c,option_d,correct_mask,source_page,rationale FROM learning_exam_questions WHERE course_id=? AND version=? AND ordinal=?').bind(course,d.version,d.ordinal).first();
+   if(!q)return json({error:'question_not_found'},404);
+   const itemHash=await fingerprintExamItem(q),now=new Date().toISOString();
+   const checked=d.verdict==='approved'?1:0;
+   await db.prepare("INSERT INTO learning_exam_item_reviews(course_id,version,ordinal,reviewed_by,verdict,review_notes,item_sha256,source_confirmed,key_confirmed,distractors_confirmed,reviewed_at) VALUES(?,?,?,?,?,?,?,?,?,?,?) ON CONFLICT(course_id,version,ordinal) DO UPDATE SET reviewed_by=excluded.reviewed_by,verdict=excluded.verdict,review_notes=excluded.review_notes,item_sha256=excluded.item_sha256,source_confirmed=excluded.source_confirmed,key_confirmed=excluded.key_confirmed,distractors_confirmed=excluded.distractors_confirmed,reviewed_at=excluded.reviewed_at")
+    .bind(course,d.version,d.ordinal,reviewer,d.verdict,d.reviewNotes.trim(),itemHash,checked,checked,checked,now).run();
+   return json({recorded:true,ordinal:d.ordinal,verdict:d.verdict,reviewedAt:now});
+  }
   if(d.action==='approve'){
    if(!validId(course)||typeof d.version!=='string'||!/^[\w-]{8,100}$/.test(d.version)||!nameOK(d.reviewedBy))return json({error:'review_fields_required'},400);
    const notes=typeof d.reviewNotes==='string'?d.reviewNotes.trim():'';
@@ -91,10 +109,15 @@ export async function onRequestPost({request,env}){
    if(bank.prepared_by.trim().toLocaleLowerCase('en')===d.reviewedBy.trim().toLocaleLowerCase('en'))return json({error:'independent_reviewer_required'},409);
    const source=await db.prepare('SELECT sha256 FROM learning_materials WHERE course_id=?').bind(course).first();
    if(!source||source.sha256!==bank.source_sha256)return json({error:'source_material_mismatch'},409);
-   const rows=(await db.prepare("SELECT stem,option_a,option_b,option_c,option_d,rationale FROM learning_exam_questions WHERE course_id=? AND version=? ORDER BY ordinal").bind(course,d.version).all()).results;
+   const rows=(await db.prepare("SELECT ordinal,stem,option_a,option_b,option_c,option_d,correct_mask,source_page,rationale FROM learning_exam_questions WHERE course_id=? AND version=? ORDER BY ordinal").bind(course,d.version).all()).results;
    if(rows.length!==100)return json({error:'incomplete_bank'},409);
    const signals=quality(rows);
    if(!signals.canApprove)return json({error:'repetitive_questions_block_approval',signals},422);
+   // A bank-level declaration is not proof that 100 individual answer keys were checked.
+   // Match each independent signoff to the exact, unchanged question contents.
+   const reviews=(await db.prepare("SELECT * FROM learning_exam_item_reviews WHERE course_id=? AND version=?").bind(course,d.version).all()).results;
+   const perItem=await countVerifiedItemReviews(rows,reviews,d.reviewedBy.trim());
+   if(perItem.approved!==100||perItem.requiresRevision>0)return json({error:'100_individual_reviews_required',...perItem},409);
    const doc=await catalog(db);
    if(!doc.courses.some(c=>c.id===course&&c.mode.includes('self-paced')&&c.status!=='archived'))return json({error:'course_not_self_paced'},409);
    const now=new Date().toISOString(),reviewer=d.reviewedBy.trim();
