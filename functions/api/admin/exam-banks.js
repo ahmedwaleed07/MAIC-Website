@@ -65,7 +65,8 @@ export async function onRequestGet({request,env}){
   const rows=(await db.prepare("SELECT ordinal,stem,option_a,option_b,option_c,option_d,correct_mask,source_page,rationale FROM learning_exam_questions WHERE course_id=? AND version=? ORDER BY ordinal").bind(course,version).all()).results;
   const questions=rows.map(r=>({ordinal:r.ordinal,stem:r.stem,options:[r.option_a,r.option_b,r.option_c,r.option_d],correct:[0,1,2,3].filter(i=>r.correct_mask&(1<<i)),page:r.source_page,rationale:r.rationale}));
   const itemReviews=(await db.prepare("SELECT ordinal,reviewed_by,verdict,review_notes,reviewed_at FROM learning_exam_item_reviews WHERE course_id=? AND version=? ORDER BY ordinal").bind(course,version).all()).results;
-  return json({bank:{course_id:bank.course_id,version:bank.version,status:bank.status,question_count:bank.question_count,source_sha256:bank.source_sha256,prepared_by:bank.prepared_by,reviewed_by:bank.reviewed_by,review_notes:bank.review_notes},sourceMatch:source?.sha256===bank.source_sha256,questions,quality:questions.length===100?quality(questions):null,itemReviews,reviewProgress:{recorded:itemReviews.length,approved:itemReviews.filter(r=>r.verdict==='approved').length,needsRevision:itemReviews.filter(r=>r.verdict==='revise').length}});
+  const qualityIssues=(await db.prepare("SELECT ordinal,issue_code,severity,detail,detected_at,resolved_at,resolved_by FROM learning_exam_quality_issues WHERE course_id=? AND version=? ORDER BY ordinal,issue_code").bind(course,version).all()).results;
+  return json({bank:{course_id:bank.course_id,version:bank.version,status:bank.status,question_count:bank.question_count,source_sha256:bank.source_sha256,prepared_by:bank.prepared_by,reviewed_by:bank.reviewed_by,review_notes:bank.review_notes},sourceMatch:source?.sha256===bank.source_sha256,questions,quality:questions.length===100?quality(questions):null,itemReviews,qualityIssues,reviewProgress:{recorded:itemReviews.length,approved:itemReviews.filter(r=>r.verdict==='approved').length,needsRevision:itemReviews.filter(r=>r.verdict==='revise').length}});
  }catch{return json({error:'unavailable'},503)}
 }
 export async function onRequestPost({request,env}){
@@ -91,6 +92,10 @@ export async function onRequestPost({request,env}){
    if(reviewer.toLocaleLowerCase('en')===bank.prepared_by.trim().toLocaleLowerCase('en'))return json({error:'independent_reviewer_required'},409);
    const source=await db.prepare('SELECT sha256 FROM learning_materials WHERE course_id=?').bind(course).first();
    if(d.verdict==='approved'&&source?.sha256!==bank.source_sha256)return json({error:'source_material_mismatch'},409);
+   if(d.verdict==='approved'){
+    const unresolved=await db.prepare("SELECT COUNT(*) AS n FROM learning_exam_quality_issues WHERE course_id=? AND version=? AND ordinal=? AND severity='blocker' AND resolved_at IS NULL").bind(course,d.version,d.ordinal).first();
+    if(unresolved?.n)return json({error:'item_has_unresolved_academic_issues',count:unresolved.n},409);
+   }
    const q=await db.prepare('SELECT ordinal,stem,option_a,option_b,option_c,option_d,correct_mask,source_page,rationale FROM learning_exam_questions WHERE course_id=? AND version=? AND ordinal=?').bind(course,d.version,d.ordinal).first();
    if(!q)return json({error:'question_not_found'},404);
    const itemHash=await fingerprintExamItem(q),now=new Date().toISOString();
@@ -98,6 +103,26 @@ export async function onRequestPost({request,env}){
    await db.prepare("INSERT INTO learning_exam_item_reviews(course_id,version,ordinal,reviewed_by,verdict,review_notes,item_sha256,source_confirmed,key_confirmed,distractors_confirmed,reviewed_at) VALUES(?,?,?,?,?,?,?,?,?,?,?) ON CONFLICT(course_id,version,ordinal) DO UPDATE SET reviewed_by=excluded.reviewed_by,verdict=excluded.verdict,review_notes=excluded.review_notes,item_sha256=excluded.item_sha256,source_confirmed=excluded.source_confirmed,key_confirmed=excluded.key_confirmed,distractors_confirmed=excluded.distractors_confirmed,reviewed_at=excluded.reviewed_at")
     .bind(course,d.version,d.ordinal,reviewer,d.verdict,d.reviewNotes.trim(),itemHash,checked,checked,checked,now).run();
    return json({recorded:true,ordinal:d.ordinal,verdict:d.verdict,reviewedAt:now});
+  }
+  if(d.action==='resolve-issue'){
+   if(!validId(course)||typeof d.version!=='string'||!/^[\w-]{8,100}$/.test(d.version)||!Number.isInteger(d.ordinal)||d.ordinal<1||d.ordinal>100||typeof d.issueCode!=='string'||!/^[-A-Z_]{3,80}$/.test(d.issueCode)||!nameOK(d.reviewedBy))return json({error:'invalid_issue'},400);
+   const notes=typeof d.reviewNotes==='string'?d.reviewNotes.trim():'';
+   if(notes.length<35||notes.length>2000)return json({error:'specific_rewrite_evidence_required'},400);
+   const bank=await db.prepare("SELECT b.status,s.prepared_by FROM learning_exam_banks b JOIN learning_exam_review_signoffs s ON s.course_id=b.course_id AND s.version=b.version WHERE b.course_id=? AND b.version=?").bind(course,d.version).first();
+   if(!bank||bank.status!=='draft')return json({error:'draft_bank_required'},409);
+   if(d.reviewedBy.trim().toLocaleLowerCase('en')===bank.prepared_by.trim().toLocaleLowerCase('en'))return json({error:'independent_reviewer_required'},409);
+   const issue=await db.prepare("SELECT detected_at FROM learning_exam_quality_issues WHERE course_id=? AND version=? AND ordinal=? AND issue_code=? AND resolved_at IS NULL").bind(course,d.version,d.ordinal,d.issueCode).first();
+   if(!issue)return json({error:'open_issue_not_found'},404);
+   const question=await db.prepare('SELECT ordinal,stem,option_a,option_b,option_c,option_d,correct_mask,source_page,rationale FROM learning_exam_questions WHERE course_id=? AND version=? AND ordinal=?').bind(course,d.version,d.ordinal).first();
+   const hash=await fingerprintExamItem(question);
+   const revision=await db.prepare("SELECT revised_sha256,corrected_at FROM learning_exam_item_corrections WHERE course_id=? AND version=? AND ordinal=? AND corrected_at>=? ORDER BY corrected_at DESC LIMIT 1").bind(course,d.version,d.ordinal,issue.detected_at).first();
+   if(!revision||revision.revised_sha256!==hash)return json({error:'actual_recorded_correction_required'},409);
+   const checks=quality([question]);
+   if(checks.draftingDisclaimers||checks.stronglyCueDominatedItems||checks.sourceRecallItems||question.stem.length>300)return json({error:'template_or_overlong_problem_remains'},422);
+   const now=new Date().toISOString();
+   const update=await db.prepare('UPDATE learning_exam_quality_issues SET resolved_at=?,resolved_by=?,resolution_notes=? WHERE course_id=? AND version=? AND ordinal=? AND issue_code=? AND resolved_at IS NULL')
+    .bind(now,d.reviewedBy.trim(),notes,course,d.version,d.ordinal,d.issueCode).run();
+   return json({resolved:update.meta?.changes===1,ordinal:d.ordinal,issueCode:d.issueCode});
   }
   if(d.action==='approve'){
    if(!validId(course)||typeof d.version!=='string'||!/^[\w-]{8,100}$/.test(d.version)||!nameOK(d.reviewedBy))return json({error:'review_fields_required'},400);
@@ -113,6 +138,8 @@ export async function onRequestPost({request,env}){
    if(rows.length!==100)return json({error:'incomplete_bank'},409);
    const signals=quality(rows);
    if(!signals.canApprove)return json({error:'repetitive_questions_block_approval',signals},422);
+   const openIssues=await db.prepare("SELECT COUNT(*) AS n FROM learning_exam_quality_issues WHERE course_id=? AND version=? AND severity='blocker' AND resolved_at IS NULL").bind(course,d.version).first();
+   if(openIssues?.n>0)return json({error:'unresolved_academic_issues',count:openIssues.n},409);
    // A bank-level declaration is not proof that 100 individual answer keys were checked.
    // Match each independent signoff to the exact, unchanged question contents.
    const reviews=(await db.prepare("SELECT * FROM learning_exam_item_reviews WHERE course_id=? AND version=?").bind(course,d.version).all()).results;
