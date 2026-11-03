@@ -61,9 +61,9 @@ async function openDraft(courseId,version){
  details.replaceChildren();
  details.append(node('h3','مراجعة جميع الأسئلة — '+courseId),node('p','المُعدّ: '+data.bank.prepared_by));
  const quality=data.quality;
- const health=node('p','بصمة المادة: '+(data.sourceMatch?'مطابقة':'مختلفة')+' · الأسئلة المتشابهة: '+(quality?.nearPairs??'غير متاح')+' زوج · تكرار 3 خيارات: '+(quality?.optionOverlapPairs??'غير متاح')+' زوج · أسئلة تستفسر عن موضع النص: '+(quality?.sourceRecallItems??'-')+' · الحد الأعلى لتكرار البداية: '+(quality?.maxOpening??'-'),'review-status');
+ const health=node('p','بصمة المادة: '+(data.sourceMatch?'مطابقة':'مختلفة')+' · الأسئلة المتشابهة: '+(quality?.nearPairs??'غير متاح')+' زوج · تكرار 3 خيارات: '+(quality?.optionOverlapPairs??'غير متاح')+' زوج · صياغات مسودة مولدة: '+(quality?.draftingDisclaimers??'-')+' · خيارات توحي بالإجابة: '+(quality?.stronglyCueDominatedItems??'-')+' · أسئلة تستفسر عن موضع النص: '+(quality?.sourceRecallItems??'-')+' · الحد الأعلى لتكرار البداية: '+(quality?.maxOpening??'-'),'review-status');
  details.append(health);
- if(!data.sourceMatch||!quality?.canApprove)details.append(node('p','لا يمكن اعتماد هذا البنك: النسخة المصدر مختلفة أو مستوى تكرار الأسئلة مرتفع. يلزم رفع مسودة مصححة.','review-status'));
+ if(!data.sourceMatch||!quality?.canApprove)details.append(node('p','لا يمكن اعتماد هذا البنك: ملف المصدر غير مطابق أو توجد أسئلة/خيارات نمطية أو تلميحات للإجابات أو مبررات موسومة كمسودة. يلزم تصحيح البنود ومراجعتها علمياً.','review-status'));
  for(const q of data.questions){
   const block=node('section',null,'question');block.append(node('h3','السؤال '+q.ordinal),node('p',q.stem));
   q.options.forEach((value,i)=>block.append(node('p',String.fromCharCode(65+i)+'. '+value+(q.correct.includes(i)?' ✓':''),q.correct.includes(i)?'answer':'muted')));
