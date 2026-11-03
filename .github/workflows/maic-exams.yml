@@ -12,6 +12,10 @@ on:
       - 'tests/learner-exam-integration.cjs'
       - 'tests/exam-content-quality.cjs'
       - 'tests/exam-answer-cue-audit.cjs'
+      - 'tests/exam-item-signoff.cjs'
+      - 'functions/_lib/exam-item-review.js'
+      - 'migrations/0009_exam_item_academic_reviews.sql'
+      - 'migrations/0010_exam_draft_item_correction_history.sql'
       - 'tests/course-bank-offline-audit.cjs'
       - 'tests/academic-bank-status.cjs'
       - 'tests/academic-source-recall.cjs'
@@ -35,6 +39,10 @@ on:
       - 'tests/learner-exam-integration.cjs'
       - 'tests/exam-content-quality.cjs'
       - 'tests/exam-answer-cue-audit.cjs'
+      - 'tests/exam-item-signoff.cjs'
+      - 'functions/_lib/exam-item-review.js'
+      - 'migrations/0009_exam_item_academic_reviews.sql'
+      - 'migrations/0010_exam_draft_item_correction_history.sql'
       - 'tests/course-bank-offline-audit.cjs'
       - 'tests/academic-bank-status.cjs'
       - 'tests/academic-source-recall.cjs'
@@ -56,6 +64,6 @@ jobs:
         with:
           node-version: '22'
       - name: Check backend and learner-exam safeguards
-        run: node --test tests/exam-answer-cue-audit.cjs tests/academic-source-recall.cjs tests/academic-bank-status.cjs tests/course-bank-offline-audit.cjs tests/self-paced-exam.cjs tests/tinos-academic-release.cjs tests/learner-exam-integration.cjs tests/exam-content-quality.cjs tests/exam-two-stage-review-integration.cjs
+        run: node --test tests/exam-item-signoff.cjs tests/exam-answer-cue-audit.cjs tests/academic-source-recall.cjs tests/academic-bank-status.cjs tests/course-bank-offline-audit.cjs tests/self-paced-exam.cjs tests/tinos-academic-release.cjs tests/learner-exam-integration.cjs tests/exam-content-quality.cjs tests/exam-two-stage-review-integration.cjs
       - name: Validate Python PDF generator syntax
         run: python -m py_compile tools/create_maic_course_pdf.py
