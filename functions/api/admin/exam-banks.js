@@ -46,8 +46,8 @@ function quality(questions){
 }
 async function list(db){
  const materials=(await db.prepare("SELECT m.course_id,m.title,m.pages,m.sha256,b.version,b.status,b.question_count,b.approved_at FROM learning_materials m LEFT JOIN learning_exam_active a ON a.course_id=m.course_id LEFT JOIN learning_exam_banks b ON b.course_id=a.course_id AND b.version=a.version ORDER BY m.title").all()).results;
- const banks=(await db.prepare("SELECT b.course_id,b.version,b.status,b.question_count,b.source_sha256,b.created_at,s.prepared_by,s.prepared_at,s.reviewed_by,s.reviewed_at,s.review_notes FROM learning_exam_banks b LEFT JOIN learning_exam_review_signoffs s ON s.course_id=b.course_id AND s.version=b.version ORDER BY b.created_at DESC LIMIT 250").all()).results;
- return {materials,banks,questionsRequired:100,answerOptions:4};
+ const banks=(await db.prepare("SELECT b.course_id,b.version,b.status,b.question_count,b.source_sha256,b.created_at,s.prepared_by,s.prepared_at,s.reviewed_by,s.reviewed_at,s.review_notes,CASE WHEN m.sha256=b.source_sha256 THEN 1 ELSE 0 END AS matches_published_pdf FROM learning_exam_banks b LEFT JOIN learning_exam_review_signoffs s ON s.course_id=b.course_id AND s.version=b.version LEFT JOIN learning_materials m ON m.course_id=b.course_id ORDER BY b.created_at DESC LIMIT 250").all()).results;
+ return {materials,banks,summary:{coursesWithMaterials:materials.length,completeDraftBanks:banks.filter(b=>b.status==='draft'&&b.question_count===100).length,questionsInDrafts:banks.filter(b=>b.status==='draft').reduce((n,b)=>n+b.question_count,0),coursesWithNoDraft:materials.filter(m=>!banks.some(b=>b.course_id===m.course_id)).length,activatedBanks:banks.filter(b=>b.status==='approved').length},questionsRequired:100,answerOptions:4};
 }
 export async function onRequestGet({request,env}){
  if(!await isAdmin(request,env))return json({error:'unauthorized'},401);
