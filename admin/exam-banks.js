@@ -14,7 +14,7 @@ async function refresh(){
  const data=await api();
  materials=data.materials;bankList.replaceChildren();courseSelect.replaceChildren();drafts.replaceChildren();
  const progress=data.summary||{};
- bankList.append(node('p','المواد: '+(progress.coursesWithMaterials??materials.length)+' دورة · البنوك الكاملة المرفوعة للمراجعة: '+(progress.completeDraftBanks??0)+' · الأسئلة المسودة: '+(progress.questionsInDrafts??0)+' · دورات بلا بنك أسئلة: '+(progress.coursesWithNoDraft??0)+' · اختبارات معتمدة: '+(progress.activatedBanks??0),'review-status'));
+ bankList.append(node('p','المواد: '+(progress.coursesWithMaterials??materials.length)+' دورة · البنوك الكاملة المرفوعة للمراجعة: '+(progress.completeDraftBanks??0)+' · الأسئلة المسودة: '+(progress.questionsInDrafts??0)+' · دورات بلا بنك أسئلة: '+(progress.coursesWithNoDraft??0)+' · اختبارات معتمدة: '+(progress.activatedBanks??0)+' · ملاحظات تمنع الاعتماد: '+(progress.unresolvedBlockingIssues??0),'review-status'));
  const blank=node('option','—');blank.value='';courseSelect.append(blank);
  for(const m of data.materials){
   const candidate=(data.banks||[]).find(b=>b.course_id===m.course_id&&b.status==='draft');
@@ -26,7 +26,7 @@ async function refresh(){
  const records=data.banks||[];
  for(const b of records){
   const row=node('section',null,'question');
-  row.append(node('p',b.course_id+' — '+b.question_count+'/100 — '+b.status+' — '+(b.matches_published_pdf?'نسخة PDF مطابقة':'نسخة PDF مختلفة عن المنشورة')+' — المُعدّ: '+(b.prepared_by||'غير موثق')));
+  row.append(node('p',b.course_id+' — '+b.question_count+'/100 — '+b.status+' — '+(b.matches_published_pdf?'نسخة PDF مطابقة':'نسخة PDF مختلفة عن المنشورة')+' — مشاكل جودة مفتوحة: '+(b.open_quality_issues??0)+' — المُعدّ: '+(b.prepared_by||'غير موثق')));
   if(b.status==='draft'&&b.question_count===100){
    row.append(button('فتح المسودة للمراجعة',()=>openDraft(b.course_id,b.version)));
   }
@@ -65,6 +65,8 @@ async function openDraft(courseId,version){
  const reviewerLabel=node('label','اسم المراجع الأكاديمي المسؤول عن التحقق من كل سؤال');
  reviewerLabel.append(reviewName);details.append(reviewerLabel);
  const reviewed=new Map((data.itemReviews||[]).map(r=>[r.ordinal,r]));
+ const openIssues=(data.qualityIssues||[]).filter(r=>r.severity==='blocker'&&!r.resolved_at);
+ details.append(node('p','المشكلات الأكاديمية المفتوحة: '+openIssues.length+' — لا يُسمح بالنشر قبل إصلاحها جميعاً وتوثيق مراجعة 100 سؤال.','review-status'));
  const progress=node('p',null,'review-status');
  const updateProgress=()=>{
   const values=[...reviewed.values()];
@@ -80,6 +82,14 @@ async function openDraft(courseId,version){
   q.options.forEach((value,i)=>block.append(node('p',String.fromCharCode(65+i)+'. '+value+(q.correct.includes(i)?' ✓':''),q.correct.includes(i)?'answer':'muted')));
   block.append(node('p','صفحة المصدر: '+q.page),node('p','التبرير: '+q.rationale));
   const current=reviewed.get(q.ordinal);
+  const unresolved=openIssues.filter(flag=>flag.ordinal===q.ordinal);
+  if(unresolved.length){
+   block.append(node('p','ملاحظات جودة تمنع اعتماد السؤال: '+unresolved.map(flag=>flag.issue_code).join(' | '),'review-status'));
+   for(const issue of unresolved)block.append(node('p',issue.detail,'muted'));
+  }
+  const editMount=node('div');
+  block.append(button('تعديل نص السؤال والخيارات والإجابة والتفسير',()=>openQuestionEditor(courseId,version,q.ordinal,editMount)));
+  block.append(editMount);
   const status=node('p',current?'القرار السابق: '+current.verdict+' | '+current.reviewed_by+' | '+current.review_notes:'لم تُراجع إجابات هذا السؤال بعد','review-status');
   block.append(status);
   const checkLabels=[
@@ -110,6 +120,15 @@ async function openDraft(courseId,version){
   };
   if(data.sourceMatch)block.append(button('اعتماد هذا السؤال بعد التحقق',()=>submit('approved')));
   block.append(button('يحتاج تصحيحاً — منع الاعتماد',()=>submit('revise')));
+  for(const issue of unresolved){
+   block.append(button('طلب إغلاق المشكلة بعد التصحيح: '+issue.issue_code,async()=>{
+    const reviewedBy=reviewName.value.trim(),reviewNotes=note.value.trim();
+    if(reviewedBy.length<3||reviewNotes.length<35)throw Error('اسم المراجع المستقل وسبب تصحيح محدد (35 حرفاً) مطلوبان');
+    await api({action:'resolve-issue',courseId,version,ordinal:q.ordinal,issueCode:issue.issue_code,reviewedBy,reviewNotes});
+    reviewMessage.textContent='تم التحقق من التعديل وإغلاق الملاحظة. حدّث قائمة الأسئلة لرؤية الحالة الجديدة.';
+    await openDraft(courseId,version);
+   }));
+  }
   details.append(block);
  }
  if(!data.sourceMatch||!quality?.canApprove)return;
@@ -139,4 +158,50 @@ async function openDraft(courseId,version){
  });
  details.append(form);
 }
+async function openQuestionEditor(courseId,version,ordinal,target){
+ const url='/api/admin/exam-edit?course='+encodeURIComponent(courseId)+'&version='+encodeURIComponent(version)+'&ordinal='+ordinal;
+ const result=await fetch(url,{credentials:'same-origin',cache:'no-store'});
+ const data=await result.json();if(!result.ok)throw Error(data.error||'تعذر تحميل السؤال');
+ target.replaceChildren();
+ const form=node('form');
+ const field=(label,value,rows=2)=>{
+  const wrapper=node('label',label),textarea=node('textarea');
+  textarea.value=value;textarea.rows=rows;textarea.required=true;wrapper.append(textarea);
+  form.append(wrapper);return textarea;
+ };
+ form.append(node('h3','تصحيح السؤال رقم '+ordinal+' — جميع التعديلات تُسجّل في سجل تدقيق'));
+ const stem=field('نص السؤال الجديد',data.question.stem,4);
+ const options=data.question.options.map((o,i)=>field('الخيار '+String.fromCharCode(65+i),o,2));
+ form.append(node('p','حدد جميع الإجابات الصحيحة بعد مراجعة المادة'));
+ const correct=Array.from({length:4},(_,i)=>{
+  const label=node('label'),box=node('input');box.type='checkbox';box.checked=data.question.correct.includes(i);
+  label.append(box,node('span',' '+String.fromCharCode(65+i)));form.append(label);return box;
+ });
+ const pageLabel=node('label','صفحة المصدر (1–12)'),page=node('input');
+ page.type='number';page.min='1';page.max='12';page.value=String(data.question.page);page.required=true;
+ pageLabel.append(page);form.append(pageLabel);
+ const rationale=field('التبرير العلمي مع دليل الصفحة',data.question.rationale,5);
+ const editor=field('اسم محرّر السؤال','',1);
+ const reason=field('سبب التغيير الأكاديمي — 35 حرفاً على الأقل','',3);
+ const message=node('p',null,'review-status');
+ const submit=node('button','حفظ التصحيح وإبطال أي مراجعة سابقة');submit.type='submit';
+ form.append(submit,message);
+ form.addEventListener('submit',async event=>{
+  event.preventDefault();submit.disabled=true;message.textContent='';
+  try{
+   const selected=correct.map((v,i)=>v.checked?i:null).filter(v=>v!==null);
+   if(selected.length===0)throw Error('اختر إجابة صحيحة واحدة على الأقل');
+   const payload={courseId,version,ordinal,expectedHash:data.fingerprint,editor:editor.value.trim(),
+     reason:reason.value.trim(),question:{stem:stem.value,options:options.map(x=>x.value),
+      correct:selected,page:Number(page.value),rationale:rationale.value}};
+   const response=await fetch('/api/admin/exam-edit',{method:'POST',credentials:'same-origin',
+    headers:{'Content-Type':'application/json'},body:JSON.stringify(payload)});
+   const saved=await response.json();if(!response.ok)throw Error(saved.error||'تعذر الحفظ');
+   message.textContent='سُجل التصحيح وأُبطلت المراجعة السابقة. يحتاج السؤال الآن إلى مراجعة مستقلة جديدة.';
+   await openDraft(courseId,version);
+  }catch(e){message.textContent='تعذر حفظ التصحيح: '+e.message;submit.disabled=false}
+ });
+ target.append(form);
+}
+
 refresh().catch(error=>{bankList.textContent=error.status===401?'يلزم تسجيل دخول المدير أولاً':'تعذر تحميل حالة بنوك الأسئلة'});
