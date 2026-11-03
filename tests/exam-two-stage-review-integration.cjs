@@ -71,7 +71,7 @@ test('drafting 100 source-verified questions cannot activate exam without a diff
   assert.equal(fx.sqlite.prepare('SELECT COUNT(*) AS n FROM learning_exam_active').get().n,0);
   response=await call(fx,'POST',{...approval,reviewedBy:'Second Academic'});
   assert.equal(response.status,409);
-  assert.equal(response.body.error,'100_individual_reviews_required');
+  assert.equal(response.body.error,'unresolved_academic_issues');
   // Each source/answer/distractor check must be recorded individually.
   for(let n=1;n<=100;n++){
    const verdict=n===27?'revise':'approved';
@@ -83,7 +83,7 @@ test('drafting 100 source-verified questions cannot activate exam without a diff
    assert.equal(response.status,200,'item '+n+' '+JSON.stringify(response.body));
   }
   response=await call(fx,'POST',{...approval,reviewedBy:'Second Academic'});
-  assert.equal(response.status,409);assert.equal(response.body.error,'100_individual_reviews_required');
+  assert.equal(response.status,409);assert.equal(response.body.error,'unresolved_academic_issues');
   // A flagged question cannot be approved until it is substantially edited.
   response=await call(fx,'POST',{action:'review-item',courseId:'project-management',version,ordinal:27,
    reviewedBy:'Second Academic',verdict:'approved',
