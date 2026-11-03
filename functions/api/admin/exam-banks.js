@@ -1,6 +1,6 @@
 import {json,isAdmin,validOrigin} from '../../_lib/cms.js';
 import {catalog} from '../../_lib/learning.js';
-import {countNearDuplicateQuestionPairs,countOverlappingOptionPairs} from '../../_lib/exam-quality.js';
+import {countNearDuplicateQuestionPairs,countOverlappingOptionPairs,checkTemplateDraftCues} from '../../_lib/exam-quality.js';
 
 const validId=x=>typeof x==='string'&&/^[-a-z0-9]{2,80}$/.test(x);
 const nameOK=x=>typeof x==='string'&&x.trim().length>=3&&x.trim().length<=150;
@@ -44,7 +44,8 @@ function quality(questions){
  const optionOverlapPairs=countOverlappingOptionPairs(questions.map(q=>({options:q.options||[q.option_a,q.option_b,q.option_c,q.option_d]})),3,12);
  // A final assessment must measure understanding, not ask where a sentence is printed.
  const sourceRecallItems=questions.filter(q=>/\bpage\s*\d{1,3}\b/i.test(q.stem)).length;
- return {maxOpening,nearPairs,optionOverlapPairs,sourceRecallItems,canApprove:maxOpening<=14&&nearPairs<=12&&optionOverlapPairs<=12&&sourceRecallItems<=12};
+ const draftingCues=checkTemplateDraftCues(questions.map(q=>({stem:q.stem,options:q.options||[q.option_a,q.option_b,q.option_c,q.option_d],rationale:q.rationale})));
+ return {maxOpening,nearPairs,optionOverlapPairs,sourceRecallItems,...draftingCues,canApprove:maxOpening<=14&&nearPairs<=12&&optionOverlapPairs<=12&&sourceRecallItems<=12&&draftingCues.canApprove};
 }
 async function list(db){
  const materials=(await db.prepare("SELECT m.course_id,m.title,m.pages,m.sha256,b.version,b.status,b.question_count,b.approved_at FROM learning_materials m LEFT JOIN learning_exam_active a ON a.course_id=m.course_id LEFT JOIN learning_exam_banks b ON b.course_id=a.course_id AND b.version=a.version ORDER BY m.title").all()).results;
@@ -90,7 +91,7 @@ export async function onRequestPost({request,env}){
    if(bank.prepared_by.trim().toLocaleLowerCase('en')===d.reviewedBy.trim().toLocaleLowerCase('en'))return json({error:'independent_reviewer_required'},409);
    const source=await db.prepare('SELECT sha256 FROM learning_materials WHERE course_id=?').bind(course).first();
    if(!source||source.sha256!==bank.source_sha256)return json({error:'source_material_mismatch'},409);
-   const rows=(await db.prepare("SELECT stem,option_a,option_b,option_c,option_d FROM learning_exam_questions WHERE course_id=? AND version=? ORDER BY ordinal").bind(course,d.version).all()).results;
+   const rows=(await db.prepare("SELECT stem,option_a,option_b,option_c,option_d,rationale FROM learning_exam_questions WHERE course_id=? AND version=? ORDER BY ordinal").bind(course,d.version).all()).results;
    if(rows.length!==100)return json({error:'incomplete_bank'},409);
    const signals=quality(rows);
    if(!signals.canApprove)return json({error:'repetitive_questions_block_approval',signals},422);
