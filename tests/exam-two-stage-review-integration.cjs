@@ -28,7 +28,7 @@ class D1{
 async function fixture(){
  const sqlite=new DatabaseSync(':memory:');
  sqlite.exec('PRAGMA foreign_keys=ON');
- for(const f of ['0002_learner_materials.sql','0006_self_paced_exam.sql','0008_exam_two_stage_review.sql']){
+ for(const f of ['0002_learner_materials.sql','0006_self_paced_exam.sql','0008_exam_two_stage_review.sql','0009_exam_item_academic_reviews.sql']){
   sqlite.exec(fs.readFileSync(path.join(root,'migrations',f),'utf8'));
  }
  sqlite.exec('CREATE TABLE cms_documents(id TEXT PRIMARY KEY, content TEXT NOT NULL)');
@@ -68,6 +68,26 @@ test('drafting 100 source-verified questions cannot activate exam without a diff
   response=await call(fx,'POST',approval);assert.equal(response.status,409);assert.equal(response.body.error,'independent_reviewer_required');
   response=await call(fx,'POST',{...approval,reviewedBy:'Second Academic',sourceReviewed:false});assert.equal(response.status,409);
   assert.equal(fx.sqlite.prepare('SELECT COUNT(*) AS n FROM learning_exam_active').get().n,0);
+  response=await call(fx,'POST',{...approval,reviewedBy:'Second Academic'});
+  assert.equal(response.status,409);
+  assert.equal(response.body.error,'100_individual_reviews_required');
+  // Each source/answer/distractor check must be recorded individually.
+  for(let n=1;n<=100;n++){
+   const verdict=n===27?'revise':'approved';
+   const payload={action:'review-item',courseId:'project-management',version,ordinal:n,
+    reviewedBy:'Second Academic',verdict,
+    reviewNotes:'Reviewed the exact source page and all four options for synthetic item '+n+'; '+(verdict==='revise'?'rewording is required.':'answer key is internally consistent.'),
+    sourceConfirmed:verdict==='approved',keyConfirmed:verdict==='approved',distractorsConfirmed:verdict==='approved'};
+   response=await call(fx,'POST',payload);
+   assert.equal(response.status,200,'item '+n+' '+JSON.stringify(response.body));
+  }
+  response=await call(fx,'POST',{...approval,reviewedBy:'Second Academic'});
+  assert.equal(response.status,409);assert.equal(response.body.error,'100_individual_reviews_required');
+  response=await call(fx,'POST',{action:'review-item',courseId:'project-management',version,ordinal:27,
+   reviewedBy:'Second Academic',verdict:'approved',
+   reviewNotes:'The correction was checked against the cited material and each distractor was reviewed.',
+   sourceConfirmed:true,keyConfirmed:true,distractorsConfirmed:true});
+  assert.equal(response.status,200);
   response=await call(fx,'POST',{...approval,reviewedBy:'Second Academic'});
   assert.equal(response.status,200,JSON.stringify(response.body));assert.equal(response.body.approved,true);
   assert.equal(fx.sqlite.prepare('SELECT COUNT(*) AS n FROM learning_exam_active').get().n,1);
