@@ -37,3 +37,27 @@ A fresh audit of the existing private draft JSON against the locally regenerated
 | Digital Marketing | 100 | 0 | 4 (67/89, 67/90, 67/94 and 90/94) | Yes |
 
 This is **structural and lexical preflight only**; none of these four banks is academically approved. The project-specific details and source bank answer keys remain only in the private review package, not on GitHub. MAIC's Cloudflare D1 was checked after this update: **36 existing learning material records, zero approved material revisions, zero exam banks, zero active exams, and zero learner accounts**. No approved PDF or examination was promoted to production.
+
+
+## Follow-on editorial package — 3 November 2026
+
+### Four-bank confidential revision and verification
+
+The current 100-question **Project Management**, **Management Foundations**, **Human Resources** and **Digital Marketing** drafts were checked against the **exact matching 12-page Tinos 12 PDF candidate bytes** (400 total items). Nine individual stems, options and rationales were corrected after reading the cited source pages, including a substantive defect in Digital Marketing item 73 in which the formerly marked “correct” options did not answer the requested experimental-control question.
+
+Results of the structural and lexical checks **after this editorial pass**:
+- Project Management: 2 revised questions; high-similarity stem pairs **2 → 0**; repeated 3+-option pairs remain **0**.
+- Management Foundations: **0** changes; high-similarity stem pairs **0**; repeated 3+-option pairs **0**.
+- Human Resources: **0** changes; high-similarity stem pairs **0**; repeated 3+-option pairs **0**.
+- Digital Marketing: **7** revised questions; high-similarity stem pairs remain **0**; repeated 3+-option pairs **4 → 0**.
+- All 400 items have four distinct options, nonempty provisional answer sets, a rationale and a valid cited page. **This is not academic approval of 400 answer keys**; only nine items received new page-specific editorial checks this pass.
+
+Confidential deliverable: `MAIC_FOUR_BANK_EDITORIAL_REVIEW_PRIVATE_2026-11-03.zip`. It includes four draft JSON banks, four matching reference PDFs, reviewer PDFs for Project Management and Digital Marketing, source-evidence correction logs, a quality report, and a 400-row independent reviewer checklist. **Do not upload these answer keys to public GitHub or learner pages.**
+
+### Starter bank for the seventh course
+
+The `risk-for-managers` course (Risk-Aware Management Decisions) has its first **24 source-linked original MCQs** across textbook pages 3–11, with four answer options, source-page rationale and provisional one-or-more-answer keys. A private reviewer booklet, JSON, reference Tinos 12 PDF and 24-item signoff checklist were produced in `MAIC_Risk_Management_24MCQ_Partial_Private_2026-11-03.zip`. The starter bank has zero stem pairs at >=85% trigram similarity and zero pairs with 3+ identical answer options, but still needs **76 more questions** and separate academic review; it **must not** pass the 100-question publication gate.
+
+### Publishing remains blocked
+
+The Cloudflare production D1 was verified to have 36 existing learning materials, **zero revised PDF promotions, zero exam banks, zero active examinations, zero learner accounts**. The new private candidate-PDF SHA-256 hashes do not automatically change the files in production. Approved manuals must first be promoted individually, then a second academic reviewer must sign off each full 100-question bank, and the browser-based student staging run must pass. MAIC's official visual identity has not been changed.
