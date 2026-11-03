@@ -13,16 +13,20 @@ function button(text,fn){const b=node('button',text);b.type='button';b.addEventL
 async function refresh(){
  const data=await api();
  materials=data.materials;bankList.replaceChildren();courseSelect.replaceChildren();drafts.replaceChildren();
+ const progress=data.summary||{};
+ bankList.append(node('p','المواد: '+(progress.coursesWithMaterials??materials.length)+' دورة · البنوك الكاملة المرفوعة للمراجعة: '+(progress.completeDraftBanks??0)+' · الأسئلة المسودة: '+(progress.questionsInDrafts??0)+' · دورات بلا بنك أسئلة: '+(progress.coursesWithNoDraft??0)+' · اختبارات معتمدة: '+(progress.activatedBanks??0),'review-status'));
  const blank=node('option','—');blank.value='';courseSelect.append(blank);
  for(const m of data.materials){
-  bankList.append(node('p',m.title+' — '+(m.status==='approved'?'100 سؤال معتمد':'بانتظار بنك معتمد')));
+  const candidate=(data.banks||[]).find(b=>b.course_id===m.course_id&&b.status==='draft');
+  const state=m.status==='approved'?'امتحان معتمد':candidate?'مسودة '+candidate.question_count+'/100'+(candidate.matches_published_pdf?' · المادة مطابقة':' · ملف Tinos المرشح لم يُعتمد بعد'):'الأسئلة غير مكتوبة';
+  bankList.append(node('p',m.title+' — '+state));
   const o=node('option',m.title);o.value=m.course_id;courseSelect.append(o);
  }
  if(!materials.length)bankList.append(node('p','لا توجد مواد محفوظة'));
  const records=data.banks||[];
  for(const b of records){
   const row=node('section',null,'question');
-  row.append(node('p',b.course_id+' — '+b.question_count+'/100 — '+b.status+' — المُعدّ: '+(b.prepared_by||'غير موثق')));
+  row.append(node('p',b.course_id+' — '+b.question_count+'/100 — '+b.status+' — '+(b.matches_published_pdf?'نسخة PDF مطابقة':'نسخة PDF مختلفة عن المنشورة')+' — المُعدّ: '+(b.prepared_by||'غير موثق')));
   if(b.status==='draft'&&b.question_count===100){
    row.append(button('فتح المسودة للمراجعة',()=>openDraft(b.course_id,b.version)));
   }
