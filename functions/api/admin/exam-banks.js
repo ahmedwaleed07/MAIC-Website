@@ -42,7 +42,9 @@ function quality(questions){
  const maxOpening=Math.max(...families.values());
  const nearPairs=countNearDuplicateQuestionPairs(questions.map(q=>q.stem),0.85,12);
  const optionOverlapPairs=countOverlappingOptionPairs(questions.map(q=>({options:q.options||[q.option_a,q.option_b,q.option_c,q.option_d]})),3,12);
- return {maxOpening,nearPairs,optionOverlapPairs,canApprove:maxOpening<=14&&nearPairs<=12&&optionOverlapPairs<=12};
+ // A final assessment must measure understanding, not ask where a sentence is printed.
+ const sourceRecallItems=questions.filter(q=>/\bpage\s*\d{1,3}\b/i.test(q.stem)).length;
+ return {maxOpening,nearPairs,optionOverlapPairs,sourceRecallItems,canApprove:maxOpening<=14&&nearPairs<=12&&optionOverlapPairs<=12&&sourceRecallItems<=12};
 }
 async function list(db){
  const materials=(await db.prepare("SELECT m.course_id,m.title,m.pages,m.sha256,b.version,b.status,b.question_count,b.approved_at FROM learning_materials m LEFT JOIN learning_exam_active a ON a.course_id=m.course_id LEFT JOIN learning_exam_banks b ON b.course_id=a.course_id AND b.version=a.version ORDER BY m.title").all()).results;

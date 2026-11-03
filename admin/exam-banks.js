@@ -61,7 +61,7 @@ async function openDraft(courseId,version){
  details.replaceChildren();
  details.append(node('h3','مراجعة جميع الأسئلة — '+courseId),node('p','المُعدّ: '+data.bank.prepared_by));
  const quality=data.quality;
- const health=node('p','بصمة المادة: '+(data.sourceMatch?'مطابقة':'مختلفة')+' · الأسئلة المتشابهة: '+(quality?.nearPairs??'غير متاح')+' زوج · تكرار 3 خيارات: '+(quality?.optionOverlapPairs??'غير متاح')+' زوج · الحد الأعلى لتكرار البداية: '+(quality?.maxOpening??'-'),'review-status');
+ const health=node('p','بصمة المادة: '+(data.sourceMatch?'مطابقة':'مختلفة')+' · الأسئلة المتشابهة: '+(quality?.nearPairs??'غير متاح')+' زوج · تكرار 3 خيارات: '+(quality?.optionOverlapPairs??'غير متاح')+' زوج · أسئلة تستفسر عن موضع النص: '+(quality?.sourceRecallItems??'-')+' · الحد الأعلى لتكرار البداية: '+(quality?.maxOpening??'-'),'review-status');
  details.append(health);
  if(!data.sourceMatch||!quality?.canApprove)details.append(node('p','لا يمكن اعتماد هذا البنك: النسخة المصدر مختلفة أو مستوى تكرار الأسئلة مرتفع. يلزم رفع مسودة مصححة.','review-status'));
  for(const q of data.questions){
