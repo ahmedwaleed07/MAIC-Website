@@ -24,3 +24,16 @@
 ## Brand and access protection
 
 No original MAIC crest, approved colors, certificate template or existing public website layout is altered by this editorial pass. Draft answer keys must remain private to authorized MAIC academic reviewers. Do not automatically issue certificates.
+
+## Technical preflight of the four other 100-question draft banks (3 November 2026)
+
+A fresh audit of the existing private draft JSON against the locally regenerated Tinos 12 source PDFs found:
+
+| Course | Questions | Stem pairs ≥ 85% similarity | Pairs reusing ≥ 3 options | Candidate PDF SHA-256 match |
+| --- | ---: | ---: | ---: | --- |
+| Project Management | 100 | 2 (39/81 and 52/80) | 0 | Yes |
+| Management Foundations | 100 | 0 | 0 | Yes |
+| Human Resources | 100 | 0 | 0 | Yes |
+| Digital Marketing | 100 | 0 | 4 (67/89, 67/90, 67/94 and 90/94) | Yes |
+
+This is **structural and lexical preflight only**; none of these four banks is academically approved. The project-specific details and source bank answer keys remain only in the private review package, not on GitHub. MAIC's Cloudflare D1 was checked after this update: **36 existing learning material records, zero approved material revisions, zero exam banks, zero active exams, and zero learner accounts**. No approved PDF or examination was promoted to production.
