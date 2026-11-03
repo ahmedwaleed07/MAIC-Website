@@ -1,0 +1,14 @@
+/* Your Academic Advisor — MAIC midnight navy / antique gold */
+.maic-advisor-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;margin-top:40px}
+.maic-advisor-service{min-width:0;min-height:218px;border:1px solid rgba(214,168,91,.38);border-radius:8px;padding:28px 26px;background:linear-gradient(155deg,rgba(14,40,62,.92),rgba(2,19,34,.84));box-shadow:0 12px 38px rgba(0,0,0,.15);backdrop-filter:blur(6px);transition:border-color .18s ease,transform .18s ease}
+.maic-advisor-service:hover{border-color:#e4bf81;transform:translateY(-2px)}
+.maic-advisor-service-number{color:#e4bf81;font:600 13px Georgia,serif;letter-spacing:.18em;margin-bottom:20px}
+.maic-advisor-service h2{font:normal clamp(21px,1.8vw,28px)/1.32 Georgia,'Noto Naskh Arabic',serif;color:#f6e2bc;margin:0 0 14px;overflow-wrap:anywhere}
+.maic-advisor-service p{color:#d3dce3;font-size:15px;line-height:1.8;margin:0;overflow-wrap:anywhere}
+.maic-advisor-agent-panel{margin-top:32px;padding:32px 34px;border:1px solid rgba(229,185,107,.47);border-radius:8px;background:linear-gradient(110deg,rgba(3,19,34,.98),rgba(13,43,62,.86));max-width:1080px}
+.maic-advisor-agent-panel>p:first-child{font-size:16px;line-height:1.95;color:#f1e8d7;max-width:850px;margin:0 0 22px}
+.maic-advisor-agent-button{display:inline-flex;align-items:center;justify-content:center;gap:12px;max-width:100%;white-space:normal;text-align:center}
+.maic-advisor-integrity{border-top:1px solid rgba(214,168,91,.28);color:#bbcad3!important;font-size:13px!important;line-height:1.85;margin:25px 0 0;padding-top:18px;max-width:850px}
+@media(max-width:1050px){.maic-advisor-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:650px){.maic-advisor-grid{grid-template-columns:1fr;gap:14px;margin-top:25px}.maic-advisor-service{min-height:0;padding:23px}.maic-advisor-service-number{margin-bottom:14px}.maic-advisor-agent-panel{padding:24px 20px;margin-top:24px}.maic-advisor-agent-button{width:100%}}
+@media(prefers-reduced-motion:reduce){.maic-advisor-service{transition:none}.maic-advisor-service:hover{transform:none}}
