@@ -14,7 +14,7 @@ async function refresh(){
  const data=await api();
  materials=data.materials;bankList.replaceChildren();courseSelect.replaceChildren();drafts.replaceChildren();
  const progress=data.summary||{};
- bankList.append(node('p','المواد: '+(progress.coursesWithMaterials??materials.length)+' دورة · البنوك الكاملة المرفوعة للمراجعة: '+(progress.completeDraftBanks??0)+' · الأسئلة المسودة: '+(progress.questionsInDrafts??0)+' · دورات بلا بنك أسئلة: '+(progress.coursesWithNoDraft??0)+' · اختبارات معتمدة: '+(progress.activatedBanks??0),'review-status'));
+ bankList.append(node('p','المواد: '+(progress.coursesWithMaterials??materials.length)+' دورة · البنوك الكاملة المرفوعة للمراجعة: '+(progress.completeDraftBanks??0)+' · الأسئلة المسودة: '+(progress.questionsInDrafts??0)+' · دورات بلا بنك أسئلة: '+(progress.coursesWithNoDraft??0)+' · اختبارات معتمدة: '+(progress.activatedBanks??0)+' · ملاحظات تمنع الاعتماد: '+(progress.unresolvedBlockingIssues??0),'review-status'));
  const blank=node('option','—');blank.value='';courseSelect.append(blank);
  for(const m of data.materials){
   const candidate=(data.banks||[]).find(b=>b.course_id===m.course_id&&b.status==='draft');
@@ -26,7 +26,7 @@ async function refresh(){
  const records=data.banks||[];
  for(const b of records){
   const row=node('section',null,'question');
-  row.append(node('p',b.course_id+' — '+b.question_count+'/100 — '+b.status+' — '+(b.matches_published_pdf?'نسخة PDF مطابقة':'نسخة PDF مختلفة عن المنشورة')+' — المُعدّ: '+(b.prepared_by||'غير موثق')));
+  row.append(node('p',b.course_id+' — '+b.question_count+'/100 — '+b.status+' — '+(b.matches_published_pdf?'نسخة PDF مطابقة':'نسخة PDF مختلفة عن المنشورة')+' — مشاكل جودة مفتوحة: '+(b.open_quality_issues??0)+' — المُعدّ: '+(b.prepared_by||'غير موثق')));
   if(b.status==='draft'&&b.question_count===100){
    row.append(button('فتح المسودة للمراجعة',()=>openDraft(b.course_id,b.version)));
   }
