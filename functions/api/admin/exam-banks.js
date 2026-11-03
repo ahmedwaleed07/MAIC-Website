@@ -115,7 +115,7 @@ export async function onRequestPost({request,env}){
    if(!issue)return json({error:'open_issue_not_found'},404);
    const question=await db.prepare('SELECT ordinal,stem,option_a,option_b,option_c,option_d,correct_mask,source_page,rationale FROM learning_exam_questions WHERE course_id=? AND version=? AND ordinal=?').bind(course,d.version,d.ordinal).first();
    const hash=await fingerprintExamItem(question);
-   const revision=await db.prepare("SELECT revised_sha256,corrected_at FROM learning_exam_item_corrections WHERE course_id=? AND version=? AND ordinal=? AND corrected_at>=? ORDER BY corrected_at DESC LIMIT 1").bind(course,d.version,d.ordinal,issue.detected_at).first();
+   const revision=await db.prepare("SELECT revised_sha256,corrected_at FROM learning_exam_item_corrections WHERE course_id=? AND version=? AND ordinal=? AND strftime('%s',corrected_at)>=strftime('%s',?) ORDER BY corrected_at DESC LIMIT 1").bind(course,d.version,d.ordinal,issue.detected_at).first();
    if(!revision||revision.revised_sha256!==hash)return json({error:'actual_recorded_correction_required'},409);
    const checks=quality([question]);
    if(checks.draftingDisclaimers||checks.stronglyCueDominatedItems||checks.sourceRecallItems||question.stem.length>300)return json({error:'template_or_overlong_problem_remains'},422);
