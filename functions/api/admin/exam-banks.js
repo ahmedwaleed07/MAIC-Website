@@ -182,5 +182,5 @@ export async function onRequestPost({request,env}){
    const signals=quality(questions);
    return json({staged:true,approved:false,courseId:course,version,questionCount:100,quality:{...signals}});
   }catch{return json({error:'upload_incomplete_check_draft'},503)}
- }catch(e){return json({error:['too_large','invalid_content_type'].includes(String(e.message))?e.message:'invalid_or_unavailable'},400)}
+ }catch(e){console.error('MAIC admin bank handler failure',e?.message||String(e));return json({error:['too_large','invalid_content_type'].includes(String(e.message))?e.message:'invalid_or_unavailable'},400)}
 }
