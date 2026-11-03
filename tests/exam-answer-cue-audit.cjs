@@ -27,5 +27,5 @@ test('Approval endpoint must request rationale and reject cue-dominated drafts',
  const src=fs.readFileSync(path.resolve(__dirname,'../functions/api/admin/exam-banks.js'),'utf8');
  assert.match(src,/checkTemplateDraftCues/);
  assert.match(src,/draftingCues\.canApprove/);
- assert.match(src,/SELECT stem,option_a,option_b,option_c,option_d,rationale/);
+ assert.match(src,/SELECT ordinal,stem,option_a,option_b,option_c,option_d,correct_mask,source_page,rationale/);
 });

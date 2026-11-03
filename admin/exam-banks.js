@@ -60,6 +60,17 @@ async function openDraft(courseId,version){
  const data=await api(null,'?course='+encodeURIComponent(courseId)+'&version='+encodeURIComponent(version));
  details.replaceChildren();
  details.append(node('h3','مراجعة جميع الأسئلة — '+courseId),node('p','المُعدّ: '+data.bank.prepared_by));
+ const reviewName=node('input');
+ reviewName.required=true;reviewName.maxLength=150;reviewName.placeholder='اسم المراجع المستقل — يختلف عن المُعدّ';
+ const reviewerLabel=node('label','اسم المراجع الأكاديمي المسؤول عن التحقق من كل سؤال');
+ reviewerLabel.append(reviewName);details.append(reviewerLabel);
+ const reviewed=new Map((data.itemReviews||[]).map(r=>[r.ordinal,r]));
+ const progress=node('p',null,'review-status');
+ const updateProgress=()=>{
+  const values=[...reviewed.values()];
+  progress.textContent='المراجعة الموثقة: '+values.filter(r=>r.verdict==='approved').length+'/100 · تحتاج تصحيحاً: '+values.filter(r=>r.verdict==='revise').length+' · غير مراجعة: '+(100-values.length);
+ };
+ updateProgress();details.append(progress);
  const quality=data.quality;
  const health=node('p','بصمة المادة: '+(data.sourceMatch?'مطابقة':'مختلفة')+' · الأسئلة المتشابهة: '+(quality?.nearPairs??'غير متاح')+' زوج · تكرار 3 خيارات: '+(quality?.optionOverlapPairs??'غير متاح')+' زوج · صياغات مسودة مولدة: '+(quality?.draftingDisclaimers??'-')+' · خيارات توحي بالإجابة: '+(quality?.stronglyCueDominatedItems??'-')+' · أسئلة تستفسر عن موضع النص: '+(quality?.sourceRecallItems??'-')+' · الحد الأعلى لتكرار البداية: '+(quality?.maxOpening??'-'),'review-status');
  details.append(health);
@@ -68,13 +79,44 @@ async function openDraft(courseId,version){
   const block=node('section',null,'question');block.append(node('h3','السؤال '+q.ordinal),node('p',q.stem));
   q.options.forEach((value,i)=>block.append(node('p',String.fromCharCode(65+i)+'. '+value+(q.correct.includes(i)?' ✓':''),q.correct.includes(i)?'answer':'muted')));
   block.append(node('p','صفحة المصدر: '+q.page),node('p','التبرير: '+q.rationale));
+  const current=reviewed.get(q.ordinal);
+  const status=node('p',current?'القرار السابق: '+current.verdict+' | '+current.reviewed_by+' | '+current.review_notes:'لم تُراجع إجابات هذا السؤال بعد','review-status');
+  block.append(status);
+  const checkLabels=[
+   'تحققت من دقة صفحة المصدر والنص العلمي',
+   'تحققت من كل الإجابات الصحيحة',
+   'تحققت من الأربعة خيارات وعدم التباس البدائل'
+  ];
+  const checks=[];
+  for(const label of checkLabels){
+   const row=node('label'),check=node('input');check.type='checkbox';
+   row.append(check,node('span',label));block.append(row);checks.push(check);
+  }
+  const note=node('textarea');note.placeholder='ملاحظات تحريرية محددة: لماذا الإجابة صحيحة أو أين يحتاج السؤال التصحيح؟ (25 حرفاً على الأقل)';
+  if(current?.review_notes)note.value=current.review_notes;
+  block.append(note);
+  const submit=async(verdict)=>{
+   const reviewedBy=reviewName.value.trim(),reviewNotes=note.value.trim();
+   if(reviewedBy.length<3)throw Error('أدخل اسم المراجع الأكاديمي في أعلى الصفحة');
+   if(reviewNotes.length<25)throw Error('اكتب توضيحاً علمياً خاصاً بهذا السؤال لا يقل عن 25 حرفاً');
+   if(verdict==='approved'&&!checks.every(c=>c.checked))throw Error('تحقق من المصدر والمفتاح والخيارات الثلاثة قبل الاعتماد');
+   const result=await api({action:'review-item',courseId,version,ordinal:q.ordinal,reviewedBy,reviewNotes,verdict,
+    sourceConfirmed:verdict==='approved'&&checks[0].checked,
+    keyConfirmed:verdict==='approved'&&checks[1].checked,
+    distractorsConfirmed:verdict==='approved'&&checks[2].checked});
+   reviewed.set(q.ordinal,{ordinal:q.ordinal,verdict,reviewed_by:reviewedBy,review_notes:reviewNotes,reviewed_at:result.reviewedAt});
+   status.textContent='قرار المراجع: '+verdict+' | '+reviewedBy+' | '+reviewNotes;
+   updateProgress();
+  };
+  if(data.sourceMatch)block.append(button('اعتماد هذا السؤال بعد التحقق',()=>submit('approved')));
+  block.append(button('يحتاج تصحيحاً — منع الاعتماد',()=>submit('revise')));
   details.append(block);
  }
  if(!data.sourceMatch||!quality?.canApprove)return;
  const form=node('form');form.setAttribute('aria-label','اعتماد مراجعة أكاديمية مستقلة');
- const reviewName=node('input');reviewName.required=true;reviewName.maxLength=150;reviewName.placeholder='اسم المراجع الأكاديمي المستقل';
+ 
  const notes=node('textarea');notes.required=true;notes.minLength=30;notes.maxLength=2000;notes.placeholder='ملاحظات مراجعة المفاهيم والإجابات والأسئلة ومراجع الصفحات (30 حرفاً على الأقل)';
- form.append(node('h3','اعتماد مستقل بعد تدقيق جميع الأسئلة'),node('label','اسم المراجع (يجب أن يختلف عن اسم المُعدّ)'),reviewName,node('label','تقرير المراجعة الأكاديمية'),notes);
+ form.append(node('h3','اعتماد مستقل بعد تدقيق جميع الأسئلة'),node('p','قبل النشر يجب توثيق موافقة المراجع نفسه على الأسئلة المئة جميعها من الأعلى. اسم المراجع يُدخل مرة واحدة في أعلى الشاشة.'),node('label','تقرير المراجعة الأكاديمية النهائي'),notes);
  const checks=[
   ['pdfFormatReviewed','راجعت المادة المنشورة بصيغة Tinos 12 والشعار الرسمي'],
   ['sourceReviewed','تحققت من مراجع الصفحات لكل الأسئلة المئة مقابل PDF المعتمد'],
