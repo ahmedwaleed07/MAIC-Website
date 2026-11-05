@@ -4,6 +4,11 @@ on:
     branches: [main]
     paths:
       - 'functions/api/learner/exam.js'
+      - 'functions/api/exams/catalog.js'
+      - 'learner/portal.js'
+      - 'app.js'
+      - 'exam-catalog-copy.js'
+      - 'tests/exam-catalog-privacy.cjs'
       - 'functions/api/learner/study.js'
       - 'functions/api/admin/exam-banks.js'
       - 'learner/exam.js'
@@ -31,6 +36,11 @@ on:
   pull_request:
     paths:
       - 'functions/api/learner/exam.js'
+      - 'functions/api/exams/catalog.js'
+      - 'learner/portal.js'
+      - 'app.js'
+      - 'exam-catalog-copy.js'
+      - 'tests/exam-catalog-privacy.cjs'
       - 'functions/api/learner/study.js'
       - 'functions/api/admin/exam-banks.js'
       - 'learner/exam.js'
@@ -64,6 +74,6 @@ jobs:
         with:
           node-version: '22'
       - name: Check backend and learner-exam safeguards
-        run: node --test tests/exam-item-signoff.cjs tests/exam-answer-cue-audit.cjs tests/academic-source-recall.cjs tests/academic-bank-status.cjs tests/course-bank-offline-audit.cjs tests/self-paced-exam.cjs tests/tinos-academic-release.cjs tests/learner-exam-integration.cjs tests/exam-content-quality.cjs tests/exam-two-stage-review-integration.cjs
+        run: node --test tests/exam-catalog-privacy.cjs tests/exam-item-signoff.cjs tests/exam-answer-cue-audit.cjs tests/academic-source-recall.cjs tests/academic-bank-status.cjs tests/course-bank-offline-audit.cjs tests/self-paced-exam.cjs tests/tinos-academic-release.cjs tests/learner-exam-integration.cjs tests/exam-content-quality.cjs tests/exam-two-stage-review-integration.cjs
       - name: Validate Python PDF generator syntax
         run: python -m py_compile tools/create_maic_course_pdf.py
