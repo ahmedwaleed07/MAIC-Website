@@ -20,7 +20,7 @@ test('all exam-bank catalog data stays off public site and public API',()=>{
 
 test('a logged-out visitor cannot query private learner exam access',async()=>{
  const source=get('functions/api/learner/exam-access.js');
- const factory=new Function('json','session',source.replace(/^import[^\n]*\n/m,'')+'\nreturn onRequestGet;');
+ const factory=new Function('json','session',source.replace(/^import[^\n]*\n/m,'').replace('export async function onRequestGet','async function onRequestGet')+'\nreturn onRequestGet;');
  const handler=factory((data,status=200)=>({data,status}),async()=>null);
  const r=await handler({request:{headers:new Map()},env:{MAIC_DB:{}}});
  assert.equal(r.status,401);
@@ -31,7 +31,7 @@ test('only the authenticated learner receives their own eligible course IDs',asy
  const source=get('functions/api/learner/exam-access.js');
  const calls=[];
  const db={prepare(sql){calls.push({type:'sql',sql});return {bind(id){calls.push({type:'bind',id});return {async all(){return {results:[{course_id:'project-management'}]}}}}}}};
- const factory=new Function('json','session',source.replace(/^import[^\n]*\n/m,'')+'\nreturn onRequestGet;');
+ const factory=new Function('json','session',source.replace(/^import[^\n]*\n/m,'').replace('export async function onRequestGet','async function onRequestGet')+'\nreturn onRequestGet;');
  const handler=factory((data,status=200)=>({data,status}),async()=>({id:'student-test-id'}));
  const r=await handler({request:{},env:{MAIC_DB:db}});
  assert.equal(r.status,200);
