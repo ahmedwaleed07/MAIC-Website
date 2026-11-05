@@ -1,7 +1,7 @@
 import {json,isAdmin,validOrigin} from '../../_lib/cms.js';
 import {catalog} from '../../_lib/learning.js';
 import {fingerprintExamItem,reviewInputValid,countVerifiedItemReviews} from '../../_lib/exam-item-review.js';
-import {countNearDuplicateQuestionPairs,countOverlappingOptionPairs,checkTemplateDraftCues} from '../../_lib/exam-quality.js';
+import {countNearDuplicateQuestionPairs,countOverlappingOptionPairs,checkTemplateDraftCues,checkAnswerLengthBias} from '../../_lib/exam-quality.js';
 
 const validId=x=>typeof x==='string'&&/^[-a-z0-9]{2,80}$/.test(x);
 const nameOK=x=>typeof x==='string'&&x.trim().length>=3&&x.trim().length<=150;
@@ -46,7 +46,8 @@ function quality(questions){
  // A final assessment must measure understanding, not ask where a sentence is printed.
  const sourceRecallItems=questions.filter(q=>/\bpage\s*\d{1,3}\b/i.test(q.stem)).length;
  const draftingCues=checkTemplateDraftCues(questions.map(q=>({stem:q.stem,options:q.options||[q.option_a,q.option_b,q.option_c,q.option_d],rationale:q.rationale})));
- return {maxOpening,nearPairs,optionOverlapPairs,sourceRecallItems,...draftingCues,canApprove:maxOpening<=14&&nearPairs<=12&&optionOverlapPairs<=12&&sourceRecallItems<=12&&draftingCues.canApprove};
+ const answerLength=checkAnswerLengthBias(questions);
+ return {maxOpening,nearPairs,optionOverlapPairs,sourceRecallItems,...draftingCues,answerLength,canApprove:maxOpening<=14&&nearPairs<=12&&optionOverlapPairs<=12&&sourceRecallItems<=12&&draftingCues.canApprove&&answerLength.canApprove};
 }
 async function list(db){
  const materials=(await db.prepare("SELECT m.course_id,m.title,m.pages,m.sha256,b.version,b.status,b.question_count,b.approved_at FROM learning_materials m LEFT JOIN learning_exam_active a ON a.course_id=m.course_id LEFT JOIN learning_exam_banks b ON b.course_id=a.course_id AND b.version=a.version ORDER BY m.title").all()).results;

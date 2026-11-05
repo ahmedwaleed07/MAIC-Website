@@ -29,3 +29,26 @@ test('Approval endpoint must request rationale and reject cue-dominated drafts',
  assert.match(src,/draftingCues\.canApprove/);
  assert.match(src,/SELECT ordinal,stem,option_a,option_b,option_c,option_d,correct_mask,source_page,rationale/);
 });
+
+
+test('MAIC blocks excessive longest-correct-answer patterns while allowing balanced answer lengths',async()=>{
+ const {checkAnswerLengthBias}=await import(pathToFileURL(path.resolve(__dirname,'../functions/_lib/exam-quality.js')).href);
+ const options=[
+  'Evaluate the authenticated source, consent, effective dates, scope and event context before deciding on an obligation.',
+  'Use the last reported signing date.',
+  'Use the earlier training summary.',
+  'Use the agreement short title.'
+ ];
+ const biased=Array.from({length:100},(_,i)=>({options,correct_mask:1}));
+ const flagged=checkAnswerLengthBias(biased);
+ assert.equal(flagged.singleAnswerCount,100);
+ assert.equal(flagged.correctIsUniquelyLongest,100);
+ assert.equal(flagged.canApprove,false);
+ const mixed=Array.from({length:100},(_,i)=>({options,mask:1<<(i%4)}));
+ const ok=checkAnswerLengthBias(mixed);
+ assert.equal(ok.correctIsUniquelyLongest,25);
+ assert.equal(ok.correctLongestRate,25);
+ assert.equal(ok.canApprove,true);
+ assert.equal(checkAnswerLengthBias([{options,correct:[0,2]}]).singleAnswerCount,0);
+ assert.throws(()=>checkAnswerLengthBias(new Array(101).fill({options,mask:1})),/invalid_questions/);
+});

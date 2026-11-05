@@ -62,3 +62,26 @@ export function checkTemplateDraftCues(questions){
  }
  return {draftingDisclaimers,flaggedItemCount,stronglyCueDominatedItems,canApprove:draftingDisclaimers===0&&stronglyCueDominatedItems<=12};
 }
+
+
+// Catch a systematic cue where the only correct option is consistently the longest.
+// This checks answer positioning/length only; correctness remains for an independent reviewer.
+export function checkAnswerLengthBias(questions){
+ if(!Array.isArray(questions)||questions.length>100)throw new Error('invalid_questions');
+ let singleAnswerCount=0,correctIsUniquelyLongest=0;
+ for(const q of questions){
+  const options=q?.options||[q?.option_a,q?.option_b,q?.option_c,q?.option_d];
+  if(!Array.isArray(options)||options.length!==4||options.some(x=>typeof x!=='string'))throw new Error('invalid_options');
+  const mask=Number.isInteger(q.correct_mask)?q.correct_mask:Number.isInteger(q.mask)?q.mask:
+   Array.isArray(q.correct)?q.correct.reduce((m,i)=>m|(1<<i),0):null;
+  if(![1,2,4,8].includes(mask))continue;
+  singleAnswerCount++;
+  const correctIndex=Math.log2(mask),correctLength=options[correctIndex].trim().length;
+  if(options.every((opt,i)=>i===correctIndex||correctLength>opt.trim().length))correctIsUniquelyLongest++;
+ }
+ const correctLongestRate=singleAnswerCount?Math.round(1000*correctIsUniquelyLongest/singleAnswerCount)/10:0;
+ // 55% is considerably above the ~25% neutral baseline for four options;
+ // require a meaningful sample before automatically blocking an approval.
+ return {singleAnswerCount,correctIsUniquelyLongest,correctLongestRate,
+  canApprove:singleAnswerCount<20||correctLongestRate<=55};
+}
