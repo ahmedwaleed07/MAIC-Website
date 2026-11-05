@@ -23,7 +23,7 @@ test('learner exam authorization remains server-side and academic approval is ma
  assert.match(s,/allowed\(db,student\.id,course\)/);
  assert.match(s,/b\.status='approved'/);
  assert.match(s,/b\.source_sha256/);
- assert.match(s,/x\.bank\.source_sha256===m\.sha256/);
+ assert.match(s,/chosen\.source_sha256===m\.sha256/);
  assert.match(s,/x\.studied/);
  assert.match(s,/state:'pending'/);
  assert.match(s,/SELECT ordinal,stem,option_a,option_b,option_c,option_d/);
