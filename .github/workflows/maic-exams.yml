@@ -4,10 +4,9 @@ on:
     branches: [main]
     paths:
       - 'functions/api/learner/exam.js'
-      - 'functions/api/exams/catalog.js'
+      - 'functions/api/learner/exam-access.js'
       - 'learner/portal.js'
       - 'app.js'
-      - 'exam-catalog-copy.js'
       - 'tests/exam-catalog-privacy.cjs'
       - 'functions/api/learner/study.js'
       - 'functions/api/admin/exam-banks.js'
@@ -36,10 +35,9 @@ on:
   pull_request:
     paths:
       - 'functions/api/learner/exam.js'
-      - 'functions/api/exams/catalog.js'
+      - 'functions/api/learner/exam-access.js'
       - 'learner/portal.js'
       - 'app.js'
-      - 'exam-catalog-copy.js'
       - 'tests/exam-catalog-privacy.cjs'
       - 'functions/api/learner/study.js'
       - 'functions/api/admin/exam-banks.js'

@@ -70,3 +70,16 @@
 @media(max-width:420px){.maic-agent-card-top{flex-direction:column;text-align:center}.maic-agent-ident{width:100%}.maic-agent-overline{font-size:9px}.maic-agent-role{font-size:11px}}
 
 .maic-agent-logo-letters{font:700 38px/1 Georgia,serif;letter-spacing:.04em;color:#a87334;display:grid;place-items:center;width:100%;height:100%;background:#fffaf1}
+
+/* Public agent directory: consistent inner gutters and legible contact rows. */
+.maic-agent-card .agent-contact-list{margin:0;padding:0;list-style:none;display:block;min-width:0}
+.maic-agent-card .agent-contact-list>div{min-width:0;padding:17px 26px 18px;border-top:1px solid rgba(222,184,121,.31)}
+.maic-agent-card .agent-contact-list dt{margin:0 0 7px;color:#cfdae3;font-size:14px;font-weight:600;line-height:1.45;opacity:1}
+.maic-agent-card .agent-contact-list dd{margin:0;color:#fff0d3;font-size:16px;line-height:1.6;overflow-wrap:anywhere;word-break:normal}
+.maic-agent-card .agent-contact-list dd a{display:inline-flex;align-items:center;flex-wrap:wrap;gap:9px;max-width:100%;color:#f7e5c0;text-decoration:none;overflow-wrap:anywhere}
+.maic-agent-card .agent-contact-list dd a:hover{text-decoration:underline;text-underline-offset:3px}
+.maic-agent-card .agent-contact-list dd bdi{max-width:100%;white-space:normal;overflow-wrap:anywhere}
+.maic-agent-card .agent-contact-list dd svg{width:18px;height:18px;flex:none;vertical-align:middle}
+[lang="ar"] .maic-agent-card .agent-contact-list>div{text-align:right}
+@media(max-width:720px){.maic-agent-card .agent-contact-list>div{padding:16px 20px 18px}.maic-agent-card .agent-contact-list dt{font-size:13px}.maic-agent-card .agent-contact-list dd{font-size:15px}}
+@media(max-width:375px){.maic-agent-card .agent-contact-list>div{padding-inline:18px}}
