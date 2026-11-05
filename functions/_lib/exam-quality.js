@@ -64,11 +64,11 @@ export function checkTemplateDraftCues(questions){
 }
 
 
-// Catch a systematic cue where the only correct option is consistently the longest.
-// This checks answer positioning/length only; correctness remains for an independent reviewer.
+// Detect systematic answer-length cues in either direction for one-answer MCQs.
+// A length signal is an editorial warning, never proof that any key is correct.
 export function checkAnswerLengthBias(questions){
  if(!Array.isArray(questions)||questions.length>100)throw new Error('invalid_questions');
- let singleAnswerCount=0,correctIsUniquelyLongest=0;
+ let singleAnswerCount=0,correctIsUniquelyLongest=0,correctIsUniquelyShortest=0;
  for(const q of questions){
   const options=q?.options||[q?.option_a,q?.option_b,q?.option_c,q?.option_d];
   if(!Array.isArray(options)||options.length!==4||options.some(x=>typeof x!=='string'))throw new Error('invalid_options');
@@ -78,10 +78,14 @@ export function checkAnswerLengthBias(questions){
   singleAnswerCount++;
   const correctIndex=Math.log2(mask),correctLength=options[correctIndex].trim().length;
   if(options.every((opt,i)=>i===correctIndex||correctLength>opt.trim().length))correctIsUniquelyLongest++;
+  if(options.every((opt,i)=>i===correctIndex||correctLength<opt.trim().length))correctIsUniquelyShortest++;
  }
- const correctLongestRate=singleAnswerCount?Math.round(1000*correctIsUniquelyLongest/singleAnswerCount)/10:0;
- // 55% is considerably above the ~25% neutral baseline for four options;
- // require a meaningful sample before automatically blocking an approval.
- return {singleAnswerCount,correctIsUniquelyLongest,correctLongestRate,
-  canApprove:singleAnswerCount<20||correctLongestRate<=55};
+ const rate=n=>singleAnswerCount?Math.round(1000*n/singleAnswerCount)/10:0;
+ const correctLongestRate=rate(correctIsUniquelyLongest);
+ const correctShortestRate=rate(correctIsUniquelyShortest);
+ // >55% is far from an expected ~25% baseline; only enforce for >=20
+ // single-answer items to avoid spurious blocking in small collections.
+ return {singleAnswerCount,correctIsUniquelyLongest,correctIsUniquelyShortest,
+  correctLongestRate,correctShortestRate,
+  canApprove:singleAnswerCount<20||(correctLongestRate<=55&&correctShortestRate<=55)};
 }
