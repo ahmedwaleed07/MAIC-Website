@@ -216,8 +216,8 @@
   const credit=d.querySelector('#miDialogCredit');
   if(item.license){
    const photographer=item.credit.split('/')[0].split(' — ')[0].trim();
-   const licenseCode=item.license.split('/licenses/')[1]?.replace(/\/$/,'').toUpperCase().replaceAll('/',' ')||'Creative Commons';
-   credit.textContent=(l==='ar'?'حقوق الصورة: ':'Photo: ')+photographer+' · '+licenseCode;
+   const licenseCode=item.license.split('/licenses/')[1]?.replace(/\/$/,'').toUpperCase().replaceAll('/',' ')||'BY';
+   credit.textContent=(l==='ar'?'حقوق الصورة: ':'Photo: ')+photographer+' · CC '+licenseCode;
    credit.hidden=false;
   }else{
    credit.textContent='';
