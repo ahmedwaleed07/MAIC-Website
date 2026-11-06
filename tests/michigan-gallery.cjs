@@ -45,7 +45,7 @@ test('gallery is a semantic button-driven modal and provides attribution and pri
  assert.match(s,/miDialogLicense/);
  assert.match(s,/image\.onerror/);
  assert.doesNotMatch(s,/600px-/);
- assert.match(s,/Claude_Shannon_c1930\\.png/);
+ assert.ok(s.includes('Claude_Shannon_c1930.png'));
  assert.match(s,/mi-gallery-unavailable/);
  assert.match(s,/MAIC_MICHIGAN_GALLERY/);
  assert.match(s,/https:\/\/www\.nps\.gov/);
