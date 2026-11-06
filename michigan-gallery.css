@@ -1,0 +1,59 @@
+/* Michigan history gallery — interactive, responsive, and true to MAIC's navy/gold identity. */
+.mi-heritage-gallery{max-width:1250px;margin:42px auto 0}
+.mi-gallery-section-title{font:normal clamp(26px,3vw,40px)/1.25 Georgia,'Noto Naskh Arabic',serif;color:#f5d8a4;margin:42px 0 22px}
+.mi-gallery-section-divider{height:1px;background:linear-gradient(90deg,transparent,rgba(210,171,98,.58),transparent);margin:50px 0 34px}
+.mi-gallery-section-intro{color:#d2dce2;font-size:16px;line-height:1.75;max-width:900px;margin:-4px 0 24px}
+.mi-gallery-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.mi-gallery-card{min-width:0;border:1px solid rgba(218,175,105,.58);border-radius:12px;overflow:hidden;background:linear-gradient(145deg,#0b263b,#061929);box-shadow:0 12px 26px #0003}
+.mi-gallery-open{display:flex;flex-direction:column;align-items:stretch;text-align:inherit;width:100%;height:100%;padding:0;background:none;border:0;color:inherit;cursor:zoom-in}
+.mi-gallery-open:focus-visible{outline:3px solid #ffdeaa;outline-offset:-5px}
+.mi-gallery-card:hover,.mi-gallery-card:focus-within{border-color:#f0c87b;box-shadow:0 16px 32px #0006;transform:translateY(-2px)}
+.mi-gallery-card{transition:transform .2s,border-color .2s,box-shadow .2s}
+.mi-gallery-photo{width:100%;aspect-ratio:16/10;display:block;overflow:hidden;background:linear-gradient(135deg,#193b50,#091d30);position:relative}
+.mi-gallery-photo img{display:block;width:100%;height:100%;object-fit:cover;object-position:center;transition:transform .25s ease}
+.mi-gallery-card:hover .mi-gallery-photo img{transform:scale(1.035)}
+.mi-person .mi-gallery-photo{aspect-ratio:4/4}
+.mi-person .mi-gallery-photo img{object-position:center 26%}
+.mi-gallery-card-content{display:flex;flex-direction:column;gap:8px;padding:21px 21px 22px;flex:1;min-width:0}
+.mi-gallery-kicker{font:600 11px/1.45 system-ui,sans-serif;letter-spacing:.08em;color:#d8b878;text-transform:uppercase}
+.mi-gallery-name{font:normal clamp(21px,1.6vw,26px)/1.3 Georgia,'Noto Naskh Arabic',serif;color:#f5e7cb;overflow-wrap:anywhere}
+.mi-gallery-summary{font-size:14px;line-height:1.65;color:#c9d5dd;margin-bottom:10px}
+.mi-gallery-view{font-size:13px;line-height:1.5;color:#ebc98c;font-weight:650;margin-top:auto;display:flex;justify-content:space-between;gap:10px;align-items:center}
+.mi-gallery-view>span{font-size:24px;font-weight:400;line-height:1}
+.mi-dialog-open{overflow:hidden}
+.mi-story-dialog{width:min(860px,calc(100vw - 32px));max-width:860px;max-height:min(93dvh,1000px);margin:auto;padding:0;border:1px solid #d8b276;border-radius:14px;background:#fffcf5;color:#10283b;box-shadow:0 24px 95px rgba(0,0,0,.75);overflow-y:auto;overscroll-behavior:contain;position:fixed}
+.mi-story-dialog::backdrop{background:rgba(2,13,23,.87);backdrop-filter:blur(9px)}
+.mi-story-close{position:sticky;z-index:4;top:12px;float:right;margin:12px 14px -55px 0;width:42px;height:42px;border-radius:50%;border:1px solid #d7b37a;background:#091f34;color:#ffe9bc;font-size:30px;line-height:1;display:grid;place-items:center;box-shadow:0 3px 15px #0007}
+.mi-story-close:hover,.mi-story-close:focus-visible{background:#b18646;color:#091c2b}
+.mi-story-figure{margin:0;width:100%;min-height:180px;background:linear-gradient(145deg,#071827,#162d41);display:flex;align-items:center;justify-content:center;padding:12px}
+.mi-story-figure img{display:block;max-width:100%;width:auto;height:auto;max-height:min(60dvh,620px);object-fit:contain;object-position:center}
+.mi-story-copy{padding:24px clamp(21px,4vw,42px) 34px}
+.mi-story-category{font:650 12px/1.5 system-ui,sans-serif;letter-spacing:.07em;color:#916735}
+.mi-story-copy h2{font:normal clamp(26px,3.8vw,39px)/1.27 Georgia,'Noto Naskh Arabic',serif;color:#0c2538;margin:9px 0 13px}
+.mi-story-copy p#miDialogDescription{font-size:clamp(15px,1.6vw,18px);line-height:1.85;color:#2b4354;margin:0 0 20px}
+.mi-story-links{display:flex;flex-wrap:wrap;gap:12px 22px;align-items:center}
+.mi-story-links a{font-size:13px;line-height:1.6;color:#325573;text-decoration:underline;text-underline-offset:3px;overflow-wrap:anywhere}
+.mi-story-links a:hover{color:#a17033}
+.mi-story-copy .mi-story-credit{font-size:11px;color:#657684;margin:11px 0 0;line-height:1.6}
+.mi-story-image-error{color:#7b3428;font-weight:600;font-size:13px;margin:10px 0 0}
+[lang="ar"] .mi-gallery-section-title,[lang="ar"] .mi-gallery-section-intro{text-align:right;direction:rtl}
+[lang="ar"] .mi-gallery-card-content{text-align:right;direction:rtl}
+[lang="ar"] .mi-story-close{float:left;margin:12px 0 -55px 14px}
+@media(max-width:1050px){.mi-gallery-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:640px){
+ .mi-heritage-gallery{margin:26px auto 0}
+ .mi-gallery-grid{grid-template-columns:1fr;gap:16px}
+ .mi-gallery-section-title{margin:32px 0 18px}
+ .mi-gallery-section-divider{margin:34px 0 30px}
+ .mi-gallery-card-content{padding:18px 18px 20px}
+ .mi-gallery-photo{aspect-ratio:16/10}
+ .mi-person .mi-gallery-photo{aspect-ratio:16/12}
+ .mi-story-dialog{width:calc(100vw - 14px);max-width:none;max-height:94dvh;border-radius:10px}
+ .mi-story-figure{padding:8px;min-height:160px}
+ .mi-story-figure img{max-height:55dvh}
+ .mi-story-copy{padding:22px 20px 26px}
+ .mi-story-close{top:8px;margin:8px 10px -50px 0}
+ [lang="ar"] .mi-story-close{margin:8px 0 -50px 10px}
+ .mi-story-links{gap:7px 16px}
+}
+@media(prefers-reduced-motion:reduce){.mi-gallery-card,.mi-gallery-photo img{transition:none}}
