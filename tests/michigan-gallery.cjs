@@ -18,7 +18,7 @@ test('Michigan heritage shows exactly six distinct real places and six historic 
  const en=api.render('en-US',k=>k==='landmarks'?'Places to discover':k);
  const ar=api.render('ar',k=>k==='landmarks'?'أماكن تستحق الاكتشاف':k);
  assert.equal((en.match(/class="mi-gallery-card /g)||[]).length,12);
- assert.equal((en.match(/mi-person/g)||[]).length,7); // 6 card markers plus people grid
+ assert.equal((en.match(/mi-person/g)||[]).length,6); // six distinct portrait cards
  assert.equal((en.match(/data-mi-story=/g)||[]).length,12);
  assert.equal((ar.match(/data-mi-story=/g)||[]).length,12);
  for(const name of ['Henry Ford','Claude Shannon','Gerald R. Ford','Rosa Parks','Sojourner Truth','Aretha Franklin','Mackinac Bridge','Pictured Rocks National Lakeshore','Michigan State Capitol'])assert.ok(en.includes(name),name);
@@ -44,7 +44,7 @@ test('gallery is a semantic button-driven modal and provides attribution and pri
  assert.match(s,/miDialogCredit/);
  assert.match(s,/miDialogLicense/);
  assert.match(s,/image\.onerror/);
- assert.match(s,/maic-gallery/i);
+ assert.match(s,/MAIC_MICHIGAN_GALLERY/);
  assert.match(s,/https:\/\/www\.nps\.gov/);
  assert.match(s,/https:\/\/www\.itsoc\.org/);
  assert.match(s,/https:\/\/www\.loc\.gov/);
