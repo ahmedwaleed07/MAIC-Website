@@ -31,9 +31,6 @@
 .mi-story-category{font:650 12px/1.5 system-ui,sans-serif;letter-spacing:.07em;color:#916735}
 .mi-story-copy h2{font:normal clamp(26px,3.8vw,39px)/1.27 Georgia,'Noto Naskh Arabic',serif;color:#0c2538;margin:9px 0 13px}
 .mi-story-copy p#miDialogDescription{font-size:clamp(15px,1.6vw,18px);line-height:1.85;color:#2b4354;margin:0 0 20px}
-.mi-story-links{display:flex;flex-wrap:wrap;gap:12px 22px;align-items:center}
-.mi-story-links a{font-size:13px;line-height:1.6;color:#325573;text-decoration:underline;text-underline-offset:3px;overflow-wrap:anywhere}
-.mi-story-links a:hover{color:#a17033}
 .mi-story-copy .mi-story-credit{font-size:11px;color:#657684;margin:11px 0 0;line-height:1.6}
 .mi-story-image-error{color:#7b3428;font-weight:600;font-size:13px;margin:10px 0 0}
 [lang="ar"] .mi-gallery-section-title,[lang="ar"] .mi-gallery-section-intro{text-align:right;direction:rtl}
@@ -54,7 +51,6 @@
  .mi-story-copy{padding:22px 20px 26px}
  .mi-story-close{top:8px;margin:8px 10px -50px 0}
  [lang="ar"] .mi-story-close{margin:8px 0 -50px 10px}
- .mi-story-links{gap:7px 16px}
 }
 @media(prefers-reduced-motion:reduce){.mi-gallery-card,.mi-gallery-photo img{transition:none}}
 

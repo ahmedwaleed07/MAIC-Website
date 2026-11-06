@@ -157,8 +157,8 @@
  const byId=new Map(items.map(x=>[x.id,x]));
  const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
  const dictionary={
-  en:{figures:'Notable People of Michigan',intro:'Discover the innovators, leaders, scientists and cultural figures who shaped Michigan and the wider world.',view:'View photo and story',photo:'Photo credit',source:'Learn more',close:'Close photo',unavailable:'Image unavailable; open the photo source to view it.'},
-  ar:{figures:'شخصيات بارزة في تاريخ ميشيغان',intro:'اكتشف رجال أعمال وعلماء وقادة وشخصيات ثقافية وحقوقية تركوا أثراً في ميشيغان والعالم.',view:'عرض الصورة والتفاصيل',photo:'مصدر الصورة',source:'اقرأ المزيد',close:'إغلاق الصورة',unavailable:'تعذّر تحميل الصورة؛ يمكنك فتح مصدرها لمشاهدتها.'}
+  en:{figures:'Notable People of Michigan',intro:'Discover the innovators, leaders, scientists and cultural figures who shaped Michigan and the wider world.',view:'View photo and story',close:'Close photo',unavailable:'Image unavailable; open the photo source to view it.'},
+  ar:{figures:'شخصيات بارزة في تاريخ ميشيغان',intro:'اكتشف رجال أعمال وعلماء وقادة وشخصيات ثقافية وحقوقية تركوا أثراً في ميشيغان والعالم.',view:'عرض الصورة والتفاصيل',close:'إغلاق الصورة',unavailable:'تعذّر تحميل الصورة؛ يمكنك فتح مصدرها لمشاهدتها.'}
  };
  const locale=()=>document.documentElement.lang==='ar'?'ar':'en';
  const tr=(item,key,l)=>item[key+(l==='ar'?'Ar':'En')];
@@ -193,12 +193,7 @@
      <span class="mi-story-category" id="miDialogCategory"></span>
      <h2 id="miDialogTitle"></h2>
      <p id="miDialogDescription"></p>
-     <div class="mi-story-links">
-      <a id="miDialogFacts" target="_blank" rel="noopener noreferrer"></a>
-      <a id="miDialogPhoto" target="_blank" rel="noopener noreferrer"></a>
-      <a id="miDialogLicense" target="_blank" rel="noopener noreferrer" hidden></a>
-     </div>
-     <p class="mi-story-credit" id="miDialogCredit"></p>
+     <p class="mi-story-credit" id="miDialogCredit" hidden></p>
      <p class="mi-story-image-error" id="miDialogImageError" hidden></p>
     </div>
    </dialog>`;
@@ -216,11 +211,18 @@
   d.querySelector('#miDialogTitle').textContent=item[l];
   d.querySelector('#miDialogCategory').textContent=tr(item,'label',l);
   d.querySelector('#miDialogDescription').textContent=tr(item,'detail',l);
-  const facts=d.querySelector('#miDialogFacts');facts.textContent=ui.source;facts.href=item.facts;
-  const photo=d.querySelector('#miDialogPhoto');photo.textContent=ui.photo;photo.href=item.photo;
-  const license=d.querySelector('#miDialogLicense');
-  license.hidden=!item.license;if(item.license){license.href=item.license;license.textContent=item.license.split('/licenses/')[1].replaceAll('/',' ').toUpperCase();}
-  d.querySelector('#miDialogCredit').textContent=item.credit;
+  // Keep visitors on MAIC: no outbound links in the photo viewer.
+  // Display a small non-interactive byline only for photos that require attribution.
+  const credit=d.querySelector('#miDialogCredit');
+  if(item.license){
+   const photographer=item.credit.split('/')[0].split(' — ')[0].trim();
+   const licenseCode=item.license.split('/licenses/')[1]?.replace(/\/$/,'').toUpperCase().replaceAll('/',' ')||'BY';
+   credit.textContent=(l==='ar'?'حقوق الصورة: ':'Photo: ')+photographer+' · CC '+licenseCode;
+   credit.hidden=false;
+  }else{
+   credit.textContent='';
+   credit.hidden=true;
+  }
   const error=d.querySelector('#miDialogImageError');error.hidden=true;error.textContent='';
   image.alt=item[l];image.src=item.img;
   image.onerror=()=>{

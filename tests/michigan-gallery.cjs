@@ -27,6 +27,8 @@ test('Michigan heritage shows exactly six distinct real places and six historic 
  assert.match(en,/id="miStoryDialog"/);
  assert.match(en,/id="miDialogImage"/);
  assert.match(en,/id="miDialogDescription"/);
+ assert.match(en,/id="miDialogCredit" hidden/);
+ assert.doesNotMatch(en,/<a\b|miDialogFacts|miDialogPhoto|miDialogLicense|Learn more|اقرأ المزيد/);
  assert.match(en,/aria-labelledby="miDialogTitle"/);
  assert.match(en,/loading="lazy"/);
  const ids=[...en.matchAll(/data-mi-story="([^"]+)"/g)].map(x=>x[1]);
@@ -34,15 +36,15 @@ test('Michigan heritage shows exactly six distinct real places and six historic 
  assert.equal((en.match(/upload\.wikimedia\.org\/wikipedia\/commons\//g)||[]).length,12);
  assert.doesNotMatch(en,/data:image|placehold\.co|unsplash|ai-generated/i);
 });
-test('gallery is a semantic button-driven modal and provides attribution and primary fact sources',()=>{
+test('gallery is a semantic button-driven modal without outbound photo links',()=>{
  const s=read('michigan-gallery.js');
  assert.match(s,/data-mi-story/);
  assert.match(s,/d\.showModal\(\)/);
  assert.match(s,/d\.close\(\)/);
- assert.match(s,/miDialogFacts/);
- assert.match(s,/miDialogPhoto/);
  assert.match(s,/miDialogCredit/);
- assert.match(s,/miDialogLicense/);
+ assert.doesNotMatch(s,/id="miDialogFacts"|id="miDialogPhoto"|id="miDialogLicense"/);
+ assert.doesNotMatch(s,/textContent=ui\.source|textContent=ui\.photo|facts\.href|photo\.href|license\.href/);
+ assert.match(s,/credit\.hidden=false/);
  assert.match(s,/image\.onerror/);
  assert.doesNotMatch(s,/600px-/);
  assert.ok(s.includes('Claude_Shannon_c1930.png'));
@@ -86,10 +88,15 @@ test('clicking a gallery card opens its matching image and caption, and close re
  assert.equal(fields['#miDialogTitle'].textContent,'Rosa Parks');
  assert.match(fields['#miDialogDescription'].textContent,/Detroit/);
  assert.match(fields['#miDialogImage'].src,/Rosa_Parks_1956/);
- assert.match(fields['#miDialogPhoto'].href,/commons\.wikimedia\.org/);
- assert.match(fields['#miDialogFacts'].href,/loc\.gov/);
+ assert.equal(fields['#miDialogCredit'].hidden,true);
  handlers.click({target:{closest(sel){return sel==='[data-mi-close]'?{}:null}}});
  assert.equal(dialog.open,false);
  handlers.close({target:{id:'miStoryDialog'}});
  assert.equal(classIsOpen,false);
+ const museum={dataset:{miStory:'henry-ford-museum'},isConnected:true,focus(){},closest(sel){return sel==='[data-mi-story]'?this:null}};
+ handlers.click({target:museum,preventDefault(){}});
+ assert.equal(fields['#miDialogTitle'].textContent,'Henry Ford Museum of American Innovation');
+ assert.equal(fields['#miDialogCredit'].hidden,false);
+ assert.match(fields['#miDialogCredit'].textContent,/CoolRockC.*CC BY-SA 4\.0/);
+ assert.equal(fields['#miDialogCredit'].href,'');
 });
