@@ -136,8 +136,8 @@
    briefAr:'مناضلة ضد العبودية ومدافعة عن حقوق النساء عاشت في باتل كريك.',
    detailEn:'Born into slavery in New York, Sojourner Truth became a powerful advocate for abolition and women’s rights. She moved to Michigan in 1857 and later lived in Battle Creek, where she continued her public work. Her legacy remains a vital part of Michigan’s social and political history.',
    detailAr:'وُلدت سوجورنر تروث مستعبدة في نيويورك، ثم أصبحت من أبرز المدافعات عن إلغاء العبودية وحقوق النساء. وانتقلت إلى ميشيغان عام 1857 وعاشت لاحقاً في باتل كريك، حيث واصلت نشاطها العام. ويُعدّ إرثها جزءاً مهماً من تاريخ الولاية الاجتماعي والسياسي.',
-   img:'https://upload.wikimedia.org/wikipedia/commons/8/82/Sojourner_Truth_01.jpg',
-   thumb:'https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Sojourner_Truth_01.jpg/600px-Sojourner_Truth_01.jpg',
+   img:'https://upload.wikimedia.org/wikipedia/commons/4/43/Sojourner_Truth_01.jpg',
+   thumb:'https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Sojourner_Truth_01.jpg/600px-Sojourner_Truth_01.jpg',
    photo:commons+'Sojourner_Truth_01.jpg',credit:'Library of Congress historical photograph (1864) — public domain',
    facts:'https://www.nps.gov/people/sojourner-truth.htm'
   },
@@ -148,8 +148,8 @@
    briefAr:'ملكة موسيقى السول التي نشأت في ديترويت وتأثرت بمشهدها الموسيقي.',
    detailEn:'Born in Memphis, Aretha Franklin grew up in Detroit, where she began singing in her father’s church. Her extraordinary voice made her one of the most influential singers in American music, and in 1987 she became the first woman inducted into the Rock & Roll Hall of Fame. Detroit remained central to her life and legacy.',
    detailAr:'وُلدت أريثا فرانكلين في ممفيس ونشأت في ديترويت، حيث بدأت الغناء في كنيسة والدها. جعلها صوتها الاستثنائي واحدة من أكثر الشخصيات تأثيراً في الموسيقى الأمريكية، وأصبحت عام 1987 أول امرأة تنضم إلى قاعة مشاهير الروك آند رول. وظلت ديترويت جزءاً أساسياً من حياتها وإرثها.',
-   img:'https://upload.wikimedia.org/wikipedia/commons/5/5e/Aretha_Franklin_April_2015.jpg',
-   thumb:'https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Aretha_Franklin_April_2015.jpg/600px-Aretha_Franklin_April_2015.jpg',
+   img:'https://upload.wikimedia.org/wikipedia/commons/7/70/Aretha_Franklin_April_2015.jpg',
+   thumb:'https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Aretha_Franklin_April_2015.jpg/600px-Aretha_Franklin_April_2015.jpg',
    photo:commons+'Aretha_Franklin_April_2015.jpg',credit:'Pete Souza / Official White House Photograph (2015) — public domain',
    facts:'https://www.detroithistorical.org/learn/online-research/encyclopedia-of-detroit/franklin-aretha'
   }
@@ -163,7 +163,6 @@
  const locale=()=>document.documentElement.lang==='ar'?'ar':'en';
  const tr=(item,key,l)=>item[key+(l==='ar'?'Ar':'En')];
  function renderCard(item,l){
-  const name=tr(item,'',l)||item[l]; // For explicit name keys use item[l].
   const title=item[l],brief=tr(item,'brief',l),label=tr(item,'label',l),word=dictionary[l].view;
   return `<article class="mi-gallery-card ${item.kind==='person'?'mi-person':''}">
    <button class="mi-gallery-open" type="button" data-mi-story="${esc(item.id)}" aria-label="${esc(word+': '+title)}">
