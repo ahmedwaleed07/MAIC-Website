@@ -57,3 +57,5 @@
  .mi-story-links{gap:7px 16px}
 }
 @media(prefers-reduced-motion:reduce){.mi-gallery-card,.mi-gallery-photo img{transition:none}}
+
+.mi-gallery-unavailable{display:flex;align-items:center;justify-content:center;width:100%;height:100%;padding:14px;color:#f5deab;font:600 16px/1.5 Georgia,'Noto Naskh Arabic',serif;text-align:center}
