@@ -4,3 +4,38 @@
 @media(max-width:1050px){.header-main{flex-wrap:wrap;padding-top:15px;padding-bottom:15px}.header-tools{width:100%;justify-content:space-between}.searchbox{flex:1;max-width:500px}.hero-copy{width:80%}.hero-badges{gap:18px}}
 @media(max-width:650px){.brand{max-width:100%;gap:10px}.brand-crest{width:70px;height:80px}.header-tools{gap:8px}.weather-group{display:none}.searchbox{min-width:150px}.tool-btn{padding:9px;font-size:12px}.hero-copy{width:100%}.hero{min-height:590px}.hero-badges{display:grid;gap:18px;margin-top:35px}.hero-badge{border:0!important}.maic-course-grid,.about-grid{grid-template-columns:1fr}.launch-language-list{grid-template-columns:repeat(2,minmax(0,1fr))}.mega-primary{grid-template-columns:1fr}.mega-menu{top:225px;max-height:calc(100dvh - 240px)}.overlay{inset:220px 0 0}.search-results{top:155px}.agents-select{grid-template-columns:1fr;gap:10px}.agent-contact-list>div{grid-template-columns:1fr;gap:6px}.footer-inner{flex-direction:column}.footer-bottom{flex-direction:column}.inner-copy h1{font-size:40px}.content-panel{padding:23px 18px}.hero-badge{font-family:inherit}.intro-emblems img{width:130px;height:130px}.intro-content{padding:30px 18px}.intro-content h1{font-size:27px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}}
+
+/* Consistent breathing room for public pages, cards, forms and framed copy. */
+:root{--maic-copy-inset:clamp(24px,2.6vw,36px);--maic-page-inset:clamp(24px,4.8vw,84px)}
+.page-pad{padding-inline:var(--maic-page-inset)}
+.content-panel,.feature-card,.maic-advisor-service,.maic-advisor-agent-panel,
+.maic-detail-section,.maic-detail-payment,.maic-enrollment-form,.maic-enroll-explainer,.maic-enroll-summary{
+ padding:var(--maic-copy-inset);min-width:0;overflow-wrap:anywhere
+}
+.content-panel>:first-child,.maic-detail-section>:first-child{margin-top:0}
+.content-panel>:last-child,.maic-detail-section>:last-child{margin-bottom:0}
+.maic-course-card-body,.maic-book-content,.mi-gallery-card-content{padding:var(--maic-copy-inset);min-width:0;overflow-wrap:anywhere}
+.mi-story-copy{padding:var(--maic-copy-inset) var(--maic-copy-inset) calc(var(--maic-copy-inset) + 8px)}
+.maic-detail-fact{padding:22px 24px;min-width:0}
+.maic-agent-card-top{padding:var(--maic-copy-inset);gap:24px}
+.maic-agent-card .agent-contact-list>div{padding:20px var(--maic-copy-inset)}
+.faq-list details{padding:24px var(--maic-copy-inset)}
+.language-list button,.launch-language-list button{padding:14px 20px;gap:14px;white-space:normal;overflow-wrap:anywhere}
+.btn{max-width:100%;white-space:normal;overflow-wrap:anywhere;text-align:center}
+.contact-panel a{max-width:100%;overflow-wrap:anywhere}
+.hero-copy,.inner-copy,.footer-brand{min-width:0;overflow-wrap:anywhere}
+.maic-course-hero-inner,.maic-enrollment-wrap{padding-inline:24px}
+.maic-delivery-option{padding:16px 22px}
+.maic-agent-details{padding-inline:var(--maic-copy-inset);padding-bottom:var(--maic-copy-inset)}
+.intro-content{padding-inline:var(--maic-copy-inset)}
+@media(max-width:650px){
+ .about-grid{grid-template-columns:1fr}
+ .maic-course-card-body,.maic-book-content,.mi-gallery-card-content{padding:24px}
+ .maic-detail-fact{padding:20px 24px}
+ .maic-agent-card .agent-contact-list>div{padding:20px 24px}
+ .faq-list details{padding:22px 24px}
+ .language-list button,.launch-language-list button{padding:14px 18px}
+ .hero-badges{gap:20px}
+ .hero-badge{line-height:1.6}
+ .footer-inner,.footer-bottom{flex-wrap:wrap}
+}
