@@ -9,7 +9,7 @@ const sources = JSON.parse(await readFile(new URL('./library-pdf-sources.json', 
 const ready = Object.create(null);
 const review = [];
 await mkdir(output, { recursive: true });
-await run('python3', ['-m', 'pip', 'install', '--quiet', '--target', '/tmp/maic-pdf-tools', 'pypdf==6.1.3'], {timeout:120000});
+await run('python3', ['-m', 'pip', 'install', '--quiet', '--target', '/tmp/maic-pdf-tools', 'pypdf[crypto]==6.1.3'], {timeout:120000});
 
 
 async function savePdf(book) {
