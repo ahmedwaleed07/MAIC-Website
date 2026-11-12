@@ -195,7 +195,7 @@
     "license": "https://creativecommons.org/licenses/by-sa/4.0/",
     "reviewPublisher": false,
     "allowed": true,
-    "previousUrl": "https://48b3f582.maic-website.pages.dev/library-files/open-book-18.pdf"
+    "previousUrl": "https://165710fd.maic-website.pages.dev/library-files/open-book-18.pdf"
   },
   {
     "id": "open-book-19",
@@ -470,7 +470,7 @@
     "license": "CC BY 4.0",
     "reviewPublisher": false,
     "allowed": true,
-    "previousUrl": "https://48b3f582.maic-website.pages.dev/library-files/open-book-43.pdf"
+    "previousUrl": "https://165710fd.maic-website.pages.dev/library-files/open-book-43.pdf"
   },
   {
     "id": "open-book-44",
@@ -481,7 +481,7 @@
     "license": "CC BY 4.0",
     "reviewPublisher": false,
     "allowed": true,
-    "previousUrl": "https://48b3f582.maic-website.pages.dev/library-files/open-book-44.pdf"
+    "previousUrl": "https://165710fd.maic-website.pages.dev/library-files/open-book-44.pdf"
   },
   {
     "id": "open-book-45",
@@ -492,7 +492,7 @@
     "license": "CC BY 4.0",
     "reviewPublisher": false,
     "allowed": true,
-    "previousUrl": "https://48b3f582.maic-website.pages.dev/library-files/open-book-45.pdf"
+    "previousUrl": "https://165710fd.maic-website.pages.dev/library-files/open-book-45.pdf"
   },
   {
     "id": "open-book-46",
@@ -503,7 +503,7 @@
     "license": "CC BY 4.0",
     "reviewPublisher": false,
     "allowed": true,
-    "previousUrl": "https://48b3f582.maic-website.pages.dev/library-files/open-book-46.pdf"
+    "previousUrl": "https://165710fd.maic-website.pages.dev/library-files/open-book-46.pdf"
   },
   {
     "id": "open-book-47",
@@ -514,7 +514,7 @@
     "license": "NASA • Public use permitted",
     "reviewPublisher": false,
     "allowed": true,
-    "previousUrl": "https://48b3f582.maic-website.pages.dev/library-files/open-book-47.pdf"
+    "previousUrl": "https://165710fd.maic-website.pages.dev/library-files/open-book-47.pdf"
   },
   {
     "id": "open-book-48",
@@ -668,7 +668,7 @@
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "reviewPublisher": false,
     "allowed": true,
-    "previousUrl": null
+    "previousUrl": "https://165710fd.maic-website.pages.dev/library-files/new-cryptography-05.pdf"
   },
   {
     "id": "new-cybersecurity-09",
@@ -701,7 +701,7 @@
     "license": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
     "reviewPublisher": false,
     "allowed": true,
-    "previousUrl": null
+    "previousUrl": "https://165710fd.maic-website.pages.dev/library-files/new-cybersecurity-11.pdf"
   },
   {
     "id": "new-cybersecurity-12",
@@ -712,7 +712,7 @@
     "license": "NIST • U.S. public domain",
     "reviewPublisher": false,
     "allowed": true,
-    "previousUrl": "https://48b3f582.maic-website.pages.dev/library-files/new-cybersecurity-12.pdf"
+    "previousUrl": "https://165710fd.maic-website.pages.dev/library-files/new-cybersecurity-12.pdf"
   },
   {
     "id": "new-cryptography-06",
@@ -1019,8 +1019,8 @@
     "source": "https://pdos.csail.mit.edu/6.828/2023/xv6.html",
     "license": "",
     "reviewPublisher": true,
-    "allowed": false,
-    "previousUrl": null
+    "allowed": true,
+    "previousUrl": "https://165710fd.maic-website.pages.dev/library-files/new-advanced-programming-09.pdf"
   },
   {
     "id": "new-advanced-programming-10",
@@ -1251,7 +1251,7 @@
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "reviewPublisher": false,
     "allowed": true,
-    "previousUrl": null
+    "previousUrl": "https://165710fd.maic-website.pages.dev/library-files/new-telecommunications-06.pdf"
   },
   {
     "id": "new-telecommunications-07",
@@ -1273,7 +1273,7 @@
     "license": "https://creativecommons.org/licenses/by-sa/3.0/",
     "reviewPublisher": false,
     "allowed": true,
-    "previousUrl": null
+    "previousUrl": "https://165710fd.maic-website.pages.dev/library-files/new-telecommunications-08.pdf"
   },
   {
     "id": "new-telecommunications-09",
@@ -1306,7 +1306,7 @@
     "license": "https://creativecommons.org/licenses/by/3.0/",
     "reviewPublisher": false,
     "allowed": true,
-    "previousUrl": null
+    "previousUrl": "https://165710fd.maic-website.pages.dev/library-files/new-telecommunications-11.pdf"
   },
   {
     "id": "new-telecommunications-12",
@@ -1317,7 +1317,7 @@
     "license": "https://creativecommons.org/licenses/by-sa/3.0/",
     "reviewPublisher": false,
     "allowed": true,
-    "previousUrl": "https://48b3f582.maic-website.pages.dev/library-files/new-telecommunications-12.pdf"
+    "previousUrl": "https://165710fd.maic-website.pages.dev/library-files/new-telecommunications-12.pdf"
   },
   {
     "id": "human-translation-01",
@@ -1460,7 +1460,7 @@
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "reviewPublisher": false,
     "allowed": true,
-    "previousUrl": "https://48b3f582.maic-website.pages.dev/library-files/human-marketing-04.pdf"
+    "previousUrl": "https://165710fd.maic-website.pages.dev/library-files/human-marketing-04.pdf"
   },
   {
     "id": "human-marketing-05",
@@ -1504,7 +1504,7 @@
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "reviewPublisher": false,
     "allowed": true,
-    "previousUrl": "https://48b3f582.maic-website.pages.dev/library-files/human-marketing-08.pdf"
+    "previousUrl": "https://165710fd.maic-website.pages.dev/library-files/human-marketing-08.pdf"
   },
   {
     "id": "human-public-relations-01",
@@ -1801,7 +1801,7 @@
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "reviewPublisher": false,
     "allowed": true,
-    "previousUrl": null
+    "previousUrl": "https://165710fd.maic-website.pages.dev/library-files/human-hr-08.pdf"
   },
   {
     "id": "human-hr-09",
