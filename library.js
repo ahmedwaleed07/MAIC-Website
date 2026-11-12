@@ -29,13 +29,41 @@ function maicBookLanguage(code){
  if(typeof code!=='string'||!/^[-a-zA-Z0-9]{2,20}$/.test(code))return t('bookNotStated');
  try{const label=new Intl.DisplayNames([state.lang],{type:'language',fallback:'none'}).of(code);return label||t('bookNotStated')}catch{return t('bookNotStated')}
 }
-function libraryPageTitle(){const c=MAIC_LIBRARY_CATEGORIES.find(c=>state.page==='library:'+c.id);return c?libraryCategoryName(c):t('library')}
+function libraryPageTitle(){if(state.page.startsWith('library:read:')){const book=maicReaderBook();return book?maicContentText(book,'title'):t('notFound')}const c=MAIC_LIBRARY_CATEGORIES.find(c=>state.page==='library:'+c.id);return c?libraryCategoryName(c):t('library')}
 function maicBookCover(book,title){
  const url=/^https:\/\//i.test(book.coverUrl||'')?book.coverUrl:'';
  return '<div class="maic-book-cover" role="img" aria-label="'+escapeHTML(t('bookCover')+': '+title)+'"><div class="maic-leather-book" aria-hidden="true"><span class="maic-cover-brand">MAIC</span><span class="maic-cover-ornament">✦</span><span class="maic-cover-title" dir="auto">'+escapeHTML(title)+'</span><span class="maic-cover-ornament">✦</span><span class="maic-cover-motto">Innovate. Create. Lead.</span></div>'+(url?'<img class="maic-original-cover" src="'+escapeHTML(url)+'" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">':'')+'</div>';
 }
 document.addEventListener('error',event=>{if(event.target?.classList?.contains('maic-original-cover'))event.target.remove()},true);
+function maicReaderBook() {
+ const id=state.page.slice('library:read:'.length);
+ return maicLibraryBooks.find(book=>book.id===id&&maicBookVisible(book));
+}
+function maicHostedBook(book) {
+ if (book.access!=='free'||!/^[a-z0-9-]+$/.test(book.id)) return null;
+ const edition=window.MAIC_HOSTED_BOOKS?.[book.id];
+ return edition?.catalogUrl===book.freeUrl?edition:null;
+}
+function maicReaderText(english,arabic) {
+ return state.lang==='ar'?arabic:tx(english);
+}
+function renderBookReader() {
+ const book=maicReaderBook();
+ if (!book) return renderNotFound();
+ const title=maicContentText(book,'title');
+ const back='<div class="detail-back">'+action('library:'+book.category,'backLibrary')+'</div>';
+ const edition=maicHostedBook(book);
+ if (!edition) {
+  const message=maicReaderText('A copy is not currently available to read on MAIC.','لا تتوفر حالياً نسخة للقراءة داخل موقع الأكاديمية.');
+  return pageShell(title,maicContentText(book,'description'),back+'<p class="content-panel">'+escapeHTML(message)+'</p>');
+ }
+ const file='/library-files/'+book.id+'.pdf';
+ const license=edition.license.replace(/^https:\/\/creativecommons\.org\/licenses\/([a-z-]+)\/([\d.]+)\/$/i,(_,name,version)=>'CC '+name.toUpperCase()+' '+version);
+ const details=[book.author,book.publisher,license,edition.source].filter(Boolean).map(text=>'<bdi>'+escapeHTML(text)+'</bdi>').join(' · ');
+ return pageShell(title,'',back+'<section class="content-panel maic-book-reader"><p class="maic-book-reader-credit">'+details+'</p><iframe src="'+file+'" title="'+escapeHTML(title)+'" class="maic-book-pdf"></iframe><a class="btn" href="'+file+'">'+escapeHTML(maicReaderText('Open PDF directly','فتح ملف PDF مباشرة'))+icon('book')+'</a></section>');
+}
 function renderLibrary(){
+ if(state.page.startsWith('library:read:'))return renderBookReader();
  const category=state.page.startsWith('library:')?MAIC_LIBRARY_CATEGORIES.find(c=>c.id===state.page.slice(8)):null;
  if(state.page.startsWith('library:')&&!category)return renderNotFound();
  if(!category)return pageShell(t('library'),t('libraryIntro'),'<div class="maic-library-grid">'+MAIC_LIBRARY_CATEGORIES.map(c=>'<article class="content-panel maic-specialty"><span class="maic-library-glyph">'+icon('book')+'</span><h2>'+escapeHTML(libraryCategoryName(c))+'</h2><button class="btn" type="button" data-nav="library:'+c.id+'">'+escapeHTML(t('exploreBooks'))+icon('chevron')+'</button></article>').join('')+'</div>');
@@ -44,15 +72,15 @@ function renderLibrary(){
  const cards=books.map(b=>{
  const title=maicContentText(b,'title'),description=maicContentText(b,'description');
  const price=b.access==='free'?t('free'):new Intl.NumberFormat(state.lang,{style:'currency',currency:b.currency||'USD'}).format(Number(b.price));
- const assigned=maicAssignAgent(state.selectedCountry),email=assigned?.agent?.email||CONTACT;
- const safeFree=b.access==='free'&&/^https:\/\//i.test(b.freeUrl||'');
- const href=safeFree?b.freeUrl:'mailto:'+email+'?subject='+encodeURIComponent('MAIC Library — '+(b.titleEn||b.titleAr));
+ const href='#library:read:'+encodeURIComponent(b.id);
+ const hosted=maicHostedBook(b);
+ const label=hosted?t('readBook'):maicReaderText('Book details','تفاصيل الكتاب');
+ const status=hosted?'':'<p class="maic-book-availability">'+escapeHTML(maicReaderText('No copy available on MAIC yet','لا تتوفر نسخة داخل الموقع حالياً'))+'</p>';
  const lang=maicBookLanguage(b.language);
  const row=(label,value)=>'<div><dt>'+escapeHTML(t(label))+'</dt><dd dir="auto">'+escapeHTML(value||t('bookNotStated'))+'</dd></div>';
  const metadata='<dl class="maic-book-metadata">'+row('bookAuthor',b.author)+row('bookYear',b.year)+row('bookSpecialty',libraryCategoryName(category))+row('bookPublisher',b.publisher)+row('bookLanguage',lang)+'</dl>';
  const bio=maicContentText(b,'authorBio')||t('bookBioUnavailable');
- const provenance=/^https:\/\//i.test(b.sourceUrl||'')?'<a class="maic-book-source" href="'+escapeHTML(b.sourceUrl)+'" target="_blank" rel="noopener noreferrer">'+escapeHTML(t('bookSource'))+icon('external')+'</a>':'';
- return '<article class="content-panel maic-book-card">'+maicBookCover(b,title)+'<div class="maic-book-content"><span class="maic-course-badge">'+escapeHTML(price)+'</span><h2>'+escapeHTML(formatHeading(title))+'</h2>'+metadata+'<p class="maic-book-summary" dir="auto">'+escapeHTML(description)+'</p><details class="maic-author-bio"><summary>'+escapeHTML(t('bookAboutAuthor'))+'</summary><p dir="auto">'+escapeHTML(bio)+'</p></details>'+provenance+'<a class="btn btn-gold" href="'+escapeHTML(href)+'" '+(safeFree?'target="_blank" rel="noopener noreferrer"':'')+'>'+escapeHTML(t(safeFree?'readBook':'requestBook'))+icon(safeFree?'external':'mail')+'</a></div></article>';
+ return '<article class="content-panel maic-book-card"><a class="maic-book-cover-link" href="'+escapeHTML(href)+'" aria-label="'+escapeHTML(label+': '+title)+'">'+maicBookCover(b,title)+'</a><div class="maic-book-content"><span class="maic-course-badge">'+escapeHTML(price)+'</span><h2><a href="'+escapeHTML(href)+'">'+escapeHTML(formatHeading(title))+'</a></h2>'+metadata+'<p class="maic-book-summary" dir="auto">'+escapeHTML(description)+'</p><details class="maic-author-bio"><summary>'+escapeHTML(t('bookAboutAuthor'))+'</summary><p dir="auto">'+escapeHTML(bio)+'</p></details>'+status+'<a class="btn btn-gold" href="'+escapeHTML(href)+'">'+escapeHTML(label)+icon('book')+'</a></div></article>';
  }).join('');
  return pageShell(libraryCategoryName(category),'','<div class="detail-back">'+action('library','backLibrary')+'</div><div class="maic-book-filters" role="group" aria-label="'+escapeHTML(t('library'))+'">'+filters+'</div><div class="maic-library-grid" aria-live="polite">'+(cards||'<p class="content-panel">'+escapeHTML(t('noBooks'))+'</p>')+'</div>');
 }
