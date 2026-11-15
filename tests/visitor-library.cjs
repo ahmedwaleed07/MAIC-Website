@@ -11,8 +11,23 @@ vm.runInContext(fs.readFileSync('library.js','utf8')+'\n'+fs.readFileSync('app.j
 ui.en=JSON.parse(fs.readFileSync('i18n/en-US.json'));vm.runInContext('englishPack=en;languagePack=en;state.lang="en-US";state.page="library:business";maicAssignAgent=()=>null;',ui);
 const now=Date.now();ui.now=now;
 for(const [message,country,expected] of [[{active:true,countries:['IQ']},'IQ',true],[{active:true,countries:['IQ']},'US',false],[{active:true,countries:[]},'US',true],[{active:false,countries:[]},'IQ',false],[{active:true,countries:[],startsAt:new Date(now+10000).toISOString()},'IQ',false],[{active:true,countries:[],endsAt:new Date(now-10000).toISOString()},'IQ',false]]){ui.message=message;ui.country=country;assert.equal(vm.runInContext('maicCountryMessageVisible(message,country,now)',ui),expected)}
-ui.fixtureBooks=[free,clean.books[1]];vm.runInContext('maicLibraryBooks=fixtureBooks;',ui);const html=vm.runInContext('renderLibrary()',ui);assert(html.includes('Read book'));assert(html.includes('Ask about this book'));assert(!html.includes('paid-private.pdf'));
-vm.runInContext('maicBookFilter="free";',ui);assert(!vm.runInContext('renderLibrary()',ui).includes('Ask about this book'));
+ui.fixtureBooks=[free,clean.books[1]];
+ui.window.MAIC_HOSTED_BOOKS={'free-book':{catalogUrl:free.freeUrl,license:'CC BY 4.0',source:'Publisher'}};
+vm.runInContext('maicLibraryBooks=fixtureBooks;',ui);
+const html=vm.runInContext('renderLibrary()',ui);
+assert(html.includes('Read book'));
+assert(html.includes('Book details'));
+assert(!html.includes('example.com'));
+assert([...html.matchAll(/<a\b[^>]*href="([^"]+)"/g)].every(([,href])=>href.startsWith('#library:read:')));
+vm.runInContext('maicBookFilter="free";',ui);
+assert(!vm.runInContext('renderLibrary()',ui).includes('#library:read:paid-book'));
+vm.runInContext('state.page="library:read:free-book";',ui);
+const reader=vm.runInContext('renderLibrary()',ui);
+assert(reader.includes('data-file="/library-files/free-book.pdf"'));
+assert(!/<iframe|<a |https:\/\//.test(reader));
+vm.runInContext('state.page="library:read:paid-book";',ui);
+assert(vm.runInContext('renderLibrary()',ui).includes('A copy is not currently available to read on MAIC.'));
+vm.runInContext('state.page="library:business";',ui);
 for(const file of fs.readdirSync('i18n')){const pack=JSON.parse(fs.readFileSync('i18n/'+file));for(const key of ['library','libraryIntro','libraryBusiness','libraryOrganizations','exploreBooks','free','paid','allBooks','noBooks','readBook','requestBook','backLibrary','preferenceHint'])assert(pack.ui[key],file+':'+key)}
 console.log('PASS: legacy catalogs, free/paid validation, paid-link privacy, country targeting and schedule, library filters, 29 locale packs');
 const catalog=JSON.parse(fs.readFileSync('data/library-books.json')).filter(b=>!b.id.startsWith('human-'));assert.equal(catalog.length,120);

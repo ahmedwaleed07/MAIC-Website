@@ -1,5 +1,7 @@
 import { execFile } from 'node:child_process';
-import { mkdir, readFile, rename, rm, stat, writeFile } from 'node:fs/promises';
+import { mkdir, mkdtemp, readFile, rename, rm, stat, writeFile } from 'node:fs/promises';
+import { tmpdir } from 'node:os';
+import { join } from 'node:path';
 import { promisify } from 'node:util';
 
 const run = promisify(execFile);
@@ -10,6 +12,33 @@ const ready = Object.create(null);
 const review = [];
 await mkdir(output, { recursive: true });
 await run('python3', ['-m', 'pip', 'install', '--quiet', '--target', '/tmp/maic-pdf-tools', 'pypdf[crypto]==6.1.3'], {timeout:120000});
+
+const rendererTemp = await mkdtemp(join(tmpdir(), 'maic-pdfjs-'));
+try {
+  const pdfjsVersion = '6.5.438';
+  await run('npm', ['pack', 'pdfjs-dist@' + pdfjsVersion, '--pack-destination', rendererTemp, '--silent'], { timeout: 120000 });
+  const rendererPath = output + '/pdfjs';
+  await mkdir(rendererPath, { recursive: true });
+  await run('tar', [
+    '-xzf', join(rendererTemp, 'pdfjs-dist-' + pdfjsVersion + '.tgz'),
+    '-C', rendererPath, '--strip-components=1',
+    'package/LICENSE', 'package/cmaps', 'package/standard_fonts', 'package/wasm', 'package/iccs'
+  ]);
+  await run('tar', [
+    '-xzf', join(rendererTemp, 'pdfjs-dist-' + pdfjsVersion + '.tgz'),
+    '-C', rendererPath, '--strip-components=3',
+    'package/legacy/build/pdf.min.mjs', 'package/legacy/build/pdf.worker.min.mjs'
+  ]);
+} finally {
+  await rm(rendererTemp, { recursive: true, force: true });
+}
+
+// Reuse verified copies from the last published build if an upstream source changes.
+const previousDeployment = 'https://9194865f.maic-website.pages.dev/library-files/';
+const { stdout: previousManifest } = await run('curl', [
+  '--fail', '--silent', '--show-error', '--max-time', '30', previousDeployment + 'manifest.js'
+]);
+const previouslyHosted = JSON.parse(previousManifest.replace(/^window\.MAIC_HOSTED_BOOKS = /, '').trim().replace(/;$/, ''));
 
 
 async function savePdf(book) {
@@ -23,10 +52,12 @@ async function savePdf(book) {
   const destination = output + '/' + book.id + '.pdf';
   const temporary = destination + '.tmp';
   try {
+    const published = previouslyHosted[book.id];
+    const reuse = published?.catalogUrl === book.catalogUrl && published.license;
     await run('curl', [
-      '--fail', '--silent', '--show-error', '--location', '--max-redirs', '6',
+      '--fail', '--silent', '--show-error', '--location', '--max-redirs', '6', '--retry', '2',
       '--proto', '=https', '--proto-redir', '=https', '--max-time', '35',
-      '--max-filesize', String(maxBytes), '--output', temporary, book.previousUrl || book.downloadUrl
+      '--max-filesize', String(maxBytes), '--output', temporary, reuse ? previousDeployment + book.id + '.pdf' : book.previousUrl || book.downloadUrl
     ]);
     const { size } = await stat(temporary);
     const bytes = await readFile(temporary);
@@ -34,7 +65,9 @@ async function savePdf(book) {
         !bytes.subarray(-2048).includes(Buffer.from('%%EOF'))) {
       throw new Error('Source did not return a complete PDF within the Pages size limit');
     }
-    if (!book.allowed) {
+    if (reuse) {
+      book.license = published.license;
+    } else if (!book.allowed) {
       const result = await run('python3', ['scripts/check-library-license.py', temporary], {
         env: { ...process.env, PYTHONPATH: '/tmp/maic-pdf-tools' }, timeout: 45000, maxBuffer: 2 * 1024 * 1024
       });
@@ -60,7 +93,8 @@ async function savePdf(book) {
 for (let index = 0; index < sources.length; index += 10) {
   await Promise.all(sources.slice(index, index + 10).map(savePdf));
 }
-if (Object.keys(ready).length < 17) throw new Error('No licensed library PDFs could be prepared');
+const missingBooks = Object.keys(previouslyHosted).filter(id => sources.some(book => book.id === id && book.catalogUrl === previouslyHosted[id].catalogUrl) && !ready[id]);
+if (missingBooks.length) throw new Error('Previously hosted books are missing: ' + missingBooks.join(', '));
 await writeFile(output + '/manifest.js', 'window.MAIC_HOSTED_BOOKS = ' + JSON.stringify(ready) + ';\n');
 console.log('Hosted library books: ' + Object.keys(ready).length);
 

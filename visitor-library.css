@@ -10,4 +10,7 @@
 .maic-book-content h2 a{color:inherit}
 .maic-book-content h2 a:hover{text-decoration:underline;text-underline-offset:4px}
 .maic-book-availability,.maic-book-reader-credit{color:#cfdae2;font-size:.875rem;overflow-wrap:anywhere}
-.maic-book-pdf{display:block;width:100%;height:clamp(360px,74dvh,1050px);border:1px solid var(--border);border-radius:6px;background:#fff;margin:16px 0}
+maic-pdf-reader{display:block;margin-block:16px}
+.maic-pdf-controls:not([hidden]){display:flex;align-items:center;justify-content:center;gap:12px;flex-wrap:wrap;margin-block:16px}
+.maic-pdf-controls button:disabled{opacity:.55;cursor:default}
+maic-pdf-reader canvas:not([hidden]){display:block;margin-inline:auto;width:100%;max-width:1000px;height:auto;background:white;border-radius:4px}

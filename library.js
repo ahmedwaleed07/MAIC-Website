@@ -60,7 +60,14 @@ function renderBookReader() {
  const file='/library-files/'+book.id+'.pdf';
  const license=edition.license.replace(/^https:\/\/creativecommons\.org\/licenses\/([a-z-]+)\/([\d.]+)\/$/i,(_,name,version)=>'CC '+name.toUpperCase()+' '+version);
  const details=[book.author,book.publisher,license,edition.source].filter(Boolean).map(text=>'<bdi>'+escapeHTML(text)+'</bdi>').join(' · ');
- return pageShell(title,'',back+'<section class="content-panel maic-book-reader"><p class="maic-book-reader-credit">'+details+'</p><iframe src="'+file+'" title="'+escapeHTML(title)+'" class="maic-book-pdf"></iframe><a class="btn" href="'+file+'">'+escapeHTML(maicReaderText('Open PDF directly','فتح ملف PDF مباشرة'))+icon('book')+'</a></section>');
+ const previous=escapeHTML(maicReaderText('Previous page','الصفحة السابقة'));
+ const next=escapeHTML(maicReaderText('Next page','الصفحة التالية'));
+ return pageShell(title,'',back+'<section class="content-panel maic-book-reader"><p class="maic-book-reader-credit">'+details+'</p>'+
+  '<maic-pdf-reader data-file="'+file+'" data-error="'+escapeHTML(t('networkError'))+'" aria-label="'+escapeHTML(title)+'">'+
+  '<p data-pdf-status role="status">'+escapeHTML(t('loading'))+'</p>'+
+  '<div class="maic-pdf-controls" hidden><button class="btn" type="button" data-pdf-previous>'+previous+'</button>'+
+  '<output aria-live="polite"></output><button class="btn" type="button" data-pdf-next>'+next+'</button></div>'+
+  '<canvas hidden></canvas></maic-pdf-reader></section>');
 }
 function renderLibrary(){
  if(state.page.startsWith('library:read:'))return renderBookReader();
