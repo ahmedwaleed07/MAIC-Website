@@ -9,7 +9,7 @@ const E=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt
 let lang='en-US';try{const v=localStorage.getItem('maic_lang');if(words[v])lang=v;}catch{}
 const supported=new Set(languageOptions.map(row=>row[0]));if(!supported.has(lang))lang='en-US';
 const languageSelect=document.querySelector('#language');languageSelect.innerHTML=languageOptions.map(([id,name])=>`<option value="${E(id)}">${E(name)}</option>`).join('');
-let mode='login',current=null,courses=[],enabledExamCourses=new Set();const target=new URL(location.href).searchParams.get('course')||'';
+let mode=new URLSearchParams(location.search).get('mode')==='register'?'register':'login',current=null,courses=[],enabledExamCourses=new Set();const target=new URL(location.href).searchParams.get('course')||'';
 const t=k=>words[lang][k];
 const takeExamText=()=>lang==='ar'?'أدِّ الاختبار':lang==='ku'?'تاقیکردنەوەکە ئەنجام بدە':'Take the Exam';
 function renderExamAction(c){
