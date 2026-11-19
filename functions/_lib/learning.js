@@ -30,7 +30,7 @@ export async function body(request){
 export function profile(d){
  const str=(k,max)=>typeof d[k]==='string'?d[k].trim().slice(0,max):'';
  const firstName=str('firstName',80),middleName=str('middleName',80),lastName=str('lastName',80),email=str('email',254).toLowerCase(),dob=str('dob',10),country=str('country',2).toUpperCase(),phone=str('phone',40),education=str('education',160),password=d.password;
- if(!firstName||!lastName||!/^\S+@\S+\.\S+$/.test(email)||!/^\d{4}-\d{2}-\d{2}$/.test(dob)||!/^\+?[\d ()-]{7,40}$/.test(phone)||!education||typeof password!=='string'||password.length<12||password.length>200)throw Error('Invalid profile');
+ if(!firstName||!lastName||!/^\S+@\S+\.\S+$/.test(email)||!/^\d{4}-\d{2}-\d{2}$/.test(dob)||!/^\+?[\d ()-]{7,40}$/.test(phone)||!education||typeof password!=='string'||password.length<8||!/[\p{P}\p{S}]/u.test(password)||password.length>200)throw Error('Invalid profile');
  const date=new Date(dob+'T00:00:00Z');if(isNaN(date)||date.toISOString().slice(0,10)!==dob||date>=new Date()||date.getUTCFullYear()<1900)throw Error('Invalid birth date');
  try{if(!new Intl.DisplayNames(['en'],{type:'region',fallback:'none'}).of(country)||!/^[A-Z]{2}$/.test(country))throw Error();}catch{throw Error('Invalid country');}
  return {firstName,middleName,lastName,email,dob,country,phone,education,password};

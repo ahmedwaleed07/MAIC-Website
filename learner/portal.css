@@ -5,3 +5,5 @@
 .exam-locked{display:inline-flex;align-items:flex-start;gap:9px;margin-top:10px;padding:11px 14px;border:1px solid #937c53;border-radius:7px;background:#183448;color:#e5d8bf;line-height:1.5;max-width:100%;font-size:14px}
 .exam-locked-icon{color:#e3c084;font-size:14px;line-height:1.6}
 .exam-request-locked{display:block;color:#d1bd93;margin-top:5px}
+
+header #language{width:auto;max-width: min(42vw, 10rem);min-height:38px;padding:6px 10px;border:1px solid #c8a563;border-radius:20px;background:#102c3d;color:#f1d9a9;font:600 .87rem/1.4 system-ui;cursor:pointer;color-scheme:dark}
