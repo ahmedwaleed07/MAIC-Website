@@ -12,14 +12,14 @@ export async function derive(password,salt,pepper){
  return hex(await crypto.subtle.deriveBits({name:'PBKDF2',salt:Uint8Array.from(salt.match(/../g),x=>parseInt(x,16)),iterations:100000,hash:'SHA-256'},key,256));
 }
 export function same(a,b){if(a.length!==b.length)return false;let diff=0;for(let i=0;i<a.length;i++)diff|=a.charCodeAt(i)^b.charCodeAt(i);return diff===0;}
-export const cookie=t=>'__Host-maic_learner='+t+'; Secure; HttpOnly; SameSite=Strict; Path=/; Max-Age=28800';
+export const cookie=(t,remember=false)=>'__Host-maic_learner='+t+'; Secure; HttpOnly; SameSite=Strict; Path=/'+(remember?'; Max-Age=2592000':'');
 export const clearCookie='__Host-maic_learner=; Secure; HttpOnly; SameSite=Strict; Path=/; Max-Age=0';
 export async function session(request,env){
  const token=(request.headers.get('Cookie')||'').match(/(?:^|;\s*)__Host-maic_learner=([a-f0-9]{64})(?:;|$)/)?.[1];
  if(!token)return null;
  return env.MAIC_DB.prepare('SELECT s.id,s.email,s.first_name,s.last_name,s.country FROM learning_sessions t JOIN learning_students s ON s.id=t.student_id WHERE t.token_hash=? AND t.expires_at>? AND s.enabled=1').bind(await hash(token),Math.floor(Date.now()/1000)).first();
 }
-export async function createSession(db,id){const token=randomHex(32);await db.batch([db.prepare('DELETE FROM learning_sessions WHERE student_id=? AND expires_at<=?').bind(id,Math.floor(Date.now()/1000)),db.prepare('INSERT INTO learning_sessions(token_hash,student_id,expires_at) VALUES(?,?,?)').bind(await hash(token),id,Math.floor(Date.now()/1000)+28800)]);return token;}
+export async function createSession(db,id,remember=false){const token=randomHex(32);await db.batch([db.prepare('DELETE FROM learning_sessions WHERE student_id=? AND expires_at<=?').bind(id,Math.floor(Date.now()/1000)),db.prepare('INSERT INTO learning_sessions(token_hash,student_id,expires_at) VALUES(?,?,?)').bind(await hash(token),id,Math.floor(Date.now()/1000)+(remember?2592000:28800))]);return token;}
 export async function limited(request,db,kind,limit){const now=Math.floor(Date.now()/1000),key=await hash(kind+':'+(request.headers.get('CF-Connecting-IP')||'unknown'));const row=await db.prepare('INSERT INTO learning_rate_limits(subject,attempts,window_start) VALUES(?,1,?) ON CONFLICT(subject) DO UPDATE SET attempts=CASE WHEN window_start<=? THEN 1 ELSE attempts+1 END,window_start=CASE WHEN window_start<=? THEN excluded.window_start ELSE window_start END RETURNING attempts').bind(key,now,now-900,now-900).first();return row.attempts>limit;}
 export async function body(request){
  if(Number(request.headers.get('Content-Length')||0)>12000)throw Error('Invalid body');

@@ -1,0 +1,1 @@
+CREATE TABLE IF NOT EXISTS learning_pending_signups (token_hash TEXT PRIMARY KEY, email TEXT NOT NULL, profile_json TEXT NOT NULL, password_salt TEXT NOT NULL, password_hash TEXT NOT NULL, expires_at INTEGER NOT NULL);

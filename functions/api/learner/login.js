@@ -8,6 +8,7 @@ export async function onRequestPost({request,env}){
   const s=await env.MAIC_DB.prepare('SELECT id,password_salt,password_hash,enabled FROM learning_students WHERE email=?').bind(d.email.trim().toLowerCase()).first();
   const digest=await derive(d.password,s?.password_salt||'00000000000000000000000000000000',env.MAIC_SESSION_SECRET);
   if(!s||!same(digest,s.password_hash)||!s.enabled)return json({error:'credentials'},401);
-  const token=await createSession(env.MAIC_DB,s.id);return json({authenticated:true},200,{'Set-Cookie':cookie(token)});
+  const remember=d.remember==='on'||d.remember===true;
+  const token=await createSession(env.MAIC_DB,s.id,remember);return json({authenticated:true},200,{'Set-Cookie':cookie(token,remember)});
  }catch{return json({error:'unavailable'},503);}
 }

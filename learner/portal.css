@@ -7,3 +7,5 @@
 .exam-request-locked{display:block;color:#d1bd93;margin-top:5px}
 
 header #language{width:auto;max-width: min(42vw, 10rem);min-height:38px;padding:6px 10px;border:1px solid #c8a563;border-radius:20px;background:#102c3d;color:#f1d9a9;font:600 .87rem/1.4 system-ui;cursor:pointer;color-scheme:dark}
+
+#account .signup-actions{justify-content:center}#account .remember{display:flex;align-items:center;gap:.55rem;grid-column:1/-1}#account .remember input{width:1.1rem;height:1.1rem;accent-color:#c7a565}

@@ -1,12 +1,21 @@
-import {json,validOrigin,body,profile,limited,derive,randomHex} from '../../_lib/learning.js';
+import {json,validOrigin,body,profile,limited,derive,randomHex,hash} from '../../_lib/learning.js';
 export async function onRequestPost({request,env}){
  if(!validOrigin(request))return json({error:'origin'},403);
  try{
   if(await limited(request,env.MAIC_DB,'register',8))return json({error:'rate'},429);
-  let p;try{p=profile(await body(request));}catch{return json({error:'profile'},400);}
-  const salt=randomHex(16),digest=await derive(p.password,salt,env.MAIC_SESSION_SECRET);
-  await env.MAIC_DB.prepare('INSERT INTO learning_students(id,email,first_name,middle_name,last_name,dob,country,phone,education,password_salt,password_hash) VALUES(?,?,?,?,?,?,?,?,?,?,?) ON CONFLICT(email) DO NOTHING').bind(crypto.randomUUID(),p.email,p.firstName,p.middleName,p.lastName,p.dob,p.country,p.phone,p.education,salt,digest).run();
-  // Identical response for existing addresses; registering never grants course access.
+  let p;try{const d=await body(request);if(d.confirmPassword!==d.password)throw Error();p=profile(d);}catch{return json({error:'profile'},400);}
+  const db=env.MAIC_DB;
+  if(!await db.prepare('SELECT 1 FROM learning_students WHERE email=?').bind(p.email).first()){
+   const {password,...details}=p;
+   const salt=randomHex(16), token=randomHex(32), key=await hash(token);
+   const digest=await derive(password,salt,env.MAIC_SESSION_SECRET);
+   await db.batch([
+    db.prepare('DELETE FROM learning_pending_signups WHERE expires_at<=unixepoch()'),
+    db.prepare('INSERT INTO learning_pending_signups VALUES(?,?,?,?,?,unixepoch()+86400)').bind(key,p.email,JSON.stringify(details),salt,digest)
+   ]);
+   const sent=await env.ACCOUNT_MAILER.fetch('https://mailer.internal/confirm',{method:'POST',body:JSON.stringify({email:p.email,token})});
+   if(!sent.ok)throw Error('mail unavailable');
+  }
   return json({accepted:true},202);
  }catch{return json({error:'unavailable'},503);}
 }
