@@ -16,8 +16,28 @@ header #language{width:auto;max-width: min(42vw, 10rem);min-height:38px;padding:
 .profile-tools .secondary{display:inline-flex;align-items:center;justify-content:center;border-radius:2rem;padding:.42rem .85rem;font-size:.85rem;line-height:1.4;color:#eed4a3;border-color:#a1844c}
 .profile-tools #logout{border-color:transparent;color:#d8dfe2}
 .profile-tools .secondary:hover,.course-picker summary:hover{background:#203b4b}
-.course-picker{border:1px solid #a1844c;border-radius:.7rem;background:#081f30;color:#f4e5ca}
-.course-picker summary{cursor:pointer;padding:.65rem 1rem;border-radius:inherit}
+.course-picker{overflow:hidden;border:1px solid #a1844c;border-radius:.7rem;background:#081f30;color:#f4e5ca}
+.course-picker summary{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:1rem;
+  cursor:pointer;
+  padding:.65rem 1rem;
+  list-style:none;
+  overflow-wrap:anywhere;
+}
+.course-picker summary::-webkit-details-marker{display:none}
+.course-picker summary::after{
+  content:"";
+  flex:0 0 .5rem;
+  height:.5rem;
+  border:solid #e2bd78;
+  border-width:0 2px 2px 0;
+  transform:rotate(45deg);
+}
+.course-picker[open] summary::after{transform:rotate(225deg)}
+.course-picker summary:focus-visible{outline:2px solid #fff0bf;outline-offset:-3px;border-radius:.65rem}
 .course-picker fieldset{min-width:0;max-height:17rem;overflow:auto;margin:0;padding:.4rem;border:0;border-top:1px solid #745f3c}
 .course-picker legend{position:absolute;clip-path:inset(50%);width:1px;height:1px;overflow:hidden}
 .course-picker label{display:flex;align-items:center;gap:.65rem;padding:.45rem .65rem;cursor:pointer;border-radius:.35rem}
