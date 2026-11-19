@@ -78,3 +78,5 @@
 .maic-course-mode-notice{margin:12px 0 25px;color:#e5c991;font-size:15px;line-height:1.65}
 @media(max-width:830px){.maic-mode-filter-list{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:520px){.maic-mode-filter-list{grid-template-columns:1fr;gap:18px}.maic-mode-filter-item{gap:5px}}
+
+.maic-course-photo-project-management{background-image:url('./assets/course-project-management.webp');background-size:cover;background-position:center}

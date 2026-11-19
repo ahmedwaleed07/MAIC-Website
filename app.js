@@ -29,7 +29,7 @@ function courseDuration(c){
  return tx(c.duration||'')||t('toConfirm');
 }
 function catalogCard(c){
- const slot=['management','marketing','hr'].includes(c.imageSlot)?c.imageSlot:'';
+ const slot=c.id==='project-management'?'project-management':['management','marketing','hr'].includes(c.imageSlot)?c.imageSlot:'';
  const photo=slot?`<div class="maic-course-photo maic-course-photo-${slot}" role="img" aria-label="${escapeHTML(courseName(c))}"></div>`:'';
  const durationLabel=t(c.durationProposed?'proposedDuration':'duration');
  return `<article class="maic-course-tile maic-approved-card">${photo}<div class="maic-course-card-body"><h3>${escapeHTML(formatHeading(courseName(c)))}</h3><span class="maic-course-area">${escapeHTML(field(c,'area'))}</span><p class="maic-course-description">${escapeHTML(field(c,'description'))}</p><dl class="maic-course-card-facts"><div>${icon('time')}<dt>${escapeHTML(durationLabel)}</dt><dd>${escapeHTML(courseDuration(c))}</dd></div><div>${icon('laptop')}<dt>${escapeHTML(t('format'))}</dt><dd>${escapeHTML(c.mode.map(m=>t(m)).join(' · '))}</dd></div></dl><span class="maic-course-badge">${escapeHTML(t(c.status==='preparing'?'preparing':'published'))}</span><button type="button" class="btn maic-course-detail-button" data-nav="course:${escapeHTML(c.id)}">${escapeHTML(t('courseDetails'))}${icon('chevron')}</button></div></article>`;
