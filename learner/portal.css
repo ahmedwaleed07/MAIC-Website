@@ -9,3 +9,17 @@
 header #language{width:auto;max-width: min(42vw, 10rem);min-height:38px;padding:6px 10px;border:1px solid #c8a563;border-radius:20px;background:#102c3d;color:#f1d9a9;font:600 .87rem/1.4 system-ui;cursor:pointer;color-scheme:dark}
 
 #account .signup-actions{justify-content:center}#account .remember{display:flex;align-items:center;gap:.55rem;grid-column:1/-1}#account .remember input{width:1.1rem;height:1.1rem;accent-color:#c7a565}
+
+.profile-heading,.profile-tools{display:flex;align-items:center;flex-wrap:wrap;gap:.5rem}
+.profile-heading{justify-content:space-between;gap:.8rem}
+.profile-heading h1{margin:0}
+.profile-tools .secondary{display:inline-flex;align-items:center;justify-content:center;border-radius:2rem;padding:.42rem .85rem;font-size:.85rem;line-height:1.4;color:#eed4a3;border-color:#a1844c}
+.profile-tools #logout{border-color:transparent;color:#d8dfe2}
+.profile-tools .secondary:hover,.course-picker summary:hover{background:#203b4b}
+.course-picker{border:1px solid #a1844c;border-radius:.7rem;background:#081f30;color:#f4e5ca}
+.course-picker summary{cursor:pointer;padding:.65rem 1rem;border-radius:inherit}
+.course-picker fieldset{min-width:0;max-height:17rem;overflow:auto;margin:0;padding:.4rem;border:0;border-top:1px solid #745f3c}
+.course-picker legend{position:absolute;clip-path:inset(50%);width:1px;height:1px;overflow:hidden}
+.course-picker label{display:flex;align-items:center;gap:.65rem;padding:.45rem .65rem;cursor:pointer;border-radius:.35rem}
+.course-picker input{width:1rem;accent-color:#ddbc7e}
+.course-picker label:hover,.course-picker label:focus-within,.course-picker label:has(:checked){background:#274151;color:#ffe2a3}
