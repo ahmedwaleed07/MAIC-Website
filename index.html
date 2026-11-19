@@ -16,7 +16,7 @@
 <link rel="stylesheet" href="./launch.css?v=gold-frame-1" />
 <link rel="stylesheet" href="./visitor-library.css?v=gold-frame-1" />
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Noto+Naskh+Arabic:wght@400;500;600;700&display=swap" />
-<style>.account-links{display:flex;justify-content:flex-end;align-items:center;gap:.75rem;flex-wrap:wrap;padding-block:.35rem;background:#081c34}.account-links a{color:#fff4db;text-decoration:none;padding:.3rem .85rem;border:var(--maic-frame-width) solid var(--maic-frame-gold);border-radius:.5rem;font-weight:600}.account-links a:last-child{background:#dfbf84;color:#081c34}</style>
+<style>.account-links{display:flex;justify-content:flex-end;align-items:center;gap:.75rem;margin-inline-start:auto;min-width:0;padding-block:.35rem}.account-links a{color:#fff4db;text-decoration:none;padding:.3rem .85rem;border:var(--maic-frame-width) solid var(--maic-frame-gold);border-radius:.5rem;font-weight:600}.account-links a:last-child{background:#dfbf84;color:#081c34}@media(max-width:650px){.nav-row{height:auto;min-height:47px;gap:.45rem;flex-wrap:wrap}.account-links{gap:.35rem}.account-links a{font-size:.8rem;padding:.35rem .5rem;text-align:center}}</style>
 <script src="/account-links.js" defer></script>
 <link rel="icon" type="image/png" sizes="64x64" href="/assets/maic-tab-navy-gold.png">
 <link rel="stylesheet" href="/maic-frames.css?v=1">
@@ -60,8 +60,8 @@
   </div>
  </div>
  <div class="gold-divider"></div>
- <div class="nav-row page-pad"><button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="megaMenu" type="button"><svg><use href="#i-menu"/></svg><span id="menuLabel">Explore MAIC</span></button><nav class="desktop-links" id="desktopLinks" aria-label="Primary navigation"></nav></div>
- <div class="account-links page-pad"><a id="account-login" href="/learner/">Sign in</a><a id="account-register" href="/learner/?mode=register">Create an account</a></div>
+ <div class="nav-row page-pad"><button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="megaMenu" type="button"><svg><use href="#i-menu"/></svg><span id="menuLabel">Explore MAIC</span></button><div class="account-links"><a id="account-login" href="/learner/">Sign in</a><a id="account-register" href="/learner/?mode=register">Create an account</a></div></div>
+ 
 </header>
 
 <div class="search-results" id="searchResults" role="listbox" hidden></div>
@@ -89,7 +89,7 @@
 <script src="./academic-advisor.js?v=20261103" defer></script>
 <script src="./learner-access-labels.js" defer></script>
 <script src="./michigan-gallery.js?v=20261106-no-outbound-links" defer></script>
-<script src="./app.js?v=20261108-career-contacts" defer></script>
+<script src="./app.js?v=explore-account-row" defer></script>
 <script src="./experience.js?v=20261030-book-cards" defer></script>
 </body>
 </html>
