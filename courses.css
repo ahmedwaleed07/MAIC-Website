@@ -79,4 +79,4 @@
 @media(max-width:830px){.maic-mode-filter-list{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:520px){.maic-mode-filter-list{grid-template-columns:1fr;gap:18px}.maic-mode-filter-item{gap:5px}}
 
-.maic-course-photo-project-management{background-image:url('./assets/course-project-management.webp');background-size:cover;background-position:center}
+.maic-course-photo-project-management{background-image:url('./assets/course-project-management.webp?v=2');background-size:cover;background-position:center}
