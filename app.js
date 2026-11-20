@@ -49,7 +49,17 @@ const coursesWithPhotos = new Set([
   "strategic-planning",
   "economics-for-decisions",
   "competitive-advantage",
-  "global-institutions"
+  "global-institutions",
+  "international-law",
+  "international-relations",
+  "investment-evaluation",
+  "managerial-accounting",
+  "financial-decision-making",
+  "professional-communication-practice",
+  "workplace-team-collaboration",
+  "supply-chain-foundations",
+  "inventory-transport-planning",
+  "procurement-sourcing"
 ]);
 function catalogCard(c){
  const slot=coursesWithPhotos.has(c.id)?c.id:['management','marketing','hr'].includes(c.imageSlot)?c.imageSlot:'';
