@@ -79,7 +79,13 @@ const coursesWithPhotos = new Set([
   "sustainable-cities",
   "fashion-design-craft-sustainability",
   "after-effects-motion-graphics",
-  "masterclass-in-animation"
+  "masterclass-in-animation",
+  "introduction-to-game-design",
+  "video-game-character-design",
+  "3d-models-for-virtual-reality",
+  "design-thinking-for-innovation",
+  "itil-5-service-design-transition-delivery",
+  "instructional-design-foundations-applications"
 ]);
 function catalogCard(c){
  const slot=coursesWithPhotos.has(c.id)?c.id:['management','marketing','hr'].includes(c.imageSlot)?c.imageSlot:'';
