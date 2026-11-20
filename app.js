@@ -69,7 +69,17 @@ const coursesWithPhotos = new Set([
   "ui-ux-design",
   "ui-ux-figma-modern-interfaces",
   "dynamic-website-ui-design",
-  "product-design-ux-ui-fundamentals"
+  "product-design-ux-ui-fundamentals",
+  "autocad-3d-modeling-visualization",
+  "blueprint-to-brilliance-interior-design",
+  "sketchup-interior-space-planning",
+  "autocad-architecture-residential-planning",
+  "bim-fundamentals-building-design",
+  "sketchup-landscape-garden-design",
+  "sustainable-cities",
+  "fashion-design-craft-sustainability",
+  "after-effects-motion-graphics",
+  "masterclass-in-animation"
 ]);
 function catalogCard(c){
  const slot=coursesWithPhotos.has(c.id)?c.id:['management','marketing','hr'].includes(c.imageSlot)?c.imageSlot:'';
