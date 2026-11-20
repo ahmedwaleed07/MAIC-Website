@@ -59,7 +59,9 @@ const coursesWithPhotos = new Set([
   "workplace-team-collaboration",
   "supply-chain-foundations",
   "inventory-transport-planning",
-  "procurement-sourcing"
+  "procurement-sourcing",
+  "brand-new-brand",
+  "sustainable-product-design-for-engineers"
 ]);
 function catalogCard(c){
  const slot=coursesWithPhotos.has(c.id)?c.id:['management','marketing','hr'].includes(c.imageSlot)?c.imageSlot:'';
