@@ -39,7 +39,17 @@ const coursesWithPhotos = new Set([
   "organizational-change",
   "collaborative-leadership",
   "risk-for-managers",
-  "it-service-management"
+  "it-service-management",
+  "digital-project-delivery",
+  "applied-problem-solving",
+  "time-workload-management",
+  "innovation-management",
+  "innovation-go-to-market",
+  "digital-transformation",
+  "strategic-planning",
+  "economics-for-decisions",
+  "competitive-advantage",
+  "global-institutions"
 ]);
 function catalogCard(c){
  const slot=coursesWithPhotos.has(c.id)?c.id:['management','marketing','hr'].includes(c.imageSlot)?c.imageSlot:'';
