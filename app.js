@@ -61,7 +61,15 @@ const coursesWithPhotos = new Set([
   "inventory-transport-planning",
   "procurement-sourcing",
   "brand-new-brand",
-  "sustainable-product-design-for-engineers"
+  "sustainable-product-design-for-engineers",
+  "introduction-to-typography",
+  "adobe-indesign-tables-effects",
+  "design-and-make-infographics",
+  "packaging-design-circular-economy",
+  "ui-ux-design",
+  "ui-ux-figma-modern-interfaces",
+  "dynamic-website-ui-design",
+  "product-design-ux-ui-fundamentals"
 ]);
 function catalogCard(c){
  const slot=coursesWithPhotos.has(c.id)?c.id:['management','marketing','hr'].includes(c.imageSlot)?c.imageSlot:'';
