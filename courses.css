@@ -80,3 +80,14 @@
 @media(max-width:520px){.maic-mode-filter-list{grid-template-columns:1fr;gap:18px}.maic-mode-filter-item{gap:5px}}
 
 .maic-course-photo-project-management{background-image:url('./assets/course-project-management.webp?v=2');background-size:cover;background-position:center}
+
+.maic-course-photo-business-finance-accounting{background-image:url('./assets/course-business-finance-accounting.webp');background-size:cover;background-position:center}
+.maic-course-photo-operations-strategy{background-image:url('./assets/course-operations-strategy.webp');background-size:cover;background-position:center}
+.maic-course-photo-international-business-economics{background-image:url('./assets/course-international-business-economics.webp');background-size:cover;background-position:center}
+.maic-course-photo-marketing-communications{background-image:url('./assets/course-marketing-communications.webp');background-size:cover;background-position:center}
+.maic-course-photo-organizational-leadership{background-image:url('./assets/course-organizational-leadership.webp');background-size:cover;background-position:center}
+.maic-course-photo-innovation-leadership{background-image:url('./assets/course-innovation-leadership.webp');background-size:cover;background-position:center}
+.maic-course-photo-organizational-change{background-image:url('./assets/course-organizational-change.webp');background-size:cover;background-position:center}
+.maic-course-photo-collaborative-leadership{background-image:url('./assets/course-collaborative-leadership.webp');background-size:cover;background-position:center}
+.maic-course-photo-risk-for-managers{background-image:url('./assets/course-risk-for-managers.webp');background-size:cover;background-position:center}
+.maic-course-photo-it-service-management{background-image:url('./assets/course-it-service-management.webp');background-size:cover;background-position:center}
