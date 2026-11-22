@@ -1,0 +1,1312 @@
+{
+  "course_id": "ui-ux-figma-modern-interfaces",
+  "source_manuscript": "data/course-manuscripts/ui-ux-figma-modern-interfaces.md",
+  "source_manuscript_blob_sha": "9cd9b6a7ff20132a26332015283c565fbad611fa",
+  "source_pdf_sha256": null,
+  "bank_version": "draft-manuscript-20261122-v1",
+  "approval_status": "editorial_draft_pending_independent_review",
+  "number_of_questions": 100,
+  "note": "Editorial draft only; subject to independent academic review and verification against Figma feature availability and official source materials before activation.",
+  "questions": [
+    {
+      "ordinal": 1,
+      "source_page": 2,
+      "stem": "What is Figma used for in this course?",
+      "options": [
+        "Assume design screens are authenticated transactions",
+        "Designing interactive screen concepts and prototypes",
+        "Ignore user testing once the prototype looks polished",
+        "Treat the canvas as a finished application backend"
+      ],
+      "correct_mask": 2,
+      "rationale": "The course describes designing interactive screen concepts and prototypes. This conclusion follows the documented Figma design or prototype limitations and the fictional exercise conditions. Source: MAIC Apply UI/UX Design with Figma for Modern Interfaces, page 2."
+    },
+    {
+      "ordinal": 2,
+      "source_page": 2,
+      "stem": "Why does a Figma prototype not replace user research?",
+      "options": [
+        "Choose all visuals before identifying the task",
+        "Screens do not independently reveal real user needs",
+        "Present invented interface data as actual bookings",
+        "Assume design screens are authenticated transactions"
+      ],
+      "correct_mask": 2,
+      "rationale": "The course describes screens do not independently reveal real user needs. This conclusion follows the documented Figma design or prototype limitations and the fictional exercise conditions. Source: MAIC Apply UI/UX Design with Figma for Modern Interfaces, page 2."
+    },
+    {
+      "ordinal": 3,
+      "source_page": 2,
+      "stem": "What is a key deliverable of the applied course?",
+      "options": [
+        "Ignore user testing once the prototype looks polished",
+        "Treat the canvas as a finished application backend",
+        "A tested multi-screen booking interface prototype",
+        "Choose all visuals before identifying the task"
+      ],
+      "correct_mask": 4,
+      "rationale": "The course describes a tested multi-screen booking interface prototype. This conclusion follows the documented Figma design or prototype limitations and the fictional exercise conditions. Source: MAIC Apply UI/UX Design with Figma for Modern Interfaces, page 2."
+    },
+    {
+      "ordinal": 4,
+      "source_page": 2,
+      "stem": "Why should a prototype confirmation be labeled simulated?",
+      "options": [
+        "Present invented interface data as actual bookings",
+        "It does not record a genuine reservation",
+        "Assume design screens are authenticated transactions",
+        "Ignore user testing once the prototype looks polished"
+      ],
+      "correct_mask": 2,
+      "rationale": "The course describes it does not record a genuine reservation. This conclusion follows the documented Figma design or prototype limitations and the fictional exercise conditions. Source: MAIC Apply UI/UX Design with Figma for Modern Interfaces, page 2."
+    },
+    {
+      "ordinal": 5,
+      "source_page": 2,
+      "stem": "Which UX work should precede component styling?",
+      "options": [
+        "Treat the canvas as a finished application backend",
+        "Choose all visuals before identifying the task",
+        "Defining the task and relevant user needs",
+        "Present invented interface data as actual bookings"
+      ],
+      "correct_mask": 4,
+      "rationale": "The course describes defining the task and relevant user needs. This conclusion follows the documented Figma design or prototype limitations and the fictional exercise conditions. Source: MAIC Apply UI/UX Design with Figma for Modern Interfaces, page 2."
+    },
+    {
+      "ordinal": 6,
+      "source_page": 2,
+      "stem": "What should a design file contain for responsible handoff?",
+      "options": [
+        "Assume design screens are authenticated transactions",
+        "Organized frames, components, behavior and limitations",
+        "Ignore user testing once the prototype looks polished",
+        "Treat the canvas as a finished application backend"
+      ],
+      "correct_mask": 2,
+      "rationale": "The course describes organized frames, components, behavior and limitations. This conclusion follows the documented Figma design or prototype limitations and the fictional exercise conditions. Source: MAIC Apply UI/UX Design with Figma for Modern Interfaces, page 2."
+    },
+    {
+      "ordinal": 7,
+      "source_page": 2,
+      "stem": "What controls are relevant to a room reservation?",
+      "options": [
+        "Choose all visuals before identifying the task",
+        "Present invented interface data as actual bookings",
+        "Assume design screens are authenticated transactions",
+        "Room selection, date input and confirmation"
+      ],
+      "correct_mask": 8,
+      "rationale": "The course describes room selection, date input and confirmation. This conclusion follows the documented Figma design or prototype limitations and the fictional exercise conditions. Source: MAIC Apply UI/UX Design with Figma for Modern Interfaces, page 2."
+    },
+    {
+      "ordinal": 8,
+      "source_page": 2,
+      "stem": "Which condition is not proof of a successful app?",
+      "options": [
+        "Ignore user testing once the prototype looks polished",
+        "Treat the canvas as a finished application backend",
+        "A visually attractive but nonfunctional prototype",
+        "Choose all visuals before identifying the task"
+      ],
+      "correct_mask": 4,
+      "rationale": "The course describes a visually attractive but nonfunctional prototype. This conclusion follows the documented Figma design or prototype limitations and the fictional exercise conditions. Source: MAIC Apply UI/UX Design with Figma for Modern Interfaces, page 2."
+    },
+    {
+      "ordinal": 9,
+      "source_page": 2,
+      "stem": "Why should prototype error states be built early?",
+      "options": [
+        "Present invented interface data as actual bookings",
+        "They reveal how users recover from incomplete tasks",
+        "Assume design screens are authenticated transactions",
+        "Ignore user testing once the prototype looks polished"
+      ],
+      "correct_mask": 2,
+      "rationale": "The course describes they reveal how users recover from incomplete tasks. This conclusion follows the documented Figma design or prototype limitations and the fictional exercise conditions. Source: MAIC Apply UI/UX Design with Figma for Modern Interfaces, page 2."
+    },
+    {
+      "ordinal": 10,
+      "source_page": 2,
+      "stem": "What should participants understand after completing the course?",
+      "options": [
+        "Treat the canvas as a finished application backend",
+        "How design decisions can be tested and explained",
+        "Choose all visuals before identifying the task",
+        "Present invented interface data as actual bookings"
+      ],
+      "correct_mask": 2,
+      "rationale": "The course describes how design decisions can be tested and explained. This conclusion follows the documented Figma design or prototype limitations and the fictional exercise conditions. Source: MAIC Apply UI/UX Design with Figma for Modern Interfaces, page 2."
+    },
+    {
+      "ordinal": 11,
+      "source_page": 3,
+      "stem": "What is a frame commonly used for in Figma?",
+      "options": [
+        "Publish confidential business records in open files",
+        "Use only short dummy text to avoid overflow testing",
+        "Containing a screen or grouped design elements",
+        "Remove all task-state documentation"
+      ],
+      "correct_mask": 4,
+      "rationale": "The course describes containing a screen or grouped design elements. This conclusion follows the documented Figma design or prototype limitations and the fictional exercise conditions. Source: MAIC Apply UI/UX Design with Figma for Modern Interfaces, page 3."
+    },
+    {
+      "ordinal": 12,
+      "source_page": 3,
+      "stem": "Why name file sections clearly?",
+      "options": [
+        "Collaborators can locate research, components and final screens",
+        "Give every frame the same uninformative name",
+        "Hide whether screens are exploration or approved",
+        "Publish confidential business records in open files"
+      ],
+      "correct_mask": 1,
+      "rationale": "The course describes collaborators can locate research, components and final screens. This conclusion follows the documented Figma design or prototype limitations and the fictional exercise conditions. Source: MAIC Apply UI/UX Design with Figma for Modern Interfaces, page 3."
+    },
+    {
+      "ordinal": 13,
+      "source_page": 3,
+      "stem": "What should be kept out of an unrestricted public Figma link?",
+      "options": [
+        "Confidential user and organizational information",
+        "Use only short dummy text to avoid overflow testing",
+        "Remove all task-state documentation",
+        "Give every frame the same uninformative name"
+      ],
+      "correct_mask": 1,
+      "rationale": "The course describes confidential user and organizational information. This conclusion follows the documented Figma design or prototype limitations and the fictional exercise conditions. Source: MAIC Apply UI/UX Design with Figma for Modern Interfaces, page 3."
+    },
+    {
+      "ordinal": 14,
+      "source_page": 3,
+      "stem": "What is the main goal of the fictional booking screen?",
+      "options": [
+        "Hide whether screens are exploration or approved",
+        "Publish confidential business records in open files",
+        "Selecting an available room and confirming a reservation",
+        "Use only short dummy text to avoid overflow testing"
+      ],
+      "correct_mask": 4,
+      "rationale": "The course describes selecting an available room and confirming a reservation. This conclusion follows the documented Figma design or prototype limitations and the fictional exercise conditions. Source: MAIC Apply UI/UX Design with Figma for Modern Interfaces, page 3."
+    },
+    {
+      "ordinal": 15,
+      "source_page": 3,
+      "stem": "Which content should survive a mobile redesign?",
+      "options": [
+        "Remove all task-state documentation",
+        "Give every frame the same uninformative name",
+        "Hide whether screens are exploration or approved",
+        "Essential dates, labels, terms and task actions"
+      ],
+      "correct_mask": 8,
+      "rationale": "The course describes essential dates, labels, terms and task actions. This conclusion follows the documented Figma design or prototype limitations and the fictional exercise conditions. Source: MAIC Apply UI/UX Design with Figma for Modern Interfaces, page 3."
+    },
+    {
+      "ordinal": 16,
+      "source_page": 3,
+      "stem": "Why should mockups use realistic text lengths?",
+      "options": [
+        "Publish confidential business records in open files",
+        "Placeholder strings may hide wrapping and spacing defects",
+        "Use only short dummy text to avoid overflow testing",
+        "Remove all task-state documentation"
+      ],
+      "correct_mask": 2,
+      "rationale": "The course describes placeholder strings may hide wrapping and spacing defects. This conclusion follows the documented Figma design or prototype limitations and the fictional exercise conditions. Source: MAIC Apply UI/UX Design with Figma for Modern Interfaces, page 3."
+    },
+    {
+      "ordinal": 17,
+      "source_page": 3,
+      "stem": "What should distinguish a finished screen from an exploration?",
+      "options": [
+        "Give every frame the same uninformative name",
+        "Hide whether screens are exploration or approved",
+        "Publish confidential business records in open files",
+        "Clear section and version labeling"
+      ],
+      "correct_mask": 8,
+      "rationale": "The course describes clear section and version labeling. This conclusion follows the documented Figma design or prototype limitations and the fictional exercise conditions. Source: MAIC Apply UI/UX Design with Figma for Modern Interfaces, page 3."
+    },
+    {
+      "ordinal": 18,
+      "source_page": 3,
+      "stem": "Why test on narrow and wide frames?",
+      "options": [
+        "Layouts face different available space",
+        "Use only short dummy text to avoid overflow testing",
+        "Remove all task-state documentation",
+        "Give every frame the same uninformative name"
+      ],
+      "correct_mask": 1,
+      "rationale": "The course describes layouts face different available space. This conclusion follows the documented Figma design or prototype limitations and the fictional exercise conditions. Source: MAIC Apply UI/UX Design with Figma for Modern Interfaces, page 3."
+    },
+    {
+      "ordinal": 19,
+      "source_page": 3,
+      "stem": "What should prototype annotations disclose?",
+      "options": [
+        "Hide whether screens are exploration or approved",
+        "Simulated states and technical requirements not yet implemented",
+        "Publish confidential business records in open files",
+        "Use only short dummy text to avoid overflow testing"
+      ],
+      "correct_mask": 2,
+      "rationale": "The course describes simulated states and technical requirements not yet implemented. This conclusion follows the documented Figma design or prototype limitations and the fictional exercise conditions. Source: MAIC Apply UI/UX Design with Figma for Modern Interfaces, page 3."
+    },
+    {
+      "ordinal": 20,
+      "source_page": 3,
+      "stem": "Which sections belong in an organized exercise file?",
+      "options": [
+        "Remove all task-state documentation",
+        "Give every frame the same uninformative name",
+        "Brief, Components, Mobile, Desktop and Review",
+        "Hide whether screens are exploration or approved"
+      ],
+      "correct_mask": 4,
+      "rationale": "The course describes brief, Components, Mobile, Desktop and Review. This conclusion follows the documented Figma design or prototype limitations and the fictional exercise conditions. Source: MAIC Apply UI/UX Design with Figma for Modern Interfaces, page 3."
+    },
+    {
+      "ordinal": 21,
+      "source_page": 4,
+      "stem": "What does auto layout principally manage?",
+      "options": [
+        "Treat auto layout as a secure server-side framework",
+        "Assume vertical flow requires no padding rules",
+        "Child flow, padding, spacing and alignment",
+        "Ignore resize behavior on narrow screens"
+      ],
+      "correct_mask": 4,
+      "rationale": "The course describes child flow, padding, spacing and alignment. This conclusion follows the documented Figma design or prototype limitations and the fictional exercise conditions. Source: MAIC Apply UI/UX Design with Figma for Modern Interfaces, page 4."
+    },
+    {
+      "ordinal": 22,
+      "source_page": 4,
+      "stem": "What shortcut is documented for adding auto layout?",
+      "options": [
+        "Use fixed widths regardless of translation",
+        "Let cards overlap when new items appear",
+        "Treat auto layout as a secure server-side framework",
+        "Shift+A"
+      ],
+      "correct_mask": 8,
+      "rationale": "The course describes shift+A. This conclusion follows the documented Figma design or prototype limitations and the fictional exercise conditions. Source: MAIC Apply UI/UX Design with Figma for Modern Interfaces, page 4."
+    },
+    {
+      "ordinal": 23,
+      "source_page": 4,
+      "stem": "Which arrangement is an auto layout flow in current Figma help?",
+      "options": [
+        "Assume vertical flow requires no padding rules",
+        "Ignore resize behavior on narrow screens",
+        "Vertical, horizontal or grid",
+        "Use fixed widths regardless of translation"
+      ],
+      "correct_mask": 4,
+      "rationale": "The course describes vertical, horizontal or grid. This conclusion follows the documented Figma design or prototype limitations and the fictional exercise conditions. Source: MAIC Apply UI/UX Design with Figma for Modern Interfaces, page 4."
+    },
+    {
+      "ordinal": 24,
+      "source_page": 4,
+      "stem": "Why use auto layout for a responsive button?",
+      "options": [
+        "Let cards overlap when new items appear",
+        "Treat auto layout as a secure server-side framework",
+        "It can adapt when its label length changes",
+        "Assume vertical flow requires no padding rules"
+      ],
+      "correct_mask": 4,
+      "rationale": "The course describes it can adapt when its label length changes. This conclusion follows the documented Figma design or prototype limitations and the fictional exercise conditions. Source: MAIC Apply UI/UX Design with Figma for Modern Interfaces, page 4."
+    },
+    {
+      "ordinal": 25,
+      "source_page": 4,
+      "stem": "How does auto layout differ from a complete browser layout system?",
+      "options": [
+        "Ignore resize behavior on narrow screens",
+        "Use fixed widths regardless of translation",
+        "Let cards overlap when new items appear",
+        "It is a design representation needing implementation"
+      ],
+      "correct_mask": 8,
+      "rationale": "The course describes it is a design representation needing implementation. This conclusion follows the documented Figma design or prototype limitations and the fictional exercise conditions. Source: MAIC Apply UI/UX Design with Figma for Modern Interfaces, page 4."
+    },
+    {
+      "ordinal": 26,
+      "source_page": 4,
+      "stem": "What is a possible problem with a fixed-width button?",
+      "options": [
+        "Long translated labels can clip",
+        "Treat auto layout as a secure server-side framework",
+        "Assume vertical flow requires no padding rules",
+        "Ignore resize behavior on narrow screens"
+      ],
+      "correct_mask": 1,
+      "rationale": "The course describes long translated labels can clip. This conclusion follows the documented Figma design or prototype limitations and the fictional exercise conditions. Source: MAIC Apply UI/UX Design with Figma for Modern Interfaces, page 4."
+    },
+    {
+      "ordinal": 27,
+      "source_page": 4,
+      "stem": "What should happen when a list gains a new card?",
+      "options": [
+        "Following cards should reposition consistently",
+        "Use fixed widths regardless of translation",
+        "Let cards overlap when new items appear",
+        "Treat auto layout as a secure server-side framework"
+      ],
+      "correct_mask": 1,
+      "rationale": "The course describes following cards should reposition consistently. This conclusion follows the documented Figma design or prototype limitations and the fictional exercise conditions. Source: MAIC Apply UI/UX Design with Figma for Modern Interfaces, page 4."
+    },
+    {
+      "ordinal": 28,
+      "source_page": 4,
+      "stem": "What is important when child layers ignore auto layout flow?",
+      "options": [
+        "Assume vertical flow requires no padding rules",
+        "Ignore resize behavior on narrow screens",
+        "Use fixed widths regardless of translation",
+        "Their positioning and constraints need separate review"
+      ],
+      "correct_mask": 8,
+      "rationale": "The course describes their positioning and constraints need separate review. This conclusion follows the documented Figma design or prototype limitations and the fictional exercise conditions. Source: MAIC Apply UI/UX Design with Figma for Modern Interfaces, page 4."
+    },
+    {
+      "ordinal": 29,
+      "source_page": 4,
+      "stem": "A label is 100 units wide with 16-unit padding on each side. What nominal width results?",
+      "options": [
+        "Let cards overlap when new items appear",
+        "132 units",
+        "Treat auto layout as a secure server-side framework",
+        "Assume vertical flow requires no padding rules"
+      ],
+      "correct_mask": 2,
+      "rationale": "The course describes 132 units. This conclusion follows the documented Figma design or prototype limitations and the fictional exercise conditions. Source: MAIC Apply UI/UX Design with Figma for Modern Interfaces, page 4."
+    },
+    {
+      "ordinal": 30,
+      "source_page": 4,
+      "stem": "Why should a frame be tested at narrow widths?",
+      "options": [
+        "Text and controls may overflow or overlap",
+        "Ignore resize behavior on narrow screens",
+        "Use fixed widths regardless of translation",
+        "Let cards overlap when new items appear"
+      ],
+      "correct_mask": 1,
+      "rationale": "The course describes text and controls may overflow or overlap. This conclusion follows the documented Figma design or prototype limitations and the fictional exercise conditions. Source: MAIC Apply UI/UX Design with Figma for Modern Interfaces, page 4."
+    },
+    {
+      "ordinal": 31,
+      "source_page": 5,
+      "stem": "What should a typography system define?",
+      "options": [
+        "Communicate status through color alone",
+        "Assume design-tool contrast proves all accessibility",
+        "Treat disabled actions as needing no explanation",
+        "Heading, body, label, caption and button roles"
+      ],
+      "correct_mask": 8,
+      "rationale": "The course describes heading, body, label, caption and button roles. This conclusion follows the documented Figma design or prototype limitations and the fictional exercise conditions. Source: MAIC Apply UI/UX Design with Figma for Modern Interfaces, page 5."
+    },
+    {
+      "ordinal": 32,
+      "source_page": 5,
+      "stem": "What is the general WCAG AA contrast ratio for normal web text?",
+      "options": [
+        "4.5:1",
+        "Remove all labels once a user starts typing",
+        "Change the official wordmark font with locale",
+        "Communicate status through color alone"
+      ],
+      "correct_mask": 1,
+      "rationale": "The course describes 4.5:1. This conclusion follows the documented Figma design or prototype limitations and the fictional exercise conditions. Source: MAIC Apply UI/UX Design with Figma for Modern Interfaces, page 5."
+    },
+    {
+      "ordinal": 33,
+      "source_page": 5,
+      "stem": "What is the usual WCAG AA ratio for qualifying large web text?",
+      "options": [
+        "Assume design-tool contrast proves all accessibility",
+        "Treat disabled actions as needing no explanation",
+        "3:1",
+        "Remove all labels once a user starts typing"
+      ],
+      "correct_mask": 4,
+      "rationale": "The course describes 3:1. This conclusion follows the documented Figma design or prototype limitations and the fictional exercise conditions. Source: MAIC Apply UI/UX Design with Figma for Modern Interfaces, page 5."
+    },
+    {
+      "ordinal": 34,
+      "source_page": 5,
+      "stem": "Why should success not be indicated only in green?",
+      "options": [
+        "Change the official wordmark font with locale",
+        "Some users cannot interpret color alone",
+        "Communicate status through color alone",
+        "Assume design-tool contrast proves all accessibility"
+      ],
+      "correct_mask": 2,
+      "rationale": "The course describes some users cannot interpret color alone. This conclusion follows the documented Figma design or prototype limitations and the fictional exercise conditions. Source: MAIC Apply UI/UX Design with Figma for Modern Interfaces, page 5."
+    },
+    {
+      "ordinal": 35,
+      "source_page": 5,
+      "stem": "What should a room card display beyond a color cue?",
+      "options": [
+        "Treat disabled actions as needing no explanation",
+        "Remove all labels once a user starts typing",
+        "Change the official wordmark font with locale",
+        "Room name, capacity and readable availability status"
+      ],
+      "correct_mask": 8,
+      "rationale": "The course describes room name, capacity and readable availability status. This conclusion follows the documented Figma design or prototype limitations and the fictional exercise conditions. Source: MAIC Apply UI/UX Design with Figma for Modern Interfaces, page 5."
+    },
+    {
+      "ordinal": 36,
+      "source_page": 5,
+      "stem": "Why should an input label remain visible after entry?",
+      "options": [
+        "Communicate status through color alone",
+        "Assume design-tool contrast proves all accessibility",
+        "Treat disabled actions as needing no explanation",
+        "Users still need to know what the value represents"
+      ],
+      "correct_mask": 8,
+      "rationale": "The course describes users still need to know what the value represents. This conclusion follows the documented Figma design or prototype limitations and the fictional exercise conditions. Source: MAIC Apply UI/UX Design with Figma for Modern Interfaces, page 5."
+    },
+    {
+      "ordinal": 37,
+      "source_page": 5,
+      "stem": "What should a disabled action explain?",
+      "options": [
+        "Remove all labels once a user starts typing",
+        "The missing requirement that prevents continuation",
+        "Change the official wordmark font with locale",
+        "Communicate status through color alone"
+      ],
+      "correct_mask": 2,
+      "rationale": "The course describes the missing requirement that prevents continuation. This conclusion follows the documented Figma design or prototype limitations and the fictional exercise conditions. Source: MAIC Apply UI/UX Design with Figma for Modern Interfaces, page 5."
+    },
+    {
+      "ordinal": 38,
+      "source_page": 5,
+      "stem": "Why use shared text and color styles?",
+      "options": [
+        "Assume design-tool contrast proves all accessibility",
+        "Treat disabled actions as needing no explanation",
+        "They support consistency and controlled updates",
+        "Remove all labels once a user starts typing"
+      ],
+      "correct_mask": 4,
+      "rationale": "The course describes they support consistency and controlled updates. This conclusion follows the documented Figma design or prototype limitations and the fictional exercise conditions. Source: MAIC Apply UI/UX Design with Figma for Modern Interfaces, page 5."
+    },
+    {
+      "ordinal": 39,
+      "source_page": 5,
+      "stem": "What is wrong with changing an approved logo's font during localization?",
+      "options": [
+        "Change the official wordmark font with locale",
+        "Fixed brand identity would become inconsistent",
+        "Communicate status through color alone",
+        "Assume design-tool contrast proves all accessibility"
+      ],
+      "correct_mask": 2,
+      "rationale": "The course describes fixed brand identity would become inconsistent. This conclusion follows the documented Figma design or prototype limitations and the fictional exercise conditions. Source: MAIC Apply UI/UX Design with Figma for Modern Interfaces, page 5."
+    },
+    {
+      "ordinal": 40,
+      "source_page": 5,
+      "stem": "Why can a contrast check not certify full interface accessibility?",
+      "options": [
+        "Behavior, semantics and focus also matter",
+        "Treat disabled actions as needing no explanation",
+        "Remove all labels once a user starts typing",
+        "Change the official wordmark font with locale"
+      ],
+      "correct_mask": 1,
+      "rationale": "The course describes behavior, semantics and focus also matter. This conclusion follows the documented Figma design or prototype limitations and the fictional exercise conditions. Source: MAIC Apply UI/UX Design with Figma for Modern Interfaces, page 5."
+    },
+    {
+      "ordinal": 41,
+      "source_page": 6,
+      "stem": "What is a Figma component?",
+      "options": [
+        "Create every button manually with different styling",
+        "Keep all components named Rectangle 1",
+        "A reusable main design element",
+        "Use visual states without describing their behavior"
+      ],
+      "correct_mask": 4,
+      "rationale": "The course describes a reusable main design element. This conclusion follows the documented Figma design or prototype limitations and the fictional exercise conditions. Source: MAIC Apply UI/UX Design with Figma for Modern Interfaces, page 6."
+    },
+    {
+      "ordinal": 42,
+      "source_page": 6,
+      "stem": "What is a component instance?",
+      "options": [
+        "Assume a variant writes to the production database",
+        "Skip auditing instances after master changes",
+        "A placed copy linked to its component source",
+        "Create every button manually with different styling"
+      ],
+      "correct_mask": 4,
+      "rationale": "The course describes a placed copy linked to its component source. This conclusion follows the documented Figma design or prototype limitations and the fictional exercise conditions. Source: MAIC Apply UI/UX Design with Figma for Modern Interfaces, page 6."
+    },
+    {
+      "ordinal": 43,
+      "source_page": 6,
+      "stem": "What are variants useful for?",
+      "options": [
+        "Keep all components named Rectangle 1",
+        "Use visual states without describing their behavior",
+        "Assume a variant writes to the production database",
+        "Related states such as default, disabled and loading"
+      ],
+      "correct_mask": 8,
+      "rationale": "The course describes related states such as default, disabled and loading. This conclusion follows the documented Figma design or prototype limitations and the fictional exercise conditions. Source: MAIC Apply UI/UX Design with Figma for Modern Interfaces, page 6."
+    },
+    {
+      "ordinal": 44,
+      "source_page": 6,
+      "stem": "Why should component names express function?",
+      "options": [
+        "Skip auditing instances after master changes",
+        "Create every button manually with different styling",
+        "Keep all components named Rectangle 1",
+        "Other designers can understand and reuse them"
+      ],
+      "correct_mask": 8,
+      "rationale": "The course describes other designers can understand and reuse them. This conclusion follows the documented Figma design or prototype limitations and the fictional exercise conditions. Source: MAIC Apply UI/UX Design with Figma for Modern Interfaces, page 6."
+    },
+    {
+      "ordinal": 45,
+      "source_page": 6,
+      "stem": "What does an interactive component simulate?",
+      "options": [
+        "Use visual states without describing their behavior",
+        "Assume a variant writes to the production database",
+        "Skip auditing instances after master changes",
+        "Transitions among component states in prototypes"
+      ],
+      "correct_mask": 8,
+      "rationale": "The course describes transitions among component states in prototypes. This conclusion follows the documented Figma design or prototype limitations and the fictional exercise conditions. Source: MAIC Apply UI/UX Design with Figma for Modern Interfaces, page 6."
+    },
+    {
+      "ordinal": 46,
+      "source_page": 6,
+      "stem": "Does a visual component implement real authentication?",
+      "options": [
+        "Create every button manually with different styling",
+        "Keep all components named Rectangle 1",
+        "Use visual states without describing their behavior",
+        "No, production logic remains separate"
+      ],
+      "correct_mask": 8,
+      "rationale": "The course describes no, production logic remains separate. This conclusion follows the documented Figma design or prototype limitations and the fictional exercise conditions. Source: MAIC Apply UI/UX Design with Figma for Modern Interfaces, page 6."
+    },
+    {
+      "ordinal": 47,
+      "source_page": 6,
+      "stem": "What is an appropriate error-state label for an empty date field?",
+      "options": [
+        "Assume a variant writes to the production database",
+        "Skip auditing instances after master changes",
+        "Choose a date",
+        "Create every button manually with different styling"
+      ],
+      "correct_mask": 4,
+      "rationale": "The course describes choose a date. This conclusion follows the documented Figma design or prototype limitations and the fictional exercise conditions. Source: MAIC Apply UI/UX Design with Figma for Modern Interfaces, page 6."
+    },
+    {
+      "ordinal": 48,
+      "source_page": 6,
+      "stem": "Why test instances after modifying a master component?",
+      "options": [
+        "Keep all components named Rectangle 1",
+        "A change can cause unexpected layout problems",
+        "Use visual states without describing their behavior",
+        "Assume a variant writes to the production database"
+      ],
+      "correct_mask": 2,
+      "rationale": "The course describes a change can cause unexpected layout problems. This conclusion follows the documented Figma design or prototype limitations and the fictional exercise conditions. Source: MAIC Apply UI/UX Design with Figma for Modern Interfaces, page 6."
+    },
+    {
+      "ordinal": 49,
+      "source_page": 6,
+      "stem": "What should be included in component specifications?",
+      "options": [
+        "Skip auditing instances after master changes",
+        "Create every button manually with different styling",
+        "Available properties, labels and interaction states",
+        "Keep all components named Rectangle 1"
+      ],
+      "correct_mask": 4,
+      "rationale": "The course describes available properties, labels and interaction states. This conclusion follows the documented Figma design or prototype limitations and the fictional exercise conditions. Source: MAIC Apply UI/UX Design with Figma for Modern Interfaces, page 6."
+    },
+    {
+      "ordinal": 50,
+      "source_page": 6,
+      "stem": "How should icon slots be handled across variants?",
+      "options": [
+        "Use visual states without describing their behavior",
+        "With deliberate consistent space and alignment",
+        "Assume a variant writes to the production database",
+        "Skip auditing instances after master changes"
+      ],
+      "correct_mask": 2,
+      "rationale": "The course describes with deliberate consistent space and alignment. This conclusion follows the documented Figma design or prototype limitations and the fictional exercise conditions. Source: MAIC Apply UI/UX Design with Figma for Modern Interfaces, page 6."
+    },
+    {
+      "ordinal": 51,
+      "source_page": 7,
+      "stem": "What does a prototype connect?",
+      "options": [
+        "Screens and interactions in an intended user flow",
+        "Connect every interaction to success regardless of input",
+        "Ignore Back links and unavailable results",
+        "Assume animation guarantees keyboard access"
+      ],
+      "correct_mask": 1,
+      "rationale": "The course describes screens and interactions in an intended user flow. This conclusion follows the documented Figma design or prototype limitations and the fictional exercise conditions. Source: MAIC Apply UI/UX Design with Figma for Modern Interfaces, page 7."
+    },
+    {
+      "ordinal": 52,
+      "source_page": 7,
+      "stem": "What should follow a missing date in a demonstration?",
+      "options": [
+        "A clear validation error state",
+        "Declare prototypes to be real reservation systems",
+        "Remove the close action from every dialog",
+        "Connect every interaction to success regardless of input"
+      ],
+      "correct_mask": 1,
+      "rationale": "The course describes a clear validation error state. This conclusion follows the documented Figma design or prototype limitations and the fictional exercise conditions. Source: MAIC Apply UI/UX Design with Figma for Modern Interfaces, page 7."
+    },
+    {
+      "ordinal": 53,
+      "source_page": 7,
+      "stem": "Why should every control not lead to the same success screen?",
+      "options": [
+        "Ignore Back links and unavailable results",
+        "Assume animation guarantees keyboard access",
+        "Declare prototypes to be real reservation systems",
+        "It would conceal missing task validation"
+      ],
+      "correct_mask": 8,
+      "rationale": "The course describes it would conceal missing task validation. This conclusion follows the documented Figma design or prototype limitations and the fictional exercise conditions. Source: MAIC Apply UI/UX Design with Figma for Modern Interfaces, page 7."
+    },
+    {
+      "ordinal": 54,
+      "source_page": 7,
+      "stem": "What should Back navigation support?",
+      "options": [
+        "Remove the close action from every dialog",
+        "A predictable return to the prior task context",
+        "Connect every interaction to success regardless of input",
+        "Ignore Back links and unavailable results"
+      ],
+      "correct_mask": 2,
+      "rationale": "The course describes a predictable return to the prior task context. This conclusion follows the documented Figma design or prototype limitations and the fictional exercise conditions. Source: MAIC Apply UI/UX Design with Figma for Modern Interfaces, page 7."
+    },
+    {
+      "ordinal": 55,
+      "source_page": 7,
+      "stem": "What is the role of an overlay in a prototype?",
+      "options": [
+        "Assume animation guarantees keyboard access",
+        "Presenting temporary content such as a dialog",
+        "Declare prototypes to be real reservation systems",
+        "Remove the close action from every dialog"
+      ],
+      "correct_mask": 2,
+      "rationale": "The course describes presenting temporary content such as a dialog. This conclusion follows the documented Figma design or prototype limitations and the fictional exercise conditions. Source: MAIC Apply UI/UX Design with Figma for Modern Interfaces, page 7."
+    },
+    {
+      "ordinal": 56,
+      "source_page": 7,
+      "stem": "Why does an animated transition not establish a real booking?",
+      "options": [
+        "No backend reservation write occurs",
+        "Connect every interaction to success regardless of input",
+        "Ignore Back links and unavailable results",
+        "Assume animation guarantees keyboard access"
+      ],
+      "correct_mask": 1,
+      "rationale": "The course describes no backend reservation write occurs. This conclusion follows the documented Figma design or prototype limitations and the fictional exercise conditions. Source: MAIC Apply UI/UX Design with Figma for Modern Interfaces, page 7."
+    },
+    {
+      "ordinal": 57,
+      "source_page": 7,
+      "stem": "What should a modal dialog offer?",
+      "options": [
+        "Declare prototypes to be real reservation systems",
+        "Remove the close action from every dialog",
+        "Connect every interaction to success regardless of input",
+        "An understandable way to close or cancel"
+      ],
+      "correct_mask": 8,
+      "rationale": "The course describes an understandable way to close or cancel. This conclusion follows the documented Figma design or prototype limitations and the fictional exercise conditions. Source: MAIC Apply UI/UX Design with Figma for Modern Interfaces, page 7."
+    },
+    {
+      "ordinal": 58,
+      "source_page": 7,
+      "stem": "Why must a prototype include an unavailable-room branch?",
+      "options": [
+        "Ignore Back links and unavailable results",
+        "Assume animation guarantees keyboard access",
+        "Declare prototypes to be real reservation systems",
+        "Users need to see the response to empty availability"
+      ],
+      "correct_mask": 8,
+      "rationale": "The course describes users need to see the response to empty availability. This conclusion follows the documented Figma design or prototype limitations and the fictional exercise conditions. Source: MAIC Apply UI/UX Design with Figma for Modern Interfaces, page 7."
+    },
+    {
+      "ordinal": 59,
+      "source_page": 7,
+      "stem": "What remains necessary for keyboard access in a live implementation?",
+      "options": [
+        "Remove the close action from every dialog",
+        "Connect every interaction to success regardless of input",
+        "Proper focus order and interactive semantics",
+        "Ignore Back links and unavailable results"
+      ],
+      "correct_mask": 4,
+      "rationale": "The course describes proper focus order and interactive semantics. This conclusion follows the documented Figma design or prototype limitations and the fictional exercise conditions. Source: MAIC Apply UI/UX Design with Figma for Modern Interfaces, page 7."
+    },
+    {
+      "ordinal": 60,
+      "source_page": 7,
+      "stem": "How many connected screens are recommended in the practical exercise?",
+      "options": [
+        "Assume animation guarantees keyboard access",
+        "Declare prototypes to be real reservation systems",
+        "Remove the close action from every dialog",
+        "At least six screens"
+      ],
+      "correct_mask": 8,
+      "rationale": "The course describes at least six screens. This conclusion follows the documented Figma design or prototype limitations and the fictional exercise conditions. Source: MAIC Apply UI/UX Design with Figma for Modern Interfaces, page 7."
+    },
+    {
+      "ordinal": 61,
+      "source_page": 8,
+      "stem": "What can design variables store in Figma?",
+      "options": [
+        "Treat prototype variables as a production database",
+        "Values such as colors, numbers, strings or booleans",
+        "Avoid describing variable defaults",
+        "Claim color tokens perform server-side authorization"
+      ],
+      "correct_mask": 2,
+      "rationale": "The course describes values such as colors, numbers, strings or booleans. This conclusion follows the documented Figma design or prototype limitations and the fictional exercise conditions. Source: MAIC Apply UI/UX Design with Figma for Modern Interfaces, page 8."
+    },
+    {
+      "ordinal": 62,
+      "source_page": 8,
+      "stem": "Why should Figma plan entitlement be checked?",
+      "options": [
+        "Assume all advanced features are available on Free plans",
+        "Use complex logic that hides the user flow",
+        "Advanced variable prototyping may require eligible plans",
+        "Treat prototype variables as a production database"
+      ],
+      "correct_mask": 4,
+      "rationale": "The course describes advanced variable prototyping may require eligible plans. This conclusion follows the documented Figma design or prototype limitations and the fictional exercise conditions. Source: MAIC Apply UI/UX Design with Figma for Modern Interfaces, page 8."
+    },
+    {
+      "ordinal": 63,
+      "source_page": 8,
+      "stem": "What is an appropriate use for a color variable?",
+      "options": [
+        "Avoid describing variable defaults",
+        "Sharing a defined visual token across screens",
+        "Claim color tokens perform server-side authorization",
+        "Assume all advanced features are available on Free plans"
+      ],
+      "correct_mask": 2,
+      "rationale": "The course describes sharing a defined visual token across screens. This conclusion follows the documented Figma design or prototype limitations and the fictional exercise conditions. Source: MAIC Apply UI/UX Design with Figma for Modern Interfaces, page 8."
+    },
+    {
+      "ordinal": 64,
+      "source_page": 8,
+      "stem": "How can a boolean variable assist a simulated prototype?",
+      "options": [
+        "Represent a selected or toggled state",
+        "Use complex logic that hides the user flow",
+        "Treat prototype variables as a production database",
+        "Avoid describing variable defaults"
+      ],
+      "correct_mask": 1,
+      "rationale": "The course describes represent a selected or toggled state. This conclusion follows the documented Figma design or prototype limitations and the fictional exercise conditions. Source: MAIC Apply UI/UX Design with Figma for Modern Interfaces, page 8."
+    },
+    {
+      "ordinal": 65,
+      "source_page": 8,
+      "stem": "Why must a variable-based booking remain marked simulated?",
+      "options": [
+        "Claim color tokens perform server-side authorization",
+        "Variable changes do not prove a real transaction",
+        "Assume all advanced features are available on Free plans",
+        "Use complex logic that hides the user flow"
+      ],
+      "correct_mask": 2,
+      "rationale": "The course describes variable changes do not prove a real transaction. This conclusion follows the documented Figma design or prototype limitations and the fictional exercise conditions. Source: MAIC Apply UI/UX Design with Figma for Modern Interfaces, page 8."
+    },
+    {
+      "ordinal": 66,
+      "source_page": 8,
+      "stem": "What should be supplied when reviewers lack advanced prototype access?",
+      "options": [
+        "Treat prototype variables as a production database",
+        "A static alternative or clear captured explanation",
+        "Avoid describing variable defaults",
+        "Claim color tokens perform server-side authorization"
+      ],
+      "correct_mask": 2,
+      "rationale": "The course describes a static alternative or clear captured explanation. This conclusion follows the documented Figma design or prototype limitations and the fictional exercise conditions. Source: MAIC Apply UI/UX Design with Figma for Modern Interfaces, page 8."
+    },
+    {
+      "ordinal": 67,
+      "source_page": 8,
+      "stem": "Why should a beginner avoid unnecessary variable complexity?",
+      "options": [
+        "Assume all advanced features are available on Free plans",
+        "Use complex logic that hides the user flow",
+        "Treat prototype variables as a production database",
+        "It can obscure the central user task"
+      ],
+      "correct_mask": 8,
+      "rationale": "The course describes it can obscure the central user task. This conclusion follows the documented Figma design or prototype limitations and the fictional exercise conditions. Source: MAIC Apply UI/UX Design with Figma for Modern Interfaces, page 8."
+    },
+    {
+      "ordinal": 68,
+      "source_page": 8,
+      "stem": "What might a mode represent in a visual design system?",
+      "options": [
+        "Light or dark color context",
+        "Avoid describing variable defaults",
+        "Claim color tokens perform server-side authorization",
+        "Assume all advanced features are available on Free plans"
+      ],
+      "correct_mask": 1,
+      "rationale": "The course describes light or dark color context. This conclusion follows the documented Figma design or prototype limitations and the fictional exercise conditions. Source: MAIC Apply UI/UX Design with Figma for Modern Interfaces, page 8."
+    },
+    {
+      "ordinal": 69,
+      "source_page": 8,
+      "stem": "What should reviewers know about a variable's default?",
+      "options": [
+        "Use complex logic that hides the user flow",
+        "Treat prototype variables as a production database",
+        "Its initial value and behavior",
+        "Avoid describing variable defaults"
+      ],
+      "correct_mask": 4,
+      "rationale": "The course describes its initial value and behavior. This conclusion follows the documented Figma design or prototype limitations and the fictional exercise conditions. Source: MAIC Apply UI/UX Design with Figma for Modern Interfaces, page 8."
+    },
+    {
+      "ordinal": 70,
+      "source_page": 8,
+      "stem": "What is wrong with treating Figma variables as a production database?",
+      "options": [
+        "Claim color tokens perform server-side authorization",
+        "They do not provide authorized server-side records",
+        "Assume all advanced features are available on Free plans",
+        "Use complex logic that hides the user flow"
+      ],
+      "correct_mask": 2,
+      "rationale": "The course describes they do not provide authorized server-side records. This conclusion follows the documented Figma design or prototype limitations and the fictional exercise conditions. Source: MAIC Apply UI/UX Design with Figma for Modern Interfaces, page 8."
+    },
+    {
+      "ordinal": 71,
+      "source_page": 9,
+      "stem": "Why should mobile layouts reorganize content rather than blindly shrink?",
+      "options": [
+        "Essential text must remain readable",
+        "Shrink all text until the desktop layout fits mobile",
+        "Translate the official wordmark arbitrarily",
+        "Show availability only through color"
+      ],
+      "correct_mask": 1,
+      "rationale": "The course describes essential text must remain readable. This conclusion follows the documented Figma design or prototype limitations and the fictional exercise conditions. Source: MAIC Apply UI/UX Design with Figma for Modern Interfaces, page 9."
+    },
+    {
+      "ordinal": 72,
+      "source_page": 9,
+      "stem": "What is a localization risk for Arabic screens?",
+      "options": [
+        "Reverse Arabic characters without shaping",
+        "Ignore mixed-script URL ordering",
+        "Incorrect shaping or right-to-left reading order",
+        "Shrink all text until the desktop layout fits mobile"
+      ],
+      "correct_mask": 4,
+      "rationale": "The course describes incorrect shaping or right-to-left reading order. This conclusion follows the documented Figma design or prototype limitations and the fictional exercise conditions. Source: MAIC Apply UI/UX Design with Figma for Modern Interfaces, page 9."
+    },
+    {
+      "ordinal": 73,
+      "source_page": 9,
+      "stem": "Why should mixed English URLs be tested in Arabic content?",
+      "options": [
+        "Translate the official wordmark arbitrarily",
+        "Show availability only through color",
+        "Reverse Arabic characters without shaping",
+        "Bidirectional rules can alter their display"
+      ],
+      "correct_mask": 8,
+      "rationale": "The course describes bidirectional rules can alter their display. This conclusion follows the documented Figma design or prototype limitations and the fictional exercise conditions. Source: MAIC Apply UI/UX Design with Figma for Modern Interfaces, page 9."
+    },
+    {
+      "ordinal": 74,
+      "source_page": 9,
+      "stem": "How should an approved English wordmark respond to language switching?",
+      "options": [
+        "Stay visually fixed in its approved design",
+        "Ignore mixed-script URL ordering",
+        "Shrink all text until the desktop layout fits mobile",
+        "Translate the official wordmark arbitrarily"
+      ],
+      "correct_mask": 1,
+      "rationale": "The course describes stay visually fixed in its approved design. This conclusion follows the documented Figma design or prototype limitations and the fictional exercise conditions. Source: MAIC Apply UI/UX Design with Figma for Modern Interfaces, page 9."
+    },
+    {
+      "ordinal": 75,
+      "source_page": 9,
+      "stem": "What should happen when a long room title wraps?",
+      "options": [
+        "Show availability only through color",
+        "Reverse Arabic characters without shaping",
+        "Ignore mixed-script URL ordering",
+        "The card should expand or adjust without overlap"
+      ],
+      "correct_mask": 8,
+      "rationale": "The course describes the card should expand or adjust without overlap. This conclusion follows the documented Figma design or prototype limitations and the fictional exercise conditions. Source: MAIC Apply UI/UX Design with Figma for Modern Interfaces, page 9."
+    },
+    {
+      "ordinal": 76,
+      "source_page": 9,
+      "stem": "Which layout often suits narrow room lists?",
+      "options": [
+        "Shrink all text until the desktop layout fits mobile",
+        "Translate the official wordmark arbitrarily",
+        "A clear single-column sequence",
+        "Show availability only through color"
+      ],
+      "correct_mask": 4,
+      "rationale": "The course describes a clear single-column sequence. This conclusion follows the documented Figma design or prototype limitations and the fictional exercise conditions. Source: MAIC Apply UI/UX Design with Figma for Modern Interfaces, page 9."
+    },
+    {
+      "ordinal": 77,
+      "source_page": 9,
+      "stem": "Why test translated error messages?",
+      "options": [
+        "Reverse Arabic characters without shaping",
+        "Longer messages can clip or become unreadable",
+        "Ignore mixed-script URL ordering",
+        "Shrink all text until the desktop layout fits mobile"
+      ],
+      "correct_mask": 2,
+      "rationale": "The course describes longer messages can clip or become unreadable. This conclusion follows the documented Figma design or prototype limitations and the fictional exercise conditions. Source: MAIC Apply UI/UX Design with Figma for Modern Interfaces, page 9."
+    },
+    {
+      "ordinal": 78,
+      "source_page": 9,
+      "stem": "What is insufficient for showing unavailable status?",
+      "options": [
+        "Only a gray color without meaningful text",
+        "Translate the official wordmark arbitrarily",
+        "Show availability only through color",
+        "Reverse Arabic characters without shaping"
+      ],
+      "correct_mask": 1,
+      "rationale": "The course describes only a gray color without meaningful text. This conclusion follows the documented Figma design or prototype limitations and the fictional exercise conditions. Source: MAIC Apply UI/UX Design with Figma for Modern Interfaces, page 9."
+    },
+    {
+      "ordinal": 79,
+      "source_page": 9,
+      "stem": "Why should mobile and desktop use the same component system?",
+      "options": [
+        "Shared design rules reduce inconsistent behavior",
+        "Ignore mixed-script URL ordering",
+        "Shrink all text until the desktop layout fits mobile",
+        "Translate the official wordmark arbitrarily"
+      ],
+      "correct_mask": 1,
+      "rationale": "The course describes shared design rules reduce inconsistent behavior. This conclusion follows the documented Figma design or prototype limitations and the fictional exercise conditions. Source: MAIC Apply UI/UX Design with Figma for Modern Interfaces, page 9."
+    },
+    {
+      "ordinal": 80,
+      "source_page": 9,
+      "stem": "What should be recorded when a responsive layout fails?",
+      "options": [
+        "The viewport, defect and corrected behavior",
+        "Show availability only through color",
+        "Reverse Arabic characters without shaping",
+        "Ignore mixed-script URL ordering"
+      ],
+      "correct_mask": 1,
+      "rationale": "The course describes the viewport, defect and corrected behavior. This conclusion follows the documented Figma design or prototype limitations and the fictional exercise conditions. Source: MAIC Apply UI/UX Design with Figma for Modern Interfaces, page 9."
+    },
+    {
+      "ordinal": 81,
+      "source_page": 10,
+      "stem": "What should a Figma design review emphasize?",
+      "options": [
+        "Deliver screenshots without behavioral specifications",
+        "Whether realistic user tasks can be completed",
+        "Confirm a booking before server response",
+        "Discard version history after each review"
+      ],
+      "correct_mask": 2,
+      "rationale": "The course describes whether realistic user tasks can be completed. This conclusion follows the documented Figma design or prototype limitations and the fictional exercise conditions. Source: MAIC Apply UI/UX Design with Figma for Modern Interfaces, page 10."
+    },
+    {
+      "ordinal": 82,
+      "source_page": 10,
+      "stem": "Why should developers receive interaction notes?",
+      "options": [
+        "Treat code exports as fully audited applications",
+        "Omit all licensing and localization information",
+        "Static designs do not show backend and error rules",
+        "Deliver screenshots without behavioral specifications"
+      ],
+      "correct_mask": 4,
+      "rationale": "The course describes static designs do not show backend and error rules. This conclusion follows the documented Figma design or prototype limitations and the fictional exercise conditions. Source: MAIC Apply UI/UX Design with Figma for Modern Interfaces, page 10."
+    },
+    {
+      "ordinal": 83,
+      "source_page": 10,
+      "stem": "What must a production booking confirm?",
+      "options": [
+        "Confirm a booking before server response",
+        "Discard version history after each review",
+        "Actual server-verified availability and authorized write",
+        "Treat code exports as fully audited applications"
+      ],
+      "correct_mask": 4,
+      "rationale": "The course describes actual server-verified availability and authorized write. This conclusion follows the documented Figma design or prototype limitations and the fictional exercise conditions. Source: MAIC Apply UI/UX Design with Figma for Modern Interfaces, page 10."
+    },
+    {
+      "ordinal": 84,
+      "source_page": 10,
+      "stem": "Why is auto-generated implementation code not automatically production-ready?",
+      "options": [
+        "Omit all licensing and localization information",
+        "It still requires engineering and accessibility review",
+        "Deliver screenshots without behavioral specifications",
+        "Confirm a booking before server response"
+      ],
+      "correct_mask": 2,
+      "rationale": "The course describes it still requires engineering and accessibility review. This conclusion follows the documented Figma design or prototype limitations and the fictional exercise conditions. Source: MAIC Apply UI/UX Design with Figma for Modern Interfaces, page 10."
+    },
+    {
+      "ordinal": 85,
+      "source_page": 10,
+      "stem": "What may happen if a reviewer cannot access the same Figma features?",
+      "options": [
+        "Discard version history after each review",
+        "Treat code exports as fully audited applications",
+        "Omit all licensing and localization information",
+        "The prototype may need a simpler reproducible explanation"
+      ],
+      "correct_mask": 8,
+      "rationale": "The course describes the prototype may need a simpler reproducible explanation. This conclusion follows the documented Figma design or prototype limitations and the fictional exercise conditions. Source: MAIC Apply UI/UX Design with Figma for Modern Interfaces, page 10."
+    },
+    {
+      "ordinal": 86,
+      "source_page": 10,
+      "stem": "Which assets should a handoff document identify?",
+      "options": [
+        "Deliver screenshots without behavioral specifications",
+        "Confirm a booking before server response",
+        "Approved icons, fonts, images and usage rights",
+        "Discard version history after each review"
+      ],
+      "correct_mask": 4,
+      "rationale": "The course describes approved icons, fonts, images and usage rights. This conclusion follows the documented Figma design or prototype limitations and the fictional exercise conditions. Source: MAIC Apply UI/UX Design with Figma for Modern Interfaces, page 10."
+    },
+    {
+      "ordinal": 87,
+      "source_page": 10,
+      "stem": "Why keep versioned design decisions?",
+      "options": [
+        "Reviewers can identify what changed and why",
+        "Treat code exports as fully audited applications",
+        "Omit all licensing and localization information",
+        "Deliver screenshots without behavioral specifications"
+      ],
+      "correct_mask": 1,
+      "rationale": "The course describes reviewers can identify what changed and why. This conclusion follows the documented Figma design or prototype limitations and the fictional exercise conditions. Source: MAIC Apply UI/UX Design with Figma for Modern Interfaces, page 10."
+    },
+    {
+      "ordinal": 88,
+      "source_page": 10,
+      "stem": "What should happen if the booked slot becomes unavailable during review?",
+      "options": [
+        "Show a clear failure and allow another selection",
+        "Confirm a booking before server response",
+        "Discard version history after each review",
+        "Treat code exports as fully audited applications"
+      ],
+      "correct_mask": 1,
+      "rationale": "The course describes show a clear failure and allow another selection. This conclusion follows the documented Figma design or prototype limitations and the fictional exercise conditions. Source: MAIC Apply UI/UX Design with Figma for Modern Interfaces, page 10."
+    },
+    {
+      "ordinal": 89,
+      "source_page": 10,
+      "stem": "What is a suitable development acceptance criterion?",
+      "options": [
+        "Omit all licensing and localization information",
+        "Deliver screenshots without behavioral specifications",
+        "Confirm a booking before server response",
+        "A booking cannot be confirmed when its slot is already taken"
+      ],
+      "correct_mask": 8,
+      "rationale": "The course describes a booking cannot be confirmed when its slot is already taken. This conclusion follows the documented Figma design or prototype limitations and the fictional exercise conditions. Source: MAIC Apply UI/UX Design with Figma for Modern Interfaces, page 10."
+    },
+    {
+      "ordinal": 90,
+      "source_page": 10,
+      "stem": "Why should a component update trigger a screen review?",
+      "options": [
+        "Discard version history after each review",
+        "Treat code exports as fully audited applications",
+        "Omit all licensing and localization information",
+        "Shared changes may affect multiple layouts"
+      ],
+      "correct_mask": 8,
+      "rationale": "The course describes shared changes may affect multiple layouts. This conclusion follows the documented Figma design or prototype limitations and the fictional exercise conditions. Source: MAIC Apply UI/UX Design with Figma for Modern Interfaces, page 10."
+    },
+    {
+      "ordinal": 91,
+      "source_page": 11,
+      "stem": "How many rooms are included in the Figma case?",
+      "options": [
+        "Three rooms",
+        "Describe all classroom reservations as real",
+        "Skip the missing-date state entirely",
+        "Use only one decorative button without components"
+      ],
+      "correct_mask": 1,
+      "rationale": "The course describes three rooms. This conclusion follows the documented Figma design or prototype limitations and the fictional exercise conditions. Source: MAIC Apply UI/UX Design with Figma for Modern Interfaces, page 11."
+    },
+    {
+      "ordinal": 92,
+      "source_page": 11,
+      "stem": "Which file sections organize the exercise?",
+      "options": [
+        "Brief, Components, Mobile, Desktop and Handoff",
+        "Let long room titles overlap cards",
+        "Assume three friends represent all target users",
+        "Describe all classroom reservations as real"
+      ],
+      "correct_mask": 1,
+      "rationale": "The course describes brief, Components, Mobile, Desktop and Handoff. This conclusion follows the documented Figma design or prototype limitations and the fictional exercise conditions. Source: MAIC Apply UI/UX Design with Figma for Modern Interfaces, page 11."
+    },
+    {
+      "ordinal": 93,
+      "source_page": 11,
+      "stem": "Which three component families are required?",
+      "options": [
+        "Skip the missing-date state entirely",
+        "Use only one decorative button without components",
+        "Room Card, Date Field and Primary Button",
+        "Let long room titles overlap cards"
+      ],
+      "correct_mask": 4,
+      "rationale": "The course describes room Card, Date Field and Primary Button. This conclusion follows the documented Figma design or prototype limitations and the fictional exercise conditions. Source: MAIC Apply UI/UX Design with Figma for Modern Interfaces, page 11."
+    },
+    {
+      "ordinal": 94,
+      "source_page": 11,
+      "stem": "What does the confirmation screen mean in the classroom project?",
+      "options": [
+        "Assume three friends represent all target users",
+        "A simulated outcome rather than a live reservation",
+        "Describe all classroom reservations as real",
+        "Skip the missing-date state entirely"
+      ],
+      "correct_mask": 2,
+      "rationale": "The course describes a simulated outcome rather than a live reservation. This conclusion follows the documented Figma design or prototype limitations and the fictional exercise conditions. Source: MAIC Apply UI/UX Design with Figma for Modern Interfaces, page 11."
+    },
+    {
+      "ordinal": 95,
+      "source_page": 11,
+      "stem": "Which state must be shown when no date is selected?",
+      "options": [
+        "Use only one decorative button without components",
+        "Let long room titles overlap cards",
+        "Assume three friends represent all target users",
+        "A clear validation error"
+      ],
+      "correct_mask": 8,
+      "rationale": "The course describes a clear validation error. This conclusion follows the documented Figma design or prototype limitations and the fictional exercise conditions. Source: MAIC Apply UI/UX Design with Figma for Modern Interfaces, page 11."
+    },
+    {
+      "ordinal": 96,
+      "source_page": 11,
+      "stem": "Why should room cards be placed in auto layout?",
+      "options": [
+        "Describe all classroom reservations as real",
+        "Skip the missing-date state entirely",
+        "Use only one decorative button without components",
+        "Long names should not overlap later cards"
+      ],
+      "correct_mask": 8,
+      "rationale": "The course describes long names should not overlap later cards. This conclusion follows the documented Figma design or prototype limitations and the fictional exercise conditions. Source: MAIC Apply UI/UX Design with Figma for Modern Interfaces, page 11."
+    },
+    {
+      "ordinal": 97,
+      "source_page": 11,
+      "stem": "A 104-unit label has 16-unit padding on both sides. What width results?",
+      "options": [
+        "136 units",
+        "Let long room titles overlap cards",
+        "Assume three friends represent all target users",
+        "Describe all classroom reservations as real"
+      ],
+      "correct_mask": 1,
+      "rationale": "The course describes 136 units. This conclusion follows the documented Figma design or prototype limitations and the fictional exercise conditions. Source: MAIC Apply UI/UX Design with Figma for Modern Interfaces, page 11."
+    },
+    {
+      "ordinal": 98,
+      "source_page": 11,
+      "stem": "If the label instead measures 150 units with the same padding, what width results?",
+      "options": [
+        "Skip the missing-date state entirely",
+        "Use only one decorative button without components",
+        "182 units",
+        "Let long room titles overlap cards"
+      ],
+      "correct_mask": 4,
+      "rationale": "The course describes 182 units. This conclusion follows the documented Figma design or prototype limitations and the fictional exercise conditions. Source: MAIC Apply UI/UX Design with Figma for Modern Interfaces, page 11."
+    },
+    {
+      "ordinal": 99,
+      "source_page": 11,
+      "stem": "Why are three classmates insufficient for a market success claim?",
+      "options": [
+        "Their small convenience sample is not representative",
+        "Assume three friends represent all target users",
+        "Describe all classroom reservations as real",
+        "Skip the missing-date state entirely"
+      ],
+      "correct_mask": 1,
+      "rationale": "The course describes their small convenience sample is not representative. This conclusion follows the documented Figma design or prototype limitations and the fictional exercise conditions. Source: MAIC Apply UI/UX Design with Figma for Modern Interfaces, page 11."
+    },
+    {
+      "ordinal": 100,
+      "source_page": 11,
+      "stem": "What is an important output of the handoff section?",
+      "options": [
+        "Clear requirements for future engineering implementation",
+        "Use only one decorative button without components",
+        "Let long room titles overlap cards",
+        "Assume three friends represent all target users"
+      ],
+      "correct_mask": 1,
+      "rationale": "The course describes clear requirements for future engineering implementation. This conclusion follows the documented Figma design or prototype limitations and the fictional exercise conditions. Source: MAIC Apply UI/UX Design with Figma for Modern Interfaces, page 11."
+    }
+  ]
+}
