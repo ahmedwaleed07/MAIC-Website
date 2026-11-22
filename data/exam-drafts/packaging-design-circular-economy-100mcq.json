@@ -1,0 +1,1312 @@
+{
+  "course_id": "packaging-design-circular-economy",
+  "source_manuscript": "data/course-manuscripts/packaging-design-circular-economy.md",
+  "source_manuscript_blob_sha": "ff6b5bb103d07eb0bec06d45f799580f29b0a8aa",
+  "source_pdf_sha256": null,
+  "bank_version": "draft-manuscript-20261122-v1",
+  "approval_status": "editorial_draft_pending_independent_review",
+  "number_of_questions": 100,
+  "note": "Unapproved editorial MCQ bank; independent content, regulatory and answer-level review required. Not a MAIC student exam.",
+  "questions": [
+    {
+      "ordinal": 1,
+      "source_page": 2,
+      "stem": "Which principle should guide circular packaging design?",
+      "options": [
+        "Choose only the lightest material without testing",
+        "Protect the product while reducing preventable resource impacts",
+        "Publish unsupported sustainability claims",
+        "Assume practice questions award compliance status"
+      ],
+      "correct_mask": 2,
+      "rationale": "The correct choice is protect the product while reducing preventable resource impacts. This reflects the source's functional, environmental or arithmetic constraints rather than a material-only assumption. Source: MAIC Packaging Design for the Circular Economy, page 2."
+    },
+    {
+      "ordinal": 2,
+      "source_page": 2,
+      "stem": "Why is a recyclable-looking package not necessarily circular?",
+      "options": [
+        "Treat a recycling logo as guaranteed collection",
+        "Avoid evaluating product safety",
+        "Local collection and processing may not recover its material",
+        "Choose only the lightest material without testing"
+      ],
+      "correct_mask": 4,
+      "rationale": "The correct choice is local collection and processing may not recover its material. This reflects the source's functional, environmental or arithmetic constraints rather than a material-only assumption. Source: MAIC Packaging Design for the Circular Economy, page 2."
+    },
+    {
+      "ordinal": 3,
+      "source_page": 2,
+      "stem": "What should be mapped before changing packaging materials?",
+      "options": [
+        "Publish unsupported sustainability claims",
+        "Assume practice questions award compliance status",
+        "Functional needs, transport, users and recovery route",
+        "Treat a recycling logo as guaranteed collection"
+      ],
+      "correct_mask": 4,
+      "rationale": "The correct choice is functional needs, transport, users and recovery route. This reflects the source's functional, environmental or arithmetic constraints rather than a material-only assumption. Source: MAIC Packaging Design for the Circular Economy, page 2."
+    },
+    {
+      "ordinal": 4,
+      "source_page": 2,
+      "stem": "Which stage generally follows defining packaging requirements?",
+      "options": [
+        "Avoid evaluating product safety",
+        "Choose only the lightest material without testing",
+        "Publish unsupported sustainability claims",
+        "Comparing feasible material and system options"
+      ],
+      "correct_mask": 8,
+      "rationale": "The correct choice is comparing feasible material and system options. This reflects the source's functional, environmental or arithmetic constraints rather than a material-only assumption. Source: MAIC Packaging Design for the Circular Economy, page 2."
+    },
+    {
+      "ordinal": 5,
+      "source_page": 2,
+      "stem": "What is an appropriate learning outcome of this course?",
+      "options": [
+        "Assume practice questions award compliance status",
+        "Treat a recycling logo as guaranteed collection",
+        "Avoid evaluating product safety",
+        "Evaluate tradeoffs using an evidence-based packaging brief"
+      ],
+      "correct_mask": 8,
+      "rationale": "The correct choice is evaluate tradeoffs using an evidence-based packaging brief. This reflects the source's functional, environmental or arithmetic constraints rather than a material-only assumption. Source: MAIC Packaging Design for the Circular Economy, page 2."
+    },
+    {
+      "ordinal": 6,
+      "source_page": 2,
+      "stem": "Why are original classroom examples explicitly marked hypothetical?",
+      "options": [
+        "Choose only the lightest material without testing",
+        "Publish unsupported sustainability claims",
+        "Assume practice questions award compliance status",
+        "They do not establish verified commercial performance"
+      ],
+      "correct_mask": 8,
+      "rationale": "The correct choice is they do not establish verified commercial performance. This reflects the source's functional, environmental or arithmetic constraints rather than a material-only assumption. Source: MAIC Packaging Design for the Circular Economy, page 2."
+    },
+    {
+      "ordinal": 7,
+      "source_page": 2,
+      "stem": "What should a packaging designer record about protection?",
+      "options": [
+        "Treat a recycling logo as guaranteed collection",
+        "Avoid evaluating product safety",
+        "Choose only the lightest material without testing",
+        "Conditions and tests needed to prevent product damage"
+      ],
+      "correct_mask": 8,
+      "rationale": "The correct choice is conditions and tests needed to prevent product damage. This reflects the source's functional, environmental or arithmetic constraints rather than a material-only assumption. Source: MAIC Packaging Design for the Circular Economy, page 2."
+    },
+    {
+      "ordinal": 8,
+      "source_page": 2,
+      "stem": "Can the practice rubric itself award compliance certification?",
+      "options": [
+        "Publish unsupported sustainability claims",
+        "No, specialist and regulatory checks are separate",
+        "Assume practice questions award compliance status",
+        "Treat a recycling logo as guaranteed collection"
+      ],
+      "correct_mask": 2,
+      "rationale": "The correct choice is no, specialist and regulatory checks are separate. This reflects the source's functional, environmental or arithmetic constraints rather than a material-only assumption. Source: MAIC Packaging Design for the Circular Economy, page 2."
+    },
+    {
+      "ordinal": 9,
+      "source_page": 2,
+      "stem": "A package saves material but causes more products to break. What must be considered?",
+      "options": [
+        "Avoid evaluating product safety",
+        "The total system impact including damaged products",
+        "Choose only the lightest material without testing",
+        "Publish unsupported sustainability claims"
+      ],
+      "correct_mask": 2,
+      "rationale": "The correct choice is the total system impact including damaged products. This reflects the source's functional, environmental or arithmetic constraints rather than a material-only assumption. Source: MAIC Packaging Design for the Circular Economy, page 2."
+    },
+    {
+      "ordinal": 10,
+      "source_page": 2,
+      "stem": "Why should packaging users receive clear disposal instructions?",
+      "options": [
+        "Assume practice questions award compliance status",
+        "Treat a recycling logo as guaranteed collection",
+        "Avoid evaluating product safety",
+        "Actual sorting behavior affects recovery outcomes"
+      ],
+      "correct_mask": 8,
+      "rationale": "The correct choice is actual sorting behavior affects recovery outcomes. This reflects the source's functional, environmental or arithmetic constraints rather than a material-only assumption. Source: MAIC Packaging Design for the Circular Economy, page 2."
+    },
+    {
+      "ordinal": 11,
+      "source_page": 3,
+      "stem": "Which information belongs in a packaging functional brief?",
+      "options": [
+        "Reduce all cushioning without checking breakage",
+        "Ignore label or food-contact obligations",
+        "Fragility, dimensions, hygiene, distribution and label requirements",
+        "Choose packaging without verifying product dimensions"
+      ],
+      "correct_mask": 4,
+      "rationale": "The correct choice is fragility, dimensions, hygiene, distribution and label requirements. This reflects the source's functional, environmental or arithmetic constraints rather than a material-only assumption. Source: MAIC Packaging Design for the Circular Economy, page 3."
+    },
+    {
+      "ordinal": 12,
+      "source_page": 3,
+      "stem": "Why might an extra layer of packaging be necessary?",
+      "options": [
+        "Treat every layer as decorative by definition",
+        "It can provide essential protection during transport",
+        "Design for only a screen mockup",
+        "Reduce all cushioning without checking breakage"
+      ],
+      "correct_mask": 2,
+      "rationale": "The correct choice is it can provide essential protection during transport. This reflects the source's functional, environmental or arithmetic constraints rather than a material-only assumption. Source: MAIC Packaging Design for the Circular Economy, page 3."
+    },
+    {
+      "ordinal": 13,
+      "source_page": 3,
+      "stem": "What is primary packaging?",
+      "options": [
+        "Ignore label or food-contact obligations",
+        "The package directly enclosing or contacting the product",
+        "Choose packaging without verifying product dimensions",
+        "Treat every layer as decorative by definition"
+      ],
+      "correct_mask": 2,
+      "rationale": "The correct choice is the package directly enclosing or contacting the product. This reflects the source's functional, environmental or arithmetic constraints rather than a material-only assumption. Source: MAIC Packaging Design for the Circular Economy, page 3."
+    },
+    {
+      "ordinal": 14,
+      "source_page": 3,
+      "stem": "What is transport packaging designed to support?",
+      "options": [
+        "Design for only a screen mockup",
+        "Reduce all cushioning without checking breakage",
+        "Protecting goods through distribution and handling",
+        "Ignore label or food-contact obligations"
+      ],
+      "correct_mask": 4,
+      "rationale": "The correct choice is protecting goods through distribution and handling. This reflects the source's functional, environmental or arithmetic constraints rather than a material-only assumption. Source: MAIC Packaging Design for the Circular Economy, page 3."
+    },
+    {
+      "ordinal": 15,
+      "source_page": 3,
+      "stem": "Why should an empty-space reduction be tested?",
+      "options": [
+        "Less cushioning may increase damage during shipment",
+        "Choose packaging without verifying product dimensions",
+        "Treat every layer as decorative by definition",
+        "Design for only a screen mockup"
+      ],
+      "correct_mask": 1,
+      "rationale": "The correct choice is less cushioning may increase damage during shipment. This reflects the source's functional, environmental or arithmetic constraints rather than a material-only assumption. Source: MAIC Packaging Design for the Circular Economy, page 3."
+    },
+    {
+      "ordinal": 16,
+      "source_page": 3,
+      "stem": "Which stakeholder can reveal actual filling-line constraints?",
+      "options": [
+        "The manufacturing or packing operator",
+        "Reduce all cushioning without checking breakage",
+        "Ignore label or food-contact obligations",
+        "Choose packaging without verifying product dimensions"
+      ],
+      "correct_mask": 1,
+      "rationale": "The correct choice is the manufacturing or packing operator. This reflects the source's functional, environmental or arithmetic constraints rather than a material-only assumption. Source: MAIC Packaging Design for the Circular Economy, page 3."
+    },
+    {
+      "ordinal": 17,
+      "source_page": 3,
+      "stem": "Why document unverified assumptions in the design brief?",
+      "options": [
+        "Treat every layer as decorative by definition",
+        "Design for only a screen mockup",
+        "They require tests before a confident claim",
+        "Reduce all cushioning without checking breakage"
+      ],
+      "correct_mask": 4,
+      "rationale": "The correct choice is they require tests before a confident claim. This reflects the source's functional, environmental or arithmetic constraints rather than a material-only assumption. Source: MAIC Packaging Design for the Circular Economy, page 3."
+    },
+    {
+      "ordinal": 18,
+      "source_page": 3,
+      "stem": "What makes a functional requirement useful?",
+      "options": [
+        "It can be checked with a defined performance test",
+        "Ignore label or food-contact obligations",
+        "Choose packaging without verifying product dimensions",
+        "Treat every layer as decorative by definition"
+      ],
+      "correct_mask": 1,
+      "rationale": "The correct choice is it can be checked with a defined performance test. This reflects the source's functional, environmental or arithmetic constraints rather than a material-only assumption. Source: MAIC Packaging Design for the Circular Economy, page 3."
+    },
+    {
+      "ordinal": 19,
+      "source_page": 3,
+      "stem": "A carton contains oversized decorative inserts. What should be tried?",
+      "options": [
+        "Reduce excess material only after protection tests",
+        "Design for only a screen mockup",
+        "Reduce all cushioning without checking breakage",
+        "Ignore label or food-contact obligations"
+      ],
+      "correct_mask": 1,
+      "rationale": "The correct choice is reduce excess material only after protection tests. This reflects the source's functional, environmental or arithmetic constraints rather than a material-only assumption. Source: MAIC Packaging Design for the Circular Economy, page 3."
+    },
+    {
+      "ordinal": 20,
+      "source_page": 3,
+      "stem": "Why can a redesign that ignores food safety be unacceptable?",
+      "options": [
+        "Choose packaging without verifying product dimensions",
+        "Treat every layer as decorative by definition",
+        "Design for only a screen mockup",
+        "Protection and applicable safety requirements remain mandatory"
+      ],
+      "correct_mask": 8,
+      "rationale": "The correct choice is protection and applicable safety requirements remain mandatory. This reflects the source's functional, environmental or arithmetic constraints rather than a material-only assumption. Source: MAIC Packaging Design for the Circular Economy, page 3."
+    },
+    {
+      "ordinal": 21,
+      "source_page": 4,
+      "stem": "How does a linear packaging model generally end?",
+      "options": [
+        "Assume switching to glass always lowers impacts",
+        "Skip mapping sorting and collection",
+        "Assume material choice alone establishes circularity",
+        "Discarding materials after a one-way use"
+      ],
+      "correct_mask": 8,
+      "rationale": "The correct choice is discarding materials after a one-way use. This reflects the source's functional, environmental or arithmetic constraints rather than a material-only assumption. Source: MAIC Packaging Design for the Circular Economy, page 4."
+    },
+    {
+      "ordinal": 22,
+      "source_page": 4,
+      "stem": "What is an example of packaging prevention?",
+      "options": [
+        "Treat a biodegradable label as proof of local composting",
+        "Add layers to look sustainable",
+        "Removing an unnecessary protective-looking outer sleeve",
+        "Assume switching to glass always lowers impacts"
+      ],
+      "correct_mask": 4,
+      "rationale": "The correct choice is removing an unnecessary protective-looking outer sleeve. This reflects the source's functional, environmental or arithmetic constraints rather than a material-only assumption. Source: MAIC Packaging Design for the Circular Economy, page 4."
+    },
+    {
+      "ordinal": 23,
+      "source_page": 4,
+      "stem": "Which conditions can make a material technically recyclable but not recovered?",
+      "options": [
+        "Skip mapping sorting and collection",
+        "Assume material choice alone establishes circularity",
+        "Treat a biodegradable label as proof of local composting",
+        "Lack of local collection or suitable processing"
+      ],
+      "correct_mask": 8,
+      "rationale": "The correct choice is lack of local collection or suitable processing. This reflects the source's functional, environmental or arithmetic constraints rather than a material-only assumption. Source: MAIC Packaging Design for the Circular Economy, page 4."
+    },
+    {
+      "ordinal": 24,
+      "source_page": 4,
+      "stem": "Why is switching from plastic to glass not automatically greener?",
+      "options": [
+        "Add layers to look sustainable",
+        "Assume switching to glass always lowers impacts",
+        "Transport weight, breakage and production may change impacts",
+        "Skip mapping sorting and collection"
+      ],
+      "correct_mask": 4,
+      "rationale": "The correct choice is transport weight, breakage and production may change impacts. This reflects the source's functional, environmental or arithmetic constraints rather than a material-only assumption. Source: MAIC Packaging Design for the Circular Economy, page 4."
+    },
+    {
+      "ordinal": 25,
+      "source_page": 4,
+      "stem": "What should a material flow diagram include?",
+      "options": [
+        "Assume material choice alone establishes circularity",
+        "Treat a biodegradable label as proof of local composting",
+        "Add layers to look sustainable",
+        "Inputs, use, collection, sorting and residual disposal"
+      ],
+      "correct_mask": 8,
+      "rationale": "The correct choice is inputs, use, collection, sorting and residual disposal. This reflects the source's functional, environmental or arithmetic constraints rather than a material-only assumption. Source: MAIC Packaging Design for the Circular Economy, page 4."
+    },
+    {
+      "ordinal": 26,
+      "source_page": 4,
+      "stem": "How does refill differ from material recycling?",
+      "options": [
+        "Assume switching to glass always lowers impacts",
+        "Skip mapping sorting and collection",
+        "Assume material choice alone establishes circularity",
+        "It may reuse a container instead of reprocessing it"
+      ],
+      "correct_mask": 8,
+      "rationale": "The correct choice is it may reuse a container instead of reprocessing it. This reflects the source's functional, environmental or arithmetic constraints rather than a material-only assumption. Source: MAIC Packaging Design for the Circular Economy, page 4."
+    },
+    {
+      "ordinal": 27,
+      "source_page": 4,
+      "stem": "Why do locally available processing systems matter?",
+      "options": [
+        "They determine whether a chosen recovery pathway is practical",
+        "Treat a biodegradable label as proof of local composting",
+        "Add layers to look sustainable",
+        "Assume switching to glass always lowers impacts"
+      ],
+      "correct_mask": 1,
+      "rationale": "The correct choice is they determine whether a chosen recovery pathway is practical. This reflects the source's functional, environmental or arithmetic constraints rather than a material-only assumption. Source: MAIC Packaging Design for the Circular Economy, page 4."
+    },
+    {
+      "ordinal": 28,
+      "source_page": 4,
+      "stem": "What should a designer evaluate before removing a packaging layer?",
+      "options": [
+        "Whether it serves an actual safety or information function",
+        "Skip mapping sorting and collection",
+        "Assume material choice alone establishes circularity",
+        "Treat a biodegradable label as proof of local composting"
+      ],
+      "correct_mask": 1,
+      "rationale": "The correct choice is whether it serves an actual safety or information function. This reflects the source's functional, environmental or arithmetic constraints rather than a material-only assumption. Source: MAIC Packaging Design for the Circular Economy, page 4."
+    },
+    {
+      "ordinal": 29,
+      "source_page": 4,
+      "stem": "A paper sleeve adds no essential value. Which strategy should be explored?",
+      "options": [
+        "Add layers to look sustainable",
+        "Assume switching to glass always lowers impacts",
+        "Skip mapping sorting and collection",
+        "Elimination of unnecessary material"
+      ],
+      "correct_mask": 8,
+      "rationale": "The correct choice is elimination of unnecessary material. This reflects the source's functional, environmental or arithmetic constraints rather than a material-only assumption. Source: MAIC Packaging Design for the Circular Economy, page 4."
+    },
+    {
+      "ordinal": 30,
+      "source_page": 4,
+      "stem": "What is a realistic purpose of a circular system map?",
+      "options": [
+        "Assume material choice alone establishes circularity",
+        "Identify leakage and opportunities to keep material in use",
+        "Treat a biodegradable label as proof of local composting",
+        "Add layers to look sustainable"
+      ],
+      "correct_mask": 2,
+      "rationale": "The correct choice is identify leakage and opportunities to keep material in use. This reflects the source's functional, environmental or arithmetic constraints rather than a material-only assumption. Source: MAIC Packaging Design for the Circular Economy, page 4."
+    },
+    {
+      "ordinal": 31,
+      "source_page": 5,
+      "stem": "Why should recycling design consider labels and adhesives?",
+      "options": [
+        "Treat a recycled-content claim as full recyclability",
+        "Accessories can interfere with sorting or reprocessing",
+        "Forget adhesives and closures in a design review",
+        "Assume all compostable items biodegrade in landfills"
+      ],
+      "correct_mask": 2,
+      "rationale": "The correct choice is accessories can interfere with sorting or reprocessing. This reflects the source's functional, environmental or arithmetic constraints rather than a material-only assumption. Source: MAIC Packaging Design for the Circular Economy, page 5."
+    },
+    {
+      "ordinal": 32,
+      "source_page": 5,
+      "stem": "What does the recycling triangle alone fail to establish?",
+      "options": [
+        "Actual collection and recycling in the target market",
+        "Assume any recycling symbol means universal collection",
+        "Call an untested coated cup fully recyclable",
+        "Treat a recycled-content claim as full recyclability"
+      ],
+      "correct_mask": 1,
+      "rationale": "The correct choice is actual collection and recycling in the target market. This reflects the source's functional, environmental or arithmetic constraints rather than a material-only assumption. Source: MAIC Packaging Design for the Circular Economy, page 5."
+    },
+    {
+      "ordinal": 33,
+      "source_page": 5,
+      "stem": "What is a practical question to ask local recovery partners?",
+      "options": [
+        "Can this exact material-and-component combination be processed?",
+        "Forget adhesives and closures in a design review",
+        "Assume all compostable items biodegrade in landfills",
+        "Assume any recycling symbol means universal collection"
+      ],
+      "correct_mask": 1,
+      "rationale": "The correct choice is can this exact material-and-component combination be processed. This reflects the source's functional, environmental or arithmetic constraints rather than a material-only assumption. Source: MAIC Packaging Design for the Circular Economy, page 5."
+    },
+    {
+      "ordinal": 34,
+      "source_page": 5,
+      "stem": "Why is recycled content different from recyclability?",
+      "options": [
+        "One describes material origin and the other future recovery potential",
+        "Call an untested coated cup fully recyclable",
+        "Treat a recycled-content claim as full recyclability",
+        "Forget adhesives and closures in a design review"
+      ],
+      "correct_mask": 1,
+      "rationale": "The correct choice is one describes material origin and the other future recovery potential. This reflects the source's functional, environmental or arithmetic constraints rather than a material-only assumption. Source: MAIC Packaging Design for the Circular Economy, page 5."
+    },
+    {
+      "ordinal": 35,
+      "source_page": 5,
+      "stem": "What should qualify a claim that a package is compostable?",
+      "options": [
+        "Assume all compostable items biodegrade in landfills",
+        "Assume any recycling symbol means universal collection",
+        "Call an untested coated cup fully recyclable",
+        "A relevant standard and realistic processing conditions"
+      ],
+      "correct_mask": 8,
+      "rationale": "The correct choice is a relevant standard and realistic processing conditions. This reflects the source's functional, environmental or arithmetic constraints rather than a material-only assumption. Source: MAIC Packaging Design for the Circular Economy, page 5."
+    },
+    {
+      "ordinal": 36,
+      "source_page": 5,
+      "stem": "Why can mixed-material layers be challenging?",
+      "options": [
+        "Treat a recycled-content claim as full recyclability",
+        "They may be difficult to separate or recover together",
+        "Forget adhesives and closures in a design review",
+        "Assume all compostable items biodegrade in landfills"
+      ],
+      "correct_mask": 2,
+      "rationale": "The correct choice is they may be difficult to separate or recover together. This reflects the source's functional, environmental or arithmetic constraints rather than a material-only assumption. Source: MAIC Packaging Design for the Circular Economy, page 5."
+    },
+    {
+      "ordinal": 37,
+      "source_page": 5,
+      "stem": "What is an example of a more precise disposal instruction?",
+      "options": [
+        "Assume any recycling symbol means universal collection",
+        "Call an untested coated cup fully recyclable",
+        "Separate the lid and follow the local container collection rules",
+        "Treat a recycled-content claim as full recyclability"
+      ],
+      "correct_mask": 4,
+      "rationale": "The correct choice is separate the lid and follow the local container collection rules. This reflects the source's functional, environmental or arithmetic constraints rather than a material-only assumption. Source: MAIC Packaging Design for the Circular Economy, page 5."
+    },
+    {
+      "ordinal": 38,
+      "source_page": 5,
+      "stem": "What evidence supports a 30% recycled-content claim?",
+      "options": [
+        "Forget adhesives and closures in a design review",
+        "Verified composition and a clearly defined calculation basis",
+        "Assume all compostable items biodegrade in landfills",
+        "Assume any recycling symbol means universal collection"
+      ],
+      "correct_mask": 2,
+      "rationale": "The correct choice is verified composition and a clearly defined calculation basis. This reflects the source's functional, environmental or arithmetic constraints rather than a material-only assumption. Source: MAIC Packaging Design for the Circular Economy, page 5."
+    },
+    {
+      "ordinal": 39,
+      "source_page": 5,
+      "stem": "Why might a user not remove a difficult adhesive label?",
+      "options": [
+        "Call an untested coated cup fully recyclable",
+        "Treat a recycled-content claim as full recyclability",
+        "Forget adhesives and closures in a design review",
+        "The required effort or tools discourage correct separation"
+      ],
+      "correct_mask": 8,
+      "rationale": "The correct choice is the required effort or tools discourage correct separation. This reflects the source's functional, environmental or arithmetic constraints rather than a material-only assumption. Source: MAIC Packaging Design for the Circular Economy, page 5."
+    },
+    {
+      "ordinal": 40,
+      "source_page": 5,
+      "stem": "A cup has a barrier coating. What should be checked before saying fully recyclable?",
+      "options": [
+        "All component materials and the actual destination recovery pathway",
+        "Assume all compostable items biodegrade in landfills",
+        "Assume any recycling symbol means universal collection",
+        "Call an untested coated cup fully recyclable"
+      ],
+      "correct_mask": 1,
+      "rationale": "The correct choice is all component materials and the actual destination recovery pathway. This reflects the source's functional, environmental or arithmetic constraints rather than a material-only assumption. Source: MAIC Packaging Design for the Circular Economy, page 5."
+    },
+    {
+      "ordinal": 41,
+      "source_page": 6,
+      "stem": "What makes a reuse system more than a durable box?",
+      "options": [
+        "Assume durable material automatically guarantees reuse",
+        "Return, inspection, cleaning, logistics and loss management",
+        "Count every box as returned without measurement",
+        "Compare systems without defining number of uses"
+      ],
+      "correct_mask": 2,
+      "rationale": "The correct choice is return, inspection, cleaning, logistics and loss management. This reflects the source's functional, environmental or arithmetic constraints rather than a material-only assumption. Source: MAIC Packaging Design for the Circular Economy, page 6."
+    },
+    {
+      "ordinal": 42,
+      "source_page": 6,
+      "stem": "Which operational measure directly affects a return loop?",
+      "options": [
+        "Ignore sanitation and return transport",
+        "Assume return loops have no operational expense",
+        "Assume durable material automatically guarantees reuse",
+        "The share of issued containers returned within a defined period"
+      ],
+      "correct_mask": 8,
+      "rationale": "The correct choice is the share of issued containers returned within a defined period. This reflects the source's functional, environmental or arithmetic constraints rather than a material-only assumption. Source: MAIC Packaging Design for the Circular Economy, page 6."
+    },
+    {
+      "ordinal": 43,
+      "source_page": 6,
+      "stem": "Why should food-contact reuse include cleaning controls?",
+      "options": [
+        "Count every box as returned without measurement",
+        "Hygiene requirements apply across repeated uses",
+        "Compare systems without defining number of uses",
+        "Ignore sanitation and return transport"
+      ],
+      "correct_mask": 2,
+      "rationale": "The correct choice is hygiene requirements apply across repeated uses. This reflects the source's functional, environmental or arithmetic constraints rather than a material-only assumption. Source: MAIC Packaging Design for the Circular Economy, page 6."
+    },
+    {
+      "ordinal": 44,
+      "source_page": 6,
+      "stem": "What is a plausible disadvantage of a reusable package?",
+      "options": [
+        "Assume return loops have no operational expense",
+        "Assume durable material automatically guarantees reuse",
+        "Count every box as returned without measurement",
+        "Greater initial material demand and collection logistics"
+      ],
+      "correct_mask": 8,
+      "rationale": "The correct choice is greater initial material demand and collection logistics. This reflects the source's functional, environmental or arithmetic constraints rather than a material-only assumption. Source: MAIC Packaging Design for the Circular Economy, page 6."
+    },
+    {
+      "ordinal": 45,
+      "source_page": 6,
+      "stem": "Why should reusable packaging be compared per functional use?",
+      "options": [
+        "Multiple trips share production and cleaning impacts",
+        "Compare systems without defining number of uses",
+        "Ignore sanitation and return transport",
+        "Assume return loops have no operational expense"
+      ],
+      "correct_mask": 1,
+      "rationale": "The correct choice is multiple trips share production and cleaning impacts. This reflects the source's functional, environmental or arithmetic constraints rather than a material-only assumption. Source: MAIC Packaging Design for the Circular Economy, page 6."
+    },
+    {
+      "ordinal": 46,
+      "source_page": 6,
+      "stem": "What can undermine a theoretically efficient return system?",
+      "options": [
+        "Assume durable material automatically guarantees reuse",
+        "Count every box as returned without measurement",
+        "High container loss or low return rates",
+        "Compare systems without defining number of uses"
+      ],
+      "correct_mask": 4,
+      "rationale": "The correct choice is high container loss or low return rates. This reflects the source's functional, environmental or arithmetic constraints rather than a material-only assumption. Source: MAIC Packaging Design for the Circular Economy, page 6."
+    },
+    {
+      "ordinal": 47,
+      "source_page": 6,
+      "stem": "Why might a deposit be included in a packaging loop?",
+      "options": [
+        "Ignore sanitation and return transport",
+        "Encourage returns and support container recovery",
+        "Assume return loops have no operational expense",
+        "Assume durable material automatically guarantees reuse"
+      ],
+      "correct_mask": 2,
+      "rationale": "The correct choice is encourage returns and support container recovery. This reflects the source's functional, environmental or arithmetic constraints rather than a material-only assumption. Source: MAIC Packaging Design for the Circular Economy, page 6."
+    },
+    {
+      "ordinal": 48,
+      "source_page": 6,
+      "stem": "A box is reused eight times. What else matters beyond this count?",
+      "options": [
+        "Count every box as returned without measurement",
+        "Compare systems without defining number of uses",
+        "Ignore sanitation and return transport",
+        "Cleaning, transport, breakage and replacement"
+      ],
+      "correct_mask": 8,
+      "rationale": "The correct choice is cleaning, transport, breakage and replacement. This reflects the source's functional, environmental or arithmetic constraints rather than a material-only assumption. Source: MAIC Packaging Design for the Circular Economy, page 6."
+    },
+    {
+      "ordinal": 49,
+      "source_page": 6,
+      "stem": "A reusable box has impact 24 and seven cleaning cycles cost 2 each. What is total modeled impact?",
+      "options": [
+        "Assume return loops have no operational expense",
+        "Assume durable material automatically guarantees reuse",
+        "38 impact units",
+        "Count every box as returned without measurement"
+      ],
+      "correct_mask": 4,
+      "rationale": "The correct choice is 38 impact units. This reflects the source's functional, environmental or arithmetic constraints rather than a material-only assumption. Source: MAIC Packaging Design for the Circular Economy, page 6."
+    },
+    {
+      "ordinal": 50,
+      "source_page": 6,
+      "stem": "Under that model, what is average impact per eight uses?",
+      "options": [
+        "Compare systems without defining number of uses",
+        "Ignore sanitation and return transport",
+        "Assume return loops have no operational expense",
+        "4.75 impact units per use"
+      ],
+      "correct_mask": 8,
+      "rationale": "The correct choice is 4.75 impact units per use. This reflects the source's functional, environmental or arithmetic constraints rather than a material-only assumption. Source: MAIC Packaging Design for the Circular Economy, page 6."
+    },
+    {
+      "ordinal": 51,
+      "source_page": 7,
+      "stem": "What is a functional unit in life-cycle comparison?",
+      "options": [
+        "A common service output held equivalent across options",
+        "Compare different service volumes as equivalent",
+        "Ignore spoilage and product damage",
+        "Use assumptions without marking uncertainty"
+      ],
+      "correct_mask": 1,
+      "rationale": "The correct choice is a common service output held equivalent across options. This reflects the source's functional, environmental or arithmetic constraints rather than a material-only assumption. Source: MAIC Packaging Design for the Circular Economy, page 7."
+    },
+    {
+      "ordinal": 52,
+      "source_page": 7,
+      "stem": "Why compare packages delivering the same undamaged product quantity?",
+      "options": [
+        "Treat fictional scores as certified LCA results",
+        "Report only one indicator to hide tradeoffs",
+        "Functional equivalence avoids biased comparisons",
+        "Compare different service volumes as equivalent"
+      ],
+      "correct_mask": 4,
+      "rationale": "The correct choice is functional equivalence avoids biased comparisons. This reflects the source's functional, environmental or arithmetic constraints rather than a material-only assumption. Source: MAIC Packaging Design for the Circular Economy, page 7."
+    },
+    {
+      "ordinal": 53,
+      "source_page": 7,
+      "stem": "What should an environmental screening table distinguish?",
+      "options": [
+        "Ignore spoilage and product damage",
+        "Use assumptions without marking uncertainty",
+        "Treat fictional scores as certified LCA results",
+        "Observed measurements from estimates and assumptions"
+      ],
+      "correct_mask": 8,
+      "rationale": "The correct choice is observed measurements from estimates and assumptions. This reflects the source's functional, environmental or arithmetic constraints rather than a material-only assumption. Source: MAIC Packaging Design for the Circular Economy, page 7."
+    },
+    {
+      "ordinal": 54,
+      "source_page": 7,
+      "stem": "Can one fictional impact score replace a qualified life-cycle assessment?",
+      "options": [
+        "No, its boundary and assumptions are insufficient",
+        "Report only one indicator to hide tradeoffs",
+        "Compare different service volumes as equivalent",
+        "Ignore spoilage and product damage"
+      ],
+      "correct_mask": 1,
+      "rationale": "The correct choice is no, its boundary and assumptions are insufficient. This reflects the source's functional, environmental or arithmetic constraints rather than a material-only assumption. Source: MAIC Packaging Design for the Circular Economy, page 7."
+    },
+    {
+      "ordinal": 55,
+      "source_page": 7,
+      "stem": "Why can package-weight reduction be environmentally counterproductive?",
+      "options": [
+        "Use assumptions without marking uncertainty",
+        "Higher damage or spoilage may increase total impact",
+        "Treat fictional scores as certified LCA results",
+        "Report only one indicator to hide tradeoffs"
+      ],
+      "correct_mask": 2,
+      "rationale": "The correct choice is higher damage or spoilage may increase total impact. This reflects the source's functional, environmental or arithmetic constraints rather than a material-only assumption. Source: MAIC Packaging Design for the Circular Economy, page 7."
+    },
+    {
+      "ordinal": 56,
+      "source_page": 7,
+      "stem": "Which indicator measures a physical property rather than financial cost?",
+      "options": [
+        "Compare different service volumes as equivalent",
+        "Ignore spoilage and product damage",
+        "Use assumptions without marking uncertainty",
+        "Packaging mass per protected product"
+      ],
+      "correct_mask": 8,
+      "rationale": "The correct choice is packaging mass per protected product. This reflects the source's functional, environmental or arithmetic constraints rather than a material-only assumption. Source: MAIC Packaging Design for the Circular Economy, page 7."
+    },
+    {
+      "ordinal": 57,
+      "source_page": 7,
+      "stem": "What is a reason to report more than one sustainability metric?",
+      "options": [
+        "Treat fictional scores as certified LCA results",
+        "Report only one indicator to hide tradeoffs",
+        "Compare different service volumes as equivalent",
+        "One option may improve one effect while worsening another"
+      ],
+      "correct_mask": 8,
+      "rationale": "The correct choice is one option may improve one effect while worsening another. This reflects the source's functional, environmental or arithmetic constraints rather than a material-only assumption. Source: MAIC Packaging Design for the Circular Economy, page 7."
+    },
+    {
+      "ordinal": 58,
+      "source_page": 7,
+      "stem": "What does a higher transport weight potentially influence?",
+      "options": [
+        "Ignore spoilage and product damage",
+        "Use assumptions without marking uncertainty",
+        "Fuel use or shipping efficiency under actual conditions",
+        "Treat fictional scores as certified LCA results"
+      ],
+      "correct_mask": 4,
+      "rationale": "The correct choice is fuel use or shipping efficiency under actual conditions. This reflects the source's functional, environmental or arithmetic constraints rather than a material-only assumption. Source: MAIC Packaging Design for the Circular Economy, page 7."
+    },
+    {
+      "ordinal": 59,
+      "source_page": 7,
+      "stem": "A pilot shows lower packaging mass but more damaged items. What is needed?",
+      "options": [
+        "Report only one indicator to hide tradeoffs",
+        "A system-level comparison including replacement products",
+        "Compare different service volumes as equivalent",
+        "Ignore spoilage and product damage"
+      ],
+      "correct_mask": 2,
+      "rationale": "The correct choice is a system-level comparison including replacement products. This reflects the source's functional, environmental or arithmetic constraints rather than a material-only assumption. Source: MAIC Packaging Design for the Circular Economy, page 7."
+    },
+    {
+      "ordinal": 60,
+      "source_page": 7,
+      "stem": "Why should a study state its calculation boundary?",
+      "options": [
+        "Use assumptions without marking uncertainty",
+        "Treat fictional scores as certified LCA results",
+        "Readers need to know which effects were counted",
+        "Report only one indicator to hide tradeoffs"
+      ],
+      "correct_mask": 4,
+      "rationale": "The correct choice is readers need to know which effects were counted. This reflects the source's functional, environmental or arithmetic constraints rather than a material-only assumption. Source: MAIC Packaging Design for the Circular Economy, page 7."
+    },
+    {
+      "ordinal": 61,
+      "source_page": 8,
+      "stem": "When did EU Regulation 2025/40 begin applying generally?",
+      "options": [
+        "Apply every EU obligation worldwide without review",
+        "12 August 2026",
+        "Use zero-impact language without evidence",
+        "Ignore product and market-specific exceptions"
+      ],
+      "correct_mask": 2,
+      "rationale": "The correct choice is 12 August 2026. This reflects the source's functional, environmental or arithmetic constraints rather than a material-only assumption. Source: MAIC Packaging Design for the Circular Economy, page 8."
+    },
+    {
+      "ordinal": 62,
+      "source_page": 8,
+      "stem": "Why should designers verify jurisdiction-specific packaging rules?",
+      "options": [
+        "Treat all 2030 measures as 2026 achieved facts",
+        "Obligations vary by product, market and phase-in date",
+        "Claim any green icon guarantees compliance",
+        "Apply every EU obligation worldwide without review"
+      ],
+      "correct_mask": 2,
+      "rationale": "The correct choice is obligations vary by product, market and phase-in date. This reflects the source's functional, environmental or arithmetic constraints rather than a material-only assumption. Source: MAIC Packaging Design for the Circular Economy, page 8."
+    },
+    {
+      "ordinal": 63,
+      "source_page": 8,
+      "stem": "What does the EU PPWR address among other matters?",
+      "options": [
+        "Use zero-impact language without evidence",
+        "Ignore product and market-specific exceptions",
+        "Waste prevention, recyclability and reuse",
+        "Treat all 2030 measures as 2026 achieved facts"
+      ],
+      "correct_mask": 4,
+      "rationale": "The correct choice is waste prevention, recyclability and reuse. This reflects the source's functional, environmental or arithmetic constraints rather than a material-only assumption. Source: MAIC Packaging Design for the Circular Economy, page 8."
+    },
+    {
+      "ordinal": 64,
+      "source_page": 8,
+      "stem": "Why is a 2030 target not automatically an achieved 2026 condition?",
+      "options": [
+        "Claim any green icon guarantees compliance",
+        "Apply every EU obligation worldwide without review",
+        "Different legal duties have different application dates",
+        "Use zero-impact language without evidence"
+      ],
+      "correct_mask": 4,
+      "rationale": "The correct choice is different legal duties have different application dates. This reflects the source's functional, environmental or arithmetic constraints rather than a material-only assumption. Source: MAIC Packaging Design for the Circular Economy, page 8."
+    },
+    {
+      "ordinal": 65,
+      "source_page": 8,
+      "stem": "What is wrong with claiming zero environmental impact without proof?",
+      "options": [
+        "Ignore product and market-specific exceptions",
+        "Treat all 2030 measures as 2026 achieved facts",
+        "Claim any green icon guarantees compliance",
+        "It is an unqualified and likely unsupported assertion"
+      ],
+      "correct_mask": 8,
+      "rationale": "The correct choice is it is an unqualified and likely unsupported assertion. This reflects the source's functional, environmental or arithmetic constraints rather than a material-only assumption. Source: MAIC Packaging Design for the Circular Economy, page 8."
+    },
+    {
+      "ordinal": 66,
+      "source_page": 8,
+      "stem": "What should a clear recycled-content statement identify?",
+      "options": [
+        "Apply every EU obligation worldwide without review",
+        "Use zero-impact language without evidence",
+        "Percentage basis and which packaging parts are covered",
+        "Ignore product and market-specific exceptions"
+      ],
+      "correct_mask": 4,
+      "rationale": "The correct choice is percentage basis and which packaging parts are covered. This reflects the source's functional, environmental or arithmetic constraints rather than a material-only assumption. Source: MAIC Packaging Design for the Circular Economy, page 8."
+    },
+    {
+      "ordinal": 67,
+      "source_page": 8,
+      "stem": "Can compliance in one market be assumed worldwide?",
+      "options": [
+        "No, each destination may have different requirements",
+        "Treat all 2030 measures as 2026 achieved facts",
+        "Claim any green icon guarantees compliance",
+        "Apply every EU obligation worldwide without review"
+      ],
+      "correct_mask": 1,
+      "rationale": "The correct choice is no, each destination may have different requirements. This reflects the source's functional, environmental or arithmetic constraints rather than a material-only assumption. Source: MAIC Packaging Design for the Circular Economy, page 8."
+    },
+    {
+      "ordinal": 68,
+      "source_page": 8,
+      "stem": "What is the role of official implementing guidance?",
+      "options": [
+        "Explain application of particular provisions and requirements",
+        "Use zero-impact language without evidence",
+        "Ignore product and market-specific exceptions",
+        "Treat all 2030 measures as 2026 achieved facts"
+      ],
+      "correct_mask": 1,
+      "rationale": "The correct choice is explain application of particular provisions and requirements. This reflects the source's functional, environmental or arithmetic constraints rather than a material-only assumption. Source: MAIC Packaging Design for the Circular Economy, page 8."
+    },
+    {
+      "ordinal": 69,
+      "source_page": 8,
+      "stem": "A business uses a green leaf to imply total recyclability. What is needed?",
+      "options": [
+        "Claim any green icon guarantees compliance",
+        "Evidence for the specific environmental implication",
+        "Apply every EU obligation worldwide without review",
+        "Use zero-impact language without evidence"
+      ],
+      "correct_mask": 2,
+      "rationale": "The correct choice is evidence for the specific environmental implication. This reflects the source's functional, environmental or arithmetic constraints rather than a material-only assumption. Source: MAIC Packaging Design for the Circular Economy, page 8."
+    },
+    {
+      "ordinal": 70,
+      "source_page": 8,
+      "stem": "Why should packaging law not be paraphrased as one universal rule?",
+      "options": [
+        "Product-specific exceptions and transition measures may apply",
+        "Ignore product and market-specific exceptions",
+        "Treat all 2030 measures as 2026 achieved facts",
+        "Claim any green icon guarantees compliance"
+      ],
+      "correct_mask": 1,
+      "rationale": "The correct choice is product-specific exceptions and transition measures may apply. This reflects the source's functional, environmental or arithmetic constraints rather than a material-only assumption. Source: MAIC Packaging Design for the Circular Economy, page 8."
+    },
+    {
+      "ordinal": 71,
+      "source_page": 9,
+      "stem": "What does a packaging dieline usually communicate?",
+      "options": [
+        "Approve visual renders without protection testing",
+        "Hide disposal instructions in unreadable print",
+        "Cutting, folding and assembly regions",
+        "Ignore failure of repeated closure mechanisms"
+      ],
+      "correct_mask": 4,
+      "rationale": "The correct choice is cutting, folding and assembly regions. This reflects the source's functional, environmental or arithmetic constraints rather than a material-only assumption. Source: MAIC Packaging Design for the Circular Economy, page 9."
+    },
+    {
+      "ordinal": 72,
+      "source_page": 9,
+      "stem": "Why should real prototypes be tested rather than only rendered?",
+      "options": [
+        "Treat a dieline as the final verified material test",
+        "Fit, protection and opening behavior need physical checks",
+        "Assume all users can disassemble complex layers",
+        "Approve visual renders without protection testing"
+      ],
+      "correct_mask": 2,
+      "rationale": "The correct choice is fit, protection and opening behavior need physical checks. This reflects the source's functional, environmental or arithmetic constraints rather than a material-only assumption. Source: MAIC Packaging Design for the Circular Economy, page 9."
+    },
+    {
+      "ordinal": 73,
+      "source_page": 9,
+      "stem": "What is an accessibility consideration for a package?",
+      "options": [
+        "Hide disposal instructions in unreadable print",
+        "Readable labels and manageable opening instructions",
+        "Ignore failure of repeated closure mechanisms",
+        "Treat a dieline as the final verified material test"
+      ],
+      "correct_mask": 2,
+      "rationale": "The correct choice is readable labels and manageable opening instructions. This reflects the source's functional, environmental or arithmetic constraints rather than a material-only assumption. Source: MAIC Packaging Design for the Circular Economy, page 9."
+    },
+    {
+      "ordinal": 74,
+      "source_page": 9,
+      "stem": "Why should a returnable closure survive repeated handling?",
+      "options": [
+        "Assume all users can disassemble complex layers",
+        "Approve visual renders without protection testing",
+        "Hide disposal instructions in unreadable print",
+        "Reuse depends on the package continuing to function"
+      ],
+      "correct_mask": 8,
+      "rationale": "The correct choice is reuse depends on the package continuing to function. This reflects the source's functional, environmental or arithmetic constraints rather than a material-only assumption. Source: MAIC Packaging Design for the Circular Economy, page 9."
+    },
+    {
+      "ordinal": 75,
+      "source_page": 9,
+      "stem": "What is an advantage of testing more than one prototype?",
+      "options": [
+        "Ignore failure of repeated closure mechanisms",
+        "Alternatives can be compared against the same functional brief",
+        "Treat a dieline as the final verified material test",
+        "Assume all users can disassemble complex layers"
+      ],
+      "correct_mask": 2,
+      "rationale": "The correct choice is alternatives can be compared against the same functional brief. This reflects the source's functional, environmental or arithmetic constraints rather than a material-only assumption. Source: MAIC Packaging Design for the Circular Economy, page 9."
+    },
+    {
+      "ordinal": 76,
+      "source_page": 9,
+      "stem": "What should a usability session record?",
+      "options": [
+        "Actual failure points and user difficulties",
+        "Approve visual renders without protection testing",
+        "Hide disposal instructions in unreadable print",
+        "Ignore failure of repeated closure mechanisms"
+      ],
+      "correct_mask": 1,
+      "rationale": "The correct choice is actual failure points and user difficulties. This reflects the source's functional, environmental or arithmetic constraints rather than a material-only assumption. Source: MAIC Packaging Design for the Circular Economy, page 9."
+    },
+    {
+      "ordinal": 77,
+      "source_page": 9,
+      "stem": "How can a difficult separation process affect circularity?",
+      "options": [
+        "Treat a dieline as the final verified material test",
+        "Users may discard incompatible parts together",
+        "Assume all users can disassemble complex layers",
+        "Approve visual renders without protection testing"
+      ],
+      "correct_mask": 2,
+      "rationale": "The correct choice is users may discard incompatible parts together. This reflects the source's functional, environmental or arithmetic constraints rather than a material-only assumption. Source: MAIC Packaging Design for the Circular Economy, page 9."
+    },
+    {
+      "ordinal": 78,
+      "source_page": 9,
+      "stem": "Why should a label avoid a tiny unreadable disposal note?",
+      "options": [
+        "Hide disposal instructions in unreadable print",
+        "Ignore failure of repeated closure mechanisms",
+        "Users need usable information to choose the proper path",
+        "Treat a dieline as the final verified material test"
+      ],
+      "correct_mask": 4,
+      "rationale": "The correct choice is users need usable information to choose the proper path. This reflects the source's functional, environmental or arithmetic constraints rather than a material-only assumption. Source: MAIC Packaging Design for the Circular Economy, page 9."
+    },
+    {
+      "ordinal": 79,
+      "source_page": 9,
+      "stem": "A reusable tab tears after two uses. Which requirement failed?",
+      "options": [
+        "Closure durability across intended cycles",
+        "Assume all users can disassemble complex layers",
+        "Approve visual renders without protection testing",
+        "Hide disposal instructions in unreadable print"
+      ],
+      "correct_mask": 1,
+      "rationale": "The correct choice is closure durability across intended cycles. This reflects the source's functional, environmental or arithmetic constraints rather than a material-only assumption. Source: MAIC Packaging Design for the Circular Economy, page 9."
+    },
+    {
+      "ordinal": 80,
+      "source_page": 9,
+      "stem": "What should a designer do if a prototype fails product protection?",
+      "options": [
+        "Ignore failure of repeated closure mechanisms",
+        "Revise the structure and retest before rollout",
+        "Treat a dieline as the final verified material test",
+        "Assume all users can disassemble complex layers"
+      ],
+      "correct_mask": 2,
+      "rationale": "The correct choice is revise the structure and retest before rollout. This reflects the source's functional, environmental or arithmetic constraints rather than a material-only assumption. Source: MAIC Packaging Design for the Circular Economy, page 9."
+    },
+    {
+      "ordinal": 81,
+      "source_page": 10,
+      "stem": "What does a packaging return rate compare?",
+      "options": [
+        "Interpret any return rate as proof of low emissions",
+        "Returned containers to issued containers for a defined period",
+        "Scale a pilot despite safety failures",
+        "Exclude missing containers from replacement estimates"
+      ],
+      "correct_mask": 2,
+      "rationale": "The correct choice is returned containers to issued containers for a defined period. This reflects the source's functional, environmental or arithmetic constraints rather than a material-only assumption. Source: MAIC Packaging Design for the Circular Economy, page 10."
+    },
+    {
+      "ordinal": 82,
+      "source_page": 10,
+      "stem": "Why do pilot programs need stop conditions?",
+      "options": [
+        "Safety or operational failures should halt scaling",
+        "Ignore denominator and observation dates",
+        "Treat customer praise as certified lifecycle evidence",
+        "Interpret any return rate as proof of low emissions"
+      ],
+      "correct_mask": 1,
+      "rationale": "The correct choice is safety or operational failures should halt scaling. This reflects the source's functional, environmental or arithmetic constraints rather than a material-only assumption. Source: MAIC Packaging Design for the Circular Economy, page 10."
+    },
+    {
+      "ordinal": 83,
+      "source_page": 10,
+      "stem": "What is a balancing metric for a lighter carton trial?",
+      "options": [
+        "Scale a pilot despite safety failures",
+        "Exclude missing containers from replacement estimates",
+        "Damage rate for the protected products",
+        "Ignore denominator and observation dates"
+      ],
+      "correct_mask": 4,
+      "rationale": "The correct choice is damage rate for the protected products. This reflects the source's functional, environmental or arithmetic constraints rather than a material-only assumption. Source: MAIC Packaging Design for the Circular Economy, page 10."
+    },
+    {
+      "ordinal": 84,
+      "source_page": 10,
+      "stem": "Why should an observed 90% return rate not prove climate benefit alone?",
+      "options": [
+        "Treat customer praise as certified lifecycle evidence",
+        "Interpret any return rate as proof of low emissions",
+        "Cleaning, transport and manufacturing still matter",
+        "Scale a pilot despite safety failures"
+      ],
+      "correct_mask": 4,
+      "rationale": "The correct choice is cleaning, transport and manufacturing still matter. This reflects the source's functional, environmental or arithmetic constraints rather than a material-only assumption. Source: MAIC Packaging Design for the Circular Economy, page 10."
+    },
+    {
+      "ordinal": 85,
+      "source_page": 10,
+      "stem": "What information makes a packaging dashboard interpretable?",
+      "options": [
+        "Exclude missing containers from replacement estimates",
+        "Ignore denominator and observation dates",
+        "Treat customer praise as certified lifecycle evidence",
+        "Metric definitions, denominators, owners and dates"
+      ],
+      "correct_mask": 8,
+      "rationale": "The correct choice is metric definitions, denominators, owners and dates. This reflects the source's functional, environmental or arithmetic constraints rather than a material-only assumption. Source: MAIC Packaging Design for the Circular Economy, page 10."
+    },
+    {
+      "ordinal": 86,
+      "source_page": 10,
+      "stem": "How should a five-volunteer trial be described?",
+      "options": [
+        "Interpret any return rate as proof of low emissions",
+        "Scale a pilot despite safety failures",
+        "Small exploratory evidence rather than market-wide proof",
+        "Exclude missing containers from replacement estimates"
+      ],
+      "correct_mask": 4,
+      "rationale": "The correct choice is small exploratory evidence rather than market-wide proof. This reflects the source's functional, environmental or arithmetic constraints rather than a material-only assumption. Source: MAIC Packaging Design for the Circular Economy, page 10."
+    },
+    {
+      "ordinal": 87,
+      "source_page": 10,
+      "stem": "What operational dependency can a refill station create?",
+      "options": [
+        "Ignore denominator and observation dates",
+        "Treat customer praise as certified lifecycle evidence",
+        "Interpret any return rate as proof of low emissions",
+        "Equipment, sanitation and service maintenance"
+      ],
+      "correct_mask": 8,
+      "rationale": "The correct choice is equipment, sanitation and service maintenance. This reflects the source's functional, environmental or arithmetic constraints rather than a material-only assumption. Source: MAIC Packaging Design for the Circular Economy, page 10."
+    },
+    {
+      "ordinal": 88,
+      "source_page": 10,
+      "stem": "A pilot issues 200 boxes and receives 170 back. What is the return rate?",
+      "options": [
+        "85%",
+        "Scale a pilot despite safety failures",
+        "Exclude missing containers from replacement estimates",
+        "Ignore denominator and observation dates"
+      ],
+      "correct_mask": 1,
+      "rationale": "The correct choice is 85%. This reflects the source's functional, environmental or arithmetic constraints rather than a material-only assumption. Source: MAIC Packaging Design for the Circular Economy, page 10."
+    },
+    {
+      "ordinal": 89,
+      "source_page": 10,
+      "stem": "How many boxes did the same pilot not receive back?",
+      "options": [
+        "30 boxes",
+        "Treat customer praise as certified lifecycle evidence",
+        "Interpret any return rate as proof of low emissions",
+        "Scale a pilot despite safety failures"
+      ],
+      "correct_mask": 1,
+      "rationale": "The correct choice is 30 boxes. This reflects the source's functional, environmental or arithmetic constraints rather than a material-only assumption. Source: MAIC Packaging Design for the Circular Economy, page 10."
+    },
+    {
+      "ordinal": 90,
+      "source_page": 10,
+      "stem": "What should be done when a pilot fails a safety requirement?",
+      "options": [
+        "Stop and resolve the defect before further use",
+        "Exclude missing containers from replacement estimates",
+        "Ignore denominator and observation dates",
+        "Treat customer praise as certified lifecycle evidence"
+      ],
+      "correct_mask": 1,
+      "rationale": "The correct choice is stop and resolve the defect before further use. This reflects the source's functional, environmental or arithmetic constraints rather than a material-only assumption. Source: MAIC Packaging Design for the Circular Economy, page 10."
+    },
+    {
+      "ordinal": 91,
+      "source_page": 11,
+      "stem": "What is the baseline packaging weight in the worked case?",
+      "options": [
+        "Declare the lightest package best without drop tests",
+        "Ignore 12 damaged products in baseline shipments",
+        "300 grams per order",
+        "Treat material weight reductions as full life-cycle conclusions"
+      ],
+      "correct_mask": 4,
+      "rationale": "The correct choice is 300 grams per order. This reflects the source's functional, environmental or arithmetic constraints rather than a material-only assumption. Source: MAIC Packaging Design for the Circular Economy, page 11."
+    },
+    {
+      "ordinal": 92,
+      "source_page": 11,
+      "stem": "What is the proposed weight of Option A?",
+      "options": [
+        "230 grams per order",
+        "Claim reusable design automatically saves emissions",
+        "Compare options with unequal delivered-product outcomes",
+        "Declare the lightest package best without drop tests"
+      ],
+      "correct_mask": 1,
+      "rationale": "The correct choice is 230 grams per order. This reflects the source's functional, environmental or arithmetic constraints rather than a material-only assumption. Source: MAIC Packaging Design for the Circular Economy, page 11."
+    },
+    {
+      "ordinal": 93,
+      "source_page": 11,
+      "stem": "What is the proposed weight of reusable Option B?",
+      "options": [
+        "Ignore 12 damaged products in baseline shipments",
+        "450 grams per container",
+        "Treat material weight reductions as full life-cycle conclusions",
+        "Claim reusable design automatically saves emissions"
+      ],
+      "correct_mask": 2,
+      "rationale": "The correct choice is 450 grams per container. This reflects the source's functional, environmental or arithmetic constraints rather than a material-only assumption. Source: MAIC Packaging Design for the Circular Economy, page 11."
+    },
+    {
+      "ordinal": 94,
+      "source_page": 11,
+      "stem": "Why can Option A not yet be declared best?",
+      "options": [
+        "Compare options with unequal delivered-product outcomes",
+        "Its product-damage rate has not been tested",
+        "Declare the lightest package best without drop tests",
+        "Ignore 12 damaged products in baseline shipments"
+      ],
+      "correct_mask": 2,
+      "rationale": "The correct choice is its product-damage rate has not been tested. This reflects the source's functional, environmental or arithmetic constraints rather than a material-only assumption. Source: MAIC Packaging Design for the Circular Economy, page 11."
+    },
+    {
+      "ordinal": 95,
+      "source_page": 11,
+      "stem": "Why can Option B not yet be declared environmentally superior?",
+      "options": [
+        "Treat material weight reductions as full life-cycle conclusions",
+        "Claim reusable design automatically saves emissions",
+        "The return network and feasible reuse cycles are unknown",
+        "Compare options with unequal delivered-product outcomes"
+      ],
+      "correct_mask": 4,
+      "rationale": "The correct choice is the return network and feasible reuse cycles are unknown. This reflects the source's functional, environmental or arithmetic constraints rather than a material-only assumption. Source: MAIC Packaging Design for the Circular Economy, page 11."
+    },
+    {
+      "ordinal": 96,
+      "source_page": 11,
+      "stem": "How much packaging mass does Option A nominally save per order?",
+      "options": [
+        "Declare the lightest package best without drop tests",
+        "Ignore 12 damaged products in baseline shipments",
+        "Treat material weight reductions as full life-cycle conclusions",
+        "70 grams"
+      ],
+      "correct_mask": 8,
+      "rationale": "The correct choice is 70 grams. This reflects the source's functional, environmental or arithmetic constraints rather than a material-only assumption. Source: MAIC Packaging Design for the Circular Economy, page 11."
+    },
+    {
+      "ordinal": 97,
+      "source_page": 11,
+      "stem": "What percent decrease does 70 g represent from a 300 g baseline?",
+      "options": [
+        "Claim reusable design automatically saves emissions",
+        "Compare options with unequal delivered-product outcomes",
+        "Approximately 23.3%",
+        "Declare the lightest package best without drop tests"
+      ],
+      "correct_mask": 4,
+      "rationale": "The correct choice is approximately 23.3%. This reflects the source's functional, environmental or arithmetic constraints rather than a material-only assumption. Source: MAIC Packaging Design for the Circular Economy, page 11."
+    },
+    {
+      "ordinal": 98,
+      "source_page": 11,
+      "stem": "For 1,000 orders, what is the nominal mass reduction before damage adjustments?",
+      "options": [
+        "70 kilograms",
+        "Ignore 12 damaged products in baseline shipments",
+        "Treat material weight reductions as full life-cycle conclusions",
+        "Claim reusable design automatically saves emissions"
+      ],
+      "correct_mask": 1,
+      "rationale": "The correct choice is 70 kilograms. This reflects the source's functional, environmental or arithmetic constraints rather than a material-only assumption. Source: MAIC Packaging Design for the Circular Economy, page 11."
+    },
+    {
+      "ordinal": 99,
+      "source_page": 11,
+      "stem": "Which test is especially relevant for the reduced carton Option A?",
+      "options": [
+        "A protective drop and transport test",
+        "Compare options with unequal delivered-product outcomes",
+        "Declare the lightest package best without drop tests",
+        "Ignore 12 damaged products in baseline shipments"
+      ],
+      "correct_mask": 1,
+      "rationale": "The correct choice is a protective drop and transport test. This reflects the source's functional, environmental or arithmetic constraints rather than a material-only assumption. Source: MAIC Packaging Design for the Circular Economy, page 11."
+    },
+    {
+      "ordinal": 100,
+      "source_page": 11,
+      "stem": "What functional unit is suitable for comparing the carton options?",
+      "options": [
+        "Treat material weight reductions as full life-cycle conclusions",
+        "Claim reusable design automatically saves emissions",
+        "Delivery of 1,000 undamaged mugs to equivalent destinations",
+        "Compare options with unequal delivered-product outcomes"
+      ],
+      "correct_mask": 4,
+      "rationale": "The correct choice is delivery of 1,000 undamaged mugs to equivalent destinations. This reflects the source's functional, environmental or arithmetic constraints rather than a material-only assumption. Source: MAIC Packaging Design for the Circular Economy, page 11."
+    }
+  ]
+}
