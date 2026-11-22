@@ -18,7 +18,7 @@ Broadcast media include scheduled television and radio services, while entertain
 
 Learners should be able to distinguish program genres and distribution models; explain the functions of editorial, production and scheduling teams; outline a simple program commissioning process; assess audience evidence and platform metrics; identify sponsorship, copyright and privacy issues; plan accessible program delivery; and critically evaluate how entertainment and factual content affect public understanding.
 
-**Six-hour study route:** 20 minutes for orientation, 35 minutes for each of the eight topic sections on pages 3–10, 45 minutes for the case on page 11, and 15 minutes for the short final self-review on page 12. To complete 360 minutes, add a 60-minute applied program-planning task to the case and final review combined. Thus 20 + 280 + 45 + 15 = 360 minutes before the added optional extension; the applied plan is completed within the guided section work. The goal is deliberate practice, not passive reading alone.
+**Six-hour study route:** 20 minutes for orientation, 35 minutes for each of the eight topic sections on pages 3–10, 45 minutes for the case on page 11, and 15 minutes for the short final self-review on page 12. The total is 20 + (8 x 35) + 45 + 15 = 360 minutes. Complete the program-planning exercises within these guided study periods; an optional additional hour can be used for deeper project development. The goal is deliberate practice, not passive reading alone.
 
 **Starter exercise:** Find two hypothetical ways to distribute a community culture program: a scheduled broadcast and an on-demand stream. List one advantage, limitation and audience need for each.
 
