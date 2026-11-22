@@ -1,0 +1,1312 @@
+{
+  "course_id": "video-editing-imovie-davinci-resolve",
+  "source_manuscript": "data/course-manuscripts/video-editing-imovie-davinci-resolve.md",
+  "source_manuscript_blob_sha": "1e1a2dbde2ffcc2e642c3b4b7409fc9df88d4a46",
+  "source_pdf_sha256": null,
+  "bank_version": "draft-manuscript-20261122-v1",
+  "approval_status": "editorial_draft_pending_independent_review",
+  "number_of_questions": 100,
+  "note": "Unapproved editorial draft for independent academic source, answer and distractor review. Not a student exam and not certified by Apple or Blackmagic Design.",
+  "questions": [
+    {
+      "ordinal": 1,
+      "source_page": 2,
+      "stem": "Why should the editor preserve original media files?",
+      "options": [
+        "To allow verification, relinking and revisions without losing the source",
+        "Select the most complicated transition package",
+        "Discard originals immediately after rendering",
+        "Treat practice scenarios as real eyewitness evidence"
+      ],
+      "correct_mask": 1,
+      "rationale": "The manual distinguishes unaltered source footage from editable project decisions. Source: MAIC Video Editing Using iMovie and DaVinci Resolve, page 2."
+    },
+    {
+      "ordinal": 2,
+      "source_page": 2,
+      "stem": "What is the principal role of the video editor?",
+      "options": [
+        "Use social popularity as proof of accuracy",
+        "Assume every media file has identical frame rate",
+        "Select the most complicated transition package",
+        "To select and order footage and sound into a comprehensible sequence"
+      ],
+      "correct_mask": 8,
+      "rationale": "The editor organizes recorded material to communicate meaning. Source: MAIC Video Editing Using iMovie and DaVinci Resolve, page 2."
+    },
+    {
+      "ordinal": 3,
+      "source_page": 2,
+      "stem": "What is the difference between a project and a movie export?",
+      "options": [
+        "Discard originals immediately after rendering",
+        "The project retains editable decisions while the export is a rendered result",
+        "Treat practice scenarios as real eyewitness evidence",
+        "Use social popularity as proof of accuracy"
+      ],
+      "correct_mask": 2,
+      "rationale": "A flat output is not equivalent to an application project. Source: MAIC Video Editing Using iMovie and DaVinci Resolve, page 2."
+    },
+    {
+      "ordinal": 4,
+      "source_page": 2,
+      "stem": "What belongs in a rights-cleared media folder?",
+      "options": [
+        "Original footage, permitted audio, graphics and source notes",
+        "Assume every media file has identical frame rate",
+        "Select the most complicated transition package",
+        "Discard originals immediately after rendering"
+      ],
+      "correct_mask": 1,
+      "rationale": "File organization supports ethical and practical reuse. Source: MAIC Video Editing Using iMovie and DaVinci Resolve, page 2."
+    },
+    {
+      "ordinal": 5,
+      "source_page": 2,
+      "stem": "Why inspect media frame rate before editing?",
+      "options": [
+        "Treat practice scenarios as real eyewitness evidence",
+        "It helps choose a coherent project and delivery workflow",
+        "Use social popularity as proof of accuracy",
+        "Assume every media file has identical frame rate"
+      ],
+      "correct_mask": 2,
+      "rationale": "Unplanned frame-rate choices can affect motion and timing. Source: MAIC Video Editing Using iMovie and DaVinci Resolve, page 2."
+    },
+    {
+      "ordinal": 6,
+      "source_page": 2,
+      "stem": "Which statement describes an original instructional practice case?",
+      "options": [
+        "A clearly labeled fictional scenario rather than a claimed real event",
+        "Select the most complicated transition package",
+        "Discard originals immediately after rendering",
+        "Treat practice scenarios as real eyewitness evidence"
+      ],
+      "correct_mask": 1,
+      "rationale": "Exercises must not misrepresent invented material as documentary evidence. Source: MAIC Video Editing Using iMovie and DaVinci Resolve, page 2."
+    },
+    {
+      "ordinal": 7,
+      "source_page": 2,
+      "stem": "Why can a more complex editor fail to improve a video?",
+      "options": [
+        "Use social popularity as proof of accuracy",
+        "Assume every media file has identical frame rate",
+        "The footage may still lack clear purpose, sound or accurate content",
+        "Select the most complicated transition package"
+      ],
+      "correct_mask": 4,
+      "rationale": "Application complexity cannot replace editorial judgment. Source: MAIC Video Editing Using iMovie and DaVinci Resolve, page 2."
+    },
+    {
+      "ordinal": 8,
+      "source_page": 2,
+      "stem": "Which outcome indicates that a learning edit is successful?",
+      "options": [
+        "The intended audience can understand a source-accurate sequence",
+        "Discard originals immediately after rendering",
+        "Treat practice scenarios as real eyewitness evidence",
+        "Use social popularity as proof of accuracy"
+      ],
+      "correct_mask": 1,
+      "rationale": "Quality includes comprehension, accuracy and reproducibility. Source: MAIC Video Editing Using iMovie and DaVinci Resolve, page 2."
+    },
+    {
+      "ordinal": 9,
+      "source_page": 2,
+      "stem": "An editor receives a 60-second exported video but no source files. What cannot be assumed?",
+      "options": [
+        "That the exported file can be played",
+        "That the file has a visible duration",
+        "That a reviewer can inspect the result",
+        "That the full editable timeline is available"
+      ],
+      "correct_mask": 8,
+      "rationale": "The rendered file lacks native timeline and source-edit data. Source: MAIC Video Editing Using iMovie and DaVinci Resolve, page 2."
+    },
+    {
+      "ordinal": 10,
+      "source_page": 2,
+      "stem": "A learner uses invented footage for a case study. How should it be described?",
+      "options": [
+        "As a documented real event",
+        "As authentic eyewitness footage",
+        "As independently verified news",
+        "As a fictional or staged exercise"
+      ],
+      "correct_mask": 8,
+      "rationale": "Fictional exercise material must retain its label. Source: MAIC Video Editing Using iMovie and DaVinci Resolve, page 2."
+    },
+    {
+      "ordinal": 11,
+      "source_page": 3,
+      "stem": "What should be written before selecting footage?",
+      "options": [
+        "Use the camera-generated filenames as the only source log",
+        "Replace an offline clip with unrelated footage silently",
+        "The intended message, audience, destination and expected duration",
+        "Assume temporary caches always preserve original media"
+      ],
+      "correct_mask": 4,
+      "rationale": "A brief guides clip selection. Source: MAIC Video Editing Using iMovie and DaVinci Resolve, page 3."
+    },
+    {
+      "ordinal": 12,
+      "source_page": 3,
+      "stem": "What is a useful purpose of a source logging table?",
+      "options": [
+        "Treat all third-party music as copyright-free",
+        "To identify media location, technical details, permissions and possible uses",
+        "Choose decorative imagery before checking the message",
+        "Use the camera-generated filenames as the only source log"
+      ],
+      "correct_mask": 2,
+      "rationale": "Logging assists source tracing and selection. Source: MAIC Video Editing Using iMovie and DaVinci Resolve, page 3."
+    },
+    {
+      "ordinal": 13,
+      "source_page": 3,
+      "stem": "Why keep project backups separate from temporary caches?",
+      "options": [
+        "Replace an offline clip with unrelated footage silently",
+        "Assume temporary caches always preserve original media",
+        "Caches are not reliable substitutes for the original project and footage",
+        "Treat all third-party music as copyright-free"
+      ],
+      "correct_mask": 4,
+      "rationale": "Temporary generated media does not preserve the full edit. Source: MAIC Video Editing Using iMovie and DaVinci Resolve, page 3."
+    },
+    {
+      "ordinal": 14,
+      "source_page": 3,
+      "stem": "What should happen when a clip becomes offline?",
+      "options": [
+        "Choose decorative imagery before checking the message",
+        "Use the camera-generated filenames as the only source log",
+        "Relink the actual source rather than secretly substitute unrelated footage",
+        "Replace an offline clip with unrelated footage silently"
+      ],
+      "correct_mask": 4,
+      "rationale": "Correct media provenance matters. Source: MAIC Video Editing Using iMovie and DaVinci Resolve, page 3."
+    },
+    {
+      "ordinal": 15,
+      "source_page": 3,
+      "stem": "Why might a public-service video need fewer decorative shots?",
+      "options": [
+        "Assume temporary caches always preserve original media",
+        "Treat all third-party music as copyright-free",
+        "The audience primarily needs reliable practical facts",
+        "Choose decorative imagery before checking the message"
+      ],
+      "correct_mask": 4,
+      "rationale": "Shot selection should serve the message. Source: MAIC Video Editing Using iMovie and DaVinci Resolve, page 3."
+    },
+    {
+      "ordinal": 16,
+      "source_page": 3,
+      "stem": "What is a risk of unexplained stock footage in a documentary?",
+      "options": [
+        "It may imply an event was filmed when it was not",
+        "Use the camera-generated filenames as the only source log",
+        "Replace an offline clip with unrelated footage silently",
+        "Assume temporary caches always preserve original media"
+      ],
+      "correct_mask": 1,
+      "rationale": "Illustrative imagery must not impersonate authentic coverage. Source: MAIC Video Editing Using iMovie and DaVinci Resolve, page 3."
+    },
+    {
+      "ordinal": 17,
+      "source_page": 3,
+      "stem": "Why record whether a clip is staged or documentary?",
+      "options": [
+        "The audience's interpretation of what it proves depends on that status",
+        "Treat all third-party music as copyright-free",
+        "Choose decorative imagery before checking the message",
+        "Use the camera-generated filenames as the only source log"
+      ],
+      "correct_mask": 1,
+      "rationale": "Source status is an important factual distinction. Source: MAIC Video Editing Using iMovie and DaVinci Resolve, page 3."
+    },
+    {
+      "ordinal": 18,
+      "source_page": 3,
+      "stem": "How should a project outline influence clip selection?",
+      "options": [
+        "Replace an offline clip with unrelated footage silently",
+        "Select images that advance needed information rather than fill time",
+        "Assume temporary caches always preserve original media",
+        "Treat all third-party music as copyright-free"
+      ],
+      "correct_mask": 2,
+      "rationale": "Purposeful media selection supports structure. Source: MAIC Video Editing Using iMovie and DaVinci Resolve, page 3."
+    },
+    {
+      "ordinal": 19,
+      "source_page": 3,
+      "stem": "A clip used in a public-service story cannot be found after moving folders. What action preserves accuracy?",
+      "options": [
+        "Use a lookalike stock video secretly",
+        "Insert an unrelated clip and conceal it",
+        "Relink the exact original source",
+        "Rewrite the event location to match any substitute"
+      ],
+      "correct_mask": 4,
+      "rationale": "The source path must be repaired rather than changing the recorded event. Source: MAIC Video Editing Using iMovie and DaVinci Resolve, page 3."
+    },
+    {
+      "ordinal": 20,
+      "source_page": 3,
+      "stem": "A 90-second target cut contains 45 seconds of verified narration. What should the remaining coverage emphasize?",
+      "options": [
+        "Forty-five seconds of unrelated advertising",
+        "Relevant imagery and context that accurately supports the spoken material",
+        "A fabricated reenactment labeled eyewitness video",
+        "An unverified claim to fill the timeline"
+      ],
+      "correct_mask": 2,
+      "rationale": "Duration constraints do not justify irrelevant or false images. Source: MAIC Video Editing Using iMovie and DaVinci Resolve, page 3."
+    },
+    {
+      "ordinal": 21,
+      "source_page": 4,
+      "stem": "What is the first practical step before building an iMovie timeline?",
+      "options": [
+        "Apply a visual effect before inspecting any source",
+        "Treat moving a clip as changing its frame rate",
+        "Create a movie project and import inspectable source media",
+        "Assume every source clip has unlimited unused frames"
+      ],
+      "correct_mask": 4,
+      "rationale": "Project setup and source inspection precede assembly. Source: MAIC Video Editing Using iMovie and DaVinci Resolve, page 4."
+    },
+    {
+      "ordinal": 22,
+      "source_page": 4,
+      "stem": "What can changing a clip's timeline position accomplish?",
+      "options": [
+        "Assume trimming changes the original camera file",
+        "Change when that shot appears in the narrative",
+        "Ignore linked audio during every video edit",
+        "Apply a visual effect before inspecting any source"
+      ],
+      "correct_mask": 2,
+      "rationale": "Reordering affects sequence rather than the source file. Source: MAIC Video Editing Using iMovie and DaVinci Resolve, page 4."
+    },
+    {
+      "ordinal": 23,
+      "source_page": 4,
+      "stem": "What does trimming a timeline clip do?",
+      "options": [
+        "Change which portion of the existing recording is visible",
+        "Treat moving a clip as changing its frame rate",
+        "Assume every source clip has unlimited unused frames",
+        "Assume trimming changes the original camera file"
+      ],
+      "correct_mask": 1,
+      "rationale": "Trimming adjusts a selected source range. Source: MAIC Video Editing Using iMovie and DaVinci Resolve, page 4."
+    },
+    {
+      "ordinal": 24,
+      "source_page": 4,
+      "stem": "Which Mac command does Apple document to split an iMovie clip?",
+      "options": [
+        "Ignore linked audio during every video edit",
+        "Apply a visual effect before inspecting any source",
+        "Command-B at the playhead",
+        "Treat moving a clip as changing its frame rate"
+      ],
+      "correct_mask": 4,
+      "rationale": "Apple's Mac help describes Modify > Split Clip and Command-B. Source: MAIC Video Editing Using iMovie and DaVinci Resolve, page 4."
+    },
+    {
+      "ordinal": 25,
+      "source_page": 4,
+      "stem": "Why might a clip fail to extend when dragging its edge?",
+      "options": [
+        "There may be no unused frames left at that boundary",
+        "Assume every source clip has unlimited unused frames",
+        "Assume trimming changes the original camera file",
+        "Ignore linked audio during every video edit"
+      ],
+      "correct_mask": 1,
+      "rationale": "A trim cannot reveal nonexistent source material. Source: MAIC Video Editing Using iMovie and DaVinci Resolve, page 4."
+    },
+    {
+      "ordinal": 26,
+      "source_page": 4,
+      "stem": "Why check an iMovie rough cut without effects first?",
+      "options": [
+        "Apply a visual effect before inspecting any source",
+        "Treat moving a clip as changing its frame rate",
+        "Its central message should be intelligible before decoration",
+        "Assume every source clip has unlimited unused frames"
+      ],
+      "correct_mask": 4,
+      "rationale": "Transitions cannot repair unclear source organization. Source: MAIC Video Editing Using iMovie and DaVinci Resolve, page 4."
+    },
+    {
+      "ordinal": 27,
+      "source_page": 4,
+      "stem": "What is an iMovie project distinct from?",
+      "options": [
+        "Assume trimming changes the original camera file",
+        "Ignore linked audio during every video edit",
+        "Apply a visual effect before inspecting any source",
+        "The flattened video created when the editor shares or exports it"
+      ],
+      "correct_mask": 8,
+      "rationale": "An editable project contains timeline decisions. Source: MAIC Video Editing Using iMovie and DaVinci Resolve, page 4."
+    },
+    {
+      "ordinal": 28,
+      "source_page": 4,
+      "stem": "Why listen to audio after shortening an iMovie clip?",
+      "options": [
+        "An edit may change or interrupt the associated sound",
+        "Treat moving a clip as changing its frame rate",
+        "Assume every source clip has unlimited unused frames",
+        "Assume trimming changes the original camera file"
+      ],
+      "correct_mask": 1,
+      "rationale": "Audio continuity can be affected by video timing changes. Source: MAIC Video Editing Using iMovie and DaVinci Resolve, page 4."
+    },
+    {
+      "ordinal": 29,
+      "source_page": 4,
+      "stem": "An iMovie clip is 15 seconds long and its visible selection is trimmed to 9 seconds. What is removed from the timeline duration?",
+      "options": [
+        "9 seconds",
+        "6 seconds",
+        "15 seconds",
+        "24 seconds"
+      ],
+      "correct_mask": 2,
+      "rationale": "The clip's visible duration decreases by 15 minus 9. Source: MAIC Video Editing Using iMovie and DaVinci Resolve, page 4."
+    },
+    {
+      "ordinal": 30,
+      "source_page": 4,
+      "stem": "Four iMovie timeline clips last 5, 7, 4 and 9 seconds without overlaps. What is the total?",
+      "options": [
+        "25 seconds",
+        "21 seconds",
+        "20 seconds",
+        "30 seconds"
+      ],
+      "correct_mask": 1,
+      "rationale": "Add the four visible clip durations: 5 + 7 + 4 + 9 = 25. Source: MAIC Video Editing Using iMovie and DaVinci Resolve, page 4."
+    },
+    {
+      "ordinal": 31,
+      "source_page": 5,
+      "stem": "What does a straight cut between two clips create?",
+      "options": [
+        "Use a dissolve to prove both events happened together",
+        "Choose the longest effect for every cut",
+        "Use pacing to conceal an unsupported claim",
+        "An immediate change of image without visual blending"
+      ],
+      "correct_mask": 8,
+      "rationale": "A cut is a basic editing transition. Source: MAIC Video Editing Using iMovie and DaVinci Resolve, page 5."
+    },
+    {
+      "ordinal": 32,
+      "source_page": 5,
+      "stem": "What does a cross-dissolve generally do?",
+      "options": [
+        "Assume transitions require no additional frames",
+        "Blend outgoing and incoming pictures over an overlap",
+        "Hide a broken sequence behind visual blending",
+        "Use a dissolve to prove both events happened together"
+      ],
+      "correct_mask": 2,
+      "rationale": "Dissolves combine adjacent image portions. Source: MAIC Video Editing Using iMovie and DaVinci Resolve, page 5."
+    },
+    {
+      "ordinal": 33,
+      "source_page": 5,
+      "stem": "Why may a requested long dissolve be impossible?",
+      "options": [
+        "The adjacent clips may lack enough usable extra frames",
+        "Choose the longest effect for every cut",
+        "Use pacing to conceal an unsupported claim",
+        "Assume transitions require no additional frames"
+      ],
+      "correct_mask": 1,
+      "rationale": "Transition duration can depend on available source handles. Source: MAIC Video Editing Using iMovie and DaVinci Resolve, page 5."
+    },
+    {
+      "ordinal": 34,
+      "source_page": 5,
+      "stem": "When is splitting footage useful?",
+      "options": [
+        "When two sections of one recording need separate editing",
+        "Hide a broken sequence behind visual blending",
+        "Use a dissolve to prove both events happened together",
+        "Choose the longest effect for every cut"
+      ],
+      "correct_mask": 1,
+      "rationale": "A split produces separately adjustable sections. Source: MAIC Video Editing Using iMovie and DaVinci Resolve, page 5."
+    },
+    {
+      "ordinal": 35,
+      "source_page": 5,
+      "stem": "What is a potential misuse of a dissolve in factual video?",
+      "options": [
+        "Use pacing to conceal an unsupported claim",
+        "Assume transitions require no additional frames",
+        "Using it to imply disconnected events occurred together",
+        "Hide a broken sequence behind visual blending"
+      ],
+      "correct_mask": 4,
+      "rationale": "Visual blending must not distort the real event relationship. Source: MAIC Video Editing Using iMovie and DaVinci Resolve, page 5."
+    },
+    {
+      "ordinal": 36,
+      "source_page": 5,
+      "stem": "How should tutorial shot length be chosen?",
+      "options": [
+        "Allow enough time to see and understand the essential action",
+        "Use a dissolve to prove both events happened together",
+        "Choose the longest effect for every cut",
+        "Use pacing to conceal an unsupported claim"
+      ],
+      "correct_mask": 1,
+      "rationale": "Pacing should fit the learning task. Source: MAIC Video Editing Using iMovie and DaVinci Resolve, page 5."
+    },
+    {
+      "ordinal": 37,
+      "source_page": 5,
+      "stem": "What is an indication of poor continuity at a cut?",
+      "options": [
+        "Assume transitions require no additional frames",
+        "A presenter suddenly holds a prop in a different hand",
+        "Hide a broken sequence behind visual blending",
+        "Use a dissolve to prove both events happened together"
+      ],
+      "correct_mask": 2,
+      "rationale": "Physical mismatches can confuse viewers. Source: MAIC Video Editing Using iMovie and DaVinci Resolve, page 5."
+    },
+    {
+      "ordinal": 38,
+      "source_page": 5,
+      "stem": "How should a transition be selected in iMovie?",
+      "options": [
+        "Choose the longest effect for every cut",
+        "Use pacing to conceal an unsupported claim",
+        "Use a justified effect between clips and verify timing by playback",
+        "Assume transitions require no additional frames"
+      ],
+      "correct_mask": 4,
+      "rationale": "Apple documents selecting transitions between adjacent Mac timeline clips. Source: MAIC Video Editing Using iMovie and DaVinci Resolve, page 5."
+    },
+    {
+      "ordinal": 39,
+      "source_page": 5,
+      "stem": "A 12-second recording retains the part from second 2 through second 8. What is its visible duration?",
+      "options": [
+        "8 seconds",
+        "6 seconds",
+        "10 seconds",
+        "12 seconds"
+      ],
+      "correct_mask": 2,
+      "rationale": "The useful range length is end minus start, 8 minus 2. Source: MAIC Video Editing Using iMovie and DaVinci Resolve, page 5."
+    },
+    {
+      "ordinal": 40,
+      "source_page": 5,
+      "stem": "Two adjacent iMovie clips have no unused frames at the join. Which edit is safest to try first?",
+      "options": [
+        "Demand an arbitrarily long dissolve",
+        "Use a direct cut or shorten clips to create handles",
+        "Assume hidden source frames exist",
+        "Render the clip twice to invent authentic footage"
+      ],
+      "correct_mask": 2,
+      "rationale": "A long dissolve can require source handles that do not exist. Source: MAIC Video Editing Using iMovie and DaVinci Resolve, page 5."
+    },
+    {
+      "ordinal": 41,
+      "source_page": 6,
+      "stem": "Why must graphics and spoken narration be compared?",
+      "options": [
+        "Both can make factual claims that must agree",
+        "Raise music volume above all narration",
+        "Delete editable timelines once a file is rendered",
+        "Expect platforms to display every crop identically"
+      ],
+      "correct_mask": 1,
+      "rationale": "A correct voiceover does not repair an incorrect title. Source: MAIC Video Editing Using iMovie and DaVinci Resolve, page 6."
+    },
+    {
+      "ordinal": 42,
+      "source_page": 6,
+      "stem": "What should be prioritized when mixing instructional audio?",
+      "options": [
+        "Intelligible narration over distracting music",
+        "Assume visible titles cannot contain factual errors",
+        "Skip reviewing the end of the video",
+        "Raise music volume above all narration"
+      ],
+      "correct_mask": 1,
+      "rationale": "Sound balance should protect essential speech. Source: MAIC Video Editing Using iMovie and DaVinci Resolve, page 6."
+    },
+    {
+      "ordinal": 43,
+      "source_page": 6,
+      "stem": "Why is a movie export not a sufficient project backup?",
+      "options": [
+        "Delete editable timelines once a file is rendered",
+        "It normally lacks the editable clip and title structure",
+        "Expect platforms to display every crop identically",
+        "Assume visible titles cannot contain factual errors"
+      ],
+      "correct_mask": 2,
+      "rationale": "A rendered movie is not the original timeline. Source: MAIC Video Editing Using iMovie and DaVinci Resolve, page 6."
+    },
+    {
+      "ordinal": 44,
+      "source_page": 6,
+      "stem": "What should be checked in the first and final frames of an export?",
+      "options": [
+        "Unwanted gaps, incorrect titles or cut-off content",
+        "Skip reviewing the end of the video",
+        "Raise music volume above all narration",
+        "Delete editable timelines once a file is rendered"
+      ],
+      "correct_mask": 1,
+      "rationale": "Final-file review should include start and end. Source: MAIC Video Editing Using iMovie and DaVinci Resolve, page 6."
+    },
+    {
+      "ordinal": 45,
+      "source_page": 6,
+      "stem": "Which kind of visual adjustment is appropriate for instructional footage?",
+      "options": [
+        "Expect platforms to display every crop identically",
+        "Assume visible titles cannot contain factual errors",
+        "Skip reviewing the end of the video",
+        "Restrained changes that keep actions and objects accurately visible"
+      ],
+      "correct_mask": 8,
+      "rationale": "Color adjustments should not falsify content. Source: MAIC Video Editing Using iMovie and DaVinci Resolve, page 6."
+    },
+    {
+      "ordinal": 46,
+      "source_page": 6,
+      "stem": "What is a relevant final-export quality check?",
+      "options": [
+        "Raise music volume above all narration",
+        "Watch and listen to the rendered file outside the editor",
+        "Delete editable timelines once a file is rendered",
+        "Expect platforms to display every crop identically"
+      ],
+      "correct_mask": 2,
+      "rationale": "Actual playback may reveal issues hidden in editing view. Source: MAIC Video Editing Using iMovie and DaVinci Resolve, page 6."
+    },
+    {
+      "ordinal": 47,
+      "source_page": 6,
+      "stem": "Why might a social platform version need another check?",
+      "options": [
+        "Assume visible titles cannot contain factual errors",
+        "Skip reviewing the end of the video",
+        "Raise music volume above all narration",
+        "Cropping or recompression may alter the displayed result"
+      ],
+      "correct_mask": 8,
+      "rationale": "The delivery destination can change playback appearance. Source: MAIC Video Editing Using iMovie and DaVinci Resolve, page 6."
+    },
+    {
+      "ordinal": 48,
+      "source_page": 6,
+      "stem": "What should happen when subtitles misstate a number?",
+      "options": [
+        "Delete editable timelines once a file is rendered",
+        "Expect platforms to display every crop identically",
+        "Assume visible titles cannot contain factual errors",
+        "Correct them against the verified recording or primary source"
+      ],
+      "correct_mask": 8,
+      "rationale": "Captions are editorial assertions. Source: MAIC Video Editing Using iMovie and DaVinci Resolve, page 6."
+    },
+    {
+      "ordinal": 49,
+      "source_page": 6,
+      "stem": "A caption says 6 p.m. but the checked notice and narration say 5 p.m. Which item requires correction?",
+      "options": [
+        "The verified notice",
+        "The speaker's correctly recorded time",
+        "The original source document",
+        "The caption's closing time"
+      ],
+      "correct_mask": 8,
+      "rationale": "Titles and voiceover must agree with the checked record. Source: MAIC Video Editing Using iMovie and DaVinci Resolve, page 6."
+    },
+    {
+      "ordinal": 50,
+      "source_page": 6,
+      "stem": "An exported file plays normally in the editor but crops the title on a phone. What should happen?",
+      "options": [
+        "Assume the crop is harmless",
+        "Delete all the original footage",
+        "Revise and test the delivery layout on the target device",
+        "Publish an untested title anyway"
+      ],
+      "correct_mask": 4,
+      "rationale": "Playback on the intended screen is part of final QA. Source: MAIC Video Editing Using iMovie and DaVinci Resolve, page 6."
+    },
+    {
+      "ordinal": 51,
+      "source_page": 7,
+      "stem": "What is a bin in DaVinci Resolve used for?",
+      "options": [
+        "Organizing imported project media by meaningful categories",
+        "Treat a rendered video as an editable database",
+        "Discard originals once proxies are generated",
+        "Import all items without organizing them"
+      ],
+      "correct_mask": 1,
+      "rationale": "Bins aid media management. Source: MAIC Video Editing Using iMovie and DaVinci Resolve, page 7."
+    },
+    {
+      "ordinal": 52,
+      "source_page": 7,
+      "stem": "Why plan timeline frame rate early in Resolve?",
+      "options": [
+        "A mismatch can affect motion or timing after editing begins",
+        "Assume every installed edition has identical features",
+        "Rename source media randomly after editing",
+        "Treat a rendered video as an editable database"
+      ],
+      "correct_mask": 1,
+      "rationale": "Frame-rate decisions are part of project setup. Source: MAIC Video Editing Using iMovie and DaVinci Resolve, page 7."
+    },
+    {
+      "ordinal": 53,
+      "source_page": 7,
+      "stem": "Which distinction applies to proxy or optimized media?",
+      "options": [
+        "Discard originals once proxies are generated",
+        "It helps editing performance but does not replace verified originals",
+        "Import all items without organizing them",
+        "Assume every installed edition has identical features"
+      ],
+      "correct_mask": 2,
+      "rationale": "Temporary processing should not compromise source integrity. Source: MAIC Video Editing Using iMovie and DaVinci Resolve, page 7."
+    },
+    {
+      "ordinal": 54,
+      "source_page": 7,
+      "stem": "What should an editor do when Resolve reports offline media?",
+      "options": [
+        "Rename source media randomly after editing",
+        "Treat a rendered video as an editable database",
+        "Discard originals once proxies are generated",
+        "Locate and relink the actual original files"
+      ],
+      "correct_mask": 8,
+      "rationale": "Relinking repairs paths without changing evidence. Source: MAIC Video Editing Using iMovie and DaVinci Resolve, page 7."
+    },
+    {
+      "ordinal": 55,
+      "source_page": 7,
+      "stem": "What does a rendered Resolve movie typically preserve?",
+      "options": [
+        "Import all items without organizing them",
+        "Assume every installed edition has identical features",
+        "A flattened version of picture and sound for playback",
+        "Rename source media randomly after editing"
+      ],
+      "correct_mask": 4,
+      "rationale": "Rendering is different from maintaining editable project data. Source: MAIC Video Editing Using iMovie and DaVinci Resolve, page 7."
+    },
+    {
+      "ordinal": 56,
+      "source_page": 7,
+      "stem": "Why name media bins by subject or use?",
+      "options": [
+        "Treat a rendered video as an editable database",
+        "Discard originals once proxies are generated",
+        "Import all items without organizing them",
+        "It speeds accurate retrieval of interviews, B-roll and graphics"
+      ],
+      "correct_mask": 8,
+      "rationale": "Good bins reduce selection mistakes. Source: MAIC Video Editing Using iMovie and DaVinci Resolve, page 7."
+    },
+    {
+      "ordinal": 57,
+      "source_page": 7,
+      "stem": "Which Resolve resource helps verify vendor-specific workflows?",
+      "options": [
+        "Assume every installed edition has identical features",
+        "Rename source media randomly after editing",
+        "Blackmagic Design's official Resolve training and documentation",
+        "Treat a rendered video as an editable database"
+      ],
+      "correct_mask": 4,
+      "rationale": "Version-dependent controls should be checked against the vendor. Source: MAIC Video Editing Using iMovie and DaVinci Resolve, page 7."
+    },
+    {
+      "ordinal": 58,
+      "source_page": 7,
+      "stem": "What belongs in a project handoff besides a final video?",
+      "options": [
+        "Discard originals once proxies are generated",
+        "Import all items without organizing them",
+        "Assume every installed edition has identical features",
+        "Required original media, project data and format notes"
+      ],
+      "correct_mask": 8,
+      "rationale": "Other editors may need to reproduce or revise the work. Source: MAIC Video Editing Using iMovie and DaVinci Resolve, page 7."
+    },
+    {
+      "ordinal": 59,
+      "source_page": 7,
+      "stem": "A 25 fps source is placed in an unintentionally chosen 24 fps project. What should be reviewed?",
+      "options": [
+        "Only the color of the media bin",
+        "Only the number of source folders",
+        "Only whether the soundtrack contains music",
+        "Frame mapping and intended delivery timing"
+      ],
+      "correct_mask": 8,
+      "rationale": "A mismatch can affect timing and movement. Source: MAIC Video Editing Using iMovie and DaVinci Resolve, page 7."
+    },
+    {
+      "ordinal": 60,
+      "source_page": 7,
+      "stem": "A Resolve project has separate interview, B-roll and graphics bins. What practical benefit results?",
+      "options": [
+        "Automatic verification of every quote",
+        "A guarantee of professional certification",
+        "Instant recovery of deleted source footage",
+        "Faster accurate source identification during editing"
+      ],
+      "correct_mask": 8,
+      "rationale": "Bins improve organization but not truthfulness or backup. Source: MAIC Video Editing Using iMovie and DaVinci Resolve, page 7."
+    },
+    {
+      "ordinal": 61,
+      "source_page": 8,
+      "stem": "What is the primary purpose of making a rough cut in Resolve?",
+      "options": [
+        "Assume extra tracks automatically improve truthfulness",
+        "Delete previous rough cuts before review",
+        "Treat B-roll as proof of any narration it accompanies",
+        "Test sequence and story meaning before detailed polish"
+      ],
+      "correct_mask": 8,
+      "rationale": "Structural clarity comes before finishing. Source: MAIC Video Editing Using iMovie and DaVinci Resolve, page 8."
+    },
+    {
+      "ordinal": 62,
+      "source_page": 8,
+      "stem": "Which Resolve workspaces support timeline assembly?",
+      "options": [
+        "Use effects to disguise conflicting source timing",
+        "Crop essential source content without checking",
+        "Cut and Edit",
+        "Assume extra tracks automatically improve truthfulness"
+      ],
+      "correct_mask": 4,
+      "rationale": "These workspaces allow basic editing. Source: MAIC Video Editing Using iMovie and DaVinci Resolve, page 8."
+    },
+    {
+      "ordinal": 63,
+      "source_page": 8,
+      "stem": "Why should interview audio be checked when adding B-roll?",
+      "options": [
+        "The overlaid video can continue beneath an interview's ongoing sound",
+        "Delete previous rough cuts before review",
+        "Treat B-roll as proof of any narration it accompanies",
+        "Use effects to disguise conflicting source timing"
+      ],
+      "correct_mask": 1,
+      "rationale": "Layered picture and audio may have different timing. Source: MAIC Video Editing Using iMovie and DaVinci Resolve, page 8."
+    },
+    {
+      "ordinal": 64,
+      "source_page": 8,
+      "stem": "What is the benefit of meaningful rough-cut version names?",
+      "options": [
+        "Crop essential source content without checking",
+        "Assume extra tracks automatically improve truthfulness",
+        "Delete previous rough cuts before review",
+        "Reviewers can identify the exact cut they evaluated"
+      ],
+      "correct_mask": 8,
+      "rationale": "Version naming reduces confusion. Source: MAIC Video Editing Using iMovie and DaVinci Resolve, page 8."
+    },
+    {
+      "ordinal": 65,
+      "source_page": 8,
+      "stem": "When is a split audio-and-picture edit useful?",
+      "options": [
+        "Treat B-roll as proof of any narration it accompanies",
+        "Use effects to disguise conflicting source timing",
+        "Crop essential source content without checking",
+        "When a truthful sound transition improves narrative flow"
+      ],
+      "correct_mask": 8,
+      "rationale": "Audio and image may change at different moments. Source: MAIC Video Editing Using iMovie and DaVinci Resolve, page 8."
+    },
+    {
+      "ordinal": 66,
+      "source_page": 8,
+      "stem": "Why should stacked video tracks be used carefully?",
+      "options": [
+        "Assume extra tracks automatically improve truthfulness",
+        "Delete previous rough cuts before review",
+        "An overlay may imply an association the source does not support",
+        "Treat B-roll as proof of any narration it accompanies"
+      ],
+      "correct_mask": 4,
+      "rationale": "Layering can misrepresent documentary context. Source: MAIC Video Editing Using iMovie and DaVinci Resolve, page 8."
+    },
+    {
+      "ordinal": 67,
+      "source_page": 8,
+      "stem": "How should different aspect ratios be handled?",
+      "options": [
+        "Use effects to disguise conflicting source timing",
+        "Choose and inspect deliberate crop or letterbox settings",
+        "Crop essential source content without checking",
+        "Assume extra tracks automatically improve truthfulness"
+      ],
+      "correct_mask": 2,
+      "rationale": "Unplanned cropping may hide required content. Source: MAIC Video Editing Using iMovie and DaVinci Resolve, page 8."
+    },
+    {
+      "ordinal": 68,
+      "source_page": 8,
+      "stem": "What should inform choice between a cut and a complex transition?",
+      "options": [
+        "Clarity, continuity and actual events",
+        "Delete previous rough cuts before review",
+        "Treat B-roll as proof of any narration it accompanies",
+        "Use effects to disguise conflicting source timing"
+      ],
+      "correct_mask": 1,
+      "rationale": "Editing techniques should reinforce honest meaning. Source: MAIC Video Editing Using iMovie and DaVinci Resolve, page 8."
+    },
+    {
+      "ordinal": 69,
+      "source_page": 8,
+      "stem": "A 90-second rough cut is built from 120 seconds of source selections with no overlap. How much should be trimmed?",
+      "options": [
+        "20 seconds",
+        "30 seconds",
+        "60 seconds",
+        "210 seconds"
+      ],
+      "correct_mask": 2,
+      "rationale": "120 seconds of material minus a 90-second target equals 30 seconds. Source: MAIC Video Editing Using iMovie and DaVinci Resolve, page 8."
+    },
+    {
+      "ordinal": 70,
+      "source_page": 8,
+      "stem": "Five sequential clips last 8, 11, 9, 7 and 10 seconds. With no overlap, what is the timeline duration?",
+      "options": [
+        "35 seconds",
+        "40 seconds",
+        "55 seconds",
+        "45 seconds"
+      ],
+      "correct_mask": 8,
+      "rationale": "8+11+9+7+10 equals 45 seconds. Source: MAIC Video Editing Using iMovie and DaVinci Resolve, page 8."
+    },
+    {
+      "ordinal": 71,
+      "source_page": 9,
+      "stem": "What is Fairlight primarily associated with in Resolve?",
+      "options": [
+        "Assume audio tools can reconstruct invented words",
+        "Audio editing and mixing",
+        "Treat every grade as more accurate than the original",
+        "Ignore changes across adjacent camera angles"
+      ],
+      "correct_mask": 2,
+      "rationale": "Blackmagic provides a dedicated audio workspace. Source: MAIC Video Editing Using iMovie and DaVinci Resolve, page 9."
+    },
+    {
+      "ordinal": 72,
+      "source_page": 9,
+      "stem": "Why should a source recording be consulted when speech is disputed?",
+      "options": [
+        "Apply a creative look before correcting exposure",
+        "Raise sound effects above important interview speech",
+        "Audio processing cannot establish words that were not said",
+        "Assume audio tools can reconstruct invented words"
+      ],
+      "correct_mask": 4,
+      "rationale": "Factual narration requires checking originals. Source: MAIC Video Editing Using iMovie and DaVinci Resolve, page 9."
+    },
+    {
+      "ordinal": 73,
+      "source_page": 9,
+      "stem": "Why can aggressive audio cleanup be harmful?",
+      "options": [
+        "It may create audible artifacts or unnatural dialogue",
+        "Treat every grade as more accurate than the original",
+        "Ignore changes across adjacent camera angles",
+        "Apply a creative look before correcting exposure"
+      ],
+      "correct_mask": 1,
+      "rationale": "Excessive processing can reduce intelligibility. Source: MAIC Video Editing Using iMovie and DaVinci Resolve, page 9."
+    },
+    {
+      "ordinal": 74,
+      "source_page": 9,
+      "stem": "What is a primary objective of initial color correction?",
+      "options": [
+        "Raise sound effects above important interview speech",
+        "Assume audio tools can reconstruct invented words",
+        "Make exposure and white balance credible and consistent",
+        "Treat every grade as more accurate than the original"
+      ],
+      "correct_mask": 4,
+      "rationale": "Basic correction normally precedes creative looks. Source: MAIC Video Editing Using iMovie and DaVinci Resolve, page 9."
+    },
+    {
+      "ordinal": 75,
+      "source_page": 9,
+      "stem": "Why should related angles be compared in color work?",
+      "options": [
+        "Ignore changes across adjacent camera angles",
+        "Apply a creative look before correcting exposure",
+        "Different lighting may create distracting mismatches",
+        "Raise sound effects above important interview speech"
+      ],
+      "correct_mask": 4,
+      "rationale": "Cross-shot consistency supports comprehension. Source: MAIC Video Editing Using iMovie and DaVinci Resolve, page 9."
+    },
+    {
+      "ordinal": 76,
+      "source_page": 9,
+      "stem": "What is risky about heavy color manipulation in documentary footage?",
+      "options": [
+        "Assume audio tools can reconstruct invented words",
+        "Treat every grade as more accurate than the original",
+        "It can change viewers' perception of real conditions",
+        "Ignore changes across adjacent camera angles"
+      ],
+      "correct_mask": 4,
+      "rationale": "Truthful representation constrains grading choices. Source: MAIC Video Editing Using iMovie and DaVinci Resolve, page 9."
+    },
+    {
+      "ordinal": 77,
+      "source_page": 9,
+      "stem": "When might re-recording be preferable to software repair?",
+      "options": [
+        "Apply a creative look before correcting exposure",
+        "Raise sound effects above important interview speech",
+        "Assume audio tools can reconstruct invented words",
+        "When source speech is too damaged for reliable comprehension"
+      ],
+      "correct_mask": 8,
+      "rationale": "Processing cannot guarantee recovery of unusable audio. Source: MAIC Video Editing Using iMovie and DaVinci Resolve, page 9."
+    },
+    {
+      "ordinal": 78,
+      "source_page": 9,
+      "stem": "Why compare a grade with original footage?",
+      "options": [
+        "Treat every grade as more accurate than the original",
+        "Ignore changes across adjacent camera angles",
+        "To detect clipped details or misleading changes",
+        "Apply a creative look before correcting exposure"
+      ],
+      "correct_mask": 4,
+      "rationale": "Before-and-after evaluation guards against unnecessary alteration. Source: MAIC Video Editing Using iMovie and DaVinci Resolve, page 9."
+    },
+    {
+      "ordinal": 79,
+      "source_page": 9,
+      "stem": "Two adjacent shots differ in exposure and white balance. What is the appropriate initial correction?",
+      "options": [
+        "Match credible brightness and neutral color before adding a look",
+        "Maximize saturation on both shots",
+        "Hide the difference behind an unrelated clip",
+        "Treat the more colorful shot as factually superior"
+      ],
+      "correct_mask": 1,
+      "rationale": "Primary matching should precede a creative grade. Source: MAIC Video Editing Using iMovie and DaVinci Resolve, page 9."
+    },
+    {
+      "ordinal": 80,
+      "source_page": 9,
+      "stem": "Dialogue is distorted by clipping. Which response best respects fidelity?",
+      "options": [
+        "Invent missing words with a model",
+        "Check the original and rerecord if restoration is insufficient",
+        "Attribute the altered line to the real speaker",
+        "Increase background music until words disappear"
+      ],
+      "correct_mask": 2,
+      "rationale": "Processing cannot guarantee recovery of unusable speech. Source: MAIC Video Editing Using iMovie and DaVinci Resolve, page 9."
+    },
+    {
+      "ordinal": 81,
+      "source_page": 10,
+      "stem": "What is Resolve's Deliver workspace generally for?",
+      "options": [
+        "Assume exported movies contain all native project layers",
+        "Configuring and rendering output",
+        "Choose the largest format for every destination",
+        "Assume changing a title in a flattened file is always trivial"
+      ],
+      "correct_mask": 2,
+      "rationale": "The Deliver page handles exporting workflows. Source: MAIC Video Editing Using iMovie and DaVinci Resolve, page 10."
+    },
+    {
+      "ordinal": 82,
+      "source_page": 10,
+      "stem": "What should select the final export settings?",
+      "options": [
+        "Skip playback because rendering completed",
+        "Make material revisions with no record",
+        "Source characteristics and destination requirements",
+        "Assume exported movies contain all native project layers"
+      ],
+      "correct_mask": 4,
+      "rationale": "There is no single setting optimal for every project. Source: MAIC Video Editing Using iMovie and DaVinci Resolve, page 10."
+    },
+    {
+      "ordinal": 83,
+      "source_page": 10,
+      "stem": "Why must an exported movie be opened and checked?",
+      "options": [
+        "Choose the largest format for every destination",
+        "Assume changing a title in a flattened file is always trivial",
+        "Skip playback because rendering completed",
+        "A completed render may still contain errors"
+      ],
+      "correct_mask": 8,
+      "rationale": "Export success does not guarantee content quality. Source: MAIC Video Editing Using iMovie and DaVinci Resolve, page 10."
+    },
+    {
+      "ordinal": 84,
+      "source_page": 10,
+      "stem": "How does importing an exported iMovie video into Resolve usually behave?",
+      "options": [
+        "Make material revisions with no record",
+        "Assume exported movies contain all native project layers",
+        "Choose the largest format for every destination",
+        "It imports a flattened clip rather than the native iMovie timeline"
+      ],
+      "correct_mask": 8,
+      "rationale": "Rendering does not preserve application-specific edit decisions. Source: MAIC Video Editing Using iMovie and DaVinci Resolve, page 10."
+    },
+    {
+      "ordinal": 85,
+      "source_page": 10,
+      "stem": "What is a responsible cross-editor handoff?",
+      "options": [
+        "Assume changing a title in a flattened file is always trivial",
+        "Provide source files, project information, edit notes and tested formats",
+        "Skip playback because rendering completed",
+        "Make material revisions with no record"
+      ],
+      "correct_mask": 2,
+      "rationale": "Handoffs need reproducible editable resources. Source: MAIC Video Editing Using iMovie and DaVinci Resolve, page 10."
+    },
+    {
+      "ordinal": 86,
+      "source_page": 10,
+      "stem": "Why is an editable project useful after a wrong title is found?",
+      "options": [
+        "Assume exported movies contain all native project layers",
+        "Choose the largest format for every destination",
+        "Assume changing a title in a flattened file is always trivial",
+        "It allows a direct correction without reconstructing the flattened sequence"
+      ],
+      "correct_mask": 8,
+      "rationale": "Project retention supports efficient revision. Source: MAIC Video Editing Using iMovie and DaVinci Resolve, page 10."
+    },
+    {
+      "ordinal": 87,
+      "source_page": 10,
+      "stem": "Which three areas belong in final quality assurance?",
+      "options": [
+        "Skip playback because rendering completed",
+        "Content accuracy, audio-visual clarity and technical playback",
+        "Make material revisions with no record",
+        "Assume exported movies contain all native project layers"
+      ],
+      "correct_mask": 2,
+      "rationale": "QA must cover meaning, presentation and delivery. Source: MAIC Video Editing Using iMovie and DaVinci Resolve, page 10."
+    },
+    {
+      "ordinal": 88,
+      "source_page": 10,
+      "stem": "How should a materially corrected video be handled?",
+      "options": [
+        "Create a traceable updated version and correction record",
+        "Choose the largest format for every destination",
+        "Assume changing a title in a flattened file is always trivial",
+        "Skip playback because rendering completed"
+      ],
+      "correct_mask": 1,
+      "rationale": "Visible revision is important for actionable errors. Source: MAIC Video Editing Using iMovie and DaVinci Resolve, page 10."
+    },
+    {
+      "ordinal": 89,
+      "source_page": 10,
+      "stem": "An iMovie movie is imported into Resolve as one video clip. Which edit is unavailable without rebuilding?",
+      "options": [
+        "Playing the video",
+        "Inspecting its overall duration",
+        "Exporting another flat copy",
+        "Changing an individual original title as a separate editable layer"
+      ],
+      "correct_mask": 8,
+      "rationale": "An imported export normally does not reconstruct native titles. Source: MAIC Video Editing Using iMovie and DaVinci Resolve, page 10."
+    },
+    {
+      "ordinal": 90,
+      "source_page": 10,
+      "stem": "A rendered film has an inaccurate event date. Which revision procedure is appropriate?",
+      "options": [
+        "Leave the error because rendering succeeded",
+        "Delete the source evidence",
+        "Correct the source project and create a traceable new export",
+        "Change the project file name without checking the video"
+      ],
+      "correct_mask": 4,
+      "rationale": "Material errors need a verified corrected deliverable. Source: MAIC Video Editing Using iMovie and DaVinci Resolve, page 10."
+    },
+    {
+      "ordinal": 91,
+      "source_page": 11,
+      "stem": "What is the supported duration of the community-center change?",
+      "options": [
+        "A planned six-week trial",
+        "Treat the six-week trial as a permanent policy",
+        "Label staged action as genuine event coverage",
+        "Ignore the correction of a wrong closing time"
+      ],
+      "correct_mask": 1,
+      "rationale": "The fictional source says nothing about permanence. Source: MAIC Video Editing Using iMovie and DaVinci Resolve, page 11."
+    },
+    {
+      "ordinal": 92,
+      "source_page": 11,
+      "stem": "Which statement would exceed the source notice?",
+      "options": [
+        "Use unverified schedules in public-facing graphics",
+        "Decide quality solely by software complexity",
+        "Treat the six-week trial as a permanent policy",
+        "The new hours will remain permanent"
+      ],
+      "correct_mask": 8,
+      "rationale": "No long-term commitment is established by the exercise. Source: MAIC Video Editing Using iMovie and DaVinci Resolve, page 11."
+    },
+    {
+      "ordinal": 93,
+      "source_page": 11,
+      "stem": "Why should the edited schedule graphic be verified?",
+      "options": [
+        "Label staged action as genuine event coverage",
+        "Ignore the correction of a wrong closing time",
+        "A displayed wrong closing time can misdirect visitors",
+        "Use unverified schedules in public-facing graphics"
+      ],
+      "correct_mask": 4,
+      "rationale": "On-screen facts must match source notices. Source: MAIC Video Editing Using iMovie and DaVinci Resolve, page 11."
+    },
+    {
+      "ordinal": 94,
+      "source_page": 11,
+      "stem": "Which element should be kept when rebuilding the edit in Resolve?",
+      "options": [
+        "Decide quality solely by software complexity",
+        "Original source clips and the verified script",
+        "Treat the six-week trial as a permanent policy",
+        "Label staged action as genuine event coverage"
+      ],
+      "correct_mask": 2,
+      "rationale": "Re-editing from originals preserves more flexibility. Source: MAIC Video Editing Using iMovie and DaVinci Resolve, page 11."
+    },
+    {
+      "ordinal": 95,
+      "source_page": 11,
+      "stem": "Why should the parallel iMovie and Resolve versions be compared?",
+      "options": [
+        "Ignore the correction of a wrong closing time",
+        "Use unverified schedules in public-facing graphics",
+        "Decide quality solely by software complexity",
+        "To evaluate storytelling and clarity rather than interface complexity"
+      ],
+      "correct_mask": 8,
+      "rationale": "Both applications should communicate the same verified facts. Source: MAIC Video Editing Using iMovie and DaVinci Resolve, page 11."
+    },
+    {
+      "ordinal": 96,
+      "source_page": 11,
+      "stem": "What kind of video should a staged service demonstration be labeled as?",
+      "options": [
+        "Treat the six-week trial as a permanent policy",
+        "An illustration, not eyewitness documentary footage",
+        "Label staged action as genuine event coverage",
+        "Ignore the correction of a wrong closing time"
+      ],
+      "correct_mask": 2,
+      "rationale": "Staged content should not claim to show actual operations. Source: MAIC Video Editing Using iMovie and DaVinci Resolve, page 11."
+    },
+    {
+      "ordinal": 97,
+      "source_page": 11,
+      "stem": "What must a 60–90-second information video include?",
+      "options": [
+        "Use unverified schedules in public-facing graphics",
+        "Verified useful details that fit within its target duration",
+        "Decide quality solely by software complexity",
+        "Treat the six-week trial as a permanent policy"
+      ],
+      "correct_mask": 2,
+      "rationale": "Duration and content must be checked. Source: MAIC Video Editing Using iMovie and DaVinci Resolve, page 11."
+    },
+    {
+      "ordinal": 98,
+      "source_page": 11,
+      "stem": "What is the appropriate response to a wrong closing hour discovered after publication?",
+      "options": [
+        "Label staged action as genuine event coverage",
+        "Correct the export and document the factual change",
+        "Ignore the correction of a wrong closing time",
+        "Use unverified schedules in public-facing graphics"
+      ],
+      "correct_mask": 2,
+      "rationale": "Public-service errors require transparent correction. Source: MAIC Video Editing Using iMovie and DaVinci Resolve, page 11."
+    },
+    {
+      "ordinal": 99,
+      "source_page": 11,
+      "stem": "In the worked case, six selected clips last 9, 11, 8, 12, 10 and 15 seconds. Without overlaps, what is the sum?",
+      "options": [
+        "65 seconds",
+        "60 seconds",
+        "70 seconds",
+        "75 seconds"
+      ],
+      "correct_mask": 1,
+      "rationale": "The cut totals 9+11+8+12+10+15 = 65 seconds. Source: MAIC Video Editing Using iMovie and DaVinci Resolve, page 11."
+    },
+    {
+      "ordinal": 100,
+      "source_page": 11,
+      "stem": "The community-center notice documents a six-week trial. What should both software versions communicate?",
+      "options": [
+        "Permanent new opening hours",
+        "A proven attendance increase",
+        "The same temporary nature of the announced change",
+        "A guaranteed renewal of the schedule"
+      ],
+      "correct_mask": 4,
+      "rationale": "The choice of editor does not change the facts. Source: MAIC Video Editing Using iMovie and DaVinci Resolve, page 11."
+    }
+  ]
+}
