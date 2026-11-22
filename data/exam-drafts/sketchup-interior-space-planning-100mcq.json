@@ -1,0 +1,1312 @@
+{
+  "course_id": "sketchup-interior-space-planning",
+  "source_manuscript": "data/course-manuscripts/sketchup-interior-space-planning.md",
+  "source_manuscript_blob_sha": "96ffc01cb150e3d6099ed15db77d062dc395b4b0",
+  "source_pdf_sha256": null,
+  "bank_version": "draft-manuscript-20261123-v1",
+  "approval_status": "editorial_draft_pending_independent_review",
+  "number_of_questions": 100,
+  "note": "Original offline editorial bank for academic review; no live exam activation or vendor certification.",
+  "questions": [
+    {
+      "ordinal": 1,
+      "source_page": 2,
+      "stem": "What is SketchUp useful for in interior planning?",
+      "options": [
+        "Treat the model as an approved real building",
+        "Assume a perspective view proves clearances",
+        "Use fictional data as surveyed facts",
+        "Testing room geometry, furniture arrangements and spatial ideas"
+      ],
+      "correct_mask": 8,
+      "rationale": "The course describes testing room geometry, furniture arrangements and spatial ideas. This reflects the geometry, space planning or review principle in the provided fictional model. Source: MAIC SketchUp Fundamentals for Interior Space Planning, page 2."
+    },
+    {
+      "ordinal": 2,
+      "source_page": 2,
+      "stem": "Why is a 3D room model not proof of code compliance?",
+      "options": [
+        "Focus on textures before checking the room plan",
+        "It requires site data and qualified regulatory review",
+        "Ignore units and users",
+        "Treat the model as an approved real building"
+      ],
+      "correct_mask": 2,
+      "rationale": "The course describes it requires site data and qualified regulatory review. This reflects the geometry, space planning or review principle in the provided fictional model. Source: MAIC SketchUp Fundamentals for Interior Space Planning, page 2."
+    },
+    {
+      "ordinal": 3,
+      "source_page": 2,
+      "stem": "What is a course learning outcome?",
+      "options": [
+        "Assume a perspective view proves clearances",
+        "Use fictional data as surveyed facts",
+        "Model a measured room with organized components and review scenes",
+        "Focus on textures before checking the room plan"
+      ],
+      "correct_mask": 4,
+      "rationale": "The course describes model a measured room with organized components and review scenes. This reflects the geometry, space planning or review principle in the provided fictional model. Source: MAIC SketchUp Fundamentals for Interior Space Planning, page 2."
+    },
+    {
+      "ordinal": 4,
+      "source_page": 2,
+      "stem": "What should happen before selecting decorative materials?",
+      "options": [
+        "Verify the room layout and intended activities",
+        "Ignore units and users",
+        "Treat the model as an approved real building",
+        "Assume a perspective view proves clearances"
+      ],
+      "correct_mask": 1,
+      "rationale": "The course describes verify the room layout and intended activities. This reflects the geometry, space planning or review principle in the provided fictional model. Source: MAIC SketchUp Fundamentals for Interior Space Planning, page 2."
+    },
+    {
+      "ordinal": 5,
+      "source_page": 2,
+      "stem": "Why may a 3D presentation be misleading?",
+      "options": [
+        "Perspective can hide narrow circulation or incorrect dimensions",
+        "Use fictional data as surveyed facts",
+        "Focus on textures before checking the room plan",
+        "Ignore units and users"
+      ],
+      "correct_mask": 1,
+      "rationale": "The course describes perspective can hide narrow circulation or incorrect dimensions. This reflects the geometry, space planning or review principle in the provided fictional model. Source: MAIC SketchUp Fundamentals for Interior Space Planning, page 2."
+    },
+    {
+      "ordinal": 6,
+      "source_page": 2,
+      "stem": "What is an acceptable alternative when modeling software is unavailable?",
+      "options": [
+        "Accurately dimensioned sketches and annotated views",
+        "Treat the model as an approved real building",
+        "Assume a perspective view proves clearances",
+        "Use fictional data as surveyed facts"
+      ],
+      "correct_mask": 1,
+      "rationale": "The course describes accurately dimensioned sketches and annotated views. This reflects the geometry, space planning or review principle in the provided fictional model. Source: MAIC SketchUp Fundamentals for Interior Space Planning, page 2."
+    },
+    {
+      "ordinal": 7,
+      "source_page": 2,
+      "stem": "Why must fictional measurements be clearly identified?",
+      "options": [
+        "Focus on textures before checking the room plan",
+        "They are not verified dimensions of an actual property",
+        "Ignore units and users",
+        "Treat the model as an approved real building"
+      ],
+      "correct_mask": 2,
+      "rationale": "The course describes they are not verified dimensions of an actual property. This reflects the geometry, space planning or review principle in the provided fictional model. Source: MAIC SketchUp Fundamentals for Interior Space Planning, page 2."
+    },
+    {
+      "ordinal": 8,
+      "source_page": 2,
+      "stem": "Which task should the reading room support?",
+      "options": [
+        "Assume a perspective view proves clearances",
+        "Use fictional data as surveyed facts",
+        "Focus on textures before checking the room plan",
+        "Seating, storage and understandable circulation"
+      ],
+      "correct_mask": 8,
+      "rationale": "The course describes seating, storage and understandable circulation. This reflects the geometry, space planning or review principle in the provided fictional model. Source: MAIC SketchUp Fundamentals for Interior Space Planning, page 2."
+    },
+    {
+      "ordinal": 9,
+      "source_page": 2,
+      "stem": "What is the role of an editable model?",
+      "options": [
+        "Ignore units and users",
+        "Treat the model as an approved real building",
+        "Assume a perspective view proves clearances",
+        "Allow revisions and future technical review"
+      ],
+      "correct_mask": 8,
+      "rationale": "The course describes allow revisions and future technical review. This reflects the geometry, space planning or review principle in the provided fictional model. Source: MAIC SketchUp Fundamentals for Interior Space Planning, page 2."
+    },
+    {
+      "ordinal": 10,
+      "source_page": 2,
+      "stem": "What is a useful first design step?",
+      "options": [
+        "Use fictional data as surveyed facts",
+        "Sketch room boundaries and known openings",
+        "Focus on textures before checking the room plan",
+        "Ignore units and users"
+      ],
+      "correct_mask": 2,
+      "rationale": "The course describes sketch room boundaries and known openings. This reflects the geometry, space planning or review principle in the provided fictional model. Source: MAIC SketchUp Fundamentals for Interior Space Planning, page 2."
+    },
+    {
+      "ordinal": 11,
+      "source_page": 3,
+      "stem": "Why should model units be chosen before drawing?",
+      "options": [
+        "Choose measurements visually from photographs",
+        "To preserve meaningful physical dimensions",
+        "Assume wall height changes floor area",
+        "Mix meters and millimeters without conversion"
+      ],
+      "correct_mask": 2,
+      "rationale": "The course describes to preserve meaningful physical dimensions. This reflects the geometry, space planning or review principle in the provided fictional model. Source: MAIC SketchUp Fundamentals for Interior Space Planning, page 3."
+    },
+    {
+      "ordinal": 12,
+      "source_page": 3,
+      "stem": "What do SketchUp's colored axes describe?",
+      "options": [
+        "Treat camera orbit as a dimensional change",
+        "Ignore known openings and constraints",
+        "Choose measurements visually from photographs",
+        "Spatial directions in the model"
+      ],
+      "correct_mask": 8,
+      "rationale": "The course describes spatial directions in the model. This reflects the geometry, space planning or review principle in the provided fictional model. Source: MAIC SketchUp Fundamentals for Interior Space Planning, page 3."
+    },
+    {
+      "ordinal": 13,
+      "source_page": 3,
+      "stem": "Why are numeric drawing inputs valuable?",
+      "options": [
+        "They reduce errors from approximate mouse dragging",
+        "Assume wall height changes floor area",
+        "Mix meters and millimeters without conversion",
+        "Treat camera orbit as a dimensional change"
+      ],
+      "correct_mask": 1,
+      "rationale": "The course describes they reduce errors from approximate mouse dragging. This reflects the geometry, space planning or review principle in the provided fictional model. Source: MAIC SketchUp Fundamentals for Interior Space Planning, page 3."
+    },
+    {
+      "ordinal": 14,
+      "source_page": 3,
+      "stem": "What is the floor area of a five by four meter room?",
+      "options": [
+        "Ignore known openings and constraints",
+        "Choose measurements visually from photographs",
+        "Assume wall height changes floor area",
+        "20 square meters"
+      ],
+      "correct_mask": 8,
+      "rationale": "The course describes 20 square meters. This reflects the geometry, space planning or review principle in the provided fictional model. Source: MAIC SketchUp Fundamentals for Interior Space Planning, page 3."
+    },
+    {
+      "ordinal": 15,
+      "source_page": 3,
+      "stem": "What does raising walls change about floor area?",
+      "options": [
+        "Mix meters and millimeters without conversion",
+        "Treat camera orbit as a dimensional change",
+        "It does not increase the original floor area",
+        "Ignore known openings and constraints"
+      ],
+      "correct_mask": 4,
+      "rationale": "The course describes it does not increase the original floor area. This reflects the geometry, space planning or review principle in the provided fictional model. Source: MAIC SketchUp Fundamentals for Interior Space Planning, page 3."
+    },
+    {
+      "ordinal": 16,
+      "source_page": 3,
+      "stem": "What is the function of a top view?",
+      "options": [
+        "Inspect furniture positions and plan relationships",
+        "Choose measurements visually from photographs",
+        "Assume wall height changes floor area",
+        "Mix meters and millimeters without conversion"
+      ],
+      "correct_mask": 1,
+      "rationale": "The course describes inspect furniture positions and plan relationships. This reflects the geometry, space planning or review principle in the provided fictional model. Source: MAIC SketchUp Fundamentals for Interior Space Planning, page 3."
+    },
+    {
+      "ordinal": 17,
+      "source_page": 3,
+      "stem": "Why should door dimensions from photographs be unverified?",
+      "options": [
+        "Treat camera orbit as a dimensional change",
+        "Perspective images may not give exact measurements",
+        "Ignore known openings and constraints",
+        "Choose measurements visually from photographs"
+      ],
+      "correct_mask": 2,
+      "rationale": "The course describes perspective images may not give exact measurements. This reflects the geometry, space planning or review principle in the provided fictional model. Source: MAIC SketchUp Fundamentals for Interior Space Planning, page 3."
+    },
+    {
+      "ordinal": 18,
+      "source_page": 3,
+      "stem": "What should a source model distinguish?",
+      "options": [
+        "Assume wall height changes floor area",
+        "Mix meters and millimeters without conversion",
+        "Treat camera orbit as a dimensional change",
+        "Verified and provisional dimensions"
+      ],
+      "correct_mask": 8,
+      "rationale": "The course describes verified and provisional dimensions. This reflects the geometry, space planning or review principle in the provided fictional model. Source: MAIC SketchUp Fundamentals for Interior Space Planning, page 3."
+    },
+    {
+      "ordinal": 19,
+      "source_page": 3,
+      "stem": "What remains after reserving two square meters of twenty for storage?",
+      "options": [
+        "18 square meters",
+        "Ignore known openings and constraints",
+        "Choose measurements visually from photographs",
+        "Assume wall height changes floor area"
+      ],
+      "correct_mask": 1,
+      "rationale": "The course describes 18 square meters. This reflects the geometry, space planning or review principle in the provided fictional model. Source: MAIC SketchUp Fundamentals for Interior Space Planning, page 3."
+    },
+    {
+      "ordinal": 20,
+      "source_page": 3,
+      "stem": "Why preserve model orientation and coordinate notes?",
+      "options": [
+        "Mix meters and millimeters without conversion",
+        "Treat camera orbit as a dimensional change",
+        "Others must be able to interpret the design correctly",
+        "Ignore known openings and constraints"
+      ],
+      "correct_mask": 4,
+      "rationale": "The course describes others must be able to interpret the design correctly. This reflects the geometry, space planning or review principle in the provided fictional model. Source: MAIC SketchUp Fundamentals for Interior Space Planning, page 3."
+    },
+    {
+      "ordinal": 21,
+      "source_page": 4,
+      "stem": "What basic SketchUp geometry forms a planar surface?",
+      "options": [
+        "Edges enclosing a valid face",
+        "Leave all room and furniture geometry loose",
+        "Use only visual dragging for precise dimensions",
+        "Delete the original base room before review"
+      ],
+      "correct_mask": 1,
+      "rationale": "The course describes edges enclosing a valid face. This reflects the geometry, space planning or review principle in the provided fictional model. Source: MAIC SketchUp Fundamentals for Interior Space Planning, page 4."
+    },
+    {
+      "ordinal": 22,
+      "source_page": 4,
+      "stem": "What does Push/Pull generally do to a face?",
+      "options": [
+        "Extrude surfaces without checking closure",
+        "Allow desk edges to alter wall geometry",
+        "Extrude it into three-dimensional form",
+        "Leave all room and furniture geometry loose"
+      ],
+      "correct_mask": 4,
+      "rationale": "The course describes extrude it into three-dimensional form. This reflects the geometry, space planning or review principle in the provided fictional model. Source: MAIC SketchUp Fundamentals for Interior Space Planning, page 4."
+    },
+    {
+      "ordinal": 23,
+      "source_page": 4,
+      "stem": "Why may a face fail to appear?",
+      "options": [
+        "Use only visual dragging for precise dimensions",
+        "Delete the original base room before review",
+        "Extrude surfaces without checking closure",
+        "Its boundaries may be incomplete or invalid"
+      ],
+      "correct_mask": 8,
+      "rationale": "The course describes its boundaries may be incomplete or invalid. This reflects the geometry, space planning or review principle in the provided fictional model. Source: MAIC SketchUp Fundamentals for Interior Space Planning, page 4."
+    },
+    {
+      "ordinal": 24,
+      "source_page": 4,
+      "stem": "What can cause unintended geometry interactions?",
+      "options": [
+        "Allow desk edges to alter wall geometry",
+        "Leave all room and furniture geometry loose",
+        "Use only visual dragging for precise dimensions",
+        "Editing loose raw edges and faces together"
+      ],
+      "correct_mask": 8,
+      "rationale": "The course describes editing loose raw edges and faces together. This reflects the geometry, space planning or review principle in the provided fictional model. Source: MAIC SketchUp Fundamentals for Interior Space Planning, page 4."
+    },
+    {
+      "ordinal": 25,
+      "source_page": 4,
+      "stem": "Why place a desk model in a group?",
+      "options": [
+        "Delete the original base room before review",
+        "Extrude surfaces without checking closure",
+        "Allow desk edges to alter wall geometry",
+        "Moving it should not deform the room wall"
+      ],
+      "correct_mask": 8,
+      "rationale": "The course describes moving it should not deform the room wall. This reflects the geometry, space planning or review principle in the provided fictional model. Source: MAIC SketchUp Fundamentals for Interior Space Planning, page 4."
+    },
+    {
+      "ordinal": 26,
+      "source_page": 4,
+      "stem": "What should be checked before using Push/Pull?",
+      "options": [
+        "Face selection and the intended dimension",
+        "Leave all room and furniture geometry loose",
+        "Use only visual dragging for precise dimensions",
+        "Delete the original base room before review"
+      ],
+      "correct_mask": 1,
+      "rationale": "The course describes face selection and the intended dimension. This reflects the geometry, space planning or review principle in the provided fictional model. Source: MAIC SketchUp Fundamentals for Interior Space Planning, page 4."
+    },
+    {
+      "ordinal": 27,
+      "source_page": 4,
+      "stem": "Why is numeric wall height preferable to eye estimation?",
+      "options": [
+        "Extrude surfaces without checking closure",
+        "Allow desk edges to alter wall geometry",
+        "It keeps the model measurable",
+        "Leave all room and furniture geometry loose"
+      ],
+      "correct_mask": 4,
+      "rationale": "The course describes it keeps the model measurable. This reflects the geometry, space planning or review principle in the provided fictional model. Source: MAIC SketchUp Fundamentals for Interior Space Planning, page 4."
+    },
+    {
+      "ordinal": 28,
+      "source_page": 4,
+      "stem": "What is a reason to preserve a clean base-room version?",
+      "options": [
+        "Use only visual dragging for precise dimensions",
+        "Delete the original base room before review",
+        "Changes can be compared without losing the reference",
+        "Extrude surfaces without checking closure"
+      ],
+      "correct_mask": 4,
+      "rationale": "The course describes changes can be compared without losing the reference. This reflects the geometry, space planning or review principle in the provided fictional model. Source: MAIC SketchUp Fundamentals for Interior Space Planning, page 4."
+    },
+    {
+      "ordinal": 29,
+      "source_page": 4,
+      "stem": "What should be modeled for a room opening?",
+      "options": [
+        "Allow desk edges to alter wall geometry",
+        "Leave all room and furniture geometry loose",
+        "Its position and size based on available measurements",
+        "Use only visual dragging for precise dimensions"
+      ],
+      "correct_mask": 4,
+      "rationale": "The course describes its position and size based on available measurements. This reflects the geometry, space planning or review principle in the provided fictional model. Source: MAIC SketchUp Fundamentals for Interior Space Planning, page 4."
+    },
+    {
+      "ordinal": 30,
+      "source_page": 4,
+      "stem": "What is a model quality risk of overlapping loose edges?",
+      "options": [
+        "Delete the original base room before review",
+        "Extrude surfaces without checking closure",
+        "Accidental changes to adjacent geometry",
+        "Allow desk edges to alter wall geometry"
+      ],
+      "correct_mask": 4,
+      "rationale": "The course describes accidental changes to adjacent geometry. This reflects the geometry, space planning or review principle in the provided fictional model. Source: MAIC SketchUp Fundamentals for Interior Space Planning, page 4."
+    },
+    {
+      "ordinal": 31,
+      "source_page": 5,
+      "stem": "What do groups help protect?",
+      "options": [
+        "Treat tags as a substitute for groups",
+        "Related geometry from unintended connections",
+        "Assume hiding furniture removes it from the plan",
+        "Edit component masters without checking instances"
+      ],
+      "correct_mask": 2,
+      "rationale": "The course describes related geometry from unintended connections. This reflects the geometry, space planning or review principle in the provided fictional model. Source: MAIC SketchUp Fundamentals for Interior Space Planning, page 5."
+    },
+    {
+      "ordinal": 32,
+      "source_page": 5,
+      "stem": "What are components helpful for?",
+      "options": [
+        "Model each repeated chair as unrelated raw edges",
+        "Make all objects have the same unnamed identity",
+        "Repeated objects that share a reusable definition",
+        "Treat tags as a substitute for groups"
+      ],
+      "correct_mask": 4,
+      "rationale": "The course describes repeated objects that share a reusable definition. This reflects the geometry, space planning or review principle in the provided fictional model. Source: MAIC SketchUp Fundamentals for Interior Space Planning, page 5."
+    },
+    {
+      "ordinal": 33,
+      "source_page": 5,
+      "stem": "Why test a component edit before changing every chair?",
+      "options": [
+        "Assume hiding furniture removes it from the plan",
+        "Edit component masters without checking instances",
+        "Model each repeated chair as unrelated raw edges",
+        "It may affect all linked instances"
+      ],
+      "correct_mask": 8,
+      "rationale": "The course describes it may affect all linked instances. This reflects the geometry, space planning or review principle in the provided fictional model. Source: MAIC SketchUp Fundamentals for Interior Space Planning, page 5."
+    },
+    {
+      "ordinal": 34,
+      "source_page": 5,
+      "stem": "What is a function of tags in a model?",
+      "options": [
+        "Make all objects have the same unnamed identity",
+        "Treat tags as a substitute for groups",
+        "Organize visibility of categories of objects",
+        "Assume hiding furniture removes it from the plan"
+      ],
+      "correct_mask": 4,
+      "rationale": "The course describes organize visibility of categories of objects. This reflects the geometry, space planning or review principle in the provided fictional model. Source: MAIC SketchUp Fundamentals for Interior Space Planning, page 5."
+    },
+    {
+      "ordinal": 35,
+      "source_page": 5,
+      "stem": "Why do tags not replace grouping?",
+      "options": [
+        "Edit component masters without checking instances",
+        "Raw geometry still needs separate organization",
+        "Model each repeated chair as unrelated raw edges",
+        "Make all objects have the same unnamed identity"
+      ],
+      "correct_mask": 2,
+      "rationale": "The course describes raw geometry still needs separate organization. This reflects the geometry, space planning or review principle in the provided fictional model. Source: MAIC SketchUp Fundamentals for Interior Space Planning, page 5."
+    },
+    {
+      "ordinal": 36,
+      "source_page": 5,
+      "stem": "What is an appropriate name for a furniture group?",
+      "options": [
+        "Treat tags as a substitute for groups",
+        "Assume hiding furniture removes it from the plan",
+        "Edit component masters without checking instances",
+        "Furniture / Desks"
+      ],
+      "correct_mask": 8,
+      "rationale": "The course describes furniture / Desks. This reflects the geometry, space planning or review principle in the provided fictional model. Source: MAIC SketchUp Fundamentals for Interior Space Planning, page 5."
+    },
+    {
+      "ordinal": 37,
+      "source_page": 5,
+      "stem": "What is an advantage of a structured Outliner?",
+      "options": [
+        "Model each repeated chair as unrelated raw edges",
+        "Make all objects have the same unnamed identity",
+        "Treat tags as a substitute for groups",
+        "Finding and managing objects predictably"
+      ],
+      "correct_mask": 8,
+      "rationale": "The course describes finding and managing objects predictably. This reflects the geometry, space planning or review principle in the provided fictional model. Source: MAIC SketchUp Fundamentals for Interior Space Planning, page 5."
+    },
+    {
+      "ordinal": 38,
+      "source_page": 5,
+      "stem": "Why should hiding an object not be treated as removing it?",
+      "options": [
+        "Assume hiding furniture removes it from the plan",
+        "Edit component masters without checking instances",
+        "It may still affect the real design's circulation",
+        "Model each repeated chair as unrelated raw edges"
+      ],
+      "correct_mask": 4,
+      "rationale": "The course describes it may still affect the real design's circulation. This reflects the geometry, space planning or review principle in the provided fictional model. Source: MAIC SketchUp Fundamentals for Interior Space Planning, page 5."
+    },
+    {
+      "ordinal": 39,
+      "source_page": 5,
+      "stem": "How could six matching chairs be organized?",
+      "options": [
+        "Make all objects have the same unnamed identity",
+        "Treat tags as a substitute for groups",
+        "As repeated instances of one chair component",
+        "Assume hiding furniture removes it from the plan"
+      ],
+      "correct_mask": 4,
+      "rationale": "The course describes as repeated instances of one chair component. This reflects the geometry, space planning or review principle in the provided fictional model. Source: MAIC SketchUp Fundamentals for Interior Space Planning, page 5."
+    },
+    {
+      "ordinal": 40,
+      "source_page": 5,
+      "stem": "What should be documented for a unique component variation?",
+      "options": [
+        "Edit component masters without checking instances",
+        "Its deliberate difference from the shared design",
+        "Model each repeated chair as unrelated raw edges",
+        "Make all objects have the same unnamed identity"
+      ],
+      "correct_mask": 2,
+      "rationale": "The course describes its deliberate difference from the shared design. This reflects the geometry, space planning or review principle in the provided fictional model. Source: MAIC SketchUp Fundamentals for Interior Space Planning, page 5."
+    },
+    {
+      "ordinal": 41,
+      "source_page": 6,
+      "stem": "Why should furniture be modeled with realistic footprints?",
+      "options": [
+        "Treat a tabletop outline as full furniture clearance",
+        "Declare every attractive gap code approved",
+        "Ignore users moving around the furniture",
+        "Actual fit and movement depend on dimensions"
+      ],
+      "correct_mask": 8,
+      "rationale": "The course describes actual fit and movement depend on dimensions. This reflects the geometry, space planning or review principle in the provided fictional model. Source: MAIC SketchUp Fundamentals for Interior Space Planning, page 6."
+    },
+    {
+      "ordinal": 42,
+      "source_page": 6,
+      "stem": "What needs clearance beyond the desk tabletop?",
+      "options": [
+        "Block a door swing with a shelf",
+        "Change the room dimensions to make an option win",
+        "Treat a tabletop outline as full furniture clearance",
+        "In-use chairs and walking paths"
+      ],
+      "correct_mask": 8,
+      "rationale": "The course describes in-use chairs and walking paths. This reflects the geometry, space planning or review principle in the provided fictional model. Source: MAIC SketchUp Fundamentals for Interior Space Planning, page 6."
+    },
+    {
+      "ordinal": 43,
+      "source_page": 6,
+      "stem": "Why might a central table not suit every room?",
+      "options": [
+        "Declare every attractive gap code approved",
+        "Ignore users moving around the furniture",
+        "Different work tasks and circulation needs may favor other layouts",
+        "Block a door swing with a shelf"
+      ],
+      "correct_mask": 4,
+      "rationale": "The course describes different work tasks and circulation needs may favor other layouts. This reflects the geometry, space planning or review principle in the provided fictional model. Source: MAIC SketchUp Fundamentals for Interior Space Planning, page 6."
+    },
+    {
+      "ordinal": 44,
+      "source_page": 6,
+      "stem": "What should two layout alternatives share for fair comparison?",
+      "options": [
+        "The same measured room boundary",
+        "Change the room dimensions to make an option win",
+        "Treat a tabletop outline as full furniture clearance",
+        "Declare every attractive gap code approved"
+      ],
+      "correct_mask": 1,
+      "rationale": "The course describes the same measured room boundary. This reflects the geometry, space planning or review principle in the provided fictional model. Source: MAIC SketchUp Fundamentals for Interior Space Planning, page 6."
+    },
+    {
+      "ordinal": 45,
+      "source_page": 6,
+      "stem": "Why must door swings appear in circulation review?",
+      "options": [
+        "Ignore users moving around the furniture",
+        "They can conflict with furniture positions",
+        "Block a door swing with a shelf",
+        "Change the room dimensions to make an option win"
+      ],
+      "correct_mask": 2,
+      "rationale": "The course describes they can conflict with furniture positions. This reflects the geometry, space planning or review principle in the provided fictional model. Source: MAIC SketchUp Fundamentals for Interior Space Planning, page 6."
+    },
+    {
+      "ordinal": 46,
+      "source_page": 6,
+      "stem": "What does a circulation drawing show?",
+      "options": [
+        "Treat a tabletop outline as full furniture clearance",
+        "Declare every attractive gap code approved",
+        "Ignore users moving around the furniture",
+        "Paths between entrances, activities and exits"
+      ],
+      "correct_mask": 8,
+      "rationale": "The course describes paths between entrances, activities and exits. This reflects the geometry, space planning or review principle in the provided fictional model. Source: MAIC SketchUp Fundamentals for Interior Space Planning, page 6."
+    },
+    {
+      "ordinal": 47,
+      "source_page": 6,
+      "stem": "Why should an attractive aisle not be called code compliant automatically?",
+      "options": [
+        "Required clearances depend on actual rules and conditions",
+        "Block a door swing with a shelf",
+        "Change the room dimensions to make an option win",
+        "Treat a tabletop outline as full furniture clearance"
+      ],
+      "correct_mask": 1,
+      "rationale": "The course describes required clearances depend on actual rules and conditions. This reflects the geometry, space planning or review principle in the provided fictional model. Source: MAIC SketchUp Fundamentals for Interior Space Planning, page 6."
+    },
+    {
+      "ordinal": 48,
+      "source_page": 6,
+      "stem": "Which design outcome is important in a reading room?",
+      "options": [
+        "Declare every attractive gap code approved",
+        "Ignore users moving around the furniture",
+        "Accessible book storage and quiet seating",
+        "Block a door swing with a shelf"
+      ],
+      "correct_mask": 4,
+      "rationale": "The course describes accessible book storage and quiet seating. This reflects the geometry, space planning or review principle in the provided fictional model. Source: MAIC SketchUp Fundamentals for Interior Space Planning, page 6."
+    },
+    {
+      "ordinal": 49,
+      "source_page": 6,
+      "stem": "What should be checked after moving a storage cabinet?",
+      "options": [
+        "Access routes and possible obstructions",
+        "Change the room dimensions to make an option win",
+        "Treat a tabletop outline as full furniture clearance",
+        "Declare every attractive gap code approved"
+      ],
+      "correct_mask": 1,
+      "rationale": "The course describes access routes and possible obstructions. This reflects the geometry, space planning or review principle in the provided fictional model. Source: MAIC SketchUp Fundamentals for Interior Space Planning, page 6."
+    },
+    {
+      "ordinal": 50,
+      "source_page": 6,
+      "stem": "What should uncertain aisle widths be marked as?",
+      "options": [
+        "Ignore users moving around the furniture",
+        "Measurements requiring verification",
+        "Block a door swing with a shelf",
+        "Change the room dimensions to make an option win"
+      ],
+      "correct_mask": 2,
+      "rationale": "The course describes measurements requiring verification. This reflects the geometry, space planning or review principle in the provided fictional model. Source: MAIC SketchUp Fundamentals for Interior Space Planning, page 6."
+    },
+    {
+      "ordinal": 51,
+      "source_page": 7,
+      "stem": "What do SketchUp materials primarily communicate?",
+      "options": [
+        "Call visual textures certified fire data",
+        "Visual appearance and material intent",
+        "Treat every palette as accurate under real light",
+        "Skip actual product specifications"
+      ],
+      "correct_mask": 2,
+      "rationale": "The course describes visual appearance and material intent. This reflects the geometry, space planning or review principle in the provided fictional model. Source: MAIC SketchUp Fundamentals for Interior Space Planning, page 7."
+    },
+    {
+      "ordinal": 52,
+      "source_page": 7,
+      "stem": "Does a wood texture prove actual fire performance?",
+      "options": [
+        "Assume shadow previews are measured illumination",
+        "Use dramatic color to hide structural errors",
+        "Call visual textures certified fire data",
+        "No, product evidence is required"
+      ],
+      "correct_mask": 8,
+      "rationale": "The course describes no, product evidence is required. This reflects the geometry, space planning or review principle in the provided fictional model. Source: MAIC SketchUp Fundamentals for Interior Space Planning, page 7."
+    },
+    {
+      "ordinal": 53,
+      "source_page": 7,
+      "stem": "Why is location relevant to a solar-shadow study?",
+      "options": [
+        "Treat every palette as accurate under real light",
+        "The sun's apparent position depends on place and time",
+        "Skip actual product specifications",
+        "Assume shadow previews are measured illumination"
+      ],
+      "correct_mask": 2,
+      "rationale": "The course describes the sun's apparent position depends on place and time. This reflects the geometry, space planning or review principle in the provided fictional model. Source: MAIC SketchUp Fundamentals for Interior Space Planning, page 7."
+    },
+    {
+      "ordinal": 54,
+      "source_page": 7,
+      "stem": "What is the role of a neutral model view?",
+      "options": [
+        "Use dramatic color to hide structural errors",
+        "Call visual textures certified fire data",
+        "Treat every palette as accurate under real light",
+        "Make geometry and layout easier to inspect"
+      ],
+      "correct_mask": 8,
+      "rationale": "The course describes make geometry and layout easier to inspect. This reflects the geometry, space planning or review principle in the provided fictional model. Source: MAIC SketchUp Fundamentals for Interior Space Planning, page 7."
+    },
+    {
+      "ordinal": 55,
+      "source_page": 7,
+      "stem": "Why might digital color differ from the finished room?",
+      "options": [
+        "Skip actual product specifications",
+        "Assume shadow previews are measured illumination",
+        "Actual light and physical samples affect appearance",
+        "Use dramatic color to hide structural errors"
+      ],
+      "correct_mask": 4,
+      "rationale": "The course describes actual light and physical samples affect appearance. This reflects the geometry, space planning or review principle in the provided fictional model. Source: MAIC SketchUp Fundamentals for Interior Space Planning, page 7."
+    },
+    {
+      "ordinal": 56,
+      "source_page": 7,
+      "stem": "What should a presentation note about textures state?",
+      "options": [
+        "Call visual textures certified fire data",
+        "Treat every palette as accurate under real light",
+        "Skip actual product specifications",
+        "Whether finishes are conceptual placeholders"
+      ],
+      "correct_mask": 8,
+      "rationale": "The course describes whether finishes are conceptual placeholders. This reflects the geometry, space planning or review principle in the provided fictional model. Source: MAIC SketchUp Fundamentals for Interior Space Planning, page 7."
+    },
+    {
+      "ordinal": 57,
+      "source_page": 7,
+      "stem": "Why should a render not be used as structural proof?",
+      "options": [
+        "A visual style does not test engineering performance",
+        "Assume shadow previews are measured illumination",
+        "Use dramatic color to hide structural errors",
+        "Call visual textures certified fire data"
+      ],
+      "correct_mask": 1,
+      "rationale": "The course describes a visual style does not test engineering performance. This reflects the geometry, space planning or review principle in the provided fictional model. Source: MAIC SketchUp Fundamentals for Interior Space Planning, page 7."
+    },
+    {
+      "ordinal": 58,
+      "source_page": 7,
+      "stem": "What is a useful visual palette strategy?",
+      "options": [
+        "Treat every palette as accurate under real light",
+        "Skip actual product specifications",
+        "Use limited consistent material roles",
+        "Assume shadow previews are measured illumination"
+      ],
+      "correct_mask": 4,
+      "rationale": "The course describes use limited consistent material roles. This reflects the geometry, space planning or review principle in the provided fictional model. Source: MAIC SketchUp Fundamentals for Interior Space Planning, page 7."
+    },
+    {
+      "ordinal": 59,
+      "source_page": 7,
+      "stem": "What might be hidden by dramatic lighting?",
+      "options": [
+        "Use dramatic color to hide structural errors",
+        "Call visual textures certified fire data",
+        "Critical dimensions and small visual details",
+        "Treat every palette as accurate under real light"
+      ],
+      "correct_mask": 4,
+      "rationale": "The course describes critical dimensions and small visual details. This reflects the geometry, space planning or review principle in the provided fictional model. Source: MAIC SketchUp Fundamentals for Interior Space Planning, page 7."
+    },
+    {
+      "ordinal": 60,
+      "source_page": 7,
+      "stem": "What should be confirmed before real finish selection?",
+      "options": [
+        "Skip actual product specifications",
+        "Assume shadow previews are measured illumination",
+        "Manufacturer performance and suitable physical samples",
+        "Use dramatic color to hide structural errors"
+      ],
+      "correct_mask": 4,
+      "rationale": "The course describes manufacturer performance and suitable physical samples. This reflects the geometry, space planning or review principle in the provided fictional model. Source: MAIC SketchUp Fundamentals for Interior Space Planning, page 7."
+    },
+    {
+      "ordinal": 61,
+      "source_page": 8,
+      "stem": "What is the purpose of SketchUp scenes?",
+      "options": [
+        "Save repeatable views for review",
+        "Use only one flattering perspective camera",
+        "Assume screenshots retain full model editability",
+        "Describe an installed design from a fictional model"
+      ],
+      "correct_mask": 1,
+      "rationale": "The course describes save repeatable views for review. This reflects the geometry, space planning or review principle in the provided fictional model. Source: MAIC SketchUp Fundamentals for Interior Space Planning, page 8."
+    },
+    {
+      "ordinal": 62,
+      "source_page": 8,
+      "stem": "What view helps reveal plan circulation problems?",
+      "options": [
+        "Remove dimensions from all review views",
+        "A top or plan view",
+        "Hide all unresolved site measurements",
+        "Use only one flattering perspective camera"
+      ],
+      "correct_mask": 2,
+      "rationale": "The course describes a top or plan view. This reflects the geometry, space planning or review principle in the provided fictional model. Source: MAIC SketchUp Fundamentals for Interior Space Planning, page 8."
+    },
+    {
+      "ordinal": 63,
+      "source_page": 8,
+      "stem": "What can an eye-level view help explain?",
+      "options": [
+        "Assume screenshots retain full model editability",
+        "How occupants perceive the room",
+        "Describe an installed design from a fictional model",
+        "Remove dimensions from all review views"
+      ],
+      "correct_mask": 2,
+      "rationale": "The course describes how occupants perceive the room. This reflects the geometry, space planning or review principle in the provided fictional model. Source: MAIC SketchUp Fundamentals for Interior Space Planning, page 8."
+    },
+    {
+      "ordinal": 64,
+      "source_page": 8,
+      "stem": "Why compare design options using similar camera positions?",
+      "options": [
+        "Hide all unresolved site measurements",
+        "Perspective changes could distort comparison",
+        "Use only one flattering perspective camera",
+        "Assume screenshots retain full model editability"
+      ],
+      "correct_mask": 2,
+      "rationale": "The course describes perspective changes could distort comparison. This reflects the geometry, space planning or review principle in the provided fictional model. Source: MAIC SketchUp Fundamentals for Interior Space Planning, page 8."
+    },
+    {
+      "ordinal": 65,
+      "source_page": 8,
+      "stem": "What should a scene title identify?",
+      "options": [
+        "Describe an installed design from a fictional model",
+        "Remove dimensions from all review views",
+        "The view or design option represented",
+        "Hide all unresolved site measurements"
+      ],
+      "correct_mask": 4,
+      "rationale": "The course describes the view or design option represented. This reflects the geometry, space planning or review principle in the provided fictional model. Source: MAIC SketchUp Fundamentals for Interior Space Planning, page 8."
+    },
+    {
+      "ordinal": 66,
+      "source_page": 8,
+      "stem": "Why is a screenshot insufficient as a full technical handoff?",
+      "options": [
+        "Use only one flattering perspective camera",
+        "It may lack editable geometry and dimensions",
+        "Assume screenshots retain full model editability",
+        "Describe an installed design from a fictional model"
+      ],
+      "correct_mask": 2,
+      "rationale": "The course describes it may lack editable geometry and dimensions. This reflects the geometry, space planning or review principle in the provided fictional model. Source: MAIC SketchUp Fundamentals for Interior Space Planning, page 8."
+    },
+    {
+      "ordinal": 67,
+      "source_page": 8,
+      "stem": "What may be available in supported subscriptions for printable layouts?",
+      "options": [
+        "Remove dimensions from all review views",
+        "Hide all unresolved site measurements",
+        "Use only one flattering perspective camera",
+        "A compatible LayOut workflow"
+      ],
+      "correct_mask": 8,
+      "rationale": "The course describes a compatible LayOut workflow. This reflects the geometry, space planning or review principle in the provided fictional model. Source: MAIC SketchUp Fundamentals for Interior Space Planning, page 8."
+    },
+    {
+      "ordinal": 68,
+      "source_page": 8,
+      "stem": "Why should annotations use checked dimensions?",
+      "options": [
+        "Assume screenshots retain full model editability",
+        "Describe an installed design from a fictional model",
+        "Remove dimensions from all review views",
+        "Unverified measurements can mislead reviewers"
+      ],
+      "correct_mask": 8,
+      "rationale": "The course describes unverified measurements can mislead reviewers. This reflects the geometry, space planning or review principle in the provided fictional model. Source: MAIC SketchUp Fundamentals for Interior Space Planning, page 8."
+    },
+    {
+      "ordinal": 69,
+      "source_page": 8,
+      "stem": "What should be disclosed about hidden model objects?",
+      "options": [
+        "Hide all unresolved site measurements",
+        "Use only one flattering perspective camera",
+        "Assume screenshots retain full model editability",
+        "They remain part of the model despite scene visibility"
+      ],
+      "correct_mask": 8,
+      "rationale": "The course describes they remain part of the model despite scene visibility. This reflects the geometry, space planning or review principle in the provided fictional model. Source: MAIC SketchUp Fundamentals for Interior Space Planning, page 8."
+    },
+    {
+      "ordinal": 70,
+      "source_page": 8,
+      "stem": "What must a review package record?",
+      "options": [
+        "Version, measurement status and unresolved requirements",
+        "Describe an installed design from a fictional model",
+        "Remove dimensions from all review views",
+        "Hide all unresolved site measurements"
+      ],
+      "correct_mask": 1,
+      "rationale": "The course describes version, measurement status and unresolved requirements. This reflects the geometry, space planning or review principle in the provided fictional model. Source: MAIC SketchUp Fundamentals for Interior Space Planning, page 8."
+    },
+    {
+      "ordinal": 71,
+      "source_page": 9,
+      "stem": "Why preserve a prior room version before major edits?",
+      "options": [
+        "Move walls without surveying or authorization",
+        "The original assumptions and options remain comparable",
+        "Treat aesthetic preference as the only criterion",
+        "Use inconsistent room boundaries for alternatives"
+      ],
+      "correct_mask": 2,
+      "rationale": "The course describes the original assumptions and options remain comparable. This reflects the geometry, space planning or review principle in the provided fictional model. Source: MAIC SketchUp Fundamentals for Interior Space Planning, page 9."
+    },
+    {
+      "ordinal": 72,
+      "source_page": 9,
+      "stem": "Why should an interior designer not move walls just to fit a desk?",
+      "options": [
+        "Delete prior options before comparison",
+        "Ignore circulation after enlarging tables",
+        "Move walls without surveying or authorization",
+        "Architectural changes require authorization and review"
+      ],
+      "correct_mask": 8,
+      "rationale": "The course describes architectural changes require authorization and review. This reflects the geometry, space planning or review principle in the provided fictional model. Source: MAIC SketchUp Fundamentals for Interior Space Planning, page 9."
+    },
+    {
+      "ordinal": 73,
+      "source_page": 9,
+      "stem": "How can a component relationship affect multiple chairs?",
+      "options": [
+        "Treat aesthetic preference as the only criterion",
+        "Use inconsistent room boundaries for alternatives",
+        "Delete prior options before comparison",
+        "Editing the shared definition may update instances"
+      ],
+      "correct_mask": 8,
+      "rationale": "The course describes editing the shared definition may update instances. This reflects the geometry, space planning or review principle in the provided fictional model. Source: MAIC SketchUp Fundamentals for Interior Space Planning, page 9."
+    },
+    {
+      "ordinal": 74,
+      "source_page": 9,
+      "stem": "What should be reviewed after enlarging a table?",
+      "options": [
+        "Ignore circulation after enlarging tables",
+        "Circulation and door interference",
+        "Move walls without surveying or authorization",
+        "Treat aesthetic preference as the only criterion"
+      ],
+      "correct_mask": 2,
+      "rationale": "The course describes circulation and door interference. This reflects the geometry, space planning or review principle in the provided fictional model. Source: MAIC SketchUp Fundamentals for Interior Space Planning, page 9."
+    },
+    {
+      "ordinal": 75,
+      "source_page": 9,
+      "stem": "What should justify the chosen layout?",
+      "options": [
+        "Fit with activities, budget and functional constraints",
+        "Use inconsistent room boundaries for alternatives",
+        "Delete prior options before comparison",
+        "Ignore circulation after enlarging tables"
+      ],
+      "correct_mask": 1,
+      "rationale": "The course describes fit with activities, budget and functional constraints. This reflects the geometry, space planning or review principle in the provided fictional model. Source: MAIC SketchUp Fundamentals for Interior Space Planning, page 9."
+    },
+    {
+      "ordinal": 76,
+      "source_page": 9,
+      "stem": "Why compare alternatives under shared dimensions?",
+      "options": [
+        "Move walls without surveying or authorization",
+        "It isolates layout decisions from changes to the room",
+        "Treat aesthetic preference as the only criterion",
+        "Use inconsistent room boundaries for alternatives"
+      ],
+      "correct_mask": 2,
+      "rationale": "The course describes it isolates layout decisions from changes to the room. This reflects the geometry, space planning or review principle in the provided fictional model. Source: MAIC SketchUp Fundamentals for Interior Space Planning, page 9."
+    },
+    {
+      "ordinal": 77,
+      "source_page": 9,
+      "stem": "What is a risk of hiding inconvenient furniture during review?",
+      "options": [
+        "The scene may conceal real design conflicts",
+        "Delete prior options before comparison",
+        "Ignore circulation after enlarging tables",
+        "Move walls without surveying or authorization"
+      ],
+      "correct_mask": 1,
+      "rationale": "The course describes the scene may conceal real design conflicts. This reflects the geometry, space planning or review principle in the provided fictional model. Source: MAIC SketchUp Fundamentals for Interior Space Planning, page 9."
+    },
+    {
+      "ordinal": 78,
+      "source_page": 9,
+      "stem": "What should an alternative model be named?",
+      "options": [
+        "A distinct clear design option or revision",
+        "Treat aesthetic preference as the only criterion",
+        "Use inconsistent room boundaries for alternatives",
+        "Delete prior options before comparison"
+      ],
+      "correct_mask": 1,
+      "rationale": "The course describes a distinct clear design option or revision. This reflects the geometry, space planning or review principle in the provided fictional model. Source: MAIC SketchUp Fundamentals for Interior Space Planning, page 9."
+    },
+    {
+      "ordinal": 79,
+      "source_page": 9,
+      "stem": "Why is a visually balanced plan not automatically best?",
+      "options": [
+        "Function and access may be inadequate",
+        "Ignore circulation after enlarging tables",
+        "Move walls without surveying or authorization",
+        "Treat aesthetic preference as the only criterion"
+      ],
+      "correct_mask": 1,
+      "rationale": "The course describes function and access may be inadequate. This reflects the geometry, space planning or review principle in the provided fictional model. Source: MAIC SketchUp Fundamentals for Interior Space Planning, page 9."
+    },
+    {
+      "ordinal": 80,
+      "source_page": 9,
+      "stem": "What should a revision log capture?",
+      "options": [
+        "Which elements changed and why",
+        "Use inconsistent room boundaries for alternatives",
+        "Delete prior options before comparison",
+        "Ignore circulation after enlarging tables"
+      ],
+      "correct_mask": 1,
+      "rationale": "The course describes which elements changed and why. This reflects the geometry, space planning or review principle in the provided fictional model. Source: MAIC SketchUp Fundamentals for Interior Space Planning, page 9."
+    },
+    {
+      "ordinal": 81,
+      "source_page": 10,
+      "stem": "What should be preserved for model handoff?",
+      "options": [
+        "Export pictures only and discard source geometry",
+        "Deliver huge unoptimized geometry unnecessarily",
+        "Forget units and hidden content checks",
+        "The original editable SketchUp project"
+      ],
+      "correct_mask": 8,
+      "rationale": "The course describes the original editable SketchUp project. This reflects the geometry, space planning or review principle in the provided fictional model. Source: MAIC SketchUp Fundamentals for Interior Space Planning, page 10."
+    },
+    {
+      "ordinal": 82,
+      "source_page": 10,
+      "stem": "What should accompany a model for nontechnical reviewers?",
+      "options": [
+        "Ignore the user's available software and format",
+        "Readable annotated views or dimensioned documentation",
+        "Use mixed file versions without notes",
+        "Export pictures only and discard source geometry"
+      ],
+      "correct_mask": 2,
+      "rationale": "The course describes readable annotated views or dimensioned documentation. This reflects the geometry, space planning or review principle in the provided fictional model. Source: MAIC SketchUp Fundamentals for Interior Space Planning, page 10."
+    },
+    {
+      "ordinal": 83,
+      "source_page": 10,
+      "stem": "Why test export compatibility?",
+      "options": [
+        "Deliver huge unoptimized geometry unnecessarily",
+        "Forget units and hidden content checks",
+        "Receiver software may not preserve the same data",
+        "Ignore the user's available software and format"
+      ],
+      "correct_mask": 4,
+      "rationale": "The course describes receiver software may not preserve the same data. This reflects the geometry, space planning or review principle in the provided fictional model. Source: MAIC SketchUp Fundamentals for Interior Space Planning, page 10."
+    },
+    {
+      "ordinal": 84,
+      "source_page": 10,
+      "stem": "What can excessive repeated high-polygon models cause?",
+      "options": [
+        "Use mixed file versions without notes",
+        "Poor editing performance and large files",
+        "Export pictures only and discard source geometry",
+        "Deliver huge unoptimized geometry unnecessarily"
+      ],
+      "correct_mask": 2,
+      "rationale": "The course describes poor editing performance and large files. This reflects the geometry, space planning or review principle in the provided fictional model. Source: MAIC SketchUp Fundamentals for Interior Space Planning, page 10."
+    },
+    {
+      "ordinal": 85,
+      "source_page": 10,
+      "stem": "Why inspect hidden geometry before delivery?",
+      "options": [
+        "Forget units and hidden content checks",
+        "Unseen objects can affect the actual model",
+        "Ignore the user's available software and format",
+        "Use mixed file versions without notes"
+      ],
+      "correct_mask": 2,
+      "rationale": "The course describes unseen objects can affect the actual model. This reflects the geometry, space planning or review principle in the provided fictional model. Source: MAIC SketchUp Fundamentals for Interior Space Planning, page 10."
+    },
+    {
+      "ordinal": 86,
+      "source_page": 10,
+      "stem": "What should be checked after a model correction?",
+      "options": [
+        "Export pictures only and discard source geometry",
+        "Deliver huge unoptimized geometry unnecessarily",
+        "Both source and derivative views are updated",
+        "Forget units and hidden content checks"
+      ],
+      "correct_mask": 4,
+      "rationale": "The course describes both source and derivative views are updated. This reflects the geometry, space planning or review principle in the provided fictional model. Source: MAIC SketchUp Fundamentals for Interior Space Planning, page 10."
+    },
+    {
+      "ordinal": 87,
+      "source_page": 10,
+      "stem": "Why should the model package state units?",
+      "options": [
+        "Ignore the user's available software and format",
+        "Use mixed file versions without notes",
+        "The receiver needs the correct physical scale",
+        "Export pictures only and discard source geometry"
+      ],
+      "correct_mask": 4,
+      "rationale": "The course describes the receiver needs the correct physical scale. This reflects the geometry, space planning or review principle in the provided fictional model. Source: MAIC SketchUp Fundamentals for Interior Space Planning, page 10."
+    },
+    {
+      "ordinal": 88,
+      "source_page": 10,
+      "stem": "What is the limitation of a presentation render?",
+      "options": [
+        "It cannot replace all source geometry and measurement details",
+        "Deliver huge unoptimized geometry unnecessarily",
+        "Forget units and hidden content checks",
+        "Ignore the user's available software and format"
+      ],
+      "correct_mask": 1,
+      "rationale": "The course describes it cannot replace all source geometry and measurement details. This reflects the geometry, space planning or review principle in the provided fictional model. Source: MAIC SketchUp Fundamentals for Interior Space Planning, page 10."
+    },
+    {
+      "ordinal": 89,
+      "source_page": 10,
+      "stem": "What should be included in a final quality checklist?",
+      "options": [
+        "Use mixed file versions without notes",
+        "Export pictures only and discard source geometry",
+        "Deliver huge unoptimized geometry unnecessarily",
+        "Groups, face orientation, scenes, dimensions and rights"
+      ],
+      "correct_mask": 8,
+      "rationale": "The course describes groups, face orientation, scenes, dimensions and rights. This reflects the geometry, space planning or review principle in the provided fictional model. Source: MAIC SketchUp Fundamentals for Interior Space Planning, page 10."
+    },
+    {
+      "ordinal": 90,
+      "source_page": 10,
+      "stem": "Why should an approved logo remain consistent in presentation sheets?",
+      "options": [
+        "Forget units and hidden content checks",
+        "Identity assets have fixed design rules",
+        "Ignore the user's available software and format",
+        "Use mixed file versions without notes"
+      ],
+      "correct_mask": 2,
+      "rationale": "The course describes identity assets have fixed design rules. This reflects the geometry, space planning or review principle in the provided fictional model. Source: MAIC SketchUp Fundamentals for Interior Space Planning, page 10."
+    },
+    {
+      "ordinal": 91,
+      "source_page": 11,
+      "stem": "What are the fictional room dimensions?",
+      "options": [
+        "5 meters by 4 meters",
+        "Assume six chairs guarantee safe room occupancy",
+        "Describe sketches as completed installations",
+        "Treat area-per-seat arithmetic as a safety certificate"
+      ],
+      "correct_mask": 1,
+      "rationale": "The course describes 5 meters by 4 meters. This reflects the geometry, space planning or review principle in the provided fictional model. Source: MAIC SketchUp Fundamentals for Interior Space Planning, page 11."
+    },
+    {
+      "ordinal": 92,
+      "source_page": 11,
+      "stem": "What is its nominal floor area?",
+      "options": [
+        "Use invented door dimensions as verified data",
+        "Ignore furniture in-use positions",
+        "20 square meters",
+        "Assume six chairs guarantee safe room occupancy"
+      ],
+      "correct_mask": 4,
+      "rationale": "The course describes 20 square meters. This reflects the geometry, space planning or review principle in the provided fictional model. Source: MAIC SketchUp Fundamentals for Interior Space Planning, page 11."
+    },
+    {
+      "ordinal": 93,
+      "source_page": 11,
+      "stem": "How many reading seats are requested?",
+      "options": [
+        "Six seats",
+        "Describe sketches as completed installations",
+        "Treat area-per-seat arithmetic as a safety certificate",
+        "Use invented door dimensions as verified data"
+      ],
+      "correct_mask": 1,
+      "rationale": "The course describes six seats. This reflects the geometry, space planning or review principle in the provided fictional model. Source: MAIC SketchUp Fundamentals for Interior Space Planning, page 11."
+    },
+    {
+      "ordinal": 94,
+      "source_page": 11,
+      "stem": "What are the two design alternatives?",
+      "options": [
+        "Ignore furniture in-use positions",
+        "Assume six chairs guarantee safe room occupancy",
+        "A central shared table and wall-aligned desks",
+        "Describe sketches as completed installations"
+      ],
+      "correct_mask": 4,
+      "rationale": "The course describes a central shared table and wall-aligned desks. This reflects the geometry, space planning or review principle in the provided fictional model. Source: MAIC SketchUp Fundamentals for Interior Space Planning, page 11."
+    },
+    {
+      "ordinal": 95,
+      "source_page": 11,
+      "stem": "What is a main modeling advantage of using chair components?",
+      "options": [
+        "The repeated furniture geometry stays consistent",
+        "Treat area-per-seat arithmetic as a safety certificate",
+        "Use invented door dimensions as verified data",
+        "Ignore furniture in-use positions"
+      ],
+      "correct_mask": 1,
+      "rationale": "The course describes the repeated furniture geometry stays consistent. This reflects the geometry, space planning or review principle in the provided fictional model. Source: MAIC SketchUp Fundamentals for Interior Space Planning, page 11."
+    },
+    {
+      "ordinal": 96,
+      "source_page": 11,
+      "stem": "What remains after a two-square-meter storage area is deducted?",
+      "options": [
+        "Assume six chairs guarantee safe room occupancy",
+        "18 square meters",
+        "Describe sketches as completed installations",
+        "Treat area-per-seat arithmetic as a safety certificate"
+      ],
+      "correct_mask": 2,
+      "rationale": "The course describes 18 square meters. This reflects the geometry, space planning or review principle in the provided fictional model. Source: MAIC SketchUp Fundamentals for Interior Space Planning, page 11."
+    },
+    {
+      "ordinal": 97,
+      "source_page": 11,
+      "stem": "What is the nominal remaining area divided by six seats?",
+      "options": [
+        "3 square meters per seat",
+        "Use invented door dimensions as verified data",
+        "Ignore furniture in-use positions",
+        "Assume six chairs guarantee safe room occupancy"
+      ],
+      "correct_mask": 1,
+      "rationale": "The course describes 3 square meters per seat. This reflects the geometry, space planning or review principle in the provided fictional model. Source: MAIC SketchUp Fundamentals for Interior Space Planning, page 11."
+    },
+    {
+      "ordinal": 98,
+      "source_page": 11,
+      "stem": "Is that ratio sufficient proof of accessibility or occupancy approval?",
+      "options": [
+        "Describe sketches as completed installations",
+        "No, actual paths and codes remain unverified",
+        "Treat area-per-seat arithmetic as a safety certificate",
+        "Use invented door dimensions as verified data"
+      ],
+      "correct_mask": 2,
+      "rationale": "The course describes no, actual paths and codes remain unverified. This reflects the geometry, space planning or review principle in the provided fictional model. Source: MAIC SketchUp Fundamentals for Interior Space Planning, page 11."
+    },
+    {
+      "ordinal": 99,
+      "source_page": 11,
+      "stem": "What view helps verify the plan's walking routes?",
+      "options": [
+        "A dimensioned top view",
+        "Ignore furniture in-use positions",
+        "Assume six chairs guarantee safe room occupancy",
+        "Describe sketches as completed installations"
+      ],
+      "correct_mask": 1,
+      "rationale": "The course describes a dimensioned top view. This reflects the geometry, space planning or review principle in the provided fictional model. Source: MAIC SketchUp Fundamentals for Interior Space Planning, page 11."
+    },
+    {
+      "ordinal": 100,
+      "source_page": 11,
+      "stem": "What should the final recommendation mention?",
+      "options": [
+        "Treat area-per-seat arithmetic as a safety certificate",
+        "Use invented door dimensions as verified data",
+        "User needs, tradeoffs and unresolved site checks",
+        "Ignore furniture in-use positions"
+      ],
+      "correct_mask": 4,
+      "rationale": "The course describes user needs, tradeoffs and unresolved site checks. This reflects the geometry, space planning or review principle in the provided fictional model. Source: MAIC SketchUp Fundamentals for Interior Space Planning, page 11."
+    }
+  ]
+}
