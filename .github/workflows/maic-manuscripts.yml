@@ -47,6 +47,23 @@ jobs:
               --montage assets/michigan-heritage-montage.webp \
               --output "dist/maic/${stem}.pdf"
           done
+      - name: Check all candidates fit the authenticated first-upload limit
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          from pypdf import PdfReader
+
+          paths = sorted(Path("dist/maic").glob("*.pdf"))
+          assert paths, "No candidate PDFs created"
+          for path in paths:
+              size = path.stat().st_size
+              if size > 1_250_000:
+                  raise SystemExit(f"{path.name}: {size:,} bytes exceeds MAIC's 1.25 MB upload gate")
+              reader = PdfReader(str(path))
+              if len(reader.pages) != 12 or any(not (page.extract_text() or "").strip() for page in reader.pages):
+                  raise SystemExit(f"{path.name}: requires 12 nonblank extractable pages")
+          print(f"PASS: {len(paths)} candidate PDFs meet first-upload size and text checks")
+          PY
       - name: Upload candidate PDFs for academic review
         uses: actions/upload-artifact@v4
         with:
