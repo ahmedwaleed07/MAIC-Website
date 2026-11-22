@@ -1,0 +1,1312 @@
+{
+  "course_id": "masterclass-in-animation",
+  "source_manuscript": "data/course-manuscripts/masterclass-in-animation.md",
+  "source_manuscript_blob_sha": "d8f0def8296efd6f865f03a3f33a3d3edb410184",
+  "source_pdf_sha256": null,
+  "bank_version": "draft-manuscript-20261123-v1",
+  "approval_status": "editorial_draft_pending_independent_review",
+  "number_of_questions": 100,
+  "note": "Staged academic-review draft only; no real student exam activation.",
+  "questions": [
+    {
+      "ordinal": 1,
+      "source_page": 2,
+      "stem": "What does animation create through successive images?",
+      "options": [
+        "Treat rendering quality as proof of a coherent story",
+        "The perception of designed motion over time",
+        "Use protected characters without permission",
+        "Discard all editable scenes after export"
+      ],
+      "correct_mask": 2,
+      "rationale": "The source material establishes that the perception of designed motion over time. This is the related story, movement or animation-production principle described on the referenced page. Source: MAIC A Masterclass in Animation, page 2."
+    },
+    {
+      "ordinal": 2,
+      "source_page": 2,
+      "stem": "Why can a polished render still fail the scene?",
+      "options": [
+        "Action, continuity or story may be unclear",
+        "Ignore character model sheets between shots",
+        "Select a pipeline before planning the motion",
+        "Treat rendering quality as proof of a coherent story"
+      ],
+      "correct_mask": 1,
+      "rationale": "The source material establishes that action, continuity or story may be unclear. This is the related story, movement or animation-production principle described on the referenced page. Source: MAIC A Masterclass in Animation, page 2."
+    },
+    {
+      "ordinal": 3,
+      "source_page": 2,
+      "stem": "What should guide the animation technique chosen?",
+      "options": [
+        "Use protected characters without permission",
+        "Discard all editable scenes after export",
+        "Ignore character model sheets between shots",
+        "Message, resources and required motion"
+      ],
+      "correct_mask": 8,
+      "rationale": "The source material establishes that message, resources and required motion. This is the related story, movement or animation-production principle described on the referenced page. Source: MAIC A Masterclass in Animation, page 2."
+    },
+    {
+      "ordinal": 4,
+      "source_page": 2,
+      "stem": "Which outcome belongs to the course?",
+      "options": [
+        "Select a pipeline before planning the motion",
+        "Treat rendering quality as proof of a coherent story",
+        "Use protected characters without permission",
+        "Plan and review an original short animated scene"
+      ],
+      "correct_mask": 8,
+      "rationale": "The source material establishes that plan and review an original short animated scene. This is the related story, movement or animation-production principle described on the referenced page. Source: MAIC A Masterclass in Animation, page 2."
+    },
+    {
+      "ordinal": 5,
+      "source_page": 2,
+      "stem": "Why are the garden characters labeled fictional?",
+      "options": [
+        "Discard all editable scenes after export",
+        "They do not depict verified real people",
+        "Ignore character model sheets between shots",
+        "Select a pipeline before planning the motion"
+      ],
+      "correct_mask": 2,
+      "rationale": "The source material establishes that they do not depict verified real people. This is the related story, movement or animation-production principle described on the referenced page. Source: MAIC A Masterclass in Animation, page 2."
+    },
+    {
+      "ordinal": 6,
+      "source_page": 2,
+      "stem": "What should precede complex animation effects?",
+      "options": [
+        "Treat rendering quality as proof of a coherent story",
+        "A simple storyboard and clear action",
+        "Use protected characters without permission",
+        "Discard all editable scenes after export"
+      ],
+      "correct_mask": 2,
+      "rationale": "The source material establishes that a simple storyboard and clear action. This is the related story, movement or animation-production principle described on the referenced page. Source: MAIC A Masterclass in Animation, page 2."
+    },
+    {
+      "ordinal": 7,
+      "source_page": 2,
+      "stem": "What is a timing chart useful for?",
+      "options": [
+        "Ignore character model sheets between shots",
+        "Planning movement across frames",
+        "Select a pipeline before planning the motion",
+        "Treat rendering quality as proof of a coherent story"
+      ],
+      "correct_mask": 2,
+      "rationale": "The source material establishes that planning movement across frames. This is the related story, movement or animation-production principle described on the referenced page. Source: MAIC A Masterclass in Animation, page 2."
+    },
+    {
+      "ordinal": 8,
+      "source_page": 2,
+      "stem": "Why should a character model sheet be maintained?",
+      "options": [
+        "Keep proportions and features consistent",
+        "Use protected characters without permission",
+        "Discard all editable scenes after export",
+        "Ignore character model sheets between shots"
+      ],
+      "correct_mask": 1,
+      "rationale": "The source material establishes that keep proportions and features consistent. This is the related story, movement or animation-production principle described on the referenced page. Source: MAIC A Masterclass in Animation, page 2."
+    },
+    {
+      "ordinal": 9,
+      "source_page": 2,
+      "stem": "What must an animation deliver besides visuals?",
+      "options": [
+        "Select a pipeline before planning the motion",
+        "Understandable actions and suitable sound or accessible text",
+        "Treat rendering quality as proof of a coherent story",
+        "Use protected characters without permission"
+      ],
+      "correct_mask": 2,
+      "rationale": "The source material establishes that understandable actions and suitable sound or accessible text. This is the related story, movement or animation-production principle described on the referenced page. Source: MAIC A Masterclass in Animation, page 2."
+    },
+    {
+      "ordinal": 10,
+      "source_page": 2,
+      "stem": "Why is editable source important after rendering?",
+      "options": [
+        "Discard all editable scenes after export",
+        "Ignore character model sheets between shots",
+        "Corrections may require original layers and assets",
+        "Select a pipeline before planning the motion"
+      ],
+      "correct_mask": 4,
+      "rationale": "The source material establishes that corrections may require original layers and assets. This is the related story, movement or animation-production principle described on the referenced page. Source: MAIC A Masterclass in Animation, page 2."
+    },
+    {
+      "ordinal": 11,
+      "source_page": 3,
+      "stem": "What does a visual script specify?",
+      "options": [
+        "Use random camera positions without continuity",
+        "Pack many unrelated events into a short scene",
+        "Action and narrative beats to communicate",
+        "Treat an animatic as a certified released film"
+      ],
+      "correct_mask": 4,
+      "rationale": "The source material establishes that action and narrative beats to communicate. This is the related story, movement or animation-production principle described on the referenced page. Source: MAIC A Masterclass in Animation, page 3."
+    },
+    {
+      "ordinal": 12,
+      "source_page": 3,
+      "stem": "What is a storyboard intended to show?",
+      "options": [
+        "Key shots, staging and action sequence",
+        "Create expensive final renders before making a storyboard",
+        "Let props switch locations without explanation",
+        "Use random camera positions without continuity"
+      ],
+      "correct_mask": 1,
+      "rationale": "The source material establishes that key shots, staging and action sequence. This is the related story, movement or animation-production principle described on the referenced page. Source: MAIC A Masterclass in Animation, page 3."
+    },
+    {
+      "ordinal": 13,
+      "source_page": 3,
+      "stem": "What does an animatic add to a storyboard?",
+      "options": [
+        "Pack many unrelated events into a short scene",
+        "Treat an animatic as a certified released film",
+        "Create expensive final renders before making a storyboard",
+        "Approximate timing and temporary sound"
+      ],
+      "correct_mask": 8,
+      "rationale": "The source material establishes that approximate timing and temporary sound. This is the related story, movement or animation-production principle described on the referenced page. Source: MAIC A Masterclass in Animation, page 3."
+    },
+    {
+      "ordinal": 14,
+      "source_page": 3,
+      "stem": "Why use a wide establishing view?",
+      "options": [
+        "Let props switch locations without explanation",
+        "Use random camera positions without continuity",
+        "Show the environment and spatial relationships",
+        "Pack many unrelated events into a short scene"
+      ],
+      "correct_mask": 4,
+      "rationale": "The source material establishes that show the environment and spatial relationships. This is the related story, movement or animation-production principle described on the referenced page. Source: MAIC A Masterclass in Animation, page 3."
+    },
+    {
+      "ordinal": 15,
+      "source_page": 3,
+      "stem": "What can a close-up emphasize?",
+      "options": [
+        "Treat an animatic as a certified released film",
+        "An important expression or action",
+        "Create expensive final renders before making a storyboard",
+        "Let props switch locations without explanation"
+      ],
+      "correct_mask": 2,
+      "rationale": "The source material establishes that an important expression or action. This is the related story, movement or animation-production principle described on the referenced page. Source: MAIC A Masterclass in Animation, page 3."
+    },
+    {
+      "ordinal": 16,
+      "source_page": 3,
+      "stem": "Why must screen direction stay understandable?",
+      "options": [
+        "Use random camera positions without continuity",
+        "Pack many unrelated events into a short scene",
+        "Viewers need coherent spatial continuity",
+        "Treat an animatic as a certified released film"
+      ],
+      "correct_mask": 4,
+      "rationale": "The source material establishes that viewers need coherent spatial continuity. This is the related story, movement or animation-production principle described on the referenced page. Source: MAIC A Masterclass in Animation, page 3."
+    },
+    {
+      "ordinal": 17,
+      "source_page": 3,
+      "stem": "What should a short story avoid?",
+      "options": [
+        "Create expensive final renders before making a storyboard",
+        "Let props switch locations without explanation",
+        "Too many unrelated events for the duration",
+        "Use random camera positions without continuity"
+      ],
+      "correct_mask": 4,
+      "rationale": "The source material establishes that too many unrelated events for the duration. This is the related story, movement or animation-production principle described on the referenced page. Source: MAIC A Masterclass in Animation, page 3."
+    },
+    {
+      "ordinal": 18,
+      "source_page": 3,
+      "stem": "What is a useful early-story revision cue?",
+      "options": [
+        "A gesture is unclear during animatic review",
+        "Pack many unrelated events into a short scene",
+        "Treat an animatic as a certified released film",
+        "Create expensive final renders before making a storyboard"
+      ],
+      "correct_mask": 1,
+      "rationale": "The source material establishes that a gesture is unclear during animatic review. This is the related story, movement or animation-production principle described on the referenced page. Source: MAIC A Masterclass in Animation, page 3."
+    },
+    {
+      "ordinal": 19,
+      "source_page": 3,
+      "stem": "What does a three-beat story typically establish?",
+      "options": [
+        "Let props switch locations without explanation",
+        "Setup, conflict and resolution",
+        "Use random camera positions without continuity",
+        "Pack many unrelated events into a short scene"
+      ],
+      "correct_mask": 2,
+      "rationale": "The source material establishes that setup, conflict and resolution. This is the related story, movement or animation-production principle described on the referenced page. Source: MAIC A Masterclass in Animation, page 3."
+    },
+    {
+      "ordinal": 20,
+      "source_page": 3,
+      "stem": "Why should props remain in consistent places?",
+      "options": [
+        "Treat an animatic as a certified released film",
+        "Create expensive final renders before making a storyboard",
+        "Let props switch locations without explanation",
+        "Unexplained jumps confuse viewers"
+      ],
+      "correct_mask": 8,
+      "rationale": "The source material establishes that unexplained jumps confuse viewers. This is the related story, movement or animation-production principle described on the referenced page. Source: MAIC A Masterclass in Animation, page 3."
+    },
+    {
+      "ordinal": 21,
+      "source_page": 4,
+      "stem": "What is animation timing?",
+      "options": [
+        "The duration assigned to an action",
+        "Assume every drawing must have equal spacing",
+        "Skip identifying main action poses",
+        "Calculate animation duration without units"
+      ],
+      "correct_mask": 1,
+      "rationale": "The source material establishes that the duration assigned to an action. This is the related story, movement or animation-production principle described on the referenced page. Source: MAIC A Masterclass in Animation, page 4."
+    },
+    {
+      "ordinal": 22,
+      "source_page": 4,
+      "stem": "What is animation spacing?",
+      "options": [
+        "Confuse frame rate with story quality",
+        "Treat a held pose as always wrong",
+        "Distance between sequential object positions",
+        "Assume every drawing must have equal spacing"
+      ],
+      "correct_mask": 4,
+      "rationale": "The source material establishes that distance between sequential object positions. This is the related story, movement or animation-production principle described on the referenced page. Source: MAIC A Masterclass in Animation, page 4."
+    },
+    {
+      "ordinal": 23,
+      "source_page": 4,
+      "stem": "What can evenly spaced positions suggest?",
+      "options": [
+        "Skip identifying main action poses",
+        "Steady speed across equal intervals",
+        "Calculate animation duration without units",
+        "Confuse frame rate with story quality"
+      ],
+      "correct_mask": 2,
+      "rationale": "The source material establishes that steady speed across equal intervals. This is the related story, movement or animation-production principle described on the referenced page. Source: MAIC A Masterclass in Animation, page 4."
+    },
+    {
+      "ordinal": 24,
+      "source_page": 4,
+      "stem": "What do wider spatial gaps at equal time intervals suggest?",
+      "options": [
+        "Faster movement",
+        "Treat a held pose as always wrong",
+        "Assume every drawing must have equal spacing",
+        "Skip identifying main action poses"
+      ],
+      "correct_mask": 1,
+      "rationale": "The source material establishes that faster movement. This is the related story, movement or animation-production principle described on the referenced page. Source: MAIC A Masterclass in Animation, page 4."
+    },
+    {
+      "ordinal": 25,
+      "source_page": 4,
+      "stem": "Why do key poses come before in-between drawings?",
+      "options": [
+        "They establish the main action and structure",
+        "Calculate animation duration without units",
+        "Confuse frame rate with story quality",
+        "Treat a held pose as always wrong"
+      ],
+      "correct_mask": 1,
+      "rationale": "The source material establishes that they establish the main action and structure. This is the related story, movement or animation-production principle described on the referenced page. Source: MAIC A Masterclass in Animation, page 4."
+    },
+    {
+      "ordinal": 26,
+      "source_page": 4,
+      "stem": "What may small position gaps near the top of a bounce suggest?",
+      "options": [
+        "Slow movement around the apex",
+        "Assume every drawing must have equal spacing",
+        "Skip identifying main action poses",
+        "Calculate animation duration without units"
+      ],
+      "correct_mask": 1,
+      "rationale": "The source material establishes that slow movement around the apex. This is the related story, movement or animation-production principle described on the referenced page. Source: MAIC A Masterclass in Animation, page 4."
+    },
+    {
+      "ordinal": 27,
+      "source_page": 4,
+      "stem": "What can a deliberate held pose communicate?",
+      "options": [
+        "Pause or emotional hesitation",
+        "Confuse frame rate with story quality",
+        "Treat a held pose as always wrong",
+        "Assume every drawing must have equal spacing"
+      ],
+      "correct_mask": 1,
+      "rationale": "The source material establishes that pause or emotional hesitation. This is the related story, movement or animation-production principle described on the referenced page. Source: MAIC A Masterclass in Animation, page 4."
+    },
+    {
+      "ordinal": 28,
+      "source_page": 4,
+      "stem": "How many frames are displayed in two seconds at 24 fps?",
+      "options": [
+        "Skip identifying main action poses",
+        "48 frames",
+        "Calculate animation duration without units",
+        "Confuse frame rate with story quality"
+      ],
+      "correct_mask": 2,
+      "rationale": "The source material establishes that 48 frames. This is the related story, movement or animation-production principle described on the referenced page. Source: MAIC A Masterclass in Animation, page 4."
+    },
+    {
+      "ordinal": 29,
+      "source_page": 4,
+      "stem": "How long do 72 frames last at 24 fps?",
+      "options": [
+        "3 seconds",
+        "Treat a held pose as always wrong",
+        "Assume every drawing must have equal spacing",
+        "Skip identifying main action poses"
+      ],
+      "correct_mask": 1,
+      "rationale": "The source material establishes that 3 seconds. This is the related story, movement or animation-production principle described on the referenced page. Source: MAIC A Masterclass in Animation, page 4."
+    },
+    {
+      "ordinal": 30,
+      "source_page": 4,
+      "stem": "Why is higher frame rate not always better storytelling?",
+      "options": [
+        "Calculate animation duration without units",
+        "Motion clarity depends on design and context",
+        "Confuse frame rate with story quality",
+        "Treat a held pose as always wrong"
+      ],
+      "correct_mask": 2,
+      "rationale": "The source material establishes that motion clarity depends on design and context. This is the related story, movement or animation-production principle described on the referenced page. Source: MAIC A Masterclass in Animation, page 4."
+    },
+    {
+      "ordinal": 31,
+      "source_page": 5,
+      "stem": "What does anticipation help viewers recognize?",
+      "options": [
+        "Apply cartoon exaggeration to every safety demonstration",
+        "Use staging to hide the main action",
+        "An action that is about to begin",
+        "Exaggerate without regard to style or weight"
+      ],
+      "correct_mask": 4,
+      "rationale": "The source material establishes that an action that is about to begin. This is the related story, movement or animation-production principle described on the referenced page. Source: MAIC A Masterclass in Animation, page 5."
+    },
+    {
+      "ordinal": 32,
+      "source_page": 5,
+      "stem": "What is follow-through intended to depict?",
+      "options": [
+        "Secondary motion settling after the main action",
+        "Let every character change anatomy between frames",
+        "Treat anticipation as irrelevant to viewer expectations",
+        "Apply cartoon exaggeration to every safety demonstration"
+      ],
+      "correct_mask": 1,
+      "rationale": "The source material establishes that secondary motion settling after the main action. This is the related story, movement or animation-production principle described on the referenced page. Source: MAIC A Masterclass in Animation, page 5."
+    },
+    {
+      "ordinal": 33,
+      "source_page": 5,
+      "stem": "What does squash and stretch often express?",
+      "options": [
+        "Use staging to hide the main action",
+        "Exaggerate without regard to style or weight",
+        "Let every character change anatomy between frames",
+        "Elasticity and weight under a consistent style"
+      ],
+      "correct_mask": 8,
+      "rationale": "The source material establishes that elasticity and weight under a consistent style. This is the related story, movement or animation-production principle described on the referenced page. Source: MAIC A Masterclass in Animation, page 5."
+    },
+    {
+      "ordinal": 34,
+      "source_page": 5,
+      "stem": "What is staging used to accomplish?",
+      "options": [
+        "Make the intended action easy to read",
+        "Treat anticipation as irrelevant to viewer expectations",
+        "Apply cartoon exaggeration to every safety demonstration",
+        "Use staging to hide the main action"
+      ],
+      "correct_mask": 1,
+      "rationale": "The source material establishes that make the intended action easy to read. This is the related story, movement or animation-production principle described on the referenced page. Source: MAIC A Masterclass in Animation, page 5."
+    },
+    {
+      "ordinal": 35,
+      "source_page": 5,
+      "stem": "What are motion arcs?",
+      "options": [
+        "Exaggerate without regard to style or weight",
+        "Let every character change anatomy between frames",
+        "Treat anticipation as irrelevant to viewer expectations",
+        "Curved paths followed by many natural actions"
+      ],
+      "correct_mask": 8,
+      "rationale": "The source material establishes that curved paths followed by many natural actions. This is the related story, movement or animation-production principle described on the referenced page. Source: MAIC A Masterclass in Animation, page 5."
+    },
+    {
+      "ordinal": 36,
+      "source_page": 5,
+      "stem": "Why should exaggeration be context-sensitive?",
+      "options": [
+        "Apply cartoon exaggeration to every safety demonstration",
+        "Use staging to hide the main action",
+        "Realistic safety demonstrations need credible action",
+        "Exaggerate without regard to style or weight"
+      ],
+      "correct_mask": 4,
+      "rationale": "The source material establishes that realistic safety demonstrations need credible action. This is the related story, movement or animation-production principle described on the referenced page. Source: MAIC A Masterclass in Animation, page 5."
+    },
+    {
+      "ordinal": 37,
+      "source_page": 5,
+      "stem": "What can a clear silhouette improve?",
+      "options": [
+        "Recognition of a character's pose",
+        "Let every character change anatomy between frames",
+        "Treat anticipation as irrelevant to viewer expectations",
+        "Apply cartoon exaggeration to every safety demonstration"
+      ],
+      "correct_mask": 1,
+      "rationale": "The source material establishes that recognition of a character's pose. This is the related story, movement or animation-production principle described on the referenced page. Source: MAIC A Masterclass in Animation, page 5."
+    },
+    {
+      "ordinal": 38,
+      "source_page": 5,
+      "stem": "Why should animated character proportions remain stable?",
+      "options": [
+        "Unintended shape changes disrupt identity and continuity",
+        "Use staging to hide the main action",
+        "Exaggerate without regard to style or weight",
+        "Let every character change anatomy between frames"
+      ],
+      "correct_mask": 1,
+      "rationale": "The source material establishes that unintended shape changes disrupt identity and continuity. This is the related story, movement or animation-production principle described on the referenced page. Source: MAIC A Masterclass in Animation, page 5."
+    },
+    {
+      "ordinal": 39,
+      "source_page": 5,
+      "stem": "Which pose precedes reaching for a dropped book?",
+      "options": [
+        "Treat anticipation as irrelevant to viewer expectations",
+        "Looking or preparing to bend toward it",
+        "Apply cartoon exaggeration to every safety demonstration",
+        "Use staging to hide the main action"
+      ],
+      "correct_mask": 2,
+      "rationale": "The source material establishes that looking or preparing to bend toward it. This is the related story, movement or animation-production principle described on the referenced page. Source: MAIC A Masterclass in Animation, page 5."
+    },
+    {
+      "ordinal": 40,
+      "source_page": 5,
+      "stem": "Why should animation principles not be applied mechanically?",
+      "options": [
+        "Exaggerate without regard to style or weight",
+        "Let every character change anatomy between frames",
+        "Treat anticipation as irrelevant to viewer expectations",
+        "The message and physical context determine the useful technique"
+      ],
+      "correct_mask": 8,
+      "rationale": "The source material establishes that the message and physical context determine the useful technique. This is the related story, movement or animation-production principle described on the referenced page. Source: MAIC A Masterclass in Animation, page 5."
+    },
+    {
+      "ordinal": 41,
+      "source_page": 6,
+      "stem": "What should a character model sheet show?",
+      "options": [
+        "Reference views, features and proportions",
+        "Allow arbitrary extra fingers between drawings",
+        "Use a prop with no consistent size",
+        "Ignore reference views during cleanup"
+      ],
+      "correct_mask": 1,
+      "rationale": "The source material establishes that reference views, features and proportions. This is the related story, movement or animation-production principle described on the referenced page. Source: MAIC A Masterclass in Animation, page 6."
+    },
+    {
+      "ordinal": 42,
+      "source_page": 6,
+      "stem": "Why inspect hands during animation production?",
+      "options": [
+        "Change the backpack's shoulder every shot",
+        "Incorrect finger counts can appear between frames",
+        "Make the character's feet float above the floor",
+        "Allow arbitrary extra fingers between drawings"
+      ],
+      "correct_mask": 2,
+      "rationale": "The source material establishes that incorrect finger counts can appear between frames. This is the related story, movement or animation-production principle described on the referenced page. Source: MAIC A Masterclass in Animation, page 6."
+    },
+    {
+      "ordinal": 43,
+      "source_page": 6,
+      "stem": "Why should foot-floor contact be checked?",
+      "options": [
+        "Use a prop with no consistent size",
+        "Floating or sliding feet disrupt physical credibility",
+        "Ignore reference views during cleanup",
+        "Change the backpack's shoulder every shot"
+      ],
+      "correct_mask": 2,
+      "rationale": "The source material establishes that floating or sliding feet disrupt physical credibility. This is the related story, movement or animation-production principle described on the referenced page. Source: MAIC A Masterclass in Animation, page 6."
+    },
+    {
+      "ordinal": 44,
+      "source_page": 6,
+      "stem": "What should a prop reference sheet clarify?",
+      "options": [
+        "Make the character's feet float above the floor",
+        "Allow arbitrary extra fingers between drawings",
+        "Shape, size and how it interacts with the character",
+        "Use a prop with no consistent size"
+      ],
+      "correct_mask": 4,
+      "rationale": "The source material establishes that shape, size and how it interacts with the character. This is the related story, movement or animation-production principle described on the referenced page. Source: MAIC A Masterclass in Animation, page 6."
+    },
+    {
+      "ordinal": 45,
+      "source_page": 6,
+      "stem": "Why must a book grip be anatomically plausible?",
+      "options": [
+        "Ignore reference views during cleanup",
+        "Hands and object must have coherent contact",
+        "Change the backpack's shoulder every shot",
+        "Make the character's feet float above the floor"
+      ],
+      "correct_mask": 2,
+      "rationale": "The source material establishes that hands and object must have coherent contact. This is the related story, movement or animation-production principle described on the referenced page. Source: MAIC A Masterclass in Animation, page 6."
+    },
+    {
+      "ordinal": 46,
+      "source_page": 6,
+      "stem": "What is a character turnaround?",
+      "options": [
+        "Allow arbitrary extra fingers between drawings",
+        "Use a prop with no consistent size",
+        "Consistent views from different directions",
+        "Ignore reference views during cleanup"
+      ],
+      "correct_mask": 4,
+      "rationale": "The source material establishes that consistent views from different directions. This is the related story, movement or animation-production principle described on the referenced page. Source: MAIC A Masterclass in Animation, page 6."
+    },
+    {
+      "ordinal": 47,
+      "source_page": 6,
+      "stem": "What is an advantage of a pose library?",
+      "options": [
+        "Change the backpack's shoulder every shot",
+        "Reuse of recognized actions and expressions",
+        "Make the character's feet float above the floor",
+        "Allow arbitrary extra fingers between drawings"
+      ],
+      "correct_mask": 2,
+      "rationale": "The source material establishes that reuse of recognized actions and expressions. This is the related story, movement or animation-production principle described on the referenced page. Source: MAIC A Masterclass in Animation, page 6."
+    },
+    {
+      "ordinal": 48,
+      "source_page": 6,
+      "stem": "Why track the shoulder carrying a backpack?",
+      "options": [
+        "Use a prop with no consistent size",
+        "Ignore reference views during cleanup",
+        "Its position should not switch arbitrarily",
+        "Change the backpack's shoulder every shot"
+      ],
+      "correct_mask": 4,
+      "rationale": "The source material establishes that its position should not switch arbitrarily. This is the related story, movement or animation-production principle described on the referenced page. Source: MAIC A Masterclass in Animation, page 6."
+    },
+    {
+      "ordinal": 49,
+      "source_page": 6,
+      "stem": "What should a 3D character rig provide?",
+      "options": [
+        "Make the character's feet float above the floor",
+        "Allow arbitrary extra fingers between drawings",
+        "Joint controls suited to intended movement",
+        "Use a prop with no consistent size"
+      ],
+      "correct_mask": 4,
+      "rationale": "The source material establishes that joint controls suited to intended movement. This is the related story, movement or animation-production principle described on the referenced page. Source: MAIC A Masterclass in Animation, page 6."
+    },
+    {
+      "ordinal": 50,
+      "source_page": 6,
+      "stem": "What should be checked before producing in-betweens?",
+      "options": [
+        "Ignore reference views during cleanup",
+        "Change the backpack's shoulder every shot",
+        "Make the character's feet float above the floor",
+        "Model and pose consistency in key drawings"
+      ],
+      "correct_mask": 8,
+      "rationale": "The source material establishes that model and pose consistency in key drawings. This is the related story, movement or animation-production principle described on the referenced page. Source: MAIC A Masterclass in Animation, page 6."
+    },
+    {
+      "ordinal": 51,
+      "source_page": 7,
+      "stem": "What does frame-by-frame 2D animation involve?",
+      "options": [
+        "Separate drawings for successive motion states",
+        "Treat a finished video as a full 3D project backup",
+        "Use crowd rendering as the first beginner exercise",
+        "Treat different workflows as identical"
+      ],
+      "correct_mask": 1,
+      "rationale": "The source material establishes that separate drawings for successive motion states. This is the related story, movement or animation-production principle described on the referenced page. Source: MAIC A Masterclass in Animation, page 7."
+    },
+    {
+      "ordinal": 52,
+      "source_page": 7,
+      "stem": "How is stop-motion commonly captured?",
+      "options": [
+        "Assume stop-motion lighting may change randomly",
+        "Skip all animation planning when choosing 3D",
+        "Treat a finished video as a full 3D project backup",
+        "Incremental changes to physical objects between camera frames"
+      ],
+      "correct_mask": 8,
+      "rationale": "The source material establishes that incremental changes to physical objects between camera frames. This is the related story, movement or animation-production principle described on the referenced page. Source: MAIC A Masterclass in Animation, page 7."
+    },
+    {
+      "ordinal": 53,
+      "source_page": 7,
+      "stem": "What is a typical 3D animation pipeline step?",
+      "options": [
+        "Use crowd rendering as the first beginner exercise",
+        "Treat different workflows as identical",
+        "Rigging modeled characters before animated performance",
+        "Assume stop-motion lighting may change randomly"
+      ],
+      "correct_mask": 4,
+      "rationale": "The source material establishes that rigging modeled characters before animated performance. This is the related story, movement or animation-production principle described on the referenced page. Source: MAIC A Masterclass in Animation, page 7."
+    },
+    {
+      "ordinal": 54,
+      "source_page": 7,
+      "stem": "Why does stop-motion need stable lighting?",
+      "options": [
+        "Unplanned changes can create flicker",
+        "Skip all animation planning when choosing 3D",
+        "Treat a finished video as a full 3D project backup",
+        "Use crowd rendering as the first beginner exercise"
+      ],
+      "correct_mask": 1,
+      "rationale": "The source material establishes that unplanned changes can create flicker. This is the related story, movement or animation-production principle described on the referenced page. Source: MAIC A Masterclass in Animation, page 7."
+    },
+    {
+      "ordinal": 55,
+      "source_page": 7,
+      "stem": "What is the main role of an animation rig?",
+      "options": [
+        "Treat different workflows as identical",
+        "Control deformations and poses of a character",
+        "Assume stop-motion lighting may change randomly",
+        "Skip all animation planning when choosing 3D"
+      ],
+      "correct_mask": 2,
+      "rationale": "The source material establishes that control deformations and poses of a character. This is the related story, movement or animation-production principle described on the referenced page. Source: MAIC A Masterclass in Animation, page 7."
+    },
+    {
+      "ordinal": 56,
+      "source_page": 7,
+      "stem": "Why use an animatic before selecting a pipeline?",
+      "options": [
+        "Evaluate the story without expensive final production",
+        "Treat a finished video as a full 3D project backup",
+        "Use crowd rendering as the first beginner exercise",
+        "Treat different workflows as identical"
+      ],
+      "correct_mask": 1,
+      "rationale": "The source material establishes that evaluate the story without expensive final production. This is the related story, movement or animation-production principle described on the referenced page. Source: MAIC A Masterclass in Animation, page 7."
+    },
+    {
+      "ordinal": 57,
+      "source_page": 7,
+      "stem": "What is a practical reason to simplify crowd scenes?",
+      "options": [
+        "Assume stop-motion lighting may change randomly",
+        "They can demand substantial models and rendering resources",
+        "Skip all animation planning when choosing 3D",
+        "Treat a finished video as a full 3D project backup"
+      ],
+      "correct_mask": 2,
+      "rationale": "The source material establishes that they can demand substantial models and rendering resources. This is the related story, movement or animation-production principle described on the referenced page. Source: MAIC A Masterclass in Animation, page 7."
+    },
+    {
+      "ordinal": 58,
+      "source_page": 7,
+      "stem": "What should a 2D cleanup stage improve?",
+      "options": [
+        "Use crowd rendering as the first beginner exercise",
+        "Treat different workflows as identical",
+        "Assume stop-motion lighting may change randomly",
+        "Consistency and readability of key line work"
+      ],
+      "correct_mask": 8,
+      "rationale": "The source material establishes that consistency and readability of key line work. This is the related story, movement or animation-production principle described on the referenced page. Source: MAIC A Masterclass in Animation, page 7."
+    },
+    {
+      "ordinal": 59,
+      "source_page": 7,
+      "stem": "Why retain layered scene assets?",
+      "options": [
+        "Skip all animation planning when choosing 3D",
+        "Treat a finished video as a full 3D project backup",
+        "Use crowd rendering as the first beginner exercise",
+        "Finished video files may be flattened"
+      ],
+      "correct_mask": 8,
+      "rationale": "The source material establishes that finished video files may be flattened. This is the related story, movement or animation-production principle described on the referenced page. Source: MAIC A Masterclass in Animation, page 7."
+    },
+    {
+      "ordinal": 60,
+      "source_page": 7,
+      "stem": "What should decide between a 2D and 3D method?",
+      "options": [
+        "Story needs, available expertise and resource limits",
+        "Treat different workflows as identical",
+        "Assume stop-motion lighting may change randomly",
+        "Skip all animation planning when choosing 3D"
+      ],
+      "correct_mask": 1,
+      "rationale": "The source material establishes that story needs, available expertise and resource limits. This is the related story, movement or animation-production principle described on the referenced page. Source: MAIC A Masterclass in Animation, page 7."
+    },
+    {
+      "ordinal": 61,
+      "source_page": 8,
+      "stem": "What should a character's footsteps align with?",
+      "options": [
+        "Let environmental props teleport between shots",
+        "The depicted ground and timing of contact",
+        "Use unlicensed music as proof of fair use",
+        "Present staged footage as verified eyewitness recording"
+      ],
+      "correct_mask": 2,
+      "rationale": "The source material establishes that the depicted ground and timing of contact. This is the related story, movement or animation-production principle described on the referenced page. Source: MAIC A Masterclass in Animation, page 8."
+    },
+    {
+      "ordinal": 62,
+      "source_page": 8,
+      "stem": "Why may a camera pan not move the environment itself?",
+      "options": [
+        "Play impact sounds before the objects meet",
+        "Framing can change without object displacement",
+        "Allow dialogue to become inaudible",
+        "Let environmental props teleport between shots"
+      ],
+      "correct_mask": 2,
+      "rationale": "The source material establishes that framing can change without object displacement. This is the related story, movement or animation-production principle described on the referenced page. Source: MAIC A Masterclass in Animation, page 8."
+    },
+    {
+      "ordinal": 63,
+      "source_page": 8,
+      "stem": "What does parallax often help communicate?",
+      "options": [
+        "Apparent depth through relative motion",
+        "Use unlicensed music as proof of fair use",
+        "Present staged footage as verified eyewitness recording",
+        "Play impact sounds before the objects meet"
+      ],
+      "correct_mask": 1,
+      "rationale": "The source material establishes that apparent depth through relative motion. This is the related story, movement or animation-production principle described on the referenced page. Source: MAIC A Masterclass in Animation, page 8."
+    },
+    {
+      "ordinal": 64,
+      "source_page": 8,
+      "stem": "Why should an animated object stay where it was placed?",
+      "options": [
+        "Unexplained prop movement harms continuity",
+        "Allow dialogue to become inaudible",
+        "Let environmental props teleport between shots",
+        "Use unlicensed music as proof of fair use"
+      ],
+      "correct_mask": 1,
+      "rationale": "The source material establishes that unexplained prop movement harms continuity. This is the related story, movement or animation-production principle described on the referenced page. Source: MAIC A Masterclass in Animation, page 8."
+    },
+    {
+      "ordinal": 65,
+      "source_page": 8,
+      "stem": "What can sound effects communicate?",
+      "options": [
+        "Present staged footage as verified eyewitness recording",
+        "Play impact sounds before the objects meet",
+        "Action, contact and events outside the frame",
+        "Allow dialogue to become inaudible"
+      ],
+      "correct_mask": 4,
+      "rationale": "The source material establishes that action, contact and events outside the frame. This is the related story, movement or animation-production principle described on the referenced page. Source: MAIC A Masterclass in Animation, page 8."
+    },
+    {
+      "ordinal": 66,
+      "source_page": 8,
+      "stem": "Why should contact audio align with visible contact?",
+      "options": [
+        "Let environmental props teleport between shots",
+        "Use unlicensed music as proof of fair use",
+        "Mistimed sound can confuse the event",
+        "Present staged footage as verified eyewitness recording"
+      ],
+      "correct_mask": 4,
+      "rationale": "The source material establishes that mistimed sound can confuse the event. This is the related story, movement or animation-production principle described on the referenced page. Source: MAIC A Masterclass in Animation, page 8."
+    },
+    {
+      "ordinal": 67,
+      "source_page": 8,
+      "stem": "What should background music avoid?",
+      "options": [
+        "Play impact sounds before the objects meet",
+        "Allow dialogue to become inaudible",
+        "Let environmental props teleport between shots",
+        "Obscuring dialogue and important information"
+      ],
+      "correct_mask": 8,
+      "rationale": "The source material establishes that obscuring dialogue and important information. This is the related story, movement or animation-production principle described on the referenced page. Source: MAIC A Masterclass in Animation, page 8."
+    },
+    {
+      "ordinal": 68,
+      "source_page": 8,
+      "stem": "What is needed before using third-party music?",
+      "options": [
+        "Use unlicensed music as proof of fair use",
+        "Present staged footage as verified eyewitness recording",
+        "Play impact sounds before the objects meet",
+        "Appropriate usage permission"
+      ],
+      "correct_mask": 8,
+      "rationale": "The source material establishes that appropriate usage permission. This is the related story, movement or animation-production principle described on the referenced page. Source: MAIC A Masterclass in Animation, page 8."
+    },
+    {
+      "ordinal": 69,
+      "source_page": 8,
+      "stem": "How should reconstructed documentary-like scenes be presented?",
+      "options": [
+        "Allow dialogue to become inaudible",
+        "Let environmental props teleport between shots",
+        "Use unlicensed music as proof of fair use",
+        "Clearly identified as illustration when appropriate"
+      ],
+      "correct_mask": 8,
+      "rationale": "The source material establishes that clearly identified as illustration when appropriate. This is the related story, movement or animation-production principle described on the referenced page. Source: MAIC A Masterclass in Animation, page 8."
+    },
+    {
+      "ordinal": 70,
+      "source_page": 8,
+      "stem": "Why should captions be proofread?",
+      "options": [
+        "Auto-generated text may misstate names or numbers",
+        "Present staged footage as verified eyewitness recording",
+        "Play impact sounds before the objects meet",
+        "Allow dialogue to become inaudible"
+      ],
+      "correct_mask": 1,
+      "rationale": "The source material establishes that auto-generated text may misstate names or numbers. This is the related story, movement or animation-production principle described on the referenced page. Source: MAIC A Masterclass in Animation, page 8."
+    },
+    {
+      "ordinal": 71,
+      "source_page": 9,
+      "stem": "What is editing's role in animation?",
+      "options": [
+        "Use intense flashing without accessibility checks",
+        "Treat every cut as unrelated to ongoing action",
+        "Use a complex transition regardless of reader comprehension",
+        "Organize sequence, duration and understandable transitions"
+      ],
+      "correct_mask": 8,
+      "rationale": "The source material establishes that organize sequence, duration and understandable transitions. This is the related story, movement or animation-production principle described on the referenced page. Source: MAIC A Masterclass in Animation, page 9."
+    },
+    {
+      "ordinal": 72,
+      "source_page": 9,
+      "stem": "Why can a cut during a gesture be confusing?",
+      "options": [
+        "Hide important writing after half a second",
+        "Make color the only status cue",
+        "Action continuity may be lost",
+        "Use intense flashing without accessibility checks"
+      ],
+      "correct_mask": 4,
+      "rationale": "The source material establishes that action continuity may be lost. This is the related story, movement or animation-production principle described on the referenced page. Source: MAIC A Masterclass in Animation, page 9."
+    },
+    {
+      "ordinal": 73,
+      "source_page": 9,
+      "stem": "What should an accessible motion design review include?",
+      "options": [
+        "Flashing, pacing, captions and readable information",
+        "Treat every cut as unrelated to ongoing action",
+        "Use a complex transition regardless of reader comprehension",
+        "Hide important writing after half a second"
+      ],
+      "correct_mask": 1,
+      "rationale": "The source material establishes that flashing, pacing, captions and readable information. This is the related story, movement or animation-production principle described on the referenced page. Source: MAIC A Masterclass in Animation, page 9."
+    },
+    {
+      "ordinal": 74,
+      "source_page": 9,
+      "stem": "Why can a static storyboard be a useful alternative?",
+      "options": [
+        "Make color the only status cue",
+        "Use intense flashing without accessibility checks",
+        "It provides a lower-motion way to access the story",
+        "Treat every cut as unrelated to ongoing action"
+      ],
+      "correct_mask": 4,
+      "rationale": "The source material establishes that it provides a lower-motion way to access the story. This is the related story, movement or animation-production principle described on the referenced page. Source: MAIC A Masterclass in Animation, page 9."
+    },
+    {
+      "ordinal": 75,
+      "source_page": 9,
+      "stem": "What should text display timing permit?",
+      "options": [
+        "Use a complex transition regardless of reader comprehension",
+        "Hide important writing after half a second",
+        "Make color the only status cue",
+        "Realistic reading at the target screen size"
+      ],
+      "correct_mask": 8,
+      "rationale": "The source material establishes that realistic reading at the target screen size. This is the related story, movement or animation-production principle described on the referenced page. Source: MAIC A Masterclass in Animation, page 9."
+    },
+    {
+      "ordinal": 76,
+      "source_page": 9,
+      "stem": "Why is color alone inadequate for some information?",
+      "options": [
+        "Use intense flashing without accessibility checks",
+        "Treat every cut as unrelated to ongoing action",
+        "Not everyone distinguishes the relevant hue",
+        "Use a complex transition regardless of reader comprehension"
+      ],
+      "correct_mask": 4,
+      "rationale": "The source material establishes that not everyone distinguishes the relevant hue. This is the related story, movement or animation-production principle described on the referenced page. Source: MAIC A Masterclass in Animation, page 9."
+    },
+    {
+      "ordinal": 77,
+      "source_page": 9,
+      "stem": "What should animation for young viewers consider?",
+      "options": [
+        "Hide important writing after half a second",
+        "Pacing and complexity appropriate to intended users",
+        "Make color the only status cue",
+        "Use intense flashing without accessibility checks"
+      ],
+      "correct_mask": 2,
+      "rationale": "The source material establishes that pacing and complexity appropriate to intended users. This is the related story, movement or animation-production principle described on the referenced page. Source: MAIC A Masterclass in Animation, page 9."
+    },
+    {
+      "ordinal": 78,
+      "source_page": 9,
+      "stem": "What should a longer instruction animation maintain?",
+      "options": [
+        "Treat every cut as unrelated to ongoing action",
+        "Use a complex transition regardless of reader comprehension",
+        "Hide important writing after half a second",
+        "Clear order of steps and accessible wording"
+      ],
+      "correct_mask": 8,
+      "rationale": "The source material establishes that clear order of steps and accessible wording. This is the related story, movement or animation-production principle described on the referenced page. Source: MAIC A Masterclass in Animation, page 9."
+    },
+    {
+      "ordinal": 79,
+      "source_page": 9,
+      "stem": "Why should editing effects not dominate the message?",
+      "options": [
+        "Make color the only status cue",
+        "Use intense flashing without accessibility checks",
+        "Treat every cut as unrelated to ongoing action",
+        "Decoration can obscure core action"
+      ],
+      "correct_mask": 8,
+      "rationale": "The source material establishes that decoration can obscure core action. This is the related story, movement or animation-production principle described on the referenced page. Source: MAIC A Masterclass in Animation, page 9."
+    },
+    {
+      "ordinal": 80,
+      "source_page": 9,
+      "stem": "What is an appropriate end-card check?",
+      "options": [
+        "Can the full instruction actually be read?",
+        "Use a complex transition regardless of reader comprehension",
+        "Hide important writing after half a second",
+        "Make color the only status cue"
+      ],
+      "correct_mask": 1,
+      "rationale": "The source material establishes that can the full instruction actually be read. This is the related story, movement or animation-production principle described on the referenced page. Source: MAIC A Masterclass in Animation, page 9."
+    },
+    {
+      "ordinal": 81,
+      "source_page": 10,
+      "stem": "What does animation quality review inspect?",
+      "options": [
+        "Ignore accidental anatomy changes as artistic style",
+        "Discard every source and revision record",
+        "Continuity, timing, geometry, text and sound",
+        "Keep outdated scene exports beside corrected versions"
+      ],
+      "correct_mask": 4,
+      "rationale": "The source material establishes that continuity, timing, geometry, text and sound. This is the related story, movement or animation-production principle described on the referenced page. Source: MAIC A Masterclass in Animation, page 10."
+    },
+    {
+      "ordinal": 82,
+      "source_page": 10,
+      "stem": "Why inspect a complete rendered sequence?",
+      "options": [
+        "Review only one attractive still frame",
+        "Treat rendered output as verified content",
+        "Defects may appear only across transitions",
+        "Ignore accidental anatomy changes as artistic style"
+      ],
+      "correct_mask": 4,
+      "rationale": "The source material establishes that defects may appear only across transitions. This is the related story, movement or animation-production principle described on the referenced page. Source: MAIC A Masterclass in Animation, page 10."
+    },
+    {
+      "ordinal": 83,
+      "source_page": 10,
+      "stem": "What is a typical frame-level continuity defect?",
+      "options": [
+        "A prop switches hands without explanation",
+        "Discard every source and revision record",
+        "Keep outdated scene exports beside corrected versions",
+        "Review only one attractive still frame"
+      ],
+      "correct_mask": 1,
+      "rationale": "The source material establishes that a prop switches hands without explanation. This is the related story, movement or animation-production principle described on the referenced page. Source: MAIC A Masterclass in Animation, page 10."
+    },
+    {
+      "ordinal": 84,
+      "source_page": 10,
+      "stem": "Why must finger counts remain sensible?",
+      "options": [
+        "Treat rendered output as verified content",
+        "Ignore accidental anatomy changes as artistic style",
+        "Unwanted anatomy changes harm scene credibility",
+        "Discard every source and revision record"
+      ],
+      "correct_mask": 4,
+      "rationale": "The source material establishes that unwanted anatomy changes harm scene credibility. This is the related story, movement or animation-production principle described on the referenced page. Source: MAIC A Masterclass in Animation, page 10."
+    },
+    {
+      "ordinal": 85,
+      "source_page": 10,
+      "stem": "What is a floating-foot defect?",
+      "options": [
+        "Keep outdated scene exports beside corrected versions",
+        "Review only one attractive still frame",
+        "A foot fails to contact the ground plausibly",
+        "Treat rendered output as verified content"
+      ],
+      "correct_mask": 4,
+      "rationale": "The source material establishes that a foot fails to contact the ground plausibly. This is the related story, movement or animation-production principle described on the referenced page. Source: MAIC A Masterclass in Animation, page 10."
+    },
+    {
+      "ordinal": 86,
+      "source_page": 10,
+      "stem": "Why is version naming important?",
+      "options": [
+        "Ignore accidental anatomy changes as artistic style",
+        "Discard every source and revision record",
+        "Keep outdated scene exports beside corrected versions",
+        "Reviewers can identify the exact scene being assessed"
+      ],
+      "correct_mask": 8,
+      "rationale": "The source material establishes that reviewers can identify the exact scene being assessed. This is the related story, movement or animation-production principle described on the referenced page. Source: MAIC A Masterclass in Animation, page 10."
+    },
+    {
+      "ordinal": 87,
+      "source_page": 10,
+      "stem": "What should a defect log contain?",
+      "options": [
+        "Review only one attractive still frame",
+        "Treat rendered output as verified content",
+        "Ignore accidental anatomy changes as artistic style",
+        "Frame reference, problem and corrective action"
+      ],
+      "correct_mask": 8,
+      "rationale": "The source material establishes that frame reference, problem and corrective action. This is the related story, movement or animation-production principle described on the referenced page. Source: MAIC A Masterclass in Animation, page 10."
+    },
+    {
+      "ordinal": 88,
+      "source_page": 10,
+      "stem": "Why is export success not content approval?",
+      "options": [
+        "Discard every source and revision record",
+        "Rendered files may still include errors",
+        "Keep outdated scene exports beside corrected versions",
+        "Review only one attractive still frame"
+      ],
+      "correct_mask": 2,
+      "rationale": "The source material establishes that rendered files may still include errors. This is the related story, movement or animation-production principle described on the referenced page. Source: MAIC A Masterclass in Animation, page 10."
+    },
+    {
+      "ordinal": 89,
+      "source_page": 10,
+      "stem": "What should a team do after correcting a shot?",
+      "options": [
+        "Treat rendered output as verified content",
+        "Recheck surrounding frames and final output",
+        "Ignore accidental anatomy changes as artistic style",
+        "Discard every source and revision record"
+      ],
+      "correct_mask": 2,
+      "rationale": "The source material establishes that recheck surrounding frames and final output. This is the related story, movement or animation-production principle described on the referenced page. Source: MAIC A Masterclass in Animation, page 10."
+    },
+    {
+      "ordinal": 90,
+      "source_page": 10,
+      "stem": "Why should source audio and art remain available?",
+      "options": [
+        "Keep outdated scene exports beside corrected versions",
+        "Later revisions need their editable assets",
+        "Review only one attractive still frame",
+        "Treat rendered output as verified content"
+      ],
+      "correct_mask": 2,
+      "rationale": "The source material establishes that later revisions need their editable assets. This is the related story, movement or animation-production principle described on the referenced page. Source: MAIC A Masterclass in Animation, page 10."
+    },
+    {
+      "ordinal": 91,
+      "source_page": 11,
+      "stem": "How long is the fictional garden animation?",
+      "options": [
+        "Present a fictional child as a real participant",
+        "Use frame count as a substitute for motion review",
+        "Use the wrong project duration and fps",
+        "18 seconds"
+      ],
+      "correct_mask": 8,
+      "rationale": "The source material establishes that 18 seconds. This is the related story, movement or animation-production principle described on the referenced page. Source: MAIC A Masterclass in Animation, page 11."
+    },
+    {
+      "ordinal": 92,
+      "source_page": 11,
+      "stem": "What frame rate is specified in the case?",
+      "options": [
+        "Change the pot's side between frames without reason",
+        "Treat held drawings as prohibited",
+        "Present a fictional child as a real participant",
+        "24 frames per second"
+      ],
+      "correct_mask": 8,
+      "rationale": "The source material establishes that 24 frames per second. This is the related story, movement or animation-production principle described on the referenced page. Source: MAIC A Masterclass in Animation, page 11."
+    },
+    {
+      "ordinal": 93,
+      "source_page": 11,
+      "stem": "How many nominal displayed frames are in that scene?",
+      "options": [
+        "Use frame count as a substitute for motion review",
+        "Use the wrong project duration and fps",
+        "432 frames",
+        "Change the pot's side between frames without reason"
+      ],
+      "correct_mask": 4,
+      "rationale": "The source material establishes that 432 frames. This is the related story, movement or animation-production principle described on the referenced page. Source: MAIC A Masterclass in Animation, page 11."
+    },
+    {
+      "ordinal": 94,
+      "source_page": 11,
+      "stem": "How many characters are in the practice story?",
+      "options": [
+        "Treat held drawings as prohibited",
+        "Two characters",
+        "Present a fictional child as a real participant",
+        "Use frame count as a substitute for motion review"
+      ],
+      "correct_mask": 2,
+      "rationale": "The source material establishes that two characters. This is the related story, movement or animation-production principle described on the referenced page. Source: MAIC A Masterclass in Animation, page 11."
+    },
+    {
+      "ordinal": 95,
+      "source_page": 11,
+      "stem": "What prop does the child carry?",
+      "options": [
+        "Use the wrong project duration and fps",
+        "Change the pot's side between frames without reason",
+        "A potted seedling",
+        "Treat held drawings as prohibited"
+      ],
+      "correct_mask": 4,
+      "rationale": "The source material establishes that a potted seedling. This is the related story, movement or animation-production principle described on the referenced page. Source: MAIC A Masterclass in Animation, page 11."
+    },
+    {
+      "ordinal": 96,
+      "source_page": 11,
+      "stem": "Why does the character pause at the gate?",
+      "options": [
+        "Present a fictional child as a real participant",
+        "Use frame count as a substitute for motion review",
+        "Use the wrong project duration and fps",
+        "The gate is closed and assistance is needed"
+      ],
+      "correct_mask": 8,
+      "rationale": "The source material establishes that the gate is closed and assistance is needed. This is the related story, movement or animation-production principle described on the referenced page. Source: MAIC A Masterclass in Animation, page 11."
+    },
+    {
+      "ordinal": 97,
+      "source_page": 11,
+      "stem": "What should a model sheet retain?",
+      "options": [
+        "Change the pot's side between frames without reason",
+        "Treat held drawings as prohibited",
+        "Present a fictional child as a real participant",
+        "Consistent character and prop appearance"
+      ],
+      "correct_mask": 8,
+      "rationale": "The source material establishes that consistent character and prop appearance. This is the related story, movement or animation-production principle described on the referenced page. Source: MAIC A Masterclass in Animation, page 11."
+    },
+    {
+      "ordinal": 98,
+      "source_page": 11,
+      "stem": "What should a walk motion chart record?",
+      "options": [
+        "Use frame count as a substitute for motion review",
+        "Foot contacts and position changes",
+        "Use the wrong project duration and fps",
+        "Change the pot's side between frames without reason"
+      ],
+      "correct_mask": 2,
+      "rationale": "The source material establishes that foot contacts and position changes. This is the related story, movement or animation-production principle described on the referenced page. Source: MAIC A Masterclass in Animation, page 11."
+    },
+    {
+      "ordinal": 99,
+      "source_page": 11,
+      "stem": "What must audio capture during pot placement?",
+      "options": [
+        "Treat held drawings as prohibited",
+        "Present a fictional child as a real participant",
+        "Use frame count as a substitute for motion review",
+        "The timing of the contact event"
+      ],
+      "correct_mask": 8,
+      "rationale": "The source material establishes that the timing of the contact event. This is the related story, movement or animation-production principle described on the referenced page. Source: MAIC A Masterclass in Animation, page 11."
+    },
+    {
+      "ordinal": 100,
+      "source_page": 11,
+      "stem": "Why can the scene use fewer than 432 unique drawings?",
+      "options": [
+        "Use the wrong project duration and fps",
+        "Change the pot's side between frames without reason",
+        "Holds and cycles can repeat displayed images",
+        "Treat held drawings as prohibited"
+      ],
+      "correct_mask": 4,
+      "rationale": "The source material establishes that holds and cycles can repeat displayed images. This is the related story, movement or animation-production principle described on the referenced page. Source: MAIC A Masterclass in Animation, page 11."
+    }
+  ]
+}
