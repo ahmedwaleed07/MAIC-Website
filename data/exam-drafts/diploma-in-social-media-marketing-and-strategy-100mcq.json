@@ -1,0 +1,1312 @@
+{
+  "course_id": "diploma-in-social-media-marketing-and-strategy",
+  "source_manuscript": "data/course-manuscripts/diploma-in-social-media-marketing-and-strategy.md",
+  "source_manuscript_blob_sha": "9f60d890ec7f88f10f9c4e7f60ff7220ebe62e7c",
+  "source_pdf_sha256": null,
+  "bank_version": "draft-manuscript-20261122-v1",
+  "approval_status": "editorial_draft_pending_independent_review",
+  "number_of_questions": 100,
+  "note": "A working editorial question bank for an original MAIC diploma-labeled course. Not a degree or a verified academic accreditation. Academic signoff required before production activation.",
+  "questions": [
+    {
+      "ordinal": 1,
+      "source_page": 2,
+      "stem": "What is the starting point of a social-media marketing strategy?",
+      "options": [
+        "Treat a post count as guaranteed revenue",
+        "A defined organizational objective and intended customer action",
+        "Use follower numbers as proof of purchases",
+        "Assume all practice scores award certificates"
+      ],
+      "correct_mask": 2,
+      "rationale": "Marketing plans should begin with a measurable purpose. Source: MAIC Diploma in Social Media Marketing and Strategy, page 2."
+    },
+    {
+      "ordinal": 2,
+      "source_page": 2,
+      "stem": "Why can frequent posting fail to establish marketing success?",
+      "options": [
+        "Let software interfaces define the strategy",
+        "Activity volume does not necessarily produce business outcomes",
+        "Avoid checking asset rights",
+        "Treat a post count as guaranteed revenue"
+      ],
+      "correct_mask": 2,
+      "rationale": "Frequency is not a substitute for results. Source: MAIC Diploma in Social Media Marketing and Strategy, page 2."
+    },
+    {
+      "ordinal": 3,
+      "source_page": 2,
+      "stem": "What role may organic content play in a marketing plan?",
+      "options": [
+        "Use follower numbers as proof of purchases",
+        "Assume all practice scores award certificates",
+        "Build information, trust and unpaid audience relationships",
+        "Let software interfaces define the strategy"
+      ],
+      "correct_mask": 4,
+      "rationale": "Organic activity differs from paid impressions. Source: MAIC Diploma in Social Media Marketing and Strategy, page 2."
+    },
+    {
+      "ordinal": 4,
+      "source_page": 2,
+      "stem": "What is the appropriate use of platform metrics?",
+      "options": [
+        "Avoid checking asset rights",
+        "Interpret defined audience behaviors alongside business evidence",
+        "Treat a post count as guaranteed revenue",
+        "Use follower numbers as proof of purchases"
+      ],
+      "correct_mask": 2,
+      "rationale": "Metrics require contextual analysis. Source: MAIC Diploma in Social Media Marketing and Strategy, page 2."
+    },
+    {
+      "ordinal": 5,
+      "source_page": 2,
+      "stem": "Why should campaign deliverables be rights-cleared?",
+      "options": [
+        "Assume all practice scores award certificates",
+        "Let software interfaces define the strategy",
+        "Avoid checking asset rights",
+        "The team must have permission to use included assets"
+      ],
+      "correct_mask": 8,
+      "rationale": "Permissions affect lawful publication. Source: MAIC Diploma in Social Media Marketing and Strategy, page 2."
+    },
+    {
+      "ordinal": 6,
+      "source_page": 2,
+      "stem": "What is an appropriate expectation for completing this self-study course?",
+      "options": [
+        "Practice competence, not automatic official certification",
+        "Treat a post count as guaranteed revenue",
+        "Use follower numbers as proof of purchases",
+        "Assume all practice scores award certificates"
+      ],
+      "correct_mask": 1,
+      "rationale": "Study exercises are separate from formal MAIC assessment. Source: MAIC Diploma in Social Media Marketing and Strategy, page 2."
+    },
+    {
+      "ordinal": 7,
+      "source_page": 2,
+      "stem": "What must be considered when a campaign uses sensitive user data?",
+      "options": [
+        "Let software interfaces define the strategy",
+        "Avoid checking asset rights",
+        "Treat a post count as guaranteed revenue",
+        "Privacy and an appropriate basis for its collection and use"
+      ],
+      "correct_mask": 8,
+      "rationale": "Responsible marketing requires data protection. Source: MAIC Diploma in Social Media Marketing and Strategy, page 2."
+    },
+    {
+      "ordinal": 8,
+      "source_page": 2,
+      "stem": "Why should a marketer define the target customer action?",
+      "options": [
+        "It allows a campaign to be evaluated beyond attention",
+        "Use follower numbers as proof of purchases",
+        "Assume all practice scores award certificates",
+        "Let software interfaces define the strategy"
+      ],
+      "correct_mask": 1,
+      "rationale": "A measurable action connects communications to objectives. Source: MAIC Diploma in Social Media Marketing and Strategy, page 2."
+    },
+    {
+      "ordinal": 9,
+      "source_page": 2,
+      "stem": "A hypothetical brand posts 20 items but records no customer actions. What conclusion is warranted?",
+      "options": [
+        "The posts generated exactly 20 sales",
+        "Every post achieved the objective",
+        "Posting activity has been counted, but business impact remains unproven",
+        "The brand has automatically gained a professional credential"
+      ],
+      "correct_mask": 4,
+      "rationale": "Posting counts alone do not establish results. Source: MAIC Diploma in Social Media Marketing and Strategy, page 2."
+    },
+    {
+      "ordinal": 10,
+      "source_page": 2,
+      "stem": "A marketer is given a target of 30 suitable inquiries in a month. What must be agreed before tracking it?",
+      "options": [
+        "Only the preferred background color",
+        "A guaranteed audience count",
+        "Which post has the most emojis",
+        "What suitable means and how inquiries are recorded"
+      ],
+      "correct_mask": 8,
+      "rationale": "Qualification and counting rules define the objective. Source: MAIC Diploma in Social Media Marketing and Strategy, page 2."
+    },
+    {
+      "ordinal": 11,
+      "source_page": 3,
+      "stem": "How does a conversion objective differ from awareness?",
+      "options": [
+        "Choose only a target number of likes",
+        "Conversion asks for a defined action rather than only discovery",
+        "Ignore the sales team's actual capacity",
+        "Assume all visitors are ready to purchase"
+      ],
+      "correct_mask": 2,
+      "rationale": "Objectives address different customer stages. Source: MAIC Diploma in Social Media Marketing and Strategy, page 3."
+    },
+    {
+      "ordinal": 12,
+      "source_page": 3,
+      "stem": "What makes a lead-generation target measurable?",
+      "options": [
+        "Promote an unverified guaranteed sales claim",
+        "Use a broken destination behind the call to action",
+        "Choose only a target number of likes",
+        "A timeframe, qualified-inquiry definition and recording method"
+      ],
+      "correct_mask": 8,
+      "rationale": "Useful objectives specify an observable outcome. Source: MAIC Diploma in Social Media Marketing and Strategy, page 3."
+    },
+    {
+      "ordinal": 13,
+      "source_page": 3,
+      "stem": "Why should the business consider lead-handling capacity?",
+      "options": [
+        "Ignore the sales team's actual capacity",
+        "The sales team may be unable to serve every inquiry",
+        "Assume all visitors are ready to purchase",
+        "Promote an unverified guaranteed sales claim"
+      ],
+      "correct_mask": 2,
+      "rationale": "A target must be operationally feasible. Source: MAIC Diploma in Social Media Marketing and Strategy, page 3."
+    },
+    {
+      "ordinal": 14,
+      "source_page": 3,
+      "stem": "What is customer positioning intended to explain?",
+      "options": [
+        "Use a broken destination behind the call to action",
+        "Why the offer solves a relevant problem for a defined group",
+        "Choose only a target number of likes",
+        "Ignore the sales team's actual capacity"
+      ],
+      "correct_mask": 2,
+      "rationale": "Positioning connects need and value. Source: MAIC Diploma in Social Media Marketing and Strategy, page 3."
+    },
+    {
+      "ordinal": 15,
+      "source_page": 3,
+      "stem": "What is a risk of promising guaranteed sales growth?",
+      "options": [
+        "Assume all visitors are ready to purchase",
+        "Promote an unverified guaranteed sales claim",
+        "Use a broken destination behind the call to action",
+        "It may be unsupported by credible performance evidence"
+      ],
+      "correct_mask": 8,
+      "rationale": "Marketing claims must be substantiated. Source: MAIC Diploma in Social Media Marketing and Strategy, page 3."
+    },
+    {
+      "ordinal": 16,
+      "source_page": 3,
+      "stem": "Which stage commonly follows initial product discovery?",
+      "options": [
+        "Customer evaluation and comparison of available options",
+        "Choose only a target number of likes",
+        "Ignore the sales team's actual capacity",
+        "Assume all visitors are ready to purchase"
+      ],
+      "correct_mask": 1,
+      "rationale": "The journey can include consideration before action. Source: MAIC Diploma in Social Media Marketing and Strategy, page 3."
+    },
+    {
+      "ordinal": 17,
+      "source_page": 3,
+      "stem": "Why can a customer case study need verification?",
+      "options": [
+        "Promote an unverified guaranteed sales claim",
+        "Reported results must be distinguished from hypothetical models",
+        "Use a broken destination behind the call to action",
+        "Choose only a target number of likes"
+      ],
+      "correct_mask": 2,
+      "rationale": "Case studies should not invent customer outcomes. Source: MAIC Diploma in Social Media Marketing and Strategy, page 3."
+    },
+    {
+      "ordinal": 18,
+      "source_page": 3,
+      "stem": "What should a quote-request landing page provide?",
+      "options": [
+        "Ignore the sales team's actual capacity",
+        "Assume all visitors are ready to purchase",
+        "Promote an unverified guaranteed sales claim",
+        "A clear working way to request information and understand next steps"
+      ],
+      "correct_mask": 8,
+      "rationale": "The destination must match the call to action. Source: MAIC Diploma in Social Media Marketing and Strategy, page 3."
+    },
+    {
+      "ordinal": 19,
+      "source_page": 3,
+      "stem": "A firm's sales team can handle only 15 new cases in a period. What should marketing consider?",
+      "options": [
+        "Assume the team can serve unlimited demand",
+        "Use likes as evidence that cases are handled",
+        "Ignore all incoming customer inquiries",
+        "Lead capacity before increasing campaign volume"
+      ],
+      "correct_mask": 8,
+      "rationale": "Feasibility limits useful lead volume. Source: MAIC Diploma in Social Media Marketing and Strategy, page 3."
+    },
+    {
+      "ordinal": 20,
+      "source_page": 3,
+      "stem": "An awareness video gets 5,000 views but no tracked form visits. What remains uncertain?",
+      "options": [
+        "Whether it generated the intended qualified inquiries",
+        "That the video played 5,000 times under the metric",
+        "That awareness content was published",
+        "That viewers could see the message"
+      ],
+      "correct_mask": 1,
+      "rationale": "Views and qualified inquiry actions are different. Source: MAIC Diploma in Social Media Marketing and Strategy, page 3."
+    },
+    {
+      "ordinal": 21,
+      "source_page": 4,
+      "stem": "How should audience personas be treated initially?",
+      "options": [
+        "Treat personas as verified individual facts",
+        "Use follower counts as direct profit evidence",
+        "Ignore current platform policies and available resources",
+        "Research-informed hypotheses rather than fixed stereotypes"
+      ],
+      "correct_mask": 8,
+      "rationale": "Personas should be revised with evidence. Source: MAIC Diploma in Social Media Marketing and Strategy, page 4."
+    },
+    {
+      "ordinal": 22,
+      "source_page": 4,
+      "stem": "Which factor can matter for a B2B purchasing process?",
+      "options": [
+        "Assume all residents have identical needs",
+        "Pick channels only because they are fashionable",
+        "Different people may research and approve the purchase",
+        "Treat personas as verified individual facts"
+      ],
+      "correct_mask": 4,
+      "rationale": "Organizational purchase roles may differ. Source: MAIC Diploma in Social Media Marketing and Strategy, page 4."
+    },
+    {
+      "ordinal": 23,
+      "source_page": 4,
+      "stem": "What is a danger of assuming everyone in a location wants one offer?",
+      "options": [
+        "Use follower counts as direct profit evidence",
+        "Ignore current platform policies and available resources",
+        "It ignores distinct needs and service contexts",
+        "Assume all residents have identical needs"
+      ],
+      "correct_mask": 4,
+      "rationale": "Geography alone does not define demand. Source: MAIC Diploma in Social Media Marketing and Strategy, page 4."
+    },
+    {
+      "ordinal": 24,
+      "source_page": 4,
+      "stem": "Which evidence can help understand recurring customer questions?",
+      "options": [
+        "Support records and ethically obtained interviews",
+        "Pick channels only because they are fashionable",
+        "Treat personas as verified individual facts",
+        "Use follower counts as direct profit evidence"
+      ],
+      "correct_mask": 1,
+      "rationale": "Direct inquiries can reveal customer needs. Source: MAIC Diploma in Social Media Marketing and Strategy, page 4."
+    },
+    {
+      "ordinal": 25,
+      "source_page": 4,
+      "stem": "What can a competitor's public engagement fail to prove?",
+      "options": [
+        "Ignore current platform policies and available resources",
+        "Its actual profit or customer conversion performance",
+        "Assume all residents have identical needs",
+        "Pick channels only because they are fashionable"
+      ],
+      "correct_mask": 2,
+      "rationale": "Visible social metrics have limited meaning. Source: MAIC Diploma in Social Media Marketing and Strategy, page 4."
+    },
+    {
+      "ordinal": 26,
+      "source_page": 4,
+      "stem": "How should a business decide which social channels to prioritize?",
+      "options": [
+        "Evaluate audience fit, format and available operating resources",
+        "Treat personas as verified individual facts",
+        "Use follower counts as direct profit evidence",
+        "Ignore current platform policies and available resources"
+      ],
+      "correct_mask": 1,
+      "rationale": "Channel selection depends on feasible usefulness. Source: MAIC Diploma in Social Media Marketing and Strategy, page 4."
+    },
+    {
+      "ordinal": 27,
+      "source_page": 4,
+      "stem": "Why might a technical B2B supplier prefer explanatory content?",
+      "options": [
+        "Assume all residents have identical needs",
+        "Buyers may need evidence and detail before contacting sales",
+        "Pick channels only because they are fashionable",
+        "Treat personas as verified individual facts"
+      ],
+      "correct_mask": 2,
+      "rationale": "Channel content should fit information needs. Source: MAIC Diploma in Social Media Marketing and Strategy, page 4."
+    },
+    {
+      "ordinal": 28,
+      "source_page": 4,
+      "stem": "What must marketers remember about platform advertising controls?",
+      "options": [
+        "Specific features and policies may change over time",
+        "Use follower counts as direct profit evidence",
+        "Ignore current platform policies and available resources",
+        "Assume all residents have identical needs"
+      ],
+      "correct_mask": 1,
+      "rationale": "Tool functionality should be verified before launch. Source: MAIC Diploma in Social Media Marketing and Strategy, page 4."
+    },
+    {
+      "ordinal": 29,
+      "source_page": 4,
+      "stem": "A product is useful only to local firms. Which audience choice is defensible?",
+      "options": [
+        "Reach firms in the actual service area with a relevant need",
+        "Target every country regardless of ability to serve",
+        "Assume all viewers are potential buyers",
+        "Select a random age segment without evidence"
+      ],
+      "correct_mask": 1,
+      "rationale": "Segmenting should consider service feasibility. Source: MAIC Diploma in Social Media Marketing and Strategy, page 4."
+    },
+    {
+      "ordinal": 30,
+      "source_page": 4,
+      "stem": "A rival has 10,000 likes on a post. Which business outcome is not proven?",
+      "options": [
+        "That a public engagement number exists",
+        "The rival earned a profit from that post",
+        "That users reacted to the content",
+        "That a social account published the item"
+      ],
+      "correct_mask": 2,
+      "rationale": "Engagement does not directly establish financial results. Source: MAIC Diploma in Social Media Marketing and Strategy, page 4."
+    },
+    {
+      "ordinal": 31,
+      "source_page": 5,
+      "stem": "What is a content pillar?",
+      "options": [
+        "Invent customer testimonials for a stronger story",
+        "A recurring category of useful topics aligned with the audience",
+        "Use an unreadable call to action",
+        "Assume a synthetic image is automatically a genuine case study"
+      ],
+      "correct_mask": 2,
+      "rationale": "Pillars organize consistent messaging. Source: MAIC Diploma in Social Media Marketing and Strategy, page 5."
+    },
+    {
+      "ordinal": 32,
+      "source_page": 5,
+      "stem": "Why should a creative brief record factual sources?",
+      "options": [
+        "Make the video claim guaranteed sales results",
+        "Separate content entirely from user questions",
+        "Invent customer testimonials for a stronger story",
+        "Claims in the content should be verifiable"
+      ],
+      "correct_mask": 8,
+      "rationale": "Content production needs evidence. Source: MAIC Diploma in Social Media Marketing and Strategy, page 5."
+    },
+    {
+      "ordinal": 33,
+      "source_page": 5,
+      "stem": "What is a risk of presenting a synthetic face as a real testimonial?",
+      "options": [
+        "Use an unreadable call to action",
+        "Assume a synthetic image is automatically a genuine case study",
+        "It invents evidence of a customer's experience",
+        "Make the video claim guaranteed sales results"
+      ],
+      "correct_mask": 4,
+      "rationale": "Generated imagery must not impersonate genuine testimony. Source: MAIC Diploma in Social Media Marketing and Strategy, page 5."
+    },
+    {
+      "ordinal": 34,
+      "source_page": 5,
+      "stem": "What should a short marketing video establish early?",
+      "options": [
+        "Separate content entirely from user questions",
+        "The relevant problem or topic without unsupported promises",
+        "Invent customer testimonials for a stronger story",
+        "Use an unreadable call to action"
+      ],
+      "correct_mask": 2,
+      "rationale": "A clear opening supports comprehension. Source: MAIC Diploma in Social Media Marketing and Strategy, page 5."
+    },
+    {
+      "ordinal": 35,
+      "source_page": 5,
+      "stem": "What makes a call to action suitable?",
+      "options": [
+        "Assume a synthetic image is automatically a genuine case study",
+        "Make the video claim guaranteed sales results",
+        "It accurately matches a usable destination and requested action",
+        "Separate content entirely from user questions"
+      ],
+      "correct_mask": 4,
+      "rationale": "The link should fulfill the promised next step. Source: MAIC Diploma in Social Media Marketing and Strategy, page 5."
+    },
+    {
+      "ordinal": 36,
+      "source_page": 5,
+      "stem": "Why adapt layouts while preserving the brand identity?",
+      "options": [
+        "Invent customer testimonials for a stronger story",
+        "Different placements require legible formats without inconsistent branding",
+        "Use an unreadable call to action",
+        "Assume a synthetic image is automatically a genuine case study"
+      ],
+      "correct_mask": 2,
+      "rationale": "Design must fit destination screens. Source: MAIC Diploma in Social Media Marketing and Strategy, page 5."
+    },
+    {
+      "ordinal": 37,
+      "source_page": 5,
+      "stem": "Which claim requires particularly strong substantiation?",
+      "options": [
+        "Make the video claim guaranteed sales results",
+        "Separate content entirely from user questions",
+        "A prediction that the service guarantees a sales increase",
+        "Invent customer testimonials for a stronger story"
+      ],
+      "correct_mask": 4,
+      "rationale": "Outcome guarantees need evidence. Source: MAIC Diploma in Social Media Marketing and Strategy, page 5."
+    },
+    {
+      "ordinal": 38,
+      "source_page": 5,
+      "stem": "How may an educational content pillar help a service company?",
+      "options": [
+        "Use an unreadable call to action",
+        "Assume a synthetic image is automatically a genuine case study",
+        "Answer practical questions before a buyer makes contact",
+        "Make the video claim guaranteed sales results"
+      ],
+      "correct_mask": 4,
+      "rationale": "Helpful information supports consideration. Source: MAIC Diploma in Social Media Marketing and Strategy, page 5."
+    },
+    {
+      "ordinal": 39,
+      "source_page": 5,
+      "stem": "A scripted customer story has no actual customer behind it. How should it be used?",
+      "options": [
+        "As verified customer evidence",
+        "As a quote from an unnamed real buyer",
+        "As an explicitly hypothetical illustration, not a testimonial",
+        "As an audited case result"
+      ],
+      "correct_mask": 4,
+      "rationale": "Invented stories cannot become real testimonials. Source: MAIC Diploma in Social Media Marketing and Strategy, page 5."
+    },
+    {
+      "ordinal": 40,
+      "source_page": 5,
+      "stem": "A services ad links to a page with no inquiry form despite promising immediate quotes. What is wrong?",
+      "options": [
+        "The ad cannot contain any text",
+        "The campaign is automatically successful",
+        "The promise is verified by the link itself",
+        "The call to action and destination do not match"
+      ],
+      "correct_mask": 8,
+      "rationale": "The next step must be usable and truthful. Source: MAIC Diploma in Social Media Marketing and Strategy, page 5."
+    },
+    {
+      "ordinal": 41,
+      "source_page": 6,
+      "stem": "What information belongs in a content calendar?",
+      "options": [
+        "Post date, audience, owner, objective, rights and review status",
+        "Buy imaginary positive customer reviews",
+        "Replace service assistance with promotional slogans",
+        "Schedule posts with no owner or review"
+      ],
+      "correct_mask": 1,
+      "rationale": "Calendars coordinate accountable production. Source: MAIC Diploma in Social Media Marketing and Strategy, page 6."
+    },
+    {
+      "ordinal": 42,
+      "source_page": 6,
+      "stem": "Why can fewer posts be preferable to daily posting?",
+      "options": [
+        "Ask users to publish passwords in comments",
+        "Delete every negative comment regardless of substance",
+        "Buy imaginary positive customer reviews",
+        "A small team may lack resources for accurate review and response"
+      ],
+      "correct_mask": 8,
+      "rationale": "Quality and feasibility matter more than frequency alone. Source: MAIC Diploma in Social Media Marketing and Strategy, page 6."
+    },
+    {
+      "ordinal": 43,
+      "source_page": 6,
+      "stem": "What is an appropriate first response to a service complaint?",
+      "options": [
+        "Replace service assistance with promotional slogans",
+        "Schedule posts with no owner or review",
+        "Acknowledge the issue and route it to a responsible team",
+        "Ask users to publish passwords in comments"
+      ],
+      "correct_mask": 4,
+      "rationale": "Customer care is not the same as promotion. Source: MAIC Diploma in Social Media Marketing and Strategy, page 6."
+    },
+    {
+      "ordinal": 44,
+      "source_page": 6,
+      "stem": "Why should private account information not be requested in public comments?",
+      "options": [
+        "Delete every negative comment regardless of substance",
+        "Buy imaginary positive customer reviews",
+        "It can expose sensitive customer details",
+        "Replace service assistance with promotional slogans"
+      ],
+      "correct_mask": 4,
+      "rationale": "Community support should protect privacy. Source: MAIC Diploma in Social Media Marketing and Strategy, page 6."
+    },
+    {
+      "ordinal": 45,
+      "source_page": 6,
+      "stem": "What is wrong with purchasing fabricated reviews?",
+      "options": [
+        "They misrepresent customer experience and manipulate trust",
+        "Schedule posts with no owner or review",
+        "Ask users to publish passwords in comments",
+        "Delete every negative comment regardless of substance"
+      ],
+      "correct_mask": 1,
+      "rationale": "Authentic feedback is essential. Source: MAIC Diploma in Social Media Marketing and Strategy, page 6."
+    },
+    {
+      "ordinal": 46,
+      "source_page": 6,
+      "stem": "Why name an escalation owner for sensitive allegations?",
+      "options": [
+        "Staff need a responsible review route for potentially harmful claims",
+        "Buy imaginary positive customer reviews",
+        "Replace service assistance with promotional slogans",
+        "Schedule posts with no owner or review"
+      ],
+      "correct_mask": 1,
+      "rationale": "Moderation requires accountability. Source: MAIC Diploma in Social Media Marketing and Strategy, page 6."
+    },
+    {
+      "ordinal": 47,
+      "source_page": 6,
+      "stem": "How should moderation treat critical but lawful feedback?",
+      "options": [
+        "Ask users to publish passwords in comments",
+        "Evaluate it fairly rather than delete it for being negative",
+        "Delete every negative comment regardless of substance",
+        "Buy imaginary positive customer reviews"
+      ],
+      "correct_mask": 2,
+      "rationale": "Disagreement alone is not proof of abuse. Source: MAIC Diploma in Social Media Marketing and Strategy, page 6."
+    },
+    {
+      "ordinal": 48,
+      "source_page": 6,
+      "stem": "What should happen if staff cannot verify a requested price?",
+      "options": [
+        "Avoid inventing a quote and route the inquiry for confirmation",
+        "Replace service assistance with promotional slogans",
+        "Schedule posts with no owner or review",
+        "Ask users to publish passwords in comments"
+      ],
+      "correct_mask": 1,
+      "rationale": "Customer communications must be accurate. Source: MAIC Diploma in Social Media Marketing and Strategy, page 6."
+    },
+    {
+      "ordinal": 49,
+      "source_page": 6,
+      "stem": "A small team can fact-check four weekly posts but not seven. What is the sensible schedule?",
+      "options": [
+        "Publish seven unreviewed items",
+        "Replace missing posts with fake reviews",
+        "Plan four reliable items and adequate response coverage",
+        "Leave all comments unanswered forever"
+      ],
+      "correct_mask": 4,
+      "rationale": "Real capacity should shape the calendar. Source: MAIC Diploma in Social Media Marketing and Strategy, page 6."
+    },
+    {
+      "ordinal": 50,
+      "source_page": 6,
+      "stem": "A commenter posts a private order number publicly. What should support staff do?",
+      "options": [
+        "Move sensitive verification to an appropriate secure channel",
+        "Request account passwords publicly",
+        "Forward the order number to all followers",
+        "Use the disclosure as a paid promotion"
+      ],
+      "correct_mask": 1,
+      "rationale": "Public discussions should limit private data exposure. Source: MAIC Diploma in Social Media Marketing and Strategy, page 6."
+    },
+    {
+      "ordinal": 51,
+      "source_page": 7,
+      "stem": "What must be defined before evaluating CPC?",
+      "options": [
+        "Ad spend and a consistent counted-click definition",
+        "Treat every click as a confirmed customer",
+        "Assume cheaper traffic is always qualified",
+        "Use no budget ceiling or stopping rule"
+      ],
+      "correct_mask": 1,
+      "rationale": "A ratio depends on its inputs. Source: MAIC Diploma in Social Media Marketing and Strategy, page 7."
+    },
+    {
+      "ordinal": 52,
+      "source_page": 7,
+      "stem": "Which metric commonly counts recorded ad displays?",
+      "options": [
+        "Ignore the destination page completely",
+        "Change all test variables simultaneously",
+        "Treat every click as a confirmed customer",
+        "Impressions"
+      ],
+      "correct_mask": 8,
+      "rationale": "Impressions are a display-based measure. Source: MAIC Diploma in Social Media Marketing and Strategy, page 7."
+    },
+    {
+      "ordinal": 53,
+      "source_page": 7,
+      "stem": "Why do clicks not necessarily equal customers?",
+      "options": [
+        "Assume cheaper traffic is always qualified",
+        "Many clickers do not complete a qualifying purchase or inquiry",
+        "Use no budget ceiling or stopping rule",
+        "Ignore the destination page completely"
+      ],
+      "correct_mask": 2,
+      "rationale": "Clicking is not conversion. Source: MAIC Diploma in Social Media Marketing and Strategy, page 7."
+    },
+    {
+      "ordinal": 54,
+      "source_page": 7,
+      "stem": "Why compare paid creatives under similar conditions?",
+      "options": [
+        "Change all test variables simultaneously",
+        "Treat every click as a confirmed customer",
+        "Assume cheaper traffic is always qualified",
+        "Otherwise differences may reflect audience or offer changes"
+      ],
+      "correct_mask": 8,
+      "rationale": "Comparable experiments improve interpretation. Source: MAIC Diploma in Social Media Marketing and Strategy, page 7."
+    },
+    {
+      "ordinal": 55,
+      "source_page": 7,
+      "stem": "What should accompany a campaign's budget ceiling?",
+      "options": [
+        "Use no budget ceiling or stopping rule",
+        "A conversion goal and stop or review criteria",
+        "Ignore the destination page completely",
+        "Change all test variables simultaneously"
+      ],
+      "correct_mask": 2,
+      "rationale": "A controlled test should have a decision rule. Source: MAIC Diploma in Social Media Marketing and Strategy, page 7."
+    },
+    {
+      "ordinal": 56,
+      "source_page": 7,
+      "stem": "What is a risk of a misleading paid-ad promise?",
+      "options": [
+        "Treat every click as a confirmed customer",
+        "Assume cheaper traffic is always qualified",
+        "It may generate poor-quality inquiries and harm trust",
+        "Use no budget ceiling or stopping rule"
+      ],
+      "correct_mask": 4,
+      "rationale": "Cheap attention is not reliable performance. Source: MAIC Diploma in Social Media Marketing and Strategy, page 7."
+    },
+    {
+      "ordinal": 57,
+      "source_page": 7,
+      "stem": "Why check the landing page before running a paid ad?",
+      "options": [
+        "Its content and functionality must match the creative",
+        "Ignore the destination page completely",
+        "Change all test variables simultaneously",
+        "Treat every click as a confirmed customer"
+      ],
+      "correct_mask": 1,
+      "rationale": "A broken destination undermines campaign validity. Source: MAIC Diploma in Social Media Marketing and Strategy, page 7."
+    },
+    {
+      "ordinal": 58,
+      "source_page": 7,
+      "stem": "What is the role of campaign frequency analysis?",
+      "options": [
+        "Assume cheaper traffic is always qualified",
+        "Assess how often an audience is seeing a defined ad",
+        "Use no budget ceiling or stopping rule",
+        "Ignore the destination page completely"
+      ],
+      "correct_mask": 2,
+      "rationale": "Repeated exposures may affect outcomes and costs. Source: MAIC Diploma in Social Media Marketing and Strategy, page 7."
+    },
+    {
+      "ordinal": 59,
+      "source_page": 7,
+      "stem": "An ad spends $120 for 240 defined clicks. What is CPC?",
+      "options": [
+        "$2.00",
+        "$1.20",
+        "$0.50",
+        "$0.20"
+      ],
+      "correct_mask": 4,
+      "rationale": "CPC is advertising spend divided by counted clicks. Source: MAIC Diploma in Social Media Marketing and Strategy, page 7."
+    },
+    {
+      "ordinal": 60,
+      "source_page": 7,
+      "stem": "An ad records 150 clicks from 3,000 impressions. What is CTR?",
+      "options": [
+        "5%",
+        "10%",
+        "20%",
+        "50%"
+      ],
+      "correct_mask": 1,
+      "rationale": "150 divided by 3000 times 100 is five percent. Source: MAIC Diploma in Social Media Marketing and Strategy, page 7."
+    },
+    {
+      "ordinal": 61,
+      "source_page": 8,
+      "stem": "What should a creator partnership brief define?",
+      "options": [
+        "Use follower count as proof of every result",
+        "Invent firsthand product experiences",
+        "Deliverables, disclosure duties, rights, compensation and review",
+        "Treat platform labels as universal legal compliance"
+      ],
+      "correct_mask": 4,
+      "rationale": "Written expectations help ethical execution. Source: MAIC Diploma in Social Media Marketing and Strategy, page 8."
+    },
+    {
+      "ordinal": 62,
+      "source_page": 8,
+      "stem": "Why is follower count alone a weak partner-selection criterion?",
+      "options": [
+        "It does not establish audience fit or useful outcomes",
+        "Hide compensation or gifted products",
+        "Assume all creator content is free for unlimited reuse",
+        "Use follower count as proof of every result"
+      ],
+      "correct_mask": 1,
+      "rationale": "Engagement quality and relevance matter. Source: MAIC Diploma in Social Media Marketing and Strategy, page 8."
+    },
+    {
+      "ordinal": 63,
+      "source_page": 8,
+      "stem": "What kind of brand relationship may need influencer disclosure?",
+      "options": [
+        "Payment, a gifted product or another material benefit",
+        "Invent firsthand product experiences",
+        "Treat platform labels as universal legal compliance",
+        "Hide compensation or gifted products"
+      ],
+      "correct_mask": 1,
+      "rationale": "Material ties may affect endorsement transparency. Source: MAIC Diploma in Social Media Marketing and Strategy, page 8."
+    },
+    {
+      "ordinal": 64,
+      "source_page": 8,
+      "stem": "Where should a disclosure be placed?",
+      "options": [
+        "Assume all creator content is free for unlimited reuse",
+        "Use follower count as proof of every result",
+        "Invent firsthand product experiences",
+        "Where it is clear and difficult for the audience to miss"
+      ],
+      "correct_mask": 8,
+      "rationale": "Disclosure should accompany the endorsement. Source: MAIC Diploma in Social Media Marketing and Strategy, page 8."
+    },
+    {
+      "ordinal": 65,
+      "source_page": 8,
+      "stem": "Why should a creator avoid a product experience they never had?",
+      "options": [
+        "Treat platform labels as universal legal compliance",
+        "Hide compensation or gifted products",
+        "Assume all creator content is free for unlimited reuse",
+        "It would be a fabricated testimonial"
+      ],
+      "correct_mask": 8,
+      "rationale": "Endorsements should reflect actual experience. Source: MAIC Diploma in Social Media Marketing and Strategy, page 8."
+    },
+    {
+      "ordinal": 66,
+      "source_page": 8,
+      "stem": "What must be confirmed before reusing an influencer's video in an ad?",
+      "options": [
+        "Use follower count as proof of every result",
+        "Invent firsthand product experiences",
+        "Treat platform labels as universal legal compliance",
+        "The intended reuse rights and restrictions"
+      ],
+      "correct_mask": 8,
+      "rationale": "Creator content licenses may limit distribution. Source: MAIC Diploma in Social Media Marketing and Strategy, page 8."
+    },
+    {
+      "ordinal": 67,
+      "source_page": 8,
+      "stem": "Why check applicable jurisdiction for sponsored posts?",
+      "options": [
+        "Hide compensation or gifted products",
+        "Assume all creator content is free for unlimited reuse",
+        "Use follower count as proof of every result",
+        "Disclosure duties vary among locations and audiences"
+      ],
+      "correct_mask": 8,
+      "rationale": "Rules should not be assumed universal. Source: MAIC Diploma in Social Media Marketing and Strategy, page 8."
+    },
+    {
+      "ordinal": 68,
+      "source_page": 8,
+      "stem": "Which statement correctly describes platform disclosure tools?",
+      "options": [
+        "Invent firsthand product experiences",
+        "Treat platform labels as universal legal compliance",
+        "They may help but do not always replace the required disclosure",
+        "Hide compensation or gifted products"
+      ],
+      "correct_mask": 4,
+      "rationale": "Compliance cannot rely on a single automatic label. Source: MAIC Diploma in Social Media Marketing and Strategy, page 8."
+    },
+    {
+      "ordinal": 69,
+      "source_page": 8,
+      "stem": "A creator receives free access to a paid software service and promotes it. What should be assessed?",
+      "options": [
+        "Whether followers already know automatically",
+        "Whether the platform logo waives all obligations",
+        "Whether the material relationship requires clear disclosure",
+        "Whether a gift can never be relevant"
+      ],
+      "correct_mask": 4,
+      "rationale": "Noncash benefits can still be material relationships. Source: MAIC Diploma in Social Media Marketing and Strategy, page 8."
+    },
+    {
+      "ordinal": 70,
+      "source_page": 8,
+      "stem": "A creator licenses a video for one sponsored post. May it automatically be placed in ten paid ads?",
+      "options": [
+        "No, the permitted scope of reuse needs checking",
+        "Yes, all creator videos are public domain",
+        "Yes, because it contains the brand name",
+        "Yes, after the first upload"
+      ],
+      "correct_mask": 1,
+      "rationale": "Usage rights may be limited by format and quantity. Source: MAIC Diploma in Social Media Marketing and Strategy, page 8."
+    },
+    {
+      "ordinal": 71,
+      "source_page": 9,
+      "stem": "What is a conversion-rate denominator in a campaign report?",
+      "options": [
+        "Treat ROAS as profit after all costs",
+        "Assume all attribution systems count identically",
+        "The defined total eligible visits or interactions used in the rate",
+        "Ignore repeated visits and excluded records"
+      ],
+      "correct_mask": 4,
+      "rationale": "A useful rate must state what is counted. Source: MAIC Diploma in Social Media Marketing and Strategy, page 9."
+    },
+    {
+      "ordinal": 72,
+      "source_page": 9,
+      "stem": "Why can analytics and ad reports show different conversion counts?",
+      "options": [
+        "Compare rates with unspecified denominators",
+        "They may apply different attribution and counting rules",
+        "Treat every completed form as a qualified lead",
+        "Treat ROAS as profit after all costs"
+      ],
+      "correct_mask": 2,
+      "rationale": "Reporting definitions affect credited outcomes. Source: MAIC Diploma in Social Media Marketing and Strategy, page 9."
+    },
+    {
+      "ordinal": 73,
+      "source_page": 9,
+      "stem": "What does ROAS compare?",
+      "options": [
+        "Assume all attribution systems count identically",
+        "Ignore repeated visits and excluded records",
+        "Attributed revenue with advertising spend",
+        "Compare rates with unspecified denominators"
+      ],
+      "correct_mask": 4,
+      "rationale": "ROAS is a revenue-to-ad-spend ratio. Source: MAIC Diploma in Social Media Marketing and Strategy, page 9."
+    },
+    {
+      "ordinal": 74,
+      "source_page": 9,
+      "stem": "Why is ROAS not equivalent to business profit?",
+      "options": [
+        "Treat every completed form as a qualified lead",
+        "Fulfillment and other operating costs remain outside the ratio",
+        "Treat ROAS as profit after all costs",
+        "Assume all attribution systems count identically"
+      ],
+      "correct_mask": 2,
+      "rationale": "Revenue does not equal net profit. Source: MAIC Diploma in Social Media Marketing and Strategy, page 9."
+    },
+    {
+      "ordinal": 75,
+      "source_page": 9,
+      "stem": "What is a key event in a web analytics context?",
+      "options": [
+        "Ignore repeated visits and excluded records",
+        "Compare rates with unspecified denominators",
+        "A recorded action important to site or business evaluation",
+        "Treat every completed form as a qualified lead"
+      ],
+      "correct_mask": 4,
+      "rationale": "Key events measure defined valuable behaviors. Source: MAIC Diploma in Social Media Marketing and Strategy, page 9."
+    },
+    {
+      "ordinal": 76,
+      "source_page": 9,
+      "stem": "Why should a marketing dashboard document exclusions?",
+      "options": [
+        "Treat ROAS as profit after all costs",
+        "Assume all attribution systems count identically",
+        "Ignore repeated visits and excluded records",
+        "Missing or excluded observations may change reported performance"
+      ],
+      "correct_mask": 8,
+      "rationale": "Data cleaning choices affect denominators. Source: MAIC Diploma in Social Media Marketing and Strategy, page 9."
+    },
+    {
+      "ordinal": 77,
+      "source_page": 9,
+      "stem": "What is an example of an attribution limitation?",
+      "options": [
+        "A person may return directly after an earlier ad interaction",
+        "Compare rates with unspecified denominators",
+        "Treat every completed form as a qualified lead",
+        "Treat ROAS as profit after all costs"
+      ],
+      "correct_mask": 1,
+      "rationale": "Customer journeys can involve multiple touchpoints. Source: MAIC Diploma in Social Media Marketing and Strategy, page 9."
+    },
+    {
+      "ordinal": 78,
+      "source_page": 9,
+      "stem": "Why might a high form-completion count overstate sales usefulness?",
+      "options": [
+        "Assume all attribution systems count identically",
+        "Ignore repeated visits and excluded records",
+        "Compare rates with unspecified denominators",
+        "Some forms may not meet the qualified-lead definition"
+      ],
+      "correct_mask": 8,
+      "rationale": "Conversion quality matters. Source: MAIC Diploma in Social Media Marketing and Strategy, page 9."
+    },
+    {
+      "ordinal": 79,
+      "source_page": 9,
+      "stem": "A landing page records 30 eligible form completions from 600 visits. What is its conversion rate?",
+      "options": [
+        "30%",
+        "10%",
+        "20%",
+        "5%"
+      ],
+      "correct_mask": 8,
+      "rationale": "Thirty divided by six hundred is five percent. Source: MAIC Diploma in Social Media Marketing and Strategy, page 9."
+    },
+    {
+      "ordinal": 80,
+      "source_page": 9,
+      "stem": "Attributed sales revenue is $900 and ad spend is $300. What is ROAS?",
+      "options": [
+        "3.0",
+        "0.33",
+        "6.0",
+        "9.0"
+      ],
+      "correct_mask": 1,
+      "rationale": "Revenue divided by advertising spend equals three, before other costs. Source: MAIC Diploma in Social Media Marketing and Strategy, page 9."
+    },
+    {
+      "ordinal": 81,
+      "source_page": 10,
+      "stem": "What should a campaign hypothesis specify?",
+      "options": [
+        "Claim a test proves causation after one day",
+        "Ignore complaints and lead quality",
+        "An intervention and the outcome it is intended to change",
+        "Continue advertising a known false statement"
+      ],
+      "correct_mask": 4,
+      "rationale": "Tests should be decision-oriented. Source: MAIC Diploma in Social Media Marketing and Strategy, page 10."
+    },
+    {
+      "ordinal": 82,
+      "source_page": 10,
+      "stem": "Why limit multiple simultaneous changes in a test?",
+      "options": [
+        "They make it difficult to identify which change affected results",
+        "Change creative, audience and offer simultaneously",
+        "Use sensitive contact lists without checking permissions",
+        "Claim a test proves causation after one day"
+      ],
+      "correct_mask": 1,
+      "rationale": "Controlled comparison supports interpretation. Source: MAIC Diploma in Social Media Marketing and Strategy, page 10."
+    },
+    {
+      "ordinal": 83,
+      "source_page": 10,
+      "stem": "Why can one highly successful day be weak evidence?",
+      "options": [
+        "Short samples and unusual conditions can mislead",
+        "Ignore complaints and lead quality",
+        "Continue advertising a known false statement",
+        "Change creative, audience and offer simultaneously"
+      ],
+      "correct_mask": 1,
+      "rationale": "Results need representative observation. Source: MAIC Diploma in Social Media Marketing and Strategy, page 10."
+    },
+    {
+      "ordinal": 84,
+      "source_page": 10,
+      "stem": "What is a balancing metric for paid lead generation?",
+      "options": [
+        "Use sensitive contact lists without checking permissions",
+        "Claim a test proves causation after one day",
+        "Quality of inquiries or customer complaints",
+        "Ignore complaints and lead quality"
+      ],
+      "correct_mask": 4,
+      "rationale": "A primary rate can hide harmful consequences. Source: MAIC Diploma in Social Media Marketing and Strategy, page 10."
+    },
+    {
+      "ordinal": 85,
+      "source_page": 10,
+      "stem": "What may make a high-click ad strategically unsuccessful?",
+      "options": [
+        "Continue advertising a known false statement",
+        "The clicks are driven by unsupported or misleading claims",
+        "Change creative, audience and offer simultaneously",
+        "Use sensitive contact lists without checking permissions"
+      ],
+      "correct_mask": 2,
+      "rationale": "Engagement without integrity can harm the business. Source: MAIC Diploma in Social Media Marketing and Strategy, page 10."
+    },
+    {
+      "ordinal": 86,
+      "source_page": 10,
+      "stem": "Why should the source of customer contact data be evaluated?",
+      "options": [
+        "Claim a test proves causation after one day",
+        "Ignore complaints and lead quality",
+        "Targeting must respect privacy and applicable permissions",
+        "Continue advertising a known false statement"
+      ],
+      "correct_mask": 4,
+      "rationale": "Responsible campaigns require lawful data handling. Source: MAIC Diploma in Social Media Marketing and Strategy, page 10."
+    },
+    {
+      "ordinal": 87,
+      "source_page": 10,
+      "stem": "What is an appropriate stop condition for an advertisement?",
+      "options": [
+        "Change creative, audience and offer simultaneously",
+        "A verified material false claim in the active creative",
+        "Use sensitive contact lists without checking permissions",
+        "Claim a test proves causation after one day"
+      ],
+      "correct_mask": 2,
+      "rationale": "Factual errors should trigger correction. Source: MAIC Diploma in Social Media Marketing and Strategy, page 10."
+    },
+    {
+      "ordinal": 88,
+      "source_page": 10,
+      "stem": "How should an experiment result be reported?",
+      "options": [
+        "Ignore complaints and lead quality",
+        "With observed evidence, limitations and a proposed next action",
+        "Continue advertising a known false statement",
+        "Change creative, audience and offer simultaneously"
+      ],
+      "correct_mask": 2,
+      "rationale": "Avoid declaring certainty from limited correlation. Source: MAIC Diploma in Social Media Marketing and Strategy, page 10."
+    },
+    {
+      "ordinal": 89,
+      "source_page": 10,
+      "stem": "Test A produces lower CPC but far more unqualified inquiries. What should govern the next decision?",
+      "options": [
+        "Scale A solely because clicks are cheapest",
+        "Cost per useful lead and balancing outcomes, not CPC alone",
+        "Ignore sales team feedback",
+        "Treat all leads as equally valuable"
+      ],
+      "correct_mask": 2,
+      "rationale": "Lead quality can outweigh inexpensive clicks. Source: MAIC Diploma in Social Media Marketing and Strategy, page 10."
+    },
+    {
+      "ordinal": 90,
+      "source_page": 10,
+      "stem": "A campaign receives only two conversions after one day. How should its apparent lift be treated?",
+      "options": [
+        "As guaranteed permanent growth",
+        "As proof that every platform works equally",
+        "As automatic justification to double all budgets",
+        "As limited evidence needing more reliable comparison"
+      ],
+      "correct_mask": 8,
+      "rationale": "Small samples can yield unstable results. Source: MAIC Diploma in Social Media Marketing and Strategy, page 10."
+    },
+    {
+      "ordinal": 91,
+      "source_page": 11,
+      "stem": "What is the hypothetical web-design campaign's objective?",
+      "options": [
+        "Call raw clicks confirmed paying clients",
+        "Present a fictional prototype as a proven customer's result",
+        "Assume all inquiries have equal value",
+        "Generate suitable restaurant inquiries within a limited 30-day budget"
+      ],
+      "correct_mask": 8,
+      "rationale": "The fictional case connects inquiries, capacity and spend. Source: MAIC Diploma in Social Media Marketing and Strategy, page 11."
+    },
+    {
+      "ordinal": 92,
+      "source_page": 11,
+      "stem": "Why are restaurant owners and managers separate audience segments?",
+      "options": [
+        "Exceed available sales handling without planning",
+        "Use unverified claims in the paid creatives",
+        "They may have different needs and purchase roles",
+        "Call raw clicks confirmed paying clients"
+      ],
+      "correct_mask": 4,
+      "rationale": "Segment context can change objections. Source: MAIC Diploma in Social Media Marketing and Strategy, page 11."
+    },
+    {
+      "ordinal": 93,
+      "source_page": 11,
+      "stem": "What must the sample reservation-flow demonstration avoid claiming?",
+      "options": [
+        "Present a fictional prototype as a proven customer's result",
+        "Assume all inquiries have equal value",
+        "That it is a documented real customer's outcome",
+        "Exceed available sales handling without planning"
+      ],
+      "correct_mask": 4,
+      "rationale": "Hypothetical demonstrations must stay labeled. Source: MAIC Diploma in Social Media Marketing and Strategy, page 11."
+    },
+    {
+      "ordinal": 94,
+      "source_page": 11,
+      "stem": "What is the stated monthly sales-handling capacity in the case?",
+      "options": [
+        "Use unverified claims in the paid creatives",
+        "20 qualified inquiries",
+        "Call raw clicks confirmed paying clients",
+        "Present a fictional prototype as a proven customer's result"
+      ],
+      "correct_mask": 2,
+      "rationale": "The case specifies a team limit. Source: MAIC Diploma in Social Media Marketing and Strategy, page 11."
+    },
+    {
+      "ordinal": 95,
+      "source_page": 11,
+      "stem": "Why are qualified inquiries more useful than raw clicks for this agency?",
+      "options": [
+        "Assume all inquiries have equal value",
+        "Exceed available sales handling without planning",
+        "Use unverified claims in the paid creatives",
+        "They better correspond to feasible customer conversations"
+      ],
+      "correct_mask": 8,
+      "rationale": "Click volume alone may be irrelevant. Source: MAIC Diploma in Social Media Marketing and Strategy, page 11."
+    },
+    {
+      "ordinal": 96,
+      "source_page": 11,
+      "stem": "What should happen when the team's lead capacity is reached?",
+      "options": [
+        "Call raw clicks confirmed paying clients",
+        "Present a fictional prototype as a proven customer's result",
+        "Assume all inquiries have equal value",
+        "Review budget and service handling rather than blindly scale"
+      ],
+      "correct_mask": 8,
+      "rationale": "Operational limits must guide marketing decisions. Source: MAIC Diploma in Social Media Marketing and Strategy, page 11."
+    },
+    {
+      "ordinal": 97,
+      "source_page": 11,
+      "stem": "Why should a two-creative test use an explicit comparison variable?",
+      "options": [
+        "It allows a more interpretable difference between versions",
+        "Exceed available sales handling without planning",
+        "Use unverified claims in the paid creatives",
+        "Call raw clicks confirmed paying clients"
+      ],
+      "correct_mask": 1,
+      "rationale": "Controlled variables support learning. Source: MAIC Diploma in Social Media Marketing and Strategy, page 11."
+    },
+    {
+      "ordinal": 98,
+      "source_page": 11,
+      "stem": "What type of ethical check belongs in the campaign brief?",
+      "options": [
+        "Rights, disclosure, claims and privacy verification",
+        "Present a fictional prototype as a proven customer's result",
+        "Assume all inquiries have equal value",
+        "Exceed available sales handling without planning"
+      ],
+      "correct_mask": 1,
+      "rationale": "Compliance should precede campaign release. Source: MAIC Diploma in Social Media Marketing and Strategy, page 11."
+    },
+    {
+      "ordinal": 99,
+      "source_page": 11,
+      "stem": "Creative A spends $120 and produces 4 qualified inquiries. What is cost per qualified inquiry?",
+      "options": [
+        "$12",
+        "$4",
+        "$120",
+        "$30"
+      ],
+      "correct_mask": 8,
+      "rationale": "120 divided by four equals thirty dollars. Source: MAIC Diploma in Social Media Marketing and Strategy, page 11."
+    },
+    {
+      "ordinal": 100,
+      "source_page": 11,
+      "stem": "Creative B spends $120 and generates 10 qualified inquiries. What is cost per qualified inquiry?",
+      "options": [
+        "$30",
+        "$12",
+        "$10",
+        "$120"
+      ],
+      "correct_mask": 2,
+      "rationale": "120 divided by ten equals twelve dollars. Source: MAIC Diploma in Social Media Marketing and Strategy, page 11."
+    }
+  ]
+}
