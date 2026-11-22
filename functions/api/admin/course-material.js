@@ -8,7 +8,16 @@ export async function onRequestGet({request,env}){
  try{
   const materials=(await env.MAIC_DB.prepare("SELECT course_id,title,language,pages,bytes,sha256,version,updated_at FROM learning_materials ORDER BY title").all()).results;
   const revisions=(await env.MAIC_DB.prepare("SELECT course_id,previous_sha256,new_sha256,reviewed_by,created_at FROM learning_material_revisions ORDER BY created_at DESC LIMIT 50").all()).results;
-  return json({materials,revisions,approvedFont:'Tinos Regular / Tinos Bold, 12 pt',pageCount:12});
+  // Include non-archived self-paced courses that do not yet have a stored PDF.
+  // Previously the editor only listed existing materials, making the first
+  // upload of a new course impossible even though POST already supported it.
+  const doc=await catalog(env.MAIC_DB);
+  const stored=new Set(materials.map(m=>m.course_id));
+  const availableCourses=doc.courses
+   .filter(c=>c.status!=='archived'&&Array.isArray(c.mode)&&c.mode.includes('self-paced'))
+   .map(c=>({course_id:c.id,title:c.en,status:c.status,has_material:stored.has(c.id)}))
+   .sort((a,b)=>a.title.localeCompare(b.title,'en'));
+  return json({materials,revisions,availableCourses,approvedFont:'Tinos Regular / Tinos Bold, 12 pt',pageCount:12});
  }catch{return json({error:'unavailable'},503)}
 }
 export async function onRequestPost({request,env}){
