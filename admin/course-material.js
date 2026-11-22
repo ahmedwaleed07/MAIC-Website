@@ -1,15 +1,27 @@
 'use strict';
 const materials=document.querySelector('#materials'),history=document.querySelector('#history'),course=document.querySelector('#course'),file=document.querySelector('#file'),message=document.querySelector('#message'),upload=document.querySelector('#upload'),form=document.querySelector('#manual');
-let source=[];
+let source=[],availableCourses=[];
 async function refresh(){
  const response=await fetch('/api/admin/course-material',{credentials:'same-origin',cache:'no-store'});
  const data=await response.json();if(!response.ok)throw Error(data.error||'unavailable');
- source=data.materials;materials.replaceChildren();history.replaceChildren();
+ source=data.materials;availableCourses=data.availableCourses||[];
+ materials.replaceChildren();history.replaceChildren();
  course.replaceChildren();const blank=document.createElement('option');blank.value='';blank.textContent='—';course.append(blank);
  for(const m of source){
   const row=document.createElement('div');row.className='row';
   row.textContent=m.title+' — '+m.pages+' صفحة — آخر تحديث: '+m.updated_at+' — SHA-256: '+m.sha256.slice(0,12)+'…';
-  materials.append(row);const option=document.createElement('option');option.value=m.course_id;option.textContent=m.title;course.append(option);
+  materials.append(row);
+ }
+ for(const c of availableCourses){
+  const option=document.createElement('option');option.value=c.course_id;
+  option.textContent=c.title+(c.has_material?' — مسجّل':' — لم تُرفع مادة بعد');
+  course.append(option);
+ }
+ const noPdf=availableCourses.filter(c=>!c.has_material);
+ if(noPdf.length){
+  const notice=document.createElement('p');notice.className='muted';
+  notice.textContent=noPdf.length+' دورة بلا مادة PDF مسجّلة. يمكن اختيارها من القائمة لرفع أول نسخة بعد المراجعة الأكاديمية.';
+  materials.prepend(notice);
  }
  for(const h of data.revisions){
   const row=document.createElement('div');row.className='row';
@@ -21,13 +33,14 @@ async function refresh(){
 form.addEventListener('submit',async event=>{
  event.preventDefault();message.textContent='';upload.disabled=true;
  try{
-  const selected=source.find(m=>m.course_id===course.value);
+  const selected=availableCourses.find(m=>m.course_id===course.value);
   const doc=file.files?.[0];
   if(!selected||!doc||doc.type!=='application/pdf'&& !doc.name.toLowerCase().endsWith('.pdf')||doc.size>1250000)throw Error('اختر ملف PDF صالحاً لا يتجاوز 1.25 MB');
   const reviewer=document.querySelector('#reviewer').value.trim();
   if(reviewer.length<3)throw Error('أدخل اسم المسؤول عن مراجعة المادة');
   if(!document.querySelector('#checkContent').checked||!document.querySelector('#checkStyle').checked)throw Error('يجب اعتماد مراجعة المادة والخط والهوية أولاً');
-  if(!confirm('تأكيد: تم تدقيق الملف علمياً وصفحة بصفحة؛ هل تريد استبدال نسخة الدورة '+selected.title+' الموجودة في موقع MAIC؟'))return;
+  const action=selected.has_material?'استبدال النسخة الموجودة':'إضافة أول نسخة';
+  if(!confirm('تأكيد: تم تدقيق الملف علمياً وصفحة بصفحة؛ هل تريد '+action+' للدورة '+selected.title+' في MAIC؟'))return;
   const response=await fetch('/api/admin/course-material?course='+encodeURIComponent(selected.course_id),{
     method:'POST',credentials:'same-origin',headers:{'Content-Type':'application/pdf','X-MAIC-Reviewed':'yes','X-MAIC-Format':'Tinos12-BW','X-MAIC-Reviewer':encodeURIComponent(reviewer)},body:doc
   });
