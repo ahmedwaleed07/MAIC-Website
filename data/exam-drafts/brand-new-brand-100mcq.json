@@ -1,0 +1,1312 @@
+{
+  "course_id": "brand-new-brand",
+  "source_manuscript": "data/course-manuscripts/brand-new-brand.md",
+  "source_manuscript_blob_sha": "40178b1f9b08409bfca31ec0d868f6691e7f5747",
+  "source_pdf_sha256": null,
+  "bank_version": "draft-manuscript-20261122-v1",
+  "approval_status": "editorial_draft_pending_independent_review",
+  "number_of_questions": 100,
+  "note": "Independent question-level content and evidence review required; not an active MAIC student exam or trademark clearance.",
+  "questions": [
+    {
+      "ordinal": 1,
+      "source_page": 2,
+      "stem": "What forms the substance of a brand beyond its logo?",
+      "options": [
+        "Only a stylish symbol is necessary",
+        "Its promises, associations and delivered experience",
+        "Practice coursework registers a legal trademark",
+        "Fictional results may be reported as audited facts"
+      ],
+      "correct_mask": 2,
+      "rationale": "The course explains that its promises, associations and delivered experience. This answer follows the documented brand-development principle for the stated decision. Source: MAIC Brand New Brand, page 2."
+    },
+    {
+      "ordinal": 2,
+      "source_page": 2,
+      "stem": "Why does a stylish mark not guarantee trust?",
+      "options": [
+        "Follower counts certify operational quality",
+        "Operations must reliably support the advertised promise",
+        "Decorative effects replace service evidence",
+        "Only a stylish symbol is necessary"
+      ],
+      "correct_mask": 2,
+      "rationale": "The course explains that operations must reliably support the advertised promise. This answer follows the documented brand-development principle for the stated decision. Source: MAIC Brand New Brand, page 2."
+    },
+    {
+      "ordinal": 3,
+      "source_page": 2,
+      "stem": "Which activity comes before choosing brand colors?",
+      "options": [
+        "Identifying a real audience problem and service value",
+        "Practice coursework registers a legal trademark",
+        "Fictional results may be reported as audited facts",
+        "Follower counts certify operational quality"
+      ],
+      "correct_mask": 1,
+      "rationale": "The course explains that identifying a real audience problem and service value. This answer follows the documented brand-development principle for the stated decision. Source: MAIC Brand New Brand, page 2."
+    },
+    {
+      "ordinal": 4,
+      "source_page": 2,
+      "stem": "What is the course's first discovery step intended to establish?",
+      "options": [
+        "Decorative effects replace service evidence",
+        "The offer, its customers and practical constraints",
+        "Only a stylish symbol is necessary",
+        "Practice coursework registers a legal trademark"
+      ],
+      "correct_mask": 2,
+      "rationale": "The course explains that the offer, its customers and practical constraints. This answer follows the documented brand-development principle for the stated decision. Source: MAIC Brand New Brand, page 2."
+    },
+    {
+      "ordinal": 5,
+      "source_page": 2,
+      "stem": "How should invented brand exercises be described publicly?",
+      "options": [
+        "Fictional results may be reported as audited facts",
+        "Follower counts certify operational quality",
+        "As fictional learning scenarios",
+        "Decorative effects replace service evidence"
+      ],
+      "correct_mask": 4,
+      "rationale": "The course explains that as fictional learning scenarios. This answer follows the documented brand-development principle for the stated decision. Source: MAIC Brand New Brand, page 2."
+    },
+    {
+      "ordinal": 6,
+      "source_page": 2,
+      "stem": "Which observation can test early brand clarity?",
+      "options": [
+        "Only a stylish symbol is necessary",
+        "Whether users correctly describe the service",
+        "Practice coursework registers a legal trademark",
+        "Fictional results may be reported as audited facts"
+      ],
+      "correct_mask": 2,
+      "rationale": "The course explains that whether users correctly describe the service. This answer follows the documented brand-development principle for the stated decision. Source: MAIC Brand New Brand, page 2."
+    },
+    {
+      "ordinal": 7,
+      "source_page": 2,
+      "stem": "Can completing the practice rubric grant official certification?",
+      "options": [
+        "No, independent academic and administrative conditions apply",
+        "Follower counts certify operational quality",
+        "Decorative effects replace service evidence",
+        "Only a stylish symbol is necessary"
+      ],
+      "correct_mask": 1,
+      "rationale": "The course explains that no, independent academic and administrative conditions apply. This answer follows the documented brand-development principle for the stated decision. Source: MAIC Brand New Brand, page 2."
+    },
+    {
+      "ordinal": 8,
+      "source_page": 2,
+      "stem": "What should brand strategy connect to the customer?",
+      "options": [
+        "Practice coursework registers a legal trademark",
+        "Fictional results may be reported as audited facts",
+        "Follower counts certify operational quality",
+        "An attainable benefit rather than decoration alone"
+      ],
+      "correct_mask": 8,
+      "rationale": "The course explains that an attainable benefit rather than decoration alone. This answer follows the documented brand-development principle for the stated decision. Source: MAIC Brand New Brand, page 2."
+    },
+    {
+      "ordinal": 9,
+      "source_page": 2,
+      "stem": "A new logo receives many likes but no service evaluation. What remains unknown?",
+      "options": [
+        "Decorative effects replace service evidence",
+        "Whether the company can deliver its promise",
+        "Only a stylish symbol is necessary",
+        "Practice coursework registers a legal trademark"
+      ],
+      "correct_mask": 2,
+      "rationale": "The course explains that whether the company can deliver its promise. This answer follows the documented brand-development principle for the stated decision. Source: MAIC Brand New Brand, page 2."
+    },
+    {
+      "ordinal": 10,
+      "source_page": 2,
+      "stem": "A brand exercise uses no real market survey. How should its research data be labeled?",
+      "options": [
+        "Fictional results may be reported as audited facts",
+        "Hypothetical classroom evidence",
+        "Follower counts certify operational quality",
+        "Decorative effects replace service evidence"
+      ],
+      "correct_mask": 2,
+      "rationale": "The course explains that hypothetical classroom evidence. This answer follows the documented brand-development principle for the stated decision. Source: MAIC Brand New Brand, page 2."
+    },
+    {
+      "ordinal": 11,
+      "source_page": 3,
+      "stem": "What should a discovery worksheet record?",
+      "options": [
+        "Stakeholders, alternatives, constraints and research questions",
+        "Use the strongest guarantee regardless of capacity",
+        "Ignore the option to postpone a purchase",
+        "Treat a value proposition as only a color palette"
+      ],
+      "correct_mask": 1,
+      "rationale": "The course explains that stakeholders, alternatives, constraints and research questions. This answer follows the documented brand-development principle for the stated decision. Source: MAIC Brand New Brand, page 3."
+    },
+    {
+      "ordinal": 12,
+      "source_page": 3,
+      "stem": "Why was the example ten-minute arrival guarantee revised?",
+      "options": [
+        "Copy a competitor's visual identity without permission",
+        "The operating resources could not support the claim",
+        "Assume every promotional claim is already verified",
+        "Use the strongest guarantee regardless of capacity"
+      ],
+      "correct_mask": 2,
+      "rationale": "The course explains that the operating resources could not support the claim. This answer follows the documented brand-development principle for the stated decision. Source: MAIC Brand New Brand, page 3."
+    },
+    {
+      "ordinal": 13,
+      "source_page": 3,
+      "stem": "What does an organization's mission express?",
+      "options": [
+        "Ignore the option to postpone a purchase",
+        "Treat a value proposition as only a color palette",
+        "Copy a competitor's visual identity without permission",
+        "The underlying purpose for which it exists"
+      ],
+      "correct_mask": 8,
+      "rationale": "The course explains that the underlying purpose for which it exists. This answer follows the documented brand-development principle for the stated decision. Source: MAIC Brand New Brand, page 3."
+    },
+    {
+      "ordinal": 14,
+      "source_page": 3,
+      "stem": "What does its value proposition primarily describe?",
+      "options": [
+        "Assume every promotional claim is already verified",
+        "A useful benefit to a specified customer",
+        "Use the strongest guarantee regardless of capacity",
+        "Ignore the option to postpone a purchase"
+      ],
+      "correct_mask": 2,
+      "rationale": "The course explains that a useful benefit to a specified customer. This answer follows the documented brand-development principle for the stated decision. Source: MAIC Brand New Brand, page 3."
+    },
+    {
+      "ordinal": 15,
+      "source_page": 3,
+      "stem": "Why should the option of doing nothing enter competitor research?",
+      "options": [
+        "Treat a value proposition as only a color palette",
+        "Customers may decline to buy a proposed solution",
+        "Copy a competitor's visual identity without permission",
+        "Assume every promotional claim is already verified"
+      ],
+      "correct_mask": 2,
+      "rationale": "The course explains that customers may decline to buy a proposed solution. This answer follows the documented brand-development principle for the stated decision. Source: MAIC Brand New Brand, page 3."
+    },
+    {
+      "ordinal": 16,
+      "source_page": 3,
+      "stem": "When should an unsupported guarantee be placed in approved copy?",
+      "options": [
+        "Only after suitable evidence or an honest revision",
+        "Use the strongest guarantee regardless of capacity",
+        "Ignore the option to postpone a purchase",
+        "Treat a value proposition as only a color palette"
+      ],
+      "correct_mask": 1,
+      "rationale": "The course explains that only after suitable evidence or an honest revision. This answer follows the documented brand-development principle for the stated decision. Source: MAIC Brand New Brand, page 3."
+    },
+    {
+      "ordinal": 17,
+      "source_page": 3,
+      "stem": "Which issue distinguishes a new product identity from a whole-business rebrand?",
+      "options": [
+        "Copy a competitor's visual identity without permission",
+        "Assume every promotional claim is already verified",
+        "Use the strongest guarantee regardless of capacity",
+        "Brand architecture and scope of change"
+      ],
+      "correct_mask": 8,
+      "rationale": "The course explains that brand architecture and scope of change. This answer follows the documented brand-development principle for the stated decision. Source: MAIC Brand New Brand, page 3."
+    },
+    {
+      "ordinal": 18,
+      "source_page": 3,
+      "stem": "What may competitive research legitimately teach without copying assets?",
+      "options": [
+        "The alternatives customers use and value",
+        "Ignore the option to postpone a purchase",
+        "Treat a value proposition as only a color palette",
+        "Copy a competitor's visual identity without permission"
+      ],
+      "correct_mask": 1,
+      "rationale": "The course explains that the alternatives customers use and value. This answer follows the documented brand-development principle for the stated decision. Source: MAIC Brand New Brand, page 3."
+    },
+    {
+      "ordinal": 19,
+      "source_page": 3,
+      "stem": "A repair brand operates in only three districts. Which geographic claim is defensible?",
+      "options": [
+        "Assume every promotional claim is already verified",
+        "Service is available within the three supported districts",
+        "Use the strongest guarantee regardless of capacity",
+        "Ignore the option to postpone a purchase"
+      ],
+      "correct_mask": 2,
+      "rationale": "The course explains that service is available within the three supported districts. This answer follows the documented brand-development principle for the stated decision. Source: MAIC Brand New Brand, page 3."
+    },
+    {
+      "ordinal": 20,
+      "source_page": 3,
+      "stem": "A project has limited funds and many possible services. What should be assessed first?",
+      "options": [
+        "Treat a value proposition as only a color palette",
+        "Copy a competitor's visual identity without permission",
+        "Assume every promotional claim is already verified",
+        "Feasible priorities and capacity to deliver"
+      ],
+      "correct_mask": 8,
+      "rationale": "The course explains that feasible priorities and capacity to deliver. This answer follows the documented brand-development principle for the stated decision. Source: MAIC Brand New Brand, page 3."
+    },
+    {
+      "ordinal": 21,
+      "source_page": 4,
+      "stem": "What is a customer persona early in research?",
+      "options": [
+        "Assume three interviews represent every customer",
+        "Ignore observed customer obstacles",
+        "Treat every persona as an identified real individual",
+        "A tentative model of a group of customer needs"
+      ],
+      "correct_mask": 8,
+      "rationale": "The course explains that a tentative model of a group of customer needs. This answer follows the documented brand-development principle for the stated decision. Source: MAIC Brand New Brand, page 4."
+    },
+    {
+      "ordinal": 22,
+      "source_page": 4,
+      "stem": "Which neutral interview question seeks direct experience?",
+      "options": [
+        "Use demographic stereotypes as proven research",
+        "Invent a survey result supporting the design",
+        "Assume three interviews represent every customer",
+        "What happened the last time you needed a repair?"
+      ],
+      "correct_mask": 8,
+      "rationale": "The course explains that what happened the last time you needed a repair. This answer follows the documented brand-development principle for the stated decision. Source: MAIC Brand New Brand, page 4."
+    },
+    {
+      "ordinal": 23,
+      "source_page": 4,
+      "stem": "Why do three similar interviews not establish a market percentage?",
+      "options": [
+        "Ignore observed customer obstacles",
+        "The sample is too small and unrepresentative",
+        "Treat every persona as an identified real individual",
+        "Use demographic stereotypes as proven research"
+      ],
+      "correct_mask": 2,
+      "rationale": "The course explains that the sample is too small and unrepresentative. This answer follows the documented brand-development principle for the stated decision. Source: MAIC Brand New Brand, page 4."
+    },
+    {
+      "ordinal": 24,
+      "source_page": 4,
+      "stem": "Which difference can justify two customer segments?",
+      "options": [
+        "Different urgency and service requirements",
+        "Invent a survey result supporting the design",
+        "Assume three interviews represent every customer",
+        "Ignore observed customer obstacles"
+      ],
+      "correct_mask": 1,
+      "rationale": "The course explains that different urgency and service requirements. This answer follows the documented brand-development principle for the stated decision. Source: MAIC Brand New Brand, page 4."
+    },
+    {
+      "ordinal": 25,
+      "source_page": 4,
+      "stem": "Why separate an interviewer's interpretation from a direct observation?",
+      "options": [
+        "Treat every persona as an identified real individual",
+        "Use demographic stereotypes as proven research",
+        "Inference may exceed the respondent's actual words",
+        "Invent a survey result supporting the design"
+      ],
+      "correct_mask": 4,
+      "rationale": "The course explains that inference may exceed the respondent's actual words. This answer follows the documented brand-development principle for the stated decision. Source: MAIC Brand New Brand, page 4."
+    },
+    {
+      "ordinal": 26,
+      "source_page": 4,
+      "stem": "Which evidence source can help identify customer friction?",
+      "options": [
+        "Assume three interviews represent every customer",
+        "Real customer inquiries recorded ethically",
+        "Ignore observed customer obstacles",
+        "Treat every persona as an identified real individual"
+      ],
+      "correct_mask": 2,
+      "rationale": "The course explains that real customer inquiries recorded ethically. This answer follows the documented brand-development principle for the stated decision. Source: MAIC Brand New Brand, page 4."
+    },
+    {
+      "ordinal": 27,
+      "source_page": 4,
+      "stem": "What should happen when new evidence contradicts a persona?",
+      "options": [
+        "Use demographic stereotypes as proven research",
+        "Invent a survey result supporting the design",
+        "Assume three interviews represent every customer",
+        "Revise the persona and note the evidence"
+      ],
+      "correct_mask": 8,
+      "rationale": "The course explains that revise the persona and note the evidence. This answer follows the documented brand-development principle for the stated decision. Source: MAIC Brand New Brand, page 4."
+    },
+    {
+      "ordinal": 28,
+      "source_page": 4,
+      "stem": "Which need may matter more than a flashy symbol to commuters?",
+      "options": [
+        "Ignore observed customer obstacles",
+        "Treat every persona as an identified real individual",
+        "A reliable booking window and clear estimate",
+        "Use demographic stereotypes as proven research"
+      ],
+      "correct_mask": 4,
+      "rationale": "The course explains that a reliable booking window and clear estimate. This answer follows the documented brand-development principle for the stated decision. Source: MAIC Brand New Brand, page 4."
+    },
+    {
+      "ordinal": 29,
+      "source_page": 4,
+      "stem": "Three of three participants mention delays. What is supportable?",
+      "options": [
+        "Invent a survey result supporting the design",
+        "Assume three interviews represent every customer",
+        "All three interviewed participants mentioned delays",
+        "Ignore observed customer obstacles"
+      ],
+      "correct_mask": 4,
+      "rationale": "The course explains that all three interviewed participants mentioned delays. This answer follows the documented brand-development principle for the stated decision. Source: MAIC Brand New Brand, page 4."
+    },
+    {
+      "ordinal": 30,
+      "source_page": 4,
+      "stem": "A commuter and fleet manager require different schedules. What does this illustrate?",
+      "options": [
+        "Customer segments can differ by practical jobs",
+        "Treat every persona as an identified real individual",
+        "Use demographic stereotypes as proven research",
+        "Invent a survey result supporting the design"
+      ],
+      "correct_mask": 1,
+      "rationale": "The course explains that customer segments can differ by practical jobs. This answer follows the documented brand-development principle for the stated decision. Source: MAIC Brand New Brand, page 4."
+    },
+    {
+      "ordinal": 31,
+      "source_page": 5,
+      "stem": "What four elements can strengthen a positioning statement?",
+      "options": [
+        "Promise to satisfy everyone without any tradeoff",
+        "Use the loudest slogan as proof of differentiation",
+        "Ignore what customers actually need",
+        "Audience, category, benefit and reason to believe"
+      ],
+      "correct_mask": 8,
+      "rationale": "The course explains that audience, category, benefit and reason to believe. This answer follows the documented brand-development principle for the stated decision. Source: MAIC Brand New Brand, page 5."
+    },
+    {
+      "ordinal": 32,
+      "source_page": 5,
+      "stem": "Why may premium individual service conflict with the lowest-price promise?",
+      "options": [
+        "The delivery economics may not support both",
+        "Claim global coverage without operational evidence",
+        "Treat lowest price and costly premium service as automatically compatible",
+        "Promise to satisfy everyone without any tradeoff"
+      ],
+      "correct_mask": 1,
+      "rationale": "The course explains that the delivery economics may not support both. This answer follows the documented brand-development principle for the stated decision. Source: MAIC Brand New Brand, page 5."
+    },
+    {
+      "ordinal": 33,
+      "source_page": 5,
+      "stem": "Why should geographic coverage be specified in a positioning promise?",
+      "options": [
+        "Available staff and service area set limits",
+        "Use the loudest slogan as proof of differentiation",
+        "Ignore what customers actually need",
+        "Claim global coverage without operational evidence"
+      ],
+      "correct_mask": 1,
+      "rationale": "The course explains that available staff and service area set limits. This answer follows the documented brand-development principle for the stated decision. Source: MAIC Brand New Brand, page 5."
+    },
+    {
+      "ordinal": 34,
+      "source_page": 5,
+      "stem": "When is a difference strategically meaningful?",
+      "options": [
+        "Treat lowest price and costly premium service as automatically compatible",
+        "Promise to satisfy everyone without any tradeoff",
+        "Use the loudest slogan as proof of differentiation",
+        "When buyers value it and delivery is sustainable"
+      ],
+      "correct_mask": 8,
+      "rationale": "The course explains that when buyers value it and delivery is sustainable. This answer follows the documented brand-development principle for the stated decision. Source: MAIC Brand New Brand, page 5."
+    },
+    {
+      "ordinal": 35,
+      "source_page": 5,
+      "stem": "What makes a claim of superiority credible?",
+      "options": [
+        "Ignore what customers actually need",
+        "Claim global coverage without operational evidence",
+        "Treat lowest price and costly premium service as automatically compatible",
+        "Relevant verifiable comparative evidence"
+      ],
+      "correct_mask": 8,
+      "rationale": "The course explains that relevant verifiable comparative evidence. This answer follows the documented brand-development principle for the stated decision. Source: MAIC Brand New Brand, page 5."
+    },
+    {
+      "ordinal": 36,
+      "source_page": 5,
+      "stem": "What should a positioning strategy say about unserved customers?",
+      "options": [
+        "Which needs or segments the brand will not promise to serve",
+        "Promise to satisfy everyone without any tradeoff",
+        "Use the loudest slogan as proof of differentiation",
+        "Ignore what customers actually need"
+      ],
+      "correct_mask": 1,
+      "rationale": "The course explains that which needs or segments the brand will not promise to serve. This answer follows the documented brand-development principle for the stated decision. Source: MAIC Brand New Brand, page 5."
+    },
+    {
+      "ordinal": 37,
+      "source_page": 5,
+      "stem": "Why does category context belong in positioning?",
+      "options": [
+        "Claim global coverage without operational evidence",
+        "Treat lowest price and costly premium service as automatically compatible",
+        "It helps customers understand available alternatives",
+        "Promise to satisfy everyone without any tradeoff"
+      ],
+      "correct_mask": 4,
+      "rationale": "The course explains that it helps customers understand available alternatives. This answer follows the documented brand-development principle for the stated decision. Source: MAIC Brand New Brand, page 5."
+    },
+    {
+      "ordinal": 38,
+      "source_page": 5,
+      "stem": "What is wrong with calling an untested service the fastest?",
+      "options": [
+        "Use the loudest slogan as proof of differentiation",
+        "There is no verified basis for the superlative",
+        "Ignore what customers actually need",
+        "Claim global coverage without operational evidence"
+      ],
+      "correct_mask": 2,
+      "rationale": "The course explains that there is no verified basis for the superlative. This answer follows the documented brand-development principle for the stated decision. Source: MAIC Brand New Brand, page 5."
+    },
+    {
+      "ordinal": 39,
+      "source_page": 5,
+      "stem": "A local service promises instant global coverage. What is the strategic contradiction?",
+      "options": [
+        "Treat lowest price and costly premium service as automatically compatible",
+        "Promise to satisfy everyone without any tradeoff",
+        "Use the loudest slogan as proof of differentiation",
+        "The stated position exceeds operational capability"
+      ],
+      "correct_mask": 8,
+      "rationale": "The course explains that the stated position exceeds operational capability. This answer follows the documented brand-development principle for the stated decision. Source: MAIC Brand New Brand, page 5."
+    },
+    {
+      "ordinal": 40,
+      "source_page": 5,
+      "stem": "A brand is known for timely arrival but wants to offer 24-hour coverage. What first?",
+      "options": [
+        "Ignore what customers actually need",
+        "Verify staffing and service feasibility",
+        "Claim global coverage without operational evidence",
+        "Treat lowest price and costly premium service as automatically compatible"
+      ],
+      "correct_mask": 2,
+      "rationale": "The course explains that verify staffing and service feasibility. This answer follows the documented brand-development principle for the stated decision. Source: MAIC Brand New Brand, page 5."
+    },
+    {
+      "ordinal": 41,
+      "source_page": 6,
+      "stem": "What should be considered when screening names across countries?",
+      "options": [
+        "Pronunciation, meaning and legal usability",
+        "Assume available domain proves all trademark rights",
+        "Ignore legal and existing-use research",
+        "Assume rebranding only changes the icon"
+      ],
+      "correct_mask": 1,
+      "rationale": "The course explains that pronunciation, meaning and legal usability. This answer follows the documented brand-development principle for the stated decision. Source: MAIC Brand New Brand, page 6."
+    },
+    {
+      "ordinal": 42,
+      "source_page": 6,
+      "stem": "Does owning a matching domain prove trademark ownership?",
+      "options": [
+        "Choose names without audience language checks",
+        "Treat all product brands as independent by law",
+        "Assume available domain proves all trademark rights",
+        "No, domain and trademark rights are different"
+      ],
+      "correct_mask": 8,
+      "rationale": "The course explains that no, domain and trademark rights are different. This answer follows the documented brand-development principle for the stated decision. Source: MAIC Brand New Brand, page 6."
+    },
+    {
+      "ordinal": 43,
+      "source_page": 6,
+      "stem": "What makes a naming scorecard consistent?",
+      "options": [
+        "Ignore legal and existing-use research",
+        "Criteria defined before candidates are ranked",
+        "Assume rebranding only changes the icon",
+        "Choose names without audience language checks"
+      ],
+      "correct_mask": 2,
+      "rationale": "The course explains that criteria defined before candidates are ranked. This answer follows the documented brand-development principle for the stated decision. Source: MAIC Brand New Brand, page 6."
+    },
+    {
+      "ordinal": 44,
+      "source_page": 6,
+      "stem": "Why may an invented name need more explanation?",
+      "options": [
+        "Treat all product brands as independent by law",
+        "The product category may not be obvious",
+        "Assume available domain proves all trademark rights",
+        "Ignore legal and existing-use research"
+      ],
+      "correct_mask": 2,
+      "rationale": "The course explains that the product category may not be obvious. This answer follows the documented brand-development principle for the stated decision. Source: MAIC Brand New Brand, page 6."
+    },
+    {
+      "ordinal": 45,
+      "source_page": 6,
+      "stem": "What does a house of brands structure feature?",
+      "options": [
+        "Assume rebranding only changes the icon",
+        "Choose names without audience language checks",
+        "Treat all product brands as independent by law",
+        "Relatively distinct brand identities under an organization"
+      ],
+      "correct_mask": 8,
+      "rationale": "The course explains that relatively distinct brand identities under an organization. This answer follows the documented brand-development principle for the stated decision. Source: MAIC Brand New Brand, page 6."
+    },
+    {
+      "ordinal": 46,
+      "source_page": 6,
+      "stem": "What is an endorsed-brand architecture?",
+      "options": [
+        "Assume available domain proves all trademark rights",
+        "Ignore legal and existing-use research",
+        "A product identity visibly supported by a parent brand",
+        "Assume rebranding only changes the icon"
+      ],
+      "correct_mask": 4,
+      "rationale": "The course explains that a product identity visibly supported by a parent brand. This answer follows the documented brand-development principle for the stated decision. Source: MAIC Brand New Brand, page 6."
+    },
+    {
+      "ordinal": 47,
+      "source_page": 6,
+      "stem": "Which activity is required before declaring a name legally safe?",
+      "options": [
+        "Choose names without audience language checks",
+        "Appropriate trademark and existing-use review",
+        "Treat all product brands as independent by law",
+        "Assume available domain proves all trademark rights"
+      ],
+      "correct_mask": 2,
+      "rationale": "The course explains that appropriate trademark and existing-use review. This answer follows the documented brand-development principle for the stated decision. Source: MAIC Brand New Brand, page 6."
+    },
+    {
+      "ordinal": 48,
+      "source_page": 6,
+      "stem": "What may be part of a careful rebrand transition?",
+      "options": [
+        "Ignore legal and existing-use research",
+        "Customer notices, redirects and continuity of records",
+        "Assume rebranding only changes the icon",
+        "Choose names without audience language checks"
+      ],
+      "correct_mask": 2,
+      "rationale": "The course explains that customer notices, redirects and continuity of records. This answer follows the documented brand-development principle for the stated decision. Source: MAIC Brand New Brand, page 6."
+    },
+    {
+      "ordinal": 49,
+      "source_page": 6,
+      "stem": "A name's domain is free. Which legal matter remains unresolved?",
+      "options": [
+        "Possible trademark or confusingly similar use",
+        "Treat all product brands as independent by law",
+        "Assume available domain proves all trademark rights",
+        "Ignore legal and existing-use research"
+      ],
+      "correct_mask": 1,
+      "rationale": "The course explains that possible trademark or confusingly similar use. This answer follows the documented brand-development principle for the stated decision. Source: MAIC Brand New Brand, page 6."
+    },
+    {
+      "ordinal": 50,
+      "source_page": 6,
+      "stem": "A name is hard to pronounce in the target language. What response is appropriate?",
+      "options": [
+        "Assume rebranding only changes the icon",
+        "Choose names without audience language checks",
+        "Treat all product brands as independent by law",
+        "Test with intended users and evaluate alternatives"
+      ],
+      "correct_mask": 8,
+      "rationale": "The course explains that test with intended users and evaluate alternatives. This answer follows the documented brand-development principle for the stated decision. Source: MAIC Brand New Brand, page 6."
+    },
+    {
+      "ordinal": 51,
+      "source_page": 7,
+      "stem": "What does verbal identity specify?",
+      "options": [
+        "Voice, vocabulary and tone across customer communications",
+        "Respond to delays with advertising slogans only",
+        "Promise unverified benefits in every message",
+        "Hide the revised appointment information"
+      ],
+      "correct_mask": 1,
+      "rationale": "The course explains that voice, vocabulary and tone across customer communications. This answer follows the documented brand-development principle for the stated decision. Source: MAIC Brand New Brand, page 7."
+    },
+    {
+      "ordinal": 52,
+      "source_page": 7,
+      "stem": "May customer-support tone be more formal than ad copy?",
+      "options": [
+        "Yes, while maintaining recognizable brand character",
+        "Translate the master logo into a different brand mark",
+        "Use one fixed line break in every language",
+        "Respond to delays with advertising slogans only"
+      ],
+      "correct_mask": 1,
+      "rationale": "The course explains that yes, while maintaining recognizable brand character. This answer follows the documented brand-development principle for the stated decision. Source: MAIC Brand New Brand, page 7."
+    },
+    {
+      "ordinal": 53,
+      "source_page": 7,
+      "stem": "Why should a tagline avoid guaranteed outcomes?",
+      "options": [
+        "Promise unverified benefits in every message",
+        "Hide the revised appointment information",
+        "Translate the master logo into a different brand mark",
+        "A memorable phrase does not establish evidence of performance"
+      ],
+      "correct_mask": 8,
+      "rationale": "The course explains that a memorable phrase does not establish evidence of performance. This answer follows the documented brand-development principle for the stated decision. Source: MAIC Brand New Brand, page 7."
+    },
+    {
+      "ordinal": 54,
+      "source_page": 7,
+      "stem": "What is the proper role of a brand story?",
+      "options": [
+        "Use one fixed line break in every language",
+        "Explain an actual problem and credible purpose",
+        "Respond to delays with advertising slogans only",
+        "Promise unverified benefits in every message"
+      ],
+      "correct_mask": 2,
+      "rationale": "The course explains that explain an actual problem and credible purpose. This answer follows the documented brand-development principle for the stated decision. Source: MAIC Brand New Brand, page 7."
+    },
+    {
+      "ordinal": 55,
+      "source_page": 7,
+      "stem": "How should brand-name artwork behave in multilingual content?",
+      "options": [
+        "Hide the revised appointment information",
+        "Translate the master logo into a different brand mark",
+        "Approved wordmark stays stable while supporting copy is localized",
+        "Use one fixed line break in every language"
+      ],
+      "correct_mask": 4,
+      "rationale": "The course explains that approved wordmark stays stable while supporting copy is localized. This answer follows the documented brand-development principle for the stated decision. Source: MAIC Brand New Brand, page 7."
+    },
+    {
+      "ordinal": 56,
+      "source_page": 7,
+      "stem": "Why can translation change copy line breaks?",
+      "options": [
+        "Respond to delays with advertising slogans only",
+        "Promise unverified benefits in every message",
+        "Natural language length and direction differ",
+        "Hide the revised appointment information"
+      ],
+      "correct_mask": 4,
+      "rationale": "The course explains that natural language length and direction differ. This answer follows the documented brand-development principle for the stated decision. Source: MAIC Brand New Brand, page 7."
+    },
+    {
+      "ordinal": 57,
+      "source_page": 7,
+      "stem": "What is the best response to a revised appointment window?",
+      "options": [
+        "Translate the master logo into a different brand mark",
+        "Use one fixed line break in every language",
+        "Respond to delays with advertising slogans only",
+        "State the new time accurately and explain the next step"
+      ],
+      "correct_mask": 8,
+      "rationale": "The course explains that state the new time accurately and explain the next step. This answer follows the documented brand-development principle for the stated decision. Source: MAIC Brand New Brand, page 7."
+    },
+    {
+      "ordinal": 58,
+      "source_page": 7,
+      "stem": "Which service message is more credible than unsupported instant service?",
+      "options": [
+        "Promise unverified benefits in every message",
+        "Hide the revised appointment information",
+        "We will confirm your scheduled arrival window",
+        "Translate the master logo into a different brand mark"
+      ],
+      "correct_mask": 4,
+      "rationale": "The course explains that we will confirm your scheduled arrival window. This answer follows the documented brand-development principle for the stated decision. Source: MAIC Brand New Brand, page 7."
+    },
+    {
+      "ordinal": 59,
+      "source_page": 7,
+      "stem": "A customer asks about a late technician. Which message fits the brand?",
+      "options": [
+        "Use one fixed line break in every language",
+        "Respond to delays with advertising slogans only",
+        "Promise unverified benefits in every message",
+        "A clear revised arrival time with contact information"
+      ],
+      "correct_mask": 8,
+      "rationale": "The course explains that a clear revised arrival time with contact information. This answer follows the documented brand-development principle for the stated decision. Source: MAIC Brand New Brand, page 7."
+    },
+    {
+      "ordinal": 60,
+      "source_page": 7,
+      "stem": "A translated tagline occupies two lines rather than one. What should designers prioritize?",
+      "options": [
+        "Hide the revised appointment information",
+        "Translate the master logo into a different brand mark",
+        "Use one fixed line break in every language",
+        "Legibility and meaning without distorting the master logo"
+      ],
+      "correct_mask": 8,
+      "rationale": "The course explains that legibility and meaning without distorting the master logo. This answer follows the documented brand-development principle for the stated decision. Source: MAIC Brand New Brand, page 7."
+    },
+    {
+      "ordinal": 61,
+      "source_page": 8,
+      "stem": "What components comprise visual identity?",
+      "options": [
+        "Stretch the mark freely to fill any space",
+        "Assume a 3D logo must be readable in every size",
+        "Change approved typefaces with every social post",
+        "Logo, typography, color, layout and image treatment"
+      ],
+      "correct_mask": 8,
+      "rationale": "The course explains that logo, typography, color, layout and image treatment. This answer follows the documented brand-development principle for the stated decision. Source: MAIC Brand New Brand, page 8."
+    },
+    {
+      "ordinal": 62,
+      "source_page": 8,
+      "stem": "Why must a mark be tested at 32-pixel scale?",
+      "options": [
+        "Copy a rival's recognizable logo",
+        "Tiny details may become unreadable",
+        "Ignore contrast and print reproduction",
+        "Stretch the mark freely to fill any space"
+      ],
+      "correct_mask": 2,
+      "rationale": "The course explains that tiny details may become unreadable. This answer follows the documented brand-development principle for the stated decision. Source: MAIC Brand New Brand, page 8."
+    },
+    {
+      "ordinal": 63,
+      "source_page": 8,
+      "stem": "What should a brand guideline say about logo proportions?",
+      "options": [
+        "Assume a 3D logo must be readable in every size",
+        "Change approved typefaces with every social post",
+        "They remain fixed in every approved variant",
+        "Copy a rival's recognizable logo"
+      ],
+      "correct_mask": 4,
+      "rationale": "The course explains that they remain fixed in every approved variant. This answer follows the documented brand-development principle for the stated decision. Source: MAIC Brand New Brand, page 8."
+    },
+    {
+      "ordinal": 64,
+      "source_page": 8,
+      "stem": "Why may a very complex 3D mark fail on a receipt?",
+      "options": [
+        "Ignore contrast and print reproduction",
+        "Stretch the mark freely to fill any space",
+        "Detail can disappear at small reproduction size",
+        "Assume a 3D logo must be readable in every size"
+      ],
+      "correct_mask": 4,
+      "rationale": "The course explains that detail can disappear at small reproduction size. This answer follows the documented brand-development principle for the stated decision. Source: MAIC Brand New Brand, page 8."
+    },
+    {
+      "ordinal": 65,
+      "source_page": 8,
+      "stem": "Why should design concepts be checked for originality?",
+      "options": [
+        "Change approved typefaces with every social post",
+        "Copy a rival's recognizable logo",
+        "Copied identity assets can mislead or infringe rights",
+        "Ignore contrast and print reproduction"
+      ],
+      "correct_mask": 4,
+      "rationale": "The course explains that copied identity assets can mislead or infringe rights. This answer follows the documented brand-development principle for the stated decision. Source: MAIC Brand New Brand, page 8."
+    },
+    {
+      "ordinal": 66,
+      "source_page": 8,
+      "stem": "What should an identity guide document?",
+      "options": [
+        "Stretch the mark freely to fill any space",
+        "Assume a 3D logo must be readable in every size",
+        "Clear space, type roles, color and approved alternatives",
+        "Change approved typefaces with every social post"
+      ],
+      "correct_mask": 4,
+      "rationale": "The course explains that clear space, type roles, color and approved alternatives. This answer follows the documented brand-development principle for the stated decision. Source: MAIC Brand New Brand, page 8."
+    },
+    {
+      "ordinal": 67,
+      "source_page": 8,
+      "stem": "Why do print and screen require separate color checks?",
+      "options": [
+        "Copy a rival's recognizable logo",
+        "Their reproduction media and constraints differ",
+        "Ignore contrast and print reproduction",
+        "Stretch the mark freely to fill any space"
+      ],
+      "correct_mask": 2,
+      "rationale": "The course explains that their reproduction media and constraints differ. This answer follows the documented brand-development principle for the stated decision. Source: MAIC Brand New Brand, page 8."
+    },
+    {
+      "ordinal": 68,
+      "source_page": 8,
+      "stem": "What should follow development of multiple brand marks?",
+      "options": [
+        "Function and recognition tests before approval",
+        "Assume a 3D logo must be readable in every size",
+        "Change approved typefaces with every social post",
+        "Copy a rival's recognizable logo"
+      ],
+      "correct_mask": 1,
+      "rationale": "The course explains that function and recognition tests before approval. This answer follows the documented brand-development principle for the stated decision. Source: MAIC Brand New Brand, page 8."
+    },
+    {
+      "ordinal": 69,
+      "source_page": 8,
+      "stem": "A logo is readable on signage but not a favicon. What may help?",
+      "options": [
+        "Ignore contrast and print reproduction",
+        "Stretch the mark freely to fill any space",
+        "Assume a 3D logo must be readable in every size",
+        "An approved simplified small-size variant"
+      ],
+      "correct_mask": 8,
+      "rationale": "The course explains that an approved simplified small-size variant. This answer follows the documented brand-development principle for the stated decision. Source: MAIC Brand New Brand, page 8."
+    },
+    {
+      "ordinal": 70,
+      "source_page": 8,
+      "stem": "The logo is stretched horizontally in an invoice. What is violated?",
+      "options": [
+        "Change approved typefaces with every social post",
+        "Copy a rival's recognizable logo",
+        "The identity's approved proportions",
+        "Ignore contrast and print reproduction"
+      ],
+      "correct_mask": 4,
+      "rationale": "The course explains that the identity's approved proportions. This answer follows the documented brand-development principle for the stated decision. Source: MAIC Brand New Brand, page 8."
+    },
+    {
+      "ordinal": 71,
+      "source_page": 9,
+      "stem": "Which event is a brand touchpoint?",
+      "options": [
+        "A booking confirmation or support interaction",
+        "Use different legal business names without explanation",
+        "Assume a functioning form is unimportant",
+        "Treat invoices and support as unrelated to branding"
+      ],
+      "correct_mask": 1,
+      "rationale": "The course explains that a booking confirmation or support interaction. This answer follows the documented brand-development principle for the stated decision. Source: MAIC Brand New Brand, page 9."
+    },
+    {
+      "ordinal": 72,
+      "source_page": 9,
+      "stem": "Why does a broken booking form harm the brand?",
+      "options": [
+        "Let mobile menu buttons jump around unpredictably",
+        "Change the approved logo in every template",
+        "Use different legal business names without explanation",
+        "The experience contradicts the promise of convenience"
+      ],
+      "correct_mask": 8,
+      "rationale": "The course explains that the experience contradicts the promise of convenience. This answer follows the documented brand-development principle for the stated decision. Source: MAIC Brand New Brand, page 9."
+    },
+    {
+      "ordinal": 73,
+      "source_page": 9,
+      "stem": "How should mobile and desktop identity relate?",
+      "options": [
+        "Assume a functioning form is unimportant",
+        "Treat invoices and support as unrelated to branding",
+        "Let mobile menu buttons jump around unpredictably",
+        "Use the same core identity with usable different layouts"
+      ],
+      "correct_mask": 8,
+      "rationale": "The course explains that use the same core identity with usable different layouts. This answer follows the documented brand-development principle for the stated decision. Source: MAIC Brand New Brand, page 9."
+    },
+    {
+      "ordinal": 74,
+      "source_page": 9,
+      "stem": "Why can different company names on the website and invoice create trouble?",
+      "options": [
+        "Change the approved logo in every template",
+        "Use different legal business names without explanation",
+        "Customers may doubt which entity provides the service",
+        "Assume a functioning form is unimportant"
+      ],
+      "correct_mask": 4,
+      "rationale": "The course explains that customers may doubt which entity provides the service. This answer follows the documented brand-development principle for the stated decision. Source: MAIC Brand New Brand, page 9."
+    },
+    {
+      "ordinal": 75,
+      "source_page": 9,
+      "stem": "What is the point of locked fields in a template?",
+      "options": [
+        "Protect approved marks and other fixed elements",
+        "Treat invoices and support as unrelated to branding",
+        "Let mobile menu buttons jump around unpredictably",
+        "Change the approved logo in every template"
+      ],
+      "correct_mask": 1,
+      "rationale": "The course explains that protect approved marks and other fixed elements. This answer follows the documented brand-development principle for the stated decision. Source: MAIC Brand New Brand, page 9."
+    },
+    {
+      "ordinal": 76,
+      "source_page": 9,
+      "stem": "What should a touchpoint audit examine?",
+      "options": [
+        "Clarity, accessibility, identity and actual service promise",
+        "Use different legal business names without explanation",
+        "Assume a functioning form is unimportant",
+        "Treat invoices and support as unrelated to branding"
+      ],
+      "correct_mask": 1,
+      "rationale": "The course explains that clarity, accessibility, identity and actual service promise. This answer follows the documented brand-development principle for the stated decision. Source: MAIC Brand New Brand, page 9."
+    },
+    {
+      "ordinal": 77,
+      "source_page": 9,
+      "stem": "Which support reply reinforces a scheduling promise?",
+      "options": [
+        "An accurate current time window and practical options",
+        "Let mobile menu buttons jump around unpredictably",
+        "Change the approved logo in every template",
+        "Use different legal business names without explanation"
+      ],
+      "correct_mask": 1,
+      "rationale": "The course explains that an accurate current time window and practical options. This answer follows the documented brand-development principle for the stated decision. Source: MAIC Brand New Brand, page 9."
+    },
+    {
+      "ordinal": 78,
+      "source_page": 9,
+      "stem": "Why is unpredictable menu movement a brand-experience fault?",
+      "options": [
+        "Assume a functioning form is unimportant",
+        "Treat invoices and support as unrelated to branding",
+        "It damages usability and customer confidence",
+        "Let mobile menu buttons jump around unpredictably"
+      ],
+      "correct_mask": 4,
+      "rationale": "The course explains that it damages usability and customer confidence. This answer follows the documented brand-development principle for the stated decision. Source: MAIC Brand New Brand, page 9."
+    },
+    {
+      "ordinal": 79,
+      "source_page": 9,
+      "stem": "An advertisement promises effortless booking but the form is broken. What failed?",
+      "options": [
+        "The operational delivery of the claimed experience",
+        "Change the approved logo in every template",
+        "Use different legal business names without explanation",
+        "Assume a functioning form is unimportant"
+      ],
+      "correct_mask": 1,
+      "rationale": "The course explains that the operational delivery of the claimed experience. This answer follows the documented brand-development principle for the stated decision. Source: MAIC Brand New Brand, page 9."
+    },
+    {
+      "ordinal": 80,
+      "source_page": 9,
+      "stem": "An invoice shows a different legal provider from the website. What is needed?",
+      "options": [
+        "Treat invoices and support as unrelated to branding",
+        "Let mobile menu buttons jump around unpredictably",
+        "A truthful clear explanation of the contracting entity",
+        "Change the approved logo in every template"
+      ],
+      "correct_mask": 4,
+      "rationale": "The course explains that a truthful clear explanation of the contracting entity. This answer follows the documented brand-development principle for the stated decision. Source: MAIC Brand New Brand, page 9."
+    },
+    {
+      "ordinal": 81,
+      "source_page": 10,
+      "stem": "What is a brand launch checklist meant to prevent?",
+      "options": [
+        "Treat page views as proof of long-term loyalty",
+        "Modify a master logo after every casual comment",
+        "Rights, content, usability and operational failures",
+        "Delete older approved identity versions"
+      ],
+      "correct_mask": 4,
+      "rationale": "The course explains that rights, content, usability and operational failures. This answer follows the documented brand-development principle for the stated decision. Source: MAIC Brand New Brand, page 10."
+    },
+    {
+      "ordinal": 82,
+      "source_page": 10,
+      "stem": "Why are views insufficient to demonstrate brand loyalty?",
+      "options": [
+        "Generalize a small sample to the entire market",
+        "Launch without checking URLs, rights or readability",
+        "Exposure does not establish repeat use or trust",
+        "Treat page views as proof of long-term loyalty"
+      ],
+      "correct_mask": 4,
+      "rationale": "The course explains that exposure does not establish repeat use or trust. This answer follows the documented brand-development principle for the stated decision. Source: MAIC Brand New Brand, page 10."
+    },
+    {
+      "ordinal": 83,
+      "source_page": 10,
+      "stem": "Why measure a baseline before launch?",
+      "options": [
+        "To interpret subsequent changes against prior evidence",
+        "Modify a master logo after every casual comment",
+        "Delete older approved identity versions",
+        "Generalize a small sample to the entire market"
+      ],
+      "correct_mask": 1,
+      "rationale": "The course explains that to interpret subsequent changes against prior evidence. This answer follows the documented brand-development principle for the stated decision. Source: MAIC Brand New Brand, page 10."
+    },
+    {
+      "ordinal": 84,
+      "source_page": 10,
+      "stem": "What can a small convenience sample support?",
+      "options": [
+        "Launch without checking URLs, rights or readability",
+        "Tentative findings about only the respondents examined",
+        "Treat page views as proof of long-term loyalty",
+        "Modify a master logo after every casual comment"
+      ],
+      "correct_mask": 2,
+      "rationale": "The course explains that tentative findings about only the respondents examined. This answer follows the documented brand-development principle for the stated decision. Source: MAIC Brand New Brand, page 10."
+    },
+    {
+      "ordinal": 85,
+      "source_page": 10,
+      "stem": "What should guide a major revision to approved identity?",
+      "options": [
+        "Delete older approved identity versions",
+        "Generalize a small sample to the entire market",
+        "Launch without checking URLs, rights or readability",
+        "Evidence of material confusion or functional problems"
+      ],
+      "correct_mask": 8,
+      "rationale": "The course explains that evidence of material confusion or functional problems. This answer follows the documented brand-development principle for the stated decision. Source: MAIC Brand New Brand, page 10."
+    },
+    {
+      "ordinal": 86,
+      "source_page": 10,
+      "stem": "Why archive past approved logos?",
+      "options": [
+        "Treat page views as proof of long-term loyalty",
+        "Modify a master logo after every casual comment",
+        "To keep a traceable version history",
+        "Delete older approved identity versions"
+      ],
+      "correct_mask": 4,
+      "rationale": "The course explains that to keep a traceable version history. This answer follows the documented brand-development principle for the stated decision. Source: MAIC Brand New Brand, page 10."
+    },
+    {
+      "ordinal": 87,
+      "source_page": 10,
+      "stem": "What does a brand-comprehension test ask?",
+      "options": [
+        "Generalize a small sample to the entire market",
+        "Can viewers recognize the offer and intended action?",
+        "Launch without checking URLs, rights or readability",
+        "Treat page views as proof of long-term loyalty"
+      ],
+      "correct_mask": 2,
+      "rationale": "The course explains that can viewers recognize the offer and intended action. This answer follows the documented brand-development principle for the stated decision. Source: MAIC Brand New Brand, page 10."
+    },
+    {
+      "ordinal": 88,
+      "source_page": 10,
+      "stem": "Why protect historic URLs during a rebrand?",
+      "options": [
+        "Modify a master logo after every casual comment",
+        "Delete older approved identity versions",
+        "Generalize a small sample to the entire market",
+        "Existing users may still depend on old links"
+      ],
+      "correct_mask": 8,
+      "rationale": "The course explains that existing users may still depend on old links. This answer follows the documented brand-development principle for the stated decision. Source: MAIC Brand New Brand, page 10."
+    },
+    {
+      "ordinal": 89,
+      "source_page": 10,
+      "stem": "Fourteen of twenty viewers understand an offer. What is the observed rate?",
+      "options": [
+        "70%",
+        "Launch without checking URLs, rights or readability",
+        "Treat page views as proof of long-term loyalty",
+        "Modify a master logo after every casual comment"
+      ],
+      "correct_mask": 1,
+      "rationale": "The course explains that 70%. This answer follows the documented brand-development principle for the stated decision. Source: MAIC Brand New Brand, page 10."
+    },
+    {
+      "ordinal": 90,
+      "source_page": 10,
+      "stem": "A friendly sample of twenty praises a logo. What cannot be concluded?",
+      "options": [
+        "Delete older approved identity versions",
+        "Generalize a small sample to the entire market",
+        "The entire market will respond in the same way",
+        "Launch without checking URLs, rights or readability"
+      ],
+      "correct_mask": 4,
+      "rationale": "The course explains that the entire market will respond in the same way. This answer follows the documented brand-development principle for the stated decision. Source: MAIC Brand New Brand, page 10."
+    },
+    {
+      "ordinal": 91,
+      "source_page": 11,
+      "stem": "What does the fictional StreetCycle brand offer?",
+      "options": [
+        "Scheduled mobile bicycle repairs in three districts",
+        "Guarantee ten-minute arrival in every country",
+        "State every invented name is trademark-cleared",
+        "Assume all customers need exactly the same repair service"
+      ],
+      "correct_mask": 1,
+      "rationale": "The course explains that scheduled mobile bicycle repairs in three districts. This answer follows the documented brand-development principle for the stated decision. Source: MAIC Brand New Brand, page 11."
+    },
+    {
+      "ordinal": 92,
+      "source_page": 11,
+      "stem": "Why was the first ten-minute claim rejected in the case?",
+      "options": [
+        "Present fictional interviews as verified market research",
+        "Replace the source-supported booking terms with promises",
+        "Guarantee ten-minute arrival in every country",
+        "The team could not deliver that promise consistently"
+      ],
+      "correct_mask": 8,
+      "rationale": "The course explains that the team could not deliver that promise consistently. This answer follows the documented brand-development principle for the stated decision. Source: MAIC Brand New Brand, page 11."
+    },
+    {
+      "ordinal": 93,
+      "source_page": 11,
+      "stem": "What do commuters in the case particularly value?",
+      "options": [
+        "State every invented name is trademark-cleared",
+        "Certainty about appointment timing",
+        "Assume all customers need exactly the same repair service",
+        "Present fictional interviews as verified market research"
+      ],
+      "correct_mask": 2,
+      "rationale": "The course explains that certainty about appointment timing. This answer follows the documented brand-development principle for the stated decision. Source: MAIC Brand New Brand, page 11."
+    },
+    {
+      "ordinal": 94,
+      "source_page": 11,
+      "stem": "What do fleet managers in the case particularly need?",
+      "options": [
+        "Replace the source-supported booking terms with promises",
+        "Guarantee ten-minute arrival in every country",
+        "Planned maintenance for multiple bicycles",
+        "State every invented name is trademark-cleared"
+      ],
+      "correct_mask": 4,
+      "rationale": "The course explains that planned maintenance for multiple bicycles. This answer follows the documented brand-development principle for the stated decision. Source: MAIC Brand New Brand, page 11."
+    },
+    {
+      "ordinal": 95,
+      "source_page": 11,
+      "stem": "What legal step remains even after a naming scorecard is completed?",
+      "options": [
+        "Relevant name and trademark clearance review",
+        "Assume all customers need exactly the same repair service",
+        "Present fictional interviews as verified market research",
+        "Replace the source-supported booking terms with promises"
+      ],
+      "correct_mask": 1,
+      "rationale": "The course explains that relevant name and trademark clearance review. This answer follows the documented brand-development principle for the stated decision. Source: MAIC Brand New Brand, page 11."
+    },
+    {
+      "ordinal": 96,
+      "source_page": 11,
+      "stem": "How should the hypothetical brand designs be presented?",
+      "options": [
+        "Guarantee ten-minute arrival in every country",
+        "State every invented name is trademark-cleared",
+        "As clearly marked original student mockups",
+        "Assume all customers need exactly the same repair service"
+      ],
+      "correct_mask": 4,
+      "rationale": "The course explains that as clearly marked original student mockups. This answer follows the documented brand-development principle for the stated decision. Source: MAIC Brand New Brand, page 11."
+    },
+    {
+      "ordinal": 97,
+      "source_page": 11,
+      "stem": "What should the booking card emphasize?",
+      "options": [
+        "Present fictional interviews as verified market research",
+        "A confirmed arrival window and transparent estimate",
+        "Replace the source-supported booking terms with promises",
+        "Guarantee ten-minute arrival in every country"
+      ],
+      "correct_mask": 2,
+      "rationale": "The course explains that a confirmed arrival window and transparent estimate. This answer follows the documented brand-development principle for the stated decision. Source: MAIC Brand New Brand, page 11."
+    },
+    {
+      "ordinal": 98,
+      "source_page": 11,
+      "stem": "Why do visual identity and booking operations need to agree?",
+      "options": [
+        "State every invented name is trademark-cleared",
+        "Assume all customers need exactly the same repair service",
+        "Customers judge whether experience matches the stated promise",
+        "Present fictional interviews as verified market research"
+      ],
+      "correct_mask": 4,
+      "rationale": "The course explains that customers judge whether experience matches the stated promise. This answer follows the documented brand-development principle for the stated decision. Source: MAIC Brand New Brand, page 11."
+    },
+    {
+      "ordinal": 99,
+      "source_page": 11,
+      "stem": "Twenty of twenty-five testers identify the service. What is the sample rate?",
+      "options": [
+        "Replace the source-supported booking terms with promises",
+        "Guarantee ten-minute arrival in every country",
+        "80%",
+        "State every invented name is trademark-cleared"
+      ],
+      "correct_mask": 4,
+      "rationale": "The course explains that 80%. This answer follows the documented brand-development principle for the stated decision. Source: MAIC Brand New Brand, page 11."
+    },
+    {
+      "ordinal": 100,
+      "source_page": 11,
+      "stem": "Eighteen of twenty-five testers identify the booking action. What is the sample rate?",
+      "options": [
+        "72%",
+        "Assume all customers need exactly the same repair service",
+        "Present fictional interviews as verified market research",
+        "Replace the source-supported booking terms with promises"
+      ],
+      "correct_mask": 1,
+      "rationale": "The course explains that 72%. This answer follows the documented brand-development principle for the stated decision. Source: MAIC Brand New Brand, page 11."
+    }
+  ]
+}
