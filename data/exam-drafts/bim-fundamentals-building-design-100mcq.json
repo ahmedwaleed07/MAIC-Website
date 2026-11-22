@@ -1,0 +1,1312 @@
+{
+  "course_id": "bim-fundamentals-building-design",
+  "source_manuscript": "data/course-manuscripts/bim-fundamentals-building-design.md",
+  "source_manuscript_blob_sha": "16707530cd1138b8f213ffa2674d9bae79e44381",
+  "source_pdf_sha256": null,
+  "bank_version": "draft-manuscript-20261123-v1",
+  "approval_status": "editorial_draft_pending_independent_review",
+  "number_of_questions": 100,
+  "note": "Independent source and exam-item review pending; no production student exam or external buildingSMART certification.",
+  "questions": [
+    {
+      "ordinal": 1,
+      "source_page": 2,
+      "stem": "What is BIM beyond a three-dimensional picture?",
+      "options": [
+        "Treat a 3D image as complete approved construction information",
+        "Ignore lifecycle operations and asset data",
+        "Present classroom modeling as official BIM certification",
+        "A coordinated process for structured building information"
+      ],
+      "correct_mask": 8,
+      "rationale": "The original course explains that a coordinated process for structured building information. This is the relevant BIM information, coordination or calculation principle for the stated scenario. Source: MAIC BIM Fundamentals: Smarter Building Design & Planning, page 2."
+    },
+    {
+      "ordinal": 2,
+      "source_page": 2,
+      "stem": "Why can geometry alone be insufficient for BIM?",
+      "options": [
+        "Assume all model properties are trustworthy by default",
+        "Use no unique IDs or revision labels",
+        "Treat a 3D image as complete approved construction information",
+        "Objects need trusted properties and relationships"
+      ],
+      "correct_mask": 8,
+      "rationale": "The original course explains that objects need trusted properties and relationships. This is the relevant BIM information, coordination or calculation principle for the stated scenario. Source: MAIC BIM Fundamentals: Smarter Building Design & Planning, page 2."
+    },
+    {
+      "ordinal": 3,
+      "source_page": 2,
+      "stem": "What is a useful BIM learner outcome?",
+      "options": [
+        "Ignore lifecycle operations and asset data",
+        "Define information needs and validate a coordinated model exchange",
+        "Present classroom modeling as official BIM certification",
+        "Assume all model properties are trustworthy by default"
+      ],
+      "correct_mask": 2,
+      "rationale": "The original course explains that define information needs and validate a coordinated model exchange. This is the relevant BIM information, coordination or calculation principle for the stated scenario. Source: MAIC BIM Fundamentals: Smarter Building Design & Planning, page 2."
+    },
+    {
+      "ordinal": 4,
+      "source_page": 2,
+      "stem": "What does BIM information status help distinguish?",
+      "options": [
+        "Use no unique IDs or revision labels",
+        "Treat a 3D image as complete approved construction information",
+        "Draft assumptions from approved deliverables",
+        "Ignore lifecycle operations and asset data"
+      ],
+      "correct_mask": 4,
+      "rationale": "The original course explains that draft assumptions from approved deliverables. This is the relevant BIM information, coordination or calculation principle for the stated scenario. Source: MAIC BIM Fundamentals: Smarter Building Design & Planning, page 2."
+    },
+    {
+      "ordinal": 5,
+      "source_page": 2,
+      "stem": "Why should a simple model have object identifiers?",
+      "options": [
+        "Present classroom modeling as official BIM certification",
+        "Assume all model properties are trustworthy by default",
+        "Use no unique IDs or revision labels",
+        "Elements must be reliably referenced and updated"
+      ],
+      "correct_mask": 8,
+      "rationale": "The original course explains that elements must be reliably referenced and updated. This is the relevant BIM information, coordination or calculation principle for the stated scenario. Source: MAIC BIM Fundamentals: Smarter Building Design & Planning, page 2."
+    },
+    {
+      "ordinal": 6,
+      "source_page": 2,
+      "stem": "What is an inappropriate claim after a BIM classroom task?",
+      "options": [
+        "Treat a 3D image as complete approved construction information",
+        "Ignore lifecycle operations and asset data",
+        "That the building is approved for construction",
+        "Present classroom modeling as official BIM certification"
+      ],
+      "correct_mask": 4,
+      "rationale": "The original course explains that that the building is approved for construction. This is the relevant BIM information, coordination or calculation principle for the stated scenario. Source: MAIC BIM Fundamentals: Smarter Building Design & Planning, page 2."
+    },
+    {
+      "ordinal": 7,
+      "source_page": 2,
+      "stem": "Which stakeholders may use building information after completion?",
+      "options": [
+        "Facility managers and asset owners",
+        "Assume all model properties are trustworthy by default",
+        "Use no unique IDs or revision labels",
+        "Treat a 3D image as complete approved construction information"
+      ],
+      "correct_mask": 1,
+      "rationale": "The original course explains that facility managers and asset owners. This is the relevant BIM information, coordination or calculation principle for the stated scenario. Source: MAIC BIM Fundamentals: Smarter Building Design & Planning, page 2."
+    },
+    {
+      "ordinal": 8,
+      "source_page": 2,
+      "stem": "What should be agreed before maximum model detail is produced?",
+      "options": [
+        "Ignore lifecycle operations and asset data",
+        "Present classroom modeling as official BIM certification",
+        "The decision and information requirements",
+        "Assume all model properties are trustworthy by default"
+      ],
+      "correct_mask": 4,
+      "rationale": "The original course explains that the decision and information requirements. This is the relevant BIM information, coordination or calculation principle for the stated scenario. Source: MAIC BIM Fundamentals: Smarter Building Design & Planning, page 2."
+    },
+    {
+      "ordinal": 9,
+      "source_page": 2,
+      "stem": "Why are fictional model values identified?",
+      "options": [
+        "They are not as-built records",
+        "Use no unique IDs or revision labels",
+        "Treat a 3D image as complete approved construction information",
+        "Ignore lifecycle operations and asset data"
+      ],
+      "correct_mask": 1,
+      "rationale": "The original course explains that they are not as-built records. This is the relevant BIM information, coordination or calculation principle for the stated scenario. Source: MAIC BIM Fundamentals: Smarter Building Design & Planning, page 2."
+    },
+    {
+      "ordinal": 10,
+      "source_page": 2,
+      "stem": "What is the study's core purpose?",
+      "options": [
+        "Present classroom modeling as official BIM certification",
+        "Assume all model properties are trustworthy by default",
+        "Responsible information sharing and coordination",
+        "Use no unique IDs or revision labels"
+      ],
+      "correct_mask": 4,
+      "rationale": "The original course explains that responsible information sharing and coordination. This is the relevant BIM information, coordination or calculation principle for the stated scenario. Source: MAIC BIM Fundamentals: Smarter Building Design & Planning, page 2."
+    },
+    {
+      "ordinal": 11,
+      "source_page": 3,
+      "stem": "What does a project information requirement define?",
+      "options": [
+        "Which information is needed for a specified decision",
+        "Require every detail before identifying the project goal",
+        "Ignore owner handover needs",
+        "Treat all stakeholders as needing identical information"
+      ],
+      "correct_mask": 1,
+      "rationale": "The original course explains that which information is needed for a specified decision. This is the relevant BIM information, coordination or calculation principle for the stated scenario. Source: MAIC BIM Fundamentals: Smarter Building Design & Planning, page 3."
+    },
+    {
+      "ordinal": 12,
+      "source_page": 3,
+      "stem": "Who may need equipment service data after handover?",
+      "options": [
+        "Facility managers",
+        "Use unverified geometry as as-built information",
+        "Allow no responsible reviewers",
+        "Require every detail before identifying the project goal"
+      ],
+      "correct_mask": 1,
+      "rationale": "The original course explains that facility managers. This is the relevant BIM information, coordination or calculation principle for the stated scenario. Source: MAIC BIM Fundamentals: Smarter Building Design & Planning, page 3."
+    },
+    {
+      "ordinal": 13,
+      "source_page": 3,
+      "stem": "Why should model elements carry a revision status?",
+      "options": [
+        "The same design may have successive versions",
+        "Ignore owner handover needs",
+        "Treat all stakeholders as needing identical information",
+        "Use unverified geometry as as-built information"
+      ],
+      "correct_mask": 1,
+      "rationale": "The original course explains that the same design may have successive versions. This is the relevant BIM information, coordination or calculation principle for the stated scenario. Source: MAIC BIM Fundamentals: Smarter Building Design & Planning, page 3."
+    },
+    {
+      "ordinal": 14,
+      "source_page": 3,
+      "stem": "What does an information delivery plan assign?",
+      "options": [
+        "Allow no responsible reviewers",
+        "Responsibility and timing of information",
+        "Require every detail before identifying the project goal",
+        "Ignore owner handover needs"
+      ],
+      "correct_mask": 2,
+      "rationale": "The original course explains that responsibility and timing of information. This is the relevant BIM information, coordination or calculation principle for the stated scenario. Source: MAIC BIM Fundamentals: Smarter Building Design & Planning, page 3."
+    },
+    {
+      "ordinal": 15,
+      "source_page": 3,
+      "stem": "Why might maximum geometric detail be premature?",
+      "options": [
+        "Early decisions may only require simple massing or areas",
+        "Treat all stakeholders as needing identical information",
+        "Use unverified geometry as as-built information",
+        "Allow no responsible reviewers"
+      ],
+      "correct_mask": 1,
+      "rationale": "The original course explains that early decisions may only require simple massing or areas. This is the relevant BIM information, coordination or calculation principle for the stated scenario. Source: MAIC BIM Fundamentals: Smarter Building Design & Planning, page 3."
+    },
+    {
+      "ordinal": 16,
+      "source_page": 3,
+      "stem": "What should distinguish as-designed from as-built data?",
+      "options": [
+        "Actual verification of installed or measured conditions",
+        "Require every detail before identifying the project goal",
+        "Ignore owner handover needs",
+        "Treat all stakeholders as needing identical information"
+      ],
+      "correct_mask": 1,
+      "rationale": "The original course explains that actual verification of installed or measured conditions. This is the relevant BIM information, coordination or calculation principle for the stated scenario. Source: MAIC BIM Fundamentals: Smarter Building Design & Planning, page 3."
+    },
+    {
+      "ordinal": 17,
+      "source_page": 3,
+      "stem": "What do contractors need from a coordination model?",
+      "options": [
+        "Use unverified geometry as as-built information",
+        "Reliable constructible information and resolved interfaces",
+        "Allow no responsible reviewers",
+        "Require every detail before identifying the project goal"
+      ],
+      "correct_mask": 2,
+      "rationale": "The original course explains that reliable constructible information and resolved interfaces. This is the relevant BIM information, coordination or calculation principle for the stated scenario. Source: MAIC BIM Fundamentals: Smarter Building Design & Planning, page 3."
+    },
+    {
+      "ordinal": 18,
+      "source_page": 3,
+      "stem": "Why should owner requirements be considered early?",
+      "options": [
+        "Ignore owner handover needs",
+        "Needed operational fields must be collected in time",
+        "Treat all stakeholders as needing identical information",
+        "Use unverified geometry as as-built information"
+      ],
+      "correct_mask": 2,
+      "rationale": "The original course explains that needed operational fields must be collected in time. This is the relevant BIM information, coordination or calculation principle for the stated scenario. Source: MAIC BIM Fundamentals: Smarter Building Design & Planning, page 3."
+    },
+    {
+      "ordinal": 19,
+      "source_page": 3,
+      "stem": "What is a good example of a required room property?",
+      "options": [
+        "Allow no responsible reviewers",
+        "Require every detail before identifying the project goal",
+        "Ignore owner handover needs",
+        "Unique room identifier and floor location"
+      ],
+      "correct_mask": 8,
+      "rationale": "The original course explains that unique room identifier and floor location. This is the relevant BIM information, coordination or calculation principle for the stated scenario. Source: MAIC BIM Fundamentals: Smarter Building Design & Planning, page 3."
+    },
+    {
+      "ordinal": 20,
+      "source_page": 3,
+      "stem": "What is an unresolved information gap?",
+      "options": [
+        "Treat all stakeholders as needing identical information",
+        "Use unverified geometry as as-built information",
+        "A field required for a decision but not yet verified",
+        "Allow no responsible reviewers"
+      ],
+      "correct_mask": 4,
+      "rationale": "The original course explains that a field required for a decision but not yet verified. This is the relevant BIM information, coordination or calculation principle for the stated scenario. Source: MAIC BIM Fundamentals: Smarter Building Design & Planning, page 3."
+    },
+    {
+      "ordinal": 21,
+      "source_page": 4,
+      "stem": "What is an instance property in a BIM model?",
+      "options": [
+        "Reuse the same instance identifier for every door",
+        "A value specific to one object occurrence",
+        "Treat visual appearance as complete metadata",
+        "Put unrelated facts into one uncontrolled text field"
+      ],
+      "correct_mask": 2,
+      "rationale": "The original course explains that a value specific to one object occurrence. This is the relevant BIM information, coordination or calculation principle for the stated scenario. Source: MAIC BIM Fundamentals: Smarter Building Design & Planning, page 4."
+    },
+    {
+      "ordinal": 22,
+      "source_page": 4,
+      "stem": "What is a type property?",
+      "options": [
+        "A value shared by objects of the same defined type",
+        "Use inconsistent units and object classification",
+        "Allow duplicate records in material takeoffs",
+        "Reuse the same instance identifier for every door"
+      ],
+      "correct_mask": 1,
+      "rationale": "The original course explains that a value shared by objects of the same defined type. This is the relevant BIM information, coordination or calculation principle for the stated scenario. Source: MAIC BIM Fundamentals: Smarter Building Design & Planning, page 4."
+    },
+    {
+      "ordinal": 23,
+      "source_page": 4,
+      "stem": "Why do repeated door instances need unique identifiers?",
+      "options": [
+        "Treat visual appearance as complete metadata",
+        "Put unrelated facts into one uncontrolled text field",
+        "Use inconsistent units and object classification",
+        "Individual locations and maintenance records differ"
+      ],
+      "correct_mask": 8,
+      "rationale": "The original course explains that individual locations and maintenance records differ. This is the relevant BIM information, coordination or calculation principle for the stated scenario. Source: MAIC BIM Fundamentals: Smarter Building Design & Planning, page 4."
+    },
+    {
+      "ordinal": 24,
+      "source_page": 4,
+      "stem": "What can a duplicated model object do to quantities?",
+      "options": [
+        "Allow duplicate records in material takeoffs",
+        "Reuse the same instance identifier for every door",
+        "Treat visual appearance as complete metadata",
+        "Inflate material or component totals"
+      ],
+      "correct_mask": 8,
+      "rationale": "The original course explains that inflate material or component totals. This is the relevant BIM information, coordination or calculation principle for the stated scenario. Source: MAIC BIM Fundamentals: Smarter Building Design & Planning, page 4."
+    },
+    {
+      "ordinal": 25,
+      "source_page": 4,
+      "stem": "What does object classification support?",
+      "options": [
+        "Meaningful grouping and data checks",
+        "Put unrelated facts into one uncontrolled text field",
+        "Use inconsistent units and object classification",
+        "Allow duplicate records in material takeoffs"
+      ],
+      "correct_mask": 1,
+      "rationale": "The original course explains that meaningful grouping and data checks. This is the relevant BIM information, coordination or calculation principle for the stated scenario. Source: MAIC BIM Fundamentals: Smarter Building Design & Planning, page 4."
+    },
+    {
+      "ordinal": 26,
+      "source_page": 4,
+      "stem": "Why are consistent units important in object properties?",
+      "options": [
+        "Reuse the same instance identifier for every door",
+        "Treat visual appearance as complete metadata",
+        "Put unrelated facts into one uncontrolled text field",
+        "Values must be comparable across models"
+      ],
+      "correct_mask": 8,
+      "rationale": "The original course explains that values must be comparable across models. This is the relevant BIM information, coordination or calculation principle for the stated scenario. Source: MAIC BIM Fundamentals: Smarter Building Design & Planning, page 4."
+    },
+    {
+      "ordinal": 27,
+      "source_page": 4,
+      "stem": "What is a common data-quality defect?",
+      "options": [
+        "A door linked to a nonexistent room",
+        "Use inconsistent units and object classification",
+        "Allow duplicate records in material takeoffs",
+        "Reuse the same instance identifier for every door"
+      ],
+      "correct_mask": 1,
+      "rationale": "The original course explains that a door linked to a nonexistent room. This is the relevant BIM information, coordination or calculation principle for the stated scenario. Source: MAIC BIM Fundamentals: Smarter Building Design & Planning, page 4."
+    },
+    {
+      "ordinal": 28,
+      "source_page": 4,
+      "stem": "What should an object schedule identify?",
+      "options": [
+        "Treat visual appearance as complete metadata",
+        "ID, type, location, attributes and status",
+        "Put unrelated facts into one uncontrolled text field",
+        "Use inconsistent units and object classification"
+      ],
+      "correct_mask": 2,
+      "rationale": "The original course explains that iD, type, location, attributes and status. This is the relevant BIM information, coordination or calculation principle for the stated scenario. Source: MAIC BIM Fundamentals: Smarter Building Design & Planning, page 4."
+    },
+    {
+      "ordinal": 29,
+      "source_page": 4,
+      "stem": "How many distinct instance IDs should ten doors normally have?",
+      "options": [
+        "Allow duplicate records in material takeoffs",
+        "Ten IDs",
+        "Reuse the same instance identifier for every door",
+        "Treat visual appearance as complete metadata"
+      ],
+      "correct_mask": 2,
+      "rationale": "The original course explains that ten IDs. This is the relevant BIM information, coordination or calculation principle for the stated scenario. Source: MAIC BIM Fundamentals: Smarter Building Design & Planning, page 4."
+    },
+    {
+      "ordinal": 30,
+      "source_page": 4,
+      "stem": "What is a risk of placing multiple facts in one free-text field?",
+      "options": [
+        "Put unrelated facts into one uncontrolled text field",
+        "Use inconsistent units and object classification",
+        "Automated validation and reuse become unreliable",
+        "Allow duplicate records in material takeoffs"
+      ],
+      "correct_mask": 4,
+      "rationale": "The original course explains that automated validation and reuse become unreliable. This is the relevant BIM information, coordination or calculation principle for the stated scenario. Source: MAIC BIM Fundamentals: Smarter Building Design & Planning, page 4."
+    },
+    {
+      "ordinal": 31,
+      "source_page": 5,
+      "stem": "What is a model clash candidate?",
+      "options": [
+        "Modify structural beams without engineer review",
+        "Ignore the models' shared coordinate origin",
+        "Overlapping or conflicting geometry requiring review",
+        "Use conflicting versions in the same coordination review"
+      ],
+      "correct_mask": 4,
+      "rationale": "The original course explains that overlapping or conflicting geometry requiring review. This is the relevant BIM information, coordination or calculation principle for the stated scenario. Source: MAIC BIM Fundamentals: Smarter Building Design & Planning, page 5."
+    },
+    {
+      "ordinal": 32,
+      "source_page": 5,
+      "stem": "Why does a clash detector not establish an engineering error automatically?",
+      "options": [
+        "Treat every automatic overlap as a proven error",
+        "Close issues without recorded decisions",
+        "Alignment or design intent may explain the result",
+        "Modify structural beams without engineer review"
+      ],
+      "correct_mask": 4,
+      "rationale": "The original course explains that alignment or design intent may explain the result. This is the relevant BIM information, coordination or calculation principle for the stated scenario. Source: MAIC BIM Fundamentals: Smarter Building Design & Planning, page 5."
+    },
+    {
+      "ordinal": 33,
+      "source_page": 5,
+      "stem": "What can cause a false clash?",
+      "options": [
+        "Ignore the models' shared coordinate origin",
+        "Use conflicting versions in the same coordination review",
+        "Treat every automatic overlap as a proven error",
+        "Different project coordinate origins"
+      ],
+      "correct_mask": 8,
+      "rationale": "The original course explains that different project coordinate origins. This is the relevant BIM information, coordination or calculation principle for the stated scenario. Source: MAIC BIM Fundamentals: Smarter Building Design & Planning, page 5."
+    },
+    {
+      "ordinal": 34,
+      "source_page": 5,
+      "stem": "Which disciplines may need to resolve a duct-beam conflict?",
+      "options": [
+        "Close issues without recorded decisions",
+        "Modify structural beams without engineer review",
+        "Ignore the models' shared coordinate origin",
+        "Mechanical and structural design teams"
+      ],
+      "correct_mask": 8,
+      "rationale": "The original course explains that mechanical and structural design teams. This is the relevant BIM information, coordination or calculation principle for the stated scenario. Source: MAIC BIM Fundamentals: Smarter Building Design & Planning, page 5."
+    },
+    {
+      "ordinal": 35,
+      "source_page": 5,
+      "stem": "Why should coordination issues have named owners?",
+      "options": [
+        "Someone must investigate and close the issue",
+        "Use conflicting versions in the same coordination review",
+        "Treat every automatic overlap as a proven error",
+        "Close issues without recorded decisions"
+      ],
+      "correct_mask": 1,
+      "rationale": "The original course explains that someone must investigate and close the issue. This is the relevant BIM information, coordination or calculation principle for the stated scenario. Source: MAIC BIM Fundamentals: Smarter Building Design & Planning, page 5."
+    },
+    {
+      "ordinal": 36,
+      "source_page": 5,
+      "stem": "What should be checked before modifying a structural support?",
+      "options": [
+        "Qualified structural review and alternatives",
+        "Modify structural beams without engineer review",
+        "Ignore the models' shared coordinate origin",
+        "Use conflicting versions in the same coordination review"
+      ],
+      "correct_mask": 1,
+      "rationale": "The original course explains that qualified structural review and alternatives. This is the relevant BIM information, coordination or calculation principle for the stated scenario. Source: MAIC BIM Fundamentals: Smarter Building Design & Planning, page 5."
+    },
+    {
+      "ordinal": 37,
+      "source_page": 5,
+      "stem": "What is a nongeometric information conflict?",
+      "options": [
+        "Treat every automatic overlap as a proven error",
+        "Different fire ratings recorded for the same door",
+        "Close issues without recorded decisions",
+        "Modify structural beams without engineer review"
+      ],
+      "correct_mask": 2,
+      "rationale": "The original course explains that different fire ratings recorded for the same door. This is the relevant BIM information, coordination or calculation principle for the stated scenario. Source: MAIC BIM Fundamentals: Smarter Building Design & Planning, page 5."
+    },
+    {
+      "ordinal": 38,
+      "source_page": 5,
+      "stem": "Why should solved clashes be retested?",
+      "options": [
+        "Ignore the models' shared coordinate origin",
+        "Use conflicting versions in the same coordination review",
+        "Treat every automatic overlap as a proven error",
+        "A revision can introduce another conflict"
+      ],
+      "correct_mask": 8,
+      "rationale": "The original course explains that a revision can introduce another conflict. This is the relevant BIM information, coordination or calculation principle for the stated scenario. Source: MAIC BIM Fundamentals: Smarter Building Design & Planning, page 5."
+    },
+    {
+      "ordinal": 39,
+      "source_page": 5,
+      "stem": "What does a coordination meeting need to retain?",
+      "options": [
+        "Close issues without recorded decisions",
+        "Recorded decisions and assigned actions",
+        "Modify structural beams without engineer review",
+        "Ignore the models' shared coordinate origin"
+      ],
+      "correct_mask": 2,
+      "rationale": "The original course explains that recorded decisions and assigned actions. This is the relevant BIM information, coordination or calculation principle for the stated scenario. Source: MAIC BIM Fundamentals: Smarter Building Design & Planning, page 5."
+    },
+    {
+      "ordinal": 40,
+      "source_page": 5,
+      "stem": "What should align across discipline models?",
+      "options": [
+        "Coordinates, units and relevant versions",
+        "Use conflicting versions in the same coordination review",
+        "Treat every automatic overlap as a proven error",
+        "Close issues without recorded decisions"
+      ],
+      "correct_mask": 1,
+      "rationale": "The original course explains that coordinates, units and relevant versions. This is the relevant BIM information, coordination or calculation principle for the stated scenario. Source: MAIC BIM Fundamentals: Smarter Building Design & Planning, page 5."
+    },
+    {
+      "ordinal": 41,
+      "source_page": 6,
+      "stem": "What does CDE stand for in BIM workflows?",
+      "options": [
+        "Treat a CDE as an unstructured public file drop",
+        "Common Data Environment",
+        "Give all users unrestricted infrastructure records",
+        "Ignore conflicting concurrent edits"
+      ],
+      "correct_mask": 2,
+      "rationale": "The original course explains that common Data Environment. This is the relevant BIM information, coordination or calculation principle for the stated scenario. Source: MAIC BIM Fundamentals: Smarter Building Design & Planning, page 6."
+    },
+    {
+      "ordinal": 42,
+      "source_page": 6,
+      "stem": "What makes a CDE more than a storage folder?",
+      "options": [
+        "Publish early drafts as approved instructions",
+        "Statuses, permissions, revision and approval processes",
+        "Keep no information version history",
+        "Treat a CDE as an unstructured public file drop"
+      ],
+      "correct_mask": 2,
+      "rationale": "The original course explains that statuses, permissions, revision and approval processes. This is the relevant BIM information, coordination or calculation principle for the stated scenario. Source: MAIC BIM Fundamentals: Smarter Building Design & Planning, page 6."
+    },
+    {
+      "ordinal": 43,
+      "source_page": 6,
+      "stem": "Why keep draft and published information distinct?",
+      "options": [
+        "Unapproved models must not be treated as construction instructions",
+        "Give all users unrestricted infrastructure records",
+        "Ignore conflicting concurrent edits",
+        "Publish early drafts as approved instructions"
+      ],
+      "correct_mask": 1,
+      "rationale": "The original course explains that unapproved models must not be treated as construction instructions. This is the relevant BIM information, coordination or calculation principle for the stated scenario. Source: MAIC BIM Fundamentals: Smarter Building Design & Planning, page 6."
+    },
+    {
+      "ordinal": 44,
+      "source_page": 6,
+      "stem": "What is a purpose of archived information?",
+      "options": [
+        "Preserve superseded decisions and traceability",
+        "Keep no information version history",
+        "Treat a CDE as an unstructured public file drop",
+        "Give all users unrestricted infrastructure records"
+      ],
+      "correct_mask": 1,
+      "rationale": "The original course explains that preserve superseded decisions and traceability. This is the relevant BIM information, coordination or calculation principle for the stated scenario. Source: MAIC BIM Fundamentals: Smarter Building Design & Planning, page 6."
+    },
+    {
+      "ordinal": 45,
+      "source_page": 6,
+      "stem": "Why should model files have clear revision labels?",
+      "options": [
+        "Ignore conflicting concurrent edits",
+        "Recipients need to know which version applies",
+        "Publish early drafts as approved instructions",
+        "Keep no information version history"
+      ],
+      "correct_mask": 2,
+      "rationale": "The original course explains that recipients need to know which version applies. This is the relevant BIM information, coordination or calculation principle for the stated scenario. Source: MAIC BIM Fundamentals: Smarter Building Design & Planning, page 6."
+    },
+    {
+      "ordinal": 46,
+      "source_page": 6,
+      "stem": "What is an access-control requirement?",
+      "options": [
+        "Only authorized people see restricted project records",
+        "Treat a CDE as an unstructured public file drop",
+        "Give all users unrestricted infrastructure records",
+        "Ignore conflicting concurrent edits"
+      ],
+      "correct_mask": 1,
+      "rationale": "The original course explains that only authorized people see restricted project records. This is the relevant BIM information, coordination or calculation principle for the stated scenario. Source: MAIC BIM Fundamentals: Smarter Building Design & Planning, page 6."
+    },
+    {
+      "ordinal": 47,
+      "source_page": 6,
+      "stem": "Why is a generic workflow diagram not a security audit?",
+      "options": [
+        "Publish early drafts as approved instructions",
+        "Keep no information version history",
+        "Treat a CDE as an unstructured public file drop",
+        "Actual system settings and behavior need testing"
+      ],
+      "correct_mask": 8,
+      "rationale": "The original course explains that actual system settings and behavior need testing. This is the relevant BIM information, coordination or calculation principle for the stated scenario. Source: MAIC BIM Fundamentals: Smarter Building Design & Planning, page 6."
+    },
+    {
+      "ordinal": 48,
+      "source_page": 6,
+      "stem": "What should happen if contractors rely on an outdated model?",
+      "options": [
+        "Give all users unrestricted infrastructure records",
+        "Ignore conflicting concurrent edits",
+        "Identify the correct published issue before changing work",
+        "Publish early drafts as approved instructions"
+      ],
+      "correct_mask": 4,
+      "rationale": "The original course explains that identify the correct published issue before changing work. This is the relevant BIM information, coordination or calculation principle for the stated scenario. Source: MAIC BIM Fundamentals: Smarter Building Design & Planning, page 6."
+    },
+    {
+      "ordinal": 49,
+      "source_page": 6,
+      "stem": "What should a release checklist verify?",
+      "options": [
+        "Keep no information version history",
+        "Treat a CDE as an unstructured public file drop",
+        "Give all users unrestricted infrastructure records",
+        "Content, status, version and approvals"
+      ],
+      "correct_mask": 8,
+      "rationale": "The original course explains that content, status, version and approvals. This is the relevant BIM information, coordination or calculation principle for the stated scenario. Source: MAIC BIM Fundamentals: Smarter Building Design & Planning, page 6."
+    },
+    {
+      "ordinal": 50,
+      "source_page": 6,
+      "stem": "Why should concurrent conflicting edits be reconciled?",
+      "options": [
+        "Ignore conflicting concurrent edits",
+        "Publish early drafts as approved instructions",
+        "Keep no information version history",
+        "The project needs one coherent trusted information state"
+      ],
+      "correct_mask": 8,
+      "rationale": "The original course explains that the project needs one coherent trusted information state. This is the relevant BIM information, coordination or calculation principle for the stated scenario. Source: MAIC BIM Fundamentals: Smarter Building Design & Planning, page 6."
+    },
+    {
+      "ordinal": 51,
+      "source_page": 7,
+      "stem": "What does IFC stand for?",
+      "options": [
+        "Call every IFC development branch an official ISO release",
+        "Industry Foundation Classes",
+        "Treat IFC as a proprietary format for one vendor",
+        "Skip exchange validation because the extension is supported"
+      ],
+      "correct_mask": 2,
+      "rationale": "The original course explains that industry Foundation Classes. This is the relevant BIM information, coordination or calculation principle for the stated scenario. Source: MAIC BIM Fundamentals: Smarter Building Design & Planning, page 7."
+    },
+    {
+      "ordinal": 52,
+      "source_page": 7,
+      "stem": "What type of standard is IFC?",
+      "options": [
+        "Assume every tool transfers all property values perfectly",
+        "Ignore object count differences in imported data",
+        "Call every IFC development branch an official ISO release",
+        "An open vendor-neutral information schema"
+      ],
+      "correct_mask": 8,
+      "rationale": "The original course explains that an open vendor-neutral information schema. This is the relevant BIM information, coordination or calculation principle for the stated scenario. Source: MAIC BIM Fundamentals: Smarter Building Design & Planning, page 7."
+    },
+    {
+      "ordinal": 53,
+      "source_page": 7,
+      "stem": "Which organization develops and maintains IFC?",
+      "options": [
+        "Treat IFC as a proprietary format for one vendor",
+        "Skip exchange validation because the extension is supported",
+        "Assume every tool transfers all property values perfectly",
+        "buildingSMART International"
+      ],
+      "correct_mask": 8,
+      "rationale": "The original course explains that buildingSMART International. This is the relevant BIM information, coordination or calculation principle for the stated scenario. Source: MAIC BIM Fundamentals: Smarter Building Design & Planning, page 7."
+    },
+    {
+      "ordinal": 54,
+      "source_page": 7,
+      "stem": "Which international standard publishes IFC information?",
+      "options": [
+        "Ignore object count differences in imported data",
+        "Call every IFC development branch an official ISO release",
+        "Treat IFC as a proprietary format for one vendor",
+        "ISO 16739"
+      ],
+      "correct_mask": 8,
+      "rationale": "The original course explains that iSO 16739. This is the relevant BIM information, coordination or calculation principle for the stated scenario. Source: MAIC BIM Fundamentals: Smarter Building Design & Planning, page 7."
+    },
+    {
+      "ordinal": 55,
+      "source_page": 7,
+      "stem": "What is the currently identified official IFC 4.3 release?",
+      "options": [
+        "IFC 4.3.2.0",
+        "Skip exchange validation because the extension is supported",
+        "Assume every tool transfers all property values perfectly",
+        "Ignore object count differences in imported data"
+      ],
+      "correct_mask": 1,
+      "rationale": "The original course explains that iFC 4.3.2.0. This is the relevant BIM information, coordination or calculation principle for the stated scenario. Source: MAIC BIM Fundamentals: Smarter Building Design & Planning, page 7."
+    },
+    {
+      "ordinal": 56,
+      "source_page": 7,
+      "stem": "Which ISO edition is associated with that release?",
+      "options": [
+        "Call every IFC development branch an official ISO release",
+        "Treat IFC as a proprietary format for one vendor",
+        "Skip exchange validation because the extension is supported",
+        "ISO 16739-1:2024"
+      ],
+      "correct_mask": 8,
+      "rationale": "The original course explains that iSO 16739-1:2024. This is the relevant BIM information, coordination or calculation principle for the stated scenario. Source: MAIC BIM Fundamentals: Smarter Building Design & Planning, page 7."
+    },
+    {
+      "ordinal": 57,
+      "source_page": 7,
+      "stem": "Why does IFC support not guarantee perfect exchange?",
+      "options": [
+        "Assume every tool transfers all property values perfectly",
+        "Ignore object count differences in imported data",
+        "Call every IFC development branch an official ISO release",
+        "Some properties and relationships may be lost or mapped differently"
+      ],
+      "correct_mask": 8,
+      "rationale": "The original course explains that some properties and relationships may be lost or mapped differently. This is the relevant BIM information, coordination or calculation principle for the stated scenario. Source: MAIC BIM Fundamentals: Smarter Building Design & Planning, page 7."
+    },
+    {
+      "ordinal": 58,
+      "source_page": 7,
+      "stem": "What should be tested after importing IFC?",
+      "options": [
+        "Treat IFC as a proprietary format for one vendor",
+        "Skip exchange validation because the extension is supported",
+        "Object identities, geometry, properties and counts",
+        "Assume every tool transfers all property values perfectly"
+      ],
+      "correct_mask": 4,
+      "rationale": "The original course explains that object identities, geometry, properties and counts. This is the relevant BIM information, coordination or calculation principle for the stated scenario. Source: MAIC BIM Fundamentals: Smarter Building Design & Planning, page 7."
+    },
+    {
+      "ordinal": 59,
+      "source_page": 7,
+      "stem": "Why should draft IFC versions not be called final standards?",
+      "options": [
+        "They are still under development",
+        "Ignore object count differences in imported data",
+        "Call every IFC development branch an official ISO release",
+        "Treat IFC as a proprietary format for one vendor"
+      ],
+      "correct_mask": 1,
+      "rationale": "The original course explains that they are still under development. This is the relevant BIM information, coordination or calculation principle for the stated scenario. Source: MAIC BIM Fundamentals: Smarter Building Design & Planning, page 7."
+    },
+    {
+      "ordinal": 60,
+      "source_page": 7,
+      "stem": "An export has twenty rooms but the receiver finds nineteen. What is appropriate?",
+      "options": [
+        "Skip exchange validation because the extension is supported",
+        "Investigate the missing object before relying on the exchange",
+        "Assume every tool transfers all property values perfectly",
+        "Ignore object count differences in imported data"
+      ],
+      "correct_mask": 2,
+      "rationale": "The original course explains that investigate the missing object before relying on the exchange. This is the relevant BIM information, coordination or calculation principle for the stated scenario. Source: MAIC BIM Fundamentals: Smarter Building Design & Planning, page 7."
+    },
+    {
+      "ordinal": 61,
+      "source_page": 8,
+      "stem": "What is 4D BIM commonly associated with?",
+      "options": [
+        "Treat visual 4D animations as certified schedules",
+        "Assume material cost includes all labor and delivery",
+        "Construction schedule and time information",
+        "Guarantee estimates from geometry alone"
+      ],
+      "correct_mask": 4,
+      "rationale": "The original course explains that construction schedule and time information. This is the relevant BIM information, coordination or calculation principle for the stated scenario. Source: MAIC BIM Fundamentals: Smarter Building Design & Planning, page 8."
+    },
+    {
+      "ordinal": 62,
+      "source_page": 8,
+      "stem": "What is 5D BIM commonly associated with?",
+      "options": [
+        "Use cost totals without quantities or unit prices",
+        "Ignore duplicated model objects",
+        "Treat visual 4D animations as certified schedules",
+        "Cost-related information integration"
+      ],
+      "correct_mask": 8,
+      "rationale": "The original course explains that cost-related information integration. This is the relevant BIM information, coordination or calculation principle for the stated scenario. Source: MAIC BIM Fundamentals: Smarter Building Design & Planning, page 8."
+    },
+    {
+      "ordinal": 63,
+      "source_page": 8,
+      "stem": "Why do 4D labels not guarantee realistic dates?",
+      "options": [
+        "Assume material cost includes all labor and delivery",
+        "Guarantee estimates from geometry alone",
+        "Schedules still depend on reliable inputs and dependencies",
+        "Use cost totals without quantities or unit prices"
+      ],
+      "correct_mask": 4,
+      "rationale": "The original course explains that schedules still depend on reliable inputs and dependencies. This is the relevant BIM information, coordination or calculation principle for the stated scenario. Source: MAIC BIM Fundamentals: Smarter Building Design & Planning, page 8."
+    },
+    {
+      "ordinal": 64,
+      "source_page": 8,
+      "stem": "Why can model quantities be inaccurate?",
+      "options": [
+        "Objects may be omitted, duplicated or misclassified",
+        "Ignore duplicated model objects",
+        "Treat visual 4D animations as certified schedules",
+        "Assume material cost includes all labor and delivery"
+      ],
+      "correct_mask": 1,
+      "rationale": "The original course explains that objects may be omitted, duplicated or misclassified. This is the relevant BIM information, coordination or calculation principle for the stated scenario. Source: MAIC BIM Fundamentals: Smarter Building Design & Planning, page 8."
+    },
+    {
+      "ordinal": 65,
+      "source_page": 8,
+      "stem": "What should accompany a direct material cost estimate?",
+      "options": [
+        "Guarantee estimates from geometry alone",
+        "Use cost totals without quantities or unit prices",
+        "Explicit quantities, unit prices and exclusions",
+        "Ignore duplicated model objects"
+      ],
+      "correct_mask": 4,
+      "rationale": "The original course explains that explicit quantities, unit prices and exclusions. This is the relevant BIM information, coordination or calculation principle for the stated scenario. Source: MAIC BIM Fundamentals: Smarter Building Design & Planning, page 8."
+    },
+    {
+      "ordinal": 66,
+      "source_page": 8,
+      "stem": "Why must labor be considered separately from material subtotal?",
+      "options": [
+        "Treat visual 4D animations as certified schedules",
+        "Material price alone is not installed project cost",
+        "Assume material cost includes all labor and delivery",
+        "Guarantee estimates from geometry alone"
+      ],
+      "correct_mask": 2,
+      "rationale": "The original course explains that material price alone is not installed project cost. This is the relevant BIM information, coordination or calculation principle for the stated scenario. Source: MAIC BIM Fundamentals: Smarter Building Design & Planning, page 8."
+    },
+    {
+      "ordinal": 67,
+      "source_page": 8,
+      "stem": "What does a change to wall material potentially affect?",
+      "options": [
+        "Use cost totals without quantities or unit prices",
+        "Cost, procurement and performance",
+        "Ignore duplicated model objects",
+        "Treat visual 4D animations as certified schedules"
+      ],
+      "correct_mask": 2,
+      "rationale": "The original course explains that cost, procurement and performance. This is the relevant BIM information, coordination or calculation principle for the stated scenario. Source: MAIC BIM Fundamentals: Smarter Building Design & Planning, page 8."
+    },
+    {
+      "ordinal": 68,
+      "source_page": 8,
+      "stem": "What is the benefit of reconciling model takeoffs?",
+      "options": [
+        "Assume material cost includes all labor and delivery",
+        "Detect quantity inconsistencies before decisions",
+        "Guarantee estimates from geometry alone",
+        "Use cost totals without quantities or unit prices"
+      ],
+      "correct_mask": 2,
+      "rationale": "The original course explains that detect quantity inconsistencies before decisions. This is the relevant BIM information, coordination or calculation principle for the stated scenario. Source: MAIC BIM Fundamentals: Smarter Building Design & Planning, page 8."
+    },
+    {
+      "ordinal": 69,
+      "source_page": 8,
+      "stem": "Four cubic meters at $180 per cubic meter cost how much?",
+      "options": [
+        "Ignore duplicated model objects",
+        "Treat visual 4D animations as certified schedules",
+        "Assume material cost includes all labor and delivery",
+        "$720"
+      ],
+      "correct_mask": 8,
+      "rationale": "The original course explains that $720. This is the relevant BIM information, coordination or calculation principle for the stated scenario. Source: MAIC BIM Fundamentals: Smarter Building Design & Planning, page 8."
+    },
+    {
+      "ordinal": 70,
+      "source_page": 8,
+      "stem": "Is $720 the guaranteed complete construction cost?",
+      "options": [
+        "Guarantee estimates from geometry alone",
+        "Use cost totals without quantities or unit prices",
+        "No, it excludes other project costs",
+        "Ignore duplicated model objects"
+      ],
+      "correct_mask": 4,
+      "rationale": "The original course explains that no, it excludes other project costs. This is the relevant BIM information, coordination or calculation principle for the stated scenario. Source: MAIC BIM Fundamentals: Smarter Building Design & Planning, page 8."
+    },
+    {
+      "ordinal": 71,
+      "source_page": 9,
+      "stem": "What is an asset information requirement after handover?",
+      "options": [
+        "Treat design-intent equipment as verified installed data",
+        "Publish all sensitive facility records openly",
+        "Unique equipment identity and maintenance details",
+        "Assume handover ends the need for future updates"
+      ],
+      "correct_mask": 4,
+      "rationale": "The original course explains that unique equipment identity and maintenance details. This is the relevant BIM information, coordination or calculation principle for the stated scenario. Source: MAIC BIM Fundamentals: Smarter Building Design & Planning, page 9."
+    },
+    {
+      "ordinal": 72,
+      "source_page": 9,
+      "stem": "Why is a visual equipment box insufficient for facility management?",
+      "options": [
+        "It may lack actual installed asset information",
+        "Ignore missing manuals and service intervals",
+        "Use no identity for repeated equipment assets",
+        "Treat design-intent equipment as verified installed data"
+      ],
+      "correct_mask": 1,
+      "rationale": "The original course explains that it may lack actual installed asset information. This is the relevant BIM information, coordination or calculation principle for the stated scenario. Source: MAIC BIM Fundamentals: Smarter Building Design & Planning, page 9."
+    },
+    {
+      "ordinal": 73,
+      "source_page": 9,
+      "stem": "Which property may be needed for a replacement part?",
+      "options": [
+        "Publish all sensitive facility records openly",
+        "Assume handover ends the need for future updates",
+        "Manufacturer and model number",
+        "Ignore missing manuals and service intervals"
+      ],
+      "correct_mask": 4,
+      "rationale": "The original course explains that manufacturer and model number. This is the relevant BIM information, coordination or calculation principle for the stated scenario. Source: MAIC BIM Fundamentals: Smarter Building Design & Planning, page 9."
+    },
+    {
+      "ordinal": 74,
+      "source_page": 9,
+      "stem": "Why should commissioning verify equipment data?",
+      "options": [
+        "Use no identity for repeated equipment assets",
+        "Treat design-intent equipment as verified installed data",
+        "Design intent may differ from actual installation",
+        "Publish all sensitive facility records openly"
+      ],
+      "correct_mask": 4,
+      "rationale": "The original course explains that design intent may differ from actual installation. This is the relevant BIM information, coordination or calculation principle for the stated scenario. Source: MAIC BIM Fundamentals: Smarter Building Design & Planning, page 9."
+    },
+    {
+      "ordinal": 75,
+      "source_page": 9,
+      "stem": "What should an asset handover record include?",
+      "options": [
+        "Location, service interval and relevant manuals",
+        "Assume handover ends the need for future updates",
+        "Ignore missing manuals and service intervals",
+        "Use no identity for repeated equipment assets"
+      ],
+      "correct_mask": 1,
+      "rationale": "The original course explains that location, service interval and relevant manuals. This is the relevant BIM information, coordination or calculation principle for the stated scenario. Source: MAIC BIM Fundamentals: Smarter Building Design & Planning, page 9."
+    },
+    {
+      "ordinal": 76,
+      "source_page": 9,
+      "stem": "Why restrict some facility information?",
+      "options": [
+        "Sensitive details may expose infrastructure risks",
+        "Treat design-intent equipment as verified installed data",
+        "Publish all sensitive facility records openly",
+        "Assume handover ends the need for future updates"
+      ],
+      "correct_mask": 1,
+      "rationale": "The original course explains that sensitive details may expose infrastructure risks. This is the relevant BIM information, coordination or calculation principle for the stated scenario. Source: MAIC BIM Fundamentals: Smarter Building Design & Planning, page 9."
+    },
+    {
+      "ordinal": 77,
+      "source_page": 9,
+      "stem": "What should happen when an asset changes in use?",
+      "options": [
+        "Ignore missing manuals and service intervals",
+        "Update its responsible information record",
+        "Use no identity for repeated equipment assets",
+        "Treat design-intent equipment as verified installed data"
+      ],
+      "correct_mask": 2,
+      "rationale": "The original course explains that update its responsible information record. This is the relevant BIM information, coordination or calculation principle for the stated scenario. Source: MAIC BIM Fundamentals: Smarter Building Design & Planning, page 9."
+    },
+    {
+      "ordinal": 78,
+      "source_page": 9,
+      "stem": "Why collect handover fields before project completion?",
+      "options": [
+        "Publish all sensitive facility records openly",
+        "Assume handover ends the need for future updates",
+        "Ignore missing manuals and service intervals",
+        "Required data may be lost if requested too late"
+      ],
+      "correct_mask": 8,
+      "rationale": "The original course explains that required data may be lost if requested too late. This is the relevant BIM information, coordination or calculation principle for the stated scenario. Source: MAIC BIM Fundamentals: Smarter Building Design & Planning, page 9."
+    },
+    {
+      "ordinal": 79,
+      "source_page": 9,
+      "stem": "Three of twenty units have no manuals. What is the data-quality issue?",
+      "options": [
+        "Use no identity for repeated equipment assets",
+        "Treat design-intent equipment as verified installed data",
+        "Incomplete asset handover information",
+        "Publish all sensitive facility records openly"
+      ],
+      "correct_mask": 4,
+      "rationale": "The original course explains that incomplete asset handover information. This is the relevant BIM information, coordination or calculation principle for the stated scenario. Source: MAIC BIM Fundamentals: Smarter Building Design & Planning, page 9."
+    },
+    {
+      "ordinal": 80,
+      "source_page": 9,
+      "stem": "What should a facilities team know about data source status?",
+      "options": [
+        "Assume handover ends the need for future updates",
+        "Ignore missing manuals and service intervals",
+        "Whether it is verified as installed or only proposed",
+        "Use no identity for repeated equipment assets"
+      ],
+      "correct_mask": 4,
+      "rationale": "The original course explains that whether it is verified as installed or only proposed. This is the relevant BIM information, coordination or calculation principle for the stated scenario. Source: MAIC BIM Fundamentals: Smarter Building Design & Planning, page 9."
+    },
+    {
+      "ordinal": 81,
+      "source_page": 10,
+      "stem": "What does BIM quality assurance check?",
+      "options": [
+        "Assume passing one rule proves full construction compliance",
+        "Ignore model coordinates and approvals",
+        "Information completeness, geometry, relations and release state",
+        "Treat a visualization as engineering analysis"
+      ],
+      "correct_mask": 4,
+      "rationale": "The original course explains that information completeness, geometry, relations and release state. This is the relevant BIM information, coordination or calculation principle for the stated scenario. Source: MAIC BIM Fundamentals: Smarter Building Design & Planning, page 10."
+    },
+    {
+      "ordinal": 82,
+      "source_page": 10,
+      "stem": "What is a complete issue record intended to contain?",
+      "options": [
+        "Delete clash reports before retesting",
+        "Problem, evidence, affected elements, owner and closure",
+        "Use undated or ambiguous file versions",
+        "Assume passing one rule proves full construction compliance"
+      ],
+      "correct_mask": 2,
+      "rationale": "The original course explains that problem, evidence, affected elements, owner and closure. This is the relevant BIM information, coordination or calculation principle for the stated scenario. Source: MAIC BIM Fundamentals: Smarter Building Design & Planning, page 10."
+    },
+    {
+      "ordinal": 83,
+      "source_page": 10,
+      "stem": "Why must model location be checked for coordination?",
+      "options": [
+        "Ignore model coordinates and approvals",
+        "Treat a visualization as engineering analysis",
+        "Delete clash reports before retesting",
+        "Misalignment can create false spatial conflicts"
+      ],
+      "correct_mask": 8,
+      "rationale": "The original course explains that misalignment can create false spatial conflicts. This is the relevant BIM information, coordination or calculation principle for the stated scenario. Source: MAIC BIM Fundamentals: Smarter Building Design & Planning, page 10."
+    },
+    {
+      "ordinal": 84,
+      "source_page": 10,
+      "stem": "What is a reviewer's approval supposed to identify?",
+      "options": [
+        "Use undated or ambiguous file versions",
+        "Assume passing one rule proves full construction compliance",
+        "Ignore model coordinates and approvals",
+        "The exact approved file and version"
+      ],
+      "correct_mask": 8,
+      "rationale": "The original course explains that the exact approved file and version. This is the relevant BIM information, coordination or calculation principle for the stated scenario. Source: MAIC BIM Fundamentals: Smarter Building Design & Planning, page 10."
+    },
+    {
+      "ordinal": 85,
+      "source_page": 10,
+      "stem": "Why are simulations not automatic proof of physical performance?",
+      "options": [
+        "Treat a visualization as engineering analysis",
+        "Results depend on data, assumptions and specialist methods",
+        "Delete clash reports before retesting",
+        "Use undated or ambiguous file versions"
+      ],
+      "correct_mask": 2,
+      "rationale": "The original course explains that results depend on data, assumptions and specialist methods. This is the relevant BIM information, coordination or calculation principle for the stated scenario. Source: MAIC BIM Fundamentals: Smarter Building Design & Planning, page 10."
+    },
+    {
+      "ordinal": 86,
+      "source_page": 10,
+      "stem": "What should happen after closing a model clash?",
+      "options": [
+        "Retest the affected coordination model",
+        "Assume passing one rule proves full construction compliance",
+        "Ignore model coordinates and approvals",
+        "Treat a visualization as engineering analysis"
+      ],
+      "correct_mask": 1,
+      "rationale": "The original course explains that retest the affected coordination model. This is the relevant BIM information, coordination or calculation principle for the stated scenario. Source: MAIC BIM Fundamentals: Smarter Building Design & Planning, page 10."
+    },
+    {
+      "ordinal": 87,
+      "source_page": 10,
+      "stem": "What should an object QA checklist include?",
+      "options": [
+        "Delete clash reports before retesting",
+        "Identifiers, units, properties and classifications",
+        "Use undated or ambiguous file versions",
+        "Assume passing one rule proves full construction compliance"
+      ],
+      "correct_mask": 2,
+      "rationale": "The original course explains that identifiers, units, properties and classifications. This is the relevant BIM information, coordination or calculation principle for the stated scenario. Source: MAIC BIM Fundamentals: Smarter Building Design & Planning, page 10."
+    },
+    {
+      "ordinal": 88,
+      "source_page": 10,
+      "stem": "What does a successful automated check not automatically establish?",
+      "options": [
+        "Ignore model coordinates and approvals",
+        "Treat a visualization as engineering analysis",
+        "Delete clash reports before retesting",
+        "Building-code or engineering compliance"
+      ],
+      "correct_mask": 8,
+      "rationale": "The original course explains that building-code or engineering compliance. This is the relevant BIM information, coordination or calculation principle for the stated scenario. Source: MAIC BIM Fundamentals: Smarter Building Design & Planning, page 10."
+    },
+    {
+      "ordinal": 89,
+      "source_page": 10,
+      "stem": "Why should a change log be preserved?",
+      "options": [
+        "Use undated or ambiguous file versions",
+        "Assume passing one rule proves full construction compliance",
+        "Decisions and corrections must be traceable",
+        "Ignore model coordinates and approvals"
+      ],
+      "correct_mask": 4,
+      "rationale": "The original course explains that decisions and corrections must be traceable. This is the relevant BIM information, coordination or calculation principle for the stated scenario. Source: MAIC BIM Fundamentals: Smarter Building Design & Planning, page 10."
+    },
+    {
+      "ordinal": 90,
+      "source_page": 10,
+      "stem": "What should be done with unresolved high-impact conflicts?",
+      "options": [
+        "Treat a visualization as engineering analysis",
+        "Delete clash reports before retesting",
+        "Escalate to the responsible qualified parties",
+        "Use undated or ambiguous file versions"
+      ],
+      "correct_mask": 4,
+      "rationale": "The original course explains that escalate to the responsible qualified parties. This is the relevant BIM information, coordination or calculation principle for the stated scenario. Source: MAIC BIM Fundamentals: Smarter Building Design & Planning, page 10."
+    },
+    {
+      "ordinal": 91,
+      "source_page": 11,
+      "stem": "How many levels are in the fictional campus building?",
+      "options": [
+        "Treat a duct-beam clash as solved by hiding the duct",
+        "Two levels",
+        "Call the classroom subtotal a real quotation",
+        "Assume the model is approved for physical construction"
+      ],
+      "correct_mask": 2,
+      "rationale": "The original course explains that two levels. This is the relevant BIM information, coordination or calculation principle for the stated scenario. Source: MAIC BIM Fundamentals: Smarter Building Design & Planning, page 11."
+    },
+    {
+      "ordinal": 92,
+      "source_page": 11,
+      "stem": "How many doors are described in the model?",
+      "options": [
+        "Use duplicated door IDs as acceptable final data",
+        "Twenty",
+        "Ignore missing room classification",
+        "Treat a duct-beam clash as solved by hiding the duct"
+      ],
+      "correct_mask": 2,
+      "rationale": "The original course explains that twenty. This is the relevant BIM information, coordination or calculation principle for the stated scenario. Source: MAIC BIM Fundamentals: Smarter Building Design & Planning, page 11."
+    },
+    {
+      "ordinal": 93,
+      "source_page": 11,
+      "stem": "Which model elements appear to conflict?",
+      "options": [
+        "Call the classroom subtotal a real quotation",
+        "Assume the model is approved for physical construction",
+        "A duct and a structural beam",
+        "Use duplicated door IDs as acceptable final data"
+      ],
+      "correct_mask": 4,
+      "rationale": "The original course explains that a duct and a structural beam. This is the relevant BIM information, coordination or calculation principle for the stated scenario. Source: MAIC BIM Fundamentals: Smarter Building Design & Planning, page 11."
+    },
+    {
+      "ordinal": 94,
+      "source_page": 11,
+      "stem": "What data defect affects two doors?",
+      "options": [
+        "Duplicated instance identifiers",
+        "Ignore missing room classification",
+        "Treat a duct-beam clash as solved by hiding the duct",
+        "Call the classroom subtotal a real quotation"
+      ],
+      "correct_mask": 1,
+      "rationale": "The original course explains that duplicated instance identifiers. This is the relevant BIM information, coordination or calculation principle for the stated scenario. Source: MAIC BIM Fundamentals: Smarter Building Design & Planning, page 11."
+    },
+    {
+      "ordinal": 95,
+      "source_page": 11,
+      "stem": "What is missing from one room record?",
+      "options": [
+        "Assume the model is approved for physical construction",
+        "Use duplicated door IDs as acceptable final data",
+        "A classification value",
+        "Ignore missing room classification"
+      ],
+      "correct_mask": 4,
+      "rationale": "The original course explains that a classification value. This is the relevant BIM information, coordination or calculation principle for the stated scenario. Source: MAIC BIM Fundamentals: Smarter Building Design & Planning, page 11."
+    },
+    {
+      "ordinal": 96,
+      "source_page": 11,
+      "stem": "Why should coordinate settings be verified before solving the duct clash?",
+      "options": [
+        "Treat a duct-beam clash as solved by hiding the duct",
+        "Call the classroom subtotal a real quotation",
+        "Assume the model is approved for physical construction",
+        "Misalignment could create an apparent conflict"
+      ],
+      "correct_mask": 8,
+      "rationale": "The original course explains that misalignment could create an apparent conflict. This is the relevant BIM information, coordination or calculation principle for the stated scenario. Source: MAIC BIM Fundamentals: Smarter Building Design & Planning, page 11."
+    },
+    {
+      "ordinal": 97,
+      "source_page": 11,
+      "stem": "What does the example direct material subtotal equal?",
+      "options": [
+        "Use duplicated door IDs as acceptable final data",
+        "$720",
+        "Ignore missing room classification",
+        "Treat a duct-beam clash as solved by hiding the duct"
+      ],
+      "correct_mask": 2,
+      "rationale": "The original course explains that $720. This is the relevant BIM information, coordination or calculation principle for the stated scenario. Source: MAIC BIM Fundamentals: Smarter Building Design & Planning, page 11."
+    },
+    {
+      "ordinal": 98,
+      "source_page": 11,
+      "stem": "What does Draft status indicate in the sample CDE process?",
+      "options": [
+        "Information not yet formally published",
+        "Call the classroom subtotal a real quotation",
+        "Assume the model is approved for physical construction",
+        "Use duplicated door IDs as acceptable final data"
+      ],
+      "correct_mask": 1,
+      "rationale": "The original course explains that information not yet formally published. This is the relevant BIM information, coordination or calculation principle for the stated scenario. Source: MAIC BIM Fundamentals: Smarter Building Design & Planning, page 11."
+    },
+    {
+      "ordinal": 99,
+      "source_page": 11,
+      "stem": "What should an IFC validation list confirm?",
+      "options": [
+        "Ignore missing room classification",
+        "Object identity, properties, levels and completeness",
+        "Treat a duct-beam clash as solved by hiding the duct",
+        "Call the classroom subtotal a real quotation"
+      ],
+      "correct_mask": 2,
+      "rationale": "The original course explains that object identity, properties, levels and completeness. This is the relevant BIM information, coordination or calculation principle for the stated scenario. Source: MAIC BIM Fundamentals: Smarter Building Design & Planning, page 11."
+    },
+    {
+      "ordinal": 100,
+      "source_page": 11,
+      "stem": "What is the goal of the facility handover template?",
+      "options": [
+        "Assume the model is approved for physical construction",
+        "Use duplicated door IDs as acceptable final data",
+        "Provide dependable records for future operation",
+        "Ignore missing room classification"
+      ],
+      "correct_mask": 4,
+      "rationale": "The original course explains that provide dependable records for future operation. This is the relevant BIM information, coordination or calculation principle for the stated scenario. Source: MAIC BIM Fundamentals: Smarter Building Design & Planning, page 11."
+    }
+  ]
+}
