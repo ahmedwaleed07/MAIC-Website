@@ -50,3 +50,16 @@ test('candidate manual renderer and CI enforce the same PDF upload limit',()=>{
  assert.match(workflow,/1_250_000/);
  assert.match(workflow,/len\(reader\.pages\) != 12/);
 });
+
+test('catalog cannot newly publish unreviewed self-paced courses',()=>{
+ const src=read('functions/api/admin/content.js');
+ assert.match(src,/newlyPublished=doc\.courses\.filter/);
+ assert.match(src,/oldStatuses\.get\(c\.id\)!=='published'/);
+ assert.match(src,/r\.content_reviewed=1/);
+ assert.match(src,/r\.black_white_tinos12_verified=1/);
+ assert.match(src,/b\.status='approved'/);
+ assert.match(src,/b\.source_sha256=m\.sha256/);
+ assert.match(src,/i\.verdict='approved'/);
+ assert.match(src,/course_academic_release_required/);
+ assert.match(src,/\['approved_source_matched_100_item_exam'\]/);
+});
