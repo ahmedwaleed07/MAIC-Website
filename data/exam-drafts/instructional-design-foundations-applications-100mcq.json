@@ -1,0 +1,1312 @@
+{
+  "course_id": "instructional-design-foundations-applications",
+  "source_manuscript": "data/course-manuscripts/instructional-design-foundations-applications.md",
+  "source_manuscript_blob_sha": "a77fa2c035586bb4e55625c64245f614bb6546b4",
+  "source_pdf_sha256": null,
+  "bank_version": "draft-manuscript-20261123-v1",
+  "approval_status": "editorial_draft_pending_independent_review",
+  "number_of_questions": 100,
+  "note": "Unapproved editorial question bank. Independent academic validation and LMS exam release required; no learner exam enabled.",
+  "questions": [
+    {
+      "ordinal": 1,
+      "source_page": 2,
+      "stem": "What is the central purpose of instructional design?",
+      "options": [
+        "Help learners achieve observable knowledge and skills",
+        "Treat file decoration as proof of learning",
+        "Use page count as the only quality requirement",
+        "Assume LMS publishing is academic approval"
+      ],
+      "correct_mask": 1,
+      "rationale": "The MAIC material explains that help learners achieve observable knowledge and skills. This is the corresponding evidence-based teaching, assessment or academic-governance principle from the lesson. Source: MAIC Instructional Design Foundations and Applications, page 2."
+    },
+    {
+      "ordinal": 2,
+      "source_page": 2,
+      "stem": "Why is an attractive PDF not automatically effective instruction?",
+      "options": [
+        "Write a course before identifying learner needs",
+        "Learning requires aligned practice and assessment",
+        "Present hypothetical learner data as verified",
+        "Treat file decoration as proof of learning"
+      ],
+      "correct_mask": 2,
+      "rationale": "The MAIC material explains that learning requires aligned practice and assessment. This is the corresponding evidence-based teaching, assessment or academic-governance principle from the lesson. Source: MAIC Instructional Design Foundations and Applications, page 2."
+    },
+    {
+      "ordinal": 3,
+      "source_page": 2,
+      "stem": "What should a course designer begin with?",
+      "options": [
+        "Use page count as the only quality requirement",
+        "Learner needs and meaningful outcomes",
+        "Assume LMS publishing is academic approval",
+        "Write a course before identifying learner needs"
+      ],
+      "correct_mask": 2,
+      "rationale": "The MAIC material explains that learner needs and meaningful outcomes. This is the corresponding evidence-based teaching, assessment or academic-governance principle from the lesson. Source: MAIC Instructional Design Foundations and Applications, page 2."
+    },
+    {
+      "ordinal": 4,
+      "source_page": 2,
+      "stem": "What is a course learning outcome?",
+      "options": [
+        "Present hypothetical learner data as verified",
+        "Treat file decoration as proof of learning",
+        "Use page count as the only quality requirement",
+        "An observable capability the learner should demonstrate"
+      ],
+      "correct_mask": 8,
+      "rationale": "The MAIC material explains that an observable capability the learner should demonstrate. This is the corresponding evidence-based teaching, assessment or academic-governance principle from the lesson. Source: MAIC Instructional Design Foundations and Applications, page 2."
+    },
+    {
+      "ordinal": 5,
+      "source_page": 2,
+      "stem": "Why do learning examples need accurate sources?",
+      "options": [
+        "Assume LMS publishing is academic approval",
+        "Write a course before identifying learner needs",
+        "Unsupported teaching can misinform learners",
+        "Present hypothetical learner data as verified"
+      ],
+      "correct_mask": 4,
+      "rationale": "The MAIC material explains that unsupported teaching can misinform learners. This is the corresponding evidence-based teaching, assessment or academic-governance principle from the lesson. Source: MAIC Instructional Design Foundations and Applications, page 2."
+    },
+    {
+      "ordinal": 6,
+      "source_page": 2,
+      "stem": "What is the practical course's fictional setting?",
+      "options": [
+        "Treat file decoration as proof of learning",
+        "A customer-support communication microcourse",
+        "Use page count as the only quality requirement",
+        "Assume LMS publishing is academic approval"
+      ],
+      "correct_mask": 2,
+      "rationale": "The MAIC material explains that a customer-support communication microcourse. This is the corresponding evidence-based teaching, assessment or academic-governance principle from the lesson. Source: MAIC Instructional Design Foundations and Applications, page 2."
+    },
+    {
+      "ordinal": 7,
+      "source_page": 2,
+      "stem": "Why must course case statistics be labeled fictional?",
+      "options": [
+        "They are not verified learner outcomes",
+        "Write a course before identifying learner needs",
+        "Present hypothetical learner data as verified",
+        "Treat file decoration as proof of learning"
+      ],
+      "correct_mask": 1,
+      "rationale": "The MAIC material explains that they are not verified learner outcomes. This is the corresponding evidence-based teaching, assessment or academic-governance principle from the lesson. Source: MAIC Instructional Design Foundations and Applications, page 2."
+    },
+    {
+      "ordinal": 8,
+      "source_page": 2,
+      "stem": "What is the purpose of an instructional sequence?",
+      "options": [
+        "Support learning from prior knowledge through independent practice",
+        "Use page count as the only quality requirement",
+        "Assume LMS publishing is academic approval",
+        "Write a course before identifying learner needs"
+      ],
+      "correct_mask": 1,
+      "rationale": "The MAIC material explains that support learning from prior knowledge through independent practice. This is the corresponding evidence-based teaching, assessment or academic-governance principle from the lesson. Source: MAIC Instructional Design Foundations and Applications, page 2."
+    },
+    {
+      "ordinal": 9,
+      "source_page": 2,
+      "stem": "Why does learning need feedback?",
+      "options": [
+        "Present hypothetical learner data as verified",
+        "Learners must see how to correct and improve",
+        "Treat file decoration as proof of learning",
+        "Use page count as the only quality requirement"
+      ],
+      "correct_mask": 2,
+      "rationale": "The MAIC material explains that learners must see how to correct and improve. This is the corresponding evidence-based teaching, assessment or academic-governance principle from the lesson. Source: MAIC Instructional Design Foundations and Applications, page 2."
+    },
+    {
+      "ordinal": 10,
+      "source_page": 2,
+      "stem": "What is a limitation of an online platform's interface?",
+      "options": [
+        "Assume LMS publishing is academic approval",
+        "Write a course before identifying learner needs",
+        "Present hypothetical learner data as verified",
+        "It does not replace academic course governance"
+      ],
+      "correct_mask": 8,
+      "rationale": "The MAIC material explains that it does not replace academic course governance. This is the corresponding evidence-based teaching, assessment or academic-governance principle from the lesson. Source: MAIC Instructional Design Foundations and Applications, page 2."
+    },
+    {
+      "ordinal": 11,
+      "source_page": 3,
+      "stem": "Why should needs analysis happen before writing lessons?",
+      "options": [
+        "Assume every performance gap is a training deficit",
+        "Use invented survey values as facts",
+        "A performance gap may not be caused by missing knowledge",
+        "Train staff when tools are missing instead of addressing tools"
+      ],
+      "correct_mask": 4,
+      "rationale": "The MAIC material explains that a performance gap may not be caused by missing knowledge. This is the corresponding evidence-based teaching, assessment or academic-governance principle from the lesson. Source: MAIC Instructional Design Foundations and Applications, page 3."
+    },
+    {
+      "ordinal": 12,
+      "source_page": 3,
+      "stem": "What is an example of a process rather than training problem?",
+      "options": [
+        "Treat all learners as having identical prior experience",
+        "Ignore accessibility and language constraints",
+        "An unclear approval policy causing delays",
+        "Assume every performance gap is a training deficit"
+      ],
+      "correct_mask": 4,
+      "rationale": "The MAIC material explains that an unclear approval policy causing delays. This is the corresponding evidence-based teaching, assessment or academic-governance principle from the lesson. Source: MAIC Instructional Design Foundations and Applications, page 3."
+    },
+    {
+      "ordinal": 13,
+      "source_page": 3,
+      "stem": "Which factor can affect learner access?",
+      "options": [
+        "Use invented survey values as facts",
+        "Train staff when tools are missing instead of addressing tools",
+        "Treat all learners as having identical prior experience",
+        "Language, device or disability-related barriers"
+      ],
+      "correct_mask": 8,
+      "rationale": "The MAIC material explains that language, device or disability-related barriers. This is the corresponding evidence-based teaching, assessment or academic-governance principle from the lesson. Source: MAIC Instructional Design Foundations and Applications, page 3."
+    },
+    {
+      "ordinal": 14,
+      "source_page": 3,
+      "stem": "What does a self-paced course particularly need?",
+      "options": [
+        "Ignore accessibility and language constraints",
+        "Assume every performance gap is a training deficit",
+        "Use invented survey values as facts",
+        "Clear instructions and feedback without a live teacher"
+      ],
+      "correct_mask": 8,
+      "rationale": "The MAIC material explains that clear instructions and feedback without a live teacher. This is the corresponding evidence-based teaching, assessment or academic-governance principle from the lesson. Source: MAIC Instructional Design Foundations and Applications, page 3."
+    },
+    {
+      "ordinal": 15,
+      "source_page": 3,
+      "stem": "What can group instruction support?",
+      "options": [
+        "Discussion and coached practice",
+        "Train staff when tools are missing instead of addressing tools",
+        "Treat all learners as having identical prior experience",
+        "Ignore accessibility and language constraints"
+      ],
+      "correct_mask": 1,
+      "rationale": "The MAIC material explains that discussion and coached practice. This is the corresponding evidence-based teaching, assessment or academic-governance principle from the lesson. Source: MAIC Instructional Design Foundations and Applications, page 3."
+    },
+    {
+      "ordinal": 16,
+      "source_page": 3,
+      "stem": "What can one-to-one teaching provide?",
+      "options": [
+        "Assume every performance gap is a training deficit",
+        "Tailoring based on direct individual observation",
+        "Use invented survey values as facts",
+        "Train staff when tools are missing instead of addressing tools"
+      ],
+      "correct_mask": 2,
+      "rationale": "The MAIC material explains that tailoring based on direct individual observation. This is the corresponding evidence-based teaching, assessment or academic-governance principle from the lesson. Source: MAIC Instructional Design Foundations and Applications, page 3."
+    },
+    {
+      "ordinal": 17,
+      "source_page": 3,
+      "stem": "Why are existing skills important in learner analysis?",
+      "options": [
+        "Treat all learners as having identical prior experience",
+        "Ignore accessibility and language constraints",
+        "They affect what instruction is necessary",
+        "Assume every performance gap is a training deficit"
+      ],
+      "correct_mask": 4,
+      "rationale": "The MAIC material explains that they affect what instruction is necessary. This is the corresponding evidence-based teaching, assessment or academic-governance principle from the lesson. Source: MAIC Instructional Design Foundations and Applications, page 3."
+    },
+    {
+      "ordinal": 18,
+      "source_page": 3,
+      "stem": "What should be distinguished in a needs-analysis table?",
+      "options": [
+        "Observed gaps and hypothesized causes",
+        "Use invented survey values as facts",
+        "Train staff when tools are missing instead of addressing tools",
+        "Treat all learners as having identical prior experience"
+      ],
+      "correct_mask": 1,
+      "rationale": "The MAIC material explains that observed gaps and hypothesized causes. This is the corresponding evidence-based teaching, assessment or academic-governance principle from the lesson. Source: MAIC Instructional Design Foundations and Applications, page 3."
+    },
+    {
+      "ordinal": 19,
+      "source_page": 3,
+      "stem": "Why should a tiny staff survey not be generalized automatically?",
+      "options": [
+        "Ignore accessibility and language constraints",
+        "The respondents may not represent every learner",
+        "Assume every performance gap is a training deficit",
+        "Use invented survey values as facts"
+      ],
+      "correct_mask": 2,
+      "rationale": "The MAIC material explains that the respondents may not represent every learner. This is the corresponding evidence-based teaching, assessment or academic-governance principle from the lesson. Source: MAIC Instructional Design Foundations and Applications, page 3."
+    },
+    {
+      "ordinal": 20,
+      "source_page": 3,
+      "stem": "What is an appropriate nontraining solution to some performance gaps?",
+      "options": [
+        "Train staff when tools are missing instead of addressing tools",
+        "Treat all learners as having identical prior experience",
+        "Ignore accessibility and language constraints",
+        "Clarify the workflow or supply necessary tools"
+      ],
+      "correct_mask": 8,
+      "rationale": "The MAIC material explains that clarify the workflow or supply necessary tools. This is the corresponding evidence-based teaching, assessment or academic-governance principle from the lesson. Source: MAIC Instructional Design Foundations and Applications, page 3."
+    },
+    {
+      "ordinal": 21,
+      "source_page": 4,
+      "stem": "What makes a learning objective assessable?",
+      "options": [
+        "Use only vague outcomes such as understand",
+        "Choose assessment unrelated to the stated skill",
+        "An observable action and relevant criterion",
+        "Ignore task conditions and standards"
+      ],
+      "correct_mask": 4,
+      "rationale": "The MAIC material explains that an observable action and relevant criterion. This is the corresponding evidence-based teaching, assessment or academic-governance principle from the lesson. Source: MAIC Instructional Design Foundations and Applications, page 4."
+    },
+    {
+      "ordinal": 22,
+      "source_page": 4,
+      "stem": "Why is unqualified understanding a weak objective verb?",
+      "options": [
+        "Assess writing solely through a recognition quiz",
+        "Use decorative formatting as the only rubric category",
+        "Use only vague outcomes such as understand",
+        "It does not identify a visible performance"
+      ],
+      "correct_mask": 8,
+      "rationale": "The MAIC material explains that it does not identify a visible performance. This is the corresponding evidence-based teaching, assessment or academic-governance principle from the lesson. Source: MAIC Instructional Design Foundations and Applications, page 4."
+    },
+    {
+      "ordinal": 23,
+      "source_page": 4,
+      "stem": "What is constructive alignment?",
+      "options": [
+        "Choose assessment unrelated to the stated skill",
+        "Matching outcomes, instruction and assessment",
+        "Ignore task conditions and standards",
+        "Assess writing solely through a recognition quiz"
+      ],
+      "correct_mask": 2,
+      "rationale": "The MAIC material explains that matching outcomes, instruction and assessment. This is the corresponding evidence-based teaching, assessment or academic-governance principle from the lesson. Source: MAIC Instructional Design Foundations and Applications, page 4."
+    },
+    {
+      "ordinal": 24,
+      "source_page": 4,
+      "stem": "Why should writing skill be assessed through actual writing?",
+      "options": [
+        "Use decorative formatting as the only rubric category",
+        "Use only vague outcomes such as understand",
+        "Recall questions alone cannot demonstrate that performance",
+        "Choose assessment unrelated to the stated skill"
+      ],
+      "correct_mask": 4,
+      "rationale": "The MAIC material explains that recall questions alone cannot demonstrate that performance. This is the corresponding evidence-based teaching, assessment or academic-governance principle from the lesson. Source: MAIC Instructional Design Foundations and Applications, page 4."
+    },
+    {
+      "ordinal": 25,
+      "source_page": 4,
+      "stem": "What is a helpful objective for customer communication?",
+      "options": [
+        "Draft an accurate policy-based response to a complaint",
+        "Ignore task conditions and standards",
+        "Assess writing solely through a recognition quiz",
+        "Use decorative formatting as the only rubric category"
+      ],
+      "correct_mask": 1,
+      "rationale": "The MAIC material explains that draft an accurate policy-based response to a complaint. This is the corresponding evidence-based teaching, assessment or academic-governance principle from the lesson. Source: MAIC Instructional Design Foundations and Applications, page 4."
+    },
+    {
+      "ordinal": 26,
+      "source_page": 4,
+      "stem": "What should an assessment rubric describe?",
+      "options": [
+        "Criteria for judging demonstrated performance",
+        "Use only vague outcomes such as understand",
+        "Choose assessment unrelated to the stated skill",
+        "Ignore task conditions and standards"
+      ],
+      "correct_mask": 1,
+      "rationale": "The MAIC material explains that criteria for judging demonstrated performance. This is the corresponding evidence-based teaching, assessment or academic-governance principle from the lesson. Source: MAIC Instructional Design Foundations and Applications, page 4."
+    },
+    {
+      "ordinal": 27,
+      "source_page": 4,
+      "stem": "Why can Bloom-style learning levels be useful?",
+      "options": [
+        "Assess writing solely through a recognition quiz",
+        "Use decorative formatting as the only rubric category",
+        "They help distinguish recall from application and evaluation",
+        "Use only vague outcomes such as understand"
+      ],
+      "correct_mask": 4,
+      "rationale": "The MAIC material explains that they help distinguish recall from application and evaluation. This is the corresponding evidence-based teaching, assessment or academic-governance principle from the lesson. Source: MAIC Instructional Design Foundations and Applications, page 4."
+    },
+    {
+      "ordinal": 28,
+      "source_page": 4,
+      "stem": "What is an example of a useful performance verb?",
+      "options": [
+        "Choose assessment unrelated to the stated skill",
+        "Ignore task conditions and standards",
+        "Compare, calculate, draft or evaluate",
+        "Assess writing solely through a recognition quiz"
+      ],
+      "correct_mask": 4,
+      "rationale": "The MAIC material explains that compare, calculate, draft or evaluate. This is the corresponding evidence-based teaching, assessment or academic-governance principle from the lesson. Source: MAIC Instructional Design Foundations and Applications, page 4."
+    },
+    {
+      "ordinal": 29,
+      "source_page": 4,
+      "stem": "Why should conditions appear in some objectives?",
+      "options": [
+        "Use decorative formatting as the only rubric category",
+        "The task depends on specific materials or constraints",
+        "Use only vague outcomes such as understand",
+        "Choose assessment unrelated to the stated skill"
+      ],
+      "correct_mask": 2,
+      "rationale": "The MAIC material explains that the task depends on specific materials or constraints. This is the corresponding evidence-based teaching, assessment or academic-governance principle from the lesson. Source: MAIC Instructional Design Foundations and Applications, page 4."
+    },
+    {
+      "ordinal": 30,
+      "source_page": 4,
+      "stem": "What should aligned practice offer?",
+      "options": [
+        "Ignore task conditions and standards",
+        "Assess writing solely through a recognition quiz",
+        "Use decorative formatting as the only rubric category",
+        "An opportunity to rehearse the intended skill"
+      ],
+      "correct_mask": 8,
+      "rationale": "The MAIC material explains that an opportunity to rehearse the intended skill. This is the corresponding evidence-based teaching, assessment or academic-governance principle from the lesson. Source: MAIC Instructional Design Foundations and Applications, page 4."
+    },
+    {
+      "ordinal": 31,
+      "source_page": 5,
+      "stem": "What is scaffolding in instruction?",
+      "options": [
+        "Fill lessons with repeated unrelated content",
+        "Use excess audiovisual distractions",
+        "Treat page count as instructional mastery",
+        "Support that decreases as learners gain independence"
+      ],
+      "correct_mask": 8,
+      "rationale": "The MAIC material explains that support that decreases as learners gain independence. This is the corresponding evidence-based teaching, assessment or academic-governance principle from the lesson. Source: MAIC Instructional Design Foundations and Applications, page 5."
+    },
+    {
+      "ordinal": 32,
+      "source_page": 5,
+      "stem": "Why should instruction connect with prior knowledge?",
+      "options": [
+        "Make every task complex before basic explanation",
+        "Remove all opportunity for guided practice",
+        "Fill lessons with repeated unrelated content",
+        "Existing ideas can help interpret new material"
+      ],
+      "correct_mask": 8,
+      "rationale": "The MAIC material explains that existing ideas can help interpret new material. This is the corresponding evidence-based teaching, assessment or academic-governance principle from the lesson. Source: MAIC Instructional Design Foundations and Applications, page 5."
+    },
+    {
+      "ordinal": 33,
+      "source_page": 5,
+      "stem": "What is cognitive load?",
+      "options": [
+        "Use excess audiovisual distractions",
+        "Treat page count as instructional mastery",
+        "Make every task complex before basic explanation",
+        "The working-memory demand of learning tasks"
+      ],
+      "correct_mask": 8,
+      "rationale": "The MAIC material explains that the working-memory demand of learning tasks. This is the corresponding evidence-based teaching, assessment or academic-governance principle from the lesson. Source: MAIC Instructional Design Foundations and Applications, page 5."
+    },
+    {
+      "ordinal": 34,
+      "source_page": 5,
+      "stem": "Why may irrelevant soundtrack or decoration hinder learning?",
+      "options": [
+        "Remove all opportunity for guided practice",
+        "Fill lessons with repeated unrelated content",
+        "Use excess audiovisual distractions",
+        "It uses attention without supporting the task"
+      ],
+      "correct_mask": 8,
+      "rationale": "The MAIC material explains that it uses attention without supporting the task. This is the corresponding evidence-based teaching, assessment or academic-governance principle from the lesson. Source: MAIC Instructional Design Foundations and Applications, page 5."
+    },
+    {
+      "ordinal": 35,
+      "source_page": 5,
+      "stem": "What does a worked demonstration provide?",
+      "options": [
+        "Treat page count as instructional mastery",
+        "Make every task complex before basic explanation",
+        "Visible reasoning before learners practice",
+        "Remove all opportunity for guided practice"
+      ],
+      "correct_mask": 4,
+      "rationale": "The MAIC material explains that visible reasoning before learners practice. This is the corresponding evidence-based teaching, assessment or academic-governance principle from the lesson. Source: MAIC Instructional Design Foundations and Applications, page 5."
+    },
+    {
+      "ordinal": 36,
+      "source_page": 5,
+      "stem": "Why should a lesson progress toward independent performance?",
+      "options": [
+        "Fill lessons with repeated unrelated content",
+        "Learners need to apply skills beyond a copied example",
+        "Use excess audiovisual distractions",
+        "Treat page count as instructional mastery"
+      ],
+      "correct_mask": 2,
+      "rationale": "The MAIC material explains that learners need to apply skills beyond a copied example. This is the corresponding evidence-based teaching, assessment or academic-governance principle from the lesson. Source: MAIC Instructional Design Foundations and Applications, page 5."
+    },
+    {
+      "ordinal": 37,
+      "source_page": 5,
+      "stem": "What is a useful six-part lesson sequence?",
+      "options": [
+        "Example, explanation, demonstration, guided practice, feedback and independent use",
+        "Make every task complex before basic explanation",
+        "Remove all opportunity for guided practice",
+        "Fill lessons with repeated unrelated content"
+      ],
+      "correct_mask": 1,
+      "rationale": "The MAIC material explains that example, explanation, demonstration, guided practice, feedback and independent use. This is the corresponding evidence-based teaching, assessment or academic-governance principle from the lesson. Source: MAIC Instructional Design Foundations and Applications, page 5."
+    },
+    {
+      "ordinal": 38,
+      "source_page": 5,
+      "stem": "Why must simplifying a lesson preserve essential complexity?",
+      "options": [
+        "Use excess audiovisual distractions",
+        "Treat page count as instructional mastery",
+        "False procedures can mislead learners",
+        "Make every task complex before basic explanation"
+      ],
+      "correct_mask": 4,
+      "rationale": "The MAIC material explains that false procedures can mislead learners. This is the corresponding evidence-based teaching, assessment or academic-governance principle from the lesson. Source: MAIC Instructional Design Foundations and Applications, page 5."
+    },
+    {
+      "ordinal": 39,
+      "source_page": 5,
+      "stem": "What should each activity relate to?",
+      "options": [
+        "A relevant learning outcome",
+        "Remove all opportunity for guided practice",
+        "Fill lessons with repeated unrelated content",
+        "Use excess audiovisual distractions"
+      ],
+      "correct_mask": 1,
+      "rationale": "The MAIC material explains that a relevant learning outcome. This is the corresponding evidence-based teaching, assessment or academic-governance principle from the lesson. Source: MAIC Instructional Design Foundations and Applications, page 5."
+    },
+    {
+      "ordinal": 40,
+      "source_page": 5,
+      "stem": "Why should manuals not repeat filler to reach page targets?",
+      "options": [
+        "Treat page count as instructional mastery",
+        "Page counts alone do not produce substantive learning",
+        "Make every task complex before basic explanation",
+        "Remove all opportunity for guided practice"
+      ],
+      "correct_mask": 2,
+      "rationale": "The MAIC material explains that page counts alone do not produce substantive learning. This is the corresponding evidence-based teaching, assessment or academic-governance principle from the lesson. Source: MAIC Instructional Design Foundations and Applications, page 5."
+    },
+    {
+      "ordinal": 41,
+      "source_page": 6,
+      "stem": "What should worked examples explain?",
+      "options": [
+        "Give only wrong as feedback",
+        "Use identical copied tasks as all evidence of transfer",
+        "Choices and reasoning, not only final answers",
+        "Describe a final answer without explaining reasoning"
+      ],
+      "correct_mask": 4,
+      "rationale": "The MAIC material explains that choices and reasoning, not only final answers. This is the corresponding evidence-based teaching, assessment or academic-governance principle from the lesson. Source: MAIC Instructional Design Foundations and Applications, page 6."
+    },
+    {
+      "ordinal": 42,
+      "source_page": 6,
+      "stem": "What is the purpose of guided practice?",
+      "options": [
+        "Allow no learner revisions",
+        "Build competence with appropriate support",
+        "Promote unauthorized refund promises",
+        "Give only wrong as feedback"
+      ],
+      "correct_mask": 2,
+      "rationale": "The MAIC material explains that build competence with appropriate support. This is the corresponding evidence-based teaching, assessment or academic-governance principle from the lesson. Source: MAIC Instructional Design Foundations and Applications, page 6."
+    },
+    {
+      "ordinal": 43,
+      "source_page": 6,
+      "stem": "Why must feedback be actionable?",
+      "options": [
+        "Learners should know what to change",
+        "Use identical copied tasks as all evidence of transfer",
+        "Describe a final answer without explaining reasoning",
+        "Allow no learner revisions"
+      ],
+      "correct_mask": 1,
+      "rationale": "The MAIC material explains that learners should know what to change. This is the corresponding evidence-based teaching, assessment or academic-governance principle from the lesson. Source: MAIC Instructional Design Foundations and Applications, page 6."
+    },
+    {
+      "ordinal": 44,
+      "source_page": 6,
+      "stem": "What is a weak feedback comment by itself?",
+      "options": [
+        "Promote unauthorized refund promises",
+        "Incorrect without explanation",
+        "Give only wrong as feedback",
+        "Use identical copied tasks as all evidence of transfer"
+      ],
+      "correct_mask": 2,
+      "rationale": "The MAIC material explains that incorrect without explanation. This is the corresponding evidence-based teaching, assessment or academic-governance principle from the lesson. Source: MAIC Instructional Design Foundations and Applications, page 6."
+    },
+    {
+      "ordinal": 45,
+      "source_page": 6,
+      "stem": "Why should a learner apply feedback again?",
+      "options": [
+        "Improvement needs an opportunity for revision",
+        "Describe a final answer without explaining reasoning",
+        "Allow no learner revisions",
+        "Promote unauthorized refund promises"
+      ],
+      "correct_mask": 1,
+      "rationale": "The MAIC material explains that improvement needs an opportunity for revision. This is the corresponding evidence-based teaching, assessment or academic-governance principle from the lesson. Source: MAIC Instructional Design Foundations and Applications, page 6."
+    },
+    {
+      "ordinal": 46,
+      "source_page": 6,
+      "stem": "What is a transfer-of-learning question?",
+      "options": [
+        "Give only wrong as feedback",
+        "Can the skill be applied in a new relevant situation?",
+        "Use identical copied tasks as all evidence of transfer",
+        "Describe a final answer without explaining reasoning"
+      ],
+      "correct_mask": 2,
+      "rationale": "The MAIC material explains that can the skill be applied in a new relevant situation. This is the corresponding evidence-based teaching, assessment or academic-governance principle from the lesson. Source: MAIC Instructional Design Foundations and Applications, page 6."
+    },
+    {
+      "ordinal": 47,
+      "source_page": 6,
+      "stem": "Why is promising an unauthorized refund a problem?",
+      "options": [
+        "Allow no learner revisions",
+        "It conflicts with the approved service policy",
+        "Promote unauthorized refund promises",
+        "Give only wrong as feedback"
+      ],
+      "correct_mask": 2,
+      "rationale": "The MAIC material explains that it conflicts with the approved service policy. This is the corresponding evidence-based teaching, assessment or academic-governance principle from the lesson. Source: MAIC Instructional Design Foundations and Applications, page 6."
+    },
+    {
+      "ordinal": 48,
+      "source_page": 6,
+      "stem": "What can a revised customer response demonstrate?",
+      "options": [
+        "Correct application of policy and tone",
+        "Use identical copied tasks as all evidence of transfer",
+        "Describe a final answer without explaining reasoning",
+        "Allow no learner revisions"
+      ],
+      "correct_mask": 1,
+      "rationale": "The MAIC material explains that correct application of policy and tone. This is the corresponding evidence-based teaching, assessment or academic-governance principle from the lesson. Source: MAIC Instructional Design Foundations and Applications, page 6."
+    },
+    {
+      "ordinal": 49,
+      "source_page": 6,
+      "stem": "Why should practice cases vary relevant facts?",
+      "options": [
+        "Promote unauthorized refund promises",
+        "Avoid rewarding only memorized examples",
+        "Give only wrong as feedback",
+        "Use identical copied tasks as all evidence of transfer"
+      ],
+      "correct_mask": 2,
+      "rationale": "The MAIC material explains that avoid rewarding only memorized examples. This is the corresponding evidence-based teaching, assessment or academic-governance principle from the lesson. Source: MAIC Instructional Design Foundations and Applications, page 6."
+    },
+    {
+      "ordinal": 50,
+      "source_page": 6,
+      "stem": "What evidence helps identify persistent misconceptions?",
+      "options": [
+        "Describe a final answer without explaining reasoning",
+        "Patterns in learner performance and explanations",
+        "Allow no learner revisions",
+        "Promote unauthorized refund promises"
+      ],
+      "correct_mask": 2,
+      "rationale": "The MAIC material explains that patterns in learner performance and explanations. This is the corresponding evidence-based teaching, assessment or academic-governance principle from the lesson. Source: MAIC Instructional Design Foundations and Applications, page 6."
+    },
+    {
+      "ordinal": 51,
+      "source_page": 7,
+      "stem": "What is formative assessment mainly used for?",
+      "options": [
+        "Treat any 100-item bank as academically approved",
+        "Ignore distractor plausibility and rationales",
+        "Equate technical deployment with academic verification",
+        "Support learning and correction during instruction"
+      ],
+      "correct_mask": 8,
+      "rationale": "The MAIC material explains that support learning and correction during instruction. This is the corresponding evidence-based teaching, assessment or academic-governance principle from the lesson. Source: MAIC Instructional Design Foundations and Applications, page 7."
+    },
+    {
+      "ordinal": 52,
+      "source_page": 7,
+      "stem": "What is summative assessment used for?",
+      "options": [
+        "Use two correct answer options in a single-key item without specifying context",
+        "Publish exam items without checking sources",
+        "Judge achievement after a defined learning phase",
+        "Treat any 100-item bank as academically approved"
+      ],
+      "correct_mask": 4,
+      "rationale": "The MAIC material explains that judge achievement after a defined learning phase. This is the corresponding evidence-based teaching, assessment or academic-governance principle from the lesson. Source: MAIC Instructional Design Foundations and Applications, page 7."
+    },
+    {
+      "ordinal": 53,
+      "source_page": 7,
+      "stem": "What can multiple-choice questions assess?",
+      "options": [
+        "Ignore distractor plausibility and rationales",
+        "Equate technical deployment with academic verification",
+        "Recall, application and some reasoning when well designed",
+        "Use two correct answer options in a single-key item without specifying context"
+      ],
+      "correct_mask": 4,
+      "rationale": "The MAIC material explains that recall, application and some reasoning when well designed. This is the corresponding evidence-based teaching, assessment or academic-governance principle from the lesson. Source: MAIC Instructional Design Foundations and Applications, page 7."
+    },
+    {
+      "ordinal": 54,
+      "source_page": 7,
+      "stem": "Why might a writing objective require a practical task?",
+      "options": [
+        "Publish exam items without checking sources",
+        "Treat any 100-item bank as academically approved",
+        "Ignore distractor plausibility and rationales",
+        "MCQ recall alone cannot show authentic writing performance"
+      ],
+      "correct_mask": 8,
+      "rationale": "The MAIC material explains that mCQ recall alone cannot show authentic writing performance. This is the corresponding evidence-based teaching, assessment or academic-governance principle from the lesson. Source: MAIC Instructional Design Foundations and Applications, page 7."
+    },
+    {
+      "ordinal": 55,
+      "source_page": 7,
+      "stem": "Why should MCQ distractors be plausible?",
+      "options": [
+        "Equate technical deployment with academic verification",
+        "Use two correct answer options in a single-key item without specifying context",
+        "They should discriminate understanding rather than give accidental clues",
+        "Publish exam items without checking sources"
+      ],
+      "correct_mask": 4,
+      "rationale": "The MAIC material explains that they should discriminate understanding rather than give accidental clues. This is the corresponding evidence-based teaching, assessment or academic-governance principle from the lesson. Source: MAIC Instructional Design Foundations and Applications, page 7."
+    },
+    {
+      "ordinal": 56,
+      "source_page": 7,
+      "stem": "What is a risk of two conditionally correct answer options?",
+      "options": [
+        "Treat any 100-item bank as academically approved",
+        "Ignore distractor plausibility and rationales",
+        "The item becomes ambiguous without additional context",
+        "Equate technical deployment with academic verification"
+      ],
+      "correct_mask": 4,
+      "rationale": "The MAIC material explains that the item becomes ambiguous without additional context. This is the corresponding evidence-based teaching, assessment or academic-governance principle from the lesson. Source: MAIC Instructional Design Foundations and Applications, page 7."
+    },
+    {
+      "ordinal": 57,
+      "source_page": 7,
+      "stem": "Why is a structurally valid bank not automatically academically valid?",
+      "options": [
+        "Use two correct answer options in a single-key item without specifying context",
+        "Publish exam items without checking sources",
+        "Treat any 100-item bank as academically approved",
+        "Content accuracy and difficulty still require review"
+      ],
+      "correct_mask": 8,
+      "rationale": "The MAIC material explains that content accuracy and difficulty still require review. This is the corresponding evidence-based teaching, assessment or academic-governance principle from the lesson. Source: MAIC Instructional Design Foundations and Applications, page 7."
+    },
+    {
+      "ordinal": 58,
+      "source_page": 7,
+      "stem": "What should a question rationale reference?",
+      "options": [
+        "Ignore distractor plausibility and rationales",
+        "Equate technical deployment with academic verification",
+        "Use two correct answer options in a single-key item without specifying context",
+        "The specific approved source or principle"
+      ],
+      "correct_mask": 8,
+      "rationale": "The MAIC material explains that the specific approved source or principle. This is the corresponding evidence-based teaching, assessment or academic-governance principle from the lesson. Source: MAIC Instructional Design Foundations and Applications, page 7."
+    },
+    {
+      "ordinal": 59,
+      "source_page": 7,
+      "stem": "Why should exam activation require documented approval?",
+      "options": [
+        "A draft should not be mistaken for validated assessment",
+        "Publish exam items without checking sources",
+        "Treat any 100-item bank as academically approved",
+        "Ignore distractor plausibility and rationales"
+      ],
+      "correct_mask": 1,
+      "rationale": "The MAIC material explains that a draft should not be mistaken for validated assessment. This is the corresponding evidence-based teaching, assessment or academic-governance principle from the lesson. Source: MAIC Instructional Design Foundations and Applications, page 7."
+    },
+    {
+      "ordinal": 60,
+      "source_page": 7,
+      "stem": "What must academic integrity protect?",
+      "options": [
+        "Equate technical deployment with academic verification",
+        "Exam confidentiality, fair marking and learner records",
+        "Use two correct answer options in a single-key item without specifying context",
+        "Publish exam items without checking sources"
+      ],
+      "correct_mask": 2,
+      "rationale": "The MAIC material explains that exam confidentiality, fair marking and learner records. This is the corresponding evidence-based teaching, assessment or academic-governance principle from the lesson. Source: MAIC Instructional Design Foundations and Applications, page 7."
+    },
+    {
+      "ordinal": 61,
+      "source_page": 8,
+      "stem": "What is UDL short for in instructional design?",
+      "options": [
+        "Assume one media format is accessible to every learner",
+        "Remove all learner choice and agency",
+        "Describe UDL as unrelated to participation barriers",
+        "Universal Design for Learning"
+      ],
+      "correct_mask": 8,
+      "rationale": "The MAIC material explains that universal Design for Learning. This is the corresponding evidence-based teaching, assessment or academic-governance principle from the lesson. Source: MAIC Instructional Design Foundations and Applications, page 8."
+    },
+    {
+      "ordinal": 62,
+      "source_page": 8,
+      "stem": "Which organization developed the UDL Guidelines?",
+      "options": [
+        "Treat visual PDF appearance as proof of tagged reading order",
+        "Use captions with unverified wording",
+        "Assume one media format is accessible to every learner",
+        "CAST"
+      ],
+      "correct_mask": 8,
+      "rationale": "The MAIC material explains that cAST. This is the corresponding evidence-based teaching, assessment or academic-governance principle from the lesson. Source: MAIC Instructional Design Foundations and Applications, page 8."
+    },
+    {
+      "ordinal": 63,
+      "source_page": 8,
+      "stem": "When was the CAST UDL Guidelines 3.0 released?",
+      "options": [
+        "Remove all learner choice and agency",
+        "Describe UDL as unrelated to participation barriers",
+        "Treat visual PDF appearance as proof of tagged reading order",
+        "July 2024"
+      ],
+      "correct_mask": 8,
+      "rationale": "The MAIC material explains that july 2024. This is the corresponding evidence-based teaching, assessment or academic-governance principle from the lesson. Source: MAIC Instructional Design Foundations and Applications, page 8."
+    },
+    {
+      "ordinal": 64,
+      "source_page": 8,
+      "stem": "What are the three general UDL dimensions?",
+      "options": [
+        "Use captions with unverified wording",
+        "Engagement, representation, and action and expression",
+        "Assume one media format is accessible to every learner",
+        "Remove all learner choice and agency"
+      ],
+      "correct_mask": 2,
+      "rationale": "The MAIC material explains that engagement, representation, and action and expression. This is the corresponding evidence-based teaching, assessment or academic-governance principle from the lesson. Source: MAIC Instructional Design Foundations and Applications, page 8."
+    },
+    {
+      "ordinal": 65,
+      "source_page": 8,
+      "stem": "Why offer multiple ways to access learning content?",
+      "options": [
+        "Describe UDL as unrelated to participation barriers",
+        "Reduce unnecessary barriers for different learners",
+        "Treat visual PDF appearance as proof of tagged reading order",
+        "Use captions with unverified wording"
+      ],
+      "correct_mask": 2,
+      "rationale": "The MAIC material explains that reduce unnecessary barriers for different learners. This is the corresponding evidence-based teaching, assessment or academic-governance principle from the lesson. Source: MAIC Instructional Design Foundations and Applications, page 8."
+    },
+    {
+      "ordinal": 66,
+      "source_page": 8,
+      "stem": "What is an accessibility feature for narrated lessons?",
+      "options": [
+        "Assume one media format is accessible to every learner",
+        "Accurate captions or an accessible transcript",
+        "Remove all learner choice and agency",
+        "Describe UDL as unrelated to participation barriers"
+      ],
+      "correct_mask": 2,
+      "rationale": "The MAIC material explains that accurate captions or an accessible transcript. This is the corresponding evidence-based teaching, assessment or academic-governance principle from the lesson. Source: MAIC Instructional Design Foundations and Applications, page 8."
+    },
+    {
+      "ordinal": 67,
+      "source_page": 8,
+      "stem": "Why should PDF reading order be checked?",
+      "options": [
+        "Treat visual PDF appearance as proof of tagged reading order",
+        "Visual page appearance does not ensure assistive access",
+        "Use captions with unverified wording",
+        "Assume one media format is accessible to every learner"
+      ],
+      "correct_mask": 2,
+      "rationale": "The MAIC material explains that visual page appearance does not ensure assistive access. This is the corresponding evidence-based teaching, assessment or academic-governance principle from the lesson. Source: MAIC Instructional Design Foundations and Applications, page 8."
+    },
+    {
+      "ordinal": 68,
+      "source_page": 8,
+      "stem": "What should an alternative assessment still demonstrate?",
+      "options": [
+        "Remove all learner choice and agency",
+        "Describe UDL as unrelated to participation barriers",
+        "The same intended learning competence",
+        "Treat visual PDF appearance as proof of tagged reading order"
+      ],
+      "correct_mask": 4,
+      "rationale": "The MAIC material explains that the same intended learning competence. This is the corresponding evidence-based teaching, assessment or academic-governance principle from the lesson. Source: MAIC Instructional Design Foundations and Applications, page 8."
+    },
+    {
+      "ordinal": 69,
+      "source_page": 8,
+      "stem": "What is the focus of CAST UDL 3.0's update?",
+      "options": [
+        "Use captions with unverified wording",
+        "Assume one media format is accessible to every learner",
+        "Remove all learner choice and agency",
+        "Learner agency and barriers related to bias or exclusion"
+      ],
+      "correct_mask": 8,
+      "rationale": "The MAIC material explains that learner agency and barriers related to bias or exclusion. This is the corresponding evidence-based teaching, assessment or academic-governance principle from the lesson. Source: MAIC Instructional Design Foundations and Applications, page 8."
+    },
+    {
+      "ordinal": 70,
+      "source_page": 8,
+      "stem": "Why does a contrast check not prove complete accessibility?",
+      "options": [
+        "Structure, interaction and alternatives also matter",
+        "Describe UDL as unrelated to participation barriers",
+        "Treat visual PDF appearance as proof of tagged reading order",
+        "Use captions with unverified wording"
+      ],
+      "correct_mask": 1,
+      "rationale": "The MAIC material explains that structure, interaction and alternatives also matter. This is the corresponding evidence-based teaching, assessment or academic-governance principle from the lesson. Source: MAIC Instructional Design Foundations and Applications, page 8."
+    },
+    {
+      "ordinal": 71,
+      "source_page": 9,
+      "stem": "What modes of learning are compared in the manual?",
+      "options": [
+        "Assume any LMS can approve academic quality",
+        "Place all protected courses on unrestricted public pages",
+        "Self-paced, live group and one-to-one",
+        "Treat screenshots as trusted graduate records"
+      ],
+      "correct_mask": 4,
+      "rationale": "The MAIC material explains that self-paced, live group and one-to-one. This is the corresponding evidence-based teaching, assessment or academic-governance principle from the lesson. Source: MAIC Instructional Design Foundations and Applications, page 9."
+    },
+    {
+      "ordinal": 72,
+      "source_page": 9,
+      "stem": "What can an LMS manage?",
+      "options": [
+        "Activate certificates without verified completion",
+        "Change material without checking linked exams",
+        "Enrollment, progress, content and assessments",
+        "Assume any LMS can approve academic quality"
+      ],
+      "correct_mask": 4,
+      "rationale": "The MAIC material explains that enrollment, progress, content and assessments. This is the corresponding evidence-based teaching, assessment or academic-governance principle from the lesson. Source: MAIC Instructional Design Foundations and Applications, page 9."
+    },
+    {
+      "ordinal": 73,
+      "source_page": 9,
+      "stem": "Why is an LMS not a substitute for academic governance?",
+      "options": [
+        "Software does not review content correctness",
+        "Place all protected courses on unrestricted public pages",
+        "Treat screenshots as trusted graduate records",
+        "Activate certificates without verified completion"
+      ],
+      "correct_mask": 1,
+      "rationale": "The MAIC material explains that software does not review content correctness. This is the corresponding evidence-based teaching, assessment or academic-governance principle from the lesson. Source: MAIC Instructional Design Foundations and Applications, page 9."
+    },
+    {
+      "ordinal": 74,
+      "source_page": 9,
+      "stem": "What should course versions identify?",
+      "options": [
+        "Change material without checking linked exams",
+        "Assume any LMS can approve academic quality",
+        "Place all protected courses on unrestricted public pages",
+        "The exact source material associated with assessments"
+      ],
+      "correct_mask": 8,
+      "rationale": "The MAIC material explains that the exact source material associated with assessments. This is the corresponding evidence-based teaching, assessment or academic-governance principle from the lesson. Source: MAIC Instructional Design Foundations and Applications, page 9."
+    },
+    {
+      "ordinal": 75,
+      "source_page": 9,
+      "stem": "Why review exam items after a lesson changes?",
+      "options": [
+        "Treat screenshots as trusted graduate records",
+        "Activate certificates without verified completion",
+        "Answers and references may become outdated",
+        "Change material without checking linked exams"
+      ],
+      "correct_mask": 4,
+      "rationale": "The MAIC material explains that answers and references may become outdated. This is the corresponding evidence-based teaching, assessment or academic-governance principle from the lesson. Source: MAIC Instructional Design Foundations and Applications, page 9."
+    },
+    {
+      "ordinal": 76,
+      "source_page": 9,
+      "stem": "What can unauthorized public PDF sharing undermine?",
+      "options": [
+        "The intended enrollment or content access policy",
+        "Assume any LMS can approve academic quality",
+        "Place all protected courses on unrestricted public pages",
+        "Treat screenshots as trusted graduate records"
+      ],
+      "correct_mask": 1,
+      "rationale": "The MAIC material explains that the intended enrollment or content access policy. This is the corresponding evidence-based teaching, assessment or academic-governance principle from the lesson. Source: MAIC Instructional Design Foundations and Applications, page 9."
+    },
+    {
+      "ordinal": 77,
+      "source_page": 9,
+      "stem": "What does a verified certificate require?",
+      "options": [
+        "Activate certificates without verified completion",
+        "Actual recorded completion and appropriate authorization",
+        "Change material without checking linked exams",
+        "Assume any LMS can approve academic quality"
+      ],
+      "correct_mask": 2,
+      "rationale": "The MAIC material explains that actual recorded completion and appropriate authorization. This is the corresponding evidence-based teaching, assessment or academic-governance principle from the lesson. Source: MAIC Instructional Design Foundations and Applications, page 9."
+    },
+    {
+      "ordinal": 78,
+      "source_page": 9,
+      "stem": "Why should a classroom certificate screenshot not prove graduation?",
+      "options": [
+        "Place all protected courses on unrestricted public pages",
+        "It is not a trusted completion record",
+        "Treat screenshots as trusted graduate records",
+        "Activate certificates without verified completion"
+      ],
+      "correct_mask": 2,
+      "rationale": "The MAIC material explains that it is not a trusted completion record. This is the corresponding evidence-based teaching, assessment or academic-governance principle from the lesson. Source: MAIC Instructional Design Foundations and Applications, page 9."
+    },
+    {
+      "ordinal": 79,
+      "source_page": 9,
+      "stem": "What should course publication workflow distinguish?",
+      "options": [
+        "Draft, review, approval, release and archive",
+        "Change material without checking linked exams",
+        "Assume any LMS can approve academic quality",
+        "Place all protected courses on unrestricted public pages"
+      ],
+      "correct_mask": 1,
+      "rationale": "The MAIC material explains that draft, review, approval, release and archive. This is the corresponding evidence-based teaching, assessment or academic-governance principle from the lesson. Source: MAIC Instructional Design Foundations and Applications, page 9."
+    },
+    {
+      "ordinal": 80,
+      "source_page": 9,
+      "stem": "What may happen when a service policy changes?",
+      "options": [
+        "Teaching examples and assessment items require review",
+        "Treat screenshots as trusted graduate records",
+        "Activate certificates without verified completion",
+        "Change material without checking linked exams"
+      ],
+      "correct_mask": 1,
+      "rationale": "The MAIC material explains that teaching examples and assessment items require review. This is the corresponding evidence-based teaching, assessment or academic-governance principle from the lesson. Source: MAIC Instructional Design Foundations and Applications, page 9."
+    },
+    {
+      "ordinal": 81,
+      "source_page": 10,
+      "stem": "What types of evidence help evaluate instruction?",
+      "options": [
+        "Use satisfaction as direct proof of job performance",
+        "Skip evaluating real-world application",
+        "Learning results, task performance and user feedback",
+        "Ignore patterns in wrong answers"
+      ],
+      "correct_mask": 4,
+      "rationale": "The MAIC material explains that learning results, task performance and user feedback. This is the corresponding evidence-based teaching, assessment or academic-governance principle from the lesson. Source: MAIC Instructional Design Foundations and Applications, page 10."
+    },
+    {
+      "ordinal": 82,
+      "source_page": 10,
+      "stem": "Why is satisfaction not proof of learning?",
+      "options": [
+        "Treat small samples as general population estimates",
+        "Assume a live web page is academically approved",
+        "Use satisfaction as direct proof of job performance",
+        "Positive reaction does not establish competence"
+      ],
+      "correct_mask": 8,
+      "rationale": "The MAIC material explains that positive reaction does not establish competence. This is the corresponding evidence-based teaching, assessment or academic-governance principle from the lesson. Source: MAIC Instructional Design Foundations and Applications, page 10."
+    },
+    {
+      "ordinal": 83,
+      "source_page": 10,
+      "stem": "Why can exam recall scores differ from workplace skill?",
+      "options": [
+        "Skip evaluating real-world application",
+        "Ignore patterns in wrong answers",
+        "Applying knowledge requires real performance",
+        "Treat small samples as general population estimates"
+      ],
+      "correct_mask": 4,
+      "rationale": "The MAIC material explains that applying knowledge requires real performance. This is the corresponding evidence-based teaching, assessment or academic-governance principle from the lesson. Source: MAIC Instructional Design Foundations and Applications, page 10."
+    },
+    {
+      "ordinal": 84,
+      "source_page": 10,
+      "stem": "What should a pre-post comparison acknowledge?",
+      "options": [
+        "Other factors may influence the change",
+        "Assume a live web page is academically approved",
+        "Use satisfaction as direct proof of job performance",
+        "Skip evaluating real-world application"
+      ],
+      "correct_mask": 1,
+      "rationale": "The MAIC material explains that other factors may influence the change. This is the corresponding evidence-based teaching, assessment or academic-governance principle from the lesson. Source: MAIC Instructional Design Foundations and Applications, page 10."
+    },
+    {
+      "ordinal": 85,
+      "source_page": 10,
+      "stem": "Why is sample size relevant?",
+      "options": [
+        "Ignore patterns in wrong answers",
+        "Treat small samples as general population estimates",
+        "Assume a live web page is academically approved",
+        "Small groups limit the strength of generalizations"
+      ],
+      "correct_mask": 8,
+      "rationale": "The MAIC material explains that small groups limit the strength of generalizations. This is the corresponding evidence-based teaching, assessment or academic-governance principle from the lesson. Source: MAIC Instructional Design Foundations and Applications, page 10."
+    },
+    {
+      "ordinal": 86,
+      "source_page": 10,
+      "stem": "What can analysis of wrong answers reveal?",
+      "options": [
+        "Common misunderstandings and weak instruction",
+        "Use satisfaction as direct proof of job performance",
+        "Skip evaluating real-world application",
+        "Ignore patterns in wrong answers"
+      ],
+      "correct_mask": 1,
+      "rationale": "The MAIC material explains that common misunderstandings and weak instruction. This is the corresponding evidence-based teaching, assessment or academic-governance principle from the lesson. Source: MAIC Instructional Design Foundations and Applications, page 10."
+    },
+    {
+      "ordinal": 87,
+      "source_page": 10,
+      "stem": "What should academic and technical readiness be treated as?",
+      "options": [
+        "Separate requirements for safe course release",
+        "Treat small samples as general population estimates",
+        "Assume a live web page is academically approved",
+        "Use satisfaction as direct proof of job performance"
+      ],
+      "correct_mask": 1,
+      "rationale": "The MAIC material explains that separate requirements for safe course release. This is the corresponding evidence-based teaching, assessment or academic-governance principle from the lesson. Source: MAIC Instructional Design Foundations and Applications, page 10."
+    },
+    {
+      "ordinal": 88,
+      "source_page": 10,
+      "stem": "What is a technical exam quality check?",
+      "options": [
+        "Skip evaluating real-world application",
+        "Ignore patterns in wrong answers",
+        "Navigation, marking and learner access function correctly",
+        "Treat small samples as general population estimates"
+      ],
+      "correct_mask": 4,
+      "rationale": "The MAIC material explains that navigation, marking and learner access function correctly. This is the corresponding evidence-based teaching, assessment or academic-governance principle from the lesson. Source: MAIC Instructional Design Foundations and Applications, page 10."
+    },
+    {
+      "ordinal": 89,
+      "source_page": 10,
+      "stem": "Why should feedback trigger curriculum revision?",
+      "options": [
+        "Instruction must adapt to observed learner needs",
+        "Assume a live web page is academically approved",
+        "Use satisfaction as direct proof of job performance",
+        "Skip evaluating real-world application"
+      ],
+      "correct_mask": 1,
+      "rationale": "The MAIC material explains that instruction must adapt to observed learner needs. This is the corresponding evidence-based teaching, assessment or academic-governance principle from the lesson. Source: MAIC Instructional Design Foundations and Applications, page 10."
+    },
+    {
+      "ordinal": 90,
+      "source_page": 10,
+      "stem": "What makes an evaluation metric meaningful?",
+      "options": [
+        "Defined outcome, evidence and counting method",
+        "Ignore patterns in wrong answers",
+        "Treat small samples as general population estimates",
+        "Assume a live web page is academically approved"
+      ],
+      "correct_mask": 1,
+      "rationale": "The MAIC material explains that defined outcome, evidence and counting method. This is the corresponding evidence-based teaching, assessment or academic-governance principle from the lesson. Source: MAIC Instructional Design Foundations and Applications, page 10."
+    },
+    {
+      "ordinal": 91,
+      "source_page": 11,
+      "stem": "What is the fictional course subject?",
+      "options": [
+        "Treat a knowledge quiz as complete proof of writing skill",
+        "Accurate replies to customer complaints",
+        "Describe fictional pass rates as actual MAIC student statistics",
+        "Publish an unreviewed certificate after draft completion"
+      ],
+      "correct_mask": 2,
+      "rationale": "The MAIC material explains that accurate replies to customer complaints. This is the corresponding evidence-based teaching, assessment or academic-governance principle from the lesson. Source: MAIC Instructional Design Foundations and Applications, page 11."
+    },
+    {
+      "ordinal": 92,
+      "source_page": 11,
+      "stem": "What must learners distinguish from communication skill gaps?",
+      "options": [
+        "Invent refunds that violate the policy",
+        "Unclear service policy and process barriers",
+        "Ignore staff process constraints",
+        "Treat a knowledge quiz as complete proof of writing skill"
+      ],
+      "correct_mask": 2,
+      "rationale": "The MAIC material explains that unclear service policy and process barriers. This is the corresponding evidence-based teaching, assessment or academic-governance principle from the lesson. Source: MAIC Instructional Design Foundations and Applications, page 11."
+    },
+    {
+      "ordinal": 93,
+      "source_page": 11,
+      "stem": "What is one practice learning objective?",
+      "options": [
+        "Describe fictional pass rates as actual MAIC student statistics",
+        "Publish an unreviewed certificate after draft completion",
+        "Invent refunds that violate the policy",
+        "Draft a policy-based customer response"
+      ],
+      "correct_mask": 8,
+      "rationale": "The MAIC material explains that draft a policy-based customer response. This is the corresponding evidence-based teaching, assessment or academic-governance principle from the lesson. Source: MAIC Instructional Design Foundations and Applications, page 11."
+    },
+    {
+      "ordinal": 94,
+      "source_page": 11,
+      "stem": "How many instructional learning objectives are set in the case?",
+      "options": [
+        "Ignore staff process constraints",
+        "Treat a knowledge quiz as complete proof of writing skill",
+        "Three objectives",
+        "Describe fictional pass rates as actual MAIC student statistics"
+      ],
+      "correct_mask": 4,
+      "rationale": "The MAIC material explains that three objectives. This is the corresponding evidence-based teaching, assessment or academic-governance principle from the lesson. Source: MAIC Instructional Design Foundations and Applications, page 11."
+    },
+    {
+      "ordinal": 95,
+      "source_page": 11,
+      "stem": "What is a model reply required to protect?",
+      "options": [
+        "Customer privacy and factual accuracy",
+        "Publish an unreviewed certificate after draft completion",
+        "Invent refunds that violate the policy",
+        "Ignore staff process constraints"
+      ],
+      "correct_mask": 1,
+      "rationale": "The MAIC material explains that customer privacy and factual accuracy. This is the corresponding evidence-based teaching, assessment or academic-governance principle from the lesson. Source: MAIC Instructional Design Foundations and Applications, page 11."
+    },
+    {
+      "ordinal": 96,
+      "source_page": 11,
+      "stem": "How many learners are in the fictional evaluation sample?",
+      "options": [
+        "Ten learners",
+        "Treat a knowledge quiz as complete proof of writing skill",
+        "Describe fictional pass rates as actual MAIC student statistics",
+        "Publish an unreviewed certificate after draft completion"
+      ],
+      "correct_mask": 1,
+      "rationale": "The MAIC material explains that ten learners. This is the corresponding evidence-based teaching, assessment or academic-governance principle from the lesson. Source: MAIC Instructional Design Foundations and Applications, page 11."
+    },
+    {
+      "ordinal": 97,
+      "source_page": 11,
+      "stem": "How many pass the sample knowledge quiz?",
+      "options": [
+        "Invent refunds that violate the policy",
+        "Ignore staff process constraints",
+        "Treat a knowledge quiz as complete proof of writing skill",
+        "Eight learners"
+      ],
+      "correct_mask": 8,
+      "rationale": "The MAIC material explains that eight learners. This is the corresponding evidence-based teaching, assessment or academic-governance principle from the lesson. Source: MAIC Instructional Design Foundations and Applications, page 11."
+    },
+    {
+      "ordinal": 98,
+      "source_page": 11,
+      "stem": "How many demonstrate satisfactory independent writing?",
+      "options": [
+        "Describe fictional pass rates as actual MAIC student statistics",
+        "Publish an unreviewed certificate after draft completion",
+        "Invent refunds that violate the policy",
+        "Six learners"
+      ],
+      "correct_mask": 8,
+      "rationale": "The MAIC material explains that six learners. This is the corresponding evidence-based teaching, assessment or academic-governance principle from the lesson. Source: MAIC Instructional Design Foundations and Applications, page 11."
+    },
+    {
+      "ordinal": 99,
+      "source_page": 11,
+      "stem": "What is the fictional knowledge-quiz pass rate?",
+      "options": [
+        "Ignore staff process constraints",
+        "Treat a knowledge quiz as complete proof of writing skill",
+        "80%",
+        "Describe fictional pass rates as actual MAIC student statistics"
+      ],
+      "correct_mask": 4,
+      "rationale": "The MAIC material explains that 80%. This is the corresponding evidence-based teaching, assessment or academic-governance principle from the lesson. Source: MAIC Instructional Design Foundations and Applications, page 11."
+    },
+    {
+      "ordinal": 100,
+      "source_page": 11,
+      "stem": "What is the fictional practical-writing success rate?",
+      "options": [
+        "Publish an unreviewed certificate after draft completion",
+        "Invent refunds that violate the policy",
+        "60%",
+        "Ignore staff process constraints"
+      ],
+      "correct_mask": 4,
+      "rationale": "The MAIC material explains that 60%. This is the corresponding evidence-based teaching, assessment or academic-governance principle from the lesson. Source: MAIC Instructional Design Foundations and Applications, page 11."
+    }
+  ]
+}
