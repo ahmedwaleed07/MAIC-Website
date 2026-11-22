@@ -1,0 +1,44 @@
+name: Prepare MAIC candidate course manual PDFs
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'data/course-manuscripts/**'
+      - 'tools/render_maic_manuscript.py'
+      - '.github/workflows/maic-manuscripts.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  candidate-pdf:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install MAIC PDF preparation dependencies
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y fonts-croscore
+          python -m pip install --upgrade pip
+          python -m pip install reportlab Pillow pypdf
+      - name: Check renderer syntax
+        run: python -m py_compile tools/render_maic_manuscript.py
+      - name: Render Diploma in Journalism candidate
+        run: |
+          python tools/render_maic_manuscript.py \
+            --input data/course-manuscripts/diploma-in-journalism.md \
+            --crest assets/maic-official-crest.png \
+            --montage assets/michigan-heritage-montage.webp \
+            --output dist/maic/diploma-in-journalism.pdf
+      - name: Upload private academic review artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: maic-diploma-in-journalism-candidate
+          path: dist/maic/diploma-in-journalism.pdf
+          if-no-files-found: error
+          retention-days: 14
