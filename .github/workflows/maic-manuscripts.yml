@@ -20,7 +20,7 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-      - name: Install MAIC PDF preparation dependencies
+      - name: Install PDF dependencies
         run: |
           sudo apt-get update -qq
           sudo apt-get install -y fonts-croscore
@@ -28,32 +28,29 @@ jobs:
           python -m pip install reportlab Pillow pypdf
       - name: Check renderer syntax
         run: python -m py_compile tools/render_maic_manuscript.py
-      - name: Render Diploma in Journalism candidate
+      - name: Render all unapproved review candidates
+        shell: bash
         run: |
-          python tools/render_maic_manuscript.py \
-            --input data/course-manuscripts/diploma-in-journalism.md \
-            --crest assets/maic-official-crest.png \
-            --montage assets/michigan-heritage-montage.webp \
-            --output dist/maic/diploma-in-journalism.pdf
-      - name: Render Fundamentals of Journalism candidate
-        run: |
-          python tools/render_maic_manuscript.py \
-            --input data/course-manuscripts/fundamentals-of-journalism.md \
-            --crest assets/maic-official-crest.png \
-            --montage assets/michigan-heritage-montage.webp \
-            --output dist/maic/fundamentals-of-journalism.pdf
-      - name: Upload private academic review artifact
+          set -euo pipefail
+          mkdir -p dist/maic
+          shopt -s nullglob
+          files=(data/course-manuscripts/*.md)
+          if [ "${#files[@]}" -eq 0 ]; then
+            echo 'No candidate manuscripts found'
+            exit 1
+          fi
+          for source in "${files[@]}"; do
+            stem="$(basename "${source%.md}")"
+            python tools/render_maic_manuscript.py \
+              --input "$source" \
+              --crest assets/maic-official-crest.png \
+              --montage assets/michigan-heritage-montage.webp \
+              --output "dist/maic/${stem}.pdf"
+          done
+      - name: Upload candidate PDFs for academic review
         uses: actions/upload-artifact@v4
         with:
-          name: maic-diploma-in-journalism-candidate
-          path: dist/maic/diploma-in-journalism.pdf
-          if-no-files-found: error
-          retention-days: 14
-
-      - name: Upload second academic review candidate
-        uses: actions/upload-artifact@v4
-        with:
-          name: maic-fundamentals-of-journalism-candidate
-          path: dist/maic/fundamentals-of-journalism.pdf
+          name: maic-academic-review-candidates
+          path: dist/maic/*.pdf
           if-no-files-found: error
           retention-days: 14
