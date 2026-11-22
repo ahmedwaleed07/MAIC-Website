@@ -1,0 +1,1312 @@
+{
+  "course_id": "understanding-digital-journalism",
+  "source_manuscript": "data/course-manuscripts/understanding-digital-journalism.md",
+  "source_manuscript_blob_sha": "7897cb04bbc2df86ec68a11fff3f49f8d2d316fb",
+  "source_pdf_sha256": null,
+  "bank_version": "draft-manuscript-20261122-v1",
+  "approval_status": "editorial_draft_pending_independent_review",
+  "number_of_questions": 100,
+  "note": "Not active; staged editorial question bank pending approved MAIC PDF registration and independent academic review.",
+  "questions": [
+    {
+      "ordinal": 1,
+      "source_page": 2,
+      "stem": "Which principle remains unchanged when news moves to digital platforms?",
+      "options": [
+        "Virality becomes a substitute for accuracy",
+        "Headlines no longer require source checks",
+        "Claims still need evidence and verification",
+        "Corrections are unnecessary for short posts"
+      ],
+      "correct_mask": 4,
+      "rationale": "Digital formats do not reduce the obligation to verify. Source: MAIC Understanding Digital Journalism, page 2."
+    },
+    {
+      "ordinal": 2,
+      "source_page": 2,
+      "stem": "What is a sensible learning outcome for digital journalism?",
+      "options": [
+        "Invent eyewitness quotes using AI",
+        "Trace online claims to primary records and explain uncertainty",
+        "Maximize notifications regardless of evidence",
+        "Keep all editorial changes unrecorded"
+      ],
+      "correct_mask": 2,
+      "rationale": "The course teaches online source tracing and careful publication. Source: MAIC Understanding Digital Journalism, page 2."
+    },
+    {
+      "ordinal": 3,
+      "source_page": 2,
+      "stem": "Which formats may distribute the same verified story?",
+      "options": [
+        "Web text, audio, video and short social updates",
+        "Only printed newspapers",
+        "Only private staff notes",
+        "Only anonymous message screenshots"
+      ],
+      "correct_mask": 1,
+      "rationale": "Digital journalism uses multiple public channels. Source: MAIC Understanding Digital Journalism, page 2."
+    },
+    {
+      "ordinal": 4,
+      "source_page": 2,
+      "stem": "What should a short social alert preserve from a full article?",
+      "options": [
+        "Every background paragraph verbatim",
+        "The most emotional adjective",
+        "Only the article's promotional image",
+        "Essential qualifications affecting the truth of its claim"
+      ],
+      "correct_mask": 8,
+      "rationale": "Compression must not distort the supported conclusion. Source: MAIC Understanding Digital Journalism, page 2."
+    },
+    {
+      "ordinal": 5,
+      "source_page": 2,
+      "stem": "What is the difference between user engagement and public value?",
+      "options": [
+        "High views always establish truth",
+        "Attention data does not itself prove informational usefulness",
+        "Public value can only be measured in clicks",
+        "Engagement metrics are official fact checks"
+      ],
+      "correct_mask": 2,
+      "rationale": "Audience signals do not substitute for veracity. Source: MAIC Understanding Digital Journalism, page 2."
+    },
+    {
+      "ordinal": 6,
+      "source_page": 2,
+      "stem": "Why are updates and correction practices part of digital publishing?",
+      "options": [
+        "A digital page is never revised",
+        "News pages can change while earlier versions remain influential",
+        "All errors disappear from readers' memories",
+        "Social posts are automatically synchronized with articles"
+      ],
+      "correct_mask": 2,
+      "rationale": "Versioning and corrections preserve accountability. Source: MAIC Understanding Digital Journalism, page 2."
+    },
+    {
+      "ordinal": 7,
+      "source_page": 2,
+      "stem": "Which skill is relevant to a video posted without a timestamp?",
+      "options": [
+        "Adding cinematic effects to increase realism",
+        "Checking provenance, context and original source",
+        "Assuming the clip was recorded today",
+        "Treating comments as documentary proof"
+      ],
+      "correct_mask": 2,
+      "rationale": "Digital verification includes source and event context. Source: MAIC Understanding Digital Journalism, page 2."
+    },
+    {
+      "ordinal": 8,
+      "source_page": 2,
+      "stem": "Why should a digital newsroom plan privacy safeguards?",
+      "options": [
+        "Privacy concerns apply only to paper archives",
+        "Public URLs make all identities safe to disclose",
+        "A high view count removes all harm risk",
+        "Online distribution can expose sensitive personal data widely"
+      ],
+      "correct_mask": 8,
+      "rationale": "Privacy and security are part of ethical reporting. Source: MAIC Understanding Digital Journalism, page 2."
+    },
+    {
+      "ordinal": 9,
+      "source_page": 2,
+      "stem": "What is an appropriate role for AI in a digital reporting workflow?",
+      "options": [
+        "Generate a fictional quote and assign it to a real source",
+        "Assist drafting or transcription with human source verification",
+        "Replace the original evidence with a model summary",
+        "Automatically publish unreviewed claims"
+      ],
+      "correct_mask": 2,
+      "rationale": "AI can support workflow but cannot provide invented reportage. Source: MAIC Understanding Digital Journalism, page 2."
+    },
+    {
+      "ordinal": 10,
+      "source_page": 2,
+      "stem": "How should a learner interpret a practice rubric?",
+      "options": [
+        "As automatic approval to publish an exam",
+        "As evidence every case is real",
+        "As feedback, not an official certificate or verified passing grade",
+        "As a substitute for source documents"
+      ],
+      "correct_mask": 4,
+      "rationale": "Practice assessment is distinct from official credentialing. Source: MAIC Understanding Digital Journalism, page 2."
+    },
+    {
+      "ordinal": 11,
+      "source_page": 3,
+      "stem": "What can a first verified news alert communicate?",
+      "options": [
+        "An unsupported cause stated as certain",
+        "Only the most widely shared rumor",
+        "An invented eyewitness account",
+        "Known practical instructions and current uncertainty"
+      ],
+      "correct_mask": 8,
+      "rationale": "Early reporting can be useful if evidence boundaries are clear. Source: MAIC Understanding Digital Journalism, page 3."
+    },
+    {
+      "ordinal": 12,
+      "source_page": 3,
+      "stem": "What must a live news page do when important facts change?",
+      "options": [
+        "Silently deny earlier statements existed",
+        "Retain every known mistake without correction",
+        "Replace the primary record with an ad",
+        "Show meaningful update timing and clarify changed claims"
+      ],
+      "correct_mask": 8,
+      "rationale": "Revision transparency is important in developing stories. Source: MAIC Understanding Digital Journalism, page 3."
+    },
+    {
+      "ordinal": 13,
+      "source_page": 3,
+      "stem": "Why must a social preview be independently checked for accuracy?",
+      "options": [
+        "Previews are always private",
+        "Many readers may see it without opening the article",
+        "Search engines validate the preview automatically",
+        "Preview text is never factual"
+      ],
+      "correct_mask": 2,
+      "rationale": "A fragment can create a false impression. Source: MAIC Understanding Digital Journalism, page 3."
+    },
+    {
+      "ordinal": 14,
+      "source_page": 3,
+      "stem": "What makes a temporary route-diversion alert useful?",
+      "options": [
+        "Exact affected stops and start time supported by the authority",
+        "The reporter's guess about permanent service changes",
+        "An unverified explanation of political motives",
+        "A dramatic unrelated photo"
+      ],
+      "correct_mask": 1,
+      "rationale": "Public-service details should be actionable and verified. Source: MAIC Understanding Digital Journalism, page 3."
+    },
+    {
+      "ordinal": 15,
+      "source_page": 3,
+      "stem": "What is a risk of repeating viral rumors during breaking news?",
+      "options": [
+        "Every repost independently corroborates the event",
+        "Repetition can amplify an unsupported central allegation",
+        "Popularity proves an authority issued a notice",
+        "Virality eliminates the need for timestamps"
+      ],
+      "correct_mask": 2,
+      "rationale": "Distribution is not confirmation. Source: MAIC Understanding Digital Journalism, page 3."
+    },
+    {
+      "ordinal": 16,
+      "source_page": 3,
+      "stem": "What belongs in a follow-up after a verified initial alert?",
+      "options": [
+        "An invented explanation for an unresolved cause",
+        "Newly checked context attributed to relevant sources",
+        "A more alarming version of the same rumor",
+        "An identical headline without update information"
+      ],
+      "correct_mask": 2,
+      "rationale": "Developing coverage should add verified information. Source: MAIC Understanding Digital Journalism, page 3."
+    },
+    {
+      "ordinal": 17,
+      "source_page": 3,
+      "stem": "How can a newsroom distinguish a provisional statement from a finding?",
+      "options": [
+        "Use the same categorical language for all claims",
+        "Label what is known, unknown and under investigation",
+        "Omit original source dates",
+        "Choose the strongest possible verb"
+      ],
+      "correct_mask": 2,
+      "rationale": "Status and certainty must be explicit. Source: MAIC Understanding Digital Journalism, page 3."
+    },
+    {
+      "ordinal": 18,
+      "source_page": 3,
+      "stem": "What should guide priority when a digital story is urgent?",
+      "options": [
+        "Only follower count",
+        "Only sponsor preferences",
+        "Potential practical public benefit and strength of evidence",
+        "Only use of trending music"
+      ],
+      "correct_mask": 4,
+      "rationale": "Urgency and public value should shape publication. Source: MAIC Understanding Digital Journalism, page 3."
+    },
+    {
+      "ordinal": 19,
+      "source_page": 3,
+      "stem": "Why should an alert have a reliable source reference?",
+      "options": [
+        "Links make every story automatically true",
+        "Readers may need to act before seeing a full report",
+        "A source reference replaces checking the document",
+        "Short alerts are never corrected"
+      ],
+      "correct_mask": 2,
+      "rationale": "Primary citations aid verification and use. Source: MAIC Understanding Digital Journalism, page 3."
+    },
+    {
+      "ordinal": 20,
+      "source_page": 3,
+      "stem": "When should a developing story be updated as a new factual finding?",
+      "options": [
+        "When unverified reposts reach a chosen count",
+        "After meaningful confirmation, with clear timing",
+        "Immediately after a source speculates",
+        "Only when a headline needs more clicks"
+      ],
+      "correct_mask": 2,
+      "rationale": "Updates should reflect verified developments. Source: MAIC Understanding Digital Journalism, page 3."
+    },
+    {
+      "ordinal": 21,
+      "source_page": 4,
+      "stem": "What are the five broad stages of a digital news workflow?",
+      "options": [
+        "Gather, verify, edit, publish and monitor",
+        "Advertise, publish, invent, delete and deny",
+        "Publish, speculate, promote, ignore and replace",
+        "Share, count likes, headline, schedule and hide"
+      ],
+      "correct_mask": 1,
+      "rationale": "A structured workflow separates evidence checks from publication. Source: MAIC Understanding Digital Journalism, page 4."
+    },
+    {
+      "ordinal": 22,
+      "source_page": 4,
+      "stem": "Why assign a person to caption review?",
+      "options": [
+        "A caption has no factual content",
+        "Captions can misstate the event even with genuine footage",
+        "The platform always checks dates automatically",
+        "Only the photographer needs to inspect a caption"
+      ],
+      "correct_mask": 2,
+      "rationale": "Multimedia claims require editorial responsibility. Source: MAIC Understanding Digital Journalism, page 4."
+    },
+    {
+      "ordinal": 23,
+      "source_page": 4,
+      "stem": "What should editorial metadata record?",
+      "options": [
+        "Only the article's font selection",
+        "Only the number of reactions",
+        "Responsible desk, date, references and publication status",
+        "Only the author's preferred emoji"
+      ],
+      "correct_mask": 4,
+      "rationale": "Metadata assists traceability and updates. Source: MAIC Understanding Digital Journalism, page 4."
+    },
+    {
+      "ordinal": 24,
+      "source_page": 4,
+      "stem": "What does an accurate revision history allow?",
+      "options": [
+        "Editors to distinguish earlier published text from later correction",
+        "A newsroom to conceal past factual errors",
+        "A headline to be changed with no record",
+        "All source material to be discarded"
+      ],
+      "correct_mask": 1,
+      "rationale": "Version control supports correction accountability. Source: MAIC Understanding Digital Journalism, page 4."
+    },
+    {
+      "ordinal": 25,
+      "source_page": 4,
+      "stem": "Why can a content management system not replace an editor?",
+      "options": [
+        "CMS software automatically verifies every interview",
+        "Data entry guarantees no misleading statements",
+        "Every upload is already publication-ready",
+        "Software cannot independently determine if allegations are adequately supported"
+      ],
+      "correct_mask": 8,
+      "rationale": "Technology assists process but not editorial judgment. Source: MAIC Understanding Digital Journalism, page 4."
+    },
+    {
+      "ordinal": 26,
+      "source_page": 4,
+      "stem": "What is an important prepublication question?",
+      "options": [
+        "Is the headline longer than every caption?",
+        "Does the illustration use the newest color?",
+        "Will the story receive a guaranteed number of clicks?",
+        "Does the headline make a stronger claim than the supporting evidence?"
+      ],
+      "correct_mask": 8,
+      "rationale": "Editorial checks evaluate factual support. Source: MAIC Understanding Digital Journalism, page 4."
+    },
+    {
+      "ordinal": 27,
+      "source_page": 4,
+      "stem": "Which content should trigger proportionately higher review?",
+      "options": [
+        "A routine service-hour notice with clear original evidence",
+        "A simple photograph of an empty public building",
+        "A correction of a typographic heading",
+        "A serious claim involving identifiable people or public safety"
+      ],
+      "correct_mask": 8,
+      "rationale": "Potential harm determines review intensity. Source: MAIC Understanding Digital Journalism, page 4."
+    },
+    {
+      "ordinal": 28,
+      "source_page": 4,
+      "stem": "Why should a small newsroom still define review stages?",
+      "options": [
+        "Small teams cannot make reporting errors",
+        "Team size automatically prevents bias",
+        "Every stage is redundant without a large staff",
+        "One person handling several roles still needs explicit checks"
+      ],
+      "correct_mask": 8,
+      "rationale": "Role consolidation must not erase verification safeguards. Source: MAIC Understanding Digital Journalism, page 4."
+    },
+    {
+      "ordinal": 29,
+      "source_page": 4,
+      "stem": "What should a responsible correction path specify?",
+      "options": [
+        "Who can identify, verify, document and publish the correction",
+        "Only the graphics team",
+        "Only the number of readers affected",
+        "Only an internal deadline with no action owner"
+      ],
+      "correct_mask": 1,
+      "rationale": "Corrections need clear workflow ownership. Source: MAIC Understanding Digital Journalism, page 4."
+    },
+    {
+      "ordinal": 30,
+      "source_page": 4,
+      "stem": "Which item helps verify a video and article concern the same event?",
+      "options": [
+        "Matching original timestamps, locations and documented context",
+        "Matching background music",
+        "Matching file extensions",
+        "Matching number of views"
+      ],
+      "correct_mask": 1,
+      "rationale": "Cross-format provenance prevents misleading pairing. Source: MAIC Understanding Digital Journalism, page 4."
+    },
+    {
+      "ordinal": 31,
+      "source_page": 5,
+      "stem": "Why find the earliest traceable online source?",
+      "options": [
+        "It may reveal original context and the claim's evidence chain",
+        "First uploaders are always truthful",
+        "Older posts are automatically false",
+        "Follower count determines authenticity"
+      ],
+      "correct_mask": 1,
+      "rationale": "Source tracing helps test the claim's origin. Source: MAIC Understanding Digital Journalism, page 5."
+    },
+    {
+      "ordinal": 32,
+      "source_page": 5,
+      "stem": "Why does a repeated online claim not gain independent proof from reposts?",
+      "options": [
+        "All copies can derive from one unsupported assertion",
+        "Each copy creates new firsthand evidence",
+        "A different website is always independent",
+        "Reposts carry authenticated metadata by default"
+      ],
+      "correct_mask": 1,
+      "rationale": "Copying does not corroborate content. Source: MAIC Understanding Digital Journalism, page 5."
+    },
+    {
+      "ordinal": 33,
+      "source_page": 5,
+      "stem": "Which question should be asked about a viral bridge photo?",
+      "options": [
+        "Does the photo have enough dramatic smoke?",
+        "When and where was the original image recorded?",
+        "How can the headline be more alarming?",
+        "How many reactions use fire emojis?"
+      ],
+      "correct_mask": 2,
+      "rationale": "Date and place must be checked. Source: MAIC Understanding Digital Journalism, page 5."
+    },
+    {
+      "ordinal": 34,
+      "source_page": 5,
+      "stem": "What could prove a current-fire caption misleading even if the photograph is genuine?",
+      "options": [
+        "It was taken with a phone",
+        "It has a high resolution",
+        "The photo was originally published years earlier for another event",
+        "It contains a recognizable bridge"
+      ],
+      "correct_mask": 4,
+      "rationale": "Authenticity of pixels does not prove a current-event label. Source: MAIC Understanding Digital Journalism, page 5."
+    },
+    {
+      "ordinal": 35,
+      "source_page": 5,
+      "stem": "Why should a reporter seek the full video rather than an excerpt?",
+      "options": [
+        "Editing may remove actions or context that change meaning",
+        "Full recordings automatically prove every interpretation",
+        "Short videos are always fabricated",
+        "Audio alone establishes the cause"
+      ],
+      "correct_mask": 1,
+      "rationale": "Context is required before assigning meaning. Source: MAIC Understanding Digital Journalism, page 5."
+    },
+    {
+      "ordinal": 36,
+      "source_page": 5,
+      "stem": "What belongs in an online source log?",
+      "options": [
+        "Only follower growth",
+        "URL, access date, claims, checks and unresolved questions",
+        "Only a guessed political motive",
+        "Only an attractive screenshot"
+      ],
+      "correct_mask": 2,
+      "rationale": "Documentation supports repeatable verification. Source: MAIC Understanding Digital Journalism, page 5."
+    },
+    {
+      "ordinal": 37,
+      "source_page": 5,
+      "stem": "If a viral post disappears, what is still unproven?",
+      "options": [
+        "That a copy was previously visible",
+        "That the journalist inspected the page",
+        "That an access timestamp was recorded",
+        "That its substantive allegation was accurate"
+      ],
+      "correct_mask": 8,
+      "rationale": "The existence of a claim differs from its truth. Source: MAIC Understanding Digital Journalism, page 5."
+    },
+    {
+      "ordinal": 38,
+      "source_page": 5,
+      "stem": "Why should independent evidence verify an image's supposed location?",
+      "options": [
+        "Street signs can never be useful",
+        "Visual resemblance can lead to mistaken geographic identification",
+        "All bridges look identical",
+        "The uploader's city field guarantees authenticity"
+      ],
+      "correct_mask": 2,
+      "rationale": "Geolocation requires appropriate context and corroboration. Source: MAIC Understanding Digital Journalism, page 5."
+    },
+    {
+      "ordinal": 39,
+      "source_page": 5,
+      "stem": "What is a proportionate response to a serious online accusation lacking original evidence?",
+      "options": [
+        "Hold it as unverified and seek primary and independent confirmation",
+        "Publish it as the headline immediately",
+        "Remove all mention of the uncertainty",
+        "Describe the accused person as guilty"
+      ],
+      "correct_mask": 1,
+      "rationale": "Serious claims demand stronger verification. Source: MAIC Understanding Digital Journalism, page 5."
+    },
+    {
+      "ordinal": 40,
+      "source_page": 5,
+      "stem": "What is a key limit of archived screenshots?",
+      "options": [
+        "They may preserve content but not establish its underlying truth",
+        "They always validate the uploader's statements",
+        "They automatically show every page revision",
+        "They guarantee consent to republish private details"
+      ],
+      "correct_mask": 1,
+      "rationale": "Archives document appearance, not truth. Source: MAIC Understanding Digital Journalism, page 5."
+    },
+    {
+      "ordinal": 41,
+      "source_page": 6,
+      "stem": "What should be established about user-generated footage before editorial use?",
+      "options": [
+        "Creator, time, location, context and appropriate rights",
+        "Only the uploader's display picture",
+        "Only video resolution",
+        "Only number of comments"
+      ],
+      "correct_mask": 1,
+      "rationale": "User footage needs provenance and permissions assessment. Source: MAIC Understanding Digital Journalism, page 6."
+    },
+    {
+      "ordinal": 42,
+      "source_page": 6,
+      "stem": "Does a public social post automatically confer unrestricted republication rights?",
+      "options": [
+        "Yes, any image online is public domain",
+        "Yes, if the uploader has over 100 followers",
+        "No, access and permission are distinct legal questions",
+        "No rights review is ever relevant to journalism"
+      ],
+      "correct_mask": 4,
+      "rationale": "Public availability is not the same as reuse authorization. Source: MAIC Understanding Digital Journalism, page 6."
+    },
+    {
+      "ordinal": 43,
+      "source_page": 6,
+      "stem": "What does a watermark by itself establish about authorship?",
+      "options": [
+        "It is a clue, not conclusive proof of creator identity",
+        "It guarantees the file was filmed by the account",
+        "It proves that no editing occurred",
+        "It supplies accurate GPS location"
+      ],
+      "correct_mask": 1,
+      "rationale": "Profile branding cannot alone prove ownership. Source: MAIC Understanding Digital Journalism, page 6."
+    },
+    {
+      "ordinal": 44,
+      "source_page": 6,
+      "stem": "What can a genuine crowd video fail to establish?",
+      "options": [
+        "That the clip shows visible people",
+        "The reason the crowd assembled",
+        "That the camera recorded a scene",
+        "That the clip has duration"
+      ],
+      "correct_mask": 2,
+      "rationale": "Observation of a crowd is not proof of cause. Source: MAIC Understanding Digital Journalism, page 6."
+    },
+    {
+      "ordinal": 45,
+      "source_page": 6,
+      "stem": "Why ask contributors for the original file when safe and feasible?",
+      "options": [
+        "It gives the newsroom automatic ownership",
+        "It eliminates privacy considerations",
+        "It guarantees every spoken assertion is true",
+        "It can preserve context and support provenance checks"
+      ],
+      "correct_mask": 8,
+      "rationale": "Original material strengthens verification. Source: MAIC Understanding Digital Journalism, page 6."
+    },
+    {
+      "ordinal": 46,
+      "source_page": 6,
+      "stem": "What ethical concern arises when identifying a minor in submitted video?",
+      "options": [
+        "An automatic increase in story importance",
+        "Potential privacy and safety harm",
+        "All footage becomes unusable forever",
+        "A guarantee of legitimate public interest"
+      ],
+      "correct_mask": 2,
+      "rationale": "Vulnerable identities require heightened care. Source: MAIC Understanding Digital Journalism, page 6."
+    },
+    {
+      "ordinal": 47,
+      "source_page": 6,
+      "stem": "Why should an editor check what happened before and after a viral excerpt?",
+      "options": [
+        "Events outside the clip never matter",
+        "The uploader always explains all context",
+        "A short clip can distort the full sequence",
+        "Editing cannot alter meaning"
+      ],
+      "correct_mask": 4,
+      "rationale": "Chronological context matters to interpretation. Source: MAIC Understanding Digital Journalism, page 6."
+    },
+    {
+      "ordinal": 48,
+      "source_page": 6,
+      "stem": "Which is the correct label for a commuter's own testimony?",
+      "options": [
+        "A complete measured record of all platform usage",
+        "Proof of system-wide negligence",
+        "A firsthand account of what that person experienced",
+        "An audited technical explanation"
+      ],
+      "correct_mask": 4,
+      "rationale": "Experience and population-level findings differ. Source: MAIC Understanding Digital Journalism, page 6."
+    },
+    {
+      "ordinal": 49,
+      "source_page": 6,
+      "stem": "What should a caption avoid doing with a user's interpretation?",
+      "options": [
+        "Attributing it to the user",
+        "Clarifying that evidence is incomplete",
+        "Separating observation from inference",
+        "Presenting it as an independently verified factual conclusion"
+      ],
+      "correct_mask": 8,
+      "rationale": "Interpretation cannot be silently upgraded into fact. Source: MAIC Understanding Digital Journalism, page 6."
+    },
+    {
+      "ordinal": 50,
+      "source_page": 6,
+      "stem": "What verification question is distinct from whether a file is genuine?",
+      "options": [
+        "Does it actually support the event interpretation assigned to it?",
+        "Can it be opened on a device?",
+        "Does it have a file extension?",
+        "Can its resolution be measured?"
+      ],
+      "correct_mask": 1,
+      "rationale": "Authenticity and interpretation are separate questions. Source: MAIC Understanding Digital Journalism, page 6."
+    },
+    {
+      "ordinal": 51,
+      "source_page": 7,
+      "stem": "What is the best reason for including a wide establishing shot?",
+      "options": [
+        "It automatically confirms the cause of the event",
+        "It removes the need to check dates",
+        "It shows setting and helps preserve spatial context",
+        "It guarantees every nearby person consents"
+      ],
+      "correct_mask": 4,
+      "rationale": "Contextual framing supports interpretation. Source: MAIC Understanding Digital Journalism, page 7."
+    },
+    {
+      "ordinal": 52,
+      "source_page": 7,
+      "stem": "Why should a mobile reporter record the capture time and place?",
+      "options": [
+        "They make every statement in footage true",
+        "They eliminate any need for captions",
+        "They guarantee the clip is publishable",
+        "Those details help verify when and where the footage was made"
+      ],
+      "correct_mask": 8,
+      "rationale": "Provenance is part of reliable reporting. Source: MAIC Understanding Digital Journalism, page 7."
+    },
+    {
+      "ordinal": 53,
+      "source_page": 7,
+      "stem": "What is the priority when recording a spoken interview?",
+      "options": [
+        "A dramatic soundtrack",
+        "Intelligible audio and appropriate consent conditions",
+        "The largest possible camera zoom",
+        "A background that suggests a different location"
+      ],
+      "correct_mask": 2,
+      "rationale": "Clear source speech is more important than effects. Source: MAIC Understanding Digital Journalism, page 7."
+    },
+    {
+      "ordinal": 54,
+      "source_page": 7,
+      "stem": "Why may selective cropping be editorially misleading?",
+      "options": [
+        "Every crop is inherently prohibited",
+        "It always improves audience comprehension",
+        "It can make crowd size or physical conditions appear different",
+        "It changes all verified dates automatically"
+      ],
+      "correct_mask": 4,
+      "rationale": "Camera framing affects apparent context. Source: MAIC Understanding Digital Journalism, page 7."
+    },
+    {
+      "ordinal": 55,
+      "source_page": 7,
+      "stem": "What does B-roll legitimately do?",
+      "options": [
+        "Replace all missing eyewitness evidence",
+        "Illustrate relevant details without pretending to document another event",
+        "Show a false chronology without disclosure",
+        "Prove an unverified cause"
+      ],
+      "correct_mask": 2,
+      "rationale": "Illustrative footage must remain correctly labeled. Source: MAIC Understanding Digital Journalism, page 7."
+    },
+    {
+      "ordinal": 56,
+      "source_page": 7,
+      "stem": "Why retain original video alongside an edited package?",
+      "options": [
+        "It guarantees all sources are independent",
+        "It replaces attribution and captioning",
+        "It allows checking whether the edit changed the event's meaning",
+        "It eliminates the need for a script"
+      ],
+      "correct_mask": 4,
+      "rationale": "Original media supports accountability. Source: MAIC Understanding Digital Journalism, page 7."
+    },
+    {
+      "ordinal": 57,
+      "source_page": 7,
+      "stem": "What should a multimedia caption clarify?",
+      "options": [
+        "Only which filter was used",
+        "Only the size of the video file",
+        "What is shown and which source supports the contextual claim",
+        "Only the reporter's preferred camera"
+      ],
+      "correct_mask": 4,
+      "rationale": "Captions make factual claims too. Source: MAIC Understanding Digital Journalism, page 7."
+    },
+    {
+      "ordinal": 58,
+      "source_page": 7,
+      "stem": "When can a park-gate video prove the park's official closure reason?",
+      "options": [
+        "Only when the cause is independently established by appropriate records",
+        "Whenever the gate appears shut",
+        "When the video is in high definition",
+        "When many people share the footage"
+      ],
+      "correct_mask": 1,
+      "rationale": "Visual closure does not establish official reasons. Source: MAIC Understanding Digital Journalism, page 7."
+    },
+    {
+      "ordinal": 59,
+      "source_page": 7,
+      "stem": "Why should digital news include subtitles where practical?",
+      "options": [
+        "They authenticate every speaker's identity",
+        "They establish GPS coordinates",
+        "They improve comprehension and accessibility",
+        "They eliminate transcription review"
+      ],
+      "correct_mask": 4,
+      "rationale": "Accessibility broadens access to verified information. Source: MAIC Understanding Digital Journalism, page 7."
+    },
+    {
+      "ordinal": 60,
+      "source_page": 7,
+      "stem": "Which editing choice is unacceptable without disclosure?",
+      "options": [
+        "Removing clearly irrelevant silence without changing meaning",
+        "Adding a truthful source label",
+        "Reordering shots to imply actions occurred in a different sequence",
+        "Adjusting volume to make speech audible"
+      ],
+      "correct_mask": 4,
+      "rationale": "Misleading chronology distorts what footage supports. Source: MAIC Understanding Digital Journalism, page 7."
+    },
+    {
+      "ordinal": 61,
+      "source_page": 8,
+      "stem": "What is a useful web headline for a temporary policy change?",
+      "options": [
+        "A precise statement of the change, timing and status",
+        "A vague phrase promising a shocking secret",
+        "A categorical accusation before checking facts",
+        "A long list of repeated search keywords"
+      ],
+      "correct_mask": 1,
+      "rationale": "Clear headings support readers and accurate discovery. Source: MAIC Understanding Digital Journalism, page 8."
+    },
+    {
+      "ordinal": 62,
+      "source_page": 8,
+      "stem": "Why should search-oriented writing avoid keyword stuffing?",
+      "options": [
+        "It can distort meaning and reduce clarity",
+        "More repetition always improves verification",
+        "Search terms prove source authenticity",
+        "Headlines need no relation to article content"
+      ],
+      "correct_mask": 1,
+      "rationale": "Discoverability must not compromise accuracy. Source: MAIC Understanding Digital Journalism, page 8."
+    },
+    {
+      "ordinal": 63,
+      "source_page": 8,
+      "stem": "What is the function of descriptive subheadings in a long web article?",
+      "options": [
+        "Make every source independent",
+        "Help readers locate relevant supported details",
+        "Replace original documentation",
+        "Allow an unsupported claim to remain in a headline"
+      ],
+      "correct_mask": 2,
+      "rationale": "Structure improves navigation without changing evidence. Source: MAIC Understanding Digital Journalism, page 8."
+    },
+    {
+      "ordinal": 64,
+      "source_page": 8,
+      "stem": "Which link most directly supports a reported official notice?",
+      "options": [
+        "An unrelated commercial landing page",
+        "An unattributed social repost",
+        "A relevant primary record when safe and legal to share",
+        "A link revealing confidential witness addresses"
+      ],
+      "correct_mask": 4,
+      "rationale": "Primary links make the evidence inspectable. Source: MAIC Understanding Digital Journalism, page 8."
+    },
+    {
+      "ordinal": 65,
+      "source_page": 8,
+      "stem": "Why must a social preview maintain context?",
+      "options": [
+        "Some readers see the preview without the full article",
+        "Only the full article is ever shared",
+        "Preview text cannot mislead",
+        "A preview is always just decoration"
+      ],
+      "correct_mask": 1,
+      "rationale": "Fragments can independently convey factual claims. Source: MAIC Understanding Digital Journalism, page 8."
+    },
+    {
+      "ordinal": 66,
+      "source_page": 8,
+      "stem": "Which accessibility practice helps someone unable to view an image?",
+      "options": [
+        "Replacing all text with decorative color",
+        "Using an uncaptioned animation",
+        "Hiding the article title in the image",
+        "Accurate alternative text describing relevant content"
+      ],
+      "correct_mask": 8,
+      "rationale": "Alt text can convey content nonvisually. Source: MAIC Understanding Digital Journalism, page 8."
+    },
+    {
+      "ordinal": 67,
+      "source_page": 8,
+      "stem": "What is wrong with conveying warnings by red and green colors alone?",
+      "options": [
+        "Color contrast has no relation to comprehension",
+        "All readers perceive colors identically",
+        "Only video requires accessibility",
+        "Some readers may miss the difference without textual labels"
+      ],
+      "correct_mask": 8,
+      "rationale": "Critical distinctions should not depend solely on color. Source: MAIC Understanding Digital Journalism, page 8."
+    },
+    {
+      "ordinal": 68,
+      "source_page": 8,
+      "stem": "How should meaningful corrections be reflected on a web page?",
+      "options": [
+        "By silently changing the headline only",
+        "By deleting all original records",
+        "By leaving false snippets unaddressed",
+        "With updated information, a visible note and relevant timing"
+      ],
+      "correct_mask": 8,
+      "rationale": "Transparent revisions support understanding. Source: MAIC Understanding Digital Journalism, page 8."
+    },
+    {
+      "ordinal": 69,
+      "source_page": 8,
+      "stem": "What should an accessible video package provide where feasible?",
+      "options": [
+        "Only dramatic background music",
+        "Only a file without contextual description",
+        "Only a promotional image",
+        "Readable captions or a transcript"
+      ],
+      "correct_mask": 8,
+      "rationale": "Captions and transcripts improve usable access. Source: MAIC Understanding Digital Journalism, page 8."
+    },
+    {
+      "ordinal": 70,
+      "source_page": 8,
+      "stem": "Which web-description claim is unacceptable?",
+      "options": [
+        "One that names the published article topic",
+        "One that implies certainty absent from the verified story",
+        "One that states the source of a notice",
+        "One that accurately identifies a date"
+      ],
+      "correct_mask": 2,
+      "rationale": "Descriptions must be as evidence-based as the article. Source: MAIC Understanding Digital Journalism, page 8."
+    },
+    {
+      "ordinal": 71,
+      "source_page": 9,
+      "stem": "Does high page-view count establish that a story is factual?",
+      "options": [
+        "No, it measures attention rather than truth",
+        "Yes, every visitor independently verified the facts",
+        "Only if social shares are also high",
+        "Yes, when the title is short"
+      ],
+      "correct_mask": 1,
+      "rationale": "Analytics cannot replace journalistic verification. Source: MAIC Understanding Digital Journalism, page 9."
+    },
+    {
+      "ordinal": 72,
+      "source_page": 9,
+      "stem": "What is necessary before comparing two completion rates?",
+      "options": [
+        "Compatible definitions, populations and reporting periods",
+        "The same headline font",
+        "Matching cover images",
+        "Identical story word counts"
+      ],
+      "correct_mask": 1,
+      "rationale": "KPI comparability depends on denominators and definitions. Source: MAIC Understanding Digital Journalism, page 9."
+    },
+    {
+      "ordinal": 73,
+      "source_page": 9,
+      "stem": "What might very high clicks but low article completion suggest?",
+      "options": [
+        "The reporting is proven accurate",
+        "Every reader was satisfied",
+        "The story necessarily served the greatest public interest",
+        "Headline-content mismatch requiring investigation"
+      ],
+      "correct_mask": 8,
+      "rationale": "Clicks and completion can signal different audience behavior. Source: MAIC Understanding Digital Journalism, page 9."
+    },
+    {
+      "ordinal": 74,
+      "source_page": 9,
+      "stem": "Why should a public safety update not be judged by entertainment metrics alone?",
+      "options": [
+        "Safety updates never have any audience",
+        "Useful information can matter even with fewer views",
+        "Only sensational stories can create public value",
+        "Engagement is a direct measure of harm prevention"
+      ],
+      "correct_mask": 2,
+      "rationale": "Public benefit extends beyond reach. Source: MAIC Understanding Digital Journalism, page 9."
+    },
+    {
+      "ordinal": 75,
+      "source_page": 9,
+      "stem": "An article records 300 completions among 1000 defined visits. What is its completion fraction?",
+      "options": [
+        "30%",
+        "3%",
+        "70%",
+        "300%"
+      ],
+      "correct_mask": 1,
+      "rationale": "300 divided by 1000 equals 0.30 or 30 percent. Source: MAIC Understanding Digital Journalism, page 9."
+    },
+    {
+      "ordinal": 76,
+      "source_page": 9,
+      "stem": "Why can a tracking-method change create apparent KPI improvement?",
+      "options": [
+        "All methods always report identical counts",
+        "A method change always increases accuracy",
+        "Recorded numbers may change without any newsroom or audience behavior change",
+        "Data tracking is unrelated to analytics"
+      ],
+      "correct_mask": 4,
+      "rationale": "Measurement changes can confound trends. Source: MAIC Understanding Digital Journalism, page 9."
+    },
+    {
+      "ordinal": 77,
+      "source_page": 9,
+      "stem": "What is an example of a balancing quality measure?",
+      "options": [
+        "Headline length alone",
+        "Advertising impressions alone",
+        "Social reactions alone",
+        "Factual corrections alongside total reach"
+      ],
+      "correct_mask": 8,
+      "rationale": "Quality metrics reveal harms hidden by attention. Source: MAIC Understanding Digital Journalism, page 9."
+    },
+    {
+      "ordinal": 78,
+      "source_page": 9,
+      "stem": "Why do chart axes need explicit units and time periods?",
+      "options": [
+        "All numerical charts are self-explanatory",
+        "Units matter only for price charts",
+        "Readers need to know what was measured and when",
+        "An unlabeled graph proves a trend"
+      ],
+      "correct_mask": 4,
+      "rationale": "Data presentation must preserve definitions. Source: MAIC Understanding Digital Journalism, page 9."
+    },
+    {
+      "ordinal": 79,
+      "source_page": 9,
+      "stem": "What does a rise in two correlated metrics establish?",
+      "options": [
+        "One metric definitely caused the other",
+        "Every other factor is irrelevant",
+        "An association that needs investigation before claiming cause",
+        "The sample is automatically representative"
+      ],
+      "correct_mask": 4,
+      "rationale": "Correlation is not proof of causation. Source: MAIC Understanding Digital Journalism, page 9."
+    },
+    {
+      "ordinal": 80,
+      "source_page": 9,
+      "stem": "Why should audience segments be interpreted carefully?",
+      "options": [
+        "Every audience group has identical needs",
+        "Different reader mixes can alter aggregate performance",
+        "Segmentation guarantees causal proof",
+        "More segments always make a metric reliable"
+      ],
+      "correct_mask": 2,
+      "rationale": "Composition and context affect interpretation. Source: MAIC Understanding Digital Journalism, page 9."
+    },
+    {
+      "ordinal": 81,
+      "source_page": 10,
+      "stem": "What should a digital correction identify?",
+      "options": [
+        "Only an apology without stating the fact",
+        "Only the new article image",
+        "Only how many readers complained",
+        "The material error, verified replacement and update date"
+      ],
+      "correct_mask": 8,
+      "rationale": "Corrections should be specific and traceable. Source: MAIC Understanding Digital Journalism, page 10."
+    },
+    {
+      "ordinal": 82,
+      "source_page": 10,
+      "stem": "Why is silent revision of a major error risky?",
+      "options": [
+        "All readers automatically see updates",
+        "Deleted errors cannot persist in screenshots",
+        "Digital corrections are never needed",
+        "Earlier readers may rely on a different false version"
+      ],
+      "correct_mask": 8,
+      "rationale": "Past copies and impressions can remain influential. Source: MAIC Understanding Digital Journalism, page 10."
+    },
+    {
+      "ordinal": 83,
+      "source_page": 10,
+      "stem": "What should be checked after correcting a misleading web headline?",
+      "options": [
+        "Whether related social previews and snippets still repeat the error",
+        "Only the office printer settings",
+        "Only the unrelated old articles",
+        "Only the author's biography"
+      ],
+      "correct_mask": 1,
+      "rationale": "The correction should address circulating false copies. Source: MAIC Understanding Digital Journalism, page 10."
+    },
+    {
+      "ordinal": 84,
+      "source_page": 10,
+      "stem": "Why should access to source files be controlled?",
+      "options": [
+        "Access controls make every document true",
+        "Anyone online has a right to every private identifier",
+        "Login protection removes legal responsibilities",
+        "Sensitive information could expose sources or unreleased reporting"
+      ],
+      "correct_mask": 8,
+      "rationale": "Source confidentiality may require security safeguards. Source: MAIC Understanding Digital Journalism, page 10."
+    },
+    {
+      "ordinal": 85,
+      "source_page": 10,
+      "stem": "What hidden data can images potentially expose?",
+      "options": [
+        "Only the image file extension",
+        "Location or identity information embedded in metadata or visible details",
+        "Only the editor's font choice",
+        "Only how many views it will receive"
+      ],
+      "correct_mask": 2,
+      "rationale": "Metadata and background details can reveal sensitive context. Source: MAIC Understanding Digital Journalism, page 10."
+    },
+    {
+      "ordinal": 86,
+      "source_page": 10,
+      "stem": "What is an AI transcription risk illustrated by 15 versus 50 buses?",
+      "options": [
+        "Every AI transcript is more accurate than audio",
+        "Numbers are irrelevant to news reporting",
+        "Audio cannot be used to verify a quote",
+        "The tool can introduce a material numerical error"
+      ],
+      "correct_mask": 8,
+      "rationale": "AI outputs must be compared to original recordings. Source: MAIC Understanding Digital Journalism, page 10."
+    },
+    {
+      "ordinal": 87,
+      "source_page": 10,
+      "stem": "When could synthetic reconstruction mislead?",
+      "options": [
+        "When clearly labeled as a hypothetical illustration",
+        "When excluded from the news report",
+        "When it is presented as authentic eyewitness footage",
+        "When described as computer-generated context"
+      ],
+      "correct_mask": 4,
+      "rationale": "Synthetic scenes must not be disguised as real documentation. Source: MAIC Understanding Digital Journalism, page 10."
+    },
+    {
+      "ordinal": 88,
+      "source_page": 10,
+      "stem": "Why should sensitive source documents not be sent to arbitrary AI services?",
+      "options": [
+        "All AI systems automatically preserve attorney-client privilege",
+        "The document's spelling may change",
+        "Unapproved processing can create privacy and confidentiality exposure",
+        "Every upload converts a file to public domain"
+      ],
+      "correct_mask": 4,
+      "rationale": "Sensitive inputs need appropriate data handling. Source: MAIC Understanding Digital Journalism, page 10."
+    },
+    {
+      "ordinal": 89,
+      "source_page": 10,
+      "stem": "What is the proper response to an AI summary mentioning a source absent from the original?",
+      "options": [
+        "Treat it as a newly discovered witness",
+        "Attribute it to the reporter",
+        "Publish it as a verified independent confirmation",
+        "Remove or investigate the unsupported source before publication"
+      ],
+      "correct_mask": 8,
+      "rationale": "Generated content cannot create evidence. Source: MAIC Understanding Digital Journalism, page 10."
+    },
+    {
+      "ordinal": 90,
+      "source_page": 10,
+      "stem": "When should serious digital legal or safety risks be escalated?",
+      "options": [
+        "Before release to suitable qualified reviewers",
+        "Only after a publication is widely shared",
+        "Never for online media",
+        "Only when the image file is large"
+      ],
+      "correct_mask": 1,
+      "rationale": "High-risk material may require specialist review. Source: MAIC Understanding Digital Journalism, page 10."
+    },
+    {
+      "ordinal": 91,
+      "source_page": 11,
+      "stem": "What does the hypothetical bridge authority notice actually support?",
+      "options": [
+        "A confirmed major fire",
+        "An indefinite full-bridge shutdown",
+        "A scheduled single-lane maintenance closure",
+        "A citywide transport emergency"
+      ],
+      "correct_mask": 4,
+      "rationale": "The notice is specifically about one lane and scheduled maintenance. Source: MAIC Understanding Digital Journalism, page 11."
+    },
+    {
+      "ordinal": 92,
+      "source_page": 11,
+      "stem": "Why does the older smoke photo not confirm a current fire?",
+      "options": [
+        "It depicts a different earlier event",
+        "It includes a bridge",
+        "The smoke is visible",
+        "It was reposted recently"
+      ],
+      "correct_mask": 1,
+      "rationale": "A real image can be recycled with false event context. Source: MAIC Understanding Digital Journalism, page 11."
+    },
+    {
+      "ordinal": 93,
+      "source_page": 11,
+      "stem": "What should be checked before accepting the short fire video?",
+      "options": [
+        "Only the number of reposts",
+        "Its original recording, time, location and independent evidence",
+        "Only its dramatic sound",
+        "Only the account's display name"
+      ],
+      "correct_mask": 2,
+      "rationale": "The clip has insufficient provenance in the case. Source: MAIC Understanding Digital Journalism, page 11."
+    },
+    {
+      "ordinal": 94,
+      "source_page": 11,
+      "stem": "Which headline is accurate under the fictional authority notice?",
+      "options": [
+        "Major fire closes bridge indefinitely",
+        "Entire bridge has permanently collapsed",
+        "Transport authority confirms citywide emergency",
+        "One bridge lane scheduled to close for maintenance Tuesday through Thursday"
+      ],
+      "correct_mask": 8,
+      "rationale": "The verified announcement concerns a limited scheduled closure. Source: MAIC Understanding Digital Journalism, page 11."
+    },
+    {
+      "ordinal": 95,
+      "source_page": 11,
+      "stem": "What should a newsroom say about the claimed fire before confirmation?",
+      "options": [
+        "It is a proven fact",
+        "It is confirmed by the older image",
+        "It is unverified and not established by the maintenance notice",
+        "It must be the reason for the maintenance schedule"
+      ],
+      "correct_mask": 4,
+      "rationale": "The rumor is not verified by the available primary source. Source: MAIC Understanding Digital Journalism, page 11."
+    },
+    {
+      "ordinal": 96,
+      "source_page": 11,
+      "stem": "What makes the hypothetical case a public-service reporting task?",
+      "options": [
+        "It has a dramatic photograph",
+        "It was mentioned by an anonymous account",
+        "Travelers need accurate lane, date and route details",
+        "It could produce more engagement"
+      ],
+      "correct_mask": 4,
+      "rationale": "Accurate practical instructions serve readers. Source: MAIC Understanding Digital Journalism, page 11."
+    },
+    {
+      "ordinal": 97,
+      "source_page": 11,
+      "stem": "What should a claim table show for the indefinite-closure allegation?",
+      "options": [
+        "A fully verified closure",
+        "A completed source audit confirming the claim",
+        "No supporting primary record and an unresolved verification need",
+        "A mandatory instruction to use the viral headline"
+      ],
+      "correct_mask": 4,
+      "rationale": "Evidence status must be tracked claim by claim. Source: MAIC Understanding Digital Journalism, page 11."
+    },
+    {
+      "ordinal": 98,
+      "source_page": 11,
+      "stem": "If a published report says two lanes close but notice says one, what is needed?",
+      "options": [
+        "A visible correction to one lane with verified source context",
+        "Silent removal of every road reference",
+        "Keep two lanes because the rumor is popular",
+        "Claim all records are equally accurate"
+      ],
+      "correct_mask": 1,
+      "rationale": "The inaccurate lane count is a material service error. Source: MAIC Understanding Digital Journalism, page 11."
+    },
+    {
+      "ordinal": 99,
+      "source_page": 11,
+      "stem": "When should a new emergency update be published as factual?",
+      "options": [
+        "When the repost count doubles",
+        "Whenever the old smoke image becomes popular",
+        "Immediately when an anonymous comment appears",
+        "After the relevant emergency information is independently verified"
+      ],
+      "correct_mask": 8,
+      "rationale": "Developing news requires checks before definitive updates. Source: MAIC Understanding Digital Journalism, page 11."
+    },
+    {
+      "ordinal": 100,
+      "source_page": 11,
+      "stem": "Which reporting choice best reduces avoidable harm in the bridge case?",
+      "options": [
+        "Publish the fire rumor in the alert title",
+        "Ignore the dated transport notice",
+        "Avoid amplifying an unsupported disaster claim while providing verified instructions",
+        "Use the old smoke picture as current footage"
+      ],
+      "correct_mask": 4,
+      "rationale": "The simulation prioritizes reliable service and cautious rumor handling. Source: MAIC Understanding Digital Journalism, page 11."
+    }
+  ]
+}
