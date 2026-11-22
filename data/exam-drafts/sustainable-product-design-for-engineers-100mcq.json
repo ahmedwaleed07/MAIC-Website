@@ -1,0 +1,1312 @@
+{
+  "course_id": "sustainable-product-design-for-engineers",
+  "source_manuscript": "data/course-manuscripts/sustainable-product-design-for-engineers.md",
+  "source_manuscript_blob_sha": "1798b63a7710d9be3e5bb9da58c6ce4d5ed6b143",
+  "source_pdf_sha256": null,
+  "bank_version": "draft-manuscript-20261123-v1",
+  "approval_status": "editorial_draft_pending_independent_review",
+  "number_of_questions": 100,
+  "note": "Unapproved editorial question bank. Independent reviewer validation of sustainability data, regulatory nuance and source page accuracy required before activation.",
+  "questions": [
+    {
+      "ordinal": 1,
+      "source_page": 2,
+      "stem": "What is the central goal of sustainable product engineering?",
+      "options": [
+        "Provide useful performance while reducing avoidable life-cycle impacts",
+        "Choose the lowest mass without safety tests",
+        "Claim every classroom figure is a verified market fact",
+        "Assume a single material is always best"
+      ],
+      "correct_mask": 1,
+      "rationale": "The manual states that provide useful performance while reducing avoidable life-cycle impacts. This follows the functional, safety, life-cycle or quantitative evidence discussed for the case. Source: MAIC Sustainable Product Design for Engineers, page 2."
+    },
+    {
+      "ordinal": 2,
+      "source_page": 2,
+      "stem": "Why is the lightest material not always the most sustainable?",
+      "options": [
+        "It may reduce durability or increase failure and waste",
+        "Treat an attractive product photo as proof of sustainability",
+        "Evaluate only purchase price and ignore the use phase",
+        "Choose the lowest mass without safety tests"
+      ],
+      "correct_mask": 1,
+      "rationale": "The manual states that it may reduce durability or increase failure and waste. This follows the functional, safety, life-cycle or quantitative evidence discussed for the case. Source: MAIC Sustainable Product Design for Engineers, page 2."
+    },
+    {
+      "ordinal": 3,
+      "source_page": 2,
+      "stem": "What must remain part of a sustainable engineering brief?",
+      "options": [
+        "Claim every classroom figure is a verified market fact",
+        "Assume a single material is always best",
+        "Treat an attractive product photo as proof of sustainability",
+        "Safety, function, durability and evidence"
+      ],
+      "correct_mask": 8,
+      "rationale": "The manual states that safety, function, durability and evidence. This follows the functional, safety, life-cycle or quantitative evidence discussed for the case. Source: MAIC Sustainable Product Design for Engineers, page 2."
+    },
+    {
+      "ordinal": 4,
+      "source_page": 2,
+      "stem": "What is a functional unit useful for?",
+      "options": [
+        "Evaluate only purchase price and ignore the use phase",
+        "Choose the lowest mass without safety tests",
+        "Claim every classroom figure is a verified market fact",
+        "Comparing products providing an equivalent service"
+      ],
+      "correct_mask": 8,
+      "rationale": "The manual states that comparing products providing an equivalent service. This follows the functional, safety, life-cycle or quantitative evidence discussed for the case. Source: MAIC Sustainable Product Design for Engineers, page 2."
+    },
+    {
+      "ordinal": 5,
+      "source_page": 2,
+      "stem": "What does an introductory screening assessment not establish?",
+      "options": [
+        "Assume a single material is always best",
+        "A certified product life-cycle result",
+        "Treat an attractive product photo as proof of sustainability",
+        "Evaluate only purchase price and ignore the use phase"
+      ],
+      "correct_mask": 2,
+      "rationale": "The manual states that a certified product life-cycle result. This follows the functional, safety, life-cycle or quantitative evidence discussed for the case. Source: MAIC Sustainable Product Design for Engineers, page 2."
+    },
+    {
+      "ordinal": 6,
+      "source_page": 2,
+      "stem": "Why should classroom figures be labeled hypothetical?",
+      "options": [
+        "They are not verified measurements from an actual product",
+        "Choose the lowest mass without safety tests",
+        "Claim every classroom figure is a verified market fact",
+        "Assume a single material is always best"
+      ],
+      "correct_mask": 1,
+      "rationale": "The manual states that they are not verified measurements from an actual product. This follows the functional, safety, life-cycle or quantitative evidence discussed for the case. Source: MAIC Sustainable Product Design for Engineers, page 2."
+    },
+    {
+      "ordinal": 7,
+      "source_page": 2,
+      "stem": "What is a meaningful first engineering question?",
+      "options": [
+        "Treat an attractive product photo as proof of sustainability",
+        "What function the product must safely deliver",
+        "Evaluate only purchase price and ignore the use phase",
+        "Choose the lowest mass without safety tests"
+      ],
+      "correct_mask": 2,
+      "rationale": "The manual states that what function the product must safely deliver. This follows the functional, safety, life-cycle or quantitative evidence discussed for the case. Source: MAIC Sustainable Product Design for Engineers, page 2."
+    },
+    {
+      "ordinal": 8,
+      "source_page": 2,
+      "stem": "What is one expected course output?",
+      "options": [
+        "Claim every classroom figure is a verified market fact",
+        "Assume a single material is always best",
+        "Treat an attractive product photo as proof of sustainability",
+        "A documented redesign proposal with uncertainties"
+      ],
+      "correct_mask": 8,
+      "rationale": "The manual states that a documented redesign proposal with uncertainties. This follows the functional, safety, life-cycle or quantitative evidence discussed for the case. Source: MAIC Sustainable Product Design for Engineers, page 2."
+    },
+    {
+      "ordinal": 9,
+      "source_page": 2,
+      "stem": "Why should environmental claims be limited by evidence?",
+      "options": [
+        "Evaluate only purchase price and ignore the use phase",
+        "Choose the lowest mass without safety tests",
+        "Claim every classroom figure is a verified market fact",
+        "Unmeasured impacts cannot be responsibly asserted"
+      ],
+      "correct_mask": 8,
+      "rationale": "The manual states that unmeasured impacts cannot be responsibly asserted. This follows the functional, safety, life-cycle or quantitative evidence discussed for the case. Source: MAIC Sustainable Product Design for Engineers, page 2."
+    },
+    {
+      "ordinal": 10,
+      "source_page": 2,
+      "stem": "What is the main application product in the manual?",
+      "options": [
+        "Assume a single material is always best",
+        "Treat an attractive product photo as proof of sustainability",
+        "Evaluate only purchase price and ignore the use phase",
+        "A portable desk lamp"
+      ],
+      "correct_mask": 8,
+      "rationale": "The manual states that a portable desk lamp. This follows the functional, safety, life-cycle or quantitative evidence discussed for the case. Source: MAIC Sustainable Product Design for Engineers, page 2."
+    },
+    {
+      "ordinal": 11,
+      "source_page": 3,
+      "stem": "What should a product brief specify?",
+      "options": [
+        "Performance, expected lifetime and conditions of use",
+        "Assume all lamps deliver identical output and lifetime",
+        "Ignore repair and end-of-life stages",
+        "Replace legal safety requirements with design preference"
+      ],
+      "correct_mask": 1,
+      "rationale": "The manual states that performance, expected lifetime and conditions of use. This follows the functional, safety, life-cycle or quantitative evidence discussed for the case. Source: MAIC Sustainable Product Design for Engineers, page 3."
+    },
+    {
+      "ordinal": 12,
+      "source_page": 3,
+      "stem": "What does the functional unit keep constant?",
+      "options": [
+        "Treat supplier advertising as verified data",
+        "The service being compared across alternatives",
+        "Use no defined comparison boundary",
+        "Assume all lamps deliver identical output and lifetime"
+      ],
+      "correct_mask": 2,
+      "rationale": "The manual states that the service being compared across alternatives. This follows the functional, safety, life-cycle or quantitative evidence discussed for the case. Source: MAIC Sustainable Product Design for Engineers, page 3."
+    },
+    {
+      "ordinal": 13,
+      "source_page": 3,
+      "stem": "What should be defined in a life-cycle boundary?",
+      "options": [
+        "Ignore repair and end-of-life stages",
+        "Replace legal safety requirements with design preference",
+        "Treat supplier advertising as verified data",
+        "Which stages and processes are included"
+      ],
+      "correct_mask": 8,
+      "rationale": "The manual states that which stages and processes are included. This follows the functional, safety, life-cycle or quantitative evidence discussed for the case. Source: MAIC Sustainable Product Design for Engineers, page 3."
+    },
+    {
+      "ordinal": 14,
+      "source_page": 3,
+      "stem": "Why should a supplier's eco description not be treated as measured data?",
+      "options": [
+        "Use no defined comparison boundary",
+        "Assume all lamps deliver identical output and lifetime",
+        "The statement lacks specified verified evidence",
+        "Ignore repair and end-of-life stages"
+      ],
+      "correct_mask": 4,
+      "rationale": "The manual states that the statement lacks specified verified evidence. This follows the functional, safety, life-cycle or quantitative evidence discussed for the case. Source: MAIC Sustainable Product Design for Engineers, page 3."
+    },
+    {
+      "ordinal": 15,
+      "source_page": 3,
+      "stem": "Who benefits from ease of product service access?",
+      "options": [
+        "Repair technicians and relevant users",
+        "Replace legal safety requirements with design preference",
+        "Treat supplier advertising as verified data",
+        "Use no defined comparison boundary"
+      ],
+      "correct_mask": 1,
+      "rationale": "The manual states that repair technicians and relevant users. This follows the functional, safety, life-cycle or quantitative evidence discussed for the case. Source: MAIC Sustainable Product Design for Engineers, page 3."
+    },
+    {
+      "ordinal": 16,
+      "source_page": 3,
+      "stem": "What is a reasonable lamp functional unit?",
+      "options": [
+        "Assume all lamps deliver identical output and lifetime",
+        "One thousand hours of adequate desk illumination",
+        "Ignore repair and end-of-life stages",
+        "Replace legal safety requirements with design preference"
+      ],
+      "correct_mask": 2,
+      "rationale": "The manual states that one thousand hours of adequate desk illumination. This follows the functional, safety, life-cycle or quantitative evidence discussed for the case. Source: MAIC Sustainable Product Design for Engineers, page 3."
+    },
+    {
+      "ordinal": 17,
+      "source_page": 3,
+      "stem": "Why must safety requirements be included from the beginning?",
+      "options": [
+        "Treat supplier advertising as verified data",
+        "Use no defined comparison boundary",
+        "An efficient but unsafe product is unacceptable",
+        "Assume all lamps deliver identical output and lifetime"
+      ],
+      "correct_mask": 4,
+      "rationale": "The manual states that an efficient but unsafe product is unacceptable. This follows the functional, safety, life-cycle or quantitative evidence discussed for the case. Source: MAIC Sustainable Product Design for Engineers, page 3."
+    },
+    {
+      "ordinal": 18,
+      "source_page": 3,
+      "stem": "What is a data-quality concern in early design?",
+      "options": [
+        "Unverified expected service life",
+        "Ignore repair and end-of-life stages",
+        "Replace legal safety requirements with design preference",
+        "Treat supplier advertising as verified data"
+      ],
+      "correct_mask": 1,
+      "rationale": "The manual states that unverified expected service life. This follows the functional, safety, life-cycle or quantitative evidence discussed for the case. Source: MAIC Sustainable Product Design for Engineers, page 3."
+    },
+    {
+      "ordinal": 19,
+      "source_page": 3,
+      "stem": "What must engineers distinguish in a requirements table?",
+      "options": [
+        "Use no defined comparison boundary",
+        "Assume all lamps deliver identical output and lifetime",
+        "Measured facts and provisional assumptions",
+        "Ignore repair and end-of-life stages"
+      ],
+      "correct_mask": 4,
+      "rationale": "The manual states that measured facts and provisional assumptions. This follows the functional, safety, life-cycle or quantitative evidence discussed for the case. Source: MAIC Sustainable Product Design for Engineers, page 3."
+    },
+    {
+      "ordinal": 20,
+      "source_page": 3,
+      "stem": "If a product lifetime is unknown, what should the team do?",
+      "options": [
+        "Replace legal safety requirements with design preference",
+        "Treat supplier advertising as verified data",
+        "Use no defined comparison boundary",
+        "Flag it for appropriate reliability testing"
+      ],
+      "correct_mask": 8,
+      "rationale": "The manual states that flag it for appropriate reliability testing. This follows the functional, safety, life-cycle or quantitative evidence discussed for the case. Source: MAIC Sustainable Product Design for Engineers, page 3."
+    },
+    {
+      "ordinal": 21,
+      "source_page": 4,
+      "stem": "What does ISO 14040 describe?",
+      "options": [
+        "Treat one power calculation as a full LCA",
+        "The principles and framework of life-cycle assessment",
+        "Ignore life-cycle inventory and scope",
+        "Use energy units as interchangeable with emissions"
+      ],
+      "correct_mask": 2,
+      "rationale": "The manual states that the principles and framework of life-cycle assessment. This follows the functional, safety, life-cycle or quantitative evidence discussed for the case. Source: MAIC Sustainable Product Design for Engineers, page 4."
+    },
+    {
+      "ordinal": 22,
+      "source_page": 4,
+      "stem": "Which is an LCA framework phase?",
+      "options": [
+        "Goal and scope definition",
+        "Combine unrelated indicators without defining weights",
+        "Call a classroom table a certified public comparison",
+        "Treat one power calculation as a full LCA"
+      ],
+      "correct_mask": 1,
+      "rationale": "The manual states that goal and scope definition. This follows the functional, safety, life-cycle or quantitative evidence discussed for the case. Source: MAIC Sustainable Product Design for Engineers, page 4."
+    },
+    {
+      "ordinal": 23,
+      "source_page": 4,
+      "stem": "What is a life-cycle inventory?",
+      "options": [
+        "Ignore life-cycle inventory and scope",
+        "Use energy units as interchangeable with emissions",
+        "Combine unrelated indicators without defining weights",
+        "A structured set of material, energy and output flows"
+      ],
+      "correct_mask": 8,
+      "rationale": "The manual states that a structured set of material, energy and output flows. This follows the functional, safety, life-cycle or quantitative evidence discussed for the case. Source: MAIC Sustainable Product Design for Engineers, page 4."
+    },
+    {
+      "ordinal": 24,
+      "source_page": 4,
+      "stem": "Why does an impact category need a specified method?",
+      "options": [
+        "Call a classroom table a certified public comparison",
+        "Treat one power calculation as a full LCA",
+        "Ignore life-cycle inventory and scope",
+        "Environmental effects have different units and models"
+      ],
+      "correct_mask": 8,
+      "rationale": "The manual states that environmental effects have different units and models. This follows the functional, safety, life-cycle or quantitative evidence discussed for the case. Source: MAIC Sustainable Product Design for Engineers, page 4."
+    },
+    {
+      "ordinal": 25,
+      "source_page": 4,
+      "stem": "Why is a classroom screen not automatically an ISO-certified assessment?",
+      "options": [
+        "Use energy units as interchangeable with emissions",
+        "Combine unrelated indicators without defining weights",
+        "Call a classroom table a certified public comparison",
+        "It may lack data, methods and independent review"
+      ],
+      "correct_mask": 8,
+      "rationale": "The manual states that it may lack data, methods and independent review. This follows the functional, safety, life-cycle or quantitative evidence discussed for the case. Source: MAIC Sustainable Product Design for Engineers, page 4."
+    },
+    {
+      "ordinal": 26,
+      "source_page": 4,
+      "stem": "What should a material-flow dataset identify?",
+      "options": [
+        "Treat one power calculation as a full LCA",
+        "Ignore life-cycle inventory and scope",
+        "Quantities, units, origin and uncertainty",
+        "Use energy units as interchangeable with emissions"
+      ],
+      "correct_mask": 4,
+      "rationale": "The manual states that quantities, units, origin and uncertainty. This follows the functional, safety, life-cycle or quantitative evidence discussed for the case. Source: MAIC Sustainable Product Design for Engineers, page 4."
+    },
+    {
+      "ordinal": 27,
+      "source_page": 4,
+      "stem": "Why are regional electricity data relevant?",
+      "options": [
+        "Combine unrelated indicators without defining weights",
+        "Call a classroom table a certified public comparison",
+        "Environmental impact depends partly on the actual system",
+        "Treat one power calculation as a full LCA"
+      ],
+      "correct_mask": 4,
+      "rationale": "The manual states that environmental impact depends partly on the actual system. This follows the functional, safety, life-cycle or quantitative evidence discussed for the case. Source: MAIC Sustainable Product Design for Engineers, page 4."
+    },
+    {
+      "ordinal": 28,
+      "source_page": 4,
+      "stem": "What is a risk of summing all environmental metrics without a method?",
+      "options": [
+        "Ignore life-cycle inventory and scope",
+        "Use energy units as interchangeable with emissions",
+        "Combine unrelated indicators without defining weights",
+        "The total hides value choices and incomparable units"
+      ],
+      "correct_mask": 8,
+      "rationale": "The manual states that the total hides value choices and incomparable units. This follows the functional, safety, life-cycle or quantitative evidence discussed for the case. Source: MAIC Sustainable Product Design for Engineers, page 4."
+    },
+    {
+      "ordinal": 29,
+      "source_page": 4,
+      "stem": "An 8 W lamp runs 1,000 hours. How many kWh does it consume?",
+      "options": [
+        "Call a classroom table a certified public comparison",
+        "Treat one power calculation as a full LCA",
+        "8 kWh",
+        "Ignore life-cycle inventory and scope"
+      ],
+      "correct_mask": 4,
+      "rationale": "The manual states that 8 kWh. This follows the functional, safety, life-cycle or quantitative evidence discussed for the case. Source: MAIC Sustainable Product Design for Engineers, page 4."
+    },
+    {
+      "ordinal": 30,
+      "source_page": 4,
+      "stem": "What cannot be inferred from 8 kWh alone?",
+      "options": [
+        "Use energy units as interchangeable with emissions",
+        "Combine unrelated indicators without defining weights",
+        "A complete carbon footprint",
+        "Call a classroom table a certified public comparison"
+      ],
+      "correct_mask": 4,
+      "rationale": "The manual states that a complete carbon footprint. This follows the functional, safety, life-cycle or quantitative evidence discussed for the case. Source: MAIC Sustainable Product Design for Engineers, page 4."
+    },
+    {
+      "ordinal": 31,
+      "source_page": 5,
+      "stem": "What should engineering material selection balance?",
+      "options": [
+        "Select a material solely by recycled content",
+        "Ignore heat and mechanical properties",
+        "Strength, safety, manufacturability, cost and recovery",
+        "Make glued assemblies impossible to inspect or repair"
+      ],
+      "correct_mask": 4,
+      "rationale": "The manual states that strength, safety, manufacturability, cost and recovery. This follows the functional, safety, life-cycle or quantitative evidence discussed for the case. Source: MAIC Sustainable Product Design for Engineers, page 5."
+    },
+    {
+      "ordinal": 32,
+      "source_page": 5,
+      "stem": "Why can a recycled material still have environmental burdens?",
+      "options": [
+        "Assume all manufacturing processes use equal energy",
+        "Use unlicensed supplier performance data as facts",
+        "Select a material solely by recycled content",
+        "Processing, losses and transport use resources"
+      ],
+      "correct_mask": 8,
+      "rationale": "The manual states that processing, losses and transport use resources. This follows the functional, safety, life-cycle or quantitative evidence discussed for the case. Source: MAIC Sustainable Product Design for Engineers, page 5."
+    },
+    {
+      "ordinal": 33,
+      "source_page": 5,
+      "stem": "How does recycled content differ from recyclability?",
+      "options": [
+        "Ignore heat and mechanical properties",
+        "Make glued assemblies impossible to inspect or repair",
+        "Assume all manufacturing processes use equal energy",
+        "Material origin versus potential future recovery"
+      ],
+      "correct_mask": 8,
+      "rationale": "The manual states that material origin versus potential future recovery. This follows the functional, safety, life-cycle or quantitative evidence discussed for the case. Source: MAIC Sustainable Product Design for Engineers, page 5."
+    },
+    {
+      "ordinal": 34,
+      "source_page": 5,
+      "stem": "Why may additive manufacturing have tradeoffs?",
+      "options": [
+        "Use unlicensed supplier performance data as facts",
+        "Select a material solely by recycled content",
+        "Support waste and energy can differ by design and quantity",
+        "Ignore heat and mechanical properties"
+      ],
+      "correct_mask": 4,
+      "rationale": "The manual states that support waste and energy can differ by design and quantity. This follows the functional, safety, life-cycle or quantitative evidence discussed for the case. Source: MAIC Sustainable Product Design for Engineers, page 5."
+    },
+    {
+      "ordinal": 35,
+      "source_page": 5,
+      "stem": "What is a risk of a bonded mixed-material housing?",
+      "options": [
+        "Make glued assemblies impossible to inspect or repair",
+        "Assume all manufacturing processes use equal energy",
+        "It may be difficult to separate for service or recovery",
+        "Use unlicensed supplier performance data as facts"
+      ],
+      "correct_mask": 4,
+      "rationale": "The manual states that it may be difficult to separate for service or recovery. This follows the functional, safety, life-cycle or quantitative evidence discussed for the case. Source: MAIC Sustainable Product Design for Engineers, page 5."
+    },
+    {
+      "ordinal": 36,
+      "source_page": 5,
+      "stem": "Why should processes be compared at realistic production volume?",
+      "options": [
+        "Select a material solely by recycled content",
+        "Ignore heat and mechanical properties",
+        "Make glued assemblies impossible to inspect or repair",
+        "Setup and per-unit costs can change with batch size"
+      ],
+      "correct_mask": 8,
+      "rationale": "The manual states that setup and per-unit costs can change with batch size. This follows the functional, safety, life-cycle or quantitative evidence discussed for the case. Source: MAIC Sustainable Product Design for Engineers, page 5."
+    },
+    {
+      "ordinal": 37,
+      "source_page": 5,
+      "stem": "What must a new housing material still satisfy?",
+      "options": [
+        "Thermal, mechanical and applicable safety requirements",
+        "Assume all manufacturing processes use equal energy",
+        "Use unlicensed supplier performance data as facts",
+        "Select a material solely by recycled content"
+      ],
+      "correct_mask": 1,
+      "rationale": "The manual states that thermal, mechanical and applicable safety requirements. This follows the functional, safety, life-cycle or quantitative evidence discussed for the case. Source: MAIC Sustainable Product Design for Engineers, page 5."
+    },
+    {
+      "ordinal": 38,
+      "source_page": 5,
+      "stem": "Why does an easily molded part not always produce a better product?",
+      "options": [
+        "Ignore heat and mechanical properties",
+        "Make glued assemblies impossible to inspect or repair",
+        "Assume all manufacturing processes use equal energy",
+        "It may shorten service life or prevent repair"
+      ],
+      "correct_mask": 8,
+      "rationale": "The manual states that it may shorten service life or prevent repair. This follows the functional, safety, life-cycle or quantitative evidence discussed for the case. Source: MAIC Sustainable Product Design for Engineers, page 5."
+    },
+    {
+      "ordinal": 39,
+      "source_page": 5,
+      "stem": "What is one benefit of accessible fasteners?",
+      "options": [
+        "They may permit controlled servicing and disassembly",
+        "Use unlicensed supplier performance data as facts",
+        "Select a material solely by recycled content",
+        "Ignore heat and mechanical properties"
+      ],
+      "correct_mask": 1,
+      "rationale": "The manual states that they may permit controlled servicing and disassembly. This follows the functional, safety, life-cycle or quantitative evidence discussed for the case. Source: MAIC Sustainable Product Design for Engineers, page 5."
+    },
+    {
+      "ordinal": 40,
+      "source_page": 5,
+      "stem": "How should alternative materials be compared?",
+      "options": [
+        "Using common functional requirements and verified data",
+        "Make glued assemblies impossible to inspect or repair",
+        "Assume all manufacturing processes use equal energy",
+        "Use unlicensed supplier performance data as facts"
+      ],
+      "correct_mask": 1,
+      "rationale": "The manual states that using common functional requirements and verified data. This follows the functional, safety, life-cycle or quantitative evidence discussed for the case. Source: MAIC Sustainable Product Design for Engineers, page 5."
+    },
+    {
+      "ordinal": 41,
+      "source_page": 6,
+      "stem": "What is product reliability?",
+      "options": [
+        "Likelihood of performing as intended under defined conditions",
+        "Treat durability claims as proven without testing",
+        "Assume modular components have no extra cost",
+        "Discard the entire lamp after any minor fault"
+      ],
+      "correct_mask": 1,
+      "rationale": "The manual states that likelihood of performing as intended under defined conditions. This follows the functional, safety, life-cycle or quantitative evidence discussed for the case. Source: MAIC Sustainable Product Design for Engineers, page 6."
+    },
+    {
+      "ordinal": 42,
+      "source_page": 6,
+      "stem": "What does maintainability concern?",
+      "options": [
+        "Ask untrained users to service energized electrical systems",
+        "Replace all safety checks with an ordinal score",
+        "Treat durability claims as proven without testing",
+        "The ability to restore function through service"
+      ],
+      "correct_mask": 8,
+      "rationale": "The manual states that the ability to restore function through service. This follows the functional, safety, life-cycle or quantitative evidence discussed for the case. Source: MAIC Sustainable Product Design for Engineers, page 6."
+    },
+    {
+      "ordinal": 43,
+      "source_page": 6,
+      "stem": "What does repairability particularly require?",
+      "options": [
+        "Assume modular components have no extra cost",
+        "Discard the entire lamp after any minor fault",
+        "Accessible replacement parts, tools and instructions",
+        "Ask untrained users to service energized electrical systems"
+      ],
+      "correct_mask": 4,
+      "rationale": "The manual states that accessible replacement parts, tools and instructions. This follows the functional, safety, life-cycle or quantitative evidence discussed for the case. Source: MAIC Sustainable Product Design for Engineers, page 6."
+    },
+    {
+      "ordinal": 44,
+      "source_page": 6,
+      "stem": "Why might a replaceable battery improve useful life?",
+      "options": [
+        "Replace all safety checks with an ordinal score",
+        "A worn component can be replaced without discarding the whole product",
+        "Treat durability claims as proven without testing",
+        "Assume modular components have no extra cost"
+      ],
+      "correct_mask": 2,
+      "rationale": "The manual states that a worn component can be replaced without discarding the whole product. This follows the functional, safety, life-cycle or quantitative evidence discussed for the case. Source: MAIC Sustainable Product Design for Engineers, page 6."
+    },
+    {
+      "ordinal": 45,
+      "source_page": 6,
+      "stem": "Why must electrical components be serviced safely?",
+      "options": [
+        "Discard the entire lamp after any minor fault",
+        "Improper access can expose users to hazardous energy",
+        "Ask untrained users to service energized electrical systems",
+        "Replace all safety checks with an ordinal score"
+      ],
+      "correct_mask": 2,
+      "rationale": "The manual states that improper access can expose users to hazardous energy. This follows the functional, safety, life-cycle or quantitative evidence discussed for the case. Source: MAIC Sustainable Product Design for Engineers, page 6."
+    },
+    {
+      "ordinal": 46,
+      "source_page": 6,
+      "stem": "What is the purpose of analyzing failure modes?",
+      "options": [
+        "Treat durability claims as proven without testing",
+        "Identify possible breakdowns and their effects",
+        "Assume modular components have no extra cost",
+        "Discard the entire lamp after any minor fault"
+      ],
+      "correct_mask": 2,
+      "rationale": "The manual states that identify possible breakdowns and their effects. This follows the functional, safety, life-cycle or quantitative evidence discussed for the case. Source: MAIC Sustainable Product Design for Engineers, page 6."
+    },
+    {
+      "ordinal": 47,
+      "source_page": 6,
+      "stem": "Why is an ordinal risk score not a measured failure probability?",
+      "options": [
+        "Ask untrained users to service energized electrical systems",
+        "Replace all safety checks with an ordinal score",
+        "Treat durability claims as proven without testing",
+        "Its ratings are simplified qualitative judgments"
+      ],
+      "correct_mask": 8,
+      "rationale": "The manual states that its ratings are simplified qualitative judgments. This follows the functional, safety, life-cycle or quantitative evidence discussed for the case. Source: MAIC Sustainable Product Design for Engineers, page 6."
+    },
+    {
+      "ordinal": 48,
+      "source_page": 6,
+      "stem": "What design choice might trade assembly time for serviceability?",
+      "options": [
+        "Using accessible fasteners in place of permanent bonding",
+        "Assume modular components have no extra cost",
+        "Discard the entire lamp after any minor fault",
+        "Ask untrained users to service energized electrical systems"
+      ],
+      "correct_mask": 1,
+      "rationale": "The manual states that using accessible fasteners in place of permanent bonding. This follows the functional, safety, life-cycle or quantitative evidence discussed for the case. Source: MAIC Sustainable Product Design for Engineers, page 6."
+    },
+    {
+      "ordinal": 49,
+      "source_page": 6,
+      "stem": "What evidence is needed for a long-life product claim?",
+      "options": [
+        "Replace all safety checks with an ordinal score",
+        "Appropriate durability or reliability test results",
+        "Treat durability claims as proven without testing",
+        "Assume modular components have no extra cost"
+      ],
+      "correct_mask": 2,
+      "rationale": "The manual states that appropriate durability or reliability test results. This follows the functional, safety, life-cycle or quantitative evidence discussed for the case. Source: MAIC Sustainable Product Design for Engineers, page 6."
+    },
+    {
+      "ordinal": 50,
+      "source_page": 6,
+      "stem": "Why could modular design add material despite improving repair?",
+      "options": [
+        "Discard the entire lamp after any minor fault",
+        "Extra joints or interfaces can be needed",
+        "Ask untrained users to service energized electrical systems",
+        "Replace all safety checks with an ordinal score"
+      ],
+      "correct_mask": 2,
+      "rationale": "The manual states that extra joints or interfaces can be needed. This follows the functional, safety, life-cycle or quantitative evidence discussed for the case. Source: MAIC Sustainable Product Design for Engineers, page 6."
+    },
+    {
+      "ordinal": 51,
+      "source_page": 7,
+      "stem": "How is use-phase electricity commonly calculated?",
+      "options": [
+        "Assume energy use is unrelated to operating hours",
+        "Describe kWh as the same unit as kilograms CO2",
+        "Power multiplied by operating time",
+        "Omit standby and battery considerations"
+      ],
+      "correct_mask": 4,
+      "rationale": "The manual states that power multiplied by operating time. This follows the functional, safety, life-cycle or quantitative evidence discussed for the case. Source: MAIC Sustainable Product Design for Engineers, page 7."
+    },
+    {
+      "ordinal": 52,
+      "source_page": 7,
+      "stem": "Why must product output remain equivalent in an efficiency comparison?",
+      "options": [
+        "Lower energy with inadequate performance is not the same service",
+        "Compare outputs without verifying the same lighting quality",
+        "Assume rebound effects always erase savings",
+        "Assume energy use is unrelated to operating hours"
+      ],
+      "correct_mask": 1,
+      "rationale": "The manual states that lower energy with inadequate performance is not the same service. This follows the functional, safety, life-cycle or quantitative evidence discussed for the case. Source: MAIC Sustainable Product Design for Engineers, page 7."
+    },
+    {
+      "ordinal": 53,
+      "source_page": 7,
+      "stem": "Which user condition can change energy use?",
+      "options": [
+        "Describe kWh as the same unit as kilograms CO2",
+        "Hours operated during the measurement period",
+        "Omit standby and battery considerations",
+        "Compare outputs without verifying the same lighting quality"
+      ],
+      "correct_mask": 2,
+      "rationale": "The manual states that hours operated during the measurement period. This follows the functional, safety, life-cycle or quantitative evidence discussed for the case. Source: MAIC Sustainable Product Design for Engineers, page 7."
+    },
+    {
+      "ordinal": 54,
+      "source_page": 7,
+      "stem": "Why may standby power matter?",
+      "options": [
+        "Assume rebound effects always erase savings",
+        "Some devices consume energy even while idle",
+        "Assume energy use is unrelated to operating hours",
+        "Describe kWh as the same unit as kilograms CO2"
+      ],
+      "correct_mask": 2,
+      "rationale": "The manual states that some devices consume energy even while idle. This follows the functional, safety, life-cycle or quantitative evidence discussed for the case. Source: MAIC Sustainable Product Design for Engineers, page 7."
+    },
+    {
+      "ordinal": 55,
+      "source_page": 7,
+      "stem": "What is an unproven claim about rebound effects?",
+      "options": [
+        "Omit standby and battery considerations",
+        "That efficiency always increases use enough to erase savings",
+        "Compare outputs without verifying the same lighting quality",
+        "Assume rebound effects always erase savings"
+      ],
+      "correct_mask": 2,
+      "rationale": "The manual states that that efficiency always increases use enough to erase savings. This follows the functional, safety, life-cycle or quantitative evidence discussed for the case. Source: MAIC Sustainable Product Design for Engineers, page 7."
+    },
+    {
+      "ordinal": 56,
+      "source_page": 7,
+      "stem": "What does a power value in watts need before becoming kWh?",
+      "options": [
+        "Assume energy use is unrelated to operating hours",
+        "Describe kWh as the same unit as kilograms CO2",
+        "Multiply by hours and divide watt-hours by one thousand",
+        "Omit standby and battery considerations"
+      ],
+      "correct_mask": 4,
+      "rationale": "The manual states that multiply by hours and divide watt-hours by one thousand. This follows the functional, safety, life-cycle or quantitative evidence discussed for the case. Source: MAIC Sustainable Product Design for Engineers, page 7."
+    },
+    {
+      "ordinal": 57,
+      "source_page": 7,
+      "stem": "A 10 W lamp runs four hours for 250 days. What is use-phase electricity?",
+      "options": [
+        "Compare outputs without verifying the same lighting quality",
+        "Assume rebound effects always erase savings",
+        "Assume energy use is unrelated to operating hours",
+        "10 kWh"
+      ],
+      "correct_mask": 8,
+      "rationale": "The manual states that 10 kWh. This follows the functional, safety, life-cycle or quantitative evidence discussed for the case. Source: MAIC Sustainable Product Design for Engineers, page 7."
+    },
+    {
+      "ordinal": 58,
+      "source_page": 7,
+      "stem": "An 8 W lamp under the same conditions uses how much electricity?",
+      "options": [
+        "Describe kWh as the same unit as kilograms CO2",
+        "Omit standby and battery considerations",
+        "8 kWh",
+        "Compare outputs without verifying the same lighting quality"
+      ],
+      "correct_mask": 4,
+      "rationale": "The manual states that 8 kWh. This follows the functional, safety, life-cycle or quantitative evidence discussed for the case. Source: MAIC Sustainable Product Design for Engineers, page 7."
+    },
+    {
+      "ordinal": 59,
+      "source_page": 7,
+      "stem": "How much electricity does the 8 W case save compared to 10 W?",
+      "options": [
+        "Assume rebound effects always erase savings",
+        "Assume energy use is unrelated to operating hours",
+        "2 kWh",
+        "Describe kWh as the same unit as kilograms CO2"
+      ],
+      "correct_mask": 4,
+      "rationale": "The manual states that 2 kWh. This follows the functional, safety, life-cycle or quantitative evidence discussed for the case. Source: MAIC Sustainable Product Design for Engineers, page 7."
+    },
+    {
+      "ordinal": 60,
+      "source_page": 7,
+      "stem": "Why are electricity savings not automatically carbon savings?",
+      "options": [
+        "Omit standby and battery considerations",
+        "Compare outputs without verifying the same lighting quality",
+        "Assume rebound effects always erase savings",
+        "Emissions require an applicable electricity factor and boundary"
+      ],
+      "correct_mask": 8,
+      "rationale": "The manual states that emissions require an applicable electricity factor and boundary. This follows the functional, safety, life-cycle or quantitative evidence discussed for the case. Source: MAIC Sustainable Product Design for Engineers, page 7."
+    },
+    {
+      "ordinal": 61,
+      "source_page": 8,
+      "stem": "What is design for disassembly intended to improve?",
+      "options": [
+        "Assume a recycling logo guarantees local collection",
+        "Safe separation of parts for service or recovery",
+        "Reuse damaged parts without inspection",
+        "Declare circularity purely from an attractive return icon"
+      ],
+      "correct_mask": 2,
+      "rationale": "The manual states that safe separation of parts for service or recovery. This follows the functional, safety, life-cycle or quantitative evidence discussed for the case. Source: MAIC Sustainable Product Design for Engineers, page 8."
+    },
+    {
+      "ordinal": 62,
+      "source_page": 8,
+      "stem": "Why is a recycling symbol not proof of real recycling?",
+      "options": [
+        "Local collection and processing can differ",
+        "Have customers open energized devices without guidance",
+        "Ignore coatings and fasteners during recovery planning",
+        "Assume a recycling logo guarantees local collection"
+      ],
+      "correct_mask": 1,
+      "rationale": "The manual states that local collection and processing can differ. This follows the functional, safety, life-cycle or quantitative evidence discussed for the case. Source: MAIC Sustainable Product Design for Engineers, page 8."
+    },
+    {
+      "ordinal": 63,
+      "source_page": 8,
+      "stem": "What should a recovery system account for?",
+      "options": [
+        "Reuse damaged parts without inspection",
+        "Declare circularity purely from an attractive return icon",
+        "Have customers open energized devices without guidance",
+        "Collection, sorting, repair or recycling pathways"
+      ],
+      "correct_mask": 8,
+      "rationale": "The manual states that collection, sorting, repair or recycling pathways. This follows the functional, safety, life-cycle or quantitative evidence discussed for the case. Source: MAIC Sustainable Product Design for Engineers, page 8."
+    },
+    {
+      "ordinal": 64,
+      "source_page": 8,
+      "stem": "Why should a reuse component be inspected?",
+      "options": [
+        "Ignore coatings and fasteners during recovery planning",
+        "Assume a recycling logo guarantees local collection",
+        "Used parts may have safety and reliability defects",
+        "Reuse damaged parts without inspection"
+      ],
+      "correct_mask": 4,
+      "rationale": "The manual states that used parts may have safety and reliability defects. This follows the functional, safety, life-cycle or quantitative evidence discussed for the case. Source: MAIC Sustainable Product Design for Engineers, page 8."
+    },
+    {
+      "ordinal": 65,
+      "source_page": 8,
+      "stem": "What is a risk of asking users to open powered equipment?",
+      "options": [
+        "Declare circularity purely from an attractive return icon",
+        "Have customers open energized devices without guidance",
+        "Ignore coatings and fasteners during recovery planning",
+        "Exposure to hazardous electrical components"
+      ],
+      "correct_mask": 8,
+      "rationale": "The manual states that exposure to hazardous electrical components. This follows the functional, safety, life-cycle or quantitative evidence discussed for the case. Source: MAIC Sustainable Product Design for Engineers, page 8."
+    },
+    {
+      "ordinal": 66,
+      "source_page": 8,
+      "stem": "Why might standardized screws support circularity?",
+      "options": [
+        "Assume a recycling logo guarantees local collection",
+        "Reuse damaged parts without inspection",
+        "Declare circularity purely from an attractive return icon",
+        "They can ease safe servicing when properly designed"
+      ],
+      "correct_mask": 8,
+      "rationale": "The manual states that they can ease safe servicing when properly designed. This follows the functional, safety, life-cycle or quantitative evidence discussed for the case. Source: MAIC Sustainable Product Design for Engineers, page 8."
+    },
+    {
+      "ordinal": 67,
+      "source_page": 8,
+      "stem": "Why should coatings and composites be reviewed for recycling?",
+      "options": [
+        "They may complicate material separation",
+        "Have customers open energized devices without guidance",
+        "Ignore coatings and fasteners during recovery planning",
+        "Assume a recycling logo guarantees local collection"
+      ],
+      "correct_mask": 1,
+      "rationale": "The manual states that they may complicate material separation. This follows the functional, safety, life-cycle or quantitative evidence discussed for the case. Source: MAIC Sustainable Product Design for Engineers, page 8."
+    },
+    {
+      "ordinal": 68,
+      "source_page": 8,
+      "stem": "What is the limitation of a theoretical take-back model?",
+      "options": [
+        "Actual return behavior and logistics may differ",
+        "Reuse damaged parts without inspection",
+        "Declare circularity purely from an attractive return icon",
+        "Have customers open energized devices without guidance"
+      ],
+      "correct_mask": 1,
+      "rationale": "The manual states that actual return behavior and logistics may differ. This follows the functional, safety, life-cycle or quantitative evidence discussed for the case. Source: MAIC Sustainable Product Design for Engineers, page 8."
+    },
+    {
+      "ordinal": 69,
+      "source_page": 8,
+      "stem": "Why may an easy-to-disassemble design still increase impacts?",
+      "options": [
+        "Ignore coatings and fasteners during recovery planning",
+        "Assume a recycling logo guarantees local collection",
+        "Reuse damaged parts without inspection",
+        "Additional materials or manufacturing may offset benefits"
+      ],
+      "correct_mask": 8,
+      "rationale": "The manual states that additional materials or manufacturing may offset benefits. This follows the functional, safety, life-cycle or quantitative evidence discussed for the case. Source: MAIC Sustainable Product Design for Engineers, page 8."
+    },
+    {
+      "ordinal": 70,
+      "source_page": 8,
+      "stem": "What should instructions distinguish for a battery replacement?",
+      "options": [
+        "Permitted user maintenance versus qualified professional servicing",
+        "Declare circularity purely from an attractive return icon",
+        "Have customers open energized devices without guidance",
+        "Ignore coatings and fasteners during recovery planning"
+      ],
+      "correct_mask": 1,
+      "rationale": "The manual states that permitted user maintenance versus qualified professional servicing. This follows the functional, safety, life-cycle or quantitative evidence discussed for the case. Source: MAIC Sustainable Product Design for Engineers, page 8."
+    },
+    {
+      "ordinal": 71,
+      "source_page": 9,
+      "stem": "Which EU law establishes a framework for sustainable product ecodesign?",
+      "options": [
+        "State a DPP is mandatory for every EU product today",
+        "Regulation (EU) 2024/1781",
+        "Use vague total-impact slogans without evidence",
+        "Ignore country- and category-specific compliance dates"
+      ],
+      "correct_mask": 2,
+      "rationale": "The manual states that regulation (EU) 2024/1781. This follows the functional, safety, life-cycle or quantitative evidence discussed for the case. Source: MAIC Sustainable Product Design for Engineers, page 9."
+    },
+    {
+      "ordinal": 72,
+      "source_page": 9,
+      "stem": "What is a Digital Product Passport intended to support?",
+      "options": [
+        "Treat an indicative work plan as a completed final rule",
+        "Assume a lamp is certified because its materials are listed",
+        "State a DPP is mandatory for every EU product today",
+        "Traceable product sustainability and technical information"
+      ],
+      "correct_mask": 8,
+      "rationale": "The manual states that traceable product sustainability and technical information. This follows the functional, safety, life-cycle or quantitative evidence discussed for the case. Source: MAIC Sustainable Product Design for Engineers, page 9."
+    },
+    {
+      "ordinal": 73,
+      "source_page": 9,
+      "stem": "Are DPP requirements automatically identical for all product groups?",
+      "options": [
+        "No, product-specific provisions and dates matter",
+        "Use vague total-impact slogans without evidence",
+        "Ignore country- and category-specific compliance dates",
+        "Treat an indicative work plan as a completed final rule"
+      ],
+      "correct_mask": 1,
+      "rationale": "The manual states that no, product-specific provisions and dates matter. This follows the functional, safety, life-cycle or quantitative evidence discussed for the case. Source: MAIC Sustainable Product Design for Engineers, page 9."
+    },
+    {
+      "ordinal": 74,
+      "source_page": 9,
+      "stem": "What does an indicative regulatory working plan establish?",
+      "options": [
+        "Assume a lamp is certified because its materials are listed",
+        "A priority for development of potential product-specific rules",
+        "State a DPP is mandatory for every EU product today",
+        "Use vague total-impact slogans without evidence"
+      ],
+      "correct_mask": 2,
+      "rationale": "The manual states that a priority for development of potential product-specific rules. This follows the functional, safety, life-cycle or quantitative evidence discussed for the case. Source: MAIC Sustainable Product Design for Engineers, page 9."
+    },
+    {
+      "ordinal": 75,
+      "source_page": 9,
+      "stem": "Why should engineers check the latest delegated acts?",
+      "options": [
+        "Ignore country- and category-specific compliance dates",
+        "Treat an indicative work plan as a completed final rule",
+        "Legal requirements are introduced for specific groups over time",
+        "Assume a lamp is certified because its materials are listed"
+      ],
+      "correct_mask": 4,
+      "rationale": "The manual states that legal requirements are introduced for specific groups over time. This follows the functional, safety, life-cycle or quantitative evidence discussed for the case. Source: MAIC Sustainable Product Design for Engineers, page 9."
+    },
+    {
+      "ordinal": 76,
+      "source_page": 9,
+      "stem": "Which material statement could be tested if documented?",
+      "options": [
+        "State a DPP is mandatory for every EU product today",
+        "Use vague total-impact slogans without evidence",
+        "The housing contains 25% recycled plastic by a defined mass basis",
+        "Ignore country- and category-specific compliance dates"
+      ],
+      "correct_mask": 4,
+      "rationale": "The manual states that the housing contains 25% recycled plastic by a defined mass basis. This follows the functional, safety, life-cycle or quantitative evidence discussed for the case. Source: MAIC Sustainable Product Design for Engineers, page 9."
+    },
+    {
+      "ordinal": 77,
+      "source_page": 9,
+      "stem": "Why is planet-friendly forever an unsuitable engineering claim?",
+      "options": [
+        "It has no precise measurable boundary",
+        "Treat an indicative work plan as a completed final rule",
+        "Assume a lamp is certified because its materials are listed",
+        "State a DPP is mandatory for every EU product today"
+      ],
+      "correct_mask": 1,
+      "rationale": "The manual states that it has no precise measurable boundary. This follows the functional, safety, life-cycle or quantitative evidence discussed for the case. Source: MAIC Sustainable Product Design for Engineers, page 9."
+    },
+    {
+      "ordinal": 78,
+      "source_page": 9,
+      "stem": "What should a material information register capture?",
+      "options": [
+        "Components, composition, sources and relevant technical evidence",
+        "Use vague total-impact slogans without evidence",
+        "Ignore country- and category-specific compliance dates",
+        "Treat an indicative work plan as a completed final rule"
+      ],
+      "correct_mask": 1,
+      "rationale": "The manual states that components, composition, sources and relevant technical evidence. This follows the functional, safety, life-cycle or quantitative evidence discussed for the case. Source: MAIC Sustainable Product Design for Engineers, page 9."
+    },
+    {
+      "ordinal": 79,
+      "source_page": 9,
+      "stem": "Can a classroom DPP template certify legal compliance?",
+      "options": [
+        "Assume a lamp is certified because its materials are listed",
+        "State a DPP is mandatory for every EU product today",
+        "No, applicable requirements and professional review remain necessary",
+        "Use vague total-impact slogans without evidence"
+      ],
+      "correct_mask": 4,
+      "rationale": "The manual states that no, applicable requirements and professional review remain necessary. This follows the functional, safety, life-cycle or quantitative evidence discussed for the case. Source: MAIC Sustainable Product Design for Engineers, page 9."
+    },
+    {
+      "ordinal": 80,
+      "source_page": 9,
+      "stem": "Why should an export product team check its destination market?",
+      "options": [
+        "Ignore country- and category-specific compliance dates",
+        "Compliance obligations may differ by region",
+        "Treat an indicative work plan as a completed final rule",
+        "Assume a lamp is certified because its materials are listed"
+      ],
+      "correct_mask": 2,
+      "rationale": "The manual states that compliance obligations may differ by region. This follows the functional, safety, life-cycle or quantitative evidence discussed for the case. Source: MAIC Sustainable Product Design for Engineers, page 9."
+    },
+    {
+      "ordinal": 81,
+      "source_page": 10,
+      "stem": "What should precede a prototype performance test?",
+      "options": [
+        "Release products before resolving safety defects",
+        "Treat one precise score as complete engineering evidence",
+        "Defined acceptance criteria",
+        "Assume classroom trials replace specialist certification"
+      ],
+      "correct_mask": 4,
+      "rationale": "The manual states that defined acceptance criteria. This follows the functional, safety, life-cycle or quantitative evidence discussed for the case. Source: MAIC Sustainable Product Design for Engineers, page 10."
+    },
+    {
+      "ordinal": 82,
+      "source_page": 10,
+      "stem": "What test may be relevant for an electrical lamp?",
+      "options": [
+        "Ignore test failures when the design is attractive",
+        "Discard version identifiers during testing",
+        "Thermal and electrical safety evaluation",
+        "Release products before resolving safety defects"
+      ],
+      "correct_mask": 4,
+      "rationale": "The manual states that thermal and electrical safety evaluation. This follows the functional, safety, life-cycle or quantitative evidence discussed for the case. Source: MAIC Sustainable Product Design for Engineers, page 10."
+    },
+    {
+      "ordinal": 83,
+      "source_page": 10,
+      "stem": "Why should test failures be recorded?",
+      "options": [
+        "Treat one precise score as complete engineering evidence",
+        "They reveal defects requiring correction and retesting",
+        "Assume classroom trials replace specialist certification",
+        "Ignore test failures when the design is attractive"
+      ],
+      "correct_mask": 2,
+      "rationale": "The manual states that they reveal defects requiring correction and retesting. This follows the functional, safety, life-cycle or quantitative evidence discussed for the case. Source: MAIC Sustainable Product Design for Engineers, page 10."
+    },
+    {
+      "ordinal": 84,
+      "source_page": 10,
+      "stem": "What is sensitivity analysis used for?",
+      "options": [
+        "Discard version identifiers during testing",
+        "Release products before resolving safety defects",
+        "Checking whether uncertain inputs change the preferred decision",
+        "Treat one precise score as complete engineering evidence"
+      ],
+      "correct_mask": 4,
+      "rationale": "The manual states that checking whether uncertain inputs change the preferred decision. This follows the functional, safety, life-cycle or quantitative evidence discussed for the case. Source: MAIC Sustainable Product Design for Engineers, page 10."
+    },
+    {
+      "ordinal": 85,
+      "source_page": 10,
+      "stem": "Why is a single sustainability score not enough by itself?",
+      "options": [
+        "It can hide methodological choices and tradeoffs",
+        "Assume classroom trials replace specialist certification",
+        "Ignore test failures when the design is attractive",
+        "Discard version identifiers during testing"
+      ],
+      "correct_mask": 1,
+      "rationale": "The manual states that it can hide methodological choices and tradeoffs. This follows the functional, safety, life-cycle or quantitative evidence discussed for the case. Source: MAIC Sustainable Product Design for Engineers, page 10."
+    },
+    {
+      "ordinal": 86,
+      "source_page": 10,
+      "stem": "What is an appropriate response to a serious safety defect?",
+      "options": [
+        "Stop progression and resolve the problem",
+        "Release products before resolving safety defects",
+        "Treat one precise score as complete engineering evidence",
+        "Assume classroom trials replace specialist certification"
+      ],
+      "correct_mask": 1,
+      "rationale": "The manual states that stop progression and resolve the problem. This follows the functional, safety, life-cycle or quantitative evidence discussed for the case. Source: MAIC Sustainable Product Design for Engineers, page 10."
+    },
+    {
+      "ordinal": 87,
+      "source_page": 10,
+      "stem": "Why are prototype versions important?",
+      "options": [
+        "Ignore test failures when the design is attractive",
+        "Test results must be tied to the correct design configuration",
+        "Discard version identifiers during testing",
+        "Release products before resolving safety defects"
+      ],
+      "correct_mask": 2,
+      "rationale": "The manual states that test results must be tied to the correct design configuration. This follows the functional, safety, life-cycle or quantitative evidence discussed for the case. Source: MAIC Sustainable Product Design for Engineers, page 10."
+    },
+    {
+      "ordinal": 88,
+      "source_page": 10,
+      "stem": "Why can cost and environmental results point in different directions?",
+      "options": [
+        "Treat one precise score as complete engineering evidence",
+        "Options can perform differently across criteria",
+        "Assume classroom trials replace specialist certification",
+        "Ignore test failures when the design is attractive"
+      ],
+      "correct_mask": 2,
+      "rationale": "The manual states that options can perform differently across criteria. This follows the functional, safety, life-cycle or quantitative evidence discussed for the case. Source: MAIC Sustainable Product Design for Engineers, page 10."
+    },
+    {
+      "ordinal": 89,
+      "source_page": 10,
+      "stem": "What may require independent specialist testing?",
+      "options": [
+        "Discard version identifiers during testing",
+        "Product electrical safety or formal environmental claims",
+        "Release products before resolving safety defects",
+        "Treat one precise score as complete engineering evidence"
+      ],
+      "correct_mask": 2,
+      "rationale": "The manual states that product electrical safety or formal environmental claims. This follows the functional, safety, life-cycle or quantitative evidence discussed for the case. Source: MAIC Sustainable Product Design for Engineers, page 10."
+    },
+    {
+      "ordinal": 90,
+      "source_page": 10,
+      "stem": "Why is a positive five-user trial not market-wide proof?",
+      "options": [
+        "Assume classroom trials replace specialist certification",
+        "Ignore test failures when the design is attractive",
+        "Its small convenience sample is not representative",
+        "Discard version identifiers during testing"
+      ],
+      "correct_mask": 4,
+      "rationale": "The manual states that its small convenience sample is not representative. This follows the functional, safety, life-cycle or quantitative evidence discussed for the case. Source: MAIC Sustainable Product Design for Engineers, page 10."
+    },
+    {
+      "ordinal": 91,
+      "source_page": 11,
+      "stem": "How many watts does fictional Lamp A consume?",
+      "options": [
+        "Treat energy calculations as a certified cradle-to-grave LCA",
+        "10 W",
+        "Ignore the effect of different lamp lifetimes",
+        "Claim all environmental tradeoffs have been resolved"
+      ],
+      "correct_mask": 2,
+      "rationale": "The manual states that 10 W. This follows the functional, safety, life-cycle or quantitative evidence discussed for the case. Source: MAIC Sustainable Product Design for Engineers, page 11."
+    },
+    {
+      "ordinal": 92,
+      "source_page": 11,
+      "stem": "How many watts does proposed Lamp B consume?",
+      "options": [
+        "Assume an untested prototype is safety-approved",
+        "8 W",
+        "Report a hypothetical emissions factor as measured local data",
+        "Treat energy calculations as a certified cradle-to-grave LCA"
+      ],
+      "correct_mask": 2,
+      "rationale": "The manual states that 8 W. This follows the functional, safety, life-cycle or quantitative evidence discussed for the case. Source: MAIC Sustainable Product Design for Engineers, page 11."
+    },
+    {
+      "ordinal": 93,
+      "source_page": 11,
+      "stem": "What service quantity defines the comparison?",
+      "options": [
+        "Ignore the effect of different lamp lifetimes",
+        "1,000 hours of adequate desk illumination",
+        "Claim all environmental tradeoffs have been resolved",
+        "Assume an untested prototype is safety-approved"
+      ],
+      "correct_mask": 2,
+      "rationale": "The manual states that 1,000 hours of adequate desk illumination. This follows the functional, safety, life-cycle or quantitative evidence discussed for the case. Source: MAIC Sustainable Product Design for Engineers, page 11."
+    },
+    {
+      "ordinal": 94,
+      "source_page": 11,
+      "stem": "How many kWh does Lamp A use over 1,000 hours?",
+      "options": [
+        "Report a hypothetical emissions factor as measured local data",
+        "Treat energy calculations as a certified cradle-to-grave LCA",
+        "Ignore the effect of different lamp lifetimes",
+        "10 kWh"
+      ],
+      "correct_mask": 8,
+      "rationale": "The manual states that 10 kWh. This follows the functional, safety, life-cycle or quantitative evidence discussed for the case. Source: MAIC Sustainable Product Design for Engineers, page 11."
+    },
+    {
+      "ordinal": 95,
+      "source_page": 11,
+      "stem": "How many kWh does Lamp B use over 1,000 hours?",
+      "options": [
+        "8 kWh",
+        "Claim all environmental tradeoffs have been resolved",
+        "Assume an untested prototype is safety-approved",
+        "Report a hypothetical emissions factor as measured local data"
+      ],
+      "correct_mask": 1,
+      "rationale": "The manual states that 8 kWh. This follows the functional, safety, life-cycle or quantitative evidence discussed for the case. Source: MAIC Sustainable Product Design for Engineers, page 11."
+    },
+    {
+      "ordinal": 96,
+      "source_page": 11,
+      "stem": "What is the illustrative use-phase electricity saving?",
+      "options": [
+        "Treat energy calculations as a certified cradle-to-grave LCA",
+        "2 kWh",
+        "Ignore the effect of different lamp lifetimes",
+        "Claim all environmental tradeoffs have been resolved"
+      ],
+      "correct_mask": 2,
+      "rationale": "The manual states that 2 kWh. This follows the functional, safety, life-cycle or quantitative evidence discussed for the case. Source: MAIC Sustainable Product Design for Engineers, page 11."
+    },
+    {
+      "ordinal": 97,
+      "source_page": 11,
+      "stem": "What is the relative use-phase electricity reduction?",
+      "options": [
+        "20%",
+        "Assume an untested prototype is safety-approved",
+        "Report a hypothetical emissions factor as measured local data",
+        "Treat energy calculations as a certified cradle-to-grave LCA"
+      ],
+      "correct_mask": 1,
+      "rationale": "The manual states that 20%. This follows the functional, safety, life-cycle or quantitative evidence discussed for the case. Source: MAIC Sustainable Product Design for Engineers, page 11."
+    },
+    {
+      "ordinal": 98,
+      "source_page": 11,
+      "stem": "At 0.4 kg CO2e per kWh, what is the illustrative 2 kWh emission difference?",
+      "options": [
+        "0.8 kg CO2e",
+        "Ignore the effect of different lamp lifetimes",
+        "Claim all environmental tradeoffs have been resolved",
+        "Assume an untested prototype is safety-approved"
+      ],
+      "correct_mask": 1,
+      "rationale": "The manual states that 0.8 kg CO2e. This follows the functional, safety, life-cycle or quantitative evidence discussed for the case. Source: MAIC Sustainable Product Design for Engineers, page 11."
+    },
+    {
+      "ordinal": 99,
+      "source_page": 11,
+      "stem": "Why is the illustrative 0.8 kg figure not a product life-cycle saving?",
+      "options": [
+        "Report a hypothetical emissions factor as measured local data",
+        "Treat energy calculations as a certified cradle-to-grave LCA",
+        "Manufacturing and recovery impacts were not provided",
+        "Ignore the effect of different lamp lifetimes"
+      ],
+      "correct_mask": 4,
+      "rationale": "The manual states that manufacturing and recovery impacts were not provided. This follows the functional, safety, life-cycle or quantitative evidence discussed for the case. Source: MAIC Sustainable Product Design for Engineers, page 11."
+    },
+    {
+      "ordinal": 100,
+      "source_page": 11,
+      "stem": "What must be tested before the lamp redesign is approved?",
+      "options": [
+        "Claim all environmental tradeoffs have been resolved",
+        "Assume an untested prototype is safety-approved",
+        "Safety, reliability and actual material performance",
+        "Report a hypothetical emissions factor as measured local data"
+      ],
+      "correct_mask": 4,
+      "rationale": "The manual states that safety, reliability and actual material performance. This follows the functional, safety, life-cycle or quantitative evidence discussed for the case. Source: MAIC Sustainable Product Design for Engineers, page 11."
+    }
+  ]
+}
