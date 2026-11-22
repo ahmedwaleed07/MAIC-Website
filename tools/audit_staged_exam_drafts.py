@@ -58,7 +58,7 @@ def audit(path: Path):
             errors.append(f"question {i}: four options required")
         elif len(set(re.sub(r"\s+", " ", str(x).strip().casefold()) for x in choices)) != 4:
             errors.append(f"question {i}: duplicate option")
-        elif any(len(str(x).strip()) < 3 for x in choices):
+        elif any(not str(x).strip() or (len(str(x).strip()) < 3 and not re.fullmatch(r"[0-9]+%", str(x).strip())) for x in choices):
             errors.append(f"question {i}: empty or invalid option")
         key = item.get("correct_mask")
         if key not in [1, 2, 4, 8]:
