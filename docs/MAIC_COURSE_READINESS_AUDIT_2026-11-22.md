@@ -92,3 +92,14 @@ Complete the 34 missing-material courses in the listed catalog order. First: `di
 - The independent review candidate PDF was successfully rendered in GitHub Actions run 45046808095, with the approved MAIC crest, a Michigan/US backdrop on the cover and Tinos 12-point instructional text. The workflow validated a 12-page output. This does **not** mean the PDF has been uploaded to the production `learning_materials` table or exposed to students.
 - Remaining missing production PDFs: 34 preparing courses (including Diploma in Journalism pending upload) and 8 archived courses. Do not count a manuscript or review candidate as an active student manual.
 - The next sequence after review of the Journalism candidate is source registration/upload, item-writing and independent approval; then Fundamentals of Journalism and subsequent missing-material courses.
+
+## Continuation: journalism and video production editorial staging (2026-11-22)
+
+- Original **Diploma in Journalism** manuscript and 12-page candidate PDF generated and visually reviewed. Its separate **100-item MCQ draft** is at `data/exam-drafts/diploma-in-journalism-100mcq.json`.
+- Original **Fundamentals of Journalism** manuscript and 12-page candidate PDF generated and visually reviewed. Its separate **100-item MCQ draft** is at `data/exam-drafts/fundamentals-of-journalism-100mcq.json`.
+- Original **Understanding Digital Journalism** manuscript and 12-page candidate PDF generated and visually reviewed. Its separate **100-item MCQ draft** is at `data/exam-drafts/understanding-digital-journalism-100mcq.json`.
+- Original **Understanding the Essentials of Video Production** manuscript saved at `data/course-manuscripts/essentials-of-video-production.md`; a 12-page PDF candidate was built, and its multiline cover required a renderer spacing fix. Its MCQ bank has **not** yet been saved as a reviewed or approved bank.
+- Reusable renderer: `tools/render_maic_manuscript.py`; CI PDF builder: `.github/workflows/maic-manuscripts.yml`. Academic review candidates are ZIP artifacts and **not** student-published PDFs.
+- Draft bank structural checker: `tools/audit_staged_exam_drafts.py`; GitHub Actions `.github/workflows/maic-draft-bank-audit.yml`. The latest three-bank audit succeeded after correcting short-question and numeric-option lint edge cases. Structural QA is **not** academic approval.
+- None of the four newly authored manuscripts has been uploaded as an approved production learning material; there are still **36 registered production PDFs, 20 active exams**, and the 16 prior inactive courses with source-matched editorial banks. The new offline MCQ drafts are not D1 approved exams, and no new catalog course is marked published.
+- Next: verify corrected video-production cover, prepare its 100-item draft, then proceed to `video-editing-imovie-davinci-resolve` while preserving independent reviewer signoffs before activation.
