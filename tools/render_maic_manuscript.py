@@ -65,7 +65,11 @@ def cover(c, crest, montage, title, hours):
             navy_img = Image.new("RGB", fitted.size, (7, 31, 50))
             blended = Image.blend(navy_img, fitted, 0.12)
             buffer = io.BytesIO()
-            blended.save(buffer, format="PNG")
+            # The background is a soft-focus atmospheric montage: embed a high-quality JPEG
+            # rather than a large lossless PNG. This preserves 12pt body text and
+            # the original crest (embedded separately with transparency), while
+            # keeping every review PDF below the MAIC 1.25 MB upload limit.
+            blended.save(buffer, format="JPEG", quality=82, optimize=True, subsampling=0)
             buffer.seek(0)
             c.drawImage(ImageReader(buffer), 0, 0, W, H)
 
