@@ -1,0 +1,1312 @@
+{
+  "course_id": "design-and-make-infographics",
+  "source_manuscript": "data/course-manuscripts/design-and-make-infographics.md",
+  "source_manuscript_blob_sha": "d98e6918b50ec4848543ce974801754da444005d",
+  "source_pdf_sha256": null,
+  "bank_version": "draft-manuscript-20261122-v1",
+  "approval_status": "editorial_draft_pending_independent_review",
+  "number_of_questions": 100,
+  "note": "Offline editorial draft only; independent reviewer validation required before MAIC exam activation or certification.",
+  "questions": [
+    {
+      "ordinal": 1,
+      "source_page": 2,
+      "stem": "What is the main purpose of an infographic?",
+      "options": [
+        "Prioritize decoration over all evidence",
+        "Communicate useful information accurately through visuals and text",
+        "Select a chart before defining its purpose",
+        "Assume images always communicate the right meaning"
+      ],
+      "correct_mask": 2,
+      "rationale": "The manual explains that communicate useful information accurately through visuals and text. This conclusion uses the actual visual-data principle or the stated fictional values, without adding unsupported evidence. Source: MAIC Design and Make Infographics, page 2."
+    },
+    {
+      "ordinal": 2,
+      "source_page": 2,
+      "stem": "Why is visual polish not proof of an infographic's accuracy?",
+      "options": [
+        "Treat fictional data as official statistics",
+        "Remove every source note",
+        "Underlying numbers and claims still need verification",
+        "Prioritize decoration over all evidence"
+      ],
+      "correct_mask": 4,
+      "rationale": "The manual explains that underlying numbers and claims still need verification. This conclusion uses the actual visual-data principle or the stated fictional values, without adding unsupported evidence. Source: MAIC Design and Make Infographics, page 2."
+    },
+    {
+      "ordinal": 3,
+      "source_page": 2,
+      "stem": "Which activity should happen before making the first chart?",
+      "options": [
+        "Select a chart before defining its purpose",
+        "Define the audience and central question",
+        "Assume images always communicate the right meaning",
+        "Treat fictional data as official statistics"
+      ],
+      "correct_mask": 2,
+      "rationale": "The manual explains that define the audience and central question. This conclusion uses the actual visual-data principle or the stated fictional values, without adding unsupported evidence. Source: MAIC Design and Make Infographics, page 2."
+    },
+    {
+      "ordinal": 4,
+      "source_page": 2,
+      "stem": "What is a key course learning outcome?",
+      "options": [
+        "Remove every source note",
+        "Prioritize decoration over all evidence",
+        "Select suitable chart types and verify visual scales",
+        "Select a chart before defining its purpose"
+      ],
+      "correct_mask": 4,
+      "rationale": "The manual explains that select suitable chart types and verify visual scales. This conclusion uses the actual visual-data principle or the stated fictional values, without adding unsupported evidence. Source: MAIC Design and Make Infographics, page 2."
+    },
+    {
+      "ordinal": 5,
+      "source_page": 2,
+      "stem": "What does the project-centered approach require?",
+      "options": [
+        "Assume images always communicate the right meaning",
+        "Treat fictional data as official statistics",
+        "Remove every source note",
+        "A progressively developed evidence-based graphic"
+      ],
+      "correct_mask": 8,
+      "rationale": "The manual explains that a progressively developed evidence-based graphic. This conclusion uses the actual visual-data principle or the stated fictional values, without adding unsupported evidence. Source: MAIC Design and Make Infographics, page 2."
+    },
+    {
+      "ordinal": 6,
+      "source_page": 2,
+      "stem": "Why must classroom data be labeled fictional?",
+      "options": [
+        "Prioritize decoration over all evidence",
+        "It must not be mistaken for real institutional evidence",
+        "Select a chart before defining its purpose",
+        "Assume images always communicate the right meaning"
+      ],
+      "correct_mask": 2,
+      "rationale": "The manual explains that it must not be mistaken for real institutional evidence. This conclusion uses the actual visual-data principle or the stated fictional values, without adding unsupported evidence. Source: MAIC Design and Make Infographics, page 2."
+    },
+    {
+      "ordinal": 7,
+      "source_page": 2,
+      "stem": "What is the role of a source note?",
+      "options": [
+        "Treat fictional data as official statistics",
+        "Allow readers to understand where information came from",
+        "Remove every source note",
+        "Prioritize decoration over all evidence"
+      ],
+      "correct_mask": 2,
+      "rationale": "The manual explains that allow readers to understand where information came from. This conclusion uses the actual visual-data principle or the stated fictional values, without adding unsupported evidence. Source: MAIC Design and Make Infographics, page 2."
+    },
+    {
+      "ordinal": 8,
+      "source_page": 2,
+      "stem": "Why should a chart retain meaningful context?",
+      "options": [
+        "Presentation choices can distort how claims appear",
+        "Select a chart before defining its purpose",
+        "Assume images always communicate the right meaning",
+        "Treat fictional data as official statistics"
+      ],
+      "correct_mask": 1,
+      "rationale": "The manual explains that presentation choices can distort how claims appear. This conclusion uses the actual visual-data principle or the stated fictional values, without adding unsupported evidence. Source: MAIC Design and Make Infographics, page 2."
+    },
+    {
+      "ordinal": 9,
+      "source_page": 2,
+      "stem": "A graphic contains icons but no defined audience or question. What is missing?",
+      "options": [
+        "An editorial purpose supported by information",
+        "Remove every source note",
+        "Prioritize decoration over all evidence",
+        "Select a chart before defining its purpose"
+      ],
+      "correct_mask": 1,
+      "rationale": "The manual explains that an editorial purpose supported by information. This conclusion uses the actual visual-data principle or the stated fictional values, without adding unsupported evidence. Source: MAIC Design and Make Infographics, page 2."
+    },
+    {
+      "ordinal": 10,
+      "source_page": 2,
+      "stem": "A chart is attractive but uses invented statistics as real facts. What failed?",
+      "options": [
+        "Assume images always communicate the right meaning",
+        "Treat fictional data as official statistics",
+        "Remove every source note",
+        "Evidence integrity and truthful labeling"
+      ],
+      "correct_mask": 8,
+      "rationale": "The manual explains that evidence integrity and truthful labeling. This conclusion uses the actual visual-data principle or the stated fictional values, without adding unsupported evidence. Source: MAIC Design and Make Infographics, page 2."
+    },
+    {
+      "ordinal": 11,
+      "source_page": 3,
+      "stem": "What should a design brief identify for an infographic?",
+      "options": [
+        "Choose the largest possible icon set",
+        "Treat an estimate as a completed measurement",
+        "Claim all registration counts are attendances",
+        "Audience, question, source, medium and risks"
+      ],
+      "correct_mask": 8,
+      "rationale": "The manual explains that audience, question, source, medium and risks. This conclusion uses the actual visual-data principle or the stated fictional values, without adding unsupported evidence. Source: MAIC Design and Make Infographics, page 3."
+    },
+    {
+      "ordinal": 12,
+      "source_page": 3,
+      "stem": "What should the graphic title communicate?",
+      "options": [
+        "The subject established by the available evidence",
+        "Use any statistics even if unrelated",
+        "Ignore the audience and reading context",
+        "Choose the largest possible icon set"
+      ],
+      "correct_mask": 1,
+      "rationale": "The manual explains that the subject established by the available evidence. This conclusion uses the actual visual-data principle or the stated fictional values, without adding unsupported evidence. Source: MAIC Design and Make Infographics, page 3."
+    },
+    {
+      "ordinal": 13,
+      "source_page": 3,
+      "stem": "Why should a chart not be made before defining units?",
+      "options": [
+        "The measure being displayed may be unclear",
+        "Treat an estimate as a completed measurement",
+        "Claim all registration counts are attendances",
+        "Use any statistics even if unrelated"
+      ],
+      "correct_mask": 1,
+      "rationale": "The manual explains that the measure being displayed may be unclear. This conclusion uses the actual visual-data principle or the stated fictional values, without adding unsupported evidence. Source: MAIC Design and Make Infographics, page 3."
+    },
+    {
+      "ordinal": 14,
+      "source_page": 3,
+      "stem": "What is an example of an explanatory infographic?",
+      "options": [
+        "Ignore the audience and reading context",
+        "Choose the largest possible icon set",
+        "Treat an estimate as a completed measurement",
+        "A visual explanation of a known process"
+      ],
+      "correct_mask": 8,
+      "rationale": "The manual explains that a visual explanation of a known process. This conclusion uses the actual visual-data principle or the stated fictional values, without adding unsupported evidence. Source: MAIC Design and Make Infographics, page 3."
+    },
+    {
+      "ordinal": 15,
+      "source_page": 3,
+      "stem": "Why is a transport update different from a financial comparison?",
+      "options": [
+        "Claim all registration counts are attendances",
+        "Use any statistics even if unrelated",
+        "Ignore the audience and reading context",
+        "The audience decision and information structure differ"
+      ],
+      "correct_mask": 8,
+      "rationale": "The manual explains that the audience decision and information structure differ. This conclusion uses the actual visual-data principle or the stated fictional values, without adding unsupported evidence. Source: MAIC Design and Make Infographics, page 3."
+    },
+    {
+      "ordinal": 16,
+      "source_page": 3,
+      "stem": "Why should a designer limit unrelated statistics?",
+      "options": [
+        "Choose the largest possible icon set",
+        "Treat an estimate as a completed measurement",
+        "They can distract from the central question",
+        "Claim all registration counts are attendances"
+      ],
+      "correct_mask": 4,
+      "rationale": "The manual explains that they can distract from the central question. This conclusion uses the actual visual-data principle or the stated fictional values, without adding unsupported evidence. Source: MAIC Design and Make Infographics, page 3."
+    },
+    {
+      "ordinal": 17,
+      "source_page": 3,
+      "stem": "What is an information risk in a brief?",
+      "options": [
+        "Use any statistics even if unrelated",
+        "Ignore the audience and reading context",
+        "Choose the largest possible icon set",
+        "Missing or incompatible source values"
+      ],
+      "correct_mask": 8,
+      "rationale": "The manual explains that missing or incompatible source values. This conclusion uses the actual visual-data principle or the stated fictional values, without adding unsupported evidence. Source: MAIC Design and Make Infographics, page 3."
+    },
+    {
+      "ordinal": 18,
+      "source_page": 3,
+      "stem": "Why should an estimate be labeled as such?",
+      "options": [
+        "It is not the same as an observed measurement",
+        "Treat an estimate as a completed measurement",
+        "Claim all registration counts are attendances",
+        "Use any statistics even if unrelated"
+      ],
+      "correct_mask": 1,
+      "rationale": "The manual explains that it is not the same as an observed measurement. This conclusion uses the actual visual-data principle or the stated fictional values, without adding unsupported evidence. Source: MAIC Design and Make Infographics, page 3."
+    },
+    {
+      "ordinal": 19,
+      "source_page": 3,
+      "stem": "A library wants monthly attendance. What time dimension is needed?",
+      "options": [
+        "The defined month for each count",
+        "Ignore the audience and reading context",
+        "Choose the largest possible icon set",
+        "Treat an estimate as a completed measurement"
+      ],
+      "correct_mask": 1,
+      "rationale": "The manual explains that the defined month for each count. This conclusion uses the actual visual-data principle or the stated fictional values, without adding unsupported evidence. Source: MAIC Design and Make Infographics, page 3."
+    },
+    {
+      "ordinal": 20,
+      "source_page": 3,
+      "stem": "An attendance graphic is based on registrations. What should its title say?",
+      "options": [
+        "Claim all registration counts are attendances",
+        "Registrations rather than verified attendance",
+        "Use any statistics even if unrelated",
+        "Ignore the audience and reading context"
+      ],
+      "correct_mask": 2,
+      "rationale": "The manual explains that registrations rather than verified attendance. This conclusion uses the actual visual-data principle or the stated fictional values, without adding unsupported evidence. Source: MAIC Design and Make Infographics, page 3."
+    },
+    {
+      "ordinal": 21,
+      "source_page": 4,
+      "stem": "What should a data analyst preserve before cleaning?",
+      "options": [
+        "Replace missing entries with invented zeros",
+        "Treat duplicated rows as additional people",
+        "An unaltered original record",
+        "Compare every percentage regardless of denominator"
+      ],
+      "correct_mask": 4,
+      "rationale": "The manual explains that an unaltered original record. This conclusion uses the actual visual-data principle or the stated fictional values, without adding unsupported evidence. Source: MAIC Design and Make Infographics, page 4."
+    },
+    {
+      "ordinal": 22,
+      "source_page": 4,
+      "stem": "Why should a spreadsheet's unit of observation be defined?",
+      "options": [
+        "A row may mean a person, session or payment",
+        "Delete original files after cleaning",
+        "Ignore population and unit definitions",
+        "Replace missing entries with invented zeros"
+      ],
+      "correct_mask": 1,
+      "rationale": "The manual explains that a row may mean a person, session or payment. This conclusion uses the actual visual-data principle or the stated fictional values, without adding unsupported evidence. Source: MAIC Design and Make Infographics, page 4."
+    },
+    {
+      "ordinal": 23,
+      "source_page": 4,
+      "stem": "What is the risk of duplicate records?",
+      "options": [
+        "Treat duplicated rows as additional people",
+        "Compare every percentage regardless of denominator",
+        "Delete original files after cleaning",
+        "They may inflate totals"
+      ],
+      "correct_mask": 8,
+      "rationale": "The manual explains that they may inflate totals. This conclusion uses the actual visual-data principle or the stated fictional values, without adding unsupported evidence. Source: MAIC Design and Make Infographics, page 4."
+    },
+    {
+      "ordinal": 24,
+      "source_page": 4,
+      "stem": "Why must missing observations not automatically become zero?",
+      "options": [
+        "Ignore population and unit definitions",
+        "Replace missing entries with invented zeros",
+        "Unknown data are not necessarily a measured zero",
+        "Treat duplicated rows as additional people"
+      ],
+      "correct_mask": 4,
+      "rationale": "The manual explains that unknown data are not necessarily a measured zero. This conclusion uses the actual visual-data principle or the stated fictional values, without adding unsupported evidence. Source: MAIC Design and Make Infographics, page 4."
+    },
+    {
+      "ordinal": 25,
+      "source_page": 4,
+      "stem": "What must match before two percentages are compared?",
+      "options": [
+        "Compare every percentage regardless of denominator",
+        "Delete original files after cleaning",
+        "Denominator definitions and collection periods",
+        "Ignore population and unit definitions"
+      ],
+      "correct_mask": 4,
+      "rationale": "The manual explains that denominator definitions and collection periods. This conclusion uses the actual visual-data principle or the stated fictional values, without adding unsupported evidence. Source: MAIC Design and Make Infographics, page 4."
+    },
+    {
+      "ordinal": 26,
+      "source_page": 4,
+      "stem": "Why document the origin of data corrections?",
+      "options": [
+        "Replace missing entries with invented zeros",
+        "Another reviewer needs an auditable evidence trail",
+        "Treat duplicated rows as additional people",
+        "Compare every percentage regardless of denominator"
+      ],
+      "correct_mask": 2,
+      "rationale": "The manual explains that another reviewer needs an auditable evidence trail. This conclusion uses the actual visual-data principle or the stated fictional values, without adding unsupported evidence. Source: MAIC Design and Make Infographics, page 4."
+    },
+    {
+      "ordinal": 27,
+      "source_page": 4,
+      "stem": "What is a difference between registration and attendance?",
+      "options": [
+        "One records signup while the other records presence",
+        "Delete original files after cleaning",
+        "Ignore population and unit definitions",
+        "Replace missing entries with invented zeros"
+      ],
+      "correct_mask": 1,
+      "rationale": "The manual explains that one records signup while the other records presence. This conclusion uses the actual visual-data principle or the stated fictional values, without adding unsupported evidence. Source: MAIC Design and Make Infographics, page 4."
+    },
+    {
+      "ordinal": 28,
+      "source_page": 4,
+      "stem": "Why can a trend across changing counting methods mislead?",
+      "options": [
+        "The apparent change may reflect collection rather than reality",
+        "Treat duplicated rows as additional people",
+        "Compare every percentage regardless of denominator",
+        "Delete original files after cleaning"
+      ],
+      "correct_mask": 1,
+      "rationale": "The manual explains that the apparent change may reflect collection rather than reality. This conclusion uses the actual visual-data principle or the stated fictional values, without adding unsupported evidence. Source: MAIC Design and Make Infographics, page 4."
+    },
+    {
+      "ordinal": 29,
+      "source_page": 4,
+      "stem": "A ledger lists forty registrations but thirty-two attendees. What belongs in an attendance chart?",
+      "options": [
+        "Ignore population and unit definitions",
+        "Replace missing entries with invented zeros",
+        "32 attendees",
+        "Treat duplicated rows as additional people"
+      ],
+      "correct_mask": 4,
+      "rationale": "The manual explains that 32 attendees. This conclusion uses the actual visual-data principle or the stated fictional values, without adding unsupported evidence. Source: MAIC Design and Make Infographics, page 4."
+    },
+    {
+      "ordinal": 30,
+      "source_page": 4,
+      "stem": "If a source column has inconsistent dates, what should the analyst do?",
+      "options": [
+        "Standardize carefully and retain the original meanings",
+        "Compare every percentage regardless of denominator",
+        "Delete original files after cleaning",
+        "Ignore population and unit definitions"
+      ],
+      "correct_mask": 1,
+      "rationale": "The manual explains that standardize carefully and retain the original meanings. This conclusion uses the actual visual-data principle or the stated fictional values, without adding unsupported evidence. Source: MAIC Design and Make Infographics, page 4."
+    },
+    {
+      "ordinal": 31,
+      "source_page": 5,
+      "stem": "What is a bar chart commonly suited to compare?",
+      "options": [
+        "Use 3D effects to establish numerical truth",
+        "Treat maps as precise without source coordinates",
+        "Values across distinct categories",
+        "Leave all axes and units unlabeled"
+      ],
+      "correct_mask": 4,
+      "rationale": "The manual explains that values across distinct categories. This conclusion uses the actual visual-data principle or the stated fictional values, without adding unsupported evidence. Source: MAIC Design and Make Infographics, page 5."
+    },
+    {
+      "ordinal": 32,
+      "source_page": 5,
+      "stem": "What is a line chart commonly suited to show?",
+      "options": [
+        "Assume all chart types answer every question",
+        "Use a pie chart for overlapping categories",
+        "A measure across ordered time periods",
+        "Use 3D effects to establish numerical truth"
+      ],
+      "correct_mask": 4,
+      "rationale": "The manual explains that a measure across ordered time periods. This conclusion uses the actual visual-data principle or the stated fictional values, without adding unsupported evidence. Source: MAIC Design and Make Infographics, page 5."
+    },
+    {
+      "ordinal": 33,
+      "source_page": 5,
+      "stem": "What is a scatter plot commonly used to explore?",
+      "options": [
+        "Treat maps as precise without source coordinates",
+        "The relationship between two numeric measures",
+        "Leave all axes and units unlabeled",
+        "Assume all chart types answer every question"
+      ],
+      "correct_mask": 2,
+      "rationale": "The manual explains that the relationship between two numeric measures. This conclusion uses the actual visual-data principle or the stated fictional values, without adding unsupported evidence. Source: MAIC Design and Make Infographics, page 5."
+    },
+    {
+      "ordinal": 34,
+      "source_page": 5,
+      "stem": "When may a table be more useful than a chart?",
+      "options": [
+        "When exact values are the main task",
+        "Use a pie chart for overlapping categories",
+        "Use 3D effects to establish numerical truth",
+        "Treat maps as precise without source coordinates"
+      ],
+      "correct_mask": 1,
+      "rationale": "The manual explains that when exact values are the main task. This conclusion uses the actual visual-data principle or the stated fictional values, without adding unsupported evidence. Source: MAIC Design and Make Infographics, page 5."
+    },
+    {
+      "ordinal": 35,
+      "source_page": 5,
+      "stem": "What must a map use to avoid false geographic precision?",
+      "options": [
+        "Leave all axes and units unlabeled",
+        "Assume all chart types answer every question",
+        "Use a pie chart for overlapping categories",
+        "Appropriate location data and stated limitations"
+      ],
+      "correct_mask": 8,
+      "rationale": "The manual explains that appropriate location data and stated limitations. This conclusion uses the actual visual-data principle or the stated fictional values, without adding unsupported evidence. Source: MAIC Design and Make Infographics, page 5."
+    },
+    {
+      "ordinal": 36,
+      "source_page": 5,
+      "stem": "Why may 3D bars be hard to interpret?",
+      "options": [
+        "Use 3D effects to establish numerical truth",
+        "Perspective can distort perceived magnitudes",
+        "Treat maps as precise without source coordinates",
+        "Leave all axes and units unlabeled"
+      ],
+      "correct_mask": 2,
+      "rationale": "The manual explains that perspective can distort perceived magnitudes. This conclusion uses the actual visual-data principle or the stated fictional values, without adding unsupported evidence. Source: MAIC Design and Make Infographics, page 5."
+    },
+    {
+      "ordinal": 37,
+      "source_page": 5,
+      "stem": "When can a pie chart be meaningful?",
+      "options": [
+        "A small number of valid parts of one whole",
+        "Assume all chart types answer every question",
+        "Use a pie chart for overlapping categories",
+        "Use 3D effects to establish numerical truth"
+      ],
+      "correct_mask": 1,
+      "rationale": "The manual explains that a small number of valid parts of one whole. This conclusion uses the actual visual-data principle or the stated fictional values, without adding unsupported evidence. Source: MAIC Design and Make Infographics, page 5."
+    },
+    {
+      "ordinal": 38,
+      "source_page": 5,
+      "stem": "What should a chart include for comprehension?",
+      "options": [
+        "Treat maps as precise without source coordinates",
+        "Title, units and a clear scale",
+        "Leave all axes and units unlabeled",
+        "Assume all chart types answer every question"
+      ],
+      "correct_mask": 2,
+      "rationale": "The manual explains that title, units and a clear scale. This conclusion uses the actual visual-data principle or the stated fictional values, without adding unsupported evidence. Source: MAIC Design and Make Infographics, page 5."
+    },
+    {
+      "ordinal": 39,
+      "source_page": 5,
+      "stem": "Three monthly attendance counts are 20, 30 and 25. Which chart types could show the progression?",
+      "options": [
+        "Use a pie chart for overlapping categories",
+        "Use 3D effects to establish numerical truth",
+        "Treat maps as precise without source coordinates",
+        "A properly labeled line or bar chart"
+      ],
+      "correct_mask": 8,
+      "rationale": "The manual explains that a properly labeled line or bar chart. This conclusion uses the actual visual-data principle or the stated fictional values, without adding unsupported evidence. Source: MAIC Design and Make Infographics, page 5."
+    },
+    {
+      "ordinal": 40,
+      "source_page": 5,
+      "stem": "A graph claims advertising caused enrollment growth from correlation alone. What is wrong?",
+      "options": [
+        "Leave all axes and units unlabeled",
+        "Assume all chart types answer every question",
+        "Use a pie chart for overlapping categories",
+        "Correlation does not independently establish causation"
+      ],
+      "correct_mask": 8,
+      "rationale": "The manual explains that correlation does not independently establish causation. This conclusion uses the actual visual-data principle or the stated fictional values, without adding unsupported evidence. Source: MAIC Design and Make Infographics, page 5."
+    },
+    {
+      "ordinal": 41,
+      "source_page": 6,
+      "stem": "Why should bar charts comparing magnitudes generally start at zero?",
+      "options": [
+        "Truncate all bars to exaggerate comparisons",
+        "Readers interpret their lengths as quantities",
+        "Scale icons in area without considering perception",
+        "Assume every chart axis must be decorative"
+      ],
+      "correct_mask": 2,
+      "rationale": "The manual explains that readers interpret their lengths as quantities. This conclusion uses the actual visual-data principle or the stated fictional values, without adding unsupported evidence. Source: MAIC Design and Make Infographics, page 6."
+    },
+    {
+      "ordinal": 42,
+      "source_page": 6,
+      "stem": "What is a risk of truncating a bar axis?",
+      "options": [
+        "Treat absolute growth as a percentage without calculation",
+        "Use unexplained denominators",
+        "Truncate all bars to exaggerate comparisons",
+        "Small differences can look disproportionately large"
+      ],
+      "correct_mask": 8,
+      "rationale": "The manual explains that small differences can look disproportionately large. This conclusion uses the actual visual-data principle or the stated fictional values, without adding unsupported evidence. Source: MAIC Design and Make Infographics, page 6."
+    },
+    {
+      "ordinal": 43,
+      "source_page": 6,
+      "stem": "What should accompany a deliberately restricted line-chart scale?",
+      "options": [
+        "Scale icons in area without considering perception",
+        "Assume every chart axis must be decorative",
+        "Clear axis labels and contextual explanation",
+        "Treat absolute growth as a percentage without calculation"
+      ],
+      "correct_mask": 4,
+      "rationale": "The manual explains that clear axis labels and contextual explanation. This conclusion uses the actual visual-data principle or the stated fictional values, without adding unsupported evidence. Source: MAIC Design and Make Infographics, page 6."
+    },
+    {
+      "ordinal": 44,
+      "source_page": 6,
+      "stem": "What is an absolute change?",
+      "options": [
+        "Use unexplained denominators",
+        "Truncate all bars to exaggerate comparisons",
+        "The numerical difference between two values in the same units",
+        "Scale icons in area without considering perception"
+      ],
+      "correct_mask": 4,
+      "rationale": "The manual explains that the numerical difference between two values in the same units. This conclusion uses the actual visual-data principle or the stated fictional values, without adding unsupported evidence. Source: MAIC Design and Make Infographics, page 6."
+    },
+    {
+      "ordinal": 45,
+      "source_page": 6,
+      "stem": "What is a relative percentage increase based on?",
+      "options": [
+        "Assume every chart axis must be decorative",
+        "Change divided by the original value",
+        "Treat absolute growth as a percentage without calculation",
+        "Use unexplained denominators"
+      ],
+      "correct_mask": 2,
+      "rationale": "The manual explains that change divided by the original value. This conclusion uses the actual visual-data principle or the stated fictional values, without adding unsupported evidence. Source: MAIC Design and Make Infographics, page 6."
+    },
+    {
+      "ordinal": 46,
+      "source_page": 6,
+      "stem": "Why can scaling both icon height and width mislead?",
+      "options": [
+        "Truncate all bars to exaggerate comparisons",
+        "Scale icons in area without considering perception",
+        "Assume every chart axis must be decorative",
+        "Area grows faster than linear size"
+      ],
+      "correct_mask": 8,
+      "rationale": "The manual explains that area grows faster than linear size. This conclusion uses the actual visual-data principle or the stated fictional values, without adding unsupported evidence. Source: MAIC Design and Make Infographics, page 6."
+    },
+    {
+      "ordinal": 47,
+      "source_page": 6,
+      "stem": "What must a percentage label state or make clear?",
+      "options": [
+        "The denominator and relevant population",
+        "Treat absolute growth as a percentage without calculation",
+        "Use unexplained denominators",
+        "Truncate all bars to exaggerate comparisons"
+      ],
+      "correct_mask": 1,
+      "rationale": "The manual explains that the denominator and relevant population. This conclusion uses the actual visual-data principle or the stated fictional values, without adding unsupported evidence. Source: MAIC Design and Make Infographics, page 6."
+    },
+    {
+      "ordinal": 48,
+      "source_page": 6,
+      "stem": "Why should a graph's scale be chosen before embellishment?",
+      "options": [
+        "Scale icons in area without considering perception",
+        "Assume every chart axis must be decorative",
+        "Treat absolute growth as a percentage without calculation",
+        "Scale affects the truth of the visual comparison"
+      ],
+      "correct_mask": 8,
+      "rationale": "The manual explains that scale affects the truth of the visual comparison. This conclusion uses the actual visual-data principle or the stated fictional values, without adding unsupported evidence. Source: MAIC Design and Make Infographics, page 6."
+    },
+    {
+      "ordinal": 49,
+      "source_page": 6,
+      "stem": "Attendance rises from 20 to 30. What is the absolute increase?",
+      "options": [
+        "Use unexplained denominators",
+        "Truncate all bars to exaggerate comparisons",
+        "Scale icons in area without considering perception",
+        "10 attendances"
+      ],
+      "correct_mask": 8,
+      "rationale": "The manual explains that 10 attendances. This conclusion uses the actual visual-data principle or the stated fictional values, without adding unsupported evidence. Source: MAIC Design and Make Infographics, page 6."
+    },
+    {
+      "ordinal": 50,
+      "source_page": 6,
+      "stem": "Attendance rises from 20 to 30. What is the percentage increase?",
+      "options": [
+        "Assume every chart axis must be decorative",
+        "Treat absolute growth as a percentage without calculation",
+        "50%",
+        "Use unexplained denominators"
+      ],
+      "correct_mask": 4,
+      "rationale": "The manual explains that 50%. This conclusion uses the actual visual-data principle or the stated fictional values, without adding unsupported evidence. Source: MAIC Design and Make Infographics, page 6."
+    },
+    {
+      "ordinal": 51,
+      "source_page": 7,
+      "stem": "What is the purpose of visual hierarchy in an infographic?",
+      "options": [
+        "Make all visual elements equally prominent",
+        "Hide the source note for more space",
+        "Use oversized callouts for unsupported conclusions",
+        "Guide readers through the main message and supporting data"
+      ],
+      "correct_mask": 8,
+      "rationale": "The manual explains that guide readers through the main message and supporting data. This conclusion uses the actual visual-data principle or the stated fictional values, without adding unsupported evidence. Source: MAIC Design and Make Infographics, page 7."
+    },
+    {
+      "ordinal": 52,
+      "source_page": 7,
+      "stem": "What elements can form a useful reading route?",
+      "options": [
+        "Headline, main chart, annotations and source note",
+        "Turn chronological association into proven causation",
+        "Randomize process step order",
+        "Make all visual elements equally prominent"
+      ],
+      "correct_mask": 1,
+      "rationale": "The manual explains that headline, main chart, annotations and source note. This conclusion uses the actual visual-data principle or the stated fictional values, without adding unsupported evidence. Source: MAIC Design and Make Infographics, page 7."
+    },
+    {
+      "ordinal": 53,
+      "source_page": 7,
+      "stem": "Why should a chart annotation be evidence-limited?",
+      "options": [
+        "Hide the source note for more space",
+        "Use oversized callouts for unsupported conclusions",
+        "It must not infer an unsupported cause",
+        "Turn chronological association into proven causation"
+      ],
+      "correct_mask": 4,
+      "rationale": "The manual explains that it must not infer an unsupported cause. This conclusion uses the actual visual-data principle or the stated fictional values, without adding unsupported evidence. Source: MAIC Design and Make Infographics, page 7."
+    },
+    {
+      "ordinal": 54,
+      "source_page": 7,
+      "stem": "What can white space accomplish in a data graphic?",
+      "options": [
+        "Separate information groups and reduce clutter",
+        "Randomize process step order",
+        "Make all visual elements equally prominent",
+        "Hide the source note for more space"
+      ],
+      "correct_mask": 1,
+      "rationale": "The manual explains that separate information groups and reduce clutter. This conclusion uses the actual visual-data principle or the stated fictional values, without adding unsupported evidence. Source: MAIC Design and Make Infographics, page 7."
+    },
+    {
+      "ordinal": 55,
+      "source_page": 7,
+      "stem": "Why might a mobile layout use a vertical reading sequence?",
+      "options": [
+        "Use oversized callouts for unsupported conclusions",
+        "Turn chronological association into proven causation",
+        "Randomize process step order",
+        "The narrow screen changes available composition"
+      ],
+      "correct_mask": 8,
+      "rationale": "The manual explains that the narrow screen changes available composition. This conclusion uses the actual visual-data principle or the stated fictional values, without adding unsupported evidence. Source: MAIC Design and Make Infographics, page 7."
+    },
+    {
+      "ordinal": 56,
+      "source_page": 7,
+      "stem": "What should a process infographic display?",
+      "options": [
+        "Make all visual elements equally prominent",
+        "An understandable ordered sequence of actions",
+        "Hide the source note for more space",
+        "Use oversized callouts for unsupported conclusions"
+      ],
+      "correct_mask": 2,
+      "rationale": "The manual explains that an understandable ordered sequence of actions. This conclusion uses the actual visual-data principle or the stated fictional values, without adding unsupported evidence. Source: MAIC Design and Make Infographics, page 7."
+    },
+    {
+      "ordinal": 57,
+      "source_page": 7,
+      "stem": "Why should a chronology preserve correct dates?",
+      "options": [
+        "Incorrect ordering changes the story",
+        "Turn chronological association into proven causation",
+        "Randomize process step order",
+        "Make all visual elements equally prominent"
+      ],
+      "correct_mask": 1,
+      "rationale": "The manual explains that incorrect ordering changes the story. This conclusion uses the actual visual-data principle or the stated fictional values, without adding unsupported evidence. Source: MAIC Design and Make Infographics, page 7."
+    },
+    {
+      "ordinal": 58,
+      "source_page": 7,
+      "stem": "What should a highlight callout avoid?",
+      "options": [
+        "Hide the source note for more space",
+        "Exaggerating beyond the measured data",
+        "Use oversized callouts for unsupported conclusions",
+        "Turn chronological association into proven causation"
+      ],
+      "correct_mask": 2,
+      "rationale": "The manual explains that exaggerating beyond the measured data. This conclusion uses the actual visual-data principle or the stated fictional values, without adding unsupported evidence. Source: MAIC Design and Make Infographics, page 7."
+    },
+    {
+      "ordinal": 59,
+      "source_page": 7,
+      "stem": "Attendance rises after a timetable change. What is safe to state?",
+      "options": [
+        "Randomize process step order",
+        "Make all visual elements equally prominent",
+        "The increase followed the change chronologically",
+        "Hide the source note for more space"
+      ],
+      "correct_mask": 4,
+      "rationale": "The manual explains that the increase followed the change chronologically. This conclusion uses the actual visual-data principle or the stated fictional values, without adding unsupported evidence. Source: MAIC Design and Make Infographics, page 7."
+    },
+    {
+      "ordinal": 60,
+      "source_page": 7,
+      "stem": "A three-step registration graphic has no labels. What is missing?",
+      "options": [
+        "Use oversized callouts for unsupported conclusions",
+        "Turn chronological association into proven causation",
+        "Randomize process step order",
+        "Clear actions at each stage"
+      ],
+      "correct_mask": 8,
+      "rationale": "The manual explains that clear actions at each stage. This conclusion uses the actual visual-data principle or the stated fictional values, without adding unsupported evidence. Source: MAIC Design and Make Infographics, page 7."
+    },
+    {
+      "ordinal": 61,
+      "source_page": 8,
+      "stem": "Why should a chart not rely on color alone?",
+      "options": [
+        "Use only red and green as category identifiers",
+        "Copy competitors' graphic assets without permission",
+        "Some viewers cannot distinguish categories by hue",
+        "Ignore translation expansion and mobile cropping"
+      ],
+      "correct_mask": 4,
+      "rationale": "The manual explains that some viewers cannot distinguish categories by hue. This conclusion uses the actual visual-data principle or the stated fictional values, without adding unsupported evidence. Source: MAIC Design and Make Infographics, page 8."
+    },
+    {
+      "ordinal": 62,
+      "source_page": 8,
+      "stem": "What helps a grayscale version remain interpretable?",
+      "options": [
+        "Set the source note in unreadable text",
+        "Direct labels or patterns in addition to color",
+        "Use invented photos as verified documentary records",
+        "Use only red and green as category identifiers"
+      ],
+      "correct_mask": 2,
+      "rationale": "The manual explains that direct labels or patterns in addition to color. This conclusion uses the actual visual-data principle or the stated fictional values, without adding unsupported evidence. Source: MAIC Design and Make Infographics, page 8."
+    },
+    {
+      "ordinal": 63,
+      "source_page": 8,
+      "stem": "What is a useful role of typography in an infographic?",
+      "options": [
+        "Copy competitors' graphic assets without permission",
+        "Ignore translation expansion and mobile cropping",
+        "Set the source note in unreadable text",
+        "Make values, labels and explanations readable"
+      ],
+      "correct_mask": 8,
+      "rationale": "The manual explains that make values, labels and explanations readable. This conclusion uses the actual visual-data principle or the stated fictional values, without adding unsupported evidence. Source: MAIC Design and Make Infographics, page 8."
+    },
+    {
+      "ordinal": 64,
+      "source_page": 8,
+      "stem": "Why should source notes remain legible?",
+      "options": [
+        "They explain the basis and limits of the data",
+        "Use invented photos as verified documentary records",
+        "Use only red and green as category identifiers",
+        "Copy competitors' graphic assets without permission"
+      ],
+      "correct_mask": 1,
+      "rationale": "The manual explains that they explain the basis and limits of the data. This conclusion uses the actual visual-data principle or the stated fictional values, without adding unsupported evidence. Source: MAIC Design and Make Infographics, page 8."
+    },
+    {
+      "ordinal": 65,
+      "source_page": 8,
+      "stem": "What may happen to long labels in translated layouts?",
+      "options": [
+        "They may require reflow and more space",
+        "Ignore translation expansion and mobile cropping",
+        "Set the source note in unreadable text",
+        "Use invented photos as verified documentary records"
+      ],
+      "correct_mask": 1,
+      "rationale": "The manual explains that they may require reflow and more space. This conclusion uses the actual visual-data principle or the stated fictional values, without adding unsupported evidence. Source: MAIC Design and Make Infographics, page 8."
+    },
+    {
+      "ordinal": 66,
+      "source_page": 8,
+      "stem": "Why should a fictional customer photo not be used as real evidence?",
+      "options": [
+        "It would misrepresent the depicted person's status",
+        "Use only red and green as category identifiers",
+        "Copy competitors' graphic assets without permission",
+        "Ignore translation expansion and mobile cropping"
+      ],
+      "correct_mask": 1,
+      "rationale": "The manual explains that it would misrepresent the depicted person's status. This conclusion uses the actual visual-data principle or the stated fictional values, without adding unsupported evidence. Source: MAIC Design and Make Infographics, page 8."
+    },
+    {
+      "ordinal": 67,
+      "source_page": 8,
+      "stem": "What is a legitimate reason to use a limited color palette?",
+      "options": [
+        "Set the source note in unreadable text",
+        "Maintain consistent visual categories and focus",
+        "Use invented photos as verified documentary records",
+        "Use only red and green as category identifiers"
+      ],
+      "correct_mask": 2,
+      "rationale": "The manual explains that maintain consistent visual categories and focus. This conclusion uses the actual visual-data principle or the stated fictional values, without adding unsupported evidence. Source: MAIC Design and Make Infographics, page 8."
+    },
+    {
+      "ordinal": 68,
+      "source_page": 8,
+      "stem": "What should be checked when using a downloadable icon set?",
+      "options": [
+        "Copy competitors' graphic assets without permission",
+        "Relevant rights and accurate meaning",
+        "Ignore translation expansion and mobile cropping",
+        "Set the source note in unreadable text"
+      ],
+      "correct_mask": 2,
+      "rationale": "The manual explains that relevant rights and accurate meaning. This conclusion uses the actual visual-data principle or the stated fictional values, without adding unsupported evidence. Source: MAIC Design and Make Infographics, page 8."
+    },
+    {
+      "ordinal": 69,
+      "source_page": 8,
+      "stem": "A blue bar chart uses direct category labels. What accessibility benefit remains in grayscale?",
+      "options": [
+        "Use invented photos as verified documentary records",
+        "Use only red and green as category identifiers",
+        "Categories can still be identified by text",
+        "Copy competitors' graphic assets without permission"
+      ],
+      "correct_mask": 4,
+      "rationale": "The manual explains that categories can still be identified by text. This conclusion uses the actual visual-data principle or the stated fictional values, without adding unsupported evidence. Source: MAIC Design and Make Infographics, page 8."
+    },
+    {
+      "ordinal": 70,
+      "source_page": 8,
+      "stem": "A social graphic shrinks its source note to illegible size. What should change?",
+      "options": [
+        "Recompose the layout to preserve readability",
+        "Ignore translation expansion and mobile cropping",
+        "Set the source note in unreadable text",
+        "Use invented photos as verified documentary records"
+      ],
+      "correct_mask": 1,
+      "rationale": "The manual explains that recompose the layout to preserve readability. This conclusion uses the actual visual-data principle or the stated fictional values, without adding unsupported evidence. Source: MAIC Design and Make Infographics, page 8."
+    },
+    {
+      "ordinal": 71,
+      "source_page": 9,
+      "stem": "What does WCAG non-text content guidance seek?",
+      "options": [
+        "Treat bar chart as a complete accessible description",
+        "Meaningful text alternatives for information in visuals",
+        "Assume one alt word conveys complex numerical trends",
+        "Invent claims in the long description"
+      ],
+      "correct_mask": 2,
+      "rationale": "The manual explains that meaningful text alternatives for information in visuals. This conclusion uses the actual visual-data principle or the stated fictional values, without adding unsupported evidence. Source: MAIC Design and Make Infographics, page 9."
+    },
+    {
+      "ordinal": 72,
+      "source_page": 9,
+      "stem": "Why may a complex chart need a longer description?",
+      "options": [
+        "Use color as the only way to understand a map",
+        "Keep exact data unavailable in every format",
+        "Treat bar chart as a complete accessible description",
+        "A short label cannot convey all essential relationships"
+      ],
+      "correct_mask": 8,
+      "rationale": "The manual explains that a short label cannot convey all essential relationships. This conclusion uses the actual visual-data principle or the stated fictional values, without adding unsupported evidence. Source: MAIC Design and Make Infographics, page 9."
+    },
+    {
+      "ordinal": 73,
+      "source_page": 9,
+      "stem": "What does alt text saying only bar chart fail to convey?",
+      "options": [
+        "Assume one alt word conveys complex numerical trends",
+        "The chart's actual figures and findings",
+        "Invent claims in the long description",
+        "Use color as the only way to understand a map"
+      ],
+      "correct_mask": 2,
+      "rationale": "The manual explains that the chart's actual figures and findings. This conclusion uses the actual visual-data principle or the stated fictional values, without adding unsupported evidence. Source: MAIC Design and Make Infographics, page 9."
+    },
+    {
+      "ordinal": 74,
+      "source_page": 9,
+      "stem": "When may an accessible data table be useful?",
+      "options": [
+        "When readers need exact chart values",
+        "Keep exact data unavailable in every format",
+        "Treat bar chart as a complete accessible description",
+        "Assume one alt word conveys complex numerical trends"
+      ],
+      "correct_mask": 1,
+      "rationale": "The manual explains that when readers need exact chart values. This conclusion uses the actual visual-data principle or the stated fictional values, without adding unsupported evidence. Source: MAIC Design and Make Infographics, page 9."
+    },
+    {
+      "ordinal": 75,
+      "source_page": 9,
+      "stem": "Why should a chart description mention units?",
+      "options": [
+        "Invent claims in the long description",
+        "Numbers cannot be interpreted correctly without them",
+        "Use color as the only way to understand a map",
+        "Keep exact data unavailable in every format"
+      ],
+      "correct_mask": 2,
+      "rationale": "The manual explains that numbers cannot be interpreted correctly without them. This conclusion uses the actual visual-data principle or the stated fictional values, without adding unsupported evidence. Source: MAIC Design and Make Infographics, page 9."
+    },
+    {
+      "ordinal": 76,
+      "source_page": 9,
+      "stem": "What should a text alternative avoid?",
+      "options": [
+        "Introducing conclusions absent from the visual evidence",
+        "Treat bar chart as a complete accessible description",
+        "Assume one alt word conveys complex numerical trends",
+        "Invent claims in the long description"
+      ],
+      "correct_mask": 1,
+      "rationale": "The manual explains that introducing conclusions absent from the visual evidence. This conclusion uses the actual visual-data principle or the stated fictional values, without adding unsupported evidence. Source: MAIC Design and Make Infographics, page 9."
+    },
+    {
+      "ordinal": 77,
+      "source_page": 9,
+      "stem": "How should a colored map aid people unable to distinguish hues?",
+      "options": [
+        "Use color as the only way to understand a map",
+        "Provide labels or other non-color cues",
+        "Keep exact data unavailable in every format",
+        "Treat bar chart as a complete accessible description"
+      ],
+      "correct_mask": 2,
+      "rationale": "The manual explains that provide labels or other non-color cues. This conclusion uses the actual visual-data principle or the stated fictional values, without adding unsupported evidence. Source: MAIC Design and Make Infographics, page 9."
+    },
+    {
+      "ordinal": 78,
+      "source_page": 9,
+      "stem": "What should an interactive web infographic support?",
+      "options": [
+        "Assume one alt word conveys complex numerical trends",
+        "Invent claims in the long description",
+        "Appropriate input and accessible control behavior",
+        "Use color as the only way to understand a map"
+      ],
+      "correct_mask": 4,
+      "rationale": "The manual explains that appropriate input and accessible control behavior. This conclusion uses the actual visual-data principle or the stated fictional values, without adding unsupported evidence. Source: MAIC Design and Make Infographics, page 9."
+    },
+    {
+      "ordinal": 79,
+      "source_page": 9,
+      "stem": "A monthly chart reads 20, 30 and 25. What should its alternative description include?",
+      "options": [
+        "Keep exact data unavailable in every format",
+        "Treat bar chart as a complete accessible description",
+        "Assume one alt word conveys complex numerical trends",
+        "The month-to-month values and direction"
+      ],
+      "correct_mask": 8,
+      "rationale": "The manual explains that the month-to-month values and direction. This conclusion uses the actual visual-data principle or the stated fictional values, without adding unsupported evidence. Source: MAIC Design and Make Infographics, page 9."
+    },
+    {
+      "ordinal": 80,
+      "source_page": 9,
+      "stem": "A static image is inaccessible to a reader who needs tabular data. What can help?",
+      "options": [
+        "Invent claims in the long description",
+        "Use color as the only way to understand a map",
+        "Keep exact data unavailable in every format",
+        "An accessible companion data table"
+      ],
+      "correct_mask": 8,
+      "rationale": "The manual explains that an accessible companion data table. This conclusion uses the actual visual-data principle or the stated fictional values, without adding unsupported evidence. Source: MAIC Design and Make Infographics, page 9."
+    },
+    {
+      "ordinal": 81,
+      "source_page": 10,
+      "stem": "What is the correct sequence for infographic production?",
+      "options": [
+        "Export without checking numeric values",
+        "Crop away the denominator on mobile",
+        "Assume any image render is accessible",
+        "Brief, data verification, draft, review and export"
+      ],
+      "correct_mask": 8,
+      "rationale": "The manual explains that brief, data verification, draft, review and export. This conclusion uses the actual visual-data principle or the stated fictional values, without adding unsupported evidence. Source: MAIC Design and Make Infographics, page 10."
+    },
+    {
+      "ordinal": 82,
+      "source_page": 10,
+      "stem": "Why should the source dataset remain linked to graphics?",
+      "options": [
+        "Discard the editable project immediately",
+        "A changed figure may affect labels and conclusions",
+        "Change the source numbers without a revision record",
+        "Export without checking numeric values"
+      ],
+      "correct_mask": 2,
+      "rationale": "The manual explains that a changed figure may affect labels and conclusions. This conclusion uses the actual visual-data principle or the stated fictional values, without adding unsupported evidence. Source: MAIC Design and Make Infographics, page 10."
+    },
+    {
+      "ordinal": 83,
+      "source_page": 10,
+      "stem": "What does a final content check compare?",
+      "options": [
+        "Crop away the denominator on mobile",
+        "Assume any image render is accessible",
+        "Displayed values, labels and units with the source",
+        "Discard the editable project immediately"
+      ],
+      "correct_mask": 4,
+      "rationale": "The manual explains that displayed values, labels and units with the source. This conclusion uses the actual visual-data principle or the stated fictional values, without adding unsupported evidence. Source: MAIC Design and Make Infographics, page 10."
+    },
+    {
+      "ordinal": 84,
+      "source_page": 10,
+      "stem": "Why must a mobile crop be inspected?",
+      "options": [
+        "Change the source numbers without a revision record",
+        "Export without checking numeric values",
+        "It can remove necessary data or footnotes",
+        "Crop away the denominator on mobile"
+      ],
+      "correct_mask": 4,
+      "rationale": "The manual explains that it can remove necessary data or footnotes. This conclusion uses the actual visual-data principle or the stated fictional values, without adding unsupported evidence. Source: MAIC Design and Make Infographics, page 10."
+    },
+    {
+      "ordinal": 85,
+      "source_page": 10,
+      "stem": "What should an export checklist cover?",
+      "options": [
+        "Assume any image render is accessible",
+        "Discard the editable project immediately",
+        "Arithmetic, scales, legibility, rights and final rendering",
+        "Change the source numbers without a revision record"
+      ],
+      "correct_mask": 4,
+      "rationale": "The manual explains that arithmetic, scales, legibility, rights and final rendering. This conclusion uses the actual visual-data principle or the stated fictional values, without adding unsupported evidence. Source: MAIC Design and Make Infographics, page 10."
+    },
+    {
+      "ordinal": 86,
+      "source_page": 10,
+      "stem": "Why should an editable source file be preserved?",
+      "options": [
+        "Export without checking numeric values",
+        "Crop away the denominator on mobile",
+        "Assume any image render is accessible",
+        "The graphic may require later corrections"
+      ],
+      "correct_mask": 8,
+      "rationale": "The manual explains that the graphic may require later corrections. This conclusion uses the actual visual-data principle or the stated fictional values, without adding unsupported evidence. Source: MAIC Design and Make Infographics, page 10."
+    },
+    {
+      "ordinal": 87,
+      "source_page": 10,
+      "stem": "What is the purpose of a dated correction log?",
+      "options": [
+        "Record substantive changes to published claims",
+        "Discard the editable project immediately",
+        "Change the source numbers without a revision record",
+        "Export without checking numeric values"
+      ],
+      "correct_mask": 1,
+      "rationale": "The manual explains that record substantive changes to published claims. This conclusion uses the actual visual-data principle or the stated fictional values, without adding unsupported evidence. Source: MAIC Design and Make Infographics, page 10."
+    },
+    {
+      "ordinal": 88,
+      "source_page": 10,
+      "stem": "Why may an infographic need separate layouts for A4 and mobile?",
+      "options": [
+        "Different physical proportions affect reading order",
+        "Crop away the denominator on mobile",
+        "Assume any image render is accessible",
+        "Discard the editable project immediately"
+      ],
+      "correct_mask": 1,
+      "rationale": "The manual explains that different physical proportions affect reading order. This conclusion uses the actual visual-data principle or the stated fictional values, without adding unsupported evidence. Source: MAIC Design and Make Infographics, page 10."
+    },
+    {
+      "ordinal": 89,
+      "source_page": 10,
+      "stem": "A mobile crop hides the denominator. What should be done?",
+      "options": [
+        "Change the source numbers without a revision record",
+        "Export without checking numeric values",
+        "Recompose and verify the mobile graphic",
+        "Crop away the denominator on mobile"
+      ],
+      "correct_mask": 4,
+      "rationale": "The manual explains that recompose and verify the mobile graphic. This conclusion uses the actual visual-data principle or the stated fictional values, without adding unsupported evidence. Source: MAIC Design and Make Infographics, page 10."
+    },
+    {
+      "ordinal": 90,
+      "source_page": 10,
+      "stem": "A source count is corrected after publication. What is the ethical response?",
+      "options": [
+        "Assume any image render is accessible",
+        "Discard the editable project immediately",
+        "Issue an accurate updated graphic with a correction explanation",
+        "Change the source numbers without a revision record"
+      ],
+      "correct_mask": 4,
+      "rationale": "The manual explains that issue an accurate updated graphic with a correction explanation. This conclusion uses the actual visual-data principle or the stated fictional values, without adding unsupported evidence. Source: MAIC Design and Make Infographics, page 10."
+    },
+    {
+      "ordinal": 91,
+      "source_page": 11,
+      "stem": "What does the fictional project measure monthly?",
+      "options": [
+        "Claim the attendance counts measure unique people",
+        "Verified attendances rather than necessarily unique people",
+        "State advertising caused every increase",
+        "Leave a known incorrect March value uncorrected"
+      ],
+      "correct_mask": 2,
+      "rationale": "The manual explains that verified attendances rather than necessarily unique people. This conclusion uses the actual visual-data principle or the stated fictional values, without adding unsupported evidence. Source: MAIC Design and Make Infographics, page 11."
+    },
+    {
+      "ordinal": 92,
+      "source_page": 11,
+      "stem": "What are the four fictional attendance values?",
+      "options": [
+        "Describe a fictional ledger as a real official source",
+        "Hide April because it is the highest",
+        "20, 30, 25 and 35",
+        "Claim the attendance counts measure unique people"
+      ],
+      "correct_mask": 4,
+      "rationale": "The manual explains that 20, 30, 25 and 35. This conclusion uses the actual visual-data principle or the stated fictional values, without adding unsupported evidence. Source: MAIC Design and Make Infographics, page 11."
+    },
+    {
+      "ordinal": 93,
+      "source_page": 11,
+      "stem": "Which month has the highest recorded attendance in the case?",
+      "options": [
+        "State advertising caused every increase",
+        "Leave a known incorrect March value uncorrected",
+        "April",
+        "Describe a fictional ledger as a real official source"
+      ],
+      "correct_mask": 4,
+      "rationale": "The manual explains that april. This conclusion uses the actual visual-data principle or the stated fictional values, without adding unsupported evidence. Source: MAIC Design and Make Infographics, page 11."
+    },
+    {
+      "ordinal": 94,
+      "source_page": 11,
+      "stem": "Why is a causal explanation for the trend not supported?",
+      "options": [
+        "Hide April because it is the highest",
+        "Claim the attendance counts measure unique people",
+        "State advertising caused every increase",
+        "The case gives counts without experimental evidence of causes"
+      ],
+      "correct_mask": 8,
+      "rationale": "The manual explains that the case gives counts without experimental evidence of causes. This conclusion uses the actual visual-data principle or the stated fictional values, without adding unsupported evidence. Source: MAIC Design and Make Infographics, page 11."
+    },
+    {
+      "ordinal": 95,
+      "source_page": 11,
+      "stem": "What should appear in the completed chart?",
+      "options": [
+        "Leave a known incorrect March value uncorrected",
+        "Months, values, scale, units and source note",
+        "Describe a fictional ledger as a real official source",
+        "Hide April because it is the highest"
+      ],
+      "correct_mask": 2,
+      "rationale": "The manual explains that months, values, scale, units and source note. This conclusion uses the actual visual-data principle or the stated fictional values, without adding unsupported evidence. Source: MAIC Design and Make Infographics, page 11."
+    },
+    {
+      "ordinal": 96,
+      "source_page": 11,
+      "stem": "What should accompany an inaccessible static chart if needed?",
+      "options": [
+        "Claim the attendance counts measure unique people",
+        "An accurate accessible description and data table",
+        "State advertising caused every increase",
+        "Leave a known incorrect March value uncorrected"
+      ],
+      "correct_mask": 2,
+      "rationale": "The manual explains that an accurate accessible description and data table. This conclusion uses the actual visual-data principle or the stated fictional values, without adding unsupported evidence. Source: MAIC Design and Make Infographics, page 11."
+    },
+    {
+      "ordinal": 97,
+      "source_page": 11,
+      "stem": "From January 20 to April 35, what is the absolute change?",
+      "options": [
+        "15 attendances",
+        "Describe a fictional ledger as a real official source",
+        "Hide April because it is the highest",
+        "Claim the attendance counts measure unique people"
+      ],
+      "correct_mask": 1,
+      "rationale": "The manual explains that 15 attendances. This conclusion uses the actual visual-data principle or the stated fictional values, without adding unsupported evidence. Source: MAIC Design and Make Infographics, page 11."
+    },
+    {
+      "ordinal": 98,
+      "source_page": 11,
+      "stem": "From January 20 to April 35, what is the percentage increase?",
+      "options": [
+        "State advertising caused every increase",
+        "Leave a known incorrect March value uncorrected",
+        "75%",
+        "Describe a fictional ledger as a real official source"
+      ],
+      "correct_mask": 4,
+      "rationale": "The manual explains that 75%. This conclusion uses the actual visual-data principle or the stated fictional values, without adding unsupported evidence. Source: MAIC Design and Make Infographics, page 11."
+    },
+    {
+      "ordinal": 99,
+      "source_page": 11,
+      "stem": "From February 30 to March 25, what is the absolute change?",
+      "options": [
+        "Hide April because it is the highest",
+        "Claim the attendance counts measure unique people",
+        "State advertising caused every increase",
+        "A decrease of 5 attendances"
+      ],
+      "correct_mask": 8,
+      "rationale": "The manual explains that a decrease of 5 attendances. This conclusion uses the actual visual-data principle or the stated fictional values, without adding unsupported evidence. Source: MAIC Design and Make Infographics, page 11."
+    },
+    {
+      "ordinal": 100,
+      "source_page": 11,
+      "stem": "If March were typed as 52 instead of 25, what should the designer do?",
+      "options": [
+        "Leave a known incorrect March value uncorrected",
+        "Correct affected charts, annotations and conclusions",
+        "Describe a fictional ledger as a real official source",
+        "Hide April because it is the highest"
+      ],
+      "correct_mask": 2,
+      "rationale": "The manual explains that correct affected charts, annotations and conclusions. This conclusion uses the actual visual-data principle or the stated fictional values, without adding unsupported evidence. Source: MAIC Design and Make Infographics, page 11."
+    }
+  ]
+}
