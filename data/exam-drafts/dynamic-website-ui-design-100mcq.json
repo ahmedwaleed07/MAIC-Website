@@ -1,0 +1,1312 @@
+{
+  "course_id": "dynamic-website-ui-design",
+  "source_manuscript": "data/course-manuscripts/dynamic-website-ui-design.md",
+  "source_manuscript_blob_sha": "ff3fef5462fdc2f3f5ddd7503ffcc0527a829484",
+  "source_pdf_sha256": null,
+  "bank_version": "draft-manuscript-20261122-v1",
+  "approval_status": "editorial_draft_pending_independent_review",
+  "number_of_questions": 100,
+  "note": "Offline editorial MAIC exam draft. Security and accessibility topics require independent technical reviewer signoff; no production exam activation.",
+  "questions": [
+    {
+      "ordinal": 1,
+      "source_page": 2,
+      "stem": "What makes a website interface dynamic?",
+      "options": [
+        "Assume a visual mockup stores bookings",
+        "Ignore network and error states",
+        "It responds to actions, state and data changes",
+        "Describe fictional API data as actual users"
+      ],
+      "correct_mask": 4,
+      "rationale": "The course explains that it responds to actions, state and data changes. This is the stated behavior, security boundary or calculation needed by the fictional interface. Source: MAIC Build Dynamic User Interfaces (UI) for Websites, page 2."
+    },
+    {
+      "ordinal": 2,
+      "source_page": 2,
+      "stem": "Why is a visual booking mockup not a complete application?",
+      "options": [
+        "It does not implement server-side reservation rules",
+        "Treat every button click as an approved operation",
+        "Choose aesthetics instead of user tasks",
+        "Assume a visual mockup stores bookings"
+      ],
+      "correct_mask": 1,
+      "rationale": "The course explains that it does not implement server-side reservation rules. This is the stated behavior, security boundary or calculation needed by the fictional interface. Source: MAIC Build Dynamic User Interfaces (UI) for Websites, page 2."
+    },
+    {
+      "ordinal": 3,
+      "source_page": 2,
+      "stem": "What does a successful task require beyond button activation?",
+      "options": [
+        "Accurate feedback based on actual application outcome",
+        "Ignore network and error states",
+        "Describe fictional API data as actual users",
+        "Treat every button click as an approved operation"
+      ],
+      "correct_mask": 1,
+      "rationale": "The course explains that accurate feedback based on actual application outcome. This is the stated behavior, security boundary or calculation needed by the fictional interface. Source: MAIC Build Dynamic User Interfaces (UI) for Websites, page 2."
+    },
+    {
+      "ordinal": 4,
+      "source_page": 2,
+      "stem": "What are key topics of this course?",
+      "options": [
+        "Choose aesthetics instead of user tasks",
+        "Semantic structure, responsive layout, state, APIs and tests",
+        "Assume a visual mockup stores bookings",
+        "Ignore network and error states"
+      ],
+      "correct_mask": 2,
+      "rationale": "The course explains that semantic structure, responsive layout, state, APIs and tests. This is the stated behavior, security boundary or calculation needed by the fictional interface. Source: MAIC Build Dynamic User Interfaces (UI) for Websites, page 2."
+    },
+    {
+      "ordinal": 5,
+      "source_page": 2,
+      "stem": "Why must classroom booking data be labeled hypothetical?",
+      "options": [
+        "Describe fictional API data as actual users",
+        "Treat every button click as an approved operation",
+        "Choose aesthetics instead of user tasks",
+        "It is not live operational or customer information"
+      ],
+      "correct_mask": 8,
+      "rationale": "The course explains that it is not live operational or customer information. This is the stated behavior, security boundary or calculation needed by the fictional interface. Source: MAIC Build Dynamic User Interfaces (UI) for Websites, page 2."
+    },
+    {
+      "ordinal": 6,
+      "source_page": 2,
+      "stem": "What is the role of application state?",
+      "options": [
+        "Assume a visual mockup stores bookings",
+        "Ignore network and error states",
+        "Represent values and outcomes needed by the interface",
+        "Describe fictional API data as actual users"
+      ],
+      "correct_mask": 4,
+      "rationale": "The course explains that represent values and outcomes needed by the interface. This is the stated behavior, security boundary or calculation needed by the fictional interface. Source: MAIC Build Dynamic User Interfaces (UI) for Websites, page 2."
+    },
+    {
+      "ordinal": 7,
+      "source_page": 2,
+      "stem": "Which user task guides the sample project?",
+      "options": [
+        "Treat every button click as an approved operation",
+        "Choosing an available study room and requesting reservation",
+        "Choose aesthetics instead of user tasks",
+        "Assume a visual mockup stores bookings"
+      ],
+      "correct_mask": 2,
+      "rationale": "The course explains that choosing an available study room and requesting reservation. This is the stated behavior, security boundary or calculation needed by the fictional interface. Source: MAIC Build Dynamic User Interfaces (UI) for Websites, page 2."
+    },
+    {
+      "ordinal": 8,
+      "source_page": 2,
+      "stem": "Why should a busy animation not count as confirmation?",
+      "options": [
+        "Ignore network and error states",
+        "Describe fictional API data as actual users",
+        "Treat every button click as an approved operation",
+        "The server may still reject the request"
+      ],
+      "correct_mask": 8,
+      "rationale": "The course explains that the server may still reject the request. This is the stated behavior, security boundary or calculation needed by the fictional interface. Source: MAIC Build Dynamic User Interfaces (UI) for Websites, page 2."
+    },
+    {
+      "ordinal": 9,
+      "source_page": 2,
+      "stem": "What is a useful initial state of a booking form?",
+      "options": [
+        "Idle with no submitted request",
+        "Choose aesthetics instead of user tasks",
+        "Assume a visual mockup stores bookings",
+        "Ignore network and error states"
+      ],
+      "correct_mask": 1,
+      "rationale": "The course explains that idle with no submitted request. This is the stated behavior, security boundary or calculation needed by the fictional interface. Source: MAIC Build Dynamic User Interfaces (UI) for Websites, page 2."
+    },
+    {
+      "ordinal": 10,
+      "source_page": 2,
+      "stem": "What should be done if the design looks polished but fails tasks?",
+      "options": [
+        "Describe fictional API data as actual users",
+        "Treat every button click as an approved operation",
+        "Choose aesthetics instead of user tasks",
+        "Correct the functional experience before release"
+      ],
+      "correct_mask": 8,
+      "rationale": "The course explains that correct the functional experience before release. This is the stated behavior, security boundary or calculation needed by the fictional interface. Source: MAIC Build Dynamic User Interfaces (UI) for Websites, page 2."
+    },
+    {
+      "ordinal": 11,
+      "source_page": 3,
+      "stem": "Why use semantic HTML?",
+      "options": [
+        "Use unrelated div elements as every action",
+        "Ignore headings and form labels",
+        "Display confirmed after any click without a server result",
+        "It communicates structure and control purpose"
+      ],
+      "correct_mask": 8,
+      "rationale": "The course explains that it communicates structure and control purpose. This is the stated behavior, security boundary or calculation needed by the fictional interface. Source: MAIC Build Dynamic User Interfaces (UI) for Websites, page 3."
+    },
+    {
+      "ordinal": 12,
+      "source_page": 3,
+      "stem": "What landmark typically holds the page's primary content?",
+      "options": [
+        "Assume a hidden input can guarantee authorization",
+        "Main",
+        "Place all application features in one unlabeled menu",
+        "Use unrelated div elements as every action"
+      ],
+      "correct_mask": 2,
+      "rationale": "The course explains that main. This is the stated behavior, security boundary or calculation needed by the fictional interface. Source: MAIC Build Dynamic User Interfaces (UI) for Websites, page 3."
+    },
+    {
+      "ordinal": 13,
+      "source_page": 3,
+      "stem": "Which control suits an action such as Check availability?",
+      "options": [
+        "Ignore headings and form labels",
+        "Display confirmed after any click without a server result",
+        "Assume a hidden input can guarantee authorization",
+        "A button"
+      ],
+      "correct_mask": 8,
+      "rationale": "The course explains that a button. This is the stated behavior, security boundary or calculation needed by the fictional interface. Source: MAIC Build Dynamic User Interfaces (UI) for Websites, page 3."
+    },
+    {
+      "ordinal": 14,
+      "source_page": 3,
+      "stem": "Why must form controls have clear labels?",
+      "options": [
+        "Place all application features in one unlabeled menu",
+        "Use unrelated div elements as every action",
+        "Users need to understand required information",
+        "Ignore headings and form labels"
+      ],
+      "correct_mask": 4,
+      "rationale": "The course explains that users need to understand required information. This is the stated behavior, security boundary or calculation needed by the fictional interface. Source: MAIC Build Dynamic User Interfaces (UI) for Websites, page 3."
+    },
+    {
+      "ordinal": 15,
+      "source_page": 3,
+      "stem": "What is wrong with treating disabled inputs as security rules?",
+      "options": [
+        "Client controls can be bypassed",
+        "Display confirmed after any click without a server result",
+        "Assume a hidden input can guarantee authorization",
+        "Place all application features in one unlabeled menu"
+      ],
+      "correct_mask": 1,
+      "rationale": "The course explains that client controls can be bypassed. This is the stated behavior, security boundary or calculation needed by the fictional interface. Source: MAIC Build Dynamic User Interfaces (UI) for Websites, page 3."
+    },
+    {
+      "ordinal": 16,
+      "source_page": 3,
+      "stem": "What belongs in a booking information architecture?",
+      "options": [
+        "Use unrelated div elements as every action",
+        "Ignore headings and form labels",
+        "Browse rooms, My bookings and Help",
+        "Display confirmed after any click without a server result"
+      ],
+      "correct_mask": 4,
+      "rationale": "The course explains that browse rooms, My bookings and Help. This is the stated behavior, security boundary or calculation needed by the fictional interface. Source: MAIC Build Dynamic User Interfaces (UI) for Websites, page 3."
+    },
+    {
+      "ordinal": 17,
+      "source_page": 3,
+      "stem": "Why distinguish displayed from trusted data?",
+      "options": [
+        "Assume a hidden input can guarantee authorization",
+        "Place all application features in one unlabeled menu",
+        "Browser content cannot establish server authorization",
+        "Use unrelated div elements as every action"
+      ],
+      "correct_mask": 4,
+      "rationale": "The course explains that browser content cannot establish server authorization. This is the stated behavior, security boundary or calculation needed by the fictional interface. Source: MAIC Build Dynamic User Interfaces (UI) for Websites, page 3."
+    },
+    {
+      "ordinal": 18,
+      "source_page": 3,
+      "stem": "What should a missing room selection produce?",
+      "options": [
+        "Ignore headings and form labels",
+        "A descriptive validation message",
+        "Display confirmed after any click without a server result",
+        "Assume a hidden input can guarantee authorization"
+      ],
+      "correct_mask": 2,
+      "rationale": "The course explains that a descriptive validation message. This is the stated behavior, security boundary or calculation needed by the fictional interface. Source: MAIC Build Dynamic User Interfaces (UI) for Websites, page 3."
+    },
+    {
+      "ordinal": 19,
+      "source_page": 3,
+      "stem": "Why are correct heading levels useful?",
+      "options": [
+        "They support navigation and document understanding",
+        "Place all application features in one unlabeled menu",
+        "Use unrelated div elements as every action",
+        "Ignore headings and form labels"
+      ],
+      "correct_mask": 1,
+      "rationale": "The course explains that they support navigation and document understanding. This is the stated behavior, security boundary or calculation needed by the fictional interface. Source: MAIC Build Dynamic User Interfaces (UI) for Websites, page 3."
+    },
+    {
+      "ordinal": 20,
+      "source_page": 3,
+      "stem": "What should the browser avoid after a random button click?",
+      "options": [
+        "Display confirmed after any click without a server result",
+        "Assume a hidden input can guarantee authorization",
+        "Displaying a false confirmed reservation",
+        "Place all application features in one unlabeled menu"
+      ],
+      "correct_mask": 4,
+      "rationale": "The course explains that displaying a false confirmed reservation. This is the stated behavior, security boundary or calculation needed by the fictional interface. Source: MAIC Build Dynamic User Interfaces (UI) for Websites, page 3."
+    },
+    {
+      "ordinal": 21,
+      "source_page": 4,
+      "stem": "When is Flexbox a useful CSS layout choice?",
+      "options": [
+        "Use absolute coordinates for every device size",
+        "Let long names overlap following cards",
+        "Assume desktop columns fit narrow phones unchanged",
+        "A one-dimensional navigation or action row"
+      ],
+      "correct_mask": 8,
+      "rationale": "The course explains that a one-dimensional navigation or action row. This is the stated behavior, security boundary or calculation needed by the fictional interface. Source: MAIC Build Dynamic User Interfaces (UI) for Websites, page 4."
+    },
+    {
+      "ordinal": 22,
+      "source_page": 4,
+      "stem": "When can CSS Grid be effective?",
+      "options": [
+        "A two-dimensional card collection",
+        "Shrink all labels until they technically fit",
+        "Move primary navigation randomly across states",
+        "Use absolute coordinates for every device size"
+      ],
+      "correct_mask": 1,
+      "rationale": "The course explains that a two-dimensional card collection. This is the stated behavior, security boundary or calculation needed by the fictional interface. Source: MAIC Build Dynamic User Interfaces (UI) for Websites, page 4."
+    },
+    {
+      "ordinal": 23,
+      "source_page": 4,
+      "stem": "How should breakpoints be selected?",
+      "options": [
+        "Let long names overlap following cards",
+        "Assume desktop columns fit narrow phones unchanged",
+        "According to content layout needs",
+        "Shrink all labels until they technically fit"
+      ],
+      "correct_mask": 4,
+      "rationale": "The course explains that according to content layout needs. This is the stated behavior, security boundary or calculation needed by the fictional interface. Source: MAIC Build Dynamic User Interfaces (UI) for Websites, page 4."
+    },
+    {
+      "ordinal": 24,
+      "source_page": 4,
+      "stem": "Why is fixed absolute positioning risky for varied screens?",
+      "options": [
+        "Move primary navigation randomly across states",
+        "Use absolute coordinates for every device size",
+        "Let long names overlap following cards",
+        "Content may overlap or move unpredictably"
+      ],
+      "correct_mask": 8,
+      "rationale": "The course explains that content may overlap or move unpredictably. This is the stated behavior, security boundary or calculation needed by the fictional interface. Source: MAIC Build Dynamic User Interfaces (UI) for Websites, page 4."
+    },
+    {
+      "ordinal": 25,
+      "source_page": 4,
+      "stem": "How might desktop filtering adapt to mobile?",
+      "options": [
+        "Stack filters above room results",
+        "Assume desktop columns fit narrow phones unchanged",
+        "Shrink all labels until they technically fit",
+        "Move primary navigation randomly across states"
+      ],
+      "correct_mask": 1,
+      "rationale": "The course explains that stack filters above room results. This is the stated behavior, security boundary or calculation needed by the fictional interface. Source: MAIC Build Dynamic User Interfaces (UI) for Websites, page 4."
+    },
+    {
+      "ordinal": 26,
+      "source_page": 4,
+      "stem": "What should happen when a card title wraps?",
+      "options": [
+        "Use absolute coordinates for every device size",
+        "Let long names overlap following cards",
+        "The card accommodates extra lines without overlap",
+        "Assume desktop columns fit narrow phones unchanged"
+      ],
+      "correct_mask": 4,
+      "rationale": "The course explains that the card accommodates extra lines without overlap. This is the stated behavior, security boundary or calculation needed by the fictional interface. Source: MAIC Build Dynamic User Interfaces (UI) for Websites, page 4."
+    },
+    {
+      "ordinal": 27,
+      "source_page": 4,
+      "stem": "What should a responsive interface preserve?",
+      "options": [
+        "Shrink all labels until they technically fit",
+        "Move primary navigation randomly across states",
+        "Use absolute coordinates for every device size",
+        "Essential actions and meaningful reading order"
+      ],
+      "correct_mask": 8,
+      "rationale": "The course explains that essential actions and meaningful reading order. This is the stated behavior, security boundary or calculation needed by the fictional interface. Source: MAIC Build Dynamic User Interfaces (UI) for Websites, page 4."
+    },
+    {
+      "ordinal": 28,
+      "source_page": 4,
+      "stem": "Why test zoomed browser views?",
+      "options": [
+        "Let long names overlap following cards",
+        "Text and controls may be clipped or hidden",
+        "Assume desktop columns fit narrow phones unchanged",
+        "Shrink all labels until they technically fit"
+      ],
+      "correct_mask": 2,
+      "rationale": "The course explains that text and controls may be clipped or hidden. This is the stated behavior, security boundary or calculation needed by the fictional interface. Source: MAIC Build Dynamic User Interfaces (UI) for Websites, page 4."
+    },
+    {
+      "ordinal": 29,
+      "source_page": 4,
+      "stem": "What should language switching not do to the official logo?",
+      "options": [
+        "Distort or rotate its approved geometry",
+        "Move primary navigation randomly across states",
+        "Use absolute coordinates for every device size",
+        "Let long names overlap following cards"
+      ],
+      "correct_mask": 1,
+      "rationale": "The course explains that distort or rotate its approved geometry. This is the stated behavior, security boundary or calculation needed by the fictional interface. Source: MAIC Build Dynamic User Interfaces (UI) for Websites, page 4."
+    },
+    {
+      "ordinal": 30,
+      "source_page": 4,
+      "stem": "What is a good response to narrow content width?",
+      "options": [
+        "Assume desktop columns fit narrow phones unchanged",
+        "Reflow layout instead of making all text tiny",
+        "Shrink all labels until they technically fit",
+        "Move primary navigation randomly across states"
+      ],
+      "correct_mask": 2,
+      "rationale": "The course explains that reflow layout instead of making all text tiny. This is the stated behavior, security boundary or calculation needed by the fictional interface. Source: MAIC Build Dynamic User Interfaces (UI) for Websites, page 4."
+    },
+    {
+      "ordinal": 31,
+      "source_page": 5,
+      "stem": "What is application state used to represent?",
+      "options": [
+        "Show submitting as an already confirmed booking",
+        "Selected values, progress and results",
+        "Use unstable list keys for critical records",
+        "Duplicate state values until screens disagree"
+      ],
+      "correct_mask": 2,
+      "rationale": "The course explains that selected values, progress and results. This is the stated behavior, security boundary or calculation needed by the fictional interface. Source: MAIC Build Dynamic User Interfaces (UI) for Websites, page 5."
+    },
+    {
+      "ordinal": 32,
+      "source_page": 5,
+      "stem": "What user event can change a booking form's state?",
+      "options": [
+        "Treat network failure as proof no rooms exist",
+        "Keep outdated date selections without checking",
+        "Show submitting as an already confirmed booking",
+        "Selecting a date or room"
+      ],
+      "correct_mask": 8,
+      "rationale": "The course explains that selecting a date or room. This is the stated behavior, security boundary or calculation needed by the fictional interface. Source: MAIC Build Dynamic User Interfaces (UI) for Websites, page 5."
+    },
+    {
+      "ordinal": 33,
+      "source_page": 5,
+      "stem": "Why should confirmed be a distinct state from submitting?",
+      "options": [
+        "A pending operation is not an accepted reservation",
+        "Use unstable list keys for critical records",
+        "Duplicate state values until screens disagree",
+        "Treat network failure as proof no rooms exist"
+      ],
+      "correct_mask": 1,
+      "rationale": "The course explains that a pending operation is not an accepted reservation. This is the stated behavior, security boundary or calculation needed by the fictional interface. Source: MAIC Build Dynamic User Interfaces (UI) for Websites, page 5."
+    },
+    {
+      "ordinal": 34,
+      "source_page": 5,
+      "stem": "What can happen if app state holds contradictory copies of one value?",
+      "options": [
+        "Keep outdated date selections without checking",
+        "Show submitting as an already confirmed booking",
+        "UI components may display inconsistent information",
+        "Use unstable list keys for critical records"
+      ],
+      "correct_mask": 4,
+      "rationale": "The course explains that uI components may display inconsistent information. This is the stated behavior, security boundary or calculation needed by the fictional interface. Source: MAIC Build Dynamic User Interfaces (UI) for Websites, page 5."
+    },
+    {
+      "ordinal": 35,
+      "source_page": 5,
+      "stem": "What does a no-results state mean?",
+      "options": [
+        "Duplicate state values until screens disagree",
+        "Treat network failure as proof no rooms exist",
+        "Keep outdated date selections without checking",
+        "The query succeeded but returned no applicable items"
+      ],
+      "correct_mask": 8,
+      "rationale": "The course explains that the query succeeded but returned no applicable items. This is the stated behavior, security boundary or calculation needed by the fictional interface. Source: MAIC Build Dynamic User Interfaces (UI) for Websites, page 5."
+    },
+    {
+      "ordinal": 36,
+      "source_page": 5,
+      "stem": "How does a network failure differ from no results?",
+      "options": [
+        "Show submitting as an already confirmed booking",
+        "Use unstable list keys for critical records",
+        "Duplicate state values until screens disagree",
+        "Availability could not be reliably retrieved"
+      ],
+      "correct_mask": 8,
+      "rationale": "The course explains that availability could not be reliably retrieved. This is the stated behavior, security boundary or calculation needed by the fictional interface. Source: MAIC Build Dynamic User Interfaces (UI) for Websites, page 5."
+    },
+    {
+      "ordinal": 37,
+      "source_page": 5,
+      "stem": "Why should a list have stable record identifiers?",
+      "options": [
+        "Updates must remain linked to the correct items",
+        "Treat network failure as proof no rooms exist",
+        "Keep outdated date selections without checking",
+        "Show submitting as an already confirmed booking"
+      ],
+      "correct_mask": 1,
+      "rationale": "The course explains that updates must remain linked to the correct items. This is the stated behavior, security boundary or calculation needed by the fictional interface. Source: MAIC Build Dynamic User Interfaces (UI) for Websites, page 5."
+    },
+    {
+      "ordinal": 38,
+      "source_page": 5,
+      "stem": "When should selecting a new date invalidate an old slot?",
+      "options": [
+        "Use unstable list keys for critical records",
+        "When that slot no longer belongs to the active query",
+        "Duplicate state values until screens disagree",
+        "Treat network failure as proof no rooms exist"
+      ],
+      "correct_mask": 2,
+      "rationale": "The course explains that when that slot no longer belongs to the active query. This is the stated behavior, security boundary or calculation needed by the fictional interface. Source: MAIC Build Dynamic User Interfaces (UI) for Websites, page 5."
+    },
+    {
+      "ordinal": 39,
+      "source_page": 5,
+      "stem": "What should a pending submission prevent where appropriate?",
+      "options": [
+        "Keep outdated date selections without checking",
+        "Repeated accidental duplicate requests",
+        "Show submitting as an already confirmed booking",
+        "Use unstable list keys for critical records"
+      ],
+      "correct_mask": 2,
+      "rationale": "The course explains that repeated accidental duplicate requests. This is the stated behavior, security boundary or calculation needed by the fictional interface. Source: MAIC Build Dynamic User Interfaces (UI) for Websites, page 5."
+    },
+    {
+      "ordinal": 40,
+      "source_page": 5,
+      "stem": "What evidence permits the transition to confirmed?",
+      "options": [
+        "Duplicate state values until screens disagree",
+        "A valid authorized server confirmation",
+        "Treat network failure as proof no rooms exist",
+        "Keep outdated date selections without checking"
+      ],
+      "correct_mask": 2,
+      "rationale": "The course explains that a valid authorized server confirmation. This is the stated behavior, security boundary or calculation needed by the fictional interface. Source: MAIC Build Dynamic User Interfaces (UI) for Websites, page 5."
+    },
+    {
+      "ordinal": 41,
+      "source_page": 6,
+      "stem": "What should a required field provide?",
+      "options": [
+        "Trust client-side validation as server security",
+        "Erase every field after a rejected request",
+        "Create a booking without checking availability",
+        "A persistent label and an understandable error"
+      ],
+      "correct_mask": 8,
+      "rationale": "The course explains that a persistent label and an understandable error. This is the stated behavior, security boundary or calculation needed by the fictional interface. Source: MAIC Build Dynamic User Interfaces (UI) for Websites, page 6."
+    },
+    {
+      "ordinal": 42,
+      "source_page": 6,
+      "stem": "What is the main limitation of client-side validation?",
+      "options": [
+        "It does not enforce trusted server rules",
+        "Expose stack traces and private records in errors",
+        "Use only red borders without explanations",
+        "Trust client-side validation as server security"
+      ],
+      "correct_mask": 1,
+      "rationale": "The course explains that it does not enforce trusted server rules. This is the stated behavior, security boundary or calculation needed by the fictional interface. Source: MAIC Build Dynamic User Interfaces (UI) for Websites, page 6."
+    },
+    {
+      "ordinal": 43,
+      "source_page": 6,
+      "stem": "What must the server verify about room booking?",
+      "options": [
+        "Erase every field after a rejected request",
+        "Create a booking without checking availability",
+        "Availability and permission to reserve",
+        "Expose stack traces and private records in errors"
+      ],
+      "correct_mask": 4,
+      "rationale": "The course explains that availability and permission to reserve. This is the stated behavior, security boundary or calculation needed by the fictional interface. Source: MAIC Build Dynamic User Interfaces (UI) for Websites, page 6."
+    },
+    {
+      "ordinal": 44,
+      "source_page": 6,
+      "stem": "Why should sensitive user details not appear in public error messages?",
+      "options": [
+        "They can expose private information",
+        "Use only red borders without explanations",
+        "Trust client-side validation as server security",
+        "Erase every field after a rejected request"
+      ],
+      "correct_mask": 1,
+      "rationale": "The course explains that they can expose private information. This is the stated behavior, security boundary or calculation needed by the fictional interface. Source: MAIC Build Dynamic User Interfaces (UI) for Websites, page 6."
+    },
+    {
+      "ordinal": 45,
+      "source_page": 6,
+      "stem": "What should the UI do when a selected slot is taken?",
+      "options": [
+        "Create a booking without checking availability",
+        "Offer a clear rejection and reselection path",
+        "Expose stack traces and private records in errors",
+        "Use only red borders without explanations"
+      ],
+      "correct_mask": 2,
+      "rationale": "The course explains that offer a clear rejection and reselection path. This is the stated behavior, security boundary or calculation needed by the fictional interface. Source: MAIC Build Dynamic User Interfaces (UI) for Websites, page 6."
+    },
+    {
+      "ordinal": 46,
+      "source_page": 6,
+      "stem": "What should happen to recoverable input after a failed request?",
+      "options": [
+        "Trust client-side validation as server security",
+        "Preserve it where appropriate",
+        "Erase every field after a rejected request",
+        "Create a booking without checking availability"
+      ],
+      "correct_mask": 2,
+      "rationale": "The course explains that preserve it where appropriate. This is the stated behavior, security boundary or calculation needed by the fictional interface. Source: MAIC Build Dynamic User Interfaces (UI) for Websites, page 6."
+    },
+    {
+      "ordinal": 47,
+      "source_page": 6,
+      "stem": "Why is color-only validation insufficient?",
+      "options": [
+        "Expose stack traces and private records in errors",
+        "Not all users can perceive that cue",
+        "Use only red borders without explanations",
+        "Trust client-side validation as server security"
+      ],
+      "correct_mask": 2,
+      "rationale": "The course explains that not all users can perceive that cue. This is the stated behavior, security boundary or calculation needed by the fictional interface. Source: MAIC Build Dynamic User Interfaces (UI) for Websites, page 6."
+    },
+    {
+      "ordinal": 48,
+      "source_page": 6,
+      "stem": "What should a form success response explain?",
+      "options": [
+        "Erase every field after a rejected request",
+        "Create a booking without checking availability",
+        "Expose stack traces and private records in errors",
+        "The actual outcome and next relevant action"
+      ],
+      "correct_mask": 8,
+      "rationale": "The course explains that the actual outcome and next relevant action. This is the stated behavior, security boundary or calculation needed by the fictional interface. Source: MAIC Build Dynamic User Interfaces (UI) for Websites, page 6."
+    },
+    {
+      "ordinal": 49,
+      "source_page": 6,
+      "stem": "Why do hidden fields not guarantee authorization?",
+      "options": [
+        "Use only red borders without explanations",
+        "Trust client-side validation as server security",
+        "Browser requests can be modified",
+        "Erase every field after a rejected request"
+      ],
+      "correct_mask": 4,
+      "rationale": "The course explains that browser requests can be modified. This is the stated behavior, security boundary or calculation needed by the fictional interface. Source: MAIC Build Dynamic User Interfaces (UI) for Websites, page 6."
+    },
+    {
+      "ordinal": 50,
+      "source_page": 6,
+      "stem": "What should be avoided when a server rejects a booking?",
+      "options": [
+        "Create a booking without checking availability",
+        "Expose stack traces and private records in errors",
+        "Pretending that a reservation was successfully created",
+        "Use only red borders without explanations"
+      ],
+      "correct_mask": 4,
+      "rationale": "The course explains that pretending that a reservation was successfully created. This is the stated behavior, security boundary or calculation needed by the fictional interface. Source: MAIC Build Dynamic User Interfaces (UI) for Websites, page 6."
+    },
+    {
+      "ordinal": 51,
+      "source_page": 7,
+      "stem": "What does an availability API usually return?",
+      "options": [
+        "Structured records or status for requested rooms and times",
+        "Assume every HTTP completion means a booking exists",
+        "Show old filter results after a newer selection",
+        "Let the browser decide authorization rules"
+      ],
+      "correct_mask": 1,
+      "rationale": "The course explains that structured records or status for requested rooms and times. This is the stated behavior, security boundary or calculation needed by the fictional interface. Source: MAIC Build Dynamic User Interfaces (UI) for Websites, page 7."
+    },
+    {
+      "ordinal": 52,
+      "source_page": 7,
+      "stem": "Why should a user-facing results list have a loading state?",
+      "options": [
+        "Insert raw untrusted strings as HTML markup",
+        "Treat transport errors as empty results",
+        "Assume every HTTP completion means a booking exists",
+        "The network operation can take time"
+      ],
+      "correct_mask": 8,
+      "rationale": "The course explains that the network operation can take time. This is the stated behavior, security boundary or calculation needed by the fictional interface. Source: MAIC Build Dynamic User Interfaces (UI) for Websites, page 7."
+    },
+    {
+      "ordinal": 53,
+      "source_page": 7,
+      "stem": "What is a transport failure distinct from?",
+      "options": [
+        "Show old filter results after a newer selection",
+        "Let the browser decide authorization rules",
+        "Insert raw untrusted strings as HTML markup",
+        "A successful valid empty result"
+      ],
+      "correct_mask": 8,
+      "rationale": "The course explains that a successful valid empty result. This is the stated behavior, security boundary or calculation needed by the fictional interface. Source: MAIC Build Dynamic User Interfaces (UI) for Websites, page 7."
+    },
+    {
+      "ordinal": 54,
+      "source_page": 7,
+      "stem": "Why must server-returned strings be handled as untrusted content?",
+      "options": [
+        "They must not become executable markup",
+        "Treat transport errors as empty results",
+        "Assume every HTTP completion means a booking exists",
+        "Show old filter results after a newer selection"
+      ],
+      "correct_mask": 1,
+      "rationale": "The course explains that they must not become executable markup. This is the stated behavior, security boundary or calculation needed by the fictional interface. Source: MAIC Build Dynamic User Interfaces (UI) for Websites, page 7."
+    },
+    {
+      "ordinal": 55,
+      "source_page": 7,
+      "stem": "What is a stale response race?",
+      "options": [
+        "Let the browser decide authorization rules",
+        "An older request arrives after a newer selection",
+        "Insert raw untrusted strings as HTML markup",
+        "Treat transport errors as empty results"
+      ],
+      "correct_mask": 2,
+      "rationale": "The course explains that an older request arrives after a newer selection. This is the stated behavior, security boundary or calculation needed by the fictional interface. Source: MAIC Build Dynamic User Interfaces (UI) for Websites, page 7."
+    },
+    {
+      "ordinal": 56,
+      "source_page": 7,
+      "stem": "What could prevent an old Monday response overwriting Tuesday results?",
+      "options": [
+        "Request cancellation or a latest-request identifier",
+        "Assume every HTTP completion means a booking exists",
+        "Show old filter results after a newer selection",
+        "Let the browser decide authorization rules"
+      ],
+      "correct_mask": 1,
+      "rationale": "The course explains that request cancellation or a latest-request identifier. This is the stated behavior, security boundary or calculation needed by the fictional interface. Source: MAIC Build Dynamic User Interfaces (UI) for Websites, page 7."
+    },
+    {
+      "ordinal": 57,
+      "source_page": 7,
+      "stem": "Why is HTTP response completion not always booking success?",
+      "options": [
+        "Insert raw untrusted strings as HTML markup",
+        "Treat transport errors as empty results",
+        "Business status must be confirmed by the service contract",
+        "Assume every HTTP completion means a booking exists"
+      ],
+      "correct_mask": 4,
+      "rationale": "The course explains that business status must be confirmed by the service contract. This is the stated behavior, security boundary or calculation needed by the fictional interface. Source: MAIC Build Dynamic User Interfaces (UI) for Websites, page 7."
+    },
+    {
+      "ordinal": 58,
+      "source_page": 7,
+      "stem": "Why should an API schema define room identifiers?",
+      "options": [
+        "Records need stable reference keys",
+        "Show old filter results after a newer selection",
+        "Let the browser decide authorization rules",
+        "Insert raw untrusted strings as HTML markup"
+      ],
+      "correct_mask": 1,
+      "rationale": "The course explains that records need stable reference keys. This is the stated behavior, security boundary or calculation needed by the fictional interface. Source: MAIC Build Dynamic User Interfaces (UI) for Websites, page 7."
+    },
+    {
+      "ordinal": 59,
+      "source_page": 7,
+      "stem": "What should a retry message communicate?",
+      "options": [
+        "Treat transport errors as empty results",
+        "Assume every HTTP completion means a booking exists",
+        "Show old filter results after a newer selection",
+        "A previous request failed and can be attempted again"
+      ],
+      "correct_mask": 8,
+      "rationale": "The course explains that a previous request failed and can be attempted again. This is the stated behavior, security boundary or calculation needed by the fictional interface. Source: MAIC Build Dynamic User Interfaces (UI) for Websites, page 7."
+    },
+    {
+      "ordinal": 60,
+      "source_page": 7,
+      "stem": "Why do APIs need server-side input validation?",
+      "options": [
+        "Let the browser decide authorization rules",
+        "Client requests can be crafted or modified",
+        "Insert raw untrusted strings as HTML markup",
+        "Treat transport errors as empty results"
+      ],
+      "correct_mask": 2,
+      "rationale": "The course explains that client requests can be crafted or modified. This is the stated behavior, security boundary or calculation needed by the fictional interface. Source: MAIC Build Dynamic User Interfaces (UI) for Websites, page 7."
+    },
+    {
+      "ordinal": 61,
+      "source_page": 8,
+      "stem": "What does a reusable UI component group?",
+      "options": [
+        "Manually copy every button with arbitrary styles",
+        "Ignore behavior and accessibility in component contracts",
+        "A consistent function with presentation and behavior",
+        "Move shared navigation unexpectedly"
+      ],
+      "correct_mask": 4,
+      "rationale": "The course explains that a consistent function with presentation and behavior. This is the stated behavior, security boundary or calculation needed by the fictional interface. Source: MAIC Build Dynamic User Interfaces (UI) for Websites, page 8."
+    },
+    {
+      "ordinal": 62,
+      "source_page": 8,
+      "stem": "What is a design token?",
+      "options": [
+        "Communicate all states only by color",
+        "A named reusable style value such as spacing or color",
+        "Let localization overlap other controls",
+        "Manually copy every button with arbitrary styles"
+      ],
+      "correct_mask": 2,
+      "rationale": "The course explains that a named reusable style value such as spacing or color. This is the stated behavior, security boundary or calculation needed by the fictional interface. Source: MAIC Build Dynamic User Interfaces (UI) for Websites, page 8."
+    },
+    {
+      "ordinal": 63,
+      "source_page": 8,
+      "stem": "Why should a component specification include states?",
+      "options": [
+        "Ignore behavior and accessibility in component contracts",
+        "Move shared navigation unexpectedly",
+        "Users see different behavior in loading, errors and disabled conditions",
+        "Communicate all states only by color"
+      ],
+      "correct_mask": 4,
+      "rationale": "The course explains that users see different behavior in loading, errors and disabled conditions. This is the stated behavior, security boundary or calculation needed by the fictional interface. Source: MAIC Build Dynamic User Interfaces (UI) for Websites, page 8."
+    },
+    {
+      "ordinal": 64,
+      "source_page": 8,
+      "stem": "What is a useful booking component?",
+      "options": [
+        "Let localization overlap other controls",
+        "Manually copy every button with arbitrary styles",
+        "Availability List",
+        "Ignore behavior and accessibility in component contracts"
+      ],
+      "correct_mask": 4,
+      "rationale": "The course explains that availability List. This is the stated behavior, security boundary or calculation needed by the fictional interface. Source: MAIC Build Dynamic User Interfaces (UI) for Websites, page 8."
+    },
+    {
+      "ordinal": 65,
+      "source_page": 8,
+      "stem": "Why should unavailable status have text as well as color?",
+      "options": [
+        "Move shared navigation unexpectedly",
+        "Color alone may not communicate meaning",
+        "Communicate all states only by color",
+        "Let localization overlap other controls"
+      ],
+      "correct_mask": 2,
+      "rationale": "The course explains that color alone may not communicate meaning. This is the stated behavior, security boundary or calculation needed by the fictional interface. Source: MAIC Build Dynamic User Interfaces (UI) for Websites, page 8."
+    },
+    {
+      "ordinal": 66,
+      "source_page": 8,
+      "stem": "How should reused components handle long translated labels?",
+      "options": [
+        "Manually copy every button with arbitrary styles",
+        "Ignore behavior and accessibility in component contracts",
+        "Move shared navigation unexpectedly",
+        "Wrap or grow without obscuring content"
+      ],
+      "correct_mask": 8,
+      "rationale": "The course explains that wrap or grow without obscuring content. This is the stated behavior, security boundary or calculation needed by the fictional interface. Source: MAIC Build Dynamic User Interfaces (UI) for Websites, page 8."
+    },
+    {
+      "ordinal": 67,
+      "source_page": 8,
+      "stem": "Why audit all screens after a shared component change?",
+      "options": [
+        "Communicate all states only by color",
+        "Updates can affect multiple contexts",
+        "Let localization overlap other controls",
+        "Manually copy every button with arbitrary styles"
+      ],
+      "correct_mask": 2,
+      "rationale": "The course explains that updates can affect multiple contexts. This is the stated behavior, security boundary or calculation needed by the fictional interface. Source: MAIC Build Dynamic User Interfaces (UI) for Websites, page 8."
+    },
+    {
+      "ordinal": 68,
+      "source_page": 8,
+      "stem": "What does a component contract describe?",
+      "options": [
+        "Ignore behavior and accessibility in component contracts",
+        "Move shared navigation unexpectedly",
+        "Communicate all states only by color",
+        "Inputs, visible states, actions and accessibility responsibilities"
+      ],
+      "correct_mask": 8,
+      "rationale": "The course explains that inputs, visible states, actions and accessibility responsibilities. This is the stated behavior, security boundary or calculation needed by the fictional interface. Source: MAIC Build Dynamic User Interfaces (UI) for Websites, page 8."
+    },
+    {
+      "ordinal": 69,
+      "source_page": 8,
+      "stem": "Why is direct copy-paste a consistency risk?",
+      "options": [
+        "Let localization overlap other controls",
+        "Variants may drift in labels and behavior",
+        "Manually copy every button with arbitrary styles",
+        "Ignore behavior and accessibility in component contracts"
+      ],
+      "correct_mask": 2,
+      "rationale": "The course explains that variants may drift in labels and behavior. This is the stated behavior, security boundary or calculation needed by the fictional interface. Source: MAIC Build Dynamic User Interfaces (UI) for Websites, page 8."
+    },
+    {
+      "ordinal": 70,
+      "source_page": 8,
+      "stem": "What should stay predictable across related views?",
+      "options": [
+        "Move shared navigation unexpectedly",
+        "Navigation and major action placement",
+        "Communicate all states only by color",
+        "Let localization overlap other controls"
+      ],
+      "correct_mask": 2,
+      "rationale": "The course explains that navigation and major action placement. This is the stated behavior, security boundary or calculation needed by the fictional interface. Source: MAIC Build Dynamic User Interfaces (UI) for Websites, page 8."
+    },
+    {
+      "ordinal": 71,
+      "source_page": 9,
+      "stem": "What does a working website need beyond attractive contrast?",
+      "options": [
+        "Assume a high-contrast screenshot establishes compliance",
+        "Communicate errors exclusively with color",
+        "Treat screen-reader updates as automatic without testing",
+        "Semantic controls, focus and keyboard behavior"
+      ],
+      "correct_mask": 8,
+      "rationale": "The course explains that semantic controls, focus and keyboard behavior. This is the stated behavior, security boundary or calculation needed by the fictional interface. Source: MAIC Build Dynamic User Interfaces (UI) for Websites, page 9."
+    },
+    {
+      "ordinal": 72,
+      "source_page": 9,
+      "stem": "Which accessibility framework is cited in the course?",
+      "options": [
+        "WCAG 2.2",
+        "Hide focus under sticky content",
+        "Reverse Arabic letters without proper rendering",
+        "Assume a high-contrast screenshot establishes compliance"
+      ],
+      "correct_mask": 1,
+      "rationale": "The course explains that wCAG 2.2. This is the stated behavior, security boundary or calculation needed by the fictional interface. Source: MAIC Build Dynamic User Interfaces (UI) for Websites, page 9."
+    },
+    {
+      "ordinal": 73,
+      "source_page": 9,
+      "stem": "Why can a screen reader need dynamic status messages?",
+      "options": [
+        "Communicate errors exclusively with color",
+        "Treat screen-reader updates as automatic without testing",
+        "Visual updates may otherwise remain unannounced",
+        "Hide focus under sticky content"
+      ],
+      "correct_mask": 4,
+      "rationale": "The course explains that visual updates may otherwise remain unannounced. This is the stated behavior, security boundary or calculation needed by the fictional interface. Source: MAIC Build Dynamic User Interfaces (UI) for Websites, page 9."
+    },
+    {
+      "ordinal": 74,
+      "source_page": 9,
+      "stem": "What should an Arabic interface support?",
+      "options": [
+        "Reverse Arabic letters without proper rendering",
+        "Correct right-to-left layout and script shaping",
+        "Assume a high-contrast screenshot establishes compliance",
+        "Communicate errors exclusively with color"
+      ],
+      "correct_mask": 2,
+      "rationale": "The course explains that correct right-to-left layout and script shaping. This is the stated behavior, security boundary or calculation needed by the fictional interface. Source: MAIC Build Dynamic User Interfaces (UI) for Websites, page 9."
+    },
+    {
+      "ordinal": 75,
+      "source_page": 9,
+      "stem": "Why test zoom and narrow viewport widths?",
+      "options": [
+        "Critical text and controls may become hidden",
+        "Treat screen-reader updates as automatic without testing",
+        "Hide focus under sticky content",
+        "Reverse Arabic letters without proper rendering"
+      ],
+      "correct_mask": 1,
+      "rationale": "The course explains that critical text and controls may become hidden. This is the stated behavior, security boundary or calculation needed by the fictional interface. Source: MAIC Build Dynamic User Interfaces (UI) for Websites, page 9."
+    },
+    {
+      "ordinal": 76,
+      "source_page": 9,
+      "stem": "What is an example of accessible form feedback?",
+      "options": [
+        "A labeled error explaining a missing date",
+        "Assume a high-contrast screenshot establishes compliance",
+        "Communicate errors exclusively with color",
+        "Treat screen-reader updates as automatic without testing"
+      ],
+      "correct_mask": 1,
+      "rationale": "The course explains that a labeled error explaining a missing date. This is the stated behavior, security boundary or calculation needed by the fictional interface. Source: MAIC Build Dynamic User Interfaces (UI) for Websites, page 9."
+    },
+    {
+      "ordinal": 77,
+      "source_page": 9,
+      "stem": "Why should a sticky header not conceal the focused control?",
+      "options": [
+        "Hide focus under sticky content",
+        "Reverse Arabic letters without proper rendering",
+        "The user must see and operate the active element",
+        "Assume a high-contrast screenshot establishes compliance"
+      ],
+      "correct_mask": 4,
+      "rationale": "The course explains that the user must see and operate the active element. This is the stated behavior, security boundary or calculation needed by the fictional interface. Source: MAIC Build Dynamic User Interfaces (UI) for Websites, page 9."
+    },
+    {
+      "ordinal": 78,
+      "source_page": 9,
+      "stem": "Why are colors alone insufficient for errors?",
+      "options": [
+        "Communicate errors exclusively with color",
+        "Some users cannot distinguish the intended state",
+        "Treat screen-reader updates as automatic without testing",
+        "Hide focus under sticky content"
+      ],
+      "correct_mask": 2,
+      "rationale": "The course explains that some users cannot distinguish the intended state. This is the stated behavior, security boundary or calculation needed by the fictional interface. Source: MAIC Build Dynamic User Interfaces (UI) for Websites, page 9."
+    },
+    {
+      "ordinal": 79,
+      "source_page": 9,
+      "stem": "What should follow changing the availability date?",
+      "options": [
+        "Reverse Arabic letters without proper rendering",
+        "Understandable updated status or results",
+        "Assume a high-contrast screenshot establishes compliance",
+        "Communicate errors exclusively with color"
+      ],
+      "correct_mask": 2,
+      "rationale": "The course explains that understandable updated status or results. This is the stated behavior, security boundary or calculation needed by the fictional interface. Source: MAIC Build Dynamic User Interfaces (UI) for Websites, page 9."
+    },
+    {
+      "ordinal": 80,
+      "source_page": 9,
+      "stem": "Can design tokens alone guarantee accessibility?",
+      "options": [
+        "No, real interactive behavior requires testing",
+        "Treat screen-reader updates as automatic without testing",
+        "Hide focus under sticky content",
+        "Reverse Arabic letters without proper rendering"
+      ],
+      "correct_mask": 1,
+      "rationale": "The course explains that no, real interactive behavior requires testing. This is the stated behavior, security boundary or calculation needed by the fictional interface. Source: MAIC Build Dynamic User Interfaces (UI) for Websites, page 9."
+    },
+    {
+      "ordinal": 81,
+      "source_page": 10,
+      "stem": "Which test type can validate pure date-selection logic?",
+      "options": [
+        "A unit test",
+        "Store secret server keys in public browser scripts",
+        "Test only successful happy paths",
+        "Treat rendered UI tests as a penetration-test certificate"
+      ],
+      "correct_mask": 1,
+      "rationale": "The course explains that a unit test. This is the stated behavior, security boundary or calculation needed by the fictional interface. Source: MAIC Build Dynamic User Interfaces (UI) for Websites, page 10."
+    },
+    {
+      "ordinal": 82,
+      "source_page": 10,
+      "stem": "Which test type checks a component's labels and states?",
+      "options": [
+        "Trust unauthenticated client requests to allocate rooms",
+        "Release without checking rollback and errors",
+        "Store secret server keys in public browser scripts",
+        "A component test"
+      ],
+      "correct_mask": 8,
+      "rationale": "The course explains that a component test. This is the stated behavior, security boundary or calculation needed by the fictional interface. Source: MAIC Build Dynamic User Interfaces (UI) for Websites, page 10."
+    },
+    {
+      "ordinal": 83,
+      "source_page": 10,
+      "stem": "Which test type can exercise a whole booking journey?",
+      "options": [
+        "Test only successful happy paths",
+        "Treat rendered UI tests as a penetration-test certificate",
+        "An end-to-end test",
+        "Trust unauthenticated client requests to allocate rooms"
+      ],
+      "correct_mask": 4,
+      "rationale": "The course explains that an end-to-end test. This is the stated behavior, security boundary or calculation needed by the fictional interface. Source: MAIC Build Dynamic User Interfaces (UI) for Websites, page 10."
+    },
+    {
+      "ordinal": 84,
+      "source_page": 10,
+      "stem": "Why should tests include rejected bookings?",
+      "options": [
+        "Release without checking rollback and errors",
+        "The system must handle non-success cases truthfully",
+        "Store secret server keys in public browser scripts",
+        "Test only successful happy paths"
+      ],
+      "correct_mask": 2,
+      "rationale": "The course explains that the system must handle non-success cases truthfully. This is the stated behavior, security boundary or calculation needed by the fictional interface. Source: MAIC Build Dynamic User Interfaces (UI) for Websites, page 10."
+    },
+    {
+      "ordinal": 85,
+      "source_page": 10,
+      "stem": "What is a security risk when inserting raw user strings as HTML?",
+      "options": [
+        "Treat rendered UI tests as a penetration-test certificate",
+        "Trust unauthenticated client requests to allocate rooms",
+        "Release without checking rollback and errors",
+        "It may introduce executable malicious content"
+      ],
+      "correct_mask": 8,
+      "rationale": "The course explains that it may introduce executable malicious content. This is the stated behavior, security boundary or calculation needed by the fictional interface. Source: MAIC Build Dynamic User Interfaces (UI) for Websites, page 10."
+    },
+    {
+      "ordinal": 86,
+      "source_page": 10,
+      "stem": "Where should actual booking authorization be enforced?",
+      "options": [
+        "The server",
+        "Store secret server keys in public browser scripts",
+        "Test only successful happy paths",
+        "Treat rendered UI tests as a penetration-test certificate"
+      ],
+      "correct_mask": 1,
+      "rationale": "The course explains that the server. This is the stated behavior, security boundary or calculation needed by the fictional interface. Source: MAIC Build Dynamic User Interfaces (UI) for Websites, page 10."
+    },
+    {
+      "ordinal": 87,
+      "source_page": 10,
+      "stem": "Why must secret credentials stay out of browser code?",
+      "options": [
+        "Trust unauthenticated client requests to allocate rooms",
+        "Client-side code can be inspected",
+        "Release without checking rollback and errors",
+        "Store secret server keys in public browser scripts"
+      ],
+      "correct_mask": 2,
+      "rationale": "The course explains that client-side code can be inspected. This is the stated behavior, security boundary or calculation needed by the fictional interface. Source: MAIC Build Dynamic User Interfaces (UI) for Websites, page 10."
+    },
+    {
+      "ordinal": 88,
+      "source_page": 10,
+      "stem": "What is a deployment acceptance requirement?",
+      "options": [
+        "Test only successful happy paths",
+        "Treat rendered UI tests as a penetration-test certificate",
+        "Functional, accessible and responsive behavior in realistic scenarios",
+        "Trust unauthenticated client requests to allocate rooms"
+      ],
+      "correct_mask": 4,
+      "rationale": "The course explains that functional, accessible and responsive behavior in realistic scenarios. This is the stated behavior, security boundary or calculation needed by the fictional interface. Source: MAIC Build Dynamic User Interfaces (UI) for Websites, page 10."
+    },
+    {
+      "ordinal": 89,
+      "source_page": 10,
+      "stem": "Why test slow or failed network conditions?",
+      "options": [
+        "Release without checking rollback and errors",
+        "Store secret server keys in public browser scripts",
+        "Test only successful happy paths",
+        "These conditions expose important recovery states"
+      ],
+      "correct_mask": 8,
+      "rationale": "The course explains that these conditions expose important recovery states. This is the stated behavior, security boundary or calculation needed by the fictional interface. Source: MAIC Build Dynamic User Interfaces (UI) for Websites, page 10."
+    },
+    {
+      "ordinal": 90,
+      "source_page": 10,
+      "stem": "What should be documented before release?",
+      "options": [
+        "Treat rendered UI tests as a penetration-test certificate",
+        "Trust unauthenticated client requests to allocate rooms",
+        "Version, quality checks and a rollback approach",
+        "Release without checking rollback and errors"
+      ],
+      "correct_mask": 4,
+      "rationale": "The course explains that version, quality checks and a rollback approach. This is the stated behavior, security boundary or calculation needed by the fictional interface. Source: MAIC Build Dynamic User Interfaces (UI) for Websites, page 10."
+    },
+    {
+      "ordinal": 91,
+      "source_page": 11,
+      "stem": "How many fictional study rooms are listed?",
+      "options": [
+        "Confuse seats with rooms or reservation slots",
+        "Treat classroom room lists as real inventory",
+        "Omit acceptance tests for rejecting duplicate bookings",
+        "Three"
+      ],
+      "correct_mask": 8,
+      "rationale": "The course explains that three. This is the stated behavior, security boundary or calculation needed by the fictional interface. Source: MAIC Build Dynamic User Interfaces (UI) for Websites, page 11."
+    },
+    {
+      "ordinal": 92,
+      "source_page": 11,
+      "stem": "How many seats does Room A hold in the exercise?",
+      "options": [
+        "Declare unavailable rooms booked successfully",
+        "Ignore server errors in the flow",
+        "Four",
+        "Confuse seats with rooms or reservation slots"
+      ],
+      "correct_mask": 4,
+      "rationale": "The course explains that four. This is the stated behavior, security boundary or calculation needed by the fictional interface. Source: MAIC Build Dynamic User Interfaces (UI) for Websites, page 11."
+    },
+    {
+      "ordinal": 93,
+      "source_page": 11,
+      "stem": "How many seats does Room B hold in the exercise?",
+      "options": [
+        "Two",
+        "Treat classroom room lists as real inventory",
+        "Omit acceptance tests for rejecting duplicate bookings",
+        "Declare unavailable rooms booked successfully"
+      ],
+      "correct_mask": 1,
+      "rationale": "The course explains that two. This is the stated behavior, security boundary or calculation needed by the fictional interface. Source: MAIC Build Dynamic User Interfaces (UI) for Websites, page 11."
+    },
+    {
+      "ordinal": 94,
+      "source_page": 11,
+      "stem": "How many seats does Room C hold in the exercise?",
+      "options": [
+        "Six",
+        "Ignore server errors in the flow",
+        "Confuse seats with rooms or reservation slots",
+        "Treat classroom room lists as real inventory"
+      ],
+      "correct_mask": 1,
+      "rationale": "The course explains that six. This is the stated behavior, security boundary or calculation needed by the fictional interface. Source: MAIC Build Dynamic User Interfaces (UI) for Websites, page 11."
+    },
+    {
+      "ordinal": 95,
+      "source_page": 11,
+      "stem": "What is the combined nominal seating capacity of A, B and C?",
+      "options": [
+        "Omit acceptance tests for rejecting duplicate bookings",
+        "Declare unavailable rooms booked successfully",
+        "12 seats",
+        "Ignore server errors in the flow"
+      ],
+      "correct_mask": 4,
+      "rationale": "The course explains that 12 seats. This is the stated behavior, security boundary or calculation needed by the fictional interface. Source: MAIC Build Dynamic User Interfaces (UI) for Websites, page 11."
+    },
+    {
+      "ordinal": 96,
+      "source_page": 11,
+      "stem": "If Rooms A and C are available, what is their combined seating capacity?",
+      "options": [
+        "Confuse seats with rooms or reservation slots",
+        "Treat classroom room lists as real inventory",
+        "Omit acceptance tests for rejecting duplicate bookings",
+        "10 seats"
+      ],
+      "correct_mask": 8,
+      "rationale": "The course explains that 10 seats. This is the stated behavior, security boundary or calculation needed by the fictional interface. Source: MAIC Build Dynamic User Interfaces (UI) for Websites, page 11."
+    },
+    {
+      "ordinal": 97,
+      "source_page": 11,
+      "stem": "Why does combined capacity not equal number of available rooms?",
+      "options": [
+        "Seats and room bookings are different units",
+        "Declare unavailable rooms booked successfully",
+        "Ignore server errors in the flow",
+        "Confuse seats with rooms or reservation slots"
+      ],
+      "correct_mask": 1,
+      "rationale": "The course explains that seats and room bookings are different units. This is the stated behavior, security boundary or calculation needed by the fictional interface. Source: MAIC Build Dynamic User Interfaces (UI) for Websites, page 11."
+    },
+    {
+      "ordinal": 98,
+      "source_page": 11,
+      "stem": "Which display is required when the API cannot load?",
+      "options": [
+        "Treat classroom room lists as real inventory",
+        "Omit acceptance tests for rejecting duplicate bookings",
+        "A descriptive transport error and retry option",
+        "Declare unavailable rooms booked successfully"
+      ],
+      "correct_mask": 4,
+      "rationale": "The course explains that a descriptive transport error and retry option. This is the stated behavior, security boundary or calculation needed by the fictional interface. Source: MAIC Build Dynamic User Interfaces (UI) for Websites, page 11."
+    },
+    {
+      "ordinal": 99,
+      "source_page": 11,
+      "stem": "What should a selected-slot rejection allow?",
+      "options": [
+        "Ignore server errors in the flow",
+        "Confuse seats with rooms or reservation slots",
+        "Treat classroom room lists as real inventory",
+        "A clear way to choose another available time"
+      ],
+      "correct_mask": 8,
+      "rationale": "The course explains that a clear way to choose another available time. This is the stated behavior, security boundary or calculation needed by the fictional interface. Source: MAIC Build Dynamic User Interfaces (UI) for Websites, page 11."
+    },
+    {
+      "ordinal": 100,
+      "source_page": 11,
+      "stem": "Which final deliverable helps verify the interface?",
+      "options": [
+        "Omit acceptance tests for rejecting duplicate bookings",
+        "Declare unavailable rooms booked successfully",
+        "A state diagram and acceptance tests with recorded results",
+        "Ignore server errors in the flow"
+      ],
+      "correct_mask": 4,
+      "rationale": "The course explains that a state diagram and acceptance tests with recorded results. This is the stated behavior, security boundary or calculation needed by the fictional interface. Source: MAIC Build Dynamic User Interfaces (UI) for Websites, page 11."
+    }
+  ]
+}
