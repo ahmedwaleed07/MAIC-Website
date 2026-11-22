@@ -159,3 +159,15 @@ The PDF build workflow passed (**45069906989**). GitHub Actions artifacts were d
 
 **Running total:** 16 of the initial 34 courses lacking production PDFs now have first manuscripts, review PDF candidates and original offline question banks: **1,600 editorial questions total**. **18 courses in this initial queue still need first manuscripts**. The next initial-preparation catalog entry is **Product Design and UX/UI Fundamentals** (`product-design-ux-ui-fundamentals`).
 
+
+## Content preparation fully completed for original 34-course queue — 23 November 2026
+
+The **18 remaining no-material courses** each gained an original English MAIC source manuscript (12 sections including cover), a generated 12-page PDF academic review candidate and 100 new offline original question drafts. They are listed in `docs/MAIC_ACADEMIC_CONTENT_COMPLETION_AND_RELEASE_GATE_2026-11-23.md` with catalog ID, source and exam draft locations.
+
+**Verified final QA:** all **34** prepared course PDF candidates in the GitHub Actions candidate artifact have exactly **12 pages** with extractable nonblank content; visually sampled covers/interior/final pages of several last-batch files. The full 34-course PDF workflow passed, GitHub run **45076618375**; the source-version-dependent bank structural audit passed, run **45076633726**. Each of the original 34 manuscripts has a staged 100-item bank in GitHub, giving **3,400 original draft MCQs**. Mechanical QA is **not academic item-level signoff**.
+
+**Live D1 state remains unchanged:** 20 catalog courses published with 20 active exams; 16 other preparing courses have production material and an unapproved source-matched D1 bank; the 34 newly written candidates still have no registered production material. Total 36 registered materials, 20 active exams, 50 preparing, 8 archived out of 78 catalog entries. All 50 preparing require actual academic approval, production/assessment release steps and learner journey testing. The archived entries remain excluded.
+
+Separate audit note: the International Law draft bank legitimately includes multi-answer questions, and the production UI supports multiple selections. Do not flatten their answer masks during release.
+
+The owner-facing review candidates are bundled as `MAIC_All_Course_Review_Candidates_2026-11-23.zip` (34 PDFs) and `MAIC_18_New_Course_Review_PDFs_2026-11-23.zip` (newly authored 18 PDFs), prepared during this continuation. No unverified academic approval was recorded and no course status was changed in production.
