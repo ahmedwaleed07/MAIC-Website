@@ -63,3 +63,17 @@ test('catalog cannot newly publish unreviewed self-paced courses',()=>{
  assert.match(src,/course_academic_release_required/);
  assert.match(src,/\['approved_source_matched_100_item_exam'\]/);
 });
+
+test('PDF upload recognizes 12-page tree for ReportLab and alternative key order',async()=>{
+ const {pathToFileURL}=require('node:url');
+ const {hasTwelvePageTree}=await import(pathToFileURL(path.join(root,'functions/_lib/pdf-page-tree.js')).href);
+ const reportLab='28 0 obj\\n<<\\n/Count 12 /Kids [ 6 0 R 7 0 R 8 0 R 9 0 R 10 0 R 11 0 R 12 0 R 13 0 R 14 0 R 15 0 R 16 0 R 17 0 R ] /Type /Pages\\n>>';
+ const other='<< /Type /Pages /Kids [1 0 R 2 0 R] /Count 12 >>';
+ assert.equal(hasTwelvePageTree(reportLab),true);
+ assert.equal(hasTwelvePageTree(other),true);
+ assert.equal(hasTwelvePageTree('<< /Type /Page /Count 12 >>'),false);
+ assert.equal(hasTwelvePageTree('<< /Type /Pages /Count 13 >>'),false);
+ assert.equal(hasTwelvePageTree('<< /Count 12 >> << /Type /Pages >>'),false);
+ const api=read('functions/api/admin/course-material.js');
+ assert.match(api,/hasTwelvePageTree\(ascii\)/);
+});
