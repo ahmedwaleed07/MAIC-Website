@@ -1,0 +1,1312 @@
+{
+  "course_id": "sustainable-cities",
+  "source_manuscript": "data/course-manuscripts/sustainable-cities.md",
+  "source_manuscript_blob_sha": "c5f1cb3b17fbd6e6b47847b6d86fc241641d9543",
+  "source_pdf_sha256": null,
+  "bank_version": "draft-manuscript-20261123-v1",
+  "approval_status": "editorial_draft_pending_independent_review",
+  "number_of_questions": 100,
+  "note": "Original offline review bank, not an officially activated examination; UN figures require independent source checking before academic use.",
+  "questions": [
+    {
+      "ordinal": 1,
+      "source_page": 2,
+      "stem": "What does sustainable city planning integrate?",
+      "options": [
+        "Use attractive green imagery as all evidence",
+        "Exclude housing and basic services",
+        "Design only for residents with personal vehicles",
+        "Housing, services, mobility, environment and inclusion"
+      ],
+      "correct_mask": 8,
+      "rationale": "The original course explains that housing, services, mobility, environment and inclusion. This is the appropriate urban-systems principle, indicator definition or fictional-case arithmetic. Source: MAIC Sustainable Cities, page 2."
+    },
+    {
+      "ordinal": 2,
+      "source_page": 2,
+      "stem": "Why is a visually green district not necessarily sustainable?",
+      "options": [
+        "It can still lack affordable housing or essential services",
+        "Assume digital sensors automatically solve inequality",
+        "Treat fictional classroom metrics as real city records",
+        "Use attractive green imagery as all evidence"
+      ],
+      "correct_mask": 1,
+      "rationale": "The original course explains that it can still lack affordable housing or essential services. This is the appropriate urban-systems principle, indicator definition or fictional-case arithmetic. Source: MAIC Sustainable Cities, page 2."
+    },
+    {
+      "ordinal": 3,
+      "source_page": 2,
+      "stem": "What should be assessed before declaring a city smart?",
+      "options": [
+        "Exclude housing and basic services",
+        "Design only for residents with personal vehicles",
+        "Actual service outcomes and governance",
+        "Assume digital sensors automatically solve inequality"
+      ],
+      "correct_mask": 4,
+      "rationale": "The original course explains that actual service outcomes and governance. This is the appropriate urban-systems principle, indicator definition or fictional-case arithmetic. Source: MAIC Sustainable Cities, page 2."
+    },
+    {
+      "ordinal": 4,
+      "source_page": 2,
+      "stem": "What is the purpose of integrated urban planning?",
+      "options": [
+        "Treat fictional classroom metrics as real city records",
+        "Use attractive green imagery as all evidence",
+        "Exclude housing and basic services",
+        "Understand interactions among urban systems"
+      ],
+      "correct_mask": 8,
+      "rationale": "The original course explains that understand interactions among urban systems. This is the appropriate urban-systems principle, indicator definition or fictional-case arithmetic. Source: MAIC Sustainable Cities, page 2."
+    },
+    {
+      "ordinal": 5,
+      "source_page": 2,
+      "stem": "Why should classroom neighborhood values be labeled fictional?",
+      "options": [
+        "They are not observed municipal statistics",
+        "Design only for residents with personal vehicles",
+        "Assume digital sensors automatically solve inequality",
+        "Treat fictional classroom metrics as real city records"
+      ],
+      "correct_mask": 1,
+      "rationale": "The original course explains that they are not observed municipal statistics. This is the appropriate urban-systems principle, indicator definition or fictional-case arithmetic. Source: MAIC Sustainable Cities, page 2."
+    },
+    {
+      "ordinal": 6,
+      "source_page": 2,
+      "stem": "Which group should urban infrastructure serve?",
+      "options": [
+        "Use attractive green imagery as all evidence",
+        "People with varied needs and access conditions",
+        "Exclude housing and basic services",
+        "Design only for residents with personal vehicles"
+      ],
+      "correct_mask": 2,
+      "rationale": "The original course explains that people with varied needs and access conditions. This is the appropriate urban-systems principle, indicator definition or fictional-case arithmetic. Source: MAIC Sustainable Cities, page 2."
+    },
+    {
+      "ordinal": 7,
+      "source_page": 2,
+      "stem": "What is one expected study outcome?",
+      "options": [
+        "Assume digital sensors automatically solve inequality",
+        "Treat fictional classroom metrics as real city records",
+        "An evidence-based neighborhood improvement proposal",
+        "Use attractive green imagery as all evidence"
+      ],
+      "correct_mask": 4,
+      "rationale": "The original course explains that an evidence-based neighborhood improvement proposal. This is the appropriate urban-systems principle, indicator definition or fictional-case arithmetic. Source: MAIC Sustainable Cities, page 2."
+    },
+    {
+      "ordinal": 8,
+      "source_page": 2,
+      "stem": "What should a transport proposal connect?",
+      "options": [
+        "Exclude housing and basic services",
+        "Homes with destinations and necessary services",
+        "Design only for residents with personal vehicles",
+        "Assume digital sensors automatically solve inequality"
+      ],
+      "correct_mask": 2,
+      "rationale": "The original course explains that homes with destinations and necessary services. This is the appropriate urban-systems principle, indicator definition or fictional-case arithmetic. Source: MAIC Sustainable Cities, page 2."
+    },
+    {
+      "ordinal": 9,
+      "source_page": 2,
+      "stem": "Why can technical dashboards be insufficient for policy?",
+      "options": [
+        "Treat fictional classroom metrics as real city records",
+        "They may omit residents' real barriers",
+        "Use attractive green imagery as all evidence",
+        "Exclude housing and basic services"
+      ],
+      "correct_mask": 2,
+      "rationale": "The original course explains that they may omit residents' real barriers. This is the appropriate urban-systems principle, indicator definition or fictional-case arithmetic. Source: MAIC Sustainable Cities, page 2."
+    },
+    {
+      "ordinal": 10,
+      "source_page": 2,
+      "stem": "What is a core sustainability tradeoff?",
+      "options": [
+        "Design only for residents with personal vehicles",
+        "Cost, access and environmental effects may conflict",
+        "Assume digital sensors automatically solve inequality",
+        "Treat fictional classroom metrics as real city records"
+      ],
+      "correct_mask": 2,
+      "rationale": "The original course explains that cost, access and environmental effects may conflict. This is the appropriate urban-systems principle, indicator definition or fictional-case arithmetic. Source: MAIC Sustainable Cities, page 2."
+    },
+    {
+      "ordinal": 11,
+      "source_page": 3,
+      "stem": "What does SDG 11 address?",
+      "options": [
+        "Treat every forecast as an observed statistic",
+        "Compare urban rates with undefined denominators",
+        "Ignore data period and indicator definitions",
+        "Inclusive, safe, resilient and sustainable cities"
+      ],
+      "correct_mask": 8,
+      "rationale": "The original course explains that inclusive, safe, resilient and sustainable cities. This is the appropriate urban-systems principle, indicator definition or fictional-case arithmetic. Source: MAIC Sustainable Cities, page 3."
+    },
+    {
+      "ordinal": 12,
+      "source_page": 3,
+      "stem": "Which topic is included in SDG 11?",
+      "options": [
+        "Adequate housing and basic services",
+        "Use buses per city as a full access measure",
+        "Apply a global figure to every neighborhood",
+        "Treat every forecast as an observed statistic"
+      ],
+      "correct_mask": 1,
+      "rationale": "The original course explains that adequate housing and basic services. This is the appropriate urban-systems principle, indicator definition or fictional-case arithmetic. Source: MAIC Sustainable Cities, page 3."
+    },
+    {
+      "ordinal": 13,
+      "source_page": 3,
+      "stem": "What is an indicator intended to measure?",
+      "options": [
+        "Compare urban rates with undefined denominators",
+        "Ignore data period and indicator definitions",
+        "Use buses per city as a full access measure",
+        "A defined outcome using a documented method"
+      ],
+      "correct_mask": 8,
+      "rationale": "The original course explains that a defined outcome using a documented method. This is the appropriate urban-systems principle, indicator definition or fictional-case arithmetic. Source: MAIC Sustainable Cities, page 3."
+    },
+    {
+      "ordinal": 14,
+      "source_page": 3,
+      "stem": "Why is the number of buses not a complete access metric?",
+      "options": [
+        "Apply a global figure to every neighborhood",
+        "Service coverage and usability matter",
+        "Treat every forecast as an observed statistic",
+        "Compare urban rates with undefined denominators"
+      ],
+      "correct_mask": 2,
+      "rationale": "The original course explains that service coverage and usability matter. This is the appropriate urban-systems principle, indicator definition or fictional-case arithmetic. Source: MAIC Sustainable Cities, page 3."
+    },
+    {
+      "ordinal": 15,
+      "source_page": 3,
+      "stem": "What should a city air-quality statistic state?",
+      "options": [
+        "Units, source, date and methodology",
+        "Ignore data period and indicator definitions",
+        "Use buses per city as a full access measure",
+        "Apply a global figure to every neighborhood"
+      ],
+      "correct_mask": 1,
+      "rationale": "The original course explains that units, source, date and methodology. This is the appropriate urban-systems principle, indicator definition or fictional-case arithmetic. Source: MAIC Sustainable Cities, page 3."
+    },
+    {
+      "ordinal": 16,
+      "source_page": 3,
+      "stem": "Why should forecasts be distinguished from observations?",
+      "options": [
+        "Treat every forecast as an observed statistic",
+        "Predictions are not measured outcomes",
+        "Compare urban rates with undefined denominators",
+        "Ignore data period and indicator definitions"
+      ],
+      "correct_mask": 2,
+      "rationale": "The original course explains that predictions are not measured outcomes. This is the appropriate urban-systems principle, indicator definition or fictional-case arithmetic. Source: MAIC Sustainable Cities, page 3."
+    },
+    {
+      "ordinal": 17,
+      "source_page": 3,
+      "stem": "What is a challenge identified in UN 2026 SDG reporting?",
+      "options": [
+        "Use buses per city as a full access measure",
+        "Apply a global figure to every neighborhood",
+        "Treat every forecast as an observed statistic",
+        "Continuing housing, transit and public-space deficits"
+      ],
+      "correct_mask": 8,
+      "rationale": "The original course explains that continuing housing, transit and public-space deficits. This is the appropriate urban-systems principle, indicator definition or fictional-case arithmetic. Source: MAIC Sustainable Cities, page 3."
+    },
+    {
+      "ordinal": 18,
+      "source_page": 3,
+      "stem": "What is a denominator in a household-access rate?",
+      "options": [
+        "Compare urban rates with undefined denominators",
+        "The defined total number of relevant households",
+        "Ignore data period and indicator definitions",
+        "Use buses per city as a full access measure"
+      ],
+      "correct_mask": 2,
+      "rationale": "The original course explains that the defined total number of relevant households. This is the appropriate urban-systems principle, indicator definition or fictional-case arithmetic. Source: MAIC Sustainable Cities, page 3."
+    },
+    {
+      "ordinal": 19,
+      "source_page": 3,
+      "stem": "If 240 of 1,000 households lack access, what percent is that?",
+      "options": [
+        "Apply a global figure to every neighborhood",
+        "24%",
+        "Treat every forecast as an observed statistic",
+        "Compare urban rates with undefined denominators"
+      ],
+      "correct_mask": 2,
+      "rationale": "The original course explains that 24%. This is the appropriate urban-systems principle, indicator definition or fictional-case arithmetic. Source: MAIC Sustainable Cities, page 3."
+    },
+    {
+      "ordinal": 20,
+      "source_page": 3,
+      "stem": "Why can the 24% classroom rate not describe a real district?",
+      "options": [
+        "Ignore data period and indicator definitions",
+        "It uses an invented example and simplified definition",
+        "Use buses per city as a full access measure",
+        "Apply a global figure to every neighborhood"
+      ],
+      "correct_mask": 2,
+      "rationale": "The original course explains that it uses an invented example and simplified definition. This is the appropriate urban-systems principle, indicator definition or fictional-case arithmetic. Source: MAIC Sustainable Cities, page 3."
+    },
+    {
+      "ordinal": 21,
+      "source_page": 4,
+      "stem": "What is an urban housing goal beyond housing count?",
+      "options": [
+        "Add housing without considering service access",
+        "Remove heritage without assessing social value",
+        "Affordable, safe homes with essential service access",
+        "Ignore possible displacement from projects"
+      ],
+      "correct_mask": 4,
+      "rationale": "The original course explains that affordable, safe homes with essential service access. This is the appropriate urban-systems principle, indicator definition or fictional-case arithmetic. Source: MAIC Sustainable Cities, page 4."
+    },
+    {
+      "ordinal": 22,
+      "source_page": 4,
+      "stem": "Why can poorly served new apartments worsen conditions?",
+      "options": [
+        "Assume all densities have identical effects",
+        "Treat green maps as proof of accessible public parks",
+        "Infrastructure and transport may not support residents",
+        "Add housing without considering service access"
+      ],
+      "correct_mask": 4,
+      "rationale": "The original course explains that infrastructure and transport may not support residents. This is the appropriate urban-systems principle, indicator definition or fictional-case arithmetic. Source: MAIC Sustainable Cities, page 4."
+    },
+    {
+      "ordinal": 23,
+      "source_page": 4,
+      "stem": "What is mixed-use urban planning intended to support?",
+      "options": [
+        "Remove heritage without assessing social value",
+        "Ignore possible displacement from projects",
+        "Proximity of compatible homes, jobs and services",
+        "Assume all densities have identical effects"
+      ],
+      "correct_mask": 4,
+      "rationale": "The original course explains that proximity of compatible homes, jobs and services. This is the appropriate urban-systems principle, indicator definition or fictional-case arithmetic. Source: MAIC Sustainable Cities, page 4."
+    },
+    {
+      "ordinal": 24,
+      "source_page": 4,
+      "stem": "Why is high density not always good or bad by itself?",
+      "options": [
+        "Treat green maps as proof of accessible public parks",
+        "Outcomes depend on local infrastructure and context",
+        "Add housing without considering service access",
+        "Remove heritage without assessing social value"
+      ],
+      "correct_mask": 2,
+      "rationale": "The original course explains that outcomes depend on local infrastructure and context. This is the appropriate urban-systems principle, indicator definition or fictional-case arithmetic. Source: MAIC Sustainable Cities, page 4."
+    },
+    {
+      "ordinal": 25,
+      "source_page": 4,
+      "stem": "What can unchecked sprawl affect?",
+      "options": [
+        "Ignore possible displacement from projects",
+        "Assume all densities have identical effects",
+        "Land consumption and service costs",
+        "Treat green maps as proof of accessible public parks"
+      ],
+      "correct_mask": 4,
+      "rationale": "The original course explains that land consumption and service costs. This is the appropriate urban-systems principle, indicator definition or fictional-case arithmetic. Source: MAIC Sustainable Cities, page 4."
+    },
+    {
+      "ordinal": 26,
+      "source_page": 4,
+      "stem": "Why should historic areas be considered in redevelopment?",
+      "options": [
+        "Add housing without considering service access",
+        "Cultural value and community identity matter",
+        "Remove heritage without assessing social value",
+        "Ignore possible displacement from projects"
+      ],
+      "correct_mask": 2,
+      "rationale": "The original course explains that cultural value and community identity matter. This is the appropriate urban-systems principle, indicator definition or fictional-case arithmetic. Source: MAIC Sustainable Cities, page 4."
+    },
+    {
+      "ordinal": 27,
+      "source_page": 4,
+      "stem": "What is a potential social risk of redevelopment?",
+      "options": [
+        "Assume all densities have identical effects",
+        "Displacement of existing residents",
+        "Treat green maps as proof of accessible public parks",
+        "Add housing without considering service access"
+      ],
+      "correct_mask": 2,
+      "rationale": "The original course explains that displacement of existing residents. This is the appropriate urban-systems principle, indicator definition or fictional-case arithmetic. Source: MAIC Sustainable Cities, page 4."
+    },
+    {
+      "ordinal": 28,
+      "source_page": 4,
+      "stem": "Why is a green map polygon not proof of usable park access?",
+      "options": [
+        "Legal access and actual conditions may differ",
+        "Remove heritage without assessing social value",
+        "Ignore possible displacement from projects",
+        "Assume all densities have identical effects"
+      ],
+      "correct_mask": 1,
+      "rationale": "The original course explains that legal access and actual conditions may differ. This is the appropriate urban-systems principle, indicator definition or fictional-case arithmetic. Source: MAIC Sustainable Cities, page 4."
+    },
+    {
+      "ordinal": 29,
+      "source_page": 4,
+      "stem": "A plan adds 200 homes with no safe route to a clinic. What is missing?",
+      "options": [
+        "Treat green maps as proof of accessible public parks",
+        "Add housing without considering service access",
+        "Remove heritage without assessing social value",
+        "Everyday access to basic services"
+      ],
+      "correct_mask": 8,
+      "rationale": "The original course explains that everyday access to basic services. This is the appropriate urban-systems principle, indicator definition or fictional-case arithmetic. Source: MAIC Sustainable Cities, page 4."
+    },
+    {
+      "ordinal": 30,
+      "source_page": 4,
+      "stem": "Which information distinguishes an approved plan from a concept?",
+      "options": [
+        "Ignore possible displacement from projects",
+        "Assume all densities have identical effects",
+        "Documented legal status and decision stage",
+        "Treat green maps as proof of accessible public parks"
+      ],
+      "correct_mask": 4,
+      "rationale": "The original course explains that documented legal status and decision stage. This is the appropriate urban-systems principle, indicator definition or fictional-case arithmetic. Source: MAIC Sustainable Cities, page 4."
+    },
+    {
+      "ordinal": 31,
+      "source_page": 5,
+      "stem": "What does sustainable mobility consider?",
+      "options": [
+        "Measure transport only by vehicle count",
+        "Walking, cycling, transit, safety and affordability",
+        "Create isolated paths without safe crossings",
+        "Declare a conceptual junction fully safe"
+      ],
+      "correct_mask": 2,
+      "rationale": "The original course explains that walking, cycling, transit, safety and affordability. This is the appropriate urban-systems principle, indicator definition or fictional-case arithmetic. Source: MAIC Sustainable Cities, page 5."
+    },
+    {
+      "ordinal": 32,
+      "source_page": 5,
+      "stem": "Why is a bus stop near home not sufficient proof of access?",
+      "options": [
+        "Actual service may be unreliable or unusable",
+        "Assume a bus stop proves affordable service",
+        "Ignore disabled travelers and freight needs",
+        "Measure transport only by vehicle count"
+      ],
+      "correct_mask": 1,
+      "rationale": "The original course explains that actual service may be unreliable or unusable. This is the appropriate urban-systems principle, indicator definition or fictional-case arithmetic. Source: MAIC Sustainable Cities, page 5."
+    },
+    {
+      "ordinal": 33,
+      "source_page": 5,
+      "stem": "What is an important street safety component?",
+      "options": [
+        "Safe crossings and appropriate speed management",
+        "Create isolated paths without safe crossings",
+        "Declare a conceptual junction fully safe",
+        "Assume a bus stop proves affordable service"
+      ],
+      "correct_mask": 1,
+      "rationale": "The original course explains that safe crossings and appropriate speed management. This is the appropriate urban-systems principle, indicator definition or fictional-case arithmetic. Source: MAIC Sustainable Cities, page 5."
+    },
+    {
+      "ordinal": 34,
+      "source_page": 5,
+      "stem": "Why may an isolated cycle lane fail a user?",
+      "options": [
+        "Ignore disabled travelers and freight needs",
+        "Measure transport only by vehicle count",
+        "It has no safe connection to destinations",
+        "Create isolated paths without safe crossings"
+      ],
+      "correct_mask": 4,
+      "rationale": "The original course explains that it has no safe connection to destinations. This is the appropriate urban-systems principle, indicator definition or fictional-case arithmetic. Source: MAIC Sustainable Cities, page 5."
+    },
+    {
+      "ordinal": 35,
+      "source_page": 5,
+      "stem": "What should a street plan consider alongside walking routes?",
+      "options": [
+        "Declare a conceptual junction fully safe",
+        "Assume a bus stop proves affordable service",
+        "Ignore disabled travelers and freight needs",
+        "Emergency and delivery access"
+      ],
+      "correct_mask": 8,
+      "rationale": "The original course explains that emergency and delivery access. This is the appropriate urban-systems principle, indicator definition or fictional-case arithmetic. Source: MAIC Sustainable Cities, page 5."
+    },
+    {
+      "ordinal": 36,
+      "source_page": 5,
+      "stem": "What makes a corridor's travel-time metric useful?",
+      "options": [
+        "Defined origin, destination and observation conditions",
+        "Measure transport only by vehicle count",
+        "Create isolated paths without safe crossings",
+        "Declare a conceptual junction fully safe"
+      ],
+      "correct_mask": 1,
+      "rationale": "The original course explains that defined origin, destination and observation conditions. This is the appropriate urban-systems principle, indicator definition or fictional-case arithmetic. Source: MAIC Sustainable Cities, page 5."
+    },
+    {
+      "ordinal": 37,
+      "source_page": 5,
+      "stem": "Why should street design avoid generic code assumptions?",
+      "options": [
+        "Standards and context vary by jurisdiction",
+        "Assume a bus stop proves affordable service",
+        "Ignore disabled travelers and freight needs",
+        "Measure transport only by vehicle count"
+      ],
+      "correct_mask": 1,
+      "rationale": "The original course explains that standards and context vary by jurisdiction. This is the appropriate urban-systems principle, indicator definition or fictional-case arithmetic. Source: MAIC Sustainable Cities, page 5."
+    },
+    {
+      "ordinal": 38,
+      "source_page": 5,
+      "stem": "What is an equity question in mobility?",
+      "options": [
+        "Who can afford and use the proposed service?",
+        "Create isolated paths without safe crossings",
+        "Declare a conceptual junction fully safe",
+        "Assume a bus stop proves affordable service"
+      ],
+      "correct_mask": 1,
+      "rationale": "The original course explains that who can afford and use the proposed service. This is the appropriate urban-systems principle, indicator definition or fictional-case arithmetic. Source: MAIC Sustainable Cities, page 5."
+    },
+    {
+      "ordinal": 39,
+      "source_page": 5,
+      "stem": "What should be done at a dangerous junction in a concept?",
+      "options": [
+        "Ignore disabled travelers and freight needs",
+        "Measure transport only by vehicle count",
+        "Create isolated paths without safe crossings",
+        "Flag it for qualified road-safety design review"
+      ],
+      "correct_mask": 8,
+      "rationale": "The original course explains that flag it for qualified road-safety design review. This is the appropriate urban-systems principle, indicator definition or fictional-case arithmetic. Source: MAIC Sustainable Cities, page 5."
+    },
+    {
+      "ordinal": 40,
+      "source_page": 5,
+      "stem": "What is a valid monitoring outcome after transit changes?",
+      "options": [
+        "Declare a conceptual junction fully safe",
+        "Measured travel reliability under clear definitions",
+        "Assume a bus stop proves affordable service",
+        "Ignore disabled travelers and freight needs"
+      ],
+      "correct_mask": 2,
+      "rationale": "The original course explains that measured travel reliability under clear definitions. This is the appropriate urban-systems principle, indicator definition or fictional-case arithmetic. Source: MAIC Sustainable Cities, page 5."
+    },
+    {
+      "ordinal": 41,
+      "source_page": 6,
+      "stem": "What services should a city provide reliably?",
+      "options": [
+        "Water, sanitation, waste collection and energy",
+        "Treat infrastructure presence as guaranteed performance",
+        "Ignore actual waste destination and collection",
+        "Calculate emissions without relevant source factors"
+      ],
+      "correct_mask": 1,
+      "rationale": "The original course explains that water, sanitation, waste collection and energy. This is the appropriate urban-systems principle, indicator definition or fictional-case arithmetic. Source: MAIC Sustainable Cities, page 6."
+    },
+    {
+      "ordinal": 42,
+      "source_page": 6,
+      "stem": "Why does a mapped pipe not prove safe water delivery?",
+      "options": [
+        "Assume all recyclable items are locally recovered",
+        "Describe utility reliability from a single map",
+        "Network presence is not service quality",
+        "Treat infrastructure presence as guaranteed performance"
+      ],
+      "correct_mask": 4,
+      "rationale": "The original course explains that network presence is not service quality. This is the appropriate urban-systems principle, indicator definition or fictional-case arithmetic. Source: MAIC Sustainable Cities, page 6."
+    },
+    {
+      "ordinal": 43,
+      "source_page": 6,
+      "stem": "What does municipal waste collection share measure?",
+      "options": [
+        "Ignore actual waste destination and collection",
+        "Calculate emissions without relevant source factors",
+        "Assume all recyclable items are locally recovered",
+        "Collected waste divided by defined generated waste"
+      ],
+      "correct_mask": 8,
+      "rationale": "The original course explains that collected waste divided by defined generated waste. This is the appropriate urban-systems principle, indicator definition or fictional-case arithmetic. Source: MAIC Sustainable Cities, page 6."
+    },
+    {
+      "ordinal": 44,
+      "source_page": 6,
+      "stem": "Why does a recycling label not prove city recovery?",
+      "options": [
+        "Collection and processing facilities may not accept it",
+        "Describe utility reliability from a single map",
+        "Treat infrastructure presence as guaranteed performance",
+        "Ignore actual waste destination and collection"
+      ],
+      "correct_mask": 1,
+      "rationale": "The original course explains that collection and processing facilities may not accept it. This is the appropriate urban-systems principle, indicator definition or fictional-case arithmetic. Source: MAIC Sustainable Cities, page 6."
+    },
+    {
+      "ordinal": 45,
+      "source_page": 6,
+      "stem": "What influences drainage effectiveness?",
+      "options": [
+        "Calculate emissions without relevant source factors",
+        "Assume all recyclable items are locally recovered",
+        "Describe utility reliability from a single map",
+        "Soils, rainfall, capacity and maintenance"
+      ],
+      "correct_mask": 8,
+      "rationale": "The original course explains that soils, rainfall, capacity and maintenance. This is the appropriate urban-systems principle, indicator definition or fictional-case arithmetic. Source: MAIC Sustainable Cities, page 6."
+    },
+    {
+      "ordinal": 46,
+      "source_page": 6,
+      "stem": "What is a possible disadvantage of poorly designed urban green infrastructure?",
+      "options": [
+        "It may fail without suitable engineering and upkeep",
+        "Treat infrastructure presence as guaranteed performance",
+        "Ignore actual waste destination and collection",
+        "Calculate emissions without relevant source factors"
+      ],
+      "correct_mask": 1,
+      "rationale": "The original course explains that it may fail without suitable engineering and upkeep. This is the appropriate urban-systems principle, indicator definition or fictional-case arithmetic. Source: MAIC Sustainable Cities, page 6."
+    },
+    {
+      "ordinal": 47,
+      "source_page": 6,
+      "stem": "Why is energy supply resilience important?",
+      "options": [
+        "Assume all recyclable items are locally recovered",
+        "Describe utility reliability from a single map",
+        "Essential services may depend on continuous electricity",
+        "Treat infrastructure presence as guaranteed performance"
+      ],
+      "correct_mask": 4,
+      "rationale": "The original course explains that essential services may depend on continuous electricity. This is the appropriate urban-systems principle, indicator definition or fictional-case arithmetic. Source: MAIC Sustainable Cities, page 6."
+    },
+    {
+      "ordinal": 48,
+      "source_page": 6,
+      "stem": "What should an emissions-reduction claim require?",
+      "options": [
+        "Ignore actual waste destination and collection",
+        "Calculate emissions without relevant source factors",
+        "A defined boundary and local supporting data",
+        "Assume all recyclable items are locally recovered"
+      ],
+      "correct_mask": 4,
+      "rationale": "The original course explains that a defined boundary and local supporting data. This is the appropriate urban-systems principle, indicator definition or fictional-case arithmetic. Source: MAIC Sustainable Cities, page 6."
+    },
+    {
+      "ordinal": 49,
+      "source_page": 6,
+      "stem": "If 80 of 100 tonnes of waste is collected, what is the share?",
+      "options": [
+        "80%",
+        "Describe utility reliability from a single map",
+        "Treat infrastructure presence as guaranteed performance",
+        "Ignore actual waste destination and collection"
+      ],
+      "correct_mask": 1,
+      "rationale": "The original course explains that 80%. This is the appropriate urban-systems principle, indicator definition or fictional-case arithmetic. Source: MAIC Sustainable Cities, page 6."
+    },
+    {
+      "ordinal": 50,
+      "source_page": 6,
+      "stem": "How many tonnes remain outside that measured collection amount?",
+      "options": [
+        "Calculate emissions without relevant source factors",
+        "20 tonnes",
+        "Assume all recyclable items are locally recovered",
+        "Describe utility reliability from a single map"
+      ],
+      "correct_mask": 2,
+      "rationale": "The original course explains that 20 tonnes. This is the appropriate urban-systems principle, indicator definition or fictional-case arithmetic. Source: MAIC Sustainable Cities, page 6."
+    },
+    {
+      "ordinal": 51,
+      "source_page": 7,
+      "stem": "What is an urban climate risk?",
+      "options": [
+        "Claim a decorative basin controls floods without calculations",
+        "Hide map uncertainty from residents",
+        "Heat, intense rainfall or floods under local conditions",
+        "Assume all residents have equal hazard vulnerability"
+      ],
+      "correct_mask": 4,
+      "rationale": "The original course explains that heat, intense rainfall or floods under local conditions. This is the appropriate urban-systems principle, indicator definition or fictional-case arithmetic. Source: MAIC Sustainable Cities, page 7."
+    },
+    {
+      "ordinal": 52,
+      "source_page": 7,
+      "stem": "What does vulnerability include beyond physical hazard?",
+      "options": [
+        "Treat one tree campaign as the whole resilience strategy",
+        "Exposure and capacity to respond",
+        "Ignore critical service continuity",
+        "Claim a decorative basin controls floods without calculations"
+      ],
+      "correct_mask": 2,
+      "rationale": "The original course explains that exposure and capacity to respond. This is the appropriate urban-systems principle, indicator definition or fictional-case arithmetic. Source: MAIC Sustainable Cities, page 7."
+    },
+    {
+      "ordinal": 53,
+      "source_page": 7,
+      "stem": "Why is one tree campaign not a full resilience plan?",
+      "options": [
+        "Hide map uncertainty from residents",
+        "Assume all residents have equal hazard vulnerability",
+        "Infrastructure and social risks also need attention",
+        "Treat one tree campaign as the whole resilience strategy"
+      ],
+      "correct_mask": 4,
+      "rationale": "The original course explains that infrastructure and social risks also need attention. This is the appropriate urban-systems principle, indicator definition or fictional-case arithmetic. Source: MAIC Sustainable Cities, page 7."
+    },
+    {
+      "ordinal": 54,
+      "source_page": 7,
+      "stem": "What can affect urban heat exposure?",
+      "options": [
+        "Ignore critical service continuity",
+        "Claim a decorative basin controls floods without calculations",
+        "Shade, surface properties and local weather",
+        "Hide map uncertainty from residents"
+      ],
+      "correct_mask": 4,
+      "rationale": "The original course explains that shade, surface properties and local weather. This is the appropriate urban-systems principle, indicator definition or fictional-case arithmetic. Source: MAIC Sustainable Cities, page 7."
+    },
+    {
+      "ordinal": 55,
+      "source_page": 7,
+      "stem": "Why can't a landscape basin be called sufficient from a render?",
+      "options": [
+        "Assume all residents have equal hazard vulnerability",
+        "Treat one tree campaign as the whole resilience strategy",
+        "Ignore critical service continuity",
+        "Hydrology and design capacity remain unverified"
+      ],
+      "correct_mask": 8,
+      "rationale": "The original course explains that hydrology and design capacity remain unverified. This is the appropriate urban-systems principle, indicator definition or fictional-case arithmetic. Source: MAIC Sustainable Cities, page 7."
+    },
+    {
+      "ordinal": 56,
+      "source_page": 7,
+      "stem": "What is a disaster-resilience governance element?",
+      "options": [
+        "Claim a decorative basin controls floods without calculations",
+        "Hide map uncertainty from residents",
+        "Assume all residents have equal hazard vulnerability",
+        "Early warning and critical-service continuity"
+      ],
+      "correct_mask": 8,
+      "rationale": "The original course explains that early warning and critical-service continuity. This is the appropriate urban-systems principle, indicator definition or fictional-case arithmetic. Source: MAIC Sustainable Cities, page 7."
+    },
+    {
+      "ordinal": 57,
+      "source_page": 7,
+      "stem": "Why should flood maps disclose uncertainty?",
+      "options": [
+        "Treat one tree campaign as the whole resilience strategy",
+        "Ignore critical service continuity",
+        "Claim a decorative basin controls floods without calculations",
+        "They can influence safety and property decisions"
+      ],
+      "correct_mask": 8,
+      "rationale": "The original course explains that they can influence safety and property decisions. This is the appropriate urban-systems principle, indicator definition or fictional-case arithmetic. Source: MAIC Sustainable Cities, page 7."
+    },
+    {
+      "ordinal": 58,
+      "source_page": 7,
+      "stem": "Who may need extra support during heat emergencies?",
+      "options": [
+        "Hide map uncertainty from residents",
+        "Assume all residents have equal hazard vulnerability",
+        "Residents with limited mobility or resources",
+        "Treat one tree campaign as the whole resilience strategy"
+      ],
+      "correct_mask": 4,
+      "rationale": "The original course explains that residents with limited mobility or resources. This is the appropriate urban-systems principle, indicator definition or fictional-case arithmetic. Source: MAIC Sustainable Cities, page 7."
+    },
+    {
+      "ordinal": 59,
+      "source_page": 7,
+      "stem": "What should a risk matrix contain?",
+      "options": [
+        "Ignore critical service continuity",
+        "Claim a decorative basin controls floods without calculations",
+        "Hazard, exposure, evidence and responsible action",
+        "Hide map uncertainty from residents"
+      ],
+      "correct_mask": 4,
+      "rationale": "The original course explains that hazard, exposure, evidence and responsible action. This is the appropriate urban-systems principle, indicator definition or fictional-case arithmetic. Source: MAIC Sustainable Cities, page 7."
+    },
+    {
+      "ordinal": 60,
+      "source_page": 7,
+      "stem": "What could a flooded street indicate for investigation?",
+      "options": [
+        "Assume all residents have equal hazard vulnerability",
+        "Drainage capacity, maintenance or land-use issues",
+        "Treat one tree campaign as the whole resilience strategy",
+        "Ignore critical service continuity"
+      ],
+      "correct_mask": 2,
+      "rationale": "The original course explains that drainage capacity, maintenance or land-use issues. This is the appropriate urban-systems principle, indicator definition or fictional-case arithmetic. Source: MAIC Sustainable Cities, page 7."
+    },
+    {
+      "ordinal": 61,
+      "source_page": 8,
+      "stem": "What is a benefit of well-designed public space?",
+      "options": [
+        "Measure public access only by square meters",
+        "Ignore displacement and cost impacts",
+        "Social connection, access and recreation",
+        "Consider only one user age group"
+      ],
+      "correct_mask": 4,
+      "rationale": "The original course explains that social connection, access and recreation. This is the appropriate urban-systems principle, indicator definition or fictional-case arithmetic. Source: MAIC Sustainable Cities, page 8."
+    },
+    {
+      "ordinal": 62,
+      "source_page": 8,
+      "stem": "Why is park area alone an incomplete inclusion measure?",
+      "options": [
+        "Assume one consultation meeting represents everyone",
+        "Treat inaccessible plazas as inclusive",
+        "Measure public access only by square meters",
+        "Safe routes and usability also matter"
+      ],
+      "correct_mask": 8,
+      "rationale": "The original course explains that safe routes and usability also matter. This is the appropriate urban-systems principle, indicator definition or fictional-case arithmetic. Source: MAIC Sustainable Cities, page 8."
+    },
+    {
+      "ordinal": 63,
+      "source_page": 8,
+      "stem": "What should public consultation communicate?",
+      "options": [
+        "Ignore displacement and cost impacts",
+        "Consider only one user age group",
+        "Assume one consultation meeting represents everyone",
+        "Which choices remain open and how input will be used"
+      ],
+      "correct_mask": 8,
+      "rationale": "The original course explains that which choices remain open and how input will be used. This is the appropriate urban-systems principle, indicator definition or fictional-case arithmetic. Source: MAIC Sustainable Cities, page 8."
+    },
+    {
+      "ordinal": 64,
+      "source_page": 8,
+      "stem": "Why is attendance at one meeting not representative of all residents?",
+      "options": [
+        "Treat inaccessible plazas as inclusive",
+        "Participation may be selective",
+        "Measure public access only by square meters",
+        "Ignore displacement and cost impacts"
+      ],
+      "correct_mask": 2,
+      "rationale": "The original course explains that participation may be selective. This is the appropriate urban-systems principle, indicator definition or fictional-case arithmetic. Source: MAIC Sustainable Cities, page 8."
+    },
+    {
+      "ordinal": 65,
+      "source_page": 8,
+      "stem": "Which groups deserve specific accessibility consideration?",
+      "options": [
+        "Children, older people and people with disabilities",
+        "Consider only one user age group",
+        "Assume one consultation meeting represents everyone",
+        "Treat inaccessible plazas as inclusive"
+      ],
+      "correct_mask": 1,
+      "rationale": "The original course explains that children, older people and people with disabilities. This is the appropriate urban-systems principle, indicator definition or fictional-case arithmetic. Source: MAIC Sustainable Cities, page 8."
+    },
+    {
+      "ordinal": 66,
+      "source_page": 8,
+      "stem": "What is a potential unintended consequence of upgrades?",
+      "options": [
+        "Measure public access only by square meters",
+        "Ignore displacement and cost impacts",
+        "Consider only one user age group",
+        "Rising rents and displacement pressures"
+      ],
+      "correct_mask": 8,
+      "rationale": "The original course explains that rising rents and displacement pressures. This is the appropriate urban-systems principle, indicator definition or fictional-case arithmetic. Source: MAIC Sustainable Cities, page 8."
+    },
+    {
+      "ordinal": 67,
+      "source_page": 8,
+      "stem": "What should wayfinding for a public square include?",
+      "options": [
+        "Clear, usable routes and information",
+        "Assume one consultation meeting represents everyone",
+        "Treat inaccessible plazas as inclusive",
+        "Measure public access only by square meters"
+      ],
+      "correct_mask": 1,
+      "rationale": "The original course explains that clear, usable routes and information. This is the appropriate urban-systems principle, indicator definition or fictional-case arithmetic. Source: MAIC Sustainable Cities, page 8."
+    },
+    {
+      "ordinal": 68,
+      "source_page": 8,
+      "stem": "Why can a fenced park have different access than an open one?",
+      "options": [
+        "Ignore displacement and cost impacts",
+        "Consider only one user age group",
+        "Assume one consultation meeting represents everyone",
+        "Operating rules limit when it can be used"
+      ],
+      "correct_mask": 8,
+      "rationale": "The original course explains that operating rules limit when it can be used. This is the appropriate urban-systems principle, indicator definition or fictional-case arithmetic. Source: MAIC Sustainable Cities, page 8."
+    },
+    {
+      "ordinal": 69,
+      "source_page": 8,
+      "stem": "What should a consultation plan include?",
+      "options": [
+        "Treat inaccessible plazas as inclusive",
+        "Measure public access only by square meters",
+        "Ignore displacement and cost impacts",
+        "Multiple ways for affected residents to participate"
+      ],
+      "correct_mask": 8,
+      "rationale": "The original course explains that multiple ways for affected residents to participate. This is the appropriate urban-systems principle, indicator definition or fictional-case arithmetic. Source: MAIC Sustainable Cities, page 8."
+    },
+    {
+      "ordinal": 70,
+      "source_page": 8,
+      "stem": "What should a square with no accessible route trigger?",
+      "options": [
+        "Review of excluded users and design barriers",
+        "Consider only one user age group",
+        "Assume one consultation meeting represents everyone",
+        "Treat inaccessible plazas as inclusive"
+      ],
+      "correct_mask": 1,
+      "rationale": "The original course explains that review of excluded users and design barriers. This is the appropriate urban-systems principle, indicator definition or fictional-case arithmetic. Source: MAIC Sustainable Cities, page 8."
+    },
+    {
+      "ordinal": 71,
+      "source_page": 9,
+      "stem": "What should smart-city technology help achieve?",
+      "options": [
+        "Treat devices installed as proof of better services",
+        "A clearly defined public-service improvement",
+        "Publish unrestricted private resident data",
+        "Make smartphone access mandatory for every service"
+      ],
+      "correct_mask": 2,
+      "rationale": "The original course explains that a clearly defined public-service improvement. This is the appropriate urban-systems principle, indicator definition or fictional-case arithmetic. Source: MAIC Sustainable Cities, page 9."
+    },
+    {
+      "ordinal": 72,
+      "source_page": 9,
+      "stem": "Why is installing sensors not an outcome by itself?",
+      "options": [
+        "Devices do not prove better services",
+        "Ignore sensor coverage biases",
+        "Label model predictions as measured facts",
+        "Treat devices installed as proof of better services"
+      ],
+      "correct_mask": 1,
+      "rationale": "The original course explains that devices do not prove better services. This is the appropriate urban-systems principle, indicator definition or fictional-case arithmetic. Source: MAIC Sustainable Cities, page 9."
+    },
+    {
+      "ordinal": 73,
+      "source_page": 9,
+      "stem": "What is a problem with a transit app omitting informal services?",
+      "options": [
+        "Publish unrestricted private resident data",
+        "Make smartphone access mandatory for every service",
+        "Its coverage and conclusions may be incomplete",
+        "Ignore sensor coverage biases"
+      ],
+      "correct_mask": 4,
+      "rationale": "The original course explains that its coverage and conclusions may be incomplete. This is the appropriate urban-systems principle, indicator definition or fictional-case arithmetic. Source: MAIC Sustainable Cities, page 9."
+    },
+    {
+      "ordinal": 74,
+      "source_page": 9,
+      "stem": "Why should urban datasets protect privacy?",
+      "options": [
+        "Label model predictions as measured facts",
+        "Detailed records may identify sensitive personal information",
+        "Treat devices installed as proof of better services",
+        "Publish unrestricted private resident data"
+      ],
+      "correct_mask": 2,
+      "rationale": "The original course explains that detailed records may identify sensitive personal information. This is the appropriate urban-systems principle, indicator definition or fictional-case arithmetic. Source: MAIC Sustainable Cities, page 9."
+    },
+    {
+      "ordinal": 75,
+      "source_page": 9,
+      "stem": "What should mapping data disclose?",
+      "options": [
+        "Source, date, coordinate basis and limitations",
+        "Make smartphone access mandatory for every service",
+        "Ignore sensor coverage biases",
+        "Label model predictions as measured facts"
+      ],
+      "correct_mask": 1,
+      "rationale": "The original course explains that source, date, coordinate basis and limitations. This is the appropriate urban-systems principle, indicator definition or fictional-case arithmetic. Source: MAIC Sustainable Cities, page 9."
+    },
+    {
+      "ordinal": 76,
+      "source_page": 9,
+      "stem": "Why should predictions have distinct labels?",
+      "options": [
+        "They are estimates rather than observations",
+        "Treat devices installed as proof of better services",
+        "Publish unrestricted private resident data",
+        "Make smartphone access mandatory for every service"
+      ],
+      "correct_mask": 1,
+      "rationale": "The original course explains that they are estimates rather than observations. This is the appropriate urban-systems principle, indicator definition or fictional-case arithmetic. Source: MAIC Sustainable Cities, page 9."
+    },
+    {
+      "ordinal": 77,
+      "source_page": 9,
+      "stem": "Why maintain nondigital service access?",
+      "options": [
+        "Some residents do not use smartphones or stable internet",
+        "Ignore sensor coverage biases",
+        "Label model predictions as measured facts",
+        "Treat devices installed as proof of better services"
+      ],
+      "correct_mask": 1,
+      "rationale": "The original course explains that some residents do not use smartphones or stable internet. This is the appropriate urban-systems principle, indicator definition or fictional-case arithmetic. Source: MAIC Sustainable Cities, page 9."
+    },
+    {
+      "ordinal": 78,
+      "source_page": 9,
+      "stem": "What should a reliability dashboard measure?",
+      "options": [
+        "Publish unrestricted private resident data",
+        "Make smartphone access mandatory for every service",
+        "Actual service intervals and passenger effects",
+        "Ignore sensor coverage biases"
+      ],
+      "correct_mask": 4,
+      "rationale": "The original course explains that actual service intervals and passenger effects. This is the appropriate urban-systems principle, indicator definition or fictional-case arithmetic. Source: MAIC Sustainable Cities, page 9."
+    },
+    {
+      "ordinal": 79,
+      "source_page": 9,
+      "stem": "Why is a biased sample a problem for city decisions?",
+      "options": [
+        "Label model predictions as measured facts",
+        "Treat devices installed as proof of better services",
+        "Publish unrestricted private resident data",
+        "Excluded neighborhoods may be overlooked"
+      ],
+      "correct_mask": 8,
+      "rationale": "The original course explains that excluded neighborhoods may be overlooked. This is the appropriate urban-systems principle, indicator definition or fictional-case arithmetic. Source: MAIC Sustainable Cities, page 9."
+    },
+    {
+      "ordinal": 80,
+      "source_page": 9,
+      "stem": "What is a responsible way to share infrastructure data?",
+      "options": [
+        "Make smartphone access mandatory for every service",
+        "Ignore sensor coverage biases",
+        "Label model predictions as measured facts",
+        "Apply appropriate access controls to sensitive details"
+      ],
+      "correct_mask": 8,
+      "rationale": "The original course explains that apply appropriate access controls to sensitive details. This is the appropriate urban-systems principle, indicator definition or fictional-case arithmetic. Source: MAIC Sustainable Cities, page 9."
+    },
+    {
+      "ordinal": 81,
+      "source_page": 10,
+      "stem": "What does project appraisal compare?",
+      "options": [
+        "Choose the most attractive project regardless of cost",
+        "Treat before-and-after association as proven causation",
+        "Exclude residents affected by the intervention",
+        "Benefits, costs, risks and feasibility of alternatives"
+      ],
+      "correct_mask": 8,
+      "rationale": "The original course explains that benefits, costs, risks and feasibility of alternatives. This is the appropriate urban-systems principle, indicator definition or fictional-case arithmetic. Source: MAIC Sustainable Cities, page 10."
+    },
+    {
+      "ordinal": 82,
+      "source_page": 10,
+      "stem": "Why must an urban investment include maintenance?",
+      "options": [
+        "Infrastructure has ongoing operating needs",
+        "Ignore maintenance and monitoring",
+        "Report only direct capital cost as full budget",
+        "Choose the most attractive project regardless of cost"
+      ],
+      "correct_mask": 1,
+      "rationale": "The original course explains that infrastructure has ongoing operating needs. This is the appropriate urban-systems principle, indicator definition or fictional-case arithmetic. Source: MAIC Sustainable Cities, page 10."
+    },
+    {
+      "ordinal": 83,
+      "source_page": 10,
+      "stem": "What should precede an impact claim after a project?",
+      "options": [
+        "Treat before-and-after association as proven causation",
+        "Exclude residents affected by the intervention",
+        "Ignore maintenance and monitoring",
+        "A baseline and comparable follow-up evidence"
+      ],
+      "correct_mask": 8,
+      "rationale": "The original course explains that a baseline and comparable follow-up evidence. This is the appropriate urban-systems principle, indicator definition or fictional-case arithmetic. Source: MAIC Sustainable Cities, page 10."
+    },
+    {
+      "ordinal": 84,
+      "source_page": 10,
+      "stem": "What is a distributional impact question?",
+      "options": [
+        "Report only direct capital cost as full budget",
+        "Choose the most attractive project regardless of cost",
+        "Who benefits and who bears the costs?",
+        "Treat before-and-after association as proven causation"
+      ],
+      "correct_mask": 4,
+      "rationale": "The original course explains that who benefits and who bears the costs. This is the appropriate urban-systems principle, indicator definition or fictional-case arithmetic. Source: MAIC Sustainable Cities, page 10."
+    },
+    {
+      "ordinal": 85,
+      "source_page": 10,
+      "stem": "Why is financial cost not the same as social value?",
+      "options": [
+        "Exclude residents affected by the intervention",
+        "Some benefits are not direct expenditures",
+        "Ignore maintenance and monitoring",
+        "Report only direct capital cost as full budget"
+      ],
+      "correct_mask": 2,
+      "rationale": "The original course explains that some benefits are not direct expenditures. This is the appropriate urban-systems principle, indicator definition or fictional-case arithmetic. Source: MAIC Sustainable Cities, page 10."
+    },
+    {
+      "ordinal": 86,
+      "source_page": 10,
+      "stem": "What should a project issue register track?",
+      "options": [
+        "Choose the most attractive project regardless of cost",
+        "Unresolved dependencies, decisions and owners",
+        "Treat before-and-after association as proven causation",
+        "Exclude residents affected by the intervention"
+      ],
+      "correct_mask": 2,
+      "rationale": "The original course explains that unresolved dependencies, decisions and owners. This is the appropriate urban-systems principle, indicator definition or fictional-case arithmetic. Source: MAIC Sustainable Cities, page 10."
+    },
+    {
+      "ordinal": 87,
+      "source_page": 10,
+      "stem": "Why may simple before-after changes not prove causality?",
+      "options": [
+        "Ignore maintenance and monitoring",
+        "Report only direct capital cost as full budget",
+        "Other events may influence the outcome",
+        "Choose the most attractive project regardless of cost"
+      ],
+      "correct_mask": 4,
+      "rationale": "The original course explains that other events may influence the outcome. This is the appropriate urban-systems principle, indicator definition or fictional-case arithmetic. Source: MAIC Sustainable Cities, page 10."
+    },
+    {
+      "ordinal": 88,
+      "source_page": 10,
+      "stem": "What is the capital subtotal of three stops at $8,000 each?",
+      "options": [
+        "Treat before-and-after association as proven causation",
+        "Exclude residents affected by the intervention",
+        "$24,000",
+        "Ignore maintenance and monitoring"
+      ],
+      "correct_mask": 4,
+      "rationale": "The original course explains that $24,000. This is the appropriate urban-systems principle, indicator definition or fictional-case arithmetic. Source: MAIC Sustainable Cities, page 10."
+    },
+    {
+      "ordinal": 89,
+      "source_page": 10,
+      "stem": "Why is the $24,000 not a full project budget?",
+      "options": [
+        "Report only direct capital cost as full budget",
+        "Land, design, installation and upkeep are excluded",
+        "Choose the most attractive project regardless of cost",
+        "Treat before-and-after association as proven causation"
+      ],
+      "correct_mask": 2,
+      "rationale": "The original course explains that land, design, installation and upkeep are excluded. This is the appropriate urban-systems principle, indicator definition or fictional-case arithmetic. Source: MAIC Sustainable Cities, page 10."
+    },
+    {
+      "ordinal": 90,
+      "source_page": 10,
+      "stem": "What makes a monitoring indicator interpretable?",
+      "options": [
+        "Exclude residents affected by the intervention",
+        "Ignore maintenance and monitoring",
+        "Report only direct capital cost as full budget",
+        "Defined units, baseline and measurement period"
+      ],
+      "correct_mask": 8,
+      "rationale": "The original course explains that defined units, baseline and measurement period. This is the appropriate urban-systems principle, indicator definition or fictional-case arithmetic. Source: MAIC Sustainable Cities, page 10."
+    },
+    {
+      "ordinal": 91,
+      "source_page": 11,
+      "stem": "How many households are in the fictional neighborhood?",
+      "options": [
+        "1,000 households",
+        "Treat fictional neighborhood figures as real observations",
+        "Describe consultation as completed without residents",
+        "Use no baseline before declaring success"
+      ],
+      "correct_mask": 1,
+      "rationale": "The original course explains that 1,000 households. This is the appropriate urban-systems principle, indicator definition or fictional-case arithmetic. Source: MAIC Sustainable Cities, page 11."
+    },
+    {
+      "ordinal": 92,
+      "source_page": 11,
+      "stem": "How many lack defined convenient transit access?",
+      "options": [
+        "Claim street sketches have engineering approval",
+        "Ignore access for people with disabilities",
+        "Treat fictional neighborhood figures as real observations",
+        "240 households"
+      ],
+      "correct_mask": 8,
+      "rationale": "The original course explains that 240 households. This is the appropriate urban-systems principle, indicator definition or fictional-case arithmetic. Source: MAIC Sustainable Cities, page 11."
+    },
+    {
+      "ordinal": 93,
+      "source_page": 11,
+      "stem": "What proportion is this under the classroom rule?",
+      "options": [
+        "24%",
+        "Describe consultation as completed without residents",
+        "Use no baseline before declaring success",
+        "Claim street sketches have engineering approval"
+      ],
+      "correct_mask": 1,
+      "rationale": "The original course explains that 24%. This is the appropriate urban-systems principle, indicator definition or fictional-case arithmetic. Source: MAIC Sustainable Cities, page 11."
+    },
+    {
+      "ordinal": 94,
+      "source_page": 11,
+      "stem": "What is the invented waste collection share?",
+      "options": [
+        "80%",
+        "Ignore access for people with disabilities",
+        "Treat fictional neighborhood figures as real observations",
+        "Describe consultation as completed without residents"
+      ],
+      "correct_mask": 1,
+      "rationale": "The original course explains that 80%. This is the appropriate urban-systems principle, indicator definition or fictional-case arithmetic. Source: MAIC Sustainable Cities, page 11."
+    },
+    {
+      "ordinal": 95,
+      "source_page": 11,
+      "stem": "Which street defect is described in the case?",
+      "options": [
+        "Use no baseline before declaring success",
+        "Missing continuous safe crossings",
+        "Claim street sketches have engineering approval",
+        "Ignore access for people with disabilities"
+      ],
+      "correct_mask": 2,
+      "rationale": "The original course explains that missing continuous safe crossings. This is the appropriate urban-systems principle, indicator definition or fictional-case arithmetic. Source: MAIC Sustainable Cities, page 11."
+    },
+    {
+      "ordinal": 96,
+      "source_page": 11,
+      "stem": "Which public-space issues are identified?",
+      "options": [
+        "Treat fictional neighborhood figures as real observations",
+        "Describe consultation as completed without residents",
+        "Poor shade and accessibility",
+        "Use no baseline before declaring success"
+      ],
+      "correct_mask": 4,
+      "rationale": "The original course explains that poor shade and accessibility. This is the appropriate urban-systems principle, indicator definition or fictional-case arithmetic. Source: MAIC Sustainable Cities, page 11."
+    },
+    {
+      "ordinal": 97,
+      "source_page": 11,
+      "stem": "What are proposed action types?",
+      "options": [
+        "Claim street sketches have engineering approval",
+        "Ignore access for people with disabilities",
+        "Crossing safety, route continuity and square improvements",
+        "Treat fictional neighborhood figures as real observations"
+      ],
+      "correct_mask": 4,
+      "rationale": "The original course explains that crossing safety, route continuity and square improvements. This is the appropriate urban-systems principle, indicator definition or fictional-case arithmetic. Source: MAIC Sustainable Cities, page 11."
+    },
+    {
+      "ordinal": 98,
+      "source_page": 11,
+      "stem": "Why is the classroom map not an approved engineering plan?",
+      "options": [
+        "Describe consultation as completed without residents",
+        "No site-specific technical verification has occurred",
+        "Use no baseline before declaring success",
+        "Claim street sketches have engineering approval"
+      ],
+      "correct_mask": 2,
+      "rationale": "The original course explains that no site-specific technical verification has occurred. This is the appropriate urban-systems principle, indicator definition or fictional-case arithmetic. Source: MAIC Sustainable Cities, page 11."
+    },
+    {
+      "ordinal": 99,
+      "source_page": 11,
+      "stem": "What should the monitoring plan include?",
+      "options": [
+        "Ignore access for people with disabilities",
+        "Treat fictional neighborhood figures as real observations",
+        "Describe consultation as completed without residents",
+        "Responsible owner, baseline and observation period"
+      ],
+      "correct_mask": 8,
+      "rationale": "The original course explains that responsible owner, baseline and observation period. This is the appropriate urban-systems principle, indicator definition or fictional-case arithmetic. Source: MAIC Sustainable Cities, page 11."
+    },
+    {
+      "ordinal": 100,
+      "source_page": 11,
+      "stem": "Which social issue should project appraisal consider?",
+      "options": [
+        "Use no baseline before declaring success",
+        "Claim street sketches have engineering approval",
+        "Who receives benefits and who may be disadvantaged",
+        "Ignore access for people with disabilities"
+      ],
+      "correct_mask": 4,
+      "rationale": "The original course explains that who receives benefits and who may be disadvantaged. This is the appropriate urban-systems principle, indicator definition or fictional-case arithmetic. Source: MAIC Sustainable Cities, page 11."
+    }
+  ]
+}
