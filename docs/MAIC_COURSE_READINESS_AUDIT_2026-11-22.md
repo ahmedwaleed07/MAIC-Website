@@ -83,3 +83,12 @@ Prepared from live catalog and database queries; this is a work log, not approva
 ## Execution order
 
 Complete the 34 missing-material courses in the listed catalog order. First: `diploma-in-journalism`. Do not change archived courses automatically. Do not treat this work log as academic sign-off.
+
+## Progress note — 2026-11-22 (verified after initial audit)
+
+- **All 16 of the 36 courses with source PDFs but inactive exams now have 100-item current-source editorial drafts** in Cloudflare D1; 1,600 questions total. These drafts are not independently approved and are not active for students.
+- The 20 previously active exams were not modified during this content preparation.
+- Original English `Diploma in Journalism` training manuscript saved as `data/course-manuscripts/diploma-in-journalism.md` (12 substantive sections, estimated guided study: 12 hours).
+- The independent review candidate PDF was successfully rendered in GitHub Actions run 45046808095, with the approved MAIC crest, a Michigan/US backdrop on the cover and Tinos 12-point instructional text. The workflow validated a 12-page output. This does **not** mean the PDF has been uploaded to the production `learning_materials` table or exposed to students.
+- Remaining missing production PDFs: 34 preparing courses (including Diploma in Journalism pending upload) and 8 archived courses. Do not count a manuscript or review candidate as an active student manual.
+- The next sequence after review of the Journalism candidate is source registration/upload, item-writing and independent approval; then Fundamentals of Journalism and subsequent missing-material courses.
