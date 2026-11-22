@@ -1,0 +1,1312 @@
+{
+  "course_id": "3d-models-for-virtual-reality",
+  "source_manuscript": "data/course-manuscripts/3d-models-for-virtual-reality.md",
+  "source_manuscript_blob_sha": "144d2116dcd46ef7f23584fa3e1f4af50a9359aa",
+  "source_pdf_sha256": null,
+  "bank_version": "draft-manuscript-20261123-v1",
+  "approval_status": "editorial_draft_pending_independent_review",
+  "number_of_questions": 100,
+  "note": "Original academic draft requiring independent subject and answer review. No live student exam or hardware certification.",
+  "questions": [
+    {
+      "ordinal": 1,
+      "source_page": 2,
+      "stem": "What is a key requirement for a VR 3D model?",
+      "options": [
+        "Treat every still render as headset-tested",
+        "Coherent scale, efficient geometry and clear interaction",
+        "Copy protected assets without permission",
+        "Discard source models after optimization"
+      ],
+      "correct_mask": 2,
+      "rationale": "The original course describes coherent scale, efficient geometry and clear interaction. This is the appropriate 3D modeling, VR interaction or runtime performance principle for the lesson. Source: MAIC 3D Models for Virtual Reality, page 2."
+    },
+    {
+      "ordinal": 2,
+      "source_page": 2,
+      "stem": "Why can an attractive asset fail in a headset?",
+      "options": [
+        "Assume polygon budget never affects performance",
+        "Use arbitrary real-world scale",
+        "Treat every still render as headset-tested",
+        "It may perform poorly or be unusable in context"
+      ],
+      "correct_mask": 8,
+      "rationale": "The original course describes it may perform poorly or be unusable in context. This is the appropriate 3D modeling, VR interaction or runtime performance principle for the lesson. Source: MAIC 3D Models for Virtual Reality, page 2."
+    },
+    {
+      "ordinal": 3,
+      "source_page": 2,
+      "stem": "What is the core course deliverable?",
+      "options": [
+        "Copy protected assets without permission",
+        "A validated original virtual exhibit asset plan",
+        "Discard source models after optimization",
+        "Assume polygon budget never affects performance"
+      ],
+      "correct_mask": 2,
+      "rationale": "The original course describes a validated original virtual exhibit asset plan. This is the appropriate 3D modeling, VR interaction or runtime performance principle for the lesson. Source: MAIC 3D Models for Virtual Reality, page 2."
+    },
+    {
+      "ordinal": 4,
+      "source_page": 2,
+      "stem": "What must be considered before choosing a polygon budget?",
+      "options": [
+        "Use arbitrary real-world scale",
+        "Treat every still render as headset-tested",
+        "Copy protected assets without permission",
+        "Target device, scene and viewing distance"
+      ],
+      "correct_mask": 8,
+      "rationale": "The original course describes target device, scene and viewing distance. This is the appropriate 3D modeling, VR interaction or runtime performance principle for the lesson. Source: MAIC 3D Models for Virtual Reality, page 2."
+    },
+    {
+      "ordinal": 5,
+      "source_page": 2,
+      "stem": "Why are the museum examples fictional?",
+      "options": [
+        "They do not document a real exhibit",
+        "Discard source models after optimization",
+        "Assume polygon budget never affects performance",
+        "Use arbitrary real-world scale"
+      ],
+      "correct_mask": 1,
+      "rationale": "The original course describes they do not document a real exhibit. This is the appropriate 3D modeling, VR interaction or runtime performance principle for the lesson. Source: MAIC 3D Models for Virtual Reality, page 2."
+    },
+    {
+      "ordinal": 6,
+      "source_page": 2,
+      "stem": "What does a source 3D file preserve?",
+      "options": [
+        "Treat every still render as headset-tested",
+        "Copy protected assets without permission",
+        "Discard source models after optimization",
+        "Editable geometry and project information"
+      ],
+      "correct_mask": 8,
+      "rationale": "The original course describes editable geometry and project information. This is the appropriate 3D modeling, VR interaction or runtime performance principle for the lesson. Source: MAIC 3D Models for Virtual Reality, page 2."
+    },
+    {
+      "ordinal": 7,
+      "source_page": 2,
+      "stem": "Why should headset compatibility not be assumed?",
+      "options": [
+        "Assume polygon budget never affects performance",
+        "Use arbitrary real-world scale",
+        "Treat every still render as headset-tested",
+        "Runtime capabilities and hardware differ"
+      ],
+      "correct_mask": 8,
+      "rationale": "The original course describes runtime capabilities and hardware differ. This is the appropriate 3D modeling, VR interaction or runtime performance principle for the lesson. Source: MAIC 3D Models for Virtual Reality, page 2."
+    },
+    {
+      "ordinal": 8,
+      "source_page": 2,
+      "stem": "What should a useful asset brief specify?",
+      "options": [
+        "Copy protected assets without permission",
+        "Discard source models after optimization",
+        "Units, interaction, materials and target use",
+        "Assume polygon budget never affects performance"
+      ],
+      "correct_mask": 4,
+      "rationale": "The original course describes units, interaction, materials and target use. This is the appropriate 3D modeling, VR interaction or runtime performance principle for the lesson. Source: MAIC 3D Models for Virtual Reality, page 2."
+    },
+    {
+      "ordinal": 9,
+      "source_page": 2,
+      "stem": "Why is a still render insufficient for VR testing?",
+      "options": [
+        "It does not establish frame timing or interactions",
+        "Use arbitrary real-world scale",
+        "Treat every still render as headset-tested",
+        "Copy protected assets without permission"
+      ],
+      "correct_mask": 1,
+      "rationale": "The original course describes it does not establish frame timing or interactions. This is the appropriate 3D modeling, VR interaction or runtime performance principle for the lesson. Source: MAIC 3D Models for Virtual Reality, page 2."
+    },
+    {
+      "ordinal": 10,
+      "source_page": 2,
+      "stem": "What is a reasonable first step in asset design?",
+      "options": [
+        "Discard source models after optimization",
+        "Sketch dimensions and intended player use",
+        "Assume polygon budget never affects performance",
+        "Use arbitrary real-world scale"
+      ],
+      "correct_mask": 2,
+      "rationale": "The original course describes sketch dimensions and intended player use. This is the appropriate 3D modeling, VR interaction or runtime performance principle for the lesson. Source: MAIC 3D Models for Virtual Reality, page 2."
+    },
+    {
+      "ordinal": 11,
+      "source_page": 3,
+      "stem": "Why are consistent world units necessary?",
+      "options": [
+        "Use the same pivot for every hinged object",
+        "Treat collider geometry as always identical to render mesh",
+        "Use an unlicensed museum model",
+        "Objects must appear at plausible real-world scale"
+      ],
+      "correct_mask": 8,
+      "rationale": "The original course describes objects must appear at plausible real-world scale. This is the appropriate 3D modeling, VR interaction or runtime performance principle for the lesson. Source: MAIC 3D Models for Virtual Reality, page 3."
+    },
+    {
+      "ordinal": 12,
+      "source_page": 3,
+      "stem": "What should a rotating exhibit's pivot support?",
+      "options": [
+        "Assume all game engines interpret units identically",
+        "Rotation around the intended center",
+        "Ignore the intended physical object dimensions",
+        "Use the same pivot for every hinged object"
+      ],
+      "correct_mask": 2,
+      "rationale": "The original course describes rotation around the intended center. This is the appropriate 3D modeling, VR interaction or runtime performance principle for the lesson. Source: MAIC 3D Models for Virtual Reality, page 3."
+    },
+    {
+      "ordinal": 13,
+      "source_page": 3,
+      "stem": "Why might a cabinet hinge need a different pivot?",
+      "options": [
+        "Treat collider geometry as always identical to render mesh",
+        "Use an unlicensed museum model",
+        "Assume all game engines interpret units identically",
+        "Its rotation must follow the hinge location"
+      ],
+      "correct_mask": 8,
+      "rationale": "The original course describes its rotation must follow the hinge location. This is the appropriate 3D modeling, VR interaction or runtime performance principle for the lesson. Source: MAIC 3D Models for Virtual Reality, page 3."
+    },
+    {
+      "ordinal": 14,
+      "source_page": 3,
+      "stem": "What is a visible mesh used for?",
+      "options": [
+        "Ignore the intended physical object dimensions",
+        "Rendering the object's appearance",
+        "Use the same pivot for every hinged object",
+        "Treat collider geometry as always identical to render mesh"
+      ],
+      "correct_mask": 2,
+      "rationale": "The original course describes rendering the object's appearance. This is the appropriate 3D modeling, VR interaction or runtime performance principle for the lesson. Source: MAIC 3D Models for Virtual Reality, page 3."
+    },
+    {
+      "ordinal": 15,
+      "source_page": 3,
+      "stem": "Why might a simple collider be preferable?",
+      "options": [
+        "Use an unlicensed museum model",
+        "Interaction can be cheaper than detailed mesh collision",
+        "Assume all game engines interpret units identically",
+        "Ignore the intended physical object dimensions"
+      ],
+      "correct_mask": 2,
+      "rationale": "The original course describes interaction can be cheaper than detailed mesh collision. This is the appropriate 3D modeling, VR interaction or runtime performance principle for the lesson. Source: MAIC 3D Models for Virtual Reality, page 3."
+    },
+    {
+      "ordinal": 16,
+      "source_page": 3,
+      "stem": "What should be recorded about import conversion?",
+      "options": [
+        "Unit and coordinate mapping to the target engine",
+        "Use the same pivot for every hinged object",
+        "Treat collider geometry as always identical to render mesh",
+        "Use an unlicensed museum model"
+      ],
+      "correct_mask": 1,
+      "rationale": "The original course describes unit and coordinate mapping to the target engine. This is the appropriate 3D modeling, VR interaction or runtime performance principle for the lesson. Source: MAIC 3D Models for Virtual Reality, page 3."
+    },
+    {
+      "ordinal": 17,
+      "source_page": 3,
+      "stem": "What is an important viewing-distance question?",
+      "options": [
+        "How much detail will remain visible to the visitor",
+        "Assume all game engines interpret units identically",
+        "Ignore the intended physical object dimensions",
+        "Use the same pivot for every hinged object"
+      ],
+      "correct_mask": 1,
+      "rationale": "The original course describes how much detail will remain visible to the visitor. This is the appropriate 3D modeling, VR interaction or runtime performance principle for the lesson. Source: MAIC 3D Models for Virtual Reality, page 3."
+    },
+    {
+      "ordinal": 18,
+      "source_page": 3,
+      "stem": "What is the fictional sculpture's height?",
+      "options": [
+        "0.6 meters",
+        "Treat collider geometry as always identical to render mesh",
+        "Use an unlicensed museum model",
+        "Assume all game engines interpret units identically"
+      ],
+      "correct_mask": 1,
+      "rationale": "The original course describes 0.6 meters. This is the appropriate 3D modeling, VR interaction or runtime performance principle for the lesson. Source: MAIC 3D Models for Virtual Reality, page 3."
+    },
+    {
+      "ordinal": 19,
+      "source_page": 3,
+      "stem": "What is the fictional pedestal height?",
+      "options": [
+        "Ignore the intended physical object dimensions",
+        "0.9 meters",
+        "Use the same pivot for every hinged object",
+        "Treat collider geometry as always identical to render mesh"
+      ],
+      "correct_mask": 2,
+      "rationale": "The original course describes 0.9 meters. This is the appropriate 3D modeling, VR interaction or runtime performance principle for the lesson. Source: MAIC 3D Models for Virtual Reality, page 3."
+    },
+    {
+      "ordinal": 20,
+      "source_page": 3,
+      "stem": "Why should game asset rights be checked?",
+      "options": [
+        "Use an unlicensed museum model",
+        "Assume all game engines interpret units identically",
+        "Existing works and model assets can be protected",
+        "Ignore the intended physical object dimensions"
+      ],
+      "correct_mask": 4,
+      "rationale": "The original course describes existing works and model assets can be protected. This is the appropriate 3D modeling, VR interaction or runtime performance principle for the lesson. Source: MAIC 3D Models for Virtual Reality, page 3."
+    },
+    {
+      "ordinal": 21,
+      "source_page": 4,
+      "stem": "What is a triangle mesh constructed from?",
+      "options": [
+        "Add unlimited hidden polygons",
+        "Treat topology as unrelated to surface geometry",
+        "Assume decimation cannot damage UV mapping",
+        "Vertices and triangular faces"
+      ],
+      "correct_mask": 8,
+      "rationale": "The original course describes vertices and triangular faces. This is the appropriate 3D modeling, VR interaction or runtime performance principle for the lesson. Source: MAIC 3D Models for Virtual Reality, page 4."
+    },
+    {
+      "ordinal": 22,
+      "source_page": 4,
+      "stem": "Why can hidden polygons be unnecessary?",
+      "options": [
+        "Ignore flipped face normals",
+        "Delete all high-detail source files",
+        "They may consume resources without visible benefit",
+        "Add unlimited hidden polygons"
+      ],
+      "correct_mask": 4,
+      "rationale": "The original course describes they may consume resources without visible benefit. This is the appropriate 3D modeling, VR interaction or runtime performance principle for the lesson. Source: MAIC 3D Models for Virtual Reality, page 4."
+    },
+    {
+      "ordinal": 23,
+      "source_page": 4,
+      "stem": "What is mesh topology concerned with?",
+      "options": [
+        "Treat topology as unrelated to surface geometry",
+        "Assume decimation cannot damage UV mapping",
+        "How faces and vertices connect",
+        "Ignore flipped face normals"
+      ],
+      "correct_mask": 4,
+      "rationale": "The original course describes how faces and vertices connect. This is the appropriate 3D modeling, VR interaction or runtime performance principle for the lesson. Source: MAIC 3D Models for Virtual Reality, page 4."
+    },
+    {
+      "ordinal": 24,
+      "source_page": 4,
+      "stem": "Why can normals affect asset appearance?",
+      "options": [
+        "They influence shading and visible surface direction",
+        "Delete all high-detail source files",
+        "Add unlimited hidden polygons",
+        "Treat topology as unrelated to surface geometry"
+      ],
+      "correct_mask": 1,
+      "rationale": "The original course describes they influence shading and visible surface direction. This is the appropriate 3D modeling, VR interaction or runtime performance principle for the lesson. Source: MAIC 3D Models for Virtual Reality, page 4."
+    },
+    {
+      "ordinal": 25,
+      "source_page": 4,
+      "stem": "Why should dense topology be controlled?",
+      "options": [
+        "It can increase rendering costs",
+        "Assume decimation cannot damage UV mapping",
+        "Ignore flipped face normals",
+        "Delete all high-detail source files"
+      ],
+      "correct_mask": 1,
+      "rationale": "The original course describes it can increase rendering costs. This is the appropriate 3D modeling, VR interaction or runtime performance principle for the lesson. Source: MAIC 3D Models for Virtual Reality, page 4."
+    },
+    {
+      "ordinal": 26,
+      "source_page": 4,
+      "stem": "What is a risk of aggressive decimation?",
+      "options": [
+        "Silhouette and UV detail may be damaged",
+        "Add unlimited hidden polygons",
+        "Treat topology as unrelated to surface geometry",
+        "Assume decimation cannot damage UV mapping"
+      ],
+      "correct_mask": 1,
+      "rationale": "The original course describes silhouette and UV detail may be damaged. This is the appropriate 3D modeling, VR interaction or runtime performance principle for the lesson. Source: MAIC 3D Models for Virtual Reality, page 4."
+    },
+    {
+      "ordinal": 27,
+      "source_page": 4,
+      "stem": "Why should a high-detail source be preserved?",
+      "options": [
+        "Ignore flipped face normals",
+        "A simplified version may need revision",
+        "Delete all high-detail source files",
+        "Add unlimited hidden polygons"
+      ],
+      "correct_mask": 2,
+      "rationale": "The original course describes a simplified version may need revision. This is the appropriate 3D modeling, VR interaction or runtime performance principle for the lesson. Source: MAIC 3D Models for Virtual Reality, page 4."
+    },
+    {
+      "ordinal": 28,
+      "source_page": 4,
+      "stem": "What is a concern with duplicate faces?",
+      "options": [
+        "They can create rendering or geometry artifacts",
+        "Treat topology as unrelated to surface geometry",
+        "Assume decimation cannot damage UV mapping",
+        "Ignore flipped face normals"
+      ],
+      "correct_mask": 1,
+      "rationale": "The original course describes they can create rendering or geometry artifacts. This is the appropriate 3D modeling, VR interaction or runtime performance principle for the lesson. Source: MAIC 3D Models for Virtual Reality, page 4."
+    },
+    {
+      "ordinal": 29,
+      "source_page": 4,
+      "stem": "Which object usually needs more deformation planning?",
+      "options": [
+        "Delete all high-detail source files",
+        "Add unlimited hidden polygons",
+        "Treat topology as unrelated to surface geometry",
+        "An animated jointed character"
+      ],
+      "correct_mask": 8,
+      "rationale": "The original course describes an animated jointed character. This is the appropriate 3D modeling, VR interaction or runtime performance principle for the lesson. Source: MAIC 3D Models for Virtual Reality, page 4."
+    },
+    {
+      "ordinal": 30,
+      "source_page": 4,
+      "stem": "Why inspect the asset at target view distance?",
+      "options": [
+        "Assume decimation cannot damage UV mapping",
+        "Ignore flipped face normals",
+        "Delete all high-detail source files",
+        "Fine modeled details may not be visible"
+      ],
+      "correct_mask": 8,
+      "rationale": "The original course describes fine modeled details may not be visible. This is the appropriate 3D modeling, VR interaction or runtime performance principle for the lesson. Source: MAIC 3D Models for Virtual Reality, page 4."
+    },
+    {
+      "ordinal": 31,
+      "source_page": 5,
+      "stem": "What do UV coordinates describe?",
+      "options": [
+        "Use the largest texture size for every part",
+        "Assume UV layout cannot stretch images",
+        "Assume transparency has no rendering cost",
+        "How a 2D texture maps onto a 3D surface"
+      ],
+      "correct_mask": 8,
+      "rationale": "The original course describes how a 2D texture maps onto a 3D surface. This is the appropriate 3D modeling, VR interaction or runtime performance principle for the lesson. Source: MAIC 3D Models for Virtual Reality, page 5."
+    },
+    {
+      "ordinal": 32,
+      "source_page": 5,
+      "stem": "What can bad UV layout cause?",
+      "options": [
+        "Treat shader appearance as measured alloy composition",
+        "Ignore material licenses",
+        "Use the largest texture size for every part",
+        "Texture stretching or wasted resolution"
+      ],
+      "correct_mask": 8,
+      "rationale": "The original course describes texture stretching or wasted resolution. This is the appropriate 3D modeling, VR interaction or runtime performance principle for the lesson. Source: MAIC 3D Models for Virtual Reality, page 5."
+    },
+    {
+      "ordinal": 33,
+      "source_page": 5,
+      "stem": "What is PBR short for?",
+      "options": [
+        "Assume UV layout cannot stretch images",
+        "Assume transparency has no rendering cost",
+        "Physically Based Rendering",
+        "Treat shader appearance as measured alloy composition"
+      ],
+      "correct_mask": 4,
+      "rationale": "The original course describes physically Based Rendering. This is the appropriate 3D modeling, VR interaction or runtime performance principle for the lesson. Source: MAIC 3D Models for Virtual Reality, page 5."
+    },
+    {
+      "ordinal": 34,
+      "source_page": 5,
+      "stem": "What may a metallic-roughness material describe?",
+      "options": [
+        "Ignore material licenses",
+        "Use the largest texture size for every part",
+        "A visual surface response under lighting",
+        "Assume UV layout cannot stretch images"
+      ],
+      "correct_mask": 4,
+      "rationale": "The original course describes a visual surface response under lighting. This is the appropriate 3D modeling, VR interaction or runtime performance principle for the lesson. Source: MAIC 3D Models for Virtual Reality, page 5."
+    },
+    {
+      "ordinal": 35,
+      "source_page": 5,
+      "stem": "Why is a metallic shader not proof of physical alloy?",
+      "options": [
+        "Assume transparency has no rendering cost",
+        "Treat shader appearance as measured alloy composition",
+        "Ignore material licenses",
+        "Rendering appearance is not material composition"
+      ],
+      "correct_mask": 8,
+      "rationale": "The original course describes rendering appearance is not material composition. This is the appropriate 3D modeling, VR interaction or runtime performance principle for the lesson. Source: MAIC 3D Models for Virtual Reality, page 5."
+    },
+    {
+      "ordinal": 36,
+      "source_page": 5,
+      "stem": "What can a texture atlas help reduce in some cases?",
+      "options": [
+        "Use the largest texture size for every part",
+        "Assume UV layout cannot stretch images",
+        "Assume transparency has no rendering cost",
+        "Material or draw-call overhead"
+      ],
+      "correct_mask": 8,
+      "rationale": "The original course describes material or draw-call overhead. This is the appropriate 3D modeling, VR interaction or runtime performance principle for the lesson. Source: MAIC 3D Models for Virtual Reality, page 5."
+    },
+    {
+      "ordinal": 37,
+      "source_page": 5,
+      "stem": "Why should texture dimensions match actual need?",
+      "options": [
+        "Treat shader appearance as measured alloy composition",
+        "Ignore material licenses",
+        "Oversized images consume memory unnecessarily",
+        "Use the largest texture size for every part"
+      ],
+      "correct_mask": 4,
+      "rationale": "The original course describes oversized images consume memory unnecessarily. This is the appropriate 3D modeling, VR interaction or runtime performance principle for the lesson. Source: MAIC 3D Models for Virtual Reality, page 5."
+    },
+    {
+      "ordinal": 38,
+      "source_page": 5,
+      "stem": "What can a transparent material increase?",
+      "options": [
+        "Assume UV layout cannot stretch images",
+        "Assume transparency has no rendering cost",
+        "Overdraw and rendering cost",
+        "Treat shader appearance as measured alloy composition"
+      ],
+      "correct_mask": 4,
+      "rationale": "The original course describes overdraw and rendering cost. This is the appropriate 3D modeling, VR interaction or runtime performance principle for the lesson. Source: MAIC 3D Models for Virtual Reality, page 5."
+    },
+    {
+      "ordinal": 39,
+      "source_page": 5,
+      "stem": "Why test shaders after engine import?",
+      "options": [
+        "Ignore material licenses",
+        "Material implementations can vary across tools",
+        "Use the largest texture size for every part",
+        "Assume UV layout cannot stretch images"
+      ],
+      "correct_mask": 2,
+      "rationale": "The original course describes material implementations can vary across tools. This is the appropriate 3D modeling, VR interaction or runtime performance principle for the lesson. Source: MAIC 3D Models for Virtual Reality, page 5."
+    },
+    {
+      "ordinal": 40,
+      "source_page": 5,
+      "stem": "What should be documented about external textures?",
+      "options": [
+        "License and permitted usage",
+        "Assume transparency has no rendering cost",
+        "Treat shader appearance as measured alloy composition",
+        "Ignore material licenses"
+      ],
+      "correct_mask": 1,
+      "rationale": "The original course describes license and permitted usage. This is the appropriate 3D modeling, VR interaction or runtime performance principle for the lesson. Source: MAIC 3D Models for Virtual Reality, page 5."
+    },
+    {
+      "ordinal": 41,
+      "source_page": 6,
+      "stem": "What is a level-of-detail mesh?",
+      "options": [
+        "Set one triangle cap for every headset",
+        "Use only desktop performance metrics",
+        "Remove recognizable functional details during LOD",
+        "A simplified asset for selected viewing conditions"
+      ],
+      "correct_mask": 8,
+      "rationale": "The original course describes a simplified asset for selected viewing conditions. This is the appropriate 3D modeling, VR interaction or runtime performance principle for the lesson. Source: MAIC 3D Models for Virtual Reality, page 6."
+    },
+    {
+      "ordinal": 42,
+      "source_page": 6,
+      "stem": "What does culling aim to avoid?",
+      "options": [
+        "Assume fewer polygons always fixes every slowdown",
+        "Ignore the scene's lighting and material complexity",
+        "Set one triangle cap for every headset",
+        "Rendering objects not relevant to the current view"
+      ],
+      "correct_mask": 8,
+      "rationale": "The original course describes rendering objects not relevant to the current view. This is the appropriate 3D modeling, VR interaction or runtime performance principle for the lesson. Source: MAIC 3D Models for Virtual Reality, page 6."
+    },
+    {
+      "ordinal": 43,
+      "source_page": 6,
+      "stem": "Why may splitting an object improve culling but hurt draw calls?",
+      "options": [
+        "Use only desktop performance metrics",
+        "Remove recognizable functional details during LOD",
+        "Assume fewer polygons always fixes every slowdown",
+        "More pieces can require extra rendering submissions"
+      ],
+      "correct_mask": 8,
+      "rationale": "The original course describes more pieces can require extra rendering submissions. This is the appropriate 3D modeling, VR interaction or runtime performance principle for the lesson. Source: MAIC 3D Models for Virtual Reality, page 6."
+    },
+    {
+      "ordinal": 44,
+      "source_page": 6,
+      "stem": "What can reducing unseen geometry improve?",
+      "options": [
+        "Ignore the scene's lighting and material complexity",
+        "Set one triangle cap for every headset",
+        "Use only desktop performance metrics",
+        "Unnecessary geometry processing"
+      ],
+      "correct_mask": 8,
+      "rationale": "The original course describes unnecessary geometry processing. This is the appropriate 3D modeling, VR interaction or runtime performance principle for the lesson. Source: MAIC 3D Models for Virtual Reality, page 6."
+    },
+    {
+      "ordinal": 45,
+      "source_page": 6,
+      "stem": "Why is polygon count not the only optimization metric?",
+      "options": [
+        "Shaders, textures and overdraw also matter",
+        "Remove recognizable functional details during LOD",
+        "Assume fewer polygons always fixes every slowdown",
+        "Ignore the scene's lighting and material complexity"
+      ],
+      "correct_mask": 1,
+      "rationale": "The original course describes shaders, textures and overdraw also matter. This is the appropriate 3D modeling, VR interaction or runtime performance principle for the lesson. Source: MAIC 3D Models for Virtual Reality, page 6."
+    },
+    {
+      "ordinal": 46,
+      "source_page": 6,
+      "stem": "What should support performance claims?",
+      "options": [
+        "Set one triangle cap for every headset",
+        "Measurements on representative target hardware",
+        "Use only desktop performance metrics",
+        "Remove recognizable functional details during LOD"
+      ],
+      "correct_mask": 2,
+      "rationale": "The original course describes measurements on representative target hardware. This is the appropriate 3D modeling, VR interaction or runtime performance principle for the lesson. Source: MAIC 3D Models for Virtual Reality, page 6."
+    },
+    {
+      "ordinal": 47,
+      "source_page": 6,
+      "stem": "What may baked lighting reduce?",
+      "options": [
+        "Assume fewer polygons always fixes every slowdown",
+        "Certain expensive real-time lighting calculations",
+        "Ignore the scene's lighting and material complexity",
+        "Set one triangle cap for every headset"
+      ],
+      "correct_mask": 2,
+      "rationale": "The original course describes certain expensive real-time lighting calculations. This is the appropriate 3D modeling, VR interaction or runtime performance principle for the lesson. Source: MAIC 3D Models for Virtual Reality, page 6."
+    },
+    {
+      "ordinal": 48,
+      "source_page": 6,
+      "stem": "Why should an LOD not remove functional details?",
+      "options": [
+        "Use only desktop performance metrics",
+        "The asset must remain recognizable and usable",
+        "Remove recognizable functional details during LOD",
+        "Assume fewer polygons always fixes every slowdown"
+      ],
+      "correct_mask": 2,
+      "rationale": "The original course describes the asset must remain recognizable and usable. This is the appropriate 3D modeling, VR interaction or runtime performance principle for the lesson. Source: MAIC 3D Models for Virtual Reality, page 6."
+    },
+    {
+      "ordinal": 49,
+      "source_page": 6,
+      "stem": "What is a meaningful before-after comparison?",
+      "options": [
+        "Performance and quality under comparable test conditions",
+        "Ignore the scene's lighting and material complexity",
+        "Set one triangle cap for every headset",
+        "Use only desktop performance metrics"
+      ],
+      "correct_mask": 1,
+      "rationale": "The original course describes performance and quality under comparable test conditions. This is the appropriate 3D modeling, VR interaction or runtime performance principle for the lesson. Source: MAIC 3D Models for Virtual Reality, page 6."
+    },
+    {
+      "ordinal": 50,
+      "source_page": 6,
+      "stem": "Why avoid prescribing one VR polygon limit for all devices?",
+      "options": [
+        "Hardware and scene budgets vary",
+        "Remove recognizable functional details during LOD",
+        "Assume fewer polygons always fixes every slowdown",
+        "Ignore the scene's lighting and material complexity"
+      ],
+      "correct_mask": 1,
+      "rationale": "The original course describes hardware and scene budgets vary. This is the appropriate 3D modeling, VR interaction or runtime performance principle for the lesson. Source: MAIC 3D Models for Virtual Reality, page 6."
+    },
+    {
+      "ordinal": 51,
+      "source_page": 7,
+      "stem": "What does glTF principally define?",
+      "options": [
+        "A runtime 3D asset delivery format",
+        "Treat glTF as the complete editable application project",
+        "Skip axis and scale verification on import",
+        "Discard original model transforms without records"
+      ],
+      "correct_mask": 1,
+      "rationale": "The original course describes a runtime 3D asset delivery format. This is the appropriate 3D modeling, VR interaction or runtime performance principle for the lesson. Source: MAIC 3D Models for Virtual Reality, page 7."
+    },
+    {
+      "ordinal": 52,
+      "source_page": 7,
+      "stem": "What is the current major glTF specification version?",
+      "options": [
+        "Assume every optional extension works in all viewers",
+        "Describe OpenXR as a glTF texture format",
+        "glTF 2.0",
+        "Treat glTF as the complete editable application project"
+      ],
+      "correct_mask": 4,
+      "rationale": "The original course describes glTF 2.0. This is the appropriate 3D modeling, VR interaction or runtime performance principle for the lesson. Source: MAIC 3D Models for Virtual Reality, page 7."
+    },
+    {
+      "ordinal": 53,
+      "source_page": 7,
+      "stem": "Who maintains the official glTF specification?",
+      "options": [
+        "The Khronos Group",
+        "Skip axis and scale verification on import",
+        "Discard original model transforms without records",
+        "Assume every optional extension works in all viewers"
+      ],
+      "correct_mask": 1,
+      "rationale": "The original course describes the Khronos Group. This is the appropriate 3D modeling, VR interaction or runtime performance principle for the lesson. Source: MAIC 3D Models for Virtual Reality, page 7."
+    },
+    {
+      "ordinal": 54,
+      "source_page": 7,
+      "stem": "Why should an exported object be checked for rotation?",
+      "options": [
+        "Axis conventions may differ between tools",
+        "Describe OpenXR as a glTF texture format",
+        "Treat glTF as the complete editable application project",
+        "Skip axis and scale verification on import"
+      ],
+      "correct_mask": 1,
+      "rationale": "The original course describes axis conventions may differ between tools. This is the appropriate 3D modeling, VR interaction or runtime performance principle for the lesson. Source: MAIC 3D Models for Virtual Reality, page 7."
+    },
+    {
+      "ordinal": 55,
+      "source_page": 7,
+      "stem": "Why is a source model different from runtime export?",
+      "options": [
+        "Discard original model transforms without records",
+        "Assume every optional extension works in all viewers",
+        "Editable modifiers and project history may not transfer",
+        "Describe OpenXR as a glTF texture format"
+      ],
+      "correct_mask": 4,
+      "rationale": "The original course describes editable modifiers and project history may not transfer. This is the appropriate 3D modeling, VR interaction or runtime performance principle for the lesson. Source: MAIC 3D Models for Virtual Reality, page 7."
+    },
+    {
+      "ordinal": 56,
+      "source_page": 7,
+      "stem": "What should an export checklist include?",
+      "options": [
+        "Treat glTF as the complete editable application project",
+        "Skip axis and scale verification on import",
+        "Units, normals, UVs and material support",
+        "Discard original model transforms without records"
+      ],
+      "correct_mask": 4,
+      "rationale": "The original course describes units, normals, UVs and material support. This is the appropriate 3D modeling, VR interaction or runtime performance principle for the lesson. Source: MAIC 3D Models for Virtual Reality, page 7."
+    },
+    {
+      "ordinal": 57,
+      "source_page": 7,
+      "stem": "Why is extension support not guaranteed across tools?",
+      "options": [
+        "Assume every optional extension works in all viewers",
+        "Importers may implement different optional features",
+        "Describe OpenXR as a glTF texture format",
+        "Treat glTF as the complete editable application project"
+      ],
+      "correct_mask": 2,
+      "rationale": "The original course describes importers may implement different optional features. This is the appropriate 3D modeling, VR interaction or runtime performance principle for the lesson. Source: MAIC 3D Models for Virtual Reality, page 7."
+    },
+    {
+      "ordinal": 58,
+      "source_page": 7,
+      "stem": "What can cause a model to appear oversized after import?",
+      "options": [
+        "Skip axis and scale verification on import",
+        "Incorrect unit conversion",
+        "Discard original model transforms without records",
+        "Assume every optional extension works in all viewers"
+      ],
+      "correct_mask": 2,
+      "rationale": "The original course describes incorrect unit conversion. This is the appropriate 3D modeling, VR interaction or runtime performance principle for the lesson. Source: MAIC 3D Models for Virtual Reality, page 7."
+    },
+    {
+      "ordinal": 59,
+      "source_page": 7,
+      "stem": "Why keep source and optimized delivery versions?",
+      "options": [
+        "They serve editing and runtime purposes",
+        "Describe OpenXR as a glTF texture format",
+        "Treat glTF as the complete editable application project",
+        "Skip axis and scale verification on import"
+      ],
+      "correct_mask": 1,
+      "rationale": "The original course describes they serve editing and runtime purposes. This is the appropriate 3D modeling, VR interaction or runtime performance principle for the lesson. Source: MAIC 3D Models for Virtual Reality, page 7."
+    },
+    {
+      "ordinal": 60,
+      "source_page": 7,
+      "stem": "What should be tested after a failed import?",
+      "options": [
+        "Discard original model transforms without records",
+        "Assume every optional extension works in all viewers",
+        "Transform mapping and actual geometry or materials",
+        "Describe OpenXR as a glTF texture format"
+      ],
+      "correct_mask": 4,
+      "rationale": "The original course describes transform mapping and actual geometry or materials. This is the appropriate 3D modeling, VR interaction or runtime performance principle for the lesson. Source: MAIC 3D Models for Virtual Reality, page 7."
+    },
+    {
+      "ordinal": 61,
+      "source_page": 8,
+      "stem": "What does an interaction collider define?",
+      "options": [
+        "Make objects fly unexpectedly toward users",
+        "A region used for physical or selection behavior",
+        "Treat a complex visible mesh as mandatory collider geometry",
+        "Assume hand tracking exists on every device"
+      ],
+      "correct_mask": 2,
+      "rationale": "The original course describes a region used for physical or selection behavior. This is the appropriate 3D modeling, VR interaction or runtime performance principle for the lesson. Source: MAIC 3D Models for Virtual Reality, page 8."
+    },
+    {
+      "ordinal": 62,
+      "source_page": 8,
+      "stem": "Why can a simplified collider be suitable?",
+      "options": [
+        "Use only hue to convey selection",
+        "Ignore physical play-space boundaries",
+        "Make objects fly unexpectedly toward users",
+        "It can match usable interaction without full mesh complexity"
+      ],
+      "correct_mask": 8,
+      "rationale": "The original course describes it can match usable interaction without full mesh complexity. This is the appropriate 3D modeling, VR interaction or runtime performance principle for the lesson. Source: MAIC 3D Models for Virtual Reality, page 8."
+    },
+    {
+      "ordinal": 63,
+      "source_page": 8,
+      "stem": "What should a selected object communicate?",
+      "options": [
+        "Treat a complex visible mesh as mandatory collider geometry",
+        "Assume hand tracking exists on every device",
+        "A clear change of interactive state",
+        "Use only hue to convey selection"
+      ],
+      "correct_mask": 4,
+      "rationale": "The original course describes a clear change of interactive state. This is the appropriate 3D modeling, VR interaction or runtime performance principle for the lesson. Source: MAIC 3D Models for Virtual Reality, page 8."
+    },
+    {
+      "ordinal": 64,
+      "source_page": 8,
+      "stem": "Why should object movement limits be defined?",
+      "options": [
+        "Ignore physical play-space boundaries",
+        "Make objects fly unexpectedly toward users",
+        "Treat a complex visible mesh as mandatory collider geometry",
+        "Prevent unexpected extreme motion or discomfort"
+      ],
+      "correct_mask": 8,
+      "rationale": "The original course describes prevent unexpected extreme motion or discomfort. This is the appropriate 3D modeling, VR interaction or runtime performance principle for the lesson. Source: MAIC 3D Models for Virtual Reality, page 8."
+    },
+    {
+      "ordinal": 65,
+      "source_page": 8,
+      "stem": "What is a headset safety consideration?",
+      "options": [
+        "Assume hand tracking exists on every device",
+        "Physical surroundings and platform boundary guidance",
+        "Use only hue to convey selection",
+        "Ignore physical play-space boundaries"
+      ],
+      "correct_mask": 2,
+      "rationale": "The original course describes physical surroundings and platform boundary guidance. This is the appropriate 3D modeling, VR interaction or runtime performance principle for the lesson. Source: MAIC 3D Models for Virtual Reality, page 8."
+    },
+    {
+      "ordinal": 66,
+      "source_page": 8,
+      "stem": "Why should important feedback not depend on color alone?",
+      "options": [
+        "Make objects fly unexpectedly toward users",
+        "Some users cannot distinguish color states",
+        "Treat a complex visible mesh as mandatory collider geometry",
+        "Assume hand tracking exists on every device"
+      ],
+      "correct_mask": 2,
+      "rationale": "The original course describes some users cannot distinguish color states. This is the appropriate 3D modeling, VR interaction or runtime performance principle for the lesson. Source: MAIC 3D Models for Virtual Reality, page 8."
+    },
+    {
+      "ordinal": 67,
+      "source_page": 8,
+      "stem": "What can be an alternative interaction method?",
+      "options": [
+        "Use only hue to convey selection",
+        "Ignore physical play-space boundaries",
+        "Make objects fly unexpectedly toward users",
+        "Controller selection rather than assumed hand tracking"
+      ],
+      "correct_mask": 8,
+      "rationale": "The original course describes controller selection rather than assumed hand tracking. This is the appropriate 3D modeling, VR interaction or runtime performance principle for the lesson. Source: MAIC 3D Models for Virtual Reality, page 8."
+    },
+    {
+      "ordinal": 68,
+      "source_page": 8,
+      "stem": "Why should a text card remain readable?",
+      "options": [
+        "Treat a complex visible mesh as mandatory collider geometry",
+        "Assume hand tracking exists on every device",
+        "Visitors need accessible object information",
+        "Use only hue to convey selection"
+      ],
+      "correct_mask": 4,
+      "rationale": "The original course describes visitors need accessible object information. This is the appropriate 3D modeling, VR interaction or runtime performance principle for the lesson. Source: MAIC 3D Models for Virtual Reality, page 8."
+    },
+    {
+      "ordinal": 69,
+      "source_page": 8,
+      "stem": "What can an unexpected object flying toward the viewer cause?",
+      "options": [
+        "Ignore physical play-space boundaries",
+        "Confusion or discomfort",
+        "Make objects fly unexpectedly toward users",
+        "Treat a complex visible mesh as mandatory collider geometry"
+      ],
+      "correct_mask": 2,
+      "rationale": "The original course describes confusion or discomfort. This is the appropriate 3D modeling, VR interaction or runtime performance principle for the lesson. Source: MAIC 3D Models for Virtual Reality, page 8."
+    },
+    {
+      "ordinal": 70,
+      "source_page": 8,
+      "stem": "Does classroom VR testing certify medical safety?",
+      "options": [
+        "Assume hand tracking exists on every device",
+        "No, it provides only limited usability evidence",
+        "Use only hue to convey selection",
+        "Ignore physical play-space boundaries"
+      ],
+      "correct_mask": 2,
+      "rationale": "The original course describes no, it provides only limited usability evidence. This is the appropriate 3D modeling, VR interaction or runtime performance principle for the lesson. Source: MAIC 3D Models for Virtual Reality, page 8."
+    },
+    {
+      "ordinal": 71,
+      "source_page": 9,
+      "stem": "What does OpenXR principally standardize?",
+      "options": [
+        "Treat OpenXR as a 3D file format",
+        "Application interaction with XR runtimes",
+        "Skip tests with real scene content",
+        "Use no device or runtime version details"
+      ],
+      "correct_mask": 2,
+      "rationale": "The original course describes application interaction with XR runtimes. This is the appropriate 3D modeling, VR interaction or runtime performance principle for the lesson. Source: MAIC 3D Models for Virtual Reality, page 9."
+    },
+    {
+      "ordinal": 72,
+      "source_page": 9,
+      "stem": "Which OpenXR major version does Khronos currently publish?",
+      "options": [
+        "Assume simulation certifies headset comfort",
+        "Ignore collider offsets",
+        "Treat OpenXR as a 3D file format",
+        "OpenXR 1.1"
+      ],
+      "correct_mask": 8,
+      "rationale": "The original course describes openXR 1.1. This is the appropriate 3D modeling, VR interaction or runtime performance principle for the lesson. Source: MAIC 3D Models for Virtual Reality, page 9."
+    },
+    {
+      "ordinal": 73,
+      "source_page": 9,
+      "stem": "How is OpenXR different from glTF?",
+      "options": [
+        "Skip tests with real scene content",
+        "Use no device or runtime version details",
+        "It is an XR runtime API rather than a mesh delivery format",
+        "Assume simulation certifies headset comfort"
+      ],
+      "correct_mask": 4,
+      "rationale": "The original course describes it is an XR runtime API rather than a mesh delivery format. This is the appropriate 3D modeling, VR interaction or runtime performance principle for the lesson. Source: MAIC 3D Models for Virtual Reality, page 9."
+    },
+    {
+      "ordinal": 74,
+      "source_page": 9,
+      "stem": "Why test actual headset interaction?",
+      "options": [
+        "Ignore collider offsets",
+        "Treat OpenXR as a 3D file format",
+        "Skip tests with real scene content",
+        "Desktop simulators cannot fully represent immersive behavior"
+      ],
+      "correct_mask": 8,
+      "rationale": "The original course describes desktop simulators cannot fully represent immersive behavior. This is the appropriate 3D modeling, VR interaction or runtime performance principle for the lesson. Source: MAIC 3D Models for Virtual Reality, page 9."
+    },
+    {
+      "ordinal": 75,
+      "source_page": 9,
+      "stem": "What can an offset collider cause?",
+      "options": [
+        "Use no device or runtime version details",
+        "Assume simulation certifies headset comfort",
+        "A visible object that cannot be selected at its expected position",
+        "Ignore collider offsets"
+      ],
+      "correct_mask": 4,
+      "rationale": "The original course describes a visible object that cannot be selected at its expected position. This is the appropriate 3D modeling, VR interaction or runtime performance principle for the lesson. Source: MAIC 3D Models for Virtual Reality, page 9."
+    },
+    {
+      "ordinal": 76,
+      "source_page": 9,
+      "stem": "What should a runtime import test include?",
+      "options": [
+        "Scale, axes, materials, interaction and performance",
+        "Treat OpenXR as a 3D file format",
+        "Skip tests with real scene content",
+        "Use no device or runtime version details"
+      ],
+      "correct_mask": 1,
+      "rationale": "The original course describes scale, axes, materials, interaction and performance. This is the appropriate 3D modeling, VR interaction or runtime performance principle for the lesson. Source: MAIC 3D Models for Virtual Reality, page 9."
+    },
+    {
+      "ordinal": 77,
+      "source_page": 9,
+      "stem": "Why should the target scene be used for profiling?",
+      "options": [
+        "Other objects and lighting change runtime costs",
+        "Assume simulation certifies headset comfort",
+        "Ignore collider offsets",
+        "Treat OpenXR as a 3D file format"
+      ],
+      "correct_mask": 1,
+      "rationale": "The original course describes other objects and lighting change runtime costs. This is the appropriate 3D modeling, VR interaction or runtime performance principle for the lesson. Source: MAIC 3D Models for Virtual Reality, page 9."
+    },
+    {
+      "ordinal": 78,
+      "source_page": 9,
+      "stem": "What should a validation report identify?",
+      "options": [
+        "Skip tests with real scene content",
+        "Use no device or runtime version details",
+        "Assume simulation certifies headset comfort",
+        "Device, runtime, version and observed result"
+      ],
+      "correct_mask": 8,
+      "rationale": "The original course describes device, runtime, version and observed result. This is the appropriate 3D modeling, VR interaction or runtime performance principle for the lesson. Source: MAIC 3D Models for Virtual Reality, page 9."
+    },
+    {
+      "ordinal": 79,
+      "source_page": 9,
+      "stem": "Why can an empty-scene performance test mislead?",
+      "options": [
+        "Ignore collider offsets",
+        "The full scene has additional rendering demands",
+        "Treat OpenXR as a 3D file format",
+        "Skip tests with real scene content"
+      ],
+      "correct_mask": 2,
+      "rationale": "The original course describes the full scene has additional rendering demands. This is the appropriate 3D modeling, VR interaction or runtime performance principle for the lesson. Source: MAIC 3D Models for Virtual Reality, page 9."
+    },
+    {
+      "ordinal": 80,
+      "source_page": 9,
+      "stem": "What must asset acceptance distinguish?",
+      "options": [
+        "Use no device or runtime version details",
+        "Assume simulation certifies headset comfort",
+        "Ignore collider offsets",
+        "File validity, runtime behavior and user experience"
+      ],
+      "correct_mask": 8,
+      "rationale": "The original course describes file validity, runtime behavior and user experience. This is the appropriate 3D modeling, VR interaction or runtime performance principle for the lesson. Source: MAIC 3D Models for Virtual Reality, page 9."
+    },
+    {
+      "ordinal": 81,
+      "source_page": 10,
+      "stem": "What should a VR asset handoff include?",
+      "options": [
+        "State optimized for all headsets after one test",
+        "Include copyrighted third-party models without checking",
+        "Source, export, materials, pivot and test notes",
+        "Assume technical review is unnecessary"
+      ],
+      "correct_mask": 4,
+      "rationale": "The original course describes source, export, materials, pivot and test notes. This is the appropriate 3D modeling, VR interaction or runtime performance principle for the lesson. Source: MAIC 3D Models for Virtual Reality, page 10."
+    },
+    {
+      "ordinal": 82,
+      "source_page": 10,
+      "stem": "Why is an original file name insufficient proof of rights?",
+      "options": [
+        "A third-party asset may still be included without permission",
+        "Treat a good screenshot as performance certification",
+        "Delete change logs after corrections",
+        "State optimized for all headsets after one test"
+      ],
+      "correct_mask": 1,
+      "rationale": "The original course describes a third-party asset may still be included without permission. This is the appropriate 3D modeling, VR interaction or runtime performance principle for the lesson. Source: MAIC 3D Models for Virtual Reality, page 10."
+    },
+    {
+      "ordinal": 83,
+      "source_page": 10,
+      "stem": "What should a geometry QA check inspect?",
+      "options": [
+        "Include copyrighted third-party models without checking",
+        "Assume technical review is unnecessary",
+        "Normals, scale, faces, UVs and transforms",
+        "Treat a good screenshot as performance certification"
+      ],
+      "correct_mask": 4,
+      "rationale": "The original course describes normals, scale, faces, UVs and transforms. This is the appropriate 3D modeling, VR interaction or runtime performance principle for the lesson. Source: MAIC 3D Models for Virtual Reality, page 10."
+    },
+    {
+      "ordinal": 84,
+      "source_page": 10,
+      "stem": "Why must artistic approval differ from runtime QA?",
+      "options": [
+        "Appearance does not guarantee performance or interaction",
+        "Delete change logs after corrections",
+        "State optimized for all headsets after one test",
+        "Include copyrighted third-party models without checking"
+      ],
+      "correct_mask": 1,
+      "rationale": "The original course describes appearance does not guarantee performance or interaction. This is the appropriate 3D modeling, VR interaction or runtime performance principle for the lesson. Source: MAIC 3D Models for Virtual Reality, page 10."
+    },
+    {
+      "ordinal": 85,
+      "source_page": 10,
+      "stem": "What is a risk of aggressive asset optimization?",
+      "options": [
+        "Assume technical review is unnecessary",
+        "Visible silhouette or collision behavior may degrade",
+        "Treat a good screenshot as performance certification",
+        "Delete change logs after corrections"
+      ],
+      "correct_mask": 2,
+      "rationale": "The original course describes visible silhouette or collision behavior may degrade. This is the appropriate 3D modeling, VR interaction or runtime performance principle for the lesson. Source: MAIC 3D Models for Virtual Reality, page 10."
+    },
+    {
+      "ordinal": 86,
+      "source_page": 10,
+      "stem": "Why name the tested headset in a performance claim?",
+      "options": [
+        "State optimized for all headsets after one test",
+        "Include copyrighted third-party models without checking",
+        "Results are hardware-dependent",
+        "Assume technical review is unnecessary"
+      ],
+      "correct_mask": 4,
+      "rationale": "The original course describes results are hardware-dependent. This is the appropriate 3D modeling, VR interaction or runtime performance principle for the lesson. Source: MAIC 3D Models for Virtual Reality, page 10."
+    },
+    {
+      "ordinal": 87,
+      "source_page": 10,
+      "stem": "What should be done after correcting an import defect?",
+      "options": [
+        "Version the asset and rerun the relevant test",
+        "Treat a good screenshot as performance certification",
+        "Delete change logs after corrections",
+        "State optimized for all headsets after one test"
+      ],
+      "correct_mask": 1,
+      "rationale": "The original course describes version the asset and rerun the relevant test. This is the appropriate 3D modeling, VR interaction or runtime performance principle for the lesson. Source: MAIC 3D Models for Virtual Reality, page 10."
+    },
+    {
+      "ordinal": 88,
+      "source_page": 10,
+      "stem": "Why must known limitations appear in the handoff?",
+      "options": [
+        "Include copyrighted third-party models without checking",
+        "Assume technical review is unnecessary",
+        "Reviewers should not infer untested compatibility",
+        "Treat a good screenshot as performance certification"
+      ],
+      "correct_mask": 4,
+      "rationale": "The original course describes reviewers should not infer untested compatibility. This is the appropriate 3D modeling, VR interaction or runtime performance principle for the lesson. Source: MAIC 3D Models for Virtual Reality, page 10."
+    },
+    {
+      "ordinal": 89,
+      "source_page": 10,
+      "stem": "What is an appropriate scope of a VR performance statement?",
+      "options": [
+        "Delete change logs after corrections",
+        "State optimized for all headsets after one test",
+        "Tested device, scene and criteria",
+        "Include copyrighted third-party models without checking"
+      ],
+      "correct_mask": 4,
+      "rationale": "The original course describes tested device, scene and criteria. This is the appropriate 3D modeling, VR interaction or runtime performance principle for the lesson. Source: MAIC 3D Models for Virtual Reality, page 10."
+    },
+    {
+      "ordinal": 90,
+      "source_page": 10,
+      "stem": "What should a texture QA check verify?",
+      "options": [
+        "Assume technical review is unnecessary",
+        "Treat a good screenshot as performance certification",
+        "Resolution, mapping and permitted content",
+        "Delete change logs after corrections"
+      ],
+      "correct_mask": 4,
+      "rationale": "The original course describes resolution, mapping and permitted content. This is the appropriate 3D modeling, VR interaction or runtime performance principle for the lesson. Source: MAIC 3D Models for Virtual Reality, page 10."
+    },
+    {
+      "ordinal": 91,
+      "source_page": 11,
+      "stem": "What is the fictional exhibit sculpture height?",
+      "options": [
+        "Present a fictional sculpture as an owned real museum artifact",
+        "0.6 meters",
+        "Assume 1.5 meters proves ideal universal access height",
+        "Claim headset comfort was tested without device use"
+      ],
+      "correct_mask": 2,
+      "rationale": "The original course describes 0.6 meters. This is the appropriate 3D modeling, VR interaction or runtime performance principle for the lesson. Source: MAIC 3D Models for Virtual Reality, page 11."
+    },
+    {
+      "ordinal": 92,
+      "source_page": 11,
+      "stem": "What is its pedestal height?",
+      "options": [
+        "0.9 meters",
+        "Rotate the pedestal when only the artwork should turn",
+        "Omit all interaction feedback",
+        "Present a fictional sculpture as an owned real museum artifact"
+      ],
+      "correct_mask": 1,
+      "rationale": "The original course describes 0.9 meters. This is the appropriate 3D modeling, VR interaction or runtime performance principle for the lesson. Source: MAIC 3D Models for Virtual Reality, page 11."
+    },
+    {
+      "ordinal": 93,
+      "source_page": 11,
+      "stem": "What is their nominal combined height?",
+      "options": [
+        "1.5 meters",
+        "Assume 1.5 meters proves ideal universal access height",
+        "Claim headset comfort was tested without device use",
+        "Rotate the pedestal when only the artwork should turn"
+      ],
+      "correct_mask": 1,
+      "rationale": "The original course describes 1.5 meters. This is the appropriate 3D modeling, VR interaction or runtime performance principle for the lesson. Source: MAIC 3D Models for Virtual Reality, page 11."
+    },
+    {
+      "ordinal": 94,
+      "source_page": 11,
+      "stem": "What visitor action is available for the exhibit?",
+      "options": [
+        "Omit all interaction feedback",
+        "Present a fictional sculpture as an owned real museum artifact",
+        "Select and rotate the artwork",
+        "Assume 1.5 meters proves ideal universal access height"
+      ],
+      "correct_mask": 4,
+      "rationale": "The original course describes select and rotate the artwork. This is the appropriate 3D modeling, VR interaction or runtime performance principle for the lesson. Source: MAIC 3D Models for Virtual Reality, page 11."
+    },
+    {
+      "ordinal": 95,
+      "source_page": 11,
+      "stem": "What should rotate with the sculpture instead of the pedestal?",
+      "options": [
+        "Claim headset comfort was tested without device use",
+        "Rotate the pedestal when only the artwork should turn",
+        "The sculpture around its intended pivot",
+        "Omit all interaction feedback"
+      ],
+      "correct_mask": 4,
+      "rationale": "The original course describes the sculpture around its intended pivot. This is the appropriate 3D modeling, VR interaction or runtime performance principle for the lesson. Source: MAIC 3D Models for Virtual Reality, page 11."
+    },
+    {
+      "ordinal": 96,
+      "source_page": 11,
+      "stem": "Why should a static information card be readable?",
+      "options": [
+        "Provide meaningful object description",
+        "Present a fictional sculpture as an owned real museum artifact",
+        "Assume 1.5 meters proves ideal universal access height",
+        "Claim headset comfort was tested without device use"
+      ],
+      "correct_mask": 1,
+      "rationale": "The original course describes provide meaningful object description. This is the appropriate 3D modeling, VR interaction or runtime performance principle for the lesson. Source: MAIC 3D Models for Virtual Reality, page 11."
+    },
+    {
+      "ordinal": 97,
+      "source_page": 11,
+      "stem": "What model types should be retained?",
+      "options": [
+        "Rotate the pedestal when only the artwork should turn",
+        "Omit all interaction feedback",
+        "Present a fictional sculpture as an owned real museum artifact",
+        "Editable high-detail source and optimized runtime version"
+      ],
+      "correct_mask": 8,
+      "rationale": "The original course describes editable high-detail source and optimized runtime version. This is the appropriate 3D modeling, VR interaction or runtime performance principle for the lesson. Source: MAIC 3D Models for Virtual Reality, page 11."
+    },
+    {
+      "ordinal": 98,
+      "source_page": 11,
+      "stem": "Why is this not a verified real museum object?",
+      "options": [
+        "Assume 1.5 meters proves ideal universal access height",
+        "The sculpture was invented for instruction",
+        "Claim headset comfort was tested without device use",
+        "Rotate the pedestal when only the artwork should turn"
+      ],
+      "correct_mask": 2,
+      "rationale": "The original course describes the sculpture was invented for instruction. This is the appropriate 3D modeling, VR interaction or runtime performance principle for the lesson. Source: MAIC 3D Models for Virtual Reality, page 11."
+    },
+    {
+      "ordinal": 99,
+      "source_page": 11,
+      "stem": "What test helps evaluate selection accuracy?",
+      "options": [
+        "Omit all interaction feedback",
+        "Present a fictional sculpture as an owned real museum artifact",
+        "Compare visible object and collider positions",
+        "Assume 1.5 meters proves ideal universal access height"
+      ],
+      "correct_mask": 4,
+      "rationale": "The original course describes compare visible object and collider positions. This is the appropriate 3D modeling, VR interaction or runtime performance principle for the lesson. Source: MAIC 3D Models for Virtual Reality, page 11."
+    },
+    {
+      "ordinal": 100,
+      "source_page": 11,
+      "stem": "What should be disclosed when no headset test was performed?",
+      "options": [
+        "Claim headset comfort was tested without device use",
+        "Depth and comfort remain unverified",
+        "Rotate the pedestal when only the artwork should turn",
+        "Omit all interaction feedback"
+      ],
+      "correct_mask": 2,
+      "rationale": "The original course describes depth and comfort remain unverified. This is the appropriate 3D modeling, VR interaction or runtime performance principle for the lesson. Source: MAIC 3D Models for Virtual Reality, page 11."
+    }
+  ]
+}
