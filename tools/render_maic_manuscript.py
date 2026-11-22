@@ -167,8 +167,8 @@ def main():
     args = parser.parse_args()
 
     source = Path(args.input).read_text(encoding="utf-8")
-    title_match = re.search(r"^#\\s+(.+)$", source, re.M)
-    hours_match = re.search(r"^Estimated guided study:\\s*(\\d+)\\s*hours\\b", source, re.M)
+    title_match = re.search(r"^#\s+(.+)$", source, re.M)
+    hours_match = re.search(r"^Estimated guided study:\s*(\d+)\s*hours\b", source, re.M)
     if not title_match or not hours_match:
         raise ValueError("Manual must declare course title and study hours")
     title = title_match.group(1).strip()
