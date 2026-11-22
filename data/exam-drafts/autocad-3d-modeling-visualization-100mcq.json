@@ -1,0 +1,1312 @@
+{
+  "course_id": "autocad-3d-modeling-visualization",
+  "source_manuscript": "data/course-manuscripts/autocad-3d-modeling-visualization.md",
+  "source_manuscript_blob_sha": "8216e9fbe51c0bea35bf9889d9256baf63d2c267",
+  "source_pdf_sha256": null,
+  "bank_version": "draft-manuscript-20261123-v1",
+  "approval_status": "editorial_draft_pending_independent_review",
+  "number_of_questions": 100,
+  "note": "Unapproved original academic review question bank. Vendor certification, physical load testing, and source PDF approval are not implied.",
+  "questions": [
+    {
+      "ordinal": 1,
+      "source_page": 2,
+      "stem": "What does a three-dimensional CAD model represent?",
+      "options": [
+        "Choose a render instead of an editable model",
+        "Treat a pretty model as a tested engineering product",
+        "Use visual color as proof of dimensions",
+        "Length, width, height and geometric relationships"
+      ],
+      "correct_mask": 8,
+      "rationale": "The original course manual explains that length, width, height and geometric relationships. This follows its coordinate, solid modeling, visualization or geometric verification content. Source: MAIC AutoCAD 3D Design: Modeling and Visualization, page 2."
+    },
+    {
+      "ordinal": 2,
+      "source_page": 2,
+      "stem": "Which model type represents an enclosed physical volume?",
+      "options": [
+        "Assume all meshes are closed solids",
+        "Work without a coordinate system",
+        "A 3D solid",
+        "Choose a render instead of an editable model"
+      ],
+      "correct_mask": 4,
+      "rationale": "The original course manual explains that a 3D solid. This follows its coordinate, solid modeling, visualization or geometric verification content. Source: MAIC AutoCAD 3D Design: Modeling and Visualization, page 2."
+    },
+    {
+      "ordinal": 3,
+      "source_page": 2,
+      "stem": "What model type may describe an open curved boundary?",
+      "options": [
+        "A surface",
+        "Treat a pretty model as a tested engineering product",
+        "Use visual color as proof of dimensions",
+        "Assume all meshes are closed solids"
+      ],
+      "correct_mask": 1,
+      "rationale": "The original course manual explains that a surface. This follows its coordinate, solid modeling, visualization or geometric verification content. Source: MAIC AutoCAD 3D Design: Modeling and Visualization, page 2."
+    },
+    {
+      "ordinal": 4,
+      "source_page": 2,
+      "stem": "Why is a wireframe useful early in development?",
+      "options": [
+        "It provides reference geometry and spatial structure",
+        "Work without a coordinate system",
+        "Choose a render instead of an editable model",
+        "Treat a pretty model as a tested engineering product"
+      ],
+      "correct_mask": 1,
+      "rationale": "The original course manual explains that it provides reference geometry and spatial structure. This follows its coordinate, solid modeling, visualization or geometric verification content. Source: MAIC AutoCAD 3D Design: Modeling and Visualization, page 2."
+    },
+    {
+      "ordinal": 5,
+      "source_page": 2,
+      "stem": "What is the purpose of selecting the right 3D representation?",
+      "options": [
+        "Support appropriate editing and verification methods",
+        "Use visual color as proof of dimensions",
+        "Assume all meshes are closed solids",
+        "Work without a coordinate system"
+      ],
+      "correct_mask": 1,
+      "rationale": "The original course manual explains that support appropriate editing and verification methods. This follows its coordinate, solid modeling, visualization or geometric verification content. Source: MAIC AutoCAD 3D Design: Modeling and Visualization, page 2."
+    },
+    {
+      "ordinal": 6,
+      "source_page": 2,
+      "stem": "Can a convincing render establish manufacturing approval?",
+      "options": [
+        "Choose a render instead of an editable model",
+        "Treat a pretty model as a tested engineering product",
+        "Use visual color as proof of dimensions",
+        "No, analysis and testing remain necessary"
+      ],
+      "correct_mask": 8,
+      "rationale": "The original course manual explains that no, analysis and testing remain necessary. This follows its coordinate, solid modeling, visualization or geometric verification content. Source: MAIC AutoCAD 3D Design: Modeling and Visualization, page 2."
+    },
+    {
+      "ordinal": 7,
+      "source_page": 2,
+      "stem": "What is an appropriate course outcome?",
+      "options": [
+        "Assume all meshes are closed solids",
+        "An inspectable 3D model with dimensions and documented exports",
+        "Work without a coordinate system",
+        "Choose a render instead of an editable model"
+      ],
+      "correct_mask": 2,
+      "rationale": "The original course manual explains that an inspectable 3D model with dimensions and documented exports. This follows its coordinate, solid modeling, visualization or geometric verification content. Source: MAIC AutoCAD 3D Design: Modeling and Visualization, page 2."
+    },
+    {
+      "ordinal": 8,
+      "source_page": 2,
+      "stem": "Why should fictional bracket dimensions be labeled as training data?",
+      "options": [
+        "Treat a pretty model as a tested engineering product",
+        "Use visual color as proof of dimensions",
+        "They are not a certified real design specification",
+        "Assume all meshes are closed solids"
+      ],
+      "correct_mask": 4,
+      "rationale": "The original course manual explains that they are not a certified real design specification. This follows its coordinate, solid modeling, visualization or geometric verification content. Source: MAIC AutoCAD 3D Design: Modeling and Visualization, page 2."
+    },
+    {
+      "ordinal": 9,
+      "source_page": 2,
+      "stem": "Which deliverable retains editable AutoCAD construction information?",
+      "options": [
+        "Work without a coordinate system",
+        "Choose a render instead of an editable model",
+        "Treat a pretty model as a tested engineering product",
+        "The authoritative DWG source"
+      ],
+      "correct_mask": 8,
+      "rationale": "The original course manual explains that the authoritative DWG source. This follows its coordinate, solid modeling, visualization or geometric verification content. Source: MAIC AutoCAD 3D Design: Modeling and Visualization, page 2."
+    },
+    {
+      "ordinal": 10,
+      "source_page": 2,
+      "stem": "What should precede selecting a photorealistic material?",
+      "options": [
+        "Use visual color as proof of dimensions",
+        "Assume all meshes are closed solids",
+        "Work without a coordinate system",
+        "Geometry and functional requirements"
+      ],
+      "correct_mask": 8,
+      "rationale": "The original course manual explains that geometry and functional requirements. This follows its coordinate, solid modeling, visualization or geometric verification content. Source: MAIC AutoCAD 3D Design: Modeling and Visualization, page 2."
+    },
+    {
+      "ordinal": 11,
+      "source_page": 3,
+      "stem": "What must be established before constructing a dimensioned model?",
+      "options": [
+        "Assume a camera rotation automatically changes the UCS",
+        "Estimate hole centers by appearance only",
+        "Use no numerical feature plan",
+        "Units, reference axes and required dimensions"
+      ],
+      "correct_mask": 8,
+      "rationale": "The original course manual explains that units, reference axes and required dimensions. This follows its coordinate, solid modeling, visualization or geometric verification content. Source: MAIC AutoCAD 3D Design: Modeling and Visualization, page 3."
+    },
+    {
+      "ordinal": 12,
+      "source_page": 3,
+      "stem": "What is WCS in AutoCAD?",
+      "options": [
+        "Ignore the physical unit convention",
+        "Mix construction guides with final solids",
+        "Assume a camera rotation automatically changes the UCS",
+        "The World Coordinate System"
+      ],
+      "correct_mask": 8,
+      "rationale": "The original course manual explains that the World Coordinate System. This follows its coordinate, solid modeling, visualization or geometric verification content. Source: MAIC AutoCAD 3D Design: Modeling and Visualization, page 3."
+    },
+    {
+      "ordinal": 13,
+      "source_page": 3,
+      "stem": "What is a UCS used for?",
+      "options": [
+        "Estimate hole centers by appearance only",
+        "Orienting the local working coordinate system",
+        "Use no numerical feature plan",
+        "Ignore the physical unit convention"
+      ],
+      "correct_mask": 2,
+      "rationale": "The original course manual explains that orienting the local working coordinate system. This follows its coordinate, solid modeling, visualization or geometric verification content. Source: MAIC AutoCAD 3D Design: Modeling and Visualization, page 3."
+    },
+    {
+      "ordinal": 14,
+      "source_page": 3,
+      "stem": "Why can rotating the camera fail to change the drawing plane?",
+      "options": [
+        "Mix construction guides with final solids",
+        "Assume a camera rotation automatically changes the UCS",
+        "View direction and UCS orientation are different",
+        "Estimate hole centers by appearance only"
+      ],
+      "correct_mask": 4,
+      "rationale": "The original course manual explains that view direction and UCS orientation are different. This follows its coordinate, solid modeling, visualization or geometric verification content. Source: MAIC AutoCAD 3D Design: Modeling and Visualization, page 3."
+    },
+    {
+      "ordinal": 15,
+      "source_page": 3,
+      "stem": "Which view is useful for inspecting a bracket's thickness?",
+      "options": [
+        "Use no numerical feature plan",
+        "Ignore the physical unit convention",
+        "Front or side orthographic view",
+        "Mix construction guides with final solids"
+      ],
+      "correct_mask": 4,
+      "rationale": "The original course manual explains that front or side orthographic view. This follows its coordinate, solid modeling, visualization or geometric verification content. Source: MAIC AutoCAD 3D Design: Modeling and Visualization, page 3."
+    },
+    {
+      "ordinal": 16,
+      "source_page": 3,
+      "stem": "Why should temporary geometry be separated from final solids?",
+      "options": [
+        "Assume a camera rotation automatically changes the UCS",
+        "It prevents mistakes in selection and export",
+        "Estimate hole centers by appearance only",
+        "Use no numerical feature plan"
+      ],
+      "correct_mask": 2,
+      "rationale": "The original course manual explains that it prevents mistakes in selection and export. This follows its coordinate, solid modeling, visualization or geometric verification content. Source: MAIC AutoCAD 3D Design: Modeling and Visualization, page 3."
+    },
+    {
+      "ordinal": 17,
+      "source_page": 3,
+      "stem": "What is an appropriate unit for the fictional bracket dimensions?",
+      "options": [
+        "Ignore the physical unit convention",
+        "Millimeters",
+        "Mix construction guides with final solids",
+        "Assume a camera rotation automatically changes the UCS"
+      ],
+      "correct_mask": 2,
+      "rationale": "The original course manual explains that millimeters. This follows its coordinate, solid modeling, visualization or geometric verification content. Source: MAIC AutoCAD 3D Design: Modeling and Visualization, page 3."
+    },
+    {
+      "ordinal": 18,
+      "source_page": 3,
+      "stem": "Why should feature positions use actual coordinates?",
+      "options": [
+        "Visual estimates may produce incorrect hole locations",
+        "Estimate hole centers by appearance only",
+        "Use no numerical feature plan",
+        "Ignore the physical unit convention"
+      ],
+      "correct_mask": 1,
+      "rationale": "The original course manual explains that visual estimates may produce incorrect hole locations. This follows its coordinate, solid modeling, visualization or geometric verification content. Source: MAIC AutoCAD 3D Design: Modeling and Visualization, page 3."
+    },
+    {
+      "ordinal": 19,
+      "source_page": 3,
+      "stem": "What is the nominal dimension of the base before adding a tab?",
+      "options": [
+        "120 by 60 by 10 millimeters",
+        "Mix construction guides with final solids",
+        "Assume a camera rotation automatically changes the UCS",
+        "Estimate hole centers by appearance only"
+      ],
+      "correct_mask": 1,
+      "rationale": "The original course manual explains that 120 by 60 by 10 millimeters. This follows its coordinate, solid modeling, visualization or geometric verification content. Source: MAIC AutoCAD 3D Design: Modeling and Visualization, page 3."
+    },
+    {
+      "ordinal": 20,
+      "source_page": 3,
+      "stem": "What should a model plan document before editing?",
+      "options": [
+        "Use no numerical feature plan",
+        "Ignore the physical unit convention",
+        "Its intended features and construction sequence",
+        "Mix construction guides with final solids"
+      ],
+      "correct_mask": 4,
+      "rationale": "The original course manual explains that its intended features and construction sequence. This follows its coordinate, solid modeling, visualization or geometric verification content. Source: MAIC AutoCAD 3D Design: Modeling and Visualization, page 3."
+    },
+    {
+      "ordinal": 21,
+      "source_page": 4,
+      "stem": "Which AutoCAD primitive creates a rectangular 3D block?",
+      "options": [
+        "Assume open profiles always create valid closed solids",
+        "Use a dramatic camera angle as an extrusion",
+        "BOX",
+        "Calculate part mass without material density"
+      ],
+      "correct_mask": 4,
+      "rationale": "The original course manual explains that bOX. This follows its coordinate, solid modeling, visualization or geometric verification content. Source: MAIC AutoCAD 3D Design: Modeling and Visualization, page 4."
+    },
+    {
+      "ordinal": 22,
+      "source_page": 4,
+      "stem": "What does EXTRUDE commonly do to a suitable closed profile?",
+      "options": [
+        "Treat every modeling operation as a Boolean subtraction",
+        "Extend it to create a 3D solid",
+        "Ignore UCS orientation while drawing",
+        "Assume open profiles always create valid closed solids"
+      ],
+      "correct_mask": 2,
+      "rationale": "The original course manual explains that extend it to create a 3D solid. This follows its coordinate, solid modeling, visualization or geometric verification content. Source: MAIC AutoCAD 3D Design: Modeling and Visualization, page 4."
+    },
+    {
+      "ordinal": 23,
+      "source_page": 4,
+      "stem": "What does REVOLVE use to create a new form?",
+      "options": [
+        "Use a dramatic camera angle as an extrusion",
+        "Calculate part mass without material density",
+        "Treat every modeling operation as a Boolean subtraction",
+        "A profile rotated around an axis"
+      ],
+      "correct_mask": 8,
+      "rationale": "The original course manual explains that a profile rotated around an axis. This follows its coordinate, solid modeling, visualization or geometric verification content. Source: MAIC AutoCAD 3D Design: Modeling and Visualization, page 4."
+    },
+    {
+      "ordinal": 24,
+      "source_page": 4,
+      "stem": "What does SWEEP use to shape geometry?",
+      "options": [
+        "Ignore UCS orientation while drawing",
+        "Assume open profiles always create valid closed solids",
+        "Use a dramatic camera angle as an extrusion",
+        "A profile moved along a defined path"
+      ],
+      "correct_mask": 8,
+      "rationale": "The original course manual explains that a profile moved along a defined path. This follows its coordinate, solid modeling, visualization or geometric verification content. Source: MAIC AutoCAD 3D Design: Modeling and Visualization, page 4."
+    },
+    {
+      "ordinal": 25,
+      "source_page": 4,
+      "stem": "What does LOFT use to form a shape?",
+      "options": [
+        "A series of cross-sectional profiles",
+        "Calculate part mass without material density",
+        "Treat every modeling operation as a Boolean subtraction",
+        "Ignore UCS orientation while drawing"
+      ],
+      "correct_mask": 1,
+      "rationale": "The original course manual explains that a series of cross-sectional profiles. This follows its coordinate, solid modeling, visualization or geometric verification content. Source: MAIC AutoCAD 3D Design: Modeling and Visualization, page 4."
+    },
+    {
+      "ordinal": 26,
+      "source_page": 4,
+      "stem": "Why can a gap in a 2D outline block solid creation?",
+      "options": [
+        "Assume open profiles always create valid closed solids",
+        "The intended closed region is not valid",
+        "Use a dramatic camera angle as an extrusion",
+        "Calculate part mass without material density"
+      ],
+      "correct_mask": 2,
+      "rationale": "The original course manual explains that the intended closed region is not valid. This follows its coordinate, solid modeling, visualization or geometric verification content. Source: MAIC AutoCAD 3D Design: Modeling and Visualization, page 4."
+    },
+    {
+      "ordinal": 27,
+      "source_page": 4,
+      "stem": "What does PRESSPULL do with a closed bounded planar area?",
+      "options": [
+        "Treat every modeling operation as a Boolean subtraction",
+        "Extrude it into a solid",
+        "Ignore UCS orientation while drawing",
+        "Assume open profiles always create valid closed solids"
+      ],
+      "correct_mask": 2,
+      "rationale": "The original course manual explains that extrude it into a solid. This follows its coordinate, solid modeling, visualization or geometric verification content. Source: MAIC AutoCAD 3D Design: Modeling and Visualization, page 4."
+    },
+    {
+      "ordinal": 28,
+      "source_page": 4,
+      "stem": "Why must an active UCS be checked before extrusion?",
+      "options": [
+        "Use a dramatic camera angle as an extrusion",
+        "Calculate part mass without material density",
+        "It influences the relevant working plane and direction",
+        "Treat every modeling operation as a Boolean subtraction"
+      ],
+      "correct_mask": 4,
+      "rationale": "The original course manual explains that it influences the relevant working plane and direction. This follows its coordinate, solid modeling, visualization or geometric verification content. Source: MAIC AutoCAD 3D Design: Modeling and Visualization, page 4."
+    },
+    {
+      "ordinal": 29,
+      "source_page": 4,
+      "stem": "What is the volume of a 120 by 60 by 10 mm rectangular block?",
+      "options": [
+        "72,000 cubic millimeters",
+        "Ignore UCS orientation while drawing",
+        "Assume open profiles always create valid closed solids",
+        "Use a dramatic camera angle as an extrusion"
+      ],
+      "correct_mask": 1,
+      "rationale": "The original course manual explains that 72,000 cubic millimeters. This follows its coordinate, solid modeling, visualization or geometric verification content. Source: MAIC AutoCAD 3D Design: Modeling and Visualization, page 4."
+    },
+    {
+      "ordinal": 30,
+      "source_page": 4,
+      "stem": "Why does solid volume not directly establish part mass?",
+      "options": [
+        "Calculate part mass without material density",
+        "Treat every modeling operation as a Boolean subtraction",
+        "Material density is needed",
+        "Ignore UCS orientation while drawing"
+      ],
+      "correct_mask": 4,
+      "rationale": "The original course manual explains that material density is needed. This follows its coordinate, solid modeling, visualization or geometric verification content. Source: MAIC AutoCAD 3D Design: Modeling and Visualization, page 4."
+    },
+    {
+      "ordinal": 31,
+      "source_page": 5,
+      "stem": "What does UNION do with compatible solid objects?",
+      "options": [
+        "Use UNION to drill every hole",
+        "Combine them into a composite solid",
+        "Choose subtraction objects without checking order",
+        "Ignore closed-solid volume after editing"
+      ],
+      "correct_mask": 2,
+      "rationale": "The original course manual explains that combine them into a composite solid. This follows its coordinate, solid modeling, visualization or geometric verification content. Source: MAIC AutoCAD 3D Design: Modeling and Visualization, page 5."
+    },
+    {
+      "ordinal": 32,
+      "source_page": 5,
+      "stem": "What does SUBTRACT do in solid modeling?",
+      "options": [
+        "Assume INTERSECT removes all overlapping geometry",
+        "Remove one overlapping solid's volume from another",
+        "Treat a blind recess as a guaranteed through-hole",
+        "Use UNION to drill every hole"
+      ],
+      "correct_mask": 2,
+      "rationale": "The original course manual explains that remove one overlapping solid's volume from another. This follows its coordinate, solid modeling, visualization or geometric verification content. Source: MAIC AutoCAD 3D Design: Modeling and Visualization, page 5."
+    },
+    {
+      "ordinal": 33,
+      "source_page": 5,
+      "stem": "What does INTERSECT retain?",
+      "options": [
+        "Choose subtraction objects without checking order",
+        "Ignore closed-solid volume after editing",
+        "Assume INTERSECT removes all overlapping geometry",
+        "The common overlapping volume"
+      ],
+      "correct_mask": 8,
+      "rationale": "The original course manual explains that the common overlapping volume. This follows its coordinate, solid modeling, visualization or geometric verification content. Source: MAIC AutoCAD 3D Design: Modeling and Visualization, page 5."
+    },
+    {
+      "ordinal": 34,
+      "source_page": 5,
+      "stem": "What does a cylindrical subtraction create through a plate?",
+      "options": [
+        "Treat a blind recess as a guaranteed through-hole",
+        "Use UNION to drill every hole",
+        "Choose subtraction objects without checking order",
+        "A through-hole when the cylinder crosses its full thickness"
+      ],
+      "correct_mask": 8,
+      "rationale": "The original course manual explains that a through-hole when the cylinder crosses its full thickness. This follows its coordinate, solid modeling, visualization or geometric verification content. Source: MAIC AutoCAD 3D Design: Modeling and Visualization, page 5."
+    },
+    {
+      "ordinal": 35,
+      "source_page": 5,
+      "stem": "What is a risk of using a too-short subtractive cylinder?",
+      "options": [
+        "Ignore closed-solid volume after editing",
+        "Creating a blind recess instead of a through-hole",
+        "Assume INTERSECT removes all overlapping geometry",
+        "Treat a blind recess as a guaranteed through-hole"
+      ],
+      "correct_mask": 2,
+      "rationale": "The original course manual explains that creating a blind recess instead of a through-hole. This follows its coordinate, solid modeling, visualization or geometric verification content. Source: MAIC AutoCAD 3D Design: Modeling and Visualization, page 5."
+    },
+    {
+      "ordinal": 36,
+      "source_page": 5,
+      "stem": "Why should a hole be viewed from two sides?",
+      "options": [
+        "Use UNION to drill every hole",
+        "Choose subtraction objects without checking order",
+        "One view may hide incomplete penetration",
+        "Ignore closed-solid volume after editing"
+      ],
+      "correct_mask": 4,
+      "rationale": "The original course manual explains that one view may hide incomplete penetration. This follows its coordinate, solid modeling, visualization or geometric verification content. Source: MAIC AutoCAD 3D Design: Modeling and Visualization, page 5."
+    },
+    {
+      "ordinal": 37,
+      "source_page": 5,
+      "stem": "What is the formula for a cylinder volume?",
+      "options": [
+        "Assume INTERSECT removes all overlapping geometry",
+        "Treat a blind recess as a guaranteed through-hole",
+        "Use UNION to drill every hole",
+        "Pi times radius squared times height"
+      ],
+      "correct_mask": 8,
+      "rationale": "The original course manual explains that pi times radius squared times height. This follows its coordinate, solid modeling, visualization or geometric verification content. Source: MAIC AutoCAD 3D Design: Modeling and Visualization, page 5."
+    },
+    {
+      "ordinal": 38,
+      "source_page": 5,
+      "stem": "What is the volume of a radius-5 mm cylinder 10 mm tall?",
+      "options": [
+        "Choose subtraction objects without checking order",
+        "Approximately 785.4 cubic millimeters",
+        "Ignore closed-solid volume after editing",
+        "Assume INTERSECT removes all overlapping geometry"
+      ],
+      "correct_mask": 2,
+      "rationale": "The original course manual explains that approximately 785.4 cubic millimeters. This follows its coordinate, solid modeling, visualization or geometric verification content. Source: MAIC AutoCAD 3D Design: Modeling and Visualization, page 5."
+    },
+    {
+      "ordinal": 39,
+      "source_page": 5,
+      "stem": "What remains after subtracting that fully contained cylinder from 72,000 mm cubed?",
+      "options": [
+        "Treat a blind recess as a guaranteed through-hole",
+        "Approximately 71,214.6 cubic millimeters",
+        "Use UNION to drill every hole",
+        "Choose subtraction objects without checking order"
+      ],
+      "correct_mask": 2,
+      "rationale": "The original course manual explains that approximately 71,214.6 cubic millimeters. This follows its coordinate, solid modeling, visualization or geometric verification content. Source: MAIC AutoCAD 3D Design: Modeling and Visualization, page 5."
+    },
+    {
+      "ordinal": 40,
+      "source_page": 5,
+      "stem": "Why should object selection order be checked in SUBTRACT?",
+      "options": [
+        "Ignore closed-solid volume after editing",
+        "Assume INTERSECT removes all overlapping geometry",
+        "The operation removes the second selection from the first",
+        "Treat a blind recess as a guaranteed through-hole"
+      ],
+      "correct_mask": 4,
+      "rationale": "The original course manual explains that the operation removes the second selection from the first. This follows its coordinate, solid modeling, visualization or geometric verification content. Source: MAIC AutoCAD 3D Design: Modeling and Visualization, page 5."
+    },
+    {
+      "ordinal": 41,
+      "source_page": 6,
+      "stem": "What does 3DORBIT primarily change?",
+      "options": [
+        "Assume 3DORBIT edits the model's dimensions",
+        "Use only one perspective image for all checks",
+        "The camera view of the model",
+        "Ignore profile closure after a failed extrusion"
+      ],
+      "correct_mask": 4,
+      "rationale": "The original course manual explains that the camera view of the model. This follows its coordinate, solid modeling, visualization or geometric verification content. Source: MAIC AutoCAD 3D Design: Modeling and Visualization, page 6."
+    },
+    {
+      "ordinal": 42,
+      "source_page": 6,
+      "stem": "Which presentation setting may enhance perceived shape?",
+      "options": [
+        "Treat visual styles as certified measurement",
+        "Rotate the camera to fix a wrong UCS",
+        "Assume 3DORBIT edits the model's dimensions",
+        "A Conceptual or Realistic visual style"
+      ],
+      "correct_mask": 8,
+      "rationale": "The original course manual explains that a Conceptual or Realistic visual style. This follows its coordinate, solid modeling, visualization or geometric verification content. Source: MAIC AutoCAD 3D Design: Modeling and Visualization, page 6."
+    },
+    {
+      "ordinal": 43,
+      "source_page": 6,
+      "stem": "What is useful for precise dimensional comparisons?",
+      "options": [
+        "An orthographic parallel-projection view",
+        "Use only one perspective image for all checks",
+        "Ignore profile closure after a failed extrusion",
+        "Treat visual styles as certified measurement"
+      ],
+      "correct_mask": 1,
+      "rationale": "The original course manual explains that an orthographic parallel-projection view. This follows its coordinate, solid modeling, visualization or geometric verification content. Source: MAIC AutoCAD 3D Design: Modeling and Visualization, page 6."
+    },
+    {
+      "ordinal": 44,
+      "source_page": 6,
+      "stem": "Why should UCS and camera settings be distinguished?",
+      "options": [
+        "A view rotation does not relocate the working axes",
+        "Rotate the camera to fix a wrong UCS",
+        "Assume 3DORBIT edits the model's dimensions",
+        "Use only one perspective image for all checks"
+      ],
+      "correct_mask": 1,
+      "rationale": "The original course manual explains that a view rotation does not relocate the working axes. This follows its coordinate, solid modeling, visualization or geometric verification content. Source: MAIC AutoCAD 3D Design: Modeling and Visualization, page 6."
+    },
+    {
+      "ordinal": 45,
+      "source_page": 6,
+      "stem": "When is reorienting the UCS useful?",
+      "options": [
+        "Ignore profile closure after a failed extrusion",
+        "Treat visual styles as certified measurement",
+        "Rotate the camera to fix a wrong UCS",
+        "Creating geometry on an inclined or vertical plane"
+      ],
+      "correct_mask": 8,
+      "rationale": "The original course manual explains that creating geometry on an inclined or vertical plane. This follows its coordinate, solid modeling, visualization or geometric verification content. Source: MAIC AutoCAD 3D Design: Modeling and Visualization, page 6."
+    },
+    {
+      "ordinal": 46,
+      "source_page": 6,
+      "stem": "What might explain an extrusion along the wrong axis?",
+      "options": [
+        "Assume 3DORBIT edits the model's dimensions",
+        "Use only one perspective image for all checks",
+        "Ignore profile closure after a failed extrusion",
+        "An unexpected working plane or UCS orientation"
+      ],
+      "correct_mask": 8,
+      "rationale": "The original course manual explains that an unexpected working plane or UCS orientation. This follows its coordinate, solid modeling, visualization or geometric verification content. Source: MAIC AutoCAD 3D Design: Modeling and Visualization, page 6."
+    },
+    {
+      "ordinal": 47,
+      "source_page": 6,
+      "stem": "What should be checked before retrying a failed extrusion?",
+      "options": [
+        "Profile closure, planarity and working plane",
+        "Treat visual styles as certified measurement",
+        "Rotate the camera to fix a wrong UCS",
+        "Assume 3DORBIT edits the model's dimensions"
+      ],
+      "correct_mask": 1,
+      "rationale": "The original course manual explains that profile closure, planarity and working plane. This follows its coordinate, solid modeling, visualization or geometric verification content. Source: MAIC AutoCAD 3D Design: Modeling and Visualization, page 6."
+    },
+    {
+      "ordinal": 48,
+      "source_page": 6,
+      "stem": "Why save several named views when supported?",
+      "options": [
+        "Use only one perspective image for all checks",
+        "They allow repeatable design inspection",
+        "Ignore profile closure after a failed extrusion",
+        "Treat visual styles as certified measurement"
+      ],
+      "correct_mask": 2,
+      "rationale": "The original course manual explains that they allow repeatable design inspection. This follows its coordinate, solid modeling, visualization or geometric verification content. Source: MAIC AutoCAD 3D Design: Modeling and Visualization, page 6."
+    },
+    {
+      "ordinal": 49,
+      "source_page": 6,
+      "stem": "Does a realistic shaded view prove correct dimensions?",
+      "options": [
+        "Rotate the camera to fix a wrong UCS",
+        "Assume 3DORBIT edits the model's dimensions",
+        "Use only one perspective image for all checks",
+        "No, numeric geometry must still be checked"
+      ],
+      "correct_mask": 8,
+      "rationale": "The original course manual explains that no, numeric geometry must still be checked. This follows its coordinate, solid modeling, visualization or geometric verification content. Source: MAIC AutoCAD 3D Design: Modeling and Visualization, page 6."
+    },
+    {
+      "ordinal": 50,
+      "source_page": 6,
+      "stem": "What can a sectional view help reveal?",
+      "options": [
+        "Hidden holes and internal geometry",
+        "Ignore profile closure after a failed extrusion",
+        "Treat visual styles as certified measurement",
+        "Rotate the camera to fix a wrong UCS"
+      ],
+      "correct_mask": 1,
+      "rationale": "The original course manual explains that hidden holes and internal geometry. This follows its coordinate, solid modeling, visualization or geometric verification content. Source: MAIC AutoCAD 3D Design: Modeling and Visualization, page 6."
+    },
+    {
+      "ordinal": 51,
+      "source_page": 7,
+      "stem": "Why should model edits use exact numeric inputs?",
+      "options": [
+        "Important dimensions must remain traceable",
+        "Make every geometric change by eye only",
+        "Treat a rendering as a structural load test",
+        "Ignore hole alignments when moving supports"
+      ],
+      "correct_mask": 1,
+      "rationale": "The original course manual explains that important dimensions must remain traceable. This follows its coordinate, solid modeling, visualization or geometric verification content. Source: MAIC AutoCAD 3D Design: Modeling and Visualization, page 7."
+    },
+    {
+      "ordinal": 52,
+      "source_page": 7,
+      "stem": "What does 3DROTATE support?",
+      "options": [
+        "Convert all valid solids to arbitrary open meshes",
+        "Rotation of 3D objects using axis controls",
+        "Delete prior versions before testing edits",
+        "Make every geometric change by eye only"
+      ],
+      "correct_mask": 2,
+      "rationale": "The original course manual explains that rotation of 3D objects using axis controls. This follows its coordinate, solid modeling, visualization or geometric verification content. Source: MAIC AutoCAD 3D Design: Modeling and Visualization, page 7."
+    },
+    {
+      "ordinal": 53,
+      "source_page": 7,
+      "stem": "Why might a mesh behave differently from a solid?",
+      "options": [
+        "Treat a rendering as a structural load test",
+        "Ignore hole alignments when moving supports",
+        "Convert all valid solids to arbitrary open meshes",
+        "They have different geometric and editing properties"
+      ],
+      "correct_mask": 8,
+      "rationale": "The original course manual explains that they have different geometric and editing properties. This follows its coordinate, solid modeling, visualization or geometric verification content. Source: MAIC AutoCAD 3D Design: Modeling and Visualization, page 7."
+    },
+    {
+      "ordinal": 54,
+      "source_page": 7,
+      "stem": "What can cause downstream 3D printing problems?",
+      "options": [
+        "Delete prior versions before testing edits",
+        "Make every geometric change by eye only",
+        "Treat a rendering as a structural load test",
+        "Open geometry or inconsistent units"
+      ],
+      "correct_mask": 8,
+      "rationale": "The original course manual explains that open geometry or inconsistent units. This follows its coordinate, solid modeling, visualization or geometric verification content. Source: MAIC AutoCAD 3D Design: Modeling and Visualization, page 7."
+    },
+    {
+      "ordinal": 55,
+      "source_page": 7,
+      "stem": "Why should source geometry have a descriptive layer scheme?",
+      "options": [
+        "Ignore hole alignments when moving supports",
+        "Convert all valid solids to arbitrary open meshes",
+        "It supports organized revisions",
+        "Delete prior versions before testing edits"
+      ],
+      "correct_mask": 4,
+      "rationale": "The original course manual explains that it supports organized revisions. This follows its coordinate, solid modeling, visualization or geometric verification content. Source: MAIC AutoCAD 3D Design: Modeling and Visualization, page 7."
+    },
+    {
+      "ordinal": 56,
+      "source_page": 7,
+      "stem": "What must be checked after moving a mounting tab?",
+      "options": [
+        "Adjacent holes and clearances",
+        "Make every geometric change by eye only",
+        "Treat a rendering as a structural load test",
+        "Ignore hole alignments when moving supports"
+      ],
+      "correct_mask": 1,
+      "rationale": "The original course manual explains that adjacent holes and clearances. This follows its coordinate, solid modeling, visualization or geometric verification content. Source: MAIC AutoCAD 3D Design: Modeling and Visualization, page 7."
+    },
+    {
+      "ordinal": 57,
+      "source_page": 7,
+      "stem": "Can a displayed 3D model prove physical load capacity?",
+      "options": [
+        "Convert all valid solids to arbitrary open meshes",
+        "No, engineering analysis and testing are needed",
+        "Delete prior versions before testing edits",
+        "Make every geometric change by eye only"
+      ],
+      "correct_mask": 2,
+      "rationale": "The original course manual explains that no, engineering analysis and testing are needed. This follows its coordinate, solid modeling, visualization or geometric verification content. Source: MAIC AutoCAD 3D Design: Modeling and Visualization, page 7."
+    },
+    {
+      "ordinal": 58,
+      "source_page": 7,
+      "stem": "Why document a geometry revision?",
+      "options": [
+        "Treat a rendering as a structural load test",
+        "Ignore hole alignments when moving supports",
+        "Others need to know which dimensions changed",
+        "Convert all valid solids to arbitrary open meshes"
+      ],
+      "correct_mask": 4,
+      "rationale": "The original course manual explains that others need to know which dimensions changed. This follows its coordinate, solid modeling, visualization or geometric verification content. Source: MAIC AutoCAD 3D Design: Modeling and Visualization, page 7."
+    },
+    {
+      "ordinal": 59,
+      "source_page": 7,
+      "stem": "What is a nonmanifold or invalid model warning about?",
+      "options": [
+        "Delete prior versions before testing edits",
+        "Make every geometric change by eye only",
+        "Treat a rendering as a structural load test",
+        "Geometry that may not form a usable closed object"
+      ],
+      "correct_mask": 8,
+      "rationale": "The original course manual explains that geometry that may not form a usable closed object. This follows its coordinate, solid modeling, visualization or geometric verification content. Source: MAIC AutoCAD 3D Design: Modeling and Visualization, page 7."
+    },
+    {
+      "ordinal": 60,
+      "source_page": 7,
+      "stem": "What is the advantage of retaining prior design versions?",
+      "options": [
+        "Ignore hole alignments when moving supports",
+        "Convert all valid solids to arbitrary open meshes",
+        "A change can be compared or reversed",
+        "Delete prior versions before testing edits"
+      ],
+      "correct_mask": 4,
+      "rationale": "The original course manual explains that a change can be compared or reversed. This follows its coordinate, solid modeling, visualization or geometric verification content. Source: MAIC AutoCAD 3D Design: Modeling and Visualization, page 7."
+    },
+    {
+      "ordinal": 61,
+      "source_page": 8,
+      "stem": "What is a main purpose of materials in a visualization?",
+      "options": [
+        "Communicate an intended visual finish",
+        "Assume the shader certifies actual alloy content",
+        "Present all visualization images as photographed products",
+        "Treat texture as a material property test"
+      ],
+      "correct_mask": 1,
+      "rationale": "The original course manual explains that communicate an intended visual finish. This follows its coordinate, solid modeling, visualization or geometric verification content. Source: MAIC AutoCAD 3D Design: Modeling and Visualization, page 8."
+    },
+    {
+      "ordinal": 62,
+      "source_page": 8,
+      "stem": "Why does a metallic appearance not prove alloy composition?",
+      "options": [
+        "Use dramatic lighting to conceal geometry errors",
+        "Change the camera arbitrarily to claim improvement",
+        "Assume the shader certifies actual alloy content",
+        "A render can imitate material without measurement"
+      ],
+      "correct_mask": 8,
+      "rationale": "The original course manual explains that a render can imitate material without measurement. This follows its coordinate, solid modeling, visualization or geometric verification content. Source: MAIC AutoCAD 3D Design: Modeling and Visualization, page 8."
+    },
+    {
+      "ordinal": 63,
+      "source_page": 8,
+      "stem": "Why should technical and promotional views be separated?",
+      "options": [
+        "Present all visualization images as photographed products",
+        "Presentation effects do not replace design verification",
+        "Treat texture as a material property test",
+        "Use dramatic lighting to conceal geometry errors"
+      ],
+      "correct_mask": 2,
+      "rationale": "The original course manual explains that presentation effects do not replace design verification. This follows its coordinate, solid modeling, visualization or geometric verification content. Source: MAIC AutoCAD 3D Design: Modeling and Visualization, page 8."
+    },
+    {
+      "ordinal": 64,
+      "source_page": 8,
+      "stem": "What should a render preserve for important features?",
+      "options": [
+        "Change the camera arbitrarily to claim improvement",
+        "Assume the shader certifies actual alloy content",
+        "Visible edges and inspectable geometry",
+        "Present all visualization images as photographed products"
+      ],
+      "correct_mask": 4,
+      "rationale": "The original course manual explains that visible edges and inspectable geometry. This follows its coordinate, solid modeling, visualization or geometric verification content. Source: MAIC AutoCAD 3D Design: Modeling and Visualization, page 8."
+    },
+    {
+      "ordinal": 65,
+      "source_page": 8,
+      "stem": "Why can excessive shadows harm a design presentation?",
+      "options": [
+        "They may obscure small details",
+        "Treat texture as a material property test",
+        "Use dramatic lighting to conceal geometry errors",
+        "Change the camera arbitrarily to claim improvement"
+      ],
+      "correct_mask": 1,
+      "rationale": "The original course manual explains that they may obscure small details. This follows its coordinate, solid modeling, visualization or geometric verification content. Source: MAIC AutoCAD 3D Design: Modeling and Visualization, page 8."
+    },
+    {
+      "ordinal": 66,
+      "source_page": 8,
+      "stem": "What can a Realistic visual style help communicate?",
+      "options": [
+        "Assume the shader certifies actual alloy content",
+        "Surface appearance and spatial depth",
+        "Present all visualization images as photographed products",
+        "Treat texture as a material property test"
+      ],
+      "correct_mask": 2,
+      "rationale": "The original course manual explains that surface appearance and spatial depth. This follows its coordinate, solid modeling, visualization or geometric verification content. Source: MAIC AutoCAD 3D Design: Modeling and Visualization, page 8."
+    },
+    {
+      "ordinal": 67,
+      "source_page": 8,
+      "stem": "Does an illustrative render prove the product was built?",
+      "options": [
+        "Use dramatic lighting to conceal geometry errors",
+        "No, an image is not a manufacturing record",
+        "Change the camera arbitrarily to claim improvement",
+        "Assume the shader certifies actual alloy content"
+      ],
+      "correct_mask": 2,
+      "rationale": "The original course manual explains that no, an image is not a manufacturing record. This follows its coordinate, solid modeling, visualization or geometric verification content. Source: MAIC AutoCAD 3D Design: Modeling and Visualization, page 8."
+    },
+    {
+      "ordinal": 68,
+      "source_page": 8,
+      "stem": "Why should comparison images use similar camera positions?",
+      "options": [
+        "Present all visualization images as photographed products",
+        "Differences should reflect design, not only perspective",
+        "Treat texture as a material property test",
+        "Use dramatic lighting to conceal geometry errors"
+      ],
+      "correct_mask": 2,
+      "rationale": "The original course manual explains that differences should reflect design, not only perspective. This follows its coordinate, solid modeling, visualization or geometric verification content. Source: MAIC AutoCAD 3D Design: Modeling and Visualization, page 8."
+    },
+    {
+      "ordinal": 69,
+      "source_page": 8,
+      "stem": "What should be noted when a material has not been selected?",
+      "options": [
+        "Change the camera arbitrarily to claim improvement",
+        "Assume the shader certifies actual alloy content",
+        "Present all visualization images as photographed products",
+        "The rendering finish is illustrative"
+      ],
+      "correct_mask": 8,
+      "rationale": "The original course manual explains that the rendering finish is illustrative. This follows its coordinate, solid modeling, visualization or geometric verification content. Source: MAIC AutoCAD 3D Design: Modeling and Visualization, page 8."
+    },
+    {
+      "ordinal": 70,
+      "source_page": 8,
+      "stem": "Why inspect models in neutral shading before styling?",
+      "options": [
+        "Treat texture as a material property test",
+        "Geometry problems are easier to evaluate without distraction",
+        "Use dramatic lighting to conceal geometry errors",
+        "Change the camera arbitrarily to claim improvement"
+      ],
+      "correct_mask": 2,
+      "rationale": "The original course manual explains that geometry problems are easier to evaluate without distraction. This follows its coordinate, solid modeling, visualization or geometric verification content. Source: MAIC AutoCAD 3D Design: Modeling and Visualization, page 8."
+    },
+    {
+      "ordinal": 71,
+      "source_page": 9,
+      "stem": "What is the native editable AutoCAD drawing format in this case?",
+      "options": [
+        "DWG",
+        "Treat an STL as the same editable model history",
+        "Rely on only a picture for technical dimensions",
+        "Deliver unversioned conflicting drawings"
+      ],
+      "correct_mask": 1,
+      "rationale": "The original course manual explains that dWG. This follows its coordinate, solid modeling, visualization or geometric verification content. Source: MAIC AutoCAD 3D Design: Modeling and Visualization, page 9."
+    },
+    {
+      "ordinal": 72,
+      "source_page": 9,
+      "stem": "What may STL represent for 3D printing?",
+      "options": [
+        "A faceted mesh approximation of shape",
+        "Export without checking units or wall thickness",
+        "Assume all receiving software retains every feature",
+        "Treat an STL as the same editable model history"
+      ],
+      "correct_mask": 1,
+      "rationale": "The original course manual explains that a faceted mesh approximation of shape. This follows its coordinate, solid modeling, visualization or geometric verification content. Source: MAIC AutoCAD 3D Design: Modeling and Visualization, page 9."
+    },
+    {
+      "ordinal": 73,
+      "source_page": 9,
+      "stem": "Why is an STL not equivalent to full editable DWG history?",
+      "options": [
+        "The feature construction information is generally not preserved",
+        "Rely on only a picture for technical dimensions",
+        "Deliver unversioned conflicting drawings",
+        "Export without checking units or wall thickness"
+      ],
+      "correct_mask": 1,
+      "rationale": "The original course manual explains that the feature construction information is generally not preserved. This follows its coordinate, solid modeling, visualization or geometric verification content. Source: MAIC AutoCAD 3D Design: Modeling and Visualization, page 9."
+    },
+    {
+      "ordinal": 74,
+      "source_page": 9,
+      "stem": "What should a dimensional review PDF include?",
+      "options": [
+        "Assume all receiving software retains every feature",
+        "Treat an STL as the same editable model history",
+        "Views, scale context and key measurements",
+        "Rely on only a picture for technical dimensions"
+      ],
+      "correct_mask": 4,
+      "rationale": "The original course manual explains that views, scale context and key measurements. This follows its coordinate, solid modeling, visualization or geometric verification content. Source: MAIC AutoCAD 3D Design: Modeling and Visualization, page 9."
+    },
+    {
+      "ordinal": 75,
+      "source_page": 9,
+      "stem": "Why check units before mesh export?",
+      "options": [
+        "Physical part size may be misinterpreted",
+        "Deliver unversioned conflicting drawings",
+        "Export without checking units or wall thickness",
+        "Assume all receiving software retains every feature"
+      ],
+      "correct_mask": 1,
+      "rationale": "The original course manual explains that physical part size may be misinterpreted. This follows its coordinate, solid modeling, visualization or geometric verification content. Source: MAIC AutoCAD 3D Design: Modeling and Visualization, page 9."
+    },
+    {
+      "ordinal": 76,
+      "source_page": 9,
+      "stem": "What must be considered when exporting for 3D printing?",
+      "options": [
+        "Treat an STL as the same editable model history",
+        "Rely on only a picture for technical dimensions",
+        "Closure, thickness and process limitations",
+        "Deliver unversioned conflicting drawings"
+      ],
+      "correct_mask": 4,
+      "rationale": "The original course manual explains that closure, thickness and process limitations. This follows its coordinate, solid modeling, visualization or geometric verification content. Source: MAIC AutoCAD 3D Design: Modeling and Visualization, page 9."
+    },
+    {
+      "ordinal": 77,
+      "source_page": 9,
+      "stem": "Why are render images insufficient as technical handoff alone?",
+      "options": [
+        "Export without checking units or wall thickness",
+        "Assume all receiving software retains every feature",
+        "They cannot expose all editable geometry and dimensions",
+        "Treat an STL as the same editable model history"
+      ],
+      "correct_mask": 4,
+      "rationale": "The original course manual explains that they cannot expose all editable geometry and dimensions. This follows its coordinate, solid modeling, visualization or geometric verification content. Source: MAIC AutoCAD 3D Design: Modeling and Visualization, page 9."
+    },
+    {
+      "ordinal": 78,
+      "source_page": 9,
+      "stem": "What is the purpose of a version label in a file package?",
+      "options": [
+        "Rely on only a picture for technical dimensions",
+        "Deliver unversioned conflicting drawings",
+        "Export without checking units or wall thickness",
+        "Identify the authoritative current design"
+      ],
+      "correct_mask": 8,
+      "rationale": "The original course manual explains that identify the authoritative current design. This follows its coordinate, solid modeling, visualization or geometric verification content. Source: MAIC AutoCAD 3D Design: Modeling and Visualization, page 9."
+    },
+    {
+      "ordinal": 79,
+      "source_page": 9,
+      "stem": "Why check interchange compatibility with a receiving tool?",
+      "options": [
+        "Different formats preserve different data",
+        "Assume all receiving software retains every feature",
+        "Treat an STL as the same editable model history",
+        "Rely on only a picture for technical dimensions"
+      ],
+      "correct_mask": 1,
+      "rationale": "The original course manual explains that different formats preserve different data. This follows its coordinate, solid modeling, visualization or geometric verification content. Source: MAIC AutoCAD 3D Design: Modeling and Visualization, page 9."
+    },
+    {
+      "ordinal": 80,
+      "source_page": 9,
+      "stem": "What is useful alongside a DWG for technical review?",
+      "options": [
+        "Deliver unversioned conflicting drawings",
+        "Export without checking units or wall thickness",
+        "A dimensioned PDF or orthographic drawings",
+        "Assume all receiving software retains every feature"
+      ],
+      "correct_mask": 4,
+      "rationale": "The original course manual explains that a dimensioned PDF or orthographic drawings. This follows its coordinate, solid modeling, visualization or geometric verification content. Source: MAIC AutoCAD 3D Design: Modeling and Visualization, page 9."
+    },
+    {
+      "ordinal": 81,
+      "source_page": 10,
+      "stem": "What should a CAD verification checklist inspect?",
+      "options": [
+        "Units, dimensions, intersections and critical features",
+        "Assume modeling success equals structural compliance",
+        "Do not inspect internal hole depths",
+        "Delete all documentation of unresolved risks"
+      ],
+      "correct_mask": 1,
+      "rationale": "The original course manual explains that units, dimensions, intersections and critical features. This follows its coordinate, solid modeling, visualization or geometric verification content. Source: MAIC AutoCAD 3D Design: Modeling and Visualization, page 10."
+    },
+    {
+      "ordinal": 82,
+      "source_page": 10,
+      "stem": "Why might a circular hole be defective despite looking correct in isometric view?",
+      "options": [
+        "Leave obsolete PDFs in a revision package",
+        "Ignore conflicting unit conventions",
+        "Depth or alignment may be wrong",
+        "Assume modeling success equals structural compliance"
+      ],
+      "correct_mask": 4,
+      "rationale": "The original course manual explains that depth or alignment may be wrong. This follows its coordinate, solid modeling, visualization or geometric verification content. Source: MAIC AutoCAD 3D Design: Modeling and Visualization, page 10."
+    },
+    {
+      "ordinal": 83,
+      "source_page": 10,
+      "stem": "What does a valid volume calculation depend on?",
+      "options": [
+        "Do not inspect internal hole depths",
+        "Delete all documentation of unresolved risks",
+        "Correct closed geometry and consistent units",
+        "Leave obsolete PDFs in a revision package"
+      ],
+      "correct_mask": 4,
+      "rationale": "The original course manual explains that correct closed geometry and consistent units. This follows its coordinate, solid modeling, visualization or geometric verification content. Source: MAIC AutoCAD 3D Design: Modeling and Visualization, page 10."
+    },
+    {
+      "ordinal": 84,
+      "source_page": 10,
+      "stem": "Why is a CAD model not sufficient for a safety-critical bracket?",
+      "options": [
+        "Ignore conflicting unit conventions",
+        "Assume modeling success equals structural compliance",
+        "Do not inspect internal hole depths",
+        "Physical loads and compliance require further assessment"
+      ],
+      "correct_mask": 8,
+      "rationale": "The original course manual explains that physical loads and compliance require further assessment. This follows its coordinate, solid modeling, visualization or geometric verification content. Source: MAIC AutoCAD 3D Design: Modeling and Visualization, page 10."
+    },
+    {
+      "ordinal": 85,
+      "source_page": 10,
+      "stem": "Why should unused test objects be removed before handoff?",
+      "options": [
+        "Delete all documentation of unresolved risks",
+        "They may confuse the recipient or exporter",
+        "Leave obsolete PDFs in a revision package",
+        "Ignore conflicting unit conventions"
+      ],
+      "correct_mask": 2,
+      "rationale": "The original course manual explains that they may confuse the recipient or exporter. This follows its coordinate, solid modeling, visualization or geometric verification content. Source: MAIC AutoCAD 3D Design: Modeling and Visualization, page 10."
+    },
+    {
+      "ordinal": 86,
+      "source_page": 10,
+      "stem": "What must happen after a correction to the master DWG?",
+      "options": [
+        "Assume modeling success equals structural compliance",
+        "Dependent exports should be regenerated and checked",
+        "Do not inspect internal hole depths",
+        "Delete all documentation of unresolved risks"
+      ],
+      "correct_mask": 2,
+      "rationale": "The original course manual explains that dependent exports should be regenerated and checked. This follows its coordinate, solid modeling, visualization or geometric verification content. Source: MAIC AutoCAD 3D Design: Modeling and Visualization, page 10."
+    },
+    {
+      "ordinal": 87,
+      "source_page": 10,
+      "stem": "What is a safe statement when no mechanical testing exists?",
+      "options": [
+        "Geometry reviewed; load performance not evaluated",
+        "Leave obsolete PDFs in a revision package",
+        "Ignore conflicting unit conventions",
+        "Assume modeling success equals structural compliance"
+      ],
+      "correct_mask": 1,
+      "rationale": "The original course manual explains that geometry reviewed; load performance not evaluated. This follows its coordinate, solid modeling, visualization or geometric verification content. Source: MAIC AutoCAD 3D Design: Modeling and Visualization, page 10."
+    },
+    {
+      "ordinal": 88,
+      "source_page": 10,
+      "stem": "What does a section inspection help reveal?",
+      "options": [
+        "Do not inspect internal hole depths",
+        "Delete all documentation of unresolved risks",
+        "Leave obsolete PDFs in a revision package",
+        "Internal defects invisible in exterior views"
+      ],
+      "correct_mask": 8,
+      "rationale": "The original course manual explains that internal defects invisible in exterior views. This follows its coordinate, solid modeling, visualization or geometric verification content. Source: MAIC AutoCAD 3D Design: Modeling and Visualization, page 10."
+    },
+    {
+      "ordinal": 89,
+      "source_page": 10,
+      "stem": "Why should engineering assumptions accompany a handoff?",
+      "options": [
+        "Ignore conflicting unit conventions",
+        "Assume modeling success equals structural compliance",
+        "Do not inspect internal hole depths",
+        "Recipients must know the model's limitations"
+      ],
+      "correct_mask": 8,
+      "rationale": "The original course manual explains that recipients must know the model's limitations. This follows its coordinate, solid modeling, visualization or geometric verification content. Source: MAIC AutoCAD 3D Design: Modeling and Visualization, page 10."
+    },
+    {
+      "ordinal": 90,
+      "source_page": 10,
+      "stem": "What is a risk when an old PDF remains beside a revised model?",
+      "options": [
+        "Delete all documentation of unresolved risks",
+        "Leave obsolete PDFs in a revision package",
+        "Reviewers may inspect inconsistent versions",
+        "Ignore conflicting unit conventions"
+      ],
+      "correct_mask": 4,
+      "rationale": "The original course manual explains that reviewers may inspect inconsistent versions. This follows its coordinate, solid modeling, visualization or geometric verification content. Source: MAIC AutoCAD 3D Design: Modeling and Visualization, page 10."
+    },
+    {
+      "ordinal": 91,
+      "source_page": 11,
+      "stem": "What is the case's base length in millimeters?",
+      "options": [
+        "Treat a fictional bracket as certified for structural use",
+        "120 millimeters",
+        "Ignore the solid subtraction sequence",
+        "Assume the tab has no effect on final volume"
+      ],
+      "correct_mask": 2,
+      "rationale": "The original course manual explains that 120 millimeters. This follows its coordinate, solid modeling, visualization or geometric verification content. Source: MAIC AutoCAD 3D Design: Modeling and Visualization, page 11."
+    },
+    {
+      "ordinal": 92,
+      "source_page": 11,
+      "stem": "What is the case's base width in millimeters?",
+      "options": [
+        "Use a radius of five without checking center placement",
+        "Present nominal volume as measured mass",
+        "60 millimeters",
+        "Treat a fictional bracket as certified for structural use"
+      ],
+      "correct_mask": 4,
+      "rationale": "The original course manual explains that 60 millimeters. This follows its coordinate, solid modeling, visualization or geometric verification content. Source: MAIC AutoCAD 3D Design: Modeling and Visualization, page 11."
+    },
+    {
+      "ordinal": 93,
+      "source_page": 11,
+      "stem": "What is the case's base thickness in millimeters?",
+      "options": [
+        "10 millimeters",
+        "Ignore the solid subtraction sequence",
+        "Assume the tab has no effect on final volume",
+        "Use a radius of five without checking center placement"
+      ],
+      "correct_mask": 1,
+      "rationale": "The original course manual explains that 10 millimeters. This follows its coordinate, solid modeling, visualization or geometric verification content. Source: MAIC AutoCAD 3D Design: Modeling and Visualization, page 11."
+    },
+    {
+      "ordinal": 94,
+      "source_page": 11,
+      "stem": "What is the mounting hole radius?",
+      "options": [
+        "Present nominal volume as measured mass",
+        "Treat a fictional bracket as certified for structural use",
+        "5 millimeters",
+        "Ignore the solid subtraction sequence"
+      ],
+      "correct_mask": 4,
+      "rationale": "The original course manual explains that 5 millimeters. This follows its coordinate, solid modeling, visualization or geometric verification content. Source: MAIC AutoCAD 3D Design: Modeling and Visualization, page 11."
+    },
+    {
+      "ordinal": 95,
+      "source_page": 11,
+      "stem": "What is the nominal uncut base volume?",
+      "options": [
+        "Assume the tab has no effect on final volume",
+        "72,000 cubic millimeters",
+        "Use a radius of five without checking center placement",
+        "Present nominal volume as measured mass"
+      ],
+      "correct_mask": 2,
+      "rationale": "The original course manual explains that 72,000 cubic millimeters. This follows its coordinate, solid modeling, visualization or geometric verification content. Source: MAIC AutoCAD 3D Design: Modeling and Visualization, page 11."
+    },
+    {
+      "ordinal": 96,
+      "source_page": 11,
+      "stem": "What is the ideal removed cylindrical volume?",
+      "options": [
+        "Treat a fictional bracket as certified for structural use",
+        "Ignore the solid subtraction sequence",
+        "Assume the tab has no effect on final volume",
+        "Approximately 785.4 cubic millimeters"
+      ],
+      "correct_mask": 8,
+      "rationale": "The original course manual explains that approximately 785.4 cubic millimeters. This follows its coordinate, solid modeling, visualization or geometric verification content. Source: MAIC AutoCAD 3D Design: Modeling and Visualization, page 11."
+    },
+    {
+      "ordinal": 97,
+      "source_page": 11,
+      "stem": "What is the resulting base volume before adding the tab?",
+      "options": [
+        "Approximately 71,214.6 cubic millimeters",
+        "Use a radius of five without checking center placement",
+        "Present nominal volume as measured mass",
+        "Treat a fictional bracket as certified for structural use"
+      ],
+      "correct_mask": 1,
+      "rationale": "The original course manual explains that approximately 71,214.6 cubic millimeters. This follows its coordinate, solid modeling, visualization or geometric verification content. Source: MAIC AutoCAD 3D Design: Modeling and Visualization, page 11."
+    },
+    {
+      "ordinal": 98,
+      "source_page": 11,
+      "stem": "Which Boolean operation cuts the hole?",
+      "options": [
+        "Ignore the solid subtraction sequence",
+        "SUBTRACT",
+        "Assume the tab has no effect on final volume",
+        "Use a radius of five without checking center placement"
+      ],
+      "correct_mask": 2,
+      "rationale": "The original course manual explains that sUBTRACT. This follows its coordinate, solid modeling, visualization or geometric verification content. Source: MAIC AutoCAD 3D Design: Modeling and Visualization, page 11."
+    },
+    {
+      "ordinal": 99,
+      "source_page": 11,
+      "stem": "How far does the variation move the hole along the X direction?",
+      "options": [
+        "10 millimeters",
+        "Present nominal volume as measured mass",
+        "Treat a fictional bracket as certified for structural use",
+        "Ignore the solid subtraction sequence"
+      ],
+      "correct_mask": 1,
+      "rationale": "The original course manual explains that 10 millimeters. This follows its coordinate, solid modeling, visualization or geometric verification content. Source: MAIC AutoCAD 3D Design: Modeling and Visualization, page 11."
+    },
+    {
+      "ordinal": 100,
+      "source_page": 11,
+      "stem": "What remains unproven after finishing the training bracket?",
+      "options": [
+        "Assume the tab has no effect on final volume",
+        "Use a radius of five without checking center placement",
+        "Its certified strength or manufacturing suitability",
+        "Present nominal volume as measured mass"
+      ],
+      "correct_mask": 4,
+      "rationale": "The original course manual explains that its certified strength or manufacturing suitability. This follows its coordinate, solid modeling, visualization or geometric verification content. Source: MAIC AutoCAD 3D Design: Modeling and Visualization, page 11."
+    }
+  ]
+}
