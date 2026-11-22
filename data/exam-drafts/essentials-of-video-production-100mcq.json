@@ -1,0 +1,1312 @@
+{
+  "course_id": "essentials-of-video-production",
+  "source_manuscript": "data/course-manuscripts/essentials-of-video-production.md",
+  "source_manuscript_blob_sha": "735db572a817911f223f9893c36d1e610abe613a",
+  "source_pdf_sha256": null,
+  "bank_version": "draft-manuscript-20261122-v1",
+  "approval_status": "editorial_draft_pending_independent_review",
+  "number_of_questions": 100,
+  "note": "Not academically approved or active. Requires independent item review and source-approved material registration.",
+  "questions": [
+    {
+      "ordinal": 1,
+      "source_page": 2,
+      "stem": "What should guide planning before choosing a camera effect?",
+      "options": [
+        "The audience and communication objective",
+        "Choose editing effects before deciding purpose",
+        "Assume camera cost proves accuracy",
+        "Publish without listening to audio"
+      ],
+      "correct_mask": 1,
+      "rationale": "The source explains that the audience and communication objective. This is the relevant principle for this production decision. Source: MAIC Understanding the Essentials of Video Production, page 2."
+    },
+    {
+      "ordinal": 2,
+      "source_page": 2,
+      "stem": "Which task is a preproduction activity?",
+      "options": [
+        "Replace missing evidence with beautiful graphics",
+        "Defining a script and essential shots",
+        "Ignore the audience entirely",
+        "Judge all production solely by views"
+      ],
+      "correct_mask": 2,
+      "rationale": "The source explains that defining a script and essential shots. This is the relevant principle for this production decision. Source: MAIC Understanding the Essentials of Video Production, page 2."
+    },
+    {
+      "ordinal": 3,
+      "source_page": 2,
+      "stem": "What matters beyond the purchase price of camera equipment?",
+      "options": [
+        "Assume camera cost proves accuracy",
+        "Clarity, sound and meaningful editing",
+        "Publish without listening to audio",
+        "Choose editing effects before deciding purpose"
+      ],
+      "correct_mask": 2,
+      "rationale": "The source explains that clarity, sound and meaningful editing. This is the relevant principle for this production decision. Source: MAIC Understanding the Essentials of Video Production, page 2."
+    },
+    {
+      "ordinal": 4,
+      "source_page": 2,
+      "stem": "What device can be used for the beginner exercises?",
+      "options": [
+        "Ignore the audience entirely",
+        "Judge all production solely by views",
+        "A suitable available smartphone or camera",
+        "Replace missing evidence with beautiful graphics"
+      ],
+      "correct_mask": 4,
+      "rationale": "The source explains that a suitable available smartphone or camera. This is the relevant principle for this production decision. Source: MAIC Understanding the Essentials of Video Production, page 2."
+    },
+    {
+      "ordinal": 5,
+      "source_page": 2,
+      "stem": "How should the outcome of a how-to video be evaluated?",
+      "options": [
+        "Whether the intended audience can follow the steps",
+        "Publish without listening to audio",
+        "Choose editing effects before deciding purpose",
+        "Assume camera cost proves accuracy"
+      ],
+      "correct_mask": 1,
+      "rationale": "The source explains that whether the intended audience can follow the steps. This is the relevant principle for this production decision. Source: MAIC Understanding the Essentials of Video Production, page 2."
+    },
+    {
+      "ordinal": 6,
+      "source_page": 2,
+      "stem": "Why verify a service schedule before filming narration?",
+      "options": [
+        "Judge all production solely by views",
+        "A polished video can still give false practical instructions",
+        "Replace missing evidence with beautiful graphics",
+        "Ignore the audience entirely"
+      ],
+      "correct_mask": 2,
+      "rationale": "The source explains that a polished video can still give false practical instructions. This is the relevant principle for this production decision. Source: MAIC Understanding the Essentials of Video Production, page 2."
+    },
+    {
+      "ordinal": 7,
+      "source_page": 2,
+      "stem": "What should be included in practical guided study?",
+      "options": [
+        "Testing footage, reviewing it and revising errors",
+        "Choose editing effects before deciding purpose",
+        "Assume camera cost proves accuracy",
+        "Publish without listening to audio"
+      ],
+      "correct_mask": 1,
+      "rationale": "The source explains that testing footage, reviewing it and revising errors. This is the relevant principle for this production decision. Source: MAIC Understanding the Essentials of Video Production, page 2."
+    },
+    {
+      "ordinal": 8,
+      "source_page": 2,
+      "stem": "Why identify caption or translation needs during planning?",
+      "options": [
+        "They affect timing, scripting and graphic layout",
+        "Replace missing evidence with beautiful graphics",
+        "Ignore the audience entirely",
+        "Judge all production solely by views"
+      ],
+      "correct_mask": 1,
+      "rationale": "The source explains that they affect timing, scripting and graphic layout. This is the relevant principle for this production decision. Source: MAIC Understanding the Essentials of Video Production, page 2."
+    },
+    {
+      "ordinal": 9,
+      "source_page": 2,
+      "stem": "What is a primary function of the project brief?",
+      "options": [
+        "Assume camera cost proves accuracy",
+        "Connect the message with scope and resources",
+        "Publish without listening to audio",
+        "Choose editing effects before deciding purpose"
+      ],
+      "correct_mask": 2,
+      "rationale": "The source explains that connect the message with scope and resources. This is the relevant principle for this production decision. Source: MAIC Understanding the Essentials of Video Production, page 2."
+    },
+    {
+      "ordinal": 10,
+      "source_page": 2,
+      "stem": "What should precede decorative editing effects?",
+      "options": [
+        "Clear structure and accurate source-backed content",
+        "Ignore the audience entirely",
+        "Judge all production solely by views",
+        "Replace missing evidence with beautiful graphics"
+      ],
+      "correct_mask": 1,
+      "rationale": "The source explains that clear structure and accurate source-backed content. This is the relevant principle for this production decision. Source: MAIC Understanding the Essentials of Video Production, page 2."
+    },
+    {
+      "ordinal": 11,
+      "source_page": 3,
+      "stem": "Which information belongs in a useful production brief?",
+      "options": [
+        "List only the camera manufacturer's name",
+        "Assume permission is never needed",
+        "Audience, goal, timing, format, constraints and sources",
+        "Ignore subtitles until after export"
+      ],
+      "correct_mask": 4,
+      "rationale": "The source explains that audience, goal, timing, format, constraints and sources. This is the relevant principle for this production decision. Source: MAIC Understanding the Essentials of Video Production, page 3."
+    },
+    {
+      "ordinal": 12,
+      "source_page": 3,
+      "stem": "Why define the intended audience?",
+      "options": [
+        "Leave all dates and services unchecked",
+        "Promise every shot regardless of staffing",
+        "Different viewers need different explanations and pacing",
+        "Define success only by likes"
+      ],
+      "correct_mask": 4,
+      "rationale": "The source explains that different viewers need different explanations and pacing. This is the relevant principle for this production decision. Source: MAIC Understanding the Essentials of Video Production, page 3."
+    },
+    {
+      "ordinal": 13,
+      "source_page": 3,
+      "stem": "What is a suitable measure of instructional success?",
+      "options": [
+        "Assume permission is never needed",
+        "Viewer understanding of the demonstrated task",
+        "Ignore subtitles until after export",
+        "List only the camera manufacturer's name"
+      ],
+      "correct_mask": 2,
+      "rationale": "The source explains that viewer understanding of the demonstrated task. This is the relevant principle for this production decision. Source: MAIC Understanding the Essentials of Video Production, page 3."
+    },
+    {
+      "ordinal": 14,
+      "source_page": 3,
+      "stem": "What must a video announcing new hours verify?",
+      "options": [
+        "Promise every shot regardless of staffing",
+        "Define success only by likes",
+        "Leave all dates and services unchecked",
+        "The opening date, times and affected services"
+      ],
+      "correct_mask": 8,
+      "rationale": "The source explains that the opening date, times and affected services. This is the relevant principle for this production decision. Source: MAIC Understanding the Essentials of Video Production, page 3."
+    },
+    {
+      "ordinal": 15,
+      "source_page": 3,
+      "stem": "Why plan accessible graphics before filming?",
+      "options": [
+        "Ignore subtitles until after export",
+        "List only the camera manufacturer's name",
+        "Text and captions need sufficient time and visual space",
+        "Assume permission is never needed"
+      ],
+      "correct_mask": 4,
+      "rationale": "The source explains that text and captions need sufficient time and visual space. This is the relevant principle for this production decision. Source: MAIC Understanding the Essentials of Video Production, page 3."
+    },
+    {
+      "ordinal": 16,
+      "source_page": 3,
+      "stem": "What is a feasible response to small production resources?",
+      "options": [
+        "Prioritize the shots needed to communicate the message",
+        "Define success only by likes",
+        "Leave all dates and services unchecked",
+        "Promise every shot regardless of staffing"
+      ],
+      "correct_mask": 1,
+      "rationale": "The source explains that prioritize the shots needed to communicate the message. This is the relevant principle for this production decision. Source: MAIC Understanding the Essentials of Video Production, page 3."
+    },
+    {
+      "ordinal": 17,
+      "source_page": 3,
+      "stem": "Which restriction should a filming plan identify?",
+      "options": [
+        "Recording permissions and participant rights",
+        "List only the camera manufacturer's name",
+        "Assume permission is never needed",
+        "Ignore subtitles until after export"
+      ],
+      "correct_mask": 1,
+      "rationale": "The source explains that recording permissions and participant rights. This is the relevant principle for this production decision. Source: MAIC Understanding the Essentials of Video Production, page 3."
+    },
+    {
+      "ordinal": 18,
+      "source_page": 3,
+      "stem": "Why should essential shots have backup plans?",
+      "options": [
+        "Leave all dates and services unchecked",
+        "Promise every shot regardless of staffing",
+        "Define success only by likes",
+        "Weather and equipment may prevent the intended take"
+      ],
+      "correct_mask": 8,
+      "rationale": "The source explains that weather and equipment may prevent the intended take. This is the relevant principle for this production decision. Source: MAIC Understanding the Essentials of Video Production, page 3."
+    },
+    {
+      "ordinal": 19,
+      "source_page": 3,
+      "stem": "Which test best suits a public-service explainer?",
+      "options": [
+        "Assume permission is never needed",
+        "Ignore subtitles until after export",
+        "List only the camera manufacturer's name",
+        "Can a viewer identify the verified instruction correctly"
+      ],
+      "correct_mask": 8,
+      "rationale": "The source explains that can a viewer identify the verified instruction correctly. This is the relevant principle for this production decision. Source: MAIC Understanding the Essentials of Video Production, page 3."
+    },
+    {
+      "ordinal": 20,
+      "source_page": 3,
+      "stem": "What should be done with a factual claim lacking evidence?",
+      "options": [
+        "Promise every shot regardless of staffing",
+        "Flag and verify it before publishing the video",
+        "Define success only by likes",
+        "Leave all dates and services unchecked"
+      ],
+      "correct_mask": 2,
+      "rationale": "The source explains that flag and verify it before publishing the video. This is the relevant principle for this production decision. Source: MAIC Understanding the Essentials of Video Production, page 3."
+    },
+    {
+      "ordinal": 21,
+      "source_page": 4,
+      "stem": "What does a two-column script coordinate?",
+      "options": [
+        "Spoken words and corresponding images",
+        "Treat all reenactments as original event footage",
+        "Skip preparing any shot list",
+        "Present an unverified graphic as fact"
+      ],
+      "correct_mask": 1,
+      "rationale": "The source explains that spoken words and corresponding images. This is the relevant principle for this production decision. Source: MAIC Understanding the Essentials of Video Production, page 4."
+    },
+    {
+      "ordinal": 22,
+      "source_page": 4,
+      "stem": "What does a storyboard help filmmakers inspect?",
+      "options": [
+        "The order and purpose of intended shots",
+        "Use visual transitions without regard to time",
+        "Make narrations too long for delivery",
+        "Ignore alternatives for essential shots"
+      ],
+      "correct_mask": 1,
+      "rationale": "The source explains that the order and purpose of intended shots. This is the relevant principle for this production decision. Source: MAIC Understanding the Essentials of Video Production, page 4."
+    },
+    {
+      "ordinal": 23,
+      "source_page": 4,
+      "stem": "What should a practical shot list name?",
+      "options": [
+        "Skip preparing any shot list",
+        "Present an unverified graphic as fact",
+        "Treat all reenactments as original event footage",
+        "Framing, action, location, sound and priority"
+      ],
+      "correct_mask": 8,
+      "rationale": "The source explains that framing, action, location, sound and priority. This is the relevant principle for this production decision. Source: MAIC Understanding the Essentials of Video Production, page 4."
+    },
+    {
+      "ordinal": 24,
+      "source_page": 4,
+      "stem": "What is a meaningful role of a transition?",
+      "options": [
+        "Clarify a change in time, action or location",
+        "Make narrations too long for delivery",
+        "Ignore alternatives for essential shots",
+        "Use visual transitions without regard to time"
+      ],
+      "correct_mask": 1,
+      "rationale": "The source explains that clarify a change in time, action or location. This is the relevant principle for this production decision. Source: MAIC Understanding the Essentials of Video Production, page 4."
+    },
+    {
+      "ordinal": 25,
+      "source_page": 4,
+      "stem": "How should a reenactment be described in factual production?",
+      "options": [
+        "Present an unverified graphic as fact",
+        "Treat all reenactments as original event footage",
+        "Skip preparing any shot list",
+        "Explicitly as staged or illustrative"
+      ],
+      "correct_mask": 8,
+      "rationale": "The source explains that explicitly as staged or illustrative. This is the relevant principle for this production decision. Source: MAIC Understanding the Essentials of Video Production, page 4."
+    },
+    {
+      "ordinal": 26,
+      "source_page": 4,
+      "stem": "What may a script rehearsal uncover?",
+      "options": [
+        "Ignore alternatives for essential shots",
+        "Unrealistic narration duration or missing camera angles",
+        "Use visual transitions without regard to time",
+        "Make narrations too long for delivery"
+      ],
+      "correct_mask": 2,
+      "rationale": "The source explains that unrealistic narration duration or missing camera angles. This is the relevant principle for this production decision. Source: MAIC Understanding the Essentials of Video Production, page 4."
+    },
+    {
+      "ordinal": 27,
+      "source_page": 4,
+      "stem": "Why is contingency coverage useful?",
+      "options": [
+        "Treat all reenactments as original event footage",
+        "Skip preparing any shot list",
+        "Present an unverified graphic as fact",
+        "Required scenes may become impossible to film as planned"
+      ],
+      "correct_mask": 8,
+      "rationale": "The source explains that required scenes may become impossible to film as planned. This is the relevant principle for this production decision. Source: MAIC Understanding the Essentials of Video Production, page 4."
+    },
+    {
+      "ordinal": 28,
+      "source_page": 4,
+      "stem": "What style is usually suited to short spoken narration?",
+      "options": [
+        "Use visual transitions without regard to time",
+        "Make narrations too long for delivery",
+        "Clear and concise natural sentences",
+        "Ignore alternatives for essential shots"
+      ],
+      "correct_mask": 4,
+      "rationale": "The source explains that clear and concise natural sentences. This is the relevant principle for this production decision. Source: MAIC Understanding the Essentials of Video Production, page 4."
+    },
+    {
+      "ordinal": 29,
+      "source_page": 4,
+      "stem": "How should an announced trial be described before it starts?",
+      "options": [
+        "Skip preparing any shot list",
+        "Present an unverified graphic as fact",
+        "As planned rather than completed",
+        "Treat all reenactments as original event footage"
+      ],
+      "correct_mask": 4,
+      "rationale": "The source explains that as planned rather than completed. This is the relevant principle for this production decision. Source: MAIC Understanding the Essentials of Video Production, page 4."
+    },
+    {
+      "ordinal": 30,
+      "source_page": 4,
+      "stem": "Why must on-screen figures be checked?",
+      "options": [
+        "Make narrations too long for delivery",
+        "Ignore alternatives for essential shots",
+        "Use visual transitions without regard to time",
+        "Graphics communicate factual claims to viewers"
+      ],
+      "correct_mask": 8,
+      "rationale": "The source explains that graphics communicate factual claims to viewers. This is the relevant principle for this production decision. Source: MAIC Understanding the Essentials of Video Production, page 4."
+    },
+    {
+      "ordinal": 31,
+      "source_page": 5,
+      "stem": "Why use a wide shot at the start of a scene?",
+      "options": [
+        "Assume a close-up displays the whole scene",
+        "Establish place and general context",
+        "Ignore movement direction between cuts",
+        "Treat zoom as proof of a crowd's size"
+      ],
+      "correct_mask": 2,
+      "rationale": "The source explains that establish place and general context. This is the relevant principle for this production decision. Source: MAIC Understanding the Essentials of Video Production, page 5."
+    },
+    {
+      "ordinal": 32,
+      "source_page": 5,
+      "stem": "Which type of shot emphasizes a small action detail?",
+      "options": [
+        "Change props and positions randomly",
+        "Use handheld shake in every instructional shot",
+        "Discard continuity notes between takes",
+        "A close-up with the relevant detail visible"
+      ],
+      "correct_mask": 8,
+      "rationale": "The source explains that a close-up with the relevant detail visible. This is the relevant principle for this production decision. Source: MAIC Understanding the Essentials of Video Production, page 5."
+    },
+    {
+      "ordinal": 33,
+      "source_page": 5,
+      "stem": "What does a medium shot often reveal?",
+      "options": [
+        "Ignore movement direction between cuts",
+        "Treat zoom as proof of a crowd's size",
+        "A person and their relationship to nearby objects",
+        "Assume a close-up displays the whole scene"
+      ],
+      "correct_mask": 4,
+      "rationale": "The source explains that a person and their relationship to nearby objects. This is the relevant principle for this production decision. Source: MAIC Understanding the Essentials of Video Production, page 5."
+    },
+    {
+      "ordinal": 34,
+      "source_page": 5,
+      "stem": "What is continuity across video edits?",
+      "options": [
+        "Use handheld shake in every instructional shot",
+        "Consistent props, motion and spatial relationships",
+        "Discard continuity notes between takes",
+        "Change props and positions randomly"
+      ],
+      "correct_mask": 2,
+      "rationale": "The source explains that consistent props, motion and spatial relationships. This is the relevant principle for this production decision. Source: MAIC Understanding the Essentials of Video Production, page 5."
+    },
+    {
+      "ordinal": 35,
+      "source_page": 5,
+      "stem": "What happens when a prop changes hands invisibly between cuts?",
+      "options": [
+        "Treat zoom as proof of a crowd's size",
+        "The sequence may create a confusing continuity error",
+        "Assume a close-up displays the whole scene",
+        "Ignore movement direction between cuts"
+      ],
+      "correct_mask": 2,
+      "rationale": "The source explains that the sequence may create a confusing continuity error. This is the relevant principle for this production decision. Source: MAIC Understanding the Essentials of Video Production, page 5."
+    },
+    {
+      "ordinal": 36,
+      "source_page": 5,
+      "stem": "What can an overly tight documentary crop omit?",
+      "options": [
+        "Discard continuity notes between takes",
+        "Change props and positions randomly",
+        "Context needed to judge an event's scale",
+        "Use handheld shake in every instructional shot"
+      ],
+      "correct_mask": 4,
+      "rationale": "The source explains that context needed to judge an event's scale. This is the relevant principle for this production decision. Source: MAIC Understanding the Essentials of Video Production, page 5."
+    },
+    {
+      "ordinal": 37,
+      "source_page": 5,
+      "stem": "In composition, what does lead room refer to?",
+      "options": [
+        "Assume a close-up displays the whole scene",
+        "Space in the direction a subject moves or looks",
+        "Ignore movement direction between cuts",
+        "Treat zoom as proof of a crowd's size"
+      ],
+      "correct_mask": 2,
+      "rationale": "The source explains that space in the direction a subject moves or looks. This is the relevant principle for this production decision. Source: MAIC Understanding the Essentials of Video Production, page 5."
+    },
+    {
+      "ordinal": 38,
+      "source_page": 5,
+      "stem": "Why check screen direction across consecutive shots?",
+      "options": [
+        "Change props and positions randomly",
+        "Use handheld shake in every instructional shot",
+        "Discard continuity notes between takes",
+        "Movement can otherwise appear spatially contradictory"
+      ],
+      "correct_mask": 8,
+      "rationale": "The source explains that movement can otherwise appear spatially contradictory. This is the relevant principle for this production decision. Source: MAIC Understanding the Essentials of Video Production, page 5."
+    },
+    {
+      "ordinal": 39,
+      "source_page": 5,
+      "stem": "Why might camera stabilization improve instruction?",
+      "options": [
+        "Ignore movement direction between cuts",
+        "Treat zoom as proof of a crowd's size",
+        "It keeps important actions visible and understandable",
+        "Assume a close-up displays the whole scene"
+      ],
+      "correct_mask": 4,
+      "rationale": "The source explains that it keeps important actions visible and understandable. This is the relevant principle for this production decision. Source: MAIC Understanding the Essentials of Video Production, page 5."
+    },
+    {
+      "ordinal": 40,
+      "source_page": 5,
+      "stem": "What supports correct matching between multiple takes?",
+      "options": [
+        "Use handheld shake in every instructional shot",
+        "Discard continuity notes between takes",
+        "Change props and positions randomly",
+        "Reference frames and notes about positions"
+      ],
+      "correct_mask": 8,
+      "rationale": "The source explains that reference frames and notes about positions. This is the relevant principle for this production decision. Source: MAIC Understanding the Essentials of Video Production, page 5."
+    },
+    {
+      "ordinal": 41,
+      "source_page": 6,
+      "stem": "In recording video, what does exposure describe?",
+      "options": [
+        "Trust display brightness over subject detail",
+        "Use maximum gain without checking image noise",
+        "Assume every frame rate creates natural slow motion",
+        "Brightness and retention of important image detail"
+      ],
+      "correct_mask": 8,
+      "rationale": "The source explains that brightness and retention of important image detail. This is the relevant principle for this production decision. Source: MAIC Understanding the Essentials of Video Production, page 6."
+    },
+    {
+      "ordinal": 42,
+      "source_page": 6,
+      "stem": "What can a very bright window behind a presenter cause?",
+      "options": [
+        "Let focus drift onto an irrelevant object",
+        "Ignore color consistency between shots",
+        "A face may become an underexposed silhouette",
+        "Treat shutter as unrelated to movement"
+      ],
+      "correct_mask": 4,
+      "rationale": "The source explains that a face may become an underexposed silhouette. This is the relevant principle for this production decision. Source: MAIC Understanding the Essentials of Video Production, page 6."
+    },
+    {
+      "ordinal": 43,
+      "source_page": 6,
+      "stem": "Why should autofocus be monitored during important action?",
+      "options": [
+        "It can shift away from the intended subject",
+        "Use maximum gain without checking image noise",
+        "Assume every frame rate creates natural slow motion",
+        "Trust display brightness over subject detail"
+      ],
+      "correct_mask": 1,
+      "rationale": "The source explains that it can shift away from the intended subject. This is the relevant principle for this production decision. Source: MAIC Understanding the Essentials of Video Production, page 6."
+    },
+    {
+      "ordinal": 44,
+      "source_page": 6,
+      "stem": "What does white balance help maintain?",
+      "options": [
+        "Ignore color consistency between shots",
+        "Treat shutter as unrelated to movement",
+        "Consistent recorded color across relevant shots",
+        "Let focus drift onto an irrelevant object"
+      ],
+      "correct_mask": 4,
+      "rationale": "The source explains that consistent recorded color across relevant shots. This is the relevant principle for this production decision. Source: MAIC Understanding the Essentials of Video Production, page 6."
+    },
+    {
+      "ordinal": 45,
+      "source_page": 6,
+      "stem": "What visual defect may accompany excessive sensor gain?",
+      "options": [
+        "Image noise",
+        "Assume every frame rate creates natural slow motion",
+        "Trust display brightness over subject detail",
+        "Use maximum gain without checking image noise"
+      ],
+      "correct_mask": 1,
+      "rationale": "The source explains that image noise. This is the relevant principle for this production decision. Source: MAIC Understanding the Essentials of Video Production, page 6."
+    },
+    {
+      "ordinal": 46,
+      "source_page": 6,
+      "stem": "Why review a short test clip?",
+      "options": [
+        "Treat shutter as unrelated to movement",
+        "To detect focus, color and exposure problems early",
+        "Let focus drift onto an irrelevant object",
+        "Ignore color consistency between shots"
+      ],
+      "correct_mask": 2,
+      "rationale": "The source explains that to detect focus, color and exposure problems early. This is the relevant principle for this production decision. Source: MAIC Understanding the Essentials of Video Production, page 6."
+    },
+    {
+      "ordinal": 47,
+      "source_page": 6,
+      "stem": "What does shutter choice affect beyond light exposure?",
+      "options": [
+        "The appearance of motion blur",
+        "Trust display brightness over subject detail",
+        "Use maximum gain without checking image noise",
+        "Assume every frame rate creates natural slow motion"
+      ],
+      "correct_mask": 1,
+      "rationale": "The source explains that the appearance of motion blur. This is the relevant principle for this production decision. Source: MAIC Understanding the Essentials of Video Production, page 6."
+    },
+    {
+      "ordinal": 48,
+      "source_page": 6,
+      "stem": "Why can mixed color temperatures be challenging?",
+      "options": [
+        "Let focus drift onto an irrelevant object",
+        "Ignore color consistency between shots",
+        "Parts of a scene may have mismatched colors",
+        "Treat shutter as unrelated to movement"
+      ],
+      "correct_mask": 4,
+      "rationale": "The source explains that parts of a scene may have mismatched colors. This is the relevant principle for this production decision. Source: MAIC Understanding the Essentials of Video Production, page 6."
+    },
+    {
+      "ordinal": 49,
+      "source_page": 6,
+      "stem": "What should guide the selection of frame rate?",
+      "options": [
+        "Use maximum gain without checking image noise",
+        "Motion requirements and intended playback conditions",
+        "Assume every frame rate creates natural slow motion",
+        "Trust display brightness over subject detail"
+      ],
+      "correct_mask": 2,
+      "rationale": "The source explains that motion requirements and intended playback conditions. This is the relevant principle for this production decision. Source: MAIC Understanding the Essentials of Video Production, page 6."
+    },
+    {
+      "ordinal": 50,
+      "source_page": 6,
+      "stem": "Why check subject details instead of display brightness alone?",
+      "options": [
+        "Ignore color consistency between shots",
+        "Treat shutter as unrelated to movement",
+        "The screen may conceal loss of usable image information",
+        "Let focus drift onto an irrelevant object"
+      ],
+      "correct_mask": 4,
+      "rationale": "The source explains that the screen may conceal loss of usable image information. This is the relevant principle for this production decision. Source: MAIC Understanding the Essentials of Video Production, page 6."
+    },
+    {
+      "ordinal": 51,
+      "source_page": 7,
+      "stem": "What is a key light?",
+      "options": [
+        "Ignore loose cables near participants",
+        "Let shadows hide important action",
+        "The main illumination shaping the subject",
+        "Assume all windows have constant light"
+      ],
+      "correct_mask": 4,
+      "rationale": "The source explains that the main illumination shaping the subject. This is the relevant principle for this production decision. Source: MAIC Understanding the Essentials of Video Production, page 7."
+    },
+    {
+      "ordinal": 52,
+      "source_page": 7,
+      "stem": "What does fill lighting commonly do?",
+      "options": [
+        "Reduce selected shadows and excess contrast",
+        "Use bright backgrounds to obscure faces",
+        "Choose lighting only for dramatic effect",
+        "Use random colors between consecutive takes"
+      ],
+      "correct_mask": 1,
+      "rationale": "The source explains that reduce selected shadows and excess contrast. This is the relevant principle for this production decision. Source: MAIC Understanding the Essentials of Video Production, page 7."
+    },
+    {
+      "ordinal": 53,
+      "source_page": 7,
+      "stem": "What can separation lighting provide?",
+      "options": [
+        "Visual distinction between a subject and the background",
+        "Let shadows hide important action",
+        "Assume all windows have constant light",
+        "Ignore loose cables near participants"
+      ],
+      "correct_mask": 1,
+      "rationale": "The source explains that visual distinction between a subject and the background. This is the relevant principle for this production decision. Source: MAIC Understanding the Essentials of Video Production, page 7."
+    },
+    {
+      "ordinal": 54,
+      "source_page": 7,
+      "stem": "What is characteristic of harder lighting?",
+      "options": [
+        "Choose lighting only for dramatic effect",
+        "Shadows with more defined edges",
+        "Use random colors between consecutive takes",
+        "Use bright backgrounds to obscure faces"
+      ],
+      "correct_mask": 2,
+      "rationale": "The source explains that shadows with more defined edges. This is the relevant principle for this production decision. Source: MAIC Understanding the Essentials of Video Production, page 7."
+    },
+    {
+      "ordinal": 55,
+      "source_page": 7,
+      "stem": "What available source can provide simple subject illumination?",
+      "options": [
+        "A properly positioned window",
+        "Assume all windows have constant light",
+        "Ignore loose cables near participants",
+        "Let shadows hide important action"
+      ],
+      "correct_mask": 1,
+      "rationale": "The source explains that a properly positioned window. This is the relevant principle for this production decision. Source: MAIC Understanding the Essentials of Video Production, page 7."
+    },
+    {
+      "ordinal": 56,
+      "source_page": 7,
+      "stem": "Why illuminate the hands during an equipment tutorial?",
+      "options": [
+        "Use random colors between consecutive takes",
+        "Use bright backgrounds to obscure faces",
+        "Choose lighting only for dramatic effect",
+        "The steps being demonstrated must remain clearly visible"
+      ],
+      "correct_mask": 8,
+      "rationale": "The source explains that the steps being demonstrated must remain clearly visible. This is the relevant principle for this production decision. Source: MAIC Understanding the Essentials of Video Production, page 7."
+    },
+    {
+      "ordinal": 57,
+      "source_page": 7,
+      "stem": "What should crews inspect when placing light stands?",
+      "options": [
+        "Cable routes, stability and physical safety",
+        "Ignore loose cables near participants",
+        "Let shadows hide important action",
+        "Assume all windows have constant light"
+      ],
+      "correct_mask": 1,
+      "rationale": "The source explains that cable routes, stability and physical safety. This is the relevant principle for this production decision. Source: MAIC Understanding the Essentials of Video Production, page 7."
+    },
+    {
+      "ordinal": 58,
+      "source_page": 7,
+      "stem": "What can happen when a subject is much darker than the background?",
+      "options": [
+        "Use bright backgrounds to obscure faces",
+        "Choose lighting only for dramatic effect",
+        "Use random colors between consecutive takes",
+        "Relevant facial details may become difficult to see"
+      ],
+      "correct_mask": 8,
+      "rationale": "The source explains that relevant facial details may become difficult to see. This is the relevant principle for this production decision. Source: MAIC Understanding the Essentials of Video Production, page 7."
+    },
+    {
+      "ordinal": 59,
+      "source_page": 7,
+      "stem": "Why keep light colors consistent between related takes?",
+      "options": [
+        "Let shadows hide important action",
+        "Assume all windows have constant light",
+        "Ignore loose cables near participants",
+        "To avoid distracting visual jumps"
+      ],
+      "correct_mask": 8,
+      "rationale": "The source explains that to avoid distracting visual jumps. This is the relevant principle for this production decision. Source: MAIC Understanding the Essentials of Video Production, page 7."
+    },
+    {
+      "ordinal": 60,
+      "source_page": 7,
+      "stem": "Why is dramatic lighting not always suitable for factual instructions?",
+      "options": [
+        "Choose lighting only for dramatic effect",
+        "Use random colors between consecutive takes",
+        "It may hide details needed for accurate understanding",
+        "Use bright backgrounds to obscure faces"
+      ],
+      "correct_mask": 4,
+      "rationale": "The source explains that it may hide details needed for accurate understanding. This is the relevant principle for this production decision. Source: MAIC Understanding the Essentials of Video Production, page 7."
+    },
+    {
+      "ordinal": 61,
+      "source_page": 8,
+      "stem": "Why is speech quality essential in explanatory video?",
+      "options": [
+        "Allow music to overpower safety instructions",
+        "Use copyrighted songs without permission",
+        "Publish unnecessary private background speech",
+        "Viewers may depend on intelligible spoken directions"
+      ],
+      "correct_mask": 8,
+      "rationale": "The source explains that viewers may depend on intelligible spoken directions. This is the relevant principle for this production decision. Source: MAIC Understanding the Essentials of Video Production, page 8."
+    },
+    {
+      "ordinal": 62,
+      "source_page": 8,
+      "stem": "What does an audio test reveal?",
+      "options": [
+        "Avoid any actual microphone testing",
+        "Noise, clipping and unsuitable recording levels",
+        "Assume auto-subtitles never have errors",
+        "Judge all recorded audio from meters alone"
+      ],
+      "correct_mask": 2,
+      "rationale": "The source explains that noise, clipping and unsuitable recording levels. This is the relevant principle for this production decision. Source: MAIC Understanding the Essentials of Video Production, page 8."
+    },
+    {
+      "ordinal": 63,
+      "source_page": 8,
+      "stem": "How can microphone distance influence voice quality?",
+      "options": [
+        "Use copyrighted songs without permission",
+        "Closer suitable placement may reduce background interference",
+        "Publish unnecessary private background speech",
+        "Allow music to overpower safety instructions"
+      ],
+      "correct_mask": 2,
+      "rationale": "The source explains that closer suitable placement may reduce background interference. This is the relevant principle for this production decision. Source: MAIC Understanding the Essentials of Video Production, page 8."
+    },
+    {
+      "ordinal": 64,
+      "source_page": 8,
+      "stem": "What is clipping in recorded sound?",
+      "options": [
+        "Assume auto-subtitles never have errors",
+        "Judge all recorded audio from meters alone",
+        "Distortion caused by excessively high signal peaks",
+        "Avoid any actual microphone testing"
+      ],
+      "correct_mask": 4,
+      "rationale": "The source explains that distortion caused by excessively high signal peaks. This is the relevant principle for this production decision. Source: MAIC Understanding the Essentials of Video Production, page 8."
+    },
+    {
+      "ordinal": 65,
+      "source_page": 8,
+      "stem": "Why listen with headphones during a sound check?",
+      "options": [
+        "Publish unnecessary private background speech",
+        "Allow music to overpower safety instructions",
+        "Use copyrighted songs without permission",
+        "Meters may miss unwanted noises"
+      ],
+      "correct_mask": 8,
+      "rationale": "The source explains that meters may miss unwanted noises. This is the relevant principle for this production decision. Source: MAIC Understanding the Essentials of Video Production, page 8."
+    },
+    {
+      "ordinal": 66,
+      "source_page": 8,
+      "stem": "What is a valid purpose for recording ambient room sound?",
+      "options": [
+        "Judge all recorded audio from meters alone",
+        "Avoid any actual microphone testing",
+        "Smoother truthful sound continuity between edits",
+        "Assume auto-subtitles never have errors"
+      ],
+      "correct_mask": 4,
+      "rationale": "The source explains that smoother truthful sound continuity between edits. This is the relevant principle for this production decision. Source: MAIC Understanding the Essentials of Video Production, page 8."
+    },
+    {
+      "ordinal": 67,
+      "source_page": 8,
+      "stem": "Why keep music below speech during instruction?",
+      "options": [
+        "Allow music to overpower safety instructions",
+        "Loud background music can obscure essential words",
+        "Use copyrighted songs without permission",
+        "Publish unnecessary private background speech"
+      ],
+      "correct_mask": 2,
+      "rationale": "The source explains that loud background music can obscure essential words. This is the relevant principle for this production decision. Source: MAIC Understanding the Essentials of Video Production, page 8."
+    },
+    {
+      "ordinal": 68,
+      "source_page": 8,
+      "stem": "What is required for using copyrighted music?",
+      "options": [
+        "Appropriate licensing or permission",
+        "Avoid any actual microphone testing",
+        "Assume auto-subtitles never have errors",
+        "Judge all recorded audio from meters alone"
+      ],
+      "correct_mask": 1,
+      "rationale": "The source explains that appropriate licensing or permission. This is the relevant principle for this production decision. Source: MAIC Understanding the Essentials of Video Production, page 8."
+    },
+    {
+      "ordinal": 69,
+      "source_page": 8,
+      "stem": "What should be checked in a prepared subtitle file?",
+      "options": [
+        "Exact words, names and numbers",
+        "Use copyrighted songs without permission",
+        "Publish unnecessary private background speech",
+        "Allow music to overpower safety instructions"
+      ],
+      "correct_mask": 1,
+      "rationale": "The source explains that exact words, names and numbers. This is the relevant principle for this production decision. Source: MAIC Understanding the Essentials of Video Production, page 8."
+    },
+    {
+      "ordinal": 70,
+      "source_page": 8,
+      "stem": "What should be done with inadvertently recorded private speech?",
+      "options": [
+        "Assume auto-subtitles never have errors",
+        "Judge all recorded audio from meters alone",
+        "Avoid any actual microphone testing",
+        "Assess consent and avoid unnecessary disclosure"
+      ],
+      "correct_mask": 8,
+      "rationale": "The source explains that assess consent and avoid unnecessary disclosure. This is the relevant principle for this production decision. Source: MAIC Understanding the Essentials of Video Production, page 8."
+    },
+    {
+      "ordinal": 71,
+      "source_page": 9,
+      "stem": "What work should a director coordinate?",
+      "options": [
+        "Ignore safety to capture dramatic footage",
+        "Presenter actions, camera, sound, schedule and safety",
+        "Label staged scenes as firsthand evidence",
+        "Allow unrestricted access to private raw clips"
+      ],
+      "correct_mask": 2,
+      "rationale": "The source explains that presenter actions, camera, sound, schedule and safety. This is the relevant principle for this production decision. Source: MAIC Understanding the Essentials of Video Production, page 9."
+    },
+    {
+      "ordinal": 72,
+      "source_page": 9,
+      "stem": "Why give presenters clear instructions?",
+      "options": [
+        "Treat all bystanders as consenting participants",
+        "Keep no take or permission records",
+        "Specific direction reduces confusion and retakes",
+        "Prompt participants to invent documentary memories"
+      ],
+      "correct_mask": 4,
+      "rationale": "The source explains that specific direction reduces confusion and retakes. This is the relevant principle for this production decision. Source: MAIC Understanding the Essentials of Video Production, page 9."
+    },
+    {
+      "ordinal": 73,
+      "source_page": 9,
+      "stem": "What must a documentary director never invent?",
+      "options": [
+        "A participant's purported actual personal experience",
+        "Label staged scenes as firsthand evidence",
+        "Allow unrestricted access to private raw clips",
+        "Ignore safety to capture dramatic footage"
+      ],
+      "correct_mask": 1,
+      "rationale": "The source explains that a participant's purported actual personal experience. This is the relevant principle for this production decision. Source: MAIC Understanding the Essentials of Video Production, page 9."
+    },
+    {
+      "ordinal": 74,
+      "source_page": 9,
+      "stem": "Why establish filming permissions?",
+      "options": [
+        "Recording rights depend on setting and intended use",
+        "Keep no take or permission records",
+        "Prompt participants to invent documentary memories",
+        "Treat all bystanders as consenting participants"
+      ],
+      "correct_mask": 1,
+      "rationale": "The source explains that recording rights depend on setting and intended use. This is the relevant principle for this production decision. Source: MAIC Understanding the Essentials of Video Production, page 9."
+    },
+    {
+      "ordinal": 75,
+      "source_page": 9,
+      "stem": "What should happen when active machinery creates hazards?",
+      "options": [
+        "Allow unrestricted access to private raw clips",
+        "Ignore safety to capture dramatic footage",
+        "Label staged scenes as firsthand evidence",
+        "Move or stop the setup before continuing"
+      ],
+      "correct_mask": 8,
+      "rationale": "The source explains that move or stop the setup before continuing. This is the relevant principle for this production decision. Source: MAIC Understanding the Essentials of Video Production, page 9."
+    },
+    {
+      "ordinal": 76,
+      "source_page": 9,
+      "stem": "What belongs in a call sheet?",
+      "options": [
+        "Prompt participants to invent documentary memories",
+        "Roles, schedule, locations and emergency or safety information",
+        "Treat all bystanders as consenting participants",
+        "Keep no take or permission records"
+      ],
+      "correct_mask": 2,
+      "rationale": "The source explains that roles, schedule, locations and emergency or safety information. This is the relevant principle for this production decision. Source: MAIC Understanding the Essentials of Video Production, page 9."
+    },
+    {
+      "ordinal": 77,
+      "source_page": 9,
+      "stem": "Why maintain logs of recorded takes?",
+      "options": [
+        "Ignore safety to capture dramatic footage",
+        "Label staged scenes as firsthand evidence",
+        "Allow unrestricted access to private raw clips",
+        "Editors need to find and match useful footage"
+      ],
+      "correct_mask": 8,
+      "rationale": "The source explains that editors need to find and match useful footage. This is the relevant principle for this production decision. Source: MAIC Understanding the Essentials of Video Production, page 9."
+    },
+    {
+      "ordinal": 78,
+      "source_page": 9,
+      "stem": "How should staged scenes be recorded in production notes?",
+      "options": [
+        "Treat all bystanders as consenting participants",
+        "Keep no take or permission records",
+        "As illustrative, distinct from genuine event footage",
+        "Prompt participants to invent documentary memories"
+      ],
+      "correct_mask": 4,
+      "rationale": "The source explains that as illustrative, distinct from genuine event footage. This is the relevant principle for this production decision. Source: MAIC Understanding the Essentials of Video Production, page 9."
+    },
+    {
+      "ordinal": 79,
+      "source_page": 9,
+      "stem": "What should take priority when a shoot becomes unsafe?",
+      "options": [
+        "Label staged scenes as firsthand evidence",
+        "Protect participants by stopping hazardous activity",
+        "Allow unrestricted access to private raw clips",
+        "Ignore safety to capture dramatic footage"
+      ],
+      "correct_mask": 2,
+      "rationale": "The source explains that protect participants by stopping hazardous activity. This is the relevant principle for this production decision. Source: MAIC Understanding the Essentials of Video Production, page 9."
+    },
+    {
+      "ordinal": 80,
+      "source_page": 9,
+      "stem": "Why limit access to sensitive original recordings?",
+      "options": [
+        "They may expose private or confidential information",
+        "Keep no take or permission records",
+        "Prompt participants to invent documentary memories",
+        "Treat all bystanders as consenting participants"
+      ],
+      "correct_mask": 1,
+      "rationale": "The source explains that they may expose private or confidential information. This is the relevant principle for this production decision. Source: MAIC Understanding the Essentials of Video Production, page 9."
+    },
+    {
+      "ordinal": 81,
+      "source_page": 10,
+      "stem": "What should editors do before the first rough cut?",
+      "options": [
+        "Review and organize footage against the script",
+        "Export without testing the actual playback",
+        "Make cuts faster than important text can be read",
+        "Use unrelated stock clips as footage of the incident"
+      ],
+      "correct_mask": 1,
+      "rationale": "The source explains that review and organize footage against the script. This is the relevant principle for this production decision. Source: MAIC Understanding the Essentials of Video Production, page 10."
+    },
+    {
+      "ordinal": 82,
+      "source_page": 10,
+      "stem": "What does a rough cut test?",
+      "options": [
+        "Treat text graphics as free from fact checks",
+        "Discard all editable source files",
+        "Narrative sequence and whether the message is understandable",
+        "Review only color grading and nothing else"
+      ],
+      "correct_mask": 4,
+      "rationale": "The source explains that narrative sequence and whether the message is understandable. This is the relevant principle for this production decision. Source: MAIC Understanding the Essentials of Video Production, page 10."
+    },
+    {
+      "ordinal": 83,
+      "source_page": 10,
+      "stem": "Why verify the facts displayed in graphics?",
+      "options": [
+        "Make cuts faster than important text can be read",
+        "Use unrelated stock clips as footage of the incident",
+        "Export without testing the actual playback",
+        "On-screen errors can misinform viewers"
+      ],
+      "correct_mask": 8,
+      "rationale": "The source explains that on-screen errors can misinform viewers. This is the relevant principle for this production decision. Source: MAIC Understanding the Essentials of Video Production, page 10."
+    },
+    {
+      "ordinal": 84,
+      "source_page": 10,
+      "stem": "What determines suitable export settings?",
+      "options": [
+        "Discard all editable source files",
+        "Review only color grading and nothing else",
+        "Intended platform and real playback needs",
+        "Treat text graphics as free from fact checks"
+      ],
+      "correct_mask": 4,
+      "rationale": "The source explains that intended platform and real playback needs. This is the relevant principle for this production decision. Source: MAIC Understanding the Essentials of Video Production, page 10."
+    },
+    {
+      "ordinal": 85,
+      "source_page": 10,
+      "stem": "What is a consequence of excessively fast cuts?",
+      "options": [
+        "Use unrelated stock clips as footage of the incident",
+        "Export without testing the actual playback",
+        "Viewers may not have time to read relevant text",
+        "Make cuts faster than important text can be read"
+      ],
+      "correct_mask": 4,
+      "rationale": "The source explains that viewers may not have time to read relevant text. This is the relevant principle for this production decision. Source: MAIC Understanding the Essentials of Video Production, page 10."
+    },
+    {
+      "ordinal": 86,
+      "source_page": 10,
+      "stem": "Why check subtitles after generating them?",
+      "options": [
+        "Review only color grading and nothing else",
+        "Treat text graphics as free from fact checks",
+        "Discard all editable source files",
+        "Transcription and number errors can survive into publication"
+      ],
+      "correct_mask": 8,
+      "rationale": "The source explains that transcription and number errors can survive into publication. This is the relevant principle for this production decision. Source: MAIC Understanding the Essentials of Video Production, page 10."
+    },
+    {
+      "ordinal": 87,
+      "source_page": 10,
+      "stem": "What should be checked in final playback?",
+      "options": [
+        "Export without testing the actual playback",
+        "Make cuts faster than important text can be read",
+        "Audio, subtitles, aspect ratio and crop",
+        "Use unrelated stock clips as footage of the incident"
+      ],
+      "correct_mask": 4,
+      "rationale": "The source explains that audio, subtitles, aspect ratio and crop. This is the relevant principle for this production decision. Source: MAIC Understanding the Essentials of Video Production, page 10."
+    },
+    {
+      "ordinal": 88,
+      "source_page": 10,
+      "stem": "Why keep an editable video project?",
+      "options": [
+        "Corrections may be required after release",
+        "Treat text graphics as free from fact checks",
+        "Discard all editable source files",
+        "Review only color grading and nothing else"
+      ],
+      "correct_mask": 1,
+      "rationale": "The source explains that corrections may be required after release. This is the relevant principle for this production decision. Source: MAIC Understanding the Essentials of Video Production, page 10."
+    },
+    {
+      "ordinal": 89,
+      "source_page": 10,
+      "stem": "When can stock footage be used responsibly?",
+      "options": [
+        "Make cuts faster than important text can be read",
+        "With adequate rights and honest illustrative labeling",
+        "Use unrelated stock clips as footage of the incident",
+        "Export without testing the actual playback"
+      ],
+      "correct_mask": 2,
+      "rationale": "The source explains that with adequate rights and honest illustrative labeling. This is the relevant principle for this production decision. Source: MAIC Understanding the Essentials of Video Production, page 10."
+    },
+    {
+      "ordinal": 90,
+      "source_page": 10,
+      "stem": "What makes a complete final quality review?",
+      "options": [
+        "Discard all editable source files",
+        "Review only color grading and nothing else",
+        "Factual, ethical and technical checks together",
+        "Treat text graphics as free from fact checks"
+      ],
+      "correct_mask": 4,
+      "rationale": "The source explains that factual, ethical and technical checks together. This is the relevant principle for this production decision. Source: MAIC Understanding the Essentials of Video Production, page 10."
+    },
+    {
+      "ordinal": 91,
+      "source_page": 11,
+      "stem": "What does the hypothetical center's notice describe?",
+      "options": [
+        "Describe a six-week trial as permanent",
+        "A six-week trial of longer Saturday opening",
+        "Film unrelated visitors without privacy consideration",
+        "Invent approval and visitor statistics"
+      ],
+      "correct_mask": 2,
+      "rationale": "The source explains that a six-week trial of longer Saturday opening. This is the relevant principle for this production decision. Source: MAIC Understanding the Essentials of Video Production, page 11."
+    },
+    {
+      "ordinal": 92,
+      "source_page": 11,
+      "stem": "Which closing time belongs in the on-screen schedule?",
+      "options": [
+        "Guess the closing hour in a graphic",
+        "The time verified from the center's original notice",
+        "Call staged footage genuine live action",
+        "Leave incorrect published dates unchanged"
+      ],
+      "correct_mask": 2,
+      "rationale": "The source explains that the time verified from the center's original notice. This is the relevant principle for this production decision. Source: MAIC Understanding the Essentials of Video Production, page 11."
+    },
+    {
+      "ordinal": 93,
+      "source_page": 11,
+      "stem": "Why avoid showing identifiable unrelated visitors?",
+      "options": [
+        "Film unrelated visitors without privacy consideration",
+        "To reduce unnecessary privacy and consent risks",
+        "Invent approval and visitor statistics",
+        "Describe a six-week trial as permanent"
+      ],
+      "correct_mask": 2,
+      "rationale": "The source explains that to reduce unnecessary privacy and consent risks. This is the relevant principle for this production decision. Source: MAIC Understanding the Essentials of Video Production, page 11."
+    },
+    {
+      "ordinal": 94,
+      "source_page": 11,
+      "stem": "What shot can clearly identify the venue?",
+      "options": [
+        "Call staged footage genuine live action",
+        "Leave incorrect published dates unchanged",
+        "Guess the closing hour in a graphic",
+        "A readable exterior sign or establishing view"
+      ],
+      "correct_mask": 8,
+      "rationale": "The source explains that a readable exterior sign or establishing view. This is the relevant principle for this production decision. Source: MAIC Understanding the Essentials of Video Production, page 11."
+    },
+    {
+      "ordinal": 95,
+      "source_page": 11,
+      "stem": "How should staged customer service footage be labeled?",
+      "options": [
+        "Invent approval and visitor statistics",
+        "Describe a six-week trial as permanent",
+        "Film unrelated visitors without privacy consideration",
+        "As an illustration rather than a live documentary record"
+      ],
+      "correct_mask": 8,
+      "rationale": "The source explains that as an illustration rather than a live documentary record. This is the relevant principle for this production decision. Source: MAIC Understanding the Essentials of Video Production, page 11."
+    },
+    {
+      "ordinal": 96,
+      "source_page": 11,
+      "stem": "What should the final contact screen provide?",
+      "options": [
+        "Leave incorrect published dates unchanged",
+        "Guess the closing hour in a graphic",
+        "Call staged footage genuine live action",
+        "Verified source and contact information"
+      ],
+      "correct_mask": 8,
+      "rationale": "The source explains that verified source and contact information. This is the relevant principle for this production decision. Source: MAIC Understanding the Essentials of Video Production, page 11."
+    },
+    {
+      "ordinal": 97,
+      "source_page": 11,
+      "stem": "What if narration and graphics disagree about duration?",
+      "options": [
+        "Describe a six-week trial as permanent",
+        "Correct the discrepancy against the original notice",
+        "Film unrelated visitors without privacy consideration",
+        "Invent approval and visitor statistics"
+      ],
+      "correct_mask": 2,
+      "rationale": "The source explains that correct the discrepancy against the original notice. This is the relevant principle for this production decision. Source: MAIC Understanding the Essentials of Video Production, page 11."
+    },
+    {
+      "ordinal": 98,
+      "source_page": 11,
+      "stem": "Which narration is accurate for the case?",
+      "options": [
+        "A temporary six-week extension trial was announced",
+        "Guess the closing hour in a graphic",
+        "Call staged footage genuine live action",
+        "Leave incorrect published dates unchanged"
+      ],
+      "correct_mask": 1,
+      "rationale": "The source explains that a temporary six-week extension trial was announced. This is the relevant principle for this production decision. Source: MAIC Understanding the Essentials of Video Production, page 11."
+    },
+    {
+      "ordinal": 99,
+      "source_page": 11,
+      "stem": "Why should recording at a public center include safety planning?",
+      "options": [
+        "Film unrelated visitors without privacy consideration",
+        "Invent approval and visitor statistics",
+        "Visitors and staff should not be obstructed or endangered",
+        "Describe a six-week trial as permanent"
+      ],
+      "correct_mask": 4,
+      "rationale": "The source explains that visitors and staff should not be obstructed or endangered. This is the relevant principle for this production decision. Source: MAIC Understanding the Essentials of Video Production, page 11."
+    },
+    {
+      "ordinal": 100,
+      "source_page": 11,
+      "stem": "How should a wrong published closing time be remedied?",
+      "options": [
+        "Call staged footage genuine live action",
+        "Leave incorrect published dates unchanged",
+        "Guess the closing hour in a graphic",
+        "Issue a verified corrected version with a correction note"
+      ],
+      "correct_mask": 8,
+      "rationale": "The source explains that issue a verified corrected version with a correction note. This is the relevant principle for this production decision. Source: MAIC Understanding the Essentials of Video Production, page 11."
+    }
+  ]
+}
