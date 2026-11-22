@@ -120,3 +120,20 @@ Editorial manuscript locations are `data/course-manuscripts/<course_id>.md`. All
 **Important production boundary verified against live Cloudflare D1 in this continuation:** Exactly **36 material records**, **20 active exams**, and **16 source-matched D1 editorial draft banks** still exist. None of the newly prepared four or the previous four offline course manuscripts is present in the production `learning_materials` table; their exam drafts are on GitHub, not installed as active D1 exam banks. This distinction is deliberate: reviewed-source registration and independent academic answer signoff are required before student activation. No independent review has been asserted or fabricated.
 
 **Overall offline editorial progress:** Eight of the 34 initial preparing courses with no production PDFs have a first original 12-section manuscript, PDF review candidate and staged 100-item bank. The remaining **26 preparing courses lack original course manuals**. Eight archived entries remain outside this queue. The next initial-preparation item is **Brand New Brand** (`brand-new-brand`).
+
+## Continuation — Four more original design-course review packages (2026-11-22)
+
+Four additional courses in the defined queue received first-draft **original MAIC 12-page English manuals**, plus **100-item page-referenced editorial question banks** for each. The four include 400 new MCQs in total. Manuals retain the MAIC crest, midnight-navy/antique-gold visual design, Tinos 12 pt teaching text, English course label and estimated study hours.
+
+| Course | Course ID | Guided hours | Offline draft bank |
+|---|---|---:|---|
+| Brand New Brand | `brand-new-brand` | 6 | `data/exam-drafts/brand-new-brand-100mcq.json` |
+| Introduction to Typography | `introduction-to-typography` | 6 | `data/exam-drafts/introduction-to-typography-100mcq.json` |
+| Advanced Guide to Adobe InDesign CC: Tables & Effects | `adobe-indesign-tables-effects` | 8 | `data/exam-drafts/adobe-indesign-tables-effects-100mcq.json` |
+| Design and Make Infographics (Project-Centered Course) | `design-and-make-infographics` | 6 | `data/exam-drafts/design-and-make-infographics-100mcq.json` |
+
+The course sources are `data/course-manuscripts/<course_id>.md`. All four course manuscripts have eleven substantive teaching pages plus a cover. The latest GitHub Actions **candidate PDF** run `45050009639` succeeded; the source-matching examination audit run `45050052854` succeeded. Both are mechanical checks. All PDFs were downloaded from GitHub Actions and independently inspected for 12-page count, nonempty extracted text and representative cover/interior/end-page visual layout. Course content was informed by the official Adobe InDesign 2026 documentation for table creation, table/cell styles and effects, and W3C accessibility guidance for complex graphics; third-party course templates were not copied.
+
+**Production boundary reconfirmed on live Cloudflare D1:** 36 registered learning materials and 20 activated exams. These four remain `preparing` in the live course catalog and have no registered production material. Their 100-question banks are stored as offline editorial drafts on GitHub rather than activated student examinations. Independent source-review, question-level review and production registration are still prerequisites. Neither automated QA nor the user's general assertion of academic review should be recorded as a signoff without an actual named reviewer record.
+
+**Totals after this continuation:** 12 of the original 34 preparing courses without source PDFs now have manuscript/PDF candidates and offline 100-question draft banks (1,200 questions across these 12). **22 preparing courses still lack original candidate manuscripts.** Eight archived entries remain outside this queue. The next catalog-ordered course is `packaging-design-circular-economy` — Packaging Design for the Circular Economy. Production readiness counts remain unchanged until actual deployment and reviewer signoff.
