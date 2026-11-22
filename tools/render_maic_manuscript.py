@@ -55,7 +55,7 @@ def inline_markup(text):
     return text
 
 
-def cover(c, crest, montage):
+def cover(c, crest, montage, title, hours):
     c.setFillColor(NAVY)
     c.rect(0, 0, W, H, fill=1, stroke=0)
 
@@ -90,12 +90,15 @@ def cover(c, crest, montage):
 
     c.setFillColor(colors.white)
     c.setFont("MAIC-Tinos-Bold", 25)
-    c.drawCentredString(W/2, 347, "Diploma in Journalism")
+    title_style = ParagraphStyle("CoverCourseTitle", fontName="MAIC-Tinos-Bold", fontSize=25, leading=30, textColor=colors.white, alignment=1)
+    title_paragraph = Paragraph(html.escape(title), title_style)
+    _, title_height = title_paragraph.wrap(W-105, 100)
+    title_paragraph.drawOn(c, 52, 366-title_height)
 
     c.setFont("MAIC-Tinos", 12)
     c.drawCentredString(W/2, 307, "COURSE STUDY MANUAL")
     c.drawCentredString(W/2, 287, "Course language: English")
-    c.drawCentredString(W/2, 267, "Estimated guided study: 12 hours")
+    c.drawCentredString(W/2, 267, "Estimated guided study: " + str(hours) + " hours")
     c.setFillColor(GOLD)
     c.setFont("MAIC-Tinos", 10)
     c.drawCentredString(W/2, 107, "Copyright 2026 MAIC. All rights reserved.")
@@ -164,6 +167,14 @@ def main():
     args = parser.parse_args()
 
     source = Path(args.input).read_text(encoding="utf-8")
+    title_match = re.search(r"^#\\s+(.+)$", source, re.M)
+    hours_match = re.search(r"^Estimated guided study:\\s*(\\d+)\\s*hours\\b", source, re.M)
+    if not title_match or not hours_match:
+        raise ValueError("Manual must declare course title and study hours")
+    title = title_match.group(1).strip()
+    hours = int(hours_match.group(1))
+    if not (1 <= hours <= 100):
+        raise ValueError("Invalid estimated study hours")
     pages = source.split(PAGE_MARKER)
     if len(pages) != 12:
         raise ValueError("12 substantive manuscript pages required; got {}".format(len(pages)))
@@ -175,8 +186,8 @@ def main():
     out.parent.mkdir(parents=True, exist_ok=True)
     c = canvas.Canvas(str(out), pagesize=letter, pageCompression=1)
     c.setAuthor("Michigan Academy of Innovation and Creativity")
-    c.setTitle("MAIC — Diploma in Journalism")
-    cover(c, args.crest, args.montage)
+    c.setTitle("MAIC — " + title)
+    cover(c, args.crest, args.montage, title, hours)
     c.showPage()
     for number, section in enumerate(pages[1:], start=2):
         body(c, section, number)
