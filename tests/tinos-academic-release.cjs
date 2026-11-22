@@ -29,3 +29,24 @@ test('recycled question families are blocked, despite 100 valid records',()=>{
  assert.match(src,/maxOpening/);
  assert.match(src,/nearPairs/);
 });
+
+test('first PDF upload is possible for an eligible catalog course without existing material',()=>{
+ const api=read('functions/api/admin/course-material.js');
+ const ui=read('admin/course-material.js');
+ assert.match(api,/const availableCourses=doc\.courses/);
+ assert.match(api,/c\.status!=='archived'/);
+ assert.match(api,/c\.mode\.includes\('self-paced'\)/);
+ assert.match(api,/has_material:stored\.has\(c\.id\)/);
+ assert.match(ui,/availableCourses=data\.availableCourses/);
+ assert.match(ui,/availableCourses\.find\(m=>m\.course_id===course\.value\)/);
+ assert.match(ui,/إضافة أول نسخة/);
+ assert.doesNotMatch(ui,/source\.find\(m=>m\.course_id===course\.value\)/);
+});
+test('candidate manual renderer and CI enforce the same PDF upload limit',()=>{
+ const render=read('tools/render_maic_manuscript.py');
+ const workflow=read('.github/workflows/maic-manuscripts.yml');
+ assert.match(render,/format="JPEG", quality=82, optimize=True/);
+ assert.match(render,/original crest/);
+ assert.match(workflow,/1_250_000/);
+ assert.match(workflow,/len\(reader\.pages\) != 12/);
+});
