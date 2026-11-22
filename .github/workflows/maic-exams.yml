@@ -32,6 +32,10 @@ on:
       - 'admin/exam-banks.js'
       - 'functions/_lib/exam-quality.js'
       - 'tests/tinos-academic-release.cjs'
+      - 'functions/data/_middleware.js'
+      - 'tests/protected-academic-assets.cjs'
+      - 'functions/api/admin/content.js'
+      - 'functions/_lib/pdf-page-tree.js'
       - 'functions/api/admin/course-material.js'
       - 'admin/course-material.js'
       - '.github/workflows/maic-exams.yml'
@@ -66,6 +70,10 @@ on:
       - 'admin/exam-banks.js'
       - 'functions/_lib/exam-quality.js'
       - 'tests/tinos-academic-release.cjs'
+      - 'functions/data/_middleware.js'
+      - 'tests/protected-academic-assets.cjs'
+      - 'functions/api/admin/content.js'
+      - 'functions/_lib/pdf-page-tree.js'
       - 'functions/api/admin/course-material.js'
       - 'admin/course-material.js'
       - '.github/workflows/maic-exams.yml'
@@ -78,7 +86,7 @@ jobs:
         with:
           node-version: '22'
       - name: Check backend and learner-exam safeguards
-        run: node --test tests/exam-catalog-privacy.cjs tests/exam-item-signoff.cjs tests/exam-answer-cue-audit.cjs tests/academic-source-recall.cjs tests/academic-bank-status.cjs tests/course-bank-offline-audit.cjs tests/self-paced-exam.cjs tests/tinos-academic-release.cjs tests/learner-exam-integration.cjs tests/exam-content-quality.cjs tests/exam-two-stage-review-integration.cjs
+        run: node --test tests/exam-catalog-privacy.cjs tests/exam-item-signoff.cjs tests/exam-answer-cue-audit.cjs tests/academic-source-recall.cjs tests/academic-bank-status.cjs tests/course-bank-offline-audit.cjs tests/self-paced-exam.cjs tests/tinos-academic-release.cjs tests/protected-academic-assets.cjs tests/learner-exam-integration.cjs tests/exam-content-quality.cjs tests/exam-two-stage-review-integration.cjs
       - name: Check Michigan photo gallery and accessibility
         run: node --check michigan-gallery.js && node --test tests/michigan-gallery.cjs
       - name: Validate Python PDF generator syntax
