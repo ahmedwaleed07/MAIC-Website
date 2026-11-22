@@ -51,7 +51,7 @@ def find_tinos(style):
 
 def inline_markup(text):
     text = html.escape(text.strip(), quote=False)
-    text = re.sub(r"\\*\\*(.+?)\\*\\*", r"<b>\\1</b>", text)
+    text = re.sub(r"\*\*(.+?)\*\*", r"<b>\1</b>", text)
     return text
 
 
