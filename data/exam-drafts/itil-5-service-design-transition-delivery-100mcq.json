@@ -1,0 +1,1312 @@
+{
+  "course_id": "itil-5-service-design-transition-delivery",
+  "source_manuscript": "data/course-manuscripts/itil-5-service-design-transition-delivery.md",
+  "source_manuscript_blob_sha": "0c5f67a0446691a2d2e580865f08d0273e5748e1",
+  "source_pdf_sha256": null,
+  "bank_version": "draft-manuscript-20261123-v1",
+  "approval_status": "editorial_draft_pending_independent_review",
+  "number_of_questions": 100,
+  "note": "Original independent MAIC item draft only. Not PeopleCert-approved ITIL training, official certification or an active student examination.",
+  "questions": [
+    {
+      "ordinal": 1,
+      "source_page": 2,
+      "stem": "What does service management aim to deliver?",
+      "options": [
+        "Treat a website as an entire service regardless of operations",
+        "Reliable value through coordinated people, technology and processes",
+        "Ignore AI and operational risk in service planning",
+        "Launch without testing user outcomes"
+      ],
+      "correct_mask": 2,
+      "rationale": "The course explains that reliable value through coordinated people, technology and processes. This follows the independent service-management teaching example without claiming an official PeopleCert exam result. Source: MAIC ITIL 5 Service Design, Transition, and Delivery, page 2."
+    },
+    {
+      "ordinal": 2,
+      "source_page": 2,
+      "stem": "Why is a digital service more than its website?",
+      "options": [
+        "Describe MAIC study as an accredited PeopleCert qualification",
+        "Use fictional performance records as actual service metrics",
+        "User outcomes depend on operations and supporting systems",
+        "Treat a website as an entire service regardless of operations"
+      ],
+      "correct_mask": 4,
+      "rationale": "The course explains that user outcomes depend on operations and supporting systems. This follows the independent service-management teaching example without claiming an official PeopleCert exam result. Source: MAIC ITIL 5 Service Design, Transition, and Delivery, page 2."
+    },
+    {
+      "ordinal": 3,
+      "source_page": 2,
+      "stem": "What is the purpose of service design?",
+      "options": [
+        "Ignore AI and operational risk in service planning",
+        "Launch without testing user outcomes",
+        "Describe MAIC study as an accredited PeopleCert qualification",
+        "Plan outcomes, resources, risks and support end to end"
+      ],
+      "correct_mask": 8,
+      "rationale": "The course explains that plan outcomes, resources, risks and support end to end. This follows the independent service-management teaching example without claiming an official PeopleCert exam result. Source: MAIC ITIL 5 Service Design, Transition, and Delivery, page 2."
+    },
+    {
+      "ordinal": 4,
+      "source_page": 2,
+      "stem": "What does transition coordinate?",
+      "options": [
+        "Use fictional performance records as actual service metrics",
+        "Treat a website as an entire service regardless of operations",
+        "Ignore AI and operational risk in service planning",
+        "The controlled introduction of a service or change"
+      ],
+      "correct_mask": 8,
+      "rationale": "The course explains that the controlled introduction of a service or change. This follows the independent service-management teaching example without claiming an official PeopleCert exam result. Source: MAIC ITIL 5 Service Design, Transition, and Delivery, page 2."
+    },
+    {
+      "ordinal": 5,
+      "source_page": 2,
+      "stem": "What does service delivery involve?",
+      "options": [
+        "Launch without testing user outcomes",
+        "Describe MAIC study as an accredited PeopleCert qualification",
+        "Use fictional performance records as actual service metrics",
+        "Ongoing operation, support and user experience"
+      ],
+      "correct_mask": 8,
+      "rationale": "The course explains that ongoing operation, support and user experience. This follows the independent service-management teaching example without claiming an official PeopleCert exam result. Source: MAIC ITIL 5 Service Design, Transition, and Delivery, page 2."
+    },
+    {
+      "ordinal": 6,
+      "source_page": 2,
+      "stem": "Why is MAIC's course not a PeopleCert certificate?",
+      "options": [
+        "Treat a website as an entire service regardless of operations",
+        "Ignore AI and operational risk in service planning",
+        "It is independently authored and not official accredited training",
+        "Launch without testing user outcomes"
+      ],
+      "correct_mask": 4,
+      "rationale": "The course explains that it is independently authored and not official accredited training. This follows the independent service-management teaching example without claiming an official PeopleCert exam result. Source: MAIC ITIL 5 Service Design, Transition, and Delivery, page 2."
+    },
+    {
+      "ordinal": 7,
+      "source_page": 2,
+      "stem": "What is distinctive about ITIL Version 5 context?",
+      "options": [
+        "Describe MAIC study as an accredited PeopleCert qualification",
+        "Use fictional performance records as actual service metrics",
+        "Integrated digital product and AI-aware value management",
+        "Treat a website as an entire service regardless of operations"
+      ],
+      "correct_mask": 4,
+      "rationale": "The course explains that integrated digital product and AI-aware value management. This follows the independent service-management teaching example without claiming an official PeopleCert exam result. Source: MAIC ITIL 5 Service Design, Transition, and Delivery, page 2."
+    },
+    {
+      "ordinal": 8,
+      "source_page": 2,
+      "stem": "Why are classroom service statistics labeled fictional?",
+      "options": [
+        "Ignore AI and operational risk in service planning",
+        "Launch without testing user outcomes",
+        "Describe MAIC study as an accredited PeopleCert qualification",
+        "They do not document a real operational service"
+      ],
+      "correct_mask": 8,
+      "rationale": "The course explains that they do not document a real operational service. This follows the independent service-management teaching example without claiming an official PeopleCert exam result. Source: MAIC ITIL 5 Service Design, Transition, and Delivery, page 2."
+    },
+    {
+      "ordinal": 9,
+      "source_page": 2,
+      "stem": "What is an important learner outcome?",
+      "options": [
+        "Use fictional performance records as actual service metrics",
+        "Treat a website as an entire service regardless of operations",
+        "Develop a service blueprint and transition plan",
+        "Ignore AI and operational risk in service planning"
+      ],
+      "correct_mask": 4,
+      "rationale": "The course explains that develop a service blueprint and transition plan. This follows the independent service-management teaching example without claiming an official PeopleCert exam result. Source: MAIC ITIL 5 Service Design, Transition, and Delivery, page 2."
+    },
+    {
+      "ordinal": 10,
+      "source_page": 2,
+      "stem": "What should be considered before launching a new service?",
+      "options": [
+        "Launch without testing user outcomes",
+        "Readiness, users, risks and resources",
+        "Describe MAIC study as an accredited PeopleCert qualification",
+        "Use fictional performance records as actual service metrics"
+      ],
+      "correct_mask": 2,
+      "rationale": "The course explains that readiness, users, risks and resources. This follows the independent service-management teaching example without claiming an official PeopleCert exam result. Source: MAIC ITIL 5 Service Design, Transition, and Delivery, page 2."
+    },
+    {
+      "ordinal": 11,
+      "source_page": 3,
+      "stem": "Who is a service user?",
+      "options": [
+        "Measure success solely by page uptime",
+        "Exclude service suppliers from accountability",
+        "Offer commitments that staff cannot fulfill",
+        "A person who consumes or interacts with the service"
+      ],
+      "correct_mask": 8,
+      "rationale": "The course explains that a person who consumes or interacts with the service. This follows the independent service-management teaching example without claiming an official PeopleCert exam result. Source: MAIC ITIL 5 Service Design, Transition, and Delivery, page 3."
+    },
+    {
+      "ordinal": 12,
+      "source_page": 3,
+      "stem": "Who may sponsor and define requirements for a service?",
+      "options": [
+        "A customer or accountable service owner",
+        "Treat pending requests as approved bookings",
+        "Ignore customer and user role distinctions",
+        "Measure success solely by page uptime"
+      ],
+      "correct_mask": 1,
+      "rationale": "The course explains that a customer or accountable service owner. This follows the independent service-management teaching example without claiming an official PeopleCert exam result. Source: MAIC ITIL 5 Service Design, Transition, and Delivery, page 3."
+    },
+    {
+      "ordinal": 13,
+      "source_page": 3,
+      "stem": "Why is server uptime insufficient to measure success?",
+      "options": [
+        "Exclude service suppliers from accountability",
+        "Offer commitments that staff cannot fulfill",
+        "Treat pending requests as approved bookings",
+        "A booking transaction can fail while pages remain online"
+      ],
+      "correct_mask": 8,
+      "rationale": "The course explains that a booking transaction can fail while pages remain online. This follows the independent service-management teaching example without claiming an official PeopleCert exam result. Source: MAIC ITIL 5 Service Design, Transition, and Delivery, page 3."
+    },
+    {
+      "ordinal": 14,
+      "source_page": 3,
+      "stem": "What does a value proposition describe?",
+      "options": [
+        "Relevant results a service helps its customers achieve",
+        "Ignore customer and user role distinctions",
+        "Measure success solely by page uptime",
+        "Exclude service suppliers from accountability"
+      ],
+      "correct_mask": 1,
+      "rationale": "The course explains that relevant results a service helps its customers achieve. This follows the independent service-management teaching example without claiming an official PeopleCert exam result. Source: MAIC ITIL 5 Service Design, Transition, and Delivery, page 3."
+    },
+    {
+      "ordinal": 15,
+      "source_page": 3,
+      "stem": "What is an example of a service dependency?",
+      "options": [
+        "Offer commitments that staff cannot fulfill",
+        "Treat pending requests as approved bookings",
+        "Identity, database or message provider",
+        "Ignore customer and user role distinctions"
+      ],
+      "correct_mask": 4,
+      "rationale": "The course explains that identity, database or message provider. This follows the independent service-management teaching example without claiming an official PeopleCert exam result. Source: MAIC ITIL 5 Service Design, Transition, and Delivery, page 3."
+    },
+    {
+      "ordinal": 16,
+      "source_page": 3,
+      "stem": "Why should booking request states be distinct?",
+      "options": [
+        "Measure success solely by page uptime",
+        "Pending is not equivalent to confirmed",
+        "Exclude service suppliers from accountability",
+        "Offer commitments that staff cannot fulfill"
+      ],
+      "correct_mask": 2,
+      "rationale": "The course explains that pending is not equivalent to confirmed. This follows the independent service-management teaching example without claiming an official PeopleCert exam result. Source: MAIC ITIL 5 Service Design, Transition, and Delivery, page 3."
+    },
+    {
+      "ordinal": 17,
+      "source_page": 3,
+      "stem": "What should an accountability map identify?",
+      "options": [
+        "Treat pending requests as approved bookings",
+        "Owners of decisions and support activities",
+        "Ignore customer and user role distinctions",
+        "Measure success solely by page uptime"
+      ],
+      "correct_mask": 2,
+      "rationale": "The course explains that owners of decisions and support activities. This follows the independent service-management teaching example without claiming an official PeopleCert exam result. Source: MAIC ITIL 5 Service Design, Transition, and Delivery, page 3."
+    },
+    {
+      "ordinal": 18,
+      "source_page": 3,
+      "stem": "What is a good service outcome measure?",
+      "options": [
+        "Exclude service suppliers from accountability",
+        "Correct authorized booking completion",
+        "Offer commitments that staff cannot fulfill",
+        "Treat pending requests as approved bookings"
+      ],
+      "correct_mask": 2,
+      "rationale": "The course explains that correct authorized booking completion. This follows the independent service-management teaching example without claiming an official PeopleCert exam result. Source: MAIC ITIL 5 Service Design, Transition, and Delivery, page 3."
+    },
+    {
+      "ordinal": 19,
+      "source_page": 3,
+      "stem": "What should technical metrics be paired with?",
+      "options": [
+        "Ignore customer and user role distinctions",
+        "User task and operational indicators",
+        "Measure success solely by page uptime",
+        "Exclude service suppliers from accountability"
+      ],
+      "correct_mask": 2,
+      "rationale": "The course explains that user task and operational indicators. This follows the independent service-management teaching example without claiming an official PeopleCert exam result. Source: MAIC ITIL 5 Service Design, Transition, and Delivery, page 3."
+    },
+    {
+      "ordinal": 20,
+      "source_page": 3,
+      "stem": "Why should service promises be credible?",
+      "options": [
+        "Offer commitments that staff cannot fulfill",
+        "Treat pending requests as approved bookings",
+        "Staff and infrastructure must support them",
+        "Ignore customer and user role distinctions"
+      ],
+      "correct_mask": 4,
+      "rationale": "The course explains that staff and infrastructure must support them. This follows the independent service-management teaching example without claiming an official PeopleCert exam result. Source: MAIC ITIL 5 Service Design, Transition, and Delivery, page 3."
+    },
+    {
+      "ordinal": 21,
+      "source_page": 4,
+      "stem": "What does a service blueprint show?",
+      "options": [
+        "User actions and backstage systems supporting them",
+        "Use only a visual form as the whole service blueprint",
+        "Ignore supplier failure and support routes",
+        "Promise service capacity without staffing"
+      ],
+      "correct_mask": 1,
+      "rationale": "The course explains that user actions and backstage systems supporting them. This follows the independent service-management teaching example without claiming an official PeopleCert exam result. Source: MAIC ITIL 5 Service Design, Transition, and Delivery, page 4."
+    },
+    {
+      "ordinal": 22,
+      "source_page": 4,
+      "stem": "What is a functional service requirement?",
+      "options": [
+        "Assume hidden browser fields protect transactions",
+        "An action such as cancel or check booking",
+        "Call every functional requirement a style choice",
+        "Use only a visual form as the whole service blueprint"
+      ],
+      "correct_mask": 2,
+      "rationale": "The course explains that an action such as cancel or check booking. This follows the independent service-management teaching example without claiming an official PeopleCert exam result. Source: MAIC ITIL 5 Service Design, Transition, and Delivery, page 4."
+    },
+    {
+      "ordinal": 23,
+      "source_page": 4,
+      "stem": "What is a nonfunctional service need?",
+      "options": [
+        "Ignore supplier failure and support routes",
+        "Promise service capacity without staffing",
+        "Reliability, accessibility or security",
+        "Assume hidden browser fields protect transactions"
+      ],
+      "correct_mask": 4,
+      "rationale": "The course explains that reliability, accessibility or security. This follows the independent service-management teaching example without claiming an official PeopleCert exam result. Source: MAIC ITIL 5 Service Design, Transition, and Delivery, page 4."
+    },
+    {
+      "ordinal": 24,
+      "source_page": 4,
+      "stem": "Why is an isolated booking button not an end-to-end service?",
+      "options": [
+        "Call every functional requirement a style choice",
+        "Other processes must authorize and complete the request",
+        "Use only a visual form as the whole service blueprint",
+        "Ignore supplier failure and support routes"
+      ],
+      "correct_mask": 2,
+      "rationale": "The course explains that other processes must authorize and complete the request. This follows the independent service-management teaching example without claiming an official PeopleCert exam result. Source: MAIC ITIL 5 Service Design, Transition, and Delivery, page 4."
+    },
+    {
+      "ordinal": 25,
+      "source_page": 4,
+      "stem": "What should a design include for message-delivery failure?",
+      "options": [
+        "Promise service capacity without staffing",
+        "Assume hidden browser fields protect transactions",
+        "A truthful authorized alternative status route",
+        "Call every functional requirement a style choice"
+      ],
+      "correct_mask": 4,
+      "rationale": "The course explains that a truthful authorized alternative status route. This follows the independent service-management teaching example without claiming an official PeopleCert exam result. Source: MAIC ITIL 5 Service Design, Transition, and Delivery, page 4."
+    },
+    {
+      "ordinal": 26,
+      "source_page": 4,
+      "stem": "Why should a service support model be planned early?",
+      "options": [
+        "Use only a visual form as the whole service blueprint",
+        "Ignore supplier failure and support routes",
+        "Users need ownership and escalation when issues occur",
+        "Promise service capacity without staffing"
+      ],
+      "correct_mask": 4,
+      "rationale": "The course explains that users need ownership and escalation when issues occur. This follows the independent service-management teaching example without claiming an official PeopleCert exam result. Source: MAIC ITIL 5 Service Design, Transition, and Delivery, page 4."
+    },
+    {
+      "ordinal": 27,
+      "source_page": 4,
+      "stem": "What must enforce permission to reserve a slot?",
+      "options": [
+        "Trusted service-side authorization",
+        "Assume hidden browser fields protect transactions",
+        "Call every functional requirement a style choice",
+        "Use only a visual form as the whole service blueprint"
+      ],
+      "correct_mask": 1,
+      "rationale": "The course explains that trusted service-side authorization. This follows the independent service-management teaching example without claiming an official PeopleCert exam result. Source: MAIC ITIL 5 Service Design, Transition, and Delivery, page 4."
+    },
+    {
+      "ordinal": 28,
+      "source_page": 4,
+      "stem": "Why should service capacity be considered?",
+      "options": [
+        "Demand may exceed resources and approval staff",
+        "Ignore supplier failure and support routes",
+        "Promise service capacity without staffing",
+        "Assume hidden browser fields protect transactions"
+      ],
+      "correct_mask": 1,
+      "rationale": "The course explains that demand may exceed resources and approval staff. This follows the independent service-management teaching example without claiming an official PeopleCert exam result. Source: MAIC ITIL 5 Service Design, Transition, and Delivery, page 4."
+    },
+    {
+      "ordinal": 29,
+      "source_page": 4,
+      "stem": "What is the purpose of a knowledge base?",
+      "options": [
+        "Call every functional requirement a style choice",
+        "Provide consistent helpful support instructions",
+        "Use only a visual form as the whole service blueprint",
+        "Ignore supplier failure and support routes"
+      ],
+      "correct_mask": 2,
+      "rationale": "The course explains that provide consistent helpful support instructions. This follows the independent service-management teaching example without claiming an official PeopleCert exam result. Source: MAIC ITIL 5 Service Design, Transition, and Delivery, page 4."
+    },
+    {
+      "ordinal": 30,
+      "source_page": 4,
+      "stem": "What can an interface-only review miss?",
+      "options": [
+        "Supplier and operational workflow dependencies",
+        "Promise service capacity without staffing",
+        "Assume hidden browser fields protect transactions",
+        "Call every functional requirement a style choice"
+      ],
+      "correct_mask": 1,
+      "rationale": "The course explains that supplier and operational workflow dependencies. This follows the independent service-management teaching example without claiming an official PeopleCert exam result. Source: MAIC ITIL 5 Service Design, Transition, and Delivery, page 4."
+    },
+    {
+      "ordinal": 31,
+      "source_page": 5,
+      "stem": "What is the definition of service transition readiness?",
+      "options": [
+        "Call technical deployment automatic release approval",
+        "Use no change owner or rollback plan",
+        "Release incorrect confirmation messages regardless of risk",
+        "Testing, training, communication and operational preparation"
+      ],
+      "correct_mask": 8,
+      "rationale": "The course explains that testing, training, communication and operational preparation. This follows the independent service-management teaching example without claiming an official PeopleCert exam result. Source: MAIC ITIL 5 Service Design, Transition, and Delivery, page 5."
+    },
+    {
+      "ordinal": 32,
+      "source_page": 5,
+      "stem": "In a service-management context, what is a release?",
+      "options": [
+        "Skip testing rejected booking states",
+        "Treat an error-free build as full operational readiness",
+        "Call technical deployment automatic release approval",
+        "Coordinated introduction of approved changes"
+      ],
+      "correct_mask": 8,
+      "rationale": "The course explains that coordinated introduction of approved changes. This follows the independent service-management teaching example without claiming an official PeopleCert exam result. Source: MAIC ITIL 5 Service Design, Transition, and Delivery, page 5."
+    },
+    {
+      "ordinal": 33,
+      "source_page": 5,
+      "stem": "In service management, what is deployment?",
+      "options": [
+        "Use no change owner or rollback plan",
+        "Release incorrect confirmation messages regardless of risk",
+        "Technical movement of a change into an environment",
+        "Skip testing rejected booking states"
+      ],
+      "correct_mask": 4,
+      "rationale": "The course explains that technical movement of a change into an environment. This follows the independent service-management teaching example without claiming an official PeopleCert exam result. Source: MAIC ITIL 5 Service Design, Transition, and Delivery, page 5."
+    },
+    {
+      "ordinal": 34,
+      "source_page": 5,
+      "stem": "Why are deployment and release not necessarily identical?",
+      "options": [
+        "Treat an error-free build as full operational readiness",
+        "Call technical deployment automatic release approval",
+        "Use no change owner or rollback plan",
+        "A technical build may be moved without service authorization"
+      ],
+      "correct_mask": 8,
+      "rationale": "The course explains that a technical build may be moved without service authorization. This follows the independent service-management teaching example without claiming an official PeopleCert exam result. Source: MAIC ITIL 5 Service Design, Transition, and Delivery, page 5."
+    },
+    {
+      "ordinal": 35,
+      "source_page": 5,
+      "stem": "What should transition acceptance tests include?",
+      "options": [
+        "Release incorrect confirmation messages regardless of risk",
+        "Skip testing rejected booking states",
+        "Positive and rejected transaction cases",
+        "Treat an error-free build as full operational readiness"
+      ],
+      "correct_mask": 4,
+      "rationale": "The course explains that positive and rejected transaction cases. This follows the independent service-management teaching example without claiming an official PeopleCert exam result. Source: MAIC ITIL 5 Service Design, Transition, and Delivery, page 5."
+    },
+    {
+      "ordinal": 36,
+      "source_page": 5,
+      "stem": "Why can a successful build still be unready for users?",
+      "options": [
+        "Call technical deployment automatic release approval",
+        "Service defects or missing operational owners may remain",
+        "Use no change owner or rollback plan",
+        "Release incorrect confirmation messages regardless of risk"
+      ],
+      "correct_mask": 2,
+      "rationale": "The course explains that service defects or missing operational owners may remain. This follows the independent service-management teaching example without claiming an official PeopleCert exam result. Source: MAIC ITIL 5 Service Design, Transition, and Delivery, page 5."
+    },
+    {
+      "ordinal": 37,
+      "source_page": 5,
+      "stem": "What is a purpose of a rollback plan?",
+      "options": [
+        "Skip testing rejected booking states",
+        "Treat an error-free build as full operational readiness",
+        "Provide controlled reversal or recovery after failure",
+        "Call technical deployment automatic release approval"
+      ],
+      "correct_mask": 4,
+      "rationale": "The course explains that provide controlled reversal or recovery after failure. This follows the independent service-management teaching example without claiming an official PeopleCert exam result. Source: MAIC ITIL 5 Service Design, Transition, and Delivery, page 5."
+    },
+    {
+      "ordinal": 38,
+      "source_page": 5,
+      "stem": "Why should changes be risk-assessed?",
+      "options": [
+        "Use no change owner or rollback plan",
+        "Release incorrect confirmation messages regardless of risk",
+        "Skip testing rejected booking states",
+        "Effects and dependencies vary by service"
+      ],
+      "correct_mask": 8,
+      "rationale": "The course explains that effects and dependencies vary by service. This follows the independent service-management teaching example without claiming an official PeopleCert exam result. Source: MAIC ITIL 5 Service Design, Transition, and Delivery, page 5."
+    },
+    {
+      "ordinal": 39,
+      "source_page": 5,
+      "stem": "What should a change decision owner do?",
+      "options": [
+        "Treat an error-free build as full operational readiness",
+        "Call technical deployment automatic release approval",
+        "Authorize the appropriate release based on evidence",
+        "Use no change owner or rollback plan"
+      ],
+      "correct_mask": 4,
+      "rationale": "The course explains that authorize the appropriate release based on evidence. This follows the independent service-management teaching example without claiming an official PeopleCert exam result. Source: MAIC ITIL 5 Service Design, Transition, and Delivery, page 5."
+    },
+    {
+      "ordinal": 40,
+      "source_page": 5,
+      "stem": "What should a missing status-code test block?",
+      "options": [
+        "Release incorrect confirmation messages regardless of risk",
+        "Skip testing rejected booking states",
+        "Publication of inaccurate confirmation messages",
+        "Treat an error-free build as full operational readiness"
+      ],
+      "correct_mask": 4,
+      "rationale": "The course explains that publication of inaccurate confirmation messages. This follows the independent service-management teaching example without claiming an official PeopleCert exam result. Source: MAIC ITIL 5 Service Design, Transition, and Delivery, page 5."
+    },
+    {
+      "ordinal": 41,
+      "source_page": 6,
+      "stem": "What does a service-level target describe?",
+      "options": [
+        "A measurable agreed performance expectation",
+        "Publish percentages with no defined denominator",
+        "Measure only what is easy to count",
+        "Call all leading indicators measured incidents"
+      ],
+      "correct_mask": 1,
+      "rationale": "The course explains that a measurable agreed performance expectation. This follows the independent service-management teaching example without claiming an official PeopleCert exam result. Source: MAIC ITIL 5 Service Design, Transition, and Delivery, page 6."
+    },
+    {
+      "ordinal": 42,
+      "source_page": 6,
+      "stem": "What must a service-level metric define?",
+      "options": [
+        "Treat site uptime as full transaction accuracy",
+        "Ignore reporting periods and maintenance definitions",
+        "Counting method and measurement period",
+        "Publish percentages with no defined denominator"
+      ],
+      "correct_mask": 4,
+      "rationale": "The course explains that counting method and measurement period. This follows the independent service-management teaching example without claiming an official PeopleCert exam result. Source: MAIC ITIL 5 Service Design, Transition, and Delivery, page 6."
+    },
+    {
+      "ordinal": 43,
+      "source_page": 6,
+      "stem": "How is basic availability calculated?",
+      "options": [
+        "Available time divided by eligible total time",
+        "Measure only what is easy to count",
+        "Call all leading indicators measured incidents",
+        "Treat site uptime as full transaction accuracy"
+      ],
+      "correct_mask": 1,
+      "rationale": "The course explains that available time divided by eligible total time. This follows the independent service-management teaching example without claiming an official PeopleCert exam result. Source: MAIC ITIL 5 Service Design, Transition, and Delivery, page 6."
+    },
+    {
+      "ordinal": 44,
+      "source_page": 6,
+      "stem": "Why may scheduled maintenance affect the reported availability?",
+      "options": [
+        "The counting agreement may define exclusions",
+        "Ignore reporting periods and maintenance definitions",
+        "Publish percentages with no defined denominator",
+        "Measure only what is easy to count"
+      ],
+      "correct_mask": 1,
+      "rationale": "The course explains that the counting agreement may define exclusions. This follows the independent service-management teaching example without claiming an official PeopleCert exam result. Source: MAIC ITIL 5 Service Design, Transition, and Delivery, page 6."
+    },
+    {
+      "ordinal": 45,
+      "source_page": 6,
+      "stem": "What does a service availability rate fail to prove?",
+      "options": [
+        "That every transaction completed correctly",
+        "Call all leading indicators measured incidents",
+        "Treat site uptime as full transaction accuracy",
+        "Ignore reporting periods and maintenance definitions"
+      ],
+      "correct_mask": 1,
+      "rationale": "The course explains that that every transaction completed correctly. This follows the independent service-management teaching example without claiming an official PeopleCert exam result. Source: MAIC ITIL 5 Service Design, Transition, and Delivery, page 6."
+    },
+    {
+      "ordinal": 46,
+      "source_page": 6,
+      "stem": "What is a leading operational measure?",
+      "options": [
+        "Publish percentages with no defined denominator",
+        "Queue growth warning of possible future delay",
+        "Measure only what is easy to count",
+        "Call all leading indicators measured incidents"
+      ],
+      "correct_mask": 2,
+      "rationale": "The course explains that queue growth warning of possible future delay. This follows the independent service-management teaching example without claiming an official PeopleCert exam result. Source: MAIC ITIL 5 Service Design, Transition, and Delivery, page 6."
+    },
+    {
+      "ordinal": 47,
+      "source_page": 6,
+      "stem": "What is a lagging operational measure?",
+      "options": [
+        "Treat site uptime as full transaction accuracy",
+        "Ignore reporting periods and maintenance definitions",
+        "Publish percentages with no defined denominator",
+        "Recorded incidents after service disruption"
+      ],
+      "correct_mask": 8,
+      "rationale": "The course explains that recorded incidents after service disruption. This follows the independent service-management teaching example without claiming an official PeopleCert exam result. Source: MAIC ITIL 5 Service Design, Transition, and Delivery, page 6."
+    },
+    {
+      "ordinal": 48,
+      "source_page": 6,
+      "stem": "Why should a dashboard avoid easy-only metrics?",
+      "options": [
+        "Measure only what is easy to count",
+        "They may not reflect the actual user outcome",
+        "Call all leading indicators measured incidents",
+        "Treat site uptime as full transaction accuracy"
+      ],
+      "correct_mask": 2,
+      "rationale": "The course explains that they may not reflect the actual user outcome. This follows the independent service-management teaching example without claiming an official PeopleCert exam result. Source: MAIC ITIL 5 Service Design, Transition, and Delivery, page 6."
+    },
+    {
+      "ordinal": 49,
+      "source_page": 6,
+      "stem": "If a service is available for 719 of 720 hours, what is its approximate availability?",
+      "options": [
+        "99.86%",
+        "Ignore reporting periods and maintenance definitions",
+        "Publish percentages with no defined denominator",
+        "Measure only what is easy to count"
+      ],
+      "correct_mask": 1,
+      "rationale": "The course explains that 99.86%. This follows the independent service-management teaching example without claiming an official PeopleCert exam result. Source: MAIC ITIL 5 Service Design, Transition, and Delivery, page 6."
+    },
+    {
+      "ordinal": 50,
+      "source_page": 6,
+      "stem": "Why should data limitations be stated?",
+      "options": [
+        "Readers need to know what the metric does not measure",
+        "Call all leading indicators measured incidents",
+        "Treat site uptime as full transaction accuracy",
+        "Ignore reporting periods and maintenance definitions"
+      ],
+      "correct_mask": 1,
+      "rationale": "The course explains that readers need to know what the metric does not measure. This follows the independent service-management teaching example without claiming an official PeopleCert exam result. Source: MAIC ITIL 5 Service Design, Transition, and Delivery, page 6."
+    },
+    {
+      "ordinal": 51,
+      "source_page": 7,
+      "stem": "What is a service request?",
+      "options": [
+        "A standard request for an authorized service action",
+        "Treat every problem as a standard service request",
+        "Use workarounds as proof the root cause is removed",
+        "Communicate fabricated resolution status"
+      ],
+      "correct_mask": 1,
+      "rationale": "The course explains that a standard request for an authorized service action. This follows the independent service-management teaching example without claiming an official PeopleCert exam result. Source: MAIC ITIL 5 Service Design, Transition, and Delivery, page 7."
+    },
+    {
+      "ordinal": 52,
+      "source_page": 7,
+      "stem": "What is an incident?",
+      "options": [
+        "Describe an acknowledged incident as resolved",
+        "Delete repeated incident patterns",
+        "An unplanned interruption or degradation of service",
+        "Treat every problem as a standard service request"
+      ],
+      "correct_mask": 4,
+      "rationale": "The course explains that an unplanned interruption or degradation of service. This follows the independent service-management teaching example without claiming an official PeopleCert exam result. Source: MAIC ITIL 5 Service Design, Transition, and Delivery, page 7."
+    },
+    {
+      "ordinal": 53,
+      "source_page": 7,
+      "stem": "What does problem management investigate?",
+      "options": [
+        "Use workarounds as proof the root cause is removed",
+        "Communicate fabricated resolution status",
+        "Describe an acknowledged incident as resolved",
+        "Underlying causes of recurring or significant incidents"
+      ],
+      "correct_mask": 8,
+      "rationale": "The course explains that underlying causes of recurring or significant incidents. This follows the independent service-management teaching example without claiming an official PeopleCert exam result. Source: MAIC ITIL 5 Service Design, Transition, and Delivery, page 7."
+    },
+    {
+      "ordinal": 54,
+      "source_page": 7,
+      "stem": "Why should acknowledged not equal resolved?",
+      "options": [
+        "Delete repeated incident patterns",
+        "Investigation may continue after intake",
+        "Treat every problem as a standard service request",
+        "Use workarounds as proof the root cause is removed"
+      ],
+      "correct_mask": 2,
+      "rationale": "The course explains that investigation may continue after intake. This follows the independent service-management teaching example without claiming an official PeopleCert exam result. Source: MAIC ITIL 5 Service Design, Transition, and Delivery, page 7."
+    },
+    {
+      "ordinal": 55,
+      "source_page": 7,
+      "stem": "What should an incident record include?",
+      "options": [
+        "Impact, urgency, symptoms, time and owner",
+        "Communicate fabricated resolution status",
+        "Describe an acknowledged incident as resolved",
+        "Delete repeated incident patterns"
+      ],
+      "correct_mask": 1,
+      "rationale": "The course explains that impact, urgency, symptoms, time and owner. This follows the independent service-management teaching example without claiming an official PeopleCert exam result. Source: MAIC ITIL 5 Service Design, Transition, and Delivery, page 7."
+    },
+    {
+      "ordinal": 56,
+      "source_page": 7,
+      "stem": "What is a workaround used for?",
+      "options": [
+        "Treat every problem as a standard service request",
+        "Use workarounds as proof the root cause is removed",
+        "Communicate fabricated resolution status",
+        "Reduce impact while a root cause remains unresolved"
+      ],
+      "correct_mask": 8,
+      "rationale": "The course explains that reduce impact while a root cause remains unresolved. This follows the independent service-management teaching example without claiming an official PeopleCert exam result. Source: MAIC ITIL 5 Service Design, Transition, and Delivery, page 7."
+    },
+    {
+      "ordinal": 57,
+      "source_page": 7,
+      "stem": "Why should a helpdesk not blame users before investigation?",
+      "options": [
+        "Describe an acknowledged incident as resolved",
+        "The cause may lie in systems or process",
+        "Delete repeated incident patterns",
+        "Treat every problem as a standard service request"
+      ],
+      "correct_mask": 2,
+      "rationale": "The course explains that the cause may lie in systems or process. This follows the independent service-management teaching example without claiming an official PeopleCert exam result. Source: MAIC ITIL 5 Service Design, Transition, and Delivery, page 7."
+    },
+    {
+      "ordinal": 58,
+      "source_page": 7,
+      "stem": "What can an accurate knowledge article reduce?",
+      "options": [
+        "Repeated confusion and unnecessary support work",
+        "Use workarounds as proof the root cause is removed",
+        "Communicate fabricated resolution status",
+        "Describe an acknowledged incident as resolved"
+      ],
+      "correct_mask": 1,
+      "rationale": "The course explains that repeated confusion and unnecessary support work. This follows the independent service-management teaching example without claiming an official PeopleCert exam result. Source: MAIC ITIL 5 Service Design, Transition, and Delivery, page 7."
+    },
+    {
+      "ordinal": 59,
+      "source_page": 7,
+      "stem": "Why record recurring message failures as a problem hypothesis?",
+      "options": [
+        "Delete repeated incident patterns",
+        "Treat every problem as a standard service request",
+        "Repeated symptoms may share an underlying cause",
+        "Use workarounds as proof the root cause is removed"
+      ],
+      "correct_mask": 4,
+      "rationale": "The course explains that repeated symptoms may share an underlying cause. This follows the independent service-management teaching example without claiming an official PeopleCert exam result. Source: MAIC ITIL 5 Service Design, Transition, and Delivery, page 7."
+    },
+    {
+      "ordinal": 60,
+      "source_page": 7,
+      "stem": "What should the service desk communicate during a disruption?",
+      "options": [
+        "Communicate fabricated resolution status",
+        "Truthful current status and next steps",
+        "Describe an acknowledged incident as resolved",
+        "Delete repeated incident patterns"
+      ],
+      "correct_mask": 2,
+      "rationale": "The course explains that truthful current status and next steps. This follows the independent service-management teaching example without claiming an official PeopleCert exam result. Source: MAIC ITIL 5 Service Design, Transition, and Delivery, page 7."
+    },
+    {
+      "ordinal": 61,
+      "source_page": 8,
+      "stem": "What is service continuity designed to support?",
+      "options": [
+        "Treat a diagram as a verified disaster recovery test",
+        "Assume every supplier has zero failure risk",
+        "Invent recovery objectives without business needs",
+        "Restoration or maintenance of critical functions during disruption"
+      ],
+      "correct_mask": 8,
+      "rationale": "The course explains that restoration or maintenance of critical functions during disruption. This follows the independent service-management teaching example without claiming an official PeopleCert exam result. Source: MAIC ITIL 5 Service Design, Transition, and Delivery, page 8."
+    },
+    {
+      "ordinal": 62,
+      "source_page": 8,
+      "stem": "Why does continuity begin with business impact?",
+      "options": [
+        "Ignore backups and restore capability",
+        "Share all booking records without access controls",
+        "Treat a diagram as a verified disaster recovery test",
+        "Recovery priorities depend on actual consequences"
+      ],
+      "correct_mask": 8,
+      "rationale": "The course explains that recovery priorities depend on actual consequences. This follows the independent service-management teaching example without claiming an official PeopleCert exam result. Source: MAIC ITIL 5 Service Design, Transition, and Delivery, page 8."
+    },
+    {
+      "ordinal": 63,
+      "source_page": 8,
+      "stem": "What must a service-provider dependency plan include?",
+      "options": [
+        "Contacts, responsibilities and fallback options",
+        "Assume every supplier has zero failure risk",
+        "Invent recovery objectives without business needs",
+        "Ignore backups and restore capability"
+      ],
+      "correct_mask": 1,
+      "rationale": "The course explains that contacts, responsibilities and fallback options. This follows the independent service-management teaching example without claiming an official PeopleCert exam result. Source: MAIC ITIL 5 Service Design, Transition, and Delivery, page 8."
+    },
+    {
+      "ordinal": 64,
+      "source_page": 8,
+      "stem": "Why should backup restoration be tested?",
+      "options": [
+        "An untested backup may not be recoverable",
+        "Share all booking records without access controls",
+        "Treat a diagram as a verified disaster recovery test",
+        "Assume every supplier has zero failure risk"
+      ],
+      "correct_mask": 1,
+      "rationale": "The course explains that an untested backup may not be recoverable. This follows the independent service-management teaching example without claiming an official PeopleCert exam result. Source: MAIC ITIL 5 Service Design, Transition, and Delivery, page 8."
+    },
+    {
+      "ordinal": 65,
+      "source_page": 8,
+      "stem": "What does a tabletop scenario evaluate?",
+      "options": [
+        "Invent recovery objectives without business needs",
+        "Coordination and response decisions during a hypothetical disruption",
+        "Ignore backups and restore capability",
+        "Share all booking records without access controls"
+      ],
+      "correct_mask": 2,
+      "rationale": "The course explains that coordination and response decisions during a hypothetical disruption. This follows the independent service-management teaching example without claiming an official PeopleCert exam result. Source: MAIC ITIL 5 Service Design, Transition, and Delivery, page 8."
+    },
+    {
+      "ordinal": 66,
+      "source_page": 8,
+      "stem": "Why may sensitive service records require access limits?",
+      "options": [
+        "Treat a diagram as a verified disaster recovery test",
+        "Assume every supplier has zero failure risk",
+        "Invent recovery objectives without business needs",
+        "Unauthorized disclosure creates security or privacy harm"
+      ],
+      "correct_mask": 8,
+      "rationale": "The course explains that unauthorized disclosure creates security or privacy harm. This follows the independent service-management teaching example without claiming an official PeopleCert exam result. Source: MAIC ITIL 5 Service Design, Transition, and Delivery, page 8."
+    },
+    {
+      "ordinal": 67,
+      "source_page": 8,
+      "stem": "What should happen when the email gateway fails?",
+      "options": [
+        "Offer truthful authorized alternative status access",
+        "Ignore backups and restore capability",
+        "Share all booking records without access controls",
+        "Treat a diagram as a verified disaster recovery test"
+      ],
+      "correct_mask": 1,
+      "rationale": "The course explains that offer truthful authorized alternative status access. This follows the independent service-management teaching example without claiming an official PeopleCert exam result. Source: MAIC ITIL 5 Service Design, Transition, and Delivery, page 8."
+    },
+    {
+      "ordinal": 68,
+      "source_page": 8,
+      "stem": "Why should recovery objectives be defined by context?",
+      "options": [
+        "Assume every supplier has zero failure risk",
+        "Invent recovery objectives without business needs",
+        "Ignore backups and restore capability",
+        "Different services tolerate different disruptions"
+      ],
+      "correct_mask": 8,
+      "rationale": "The course explains that different services tolerate different disruptions. This follows the independent service-management teaching example without claiming an official PeopleCert exam result. Source: MAIC ITIL 5 Service Design, Transition, and Delivery, page 8."
+    },
+    {
+      "ordinal": 69,
+      "source_page": 8,
+      "stem": "Does a classroom continuity diagram prove operational resilience?",
+      "options": [
+        "Share all booking records without access controls",
+        "Treat a diagram as a verified disaster recovery test",
+        "No, live controls and exercises need verification",
+        "Assume every supplier has zero failure risk"
+      ],
+      "correct_mask": 4,
+      "rationale": "The course explains that no, live controls and exercises need verification. This follows the independent service-management teaching example without claiming an official PeopleCert exam result. Source: MAIC ITIL 5 Service Design, Transition, and Delivery, page 8."
+    },
+    {
+      "ordinal": 70,
+      "source_page": 8,
+      "stem": "What is an example of a critical booking supplier?",
+      "options": [
+        "A message or identity service provider",
+        "Invent recovery objectives without business needs",
+        "Ignore backups and restore capability",
+        "Share all booking records without access controls"
+      ],
+      "correct_mask": 1,
+      "rationale": "The course explains that a message or identity service provider. This follows the independent service-management teaching example without claiming an official PeopleCert exam result. Source: MAIC ITIL 5 Service Design, Transition, and Delivery, page 8."
+    },
+    {
+      "ordinal": 71,
+      "source_page": 9,
+      "stem": "What does service experience include?",
+      "options": [
+        "Treat every channel as accessible to all users",
+        "How users perceive and accomplish tasks across channels",
+        "Use contradictory meanings of confirmed",
+        "Change process without an operational owner"
+      ],
+      "correct_mask": 2,
+      "rationale": "The course explains that how users perceive and accomplish tasks across channels. This follows the independent service-management teaching example without claiming an official PeopleCert exam result. Source: MAIC ITIL 5 Service Design, Transition, and Delivery, page 9."
+    },
+    {
+      "ordinal": 72,
+      "source_page": 9,
+      "stem": "What is the purpose of an improvement register?",
+      "options": [
+        "Track candidate changes, outcomes and owners",
+        "Skip baseline collection before claiming improvement",
+        "Ignore user feedback and service tickets",
+        "Treat every channel as accessible to all users"
+      ],
+      "correct_mask": 1,
+      "rationale": "The course explains that track candidate changes, outcomes and owners. This follows the independent service-management teaching example without claiming an official PeopleCert exam result. Source: MAIC ITIL 5 Service Design, Transition, and Delivery, page 9."
+    },
+    {
+      "ordinal": 73,
+      "source_page": 9,
+      "stem": "Why should improvement begin with a baseline?",
+      "options": [
+        "Later measurements need comparable context",
+        "Use contradictory meanings of confirmed",
+        "Change process without an operational owner",
+        "Skip baseline collection before claiming improvement"
+      ],
+      "correct_mask": 1,
+      "rationale": "The course explains that later measurements need comparable context. This follows the independent service-management teaching example without claiming an official PeopleCert exam result. Source: MAIC ITIL 5 Service Design, Transition, and Delivery, page 9."
+    },
+    {
+      "ordinal": 74,
+      "source_page": 9,
+      "stem": "What can a service glossary prevent?",
+      "options": [
+        "Ignore user feedback and service tickets",
+        "Treat every channel as accessible to all users",
+        "Conflicting interpretations of pending and approved",
+        "Use contradictory meanings of confirmed"
+      ],
+      "correct_mask": 4,
+      "rationale": "The course explains that conflicting interpretations of pending and approved. This follows the independent service-management teaching example without claiming an official PeopleCert exam result. Source: MAIC ITIL 5 Service Design, Transition, and Delivery, page 9."
+    },
+    {
+      "ordinal": 75,
+      "source_page": 9,
+      "stem": "Why might a digital-only channel exclude users?",
+      "options": [
+        "Change process without an operational owner",
+        "Skip baseline collection before claiming improvement",
+        "Some people rely on phone or in-person assistance",
+        "Ignore user feedback and service tickets"
+      ],
+      "correct_mask": 4,
+      "rationale": "The course explains that some people rely on phone or in-person assistance. This follows the independent service-management teaching example without claiming an official PeopleCert exam result. Source: MAIC ITIL 5 Service Design, Transition, and Delivery, page 9."
+    },
+    {
+      "ordinal": 76,
+      "source_page": 9,
+      "stem": "What is a useful improvement response to unclear pending status?",
+      "options": [
+        "Treat every channel as accessible to all users",
+        "Use contradictory meanings of confirmed",
+        "Change the wording and test comprehension",
+        "Change process without an operational owner"
+      ],
+      "correct_mask": 4,
+      "rationale": "The course explains that change the wording and test comprehension. This follows the independent service-management teaching example without claiming an official PeopleCert exam result. Source: MAIC ITIL 5 Service Design, Transition, and Delivery, page 9."
+    },
+    {
+      "ordinal": 77,
+      "source_page": 9,
+      "stem": "Why should teams review user feedback along with tickets?",
+      "options": [
+        "Operational data alone may not explain frustration",
+        "Skip baseline collection before claiming improvement",
+        "Ignore user feedback and service tickets",
+        "Treat every channel as accessible to all users"
+      ],
+      "correct_mask": 1,
+      "rationale": "The course explains that operational data alone may not explain frustration. This follows the independent service-management teaching example without claiming an official PeopleCert exam result. Source: MAIC ITIL 5 Service Design, Transition, and Delivery, page 9."
+    },
+    {
+      "ordinal": 78,
+      "source_page": 9,
+      "stem": "What can a small content change achieve?",
+      "options": [
+        "Use contradictory meanings of confirmed",
+        "Change process without an operational owner",
+        "Reduce confusion without rebuilding the whole platform",
+        "Skip baseline collection before claiming improvement"
+      ],
+      "correct_mask": 4,
+      "rationale": "The course explains that reduce confusion without rebuilding the whole platform. This follows the independent service-management teaching example without claiming an official PeopleCert exam result. Source: MAIC ITIL 5 Service Design, Transition, and Delivery, page 9."
+    },
+    {
+      "ordinal": 79,
+      "source_page": 9,
+      "stem": "What is an operational constraint when changing a service?",
+      "options": [
+        "Ignore user feedback and service tickets",
+        "Support capacity and supplier readiness",
+        "Treat every channel as accessible to all users",
+        "Use contradictory meanings of confirmed"
+      ],
+      "correct_mask": 2,
+      "rationale": "The course explains that support capacity and supplier readiness. This follows the independent service-management teaching example without claiming an official PeopleCert exam result. Source: MAIC ITIL 5 Service Design, Transition, and Delivery, page 9."
+    },
+    {
+      "ordinal": 80,
+      "source_page": 9,
+      "stem": "Why are multiple teams needed for service improvement?",
+      "options": [
+        "Change process without an operational owner",
+        "Skip baseline collection before claiming improvement",
+        "Development, operations and support share dependencies",
+        "Ignore user feedback and service tickets"
+      ],
+      "correct_mask": 4,
+      "rationale": "The course explains that development, operations and support share dependencies. This follows the independent service-management teaching example without claiming an official PeopleCert exam result. Source: MAIC ITIL 5 Service Design, Transition, and Delivery, page 9."
+    },
+    {
+      "ordinal": 81,
+      "source_page": 10,
+      "stem": "What can AI assist within a digital service?",
+      "options": [
+        "Let chatbots approve reservations without records",
+        "Publish sensitive data inside AI prompts",
+        "Assume AI systems carry no accountability",
+        "Knowledge search, routing or summarization"
+      ],
+      "correct_mask": 8,
+      "rationale": "The course explains that knowledge search, routing or summarization. This follows the independent service-management teaching example without claiming an official PeopleCert exam result. Source: MAIC ITIL 5 Service Design, Transition, and Delivery, page 10."
+    },
+    {
+      "ordinal": 82,
+      "source_page": 10,
+      "stem": "Why must AI not invent booking confirmation?",
+      "options": [
+        "Treat AI speed as proof of correct outcomes",
+        "Only authorized trusted records establish status",
+        "Remove all human escalation options",
+        "Let chatbots approve reservations without records"
+      ],
+      "correct_mask": 2,
+      "rationale": "The course explains that only authorized trusted records establish status. This follows the independent service-management teaching example without claiming an official PeopleCert exam result. Source: MAIC ITIL 5 Service Design, Transition, and Delivery, page 10."
+    },
+    {
+      "ordinal": 83,
+      "source_page": 10,
+      "stem": "What is an AI service privacy risk?",
+      "options": [
+        "Unnecessary exposure of sensitive user information",
+        "Publish sensitive data inside AI prompts",
+        "Assume AI systems carry no accountability",
+        "Treat AI speed as proof of correct outcomes"
+      ],
+      "correct_mask": 1,
+      "rationale": "The course explains that unnecessary exposure of sensitive user information. This follows the independent service-management teaching example without claiming an official PeopleCert exam result. Source: MAIC ITIL 5 Service Design, Transition, and Delivery, page 10."
+    },
+    {
+      "ordinal": 84,
+      "source_page": 10,
+      "stem": "Why does AI adoption not remove human accountability?",
+      "options": [
+        "Remove all human escalation options",
+        "Service outcomes still require governance and oversight",
+        "Let chatbots approve reservations without records",
+        "Publish sensitive data inside AI prompts"
+      ],
+      "correct_mask": 2,
+      "rationale": "The course explains that service outcomes still require governance and oversight. This follows the independent service-management teaching example without claiming an official PeopleCert exam result. Source: MAIC ITIL 5 Service Design, Transition, and Delivery, page 10."
+    },
+    {
+      "ordinal": 85,
+      "source_page": 10,
+      "stem": "What is a meaningful AI quality indicator?",
+      "options": [
+        "Assume AI systems carry no accountability",
+        "Treat AI speed as proof of correct outcomes",
+        "Remove all human escalation options",
+        "Rate of incorrect guidance or needed overrides"
+      ],
+      "correct_mask": 8,
+      "rationale": "The course explains that rate of incorrect guidance or needed overrides. This follows the independent service-management teaching example without claiming an official PeopleCert exam result. Source: MAIC ITIL 5 Service Design, Transition, and Delivery, page 10."
+    },
+    {
+      "ordinal": 86,
+      "source_page": 10,
+      "stem": "Why is lower chatbot response time not sufficient?",
+      "options": [
+        "Let chatbots approve reservations without records",
+        "Publish sensitive data inside AI prompts",
+        "Assume AI systems carry no accountability",
+        "Faster answers may also be incorrect"
+      ],
+      "correct_mask": 8,
+      "rationale": "The course explains that faster answers may also be incorrect. This follows the independent service-management teaching example without claiming an official PeopleCert exam result. Source: MAIC ITIL 5 Service Design, Transition, and Delivery, page 10."
+    },
+    {
+      "ordinal": 87,
+      "source_page": 10,
+      "stem": "What should govern consequential automated actions?",
+      "options": [
+        "Treat AI speed as proof of correct outcomes",
+        "Explicit authorization and suitable human controls",
+        "Remove all human escalation options",
+        "Let chatbots approve reservations without records"
+      ],
+      "correct_mask": 2,
+      "rationale": "The course explains that explicit authorization and suitable human controls. This follows the independent service-management teaching example without claiming an official PeopleCert exam result. Source: MAIC ITIL 5 Service Design, Transition, and Delivery, page 10."
+    },
+    {
+      "ordinal": 88,
+      "source_page": 10,
+      "stem": "What can a chatbot safely explain without committing a booking?",
+      "options": [
+        "How to submit a request",
+        "Publish sensitive data inside AI prompts",
+        "Assume AI systems carry no accountability",
+        "Treat AI speed as proof of correct outcomes"
+      ],
+      "correct_mask": 1,
+      "rationale": "The course explains that how to submit a request. This follows the independent service-management teaching example without claiming an official PeopleCert exam result. Source: MAIC ITIL 5 Service Design, Transition, and Delivery, page 10."
+    },
+    {
+      "ordinal": 89,
+      "source_page": 10,
+      "stem": "What should an AI escalation path define?",
+      "options": [
+        "When a human or verified system takes over",
+        "Remove all human escalation options",
+        "Let chatbots approve reservations without records",
+        "Publish sensitive data inside AI prompts"
+      ],
+      "correct_mask": 1,
+      "rationale": "The course explains that when a human or verified system takes over. This follows the independent service-management teaching example without claiming an official PeopleCert exam result. Source: MAIC ITIL 5 Service Design, Transition, and Delivery, page 10."
+    },
+    {
+      "ordinal": 90,
+      "source_page": 10,
+      "stem": "What is the role of AI governance in service value?",
+      "options": [
+        "Assume AI systems carry no accountability",
+        "Treat AI speed as proof of correct outcomes",
+        "Manage risks while using AI for legitimate goals",
+        "Remove all human escalation options"
+      ],
+      "correct_mask": 4,
+      "rationale": "The course explains that manage risks while using AI for legitimate goals. This follows the independent service-management teaching example without claiming an official PeopleCert exam result. Source: MAIC ITIL 5 Service Design, Transition, and Delivery, page 10."
+    },
+    {
+      "ordinal": 91,
+      "source_page": 11,
+      "stem": "What is the fictional service transition?",
+      "options": [
+        "Treat 99.86% availability as 100% correct bookings",
+        "Replacing manual booking email with a web portal",
+        "Skip transition tests for unauthorized users",
+        "Assume messaging provider availability never matters"
+      ],
+      "correct_mask": 2,
+      "rationale": "The course explains that replacing manual booking email with a web portal. This follows the independent service-management teaching example without claiming an official PeopleCert exam result. Source: MAIC ITIL 5 Service Design, Transition, and Delivery, page 11."
+    },
+    {
+      "ordinal": 92,
+      "source_page": 11,
+      "stem": "What are the three fundamental booking statuses?",
+      "options": [
+        "Create official reservations from a mockup click",
+        "Present illustrative data as actual MAIC production results",
+        "Treat 99.86% availability as 100% correct bookings",
+        "Pending, confirmed and rejected"
+      ],
+      "correct_mask": 8,
+      "rationale": "The course explains that pending, confirmed and rejected. This follows the independent service-management teaching example without claiming an official PeopleCert exam result. Source: MAIC ITIL 5 Service Design, Transition, and Delivery, page 11."
+    },
+    {
+      "ordinal": 93,
+      "source_page": 11,
+      "stem": "Which underlying supplier can fail during notifications?",
+      "options": [
+        "Skip transition tests for unauthorized users",
+        "The messaging gateway",
+        "Assume messaging provider availability never matters",
+        "Create official reservations from a mockup click"
+      ],
+      "correct_mask": 2,
+      "rationale": "The course explains that the messaging gateway. This follows the independent service-management teaching example without claiming an official PeopleCert exam result. Source: MAIC ITIL 5 Service Design, Transition, and Delivery, page 11."
+    },
+    {
+      "ordinal": 94,
+      "source_page": 11,
+      "stem": "What should be tested before approving the release?",
+      "options": [
+        "Present illustrative data as actual MAIC production results",
+        "Treat 99.86% availability as 100% correct bookings",
+        "Skip transition tests for unauthorized users",
+        "Unauthorized requests, conflicts and status errors"
+      ],
+      "correct_mask": 8,
+      "rationale": "The course explains that unauthorized requests, conflicts and status errors. This follows the independent service-management teaching example without claiming an official PeopleCert exam result. Source: MAIC ITIL 5 Service Design, Transition, and Delivery, page 11."
+    },
+    {
+      "ordinal": 95,
+      "source_page": 11,
+      "stem": "What is the modeled availability for 719 of 720 hours?",
+      "options": [
+        "Assume messaging provider availability never matters",
+        "Approximately 99.86%",
+        "Create official reservations from a mockup click",
+        "Present illustrative data as actual MAIC production results"
+      ],
+      "correct_mask": 2,
+      "rationale": "The course explains that approximately 99.86%. This follows the independent service-management teaching example without claiming an official PeopleCert exam result. Source: MAIC ITIL 5 Service Design, Transition, and Delivery, page 11."
+    },
+    {
+      "ordinal": 96,
+      "source_page": 11,
+      "stem": "How many of 100 attempts receive correct decisions in the case?",
+      "options": [
+        "Treat 99.86% availability as 100% correct bookings",
+        "90 attempts",
+        "Skip transition tests for unauthorized users",
+        "Assume messaging provider availability never matters"
+      ],
+      "correct_mask": 2,
+      "rationale": "The course explains that 90 attempts. This follows the independent service-management teaching example without claiming an official PeopleCert exam result. Source: MAIC ITIL 5 Service Design, Transition, and Delivery, page 11."
+    },
+    {
+      "ordinal": 97,
+      "source_page": 11,
+      "stem": "What is the corresponding correct-decision rate?",
+      "options": [
+        "Create official reservations from a mockup click",
+        "Present illustrative data as actual MAIC production results",
+        "Treat 99.86% availability as 100% correct bookings",
+        "90%"
+      ],
+      "correct_mask": 8,
+      "rationale": "The course explains that 90%. This follows the independent service-management teaching example without claiming an official PeopleCert exam result. Source: MAIC ITIL 5 Service Design, Transition, and Delivery, page 11."
+    },
+    {
+      "ordinal": 98,
+      "source_page": 11,
+      "stem": "Why can both 99.86% uptime and 90% correct decisions occur?",
+      "options": [
+        "Skip transition tests for unauthorized users",
+        "Assume messaging provider availability never matters",
+        "Create official reservations from a mockup click",
+        "Page availability and business correctness are different measures"
+      ],
+      "correct_mask": 8,
+      "rationale": "The course explains that page availability and business correctness are different measures. This follows the independent service-management teaching example without claiming an official PeopleCert exam result. Source: MAIC ITIL 5 Service Design, Transition, and Delivery, page 11."
+    },
+    {
+      "ordinal": 99,
+      "source_page": 11,
+      "stem": "What should AI-assisted support check before claiming approval?",
+      "options": [
+        "Present illustrative data as actual MAIC production results",
+        "Treat 99.86% availability as 100% correct bookings",
+        "Skip transition tests for unauthorized users",
+        "The trusted authorized reservation record"
+      ],
+      "correct_mask": 8,
+      "rationale": "The course explains that the trusted authorized reservation record. This follows the independent service-management teaching example without claiming an official PeopleCert exam result. Source: MAIC ITIL 5 Service Design, Transition, and Delivery, page 11."
+    },
+    {
+      "ordinal": 100,
+      "source_page": 11,
+      "stem": "What is an appropriate output of the case?",
+      "options": [
+        "Assume messaging provider availability never matters",
+        "Create official reservations from a mockup click",
+        "Service blueprint, transition checklist and support metrics",
+        "Present illustrative data as actual MAIC production results"
+      ],
+      "correct_mask": 4,
+      "rationale": "The course explains that service blueprint, transition checklist and support metrics. This follows the independent service-management teaching example without claiming an official PeopleCert exam result. Source: MAIC ITIL 5 Service Design, Transition, and Delivery, page 11."
+    }
+  ]
+}
