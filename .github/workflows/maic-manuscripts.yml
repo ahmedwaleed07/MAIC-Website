@@ -35,10 +35,25 @@ jobs:
             --crest assets/maic-official-crest.png \
             --montage assets/michigan-heritage-montage.webp \
             --output dist/maic/diploma-in-journalism.pdf
+      - name: Render Fundamentals of Journalism candidate
+        run: |
+          python tools/render_maic_manuscript.py \
+            --input data/course-manuscripts/fundamentals-of-journalism.md \
+            --crest assets/maic-official-crest.png \
+            --montage assets/michigan-heritage-montage.webp \
+            --output dist/maic/fundamentals-of-journalism.pdf
       - name: Upload private academic review artifact
         uses: actions/upload-artifact@v4
         with:
           name: maic-diploma-in-journalism-candidate
           path: dist/maic/diploma-in-journalism.pdf
+          if-no-files-found: error
+          retention-days: 14
+
+      - name: Upload second academic review candidate
+        uses: actions/upload-artifact@v4
+        with:
+          name: maic-fundamentals-of-journalism-candidate
+          path: dist/maic/fundamentals-of-journalism.pdf
           if-no-files-found: error
           retention-days: 14
