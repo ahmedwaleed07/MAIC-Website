@@ -137,3 +137,25 @@ The course sources are `data/course-manuscripts/<course_id>.md`. All four course
 **Production boundary reconfirmed on live Cloudflare D1:** 36 registered learning materials and 20 activated exams. These four remain `preparing` in the live course catalog and have no registered production material. Their 100-question banks are stored as offline editorial drafts on GitHub rather than activated student examinations. Independent source-review, question-level review and production registration are still prerequisites. Neither automated QA nor the user's general assertion of academic review should be recorded as a signoff without an actual named reviewer record.
 
 **Totals after this continuation:** 12 of the original 34 preparing courses without source PDFs now have manuscript/PDF candidates and offline 100-question draft banks (1,200 questions across these 12). **22 preparing courses still lack original candidate manuscripts.** Eight archived entries remain outside this queue. The next catalog-ordered course is `packaging-design-circular-economy` — Packaging Design for the Circular Economy. Production readiness counts remain unchanged until actual deployment and reviewer signoff.
+
+## Continuation — Circular Packaging and UI Design (2026-11-22)
+
+Four additional catalog-ordered courses now have original English candidate manuals, each **12 PDF pages** (including cover) and an unapproved 100-question editorial assessment bank. The books use the established MAIC cover, crest and navy/gold identity. Official product references are cited in their source manuscripts.
+
+| Course | Course ID | Hours | Editorial bank |
+|---|---|---:|---|
+| Packaging Design for the Circular Economy | `packaging-design-circular-economy` | 6 | `data/exam-drafts/packaging-design-circular-economy-100mcq.json` |
+| UI / UX Design | `ui-ux-design` | 6 | `data/exam-drafts/ui-ux-design-100mcq.json` |
+| Apply UI/UX Design with Figma for Modern Interfaces | `ui-ux-figma-modern-interfaces` | 8 | `data/exam-drafts/ui-ux-figma-modern-interfaces-100mcq.json` |
+| Build Dynamic User Interfaces (UI) for Websites | `dynamic-website-ui-design` | 8 | `data/exam-drafts/dynamic-website-ui-design-100mcq.json` |
+
+Original manuscripts are `data/course-manuscripts/<course_id>.md`. Each bank includes 100 numbered questions, four options and a source page, plus answer keys and draft rationales; all four passed local structural checks and the repository's GitHub Actions audit (latest run **45069947088**, passed). Note: structural lint cannot establish accuracy, question difficulty or distractor quality. Independent academic item-level review remains required.
+
+The PDF build workflow passed (**45069906989**). GitHub Actions artifacts were downloaded and all four PDFs physically checked as 12 pages with extractable, nonempty text. Representative pages 1, 2, 11, 12 were rendered and visually inspected for cover, text placement and footer. A four-file academic review ZIP was prepared separately; its files are not uploaded to the live course material registry.
+
+**Legal/tool accuracy notes:** Circular-packaging material cites the EU PPWR Regulation 2025/40 and 2026 European Commission guidance, noting phased requirements beginning 12 August 2026. Figma material uses official Figma auto-layout, interactive component and variable guidance, distinguishing plan-restricted features. The UI development manual distinguishes prototype state from authorized server confirmation.
+
+**Live boundary reconfirmed:** Cloudflare D1 contains **36 registered learning materials** and **20 active examinations**. All four newly prepared catalog entries remain `preparing`; none has been added to `learning_materials` and no corresponding examination has been enabled. Exam banks are GitHub editorial drafts only. No academic reviewer sign-off has been assumed or fabricated.
+
+**Running total:** 16 of the initial 34 courses lacking production PDFs now have first manuscripts, review PDF candidates and original offline question banks: **1,600 editorial questions total**. **18 courses in this initial queue still need first manuscripts**. The next initial-preparation catalog entry is **Product Design and UX/UI Fundamentals** (`product-design-ux-ui-fundamentals`).
+
