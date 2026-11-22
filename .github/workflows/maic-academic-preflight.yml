@@ -1,0 +1,35 @@
+name: MAIC unapproved exam academic preflight
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'data/exam-drafts/**'
+      - 'tools/report_staged_exam_quality.py'
+      - '.github/workflows/maic-academic-preflight.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  reviewer-triage:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Generate public-safe academic risk counts
+        run: |
+          python -m py_compile tools/report_staged_exam_quality.py
+          python tools/report_staged_exam_quality.py
+      - name: Preserve academic risk report (no questions, answers, or private keys)
+        uses: actions/upload-artifact@v4
+        with:
+          name: maic-draft-exam-academic-risk-report
+          path: |
+            dist/maic-qa/academic-readiness-summary.md
+            dist/maic-qa/academic-readiness-summary.json
+          retention-days: 30
+          if-no-files-found: error
