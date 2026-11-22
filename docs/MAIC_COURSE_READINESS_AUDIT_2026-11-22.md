@@ -103,3 +103,20 @@ Complete the 34 missing-material courses in the listed catalog order. First: `di
 - Draft bank structural checker: `tools/audit_staged_exam_drafts.py`; GitHub Actions `.github/workflows/maic-draft-bank-audit.yml`. The latest three-bank audit succeeded after correcting short-question and numeric-option lint edge cases. Structural QA is **not** academic approval.
 - None of the four newly authored manuscripts has been uploaded as an approved production learning material; there are still **36 registered production PDFs, 20 active exams**, and the 16 prior inactive courses with source-matched editorial banks. The new offline MCQ drafts are not D1 approved exams, and no new catalog course is marked published.
 - The multiline video-production cover spacing was corrected and a new 12-page PDF candidate rendered successfully. Next: begin `video-editing-imovie-davinci-resolve` and retain independent reviewer signoffs before activation.
+
+## Continuation — Four additional original course packages (2026-11-22)
+
+Four more courses in strict unprepared catalog order now have **original English manuscripts, CI-generated 12-page PDF academic review candidates and 100-question offline editorial MCQ banks**:
+
+| Course | Course ID | Study hours | MCQ draft |
+|---|---|---:|---|
+| Video Editing Using iMovie and DaVinci Resolve | `video-editing-imovie-davinci-resolve` | 8 | `data/exam-drafts/video-editing-imovie-davinci-resolve-100mcq.json` |
+| Media Studies - Entertainment and Broadcast Media | `entertainment-and-broadcast-media` | 6 | `data/exam-drafts/entertainment-and-broadcast-media-100mcq.json` |
+| Diploma in Social Media Marketing and Strategy | `diploma-in-social-media-marketing-and-strategy` | 12 | `data/exam-drafts/diploma-in-social-media-marketing-and-strategy-100mcq.json` |
+| Fundamentals of Graphic Design | `graphic-design-fundamentals` | 6 | `data/exam-drafts/graphic-design-fundamentals-100mcq.json` |
+
+Editorial manuscript locations are `data/course-manuscripts/<course_id>.md`. All four new 100-item banks have 100 unique stems and 25 correct answers in each A/B/C/D position; the latest GitHub Actions bank audit passed (run `45049198047`, before the final draft addition, plus the next run for the last bank). PDF artifacts were generated successfully and reviewed for page count, visible content and layout. Feature-specific references: Apple Support and Blackmagic's own materials for editing workflows; UNESCO media literacy and U.S. sponsorship rules for broadcasting; FTC influencer disclosures and Google Analytics measurement for marketing; W3C WCAG 2.2 contrast guidance for digital graphics. All new instructional wording and practice cases were independently authored.
+
+**Important production boundary verified against live Cloudflare D1 in this continuation:** Exactly **36 material records**, **20 active exams**, and **16 source-matched D1 editorial draft banks** still exist. None of the newly prepared four or the previous four offline course manuscripts is present in the production `learning_materials` table; their exam drafts are on GitHub, not installed as active D1 exam banks. This distinction is deliberate: reviewed-source registration and independent academic answer signoff are required before student activation. No independent review has been asserted or fabricated.
+
+**Overall offline editorial progress:** Eight of the 34 initial preparing courses with no production PDFs have a first original 12-section manuscript, PDF review candidate and staged 100-item bank. The remaining **26 preparing courses lack original course manuals**. Eight archived entries remain outside this queue. The next initial-preparation item is **Brand New Brand** (`brand-new-brand`).
