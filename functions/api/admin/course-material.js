@@ -1,6 +1,7 @@
 import {Buffer} from 'node:buffer';
 import {json,isAdmin,validOrigin} from '../../_lib/cms.js';
 import {catalog} from '../../_lib/learning.js';
+import {hasTwelvePageTree} from '../../_lib/pdf-page-tree.js';
 
 const MAX=1250000,CHUNK=32000;
 export async function onRequestGet({request,env}){
@@ -44,7 +45,7 @@ export async function onRequestPost({request,env}){
   const ascii=new TextDecoder('latin1').decode(content);
   if(!ascii.startsWith('%PDF-')||!ascii.slice(-2048).includes('%%EOF'))return json({error:'invalid_pdf'},400);
   // Our 12-page MAIC generator writes an explicit page-tree count; verify it server-side.
-  if(!/\/Type\s*\/Pages\b.{0,180}\/Count\s+12\b/s.test(ascii))return json({error:'expected_12_pages'},422);
+  if(!hasTwelvePageTree(ascii))return json({error:'expected_12_pages'},422);
   if(!ascii.includes('Tinos'))return json({error:'tinos_font_not_embedded'},422);
   const sha256=Array.from(new Uint8Array(await crypto.subtle.digest('SHA-256',content)),b=>b.toString(16).padStart(2,'0')).join('');
   const existing=await db.prepare('SELECT course_id,sha256,version FROM learning_materials WHERE course_id=?').bind(course).first();
