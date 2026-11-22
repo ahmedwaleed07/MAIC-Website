@@ -1,0 +1,1312 @@
+{
+  "course_id": "design-thinking-for-innovation",
+  "source_manuscript": "data/course-manuscripts/design-thinking-for-innovation.md",
+  "source_manuscript_blob_sha": "40d842340399bb9d8bb2132b93c290af4bc59d38",
+  "source_pdf_sha256": null,
+  "bank_version": "draft-manuscript-20261123-v1",
+  "approval_status": "editorial_draft_pending_independent_review",
+  "number_of_questions": 100,
+  "note": "Original editorial bank, not independent academic signoff or live MAIC assessment.",
+  "questions": [
+    {
+      "ordinal": 1,
+      "source_page": 2,
+      "stem": "What does design thinking seek to improve?",
+      "options": [
+        "Treat all innovation as making a new app",
+        "Assume prototype approval is real operational success",
+        "Present classroom assumptions as verified user evidence",
+        "Understanding problems and testing useful solutions"
+      ],
+      "correct_mask": 8,
+      "rationale": "The source explains that understanding problems and testing useful solutions. This is the relevant research, prototype or pilot-design principle from the described case. Source: MAIC Design Thinking for Innovation, page 2."
+    },
+    {
+      "ordinal": 2,
+      "source_page": 2,
+      "stem": "Why should solutions not be chosen before discovery?",
+      "options": [
+        "Choose a solution before speaking to users",
+        "Ignore feasibility and privacy constraints",
+        "They may not address actual causes",
+        "Treat all innovation as making a new app"
+      ],
+      "correct_mask": 4,
+      "rationale": "The source explains that they may not address actual causes. This is the relevant research, prototype or pilot-design principle from the described case. Source: MAIC Design Thinking for Innovation, page 2."
+    },
+    {
+      "ordinal": 3,
+      "source_page": 2,
+      "stem": "What is a characteristic of a useful design prototype?",
+      "options": [
+        "Assume prototype approval is real operational success",
+        "Present classroom assumptions as verified user evidence",
+        "Choose a solution before speaking to users",
+        "It can test a specific risky assumption"
+      ],
+      "correct_mask": 8,
+      "rationale": "The source explains that it can test a specific risky assumption. This is the relevant research, prototype or pilot-design principle from the described case. Source: MAIC Design Thinking for Innovation, page 2."
+    },
+    {
+      "ordinal": 4,
+      "source_page": 2,
+      "stem": "Why is design thinking not necessarily a fixed linear process?",
+      "options": [
+        "Ignore feasibility and privacy constraints",
+        "Learning may require revisiting earlier questions",
+        "Treat all innovation as making a new app",
+        "Assume prototype approval is real operational success"
+      ],
+      "correct_mask": 2,
+      "rationale": "The source explains that learning may require revisiting earlier questions. This is the relevant research, prototype or pilot-design principle from the described case. Source: MAIC Design Thinking for Innovation, page 2."
+    },
+    {
+      "ordinal": 5,
+      "source_page": 2,
+      "stem": "What belongs in a design thinking learning outcome?",
+      "options": [
+        "Present classroom assumptions as verified user evidence",
+        "Research, ideation, prototyping and evidence-based revision",
+        "Choose a solution before speaking to users",
+        "Ignore feasibility and privacy constraints"
+      ],
+      "correct_mask": 2,
+      "rationale": "The source explains that research, ideation, prototyping and evidence-based revision. This is the relevant research, prototype or pilot-design principle from the described case. Source: MAIC Design Thinking for Innovation, page 2."
+    },
+    {
+      "ordinal": 6,
+      "source_page": 2,
+      "stem": "Why is the booking example labeled fictional?",
+      "options": [
+        "Treat all innovation as making a new app",
+        "Assume prototype approval is real operational success",
+        "It is not a verified community-center case",
+        "Present classroom assumptions as verified user evidence"
+      ],
+      "correct_mask": 4,
+      "rationale": "The source explains that it is not a verified community-center case. This is the relevant research, prototype or pilot-design principle from the described case. Source: MAIC Design Thinking for Innovation, page 2."
+    },
+    {
+      "ordinal": 7,
+      "source_page": 2,
+      "stem": "What are relevant solution constraints?",
+      "options": [
+        "Choose a solution before speaking to users",
+        "Ignore feasibility and privacy constraints",
+        "Treat all innovation as making a new app",
+        "User needs, feasibility, ethics and operations"
+      ],
+      "correct_mask": 8,
+      "rationale": "The source explains that user needs, feasibility, ethics and operations. This is the relevant research, prototype or pilot-design principle from the described case. Source: MAIC Design Thinking for Innovation, page 2."
+    },
+    {
+      "ordinal": 8,
+      "source_page": 2,
+      "stem": "Why does a novel app not always produce innovation?",
+      "options": [
+        "Assume prototype approval is real operational success",
+        "Present classroom assumptions as verified user evidence",
+        "An existing process defect may remain unchanged",
+        "Choose a solution before speaking to users"
+      ],
+      "correct_mask": 4,
+      "rationale": "The source explains that an existing process defect may remain unchanged. This is the relevant research, prototype or pilot-design principle from the described case. Source: MAIC Design Thinking for Innovation, page 2."
+    },
+    {
+      "ordinal": 9,
+      "source_page": 2,
+      "stem": "What should teams distinguish about their assumptions?",
+      "options": [
+        "Ignore feasibility and privacy constraints",
+        "What is observed and what remains unverified",
+        "Treat all innovation as making a new app",
+        "Assume prototype approval is real operational success"
+      ],
+      "correct_mask": 2,
+      "rationale": "The source explains that what is observed and what remains unverified. This is the relevant research, prototype or pilot-design principle from the described case. Source: MAIC Design Thinking for Innovation, page 2."
+    },
+    {
+      "ordinal": 10,
+      "source_page": 2,
+      "stem": "What is a useful learning practice tool?",
+      "options": [
+        "Present classroom assumptions as verified user evidence",
+        "Choose a solution before speaking to users",
+        "Ignore feasibility and privacy constraints",
+        "A low-cost sketch or service script"
+      ],
+      "correct_mask": 8,
+      "rationale": "The source explains that a low-cost sketch or service script. This is the relevant research, prototype or pilot-design principle from the described case. Source: MAIC Design Thinking for Innovation, page 2."
+    },
+    {
+      "ordinal": 11,
+      "source_page": 3,
+      "stem": "What should stakeholder mapping identify?",
+      "options": [
+        "Affected people, roles and competing needs",
+        "Assume every delay is a technical button problem",
+        "Use only hypothetical surveys as measured facts",
+        "Select a chatbot before investigating the cause"
+      ],
+      "correct_mask": 1,
+      "rationale": "The source explains that affected people, roles and competing needs. This is the relevant research, prototype or pilot-design principle from the described case. Source: MAIC Design Thinking for Innovation, page 3."
+    },
+    {
+      "ordinal": 12,
+      "source_page": 3,
+      "stem": "Why should a new chatbot not be the initial problem statement?",
+      "options": [
+        "Ignore service staff and nondigital users",
+        "Treat data privacy as irrelevant",
+        "It is a proposed solution rather than an observed problem",
+        "Assume every delay is a technical button problem"
+      ],
+      "correct_mask": 4,
+      "rationale": "The source explains that it is a proposed solution rather than an observed problem. This is the relevant research, prototype or pilot-design principle from the described case. Source: MAIC Design Thinking for Innovation, page 3."
+    },
+    {
+      "ordinal": 13,
+      "source_page": 3,
+      "stem": "Which stakeholder may need dependable booking records?",
+      "options": [
+        "Use only hypothetical surveys as measured facts",
+        "Select a chatbot before investigating the cause",
+        "Ignore service staff and nondigital users",
+        "Reception and administration staff"
+      ],
+      "correct_mask": 8,
+      "rationale": "The source explains that reception and administration staff. This is the relevant research, prototype or pilot-design principle from the described case. Source: MAIC Design Thinking for Innovation, page 3."
+    },
+    {
+      "ordinal": 14,
+      "source_page": 3,
+      "stem": "Why should limited connectivity be considered?",
+      "options": [
+        "Digital-only processes may exclude some users",
+        "Treat data privacy as irrelevant",
+        "Assume every delay is a technical button problem",
+        "Use only hypothetical surveys as measured facts"
+      ],
+      "correct_mask": 1,
+      "rationale": "The source explains that digital-only processes may exclude some users. This is the relevant research, prototype or pilot-design principle from the described case. Source: MAIC Design Thinking for Innovation, page 3."
+    },
+    {
+      "ordinal": 15,
+      "source_page": 3,
+      "stem": "What should be recorded during service discovery?",
+      "options": [
+        "Select a chatbot before investigating the cause",
+        "Existing operations, data and unresolved questions",
+        "Ignore service staff and nondigital users",
+        "Treat data privacy as irrelevant"
+      ],
+      "correct_mask": 2,
+      "rationale": "The source explains that existing operations, data and unresolved questions. This is the relevant research, prototype or pilot-design principle from the described case. Source: MAIC Design Thinking for Innovation, page 3."
+    },
+    {
+      "ordinal": 16,
+      "source_page": 3,
+      "stem": "Why are privacy rules relevant during research?",
+      "options": [
+        "Assume every delay is a technical button problem",
+        "Use only hypothetical surveys as measured facts",
+        "Select a chatbot before investigating the cause",
+        "Participant information needs appropriate protection"
+      ],
+      "correct_mask": 8,
+      "rationale": "The source explains that participant information needs appropriate protection. This is the relevant research, prototype or pilot-design principle from the described case. Source: MAIC Design Thinking for Innovation, page 3."
+    },
+    {
+      "ordinal": 17,
+      "source_page": 3,
+      "stem": "What is a good evidence source for repeated service inquiries?",
+      "options": [
+        "Ignore service staff and nondigital users",
+        "Support records under a defined counting method",
+        "Treat data privacy as irrelevant",
+        "Assume every delay is a technical button problem"
+      ],
+      "correct_mask": 2,
+      "rationale": "The source explains that support records under a defined counting method. This is the relevant research, prototype or pilot-design principle from the described case. Source: MAIC Design Thinking for Innovation, page 3."
+    },
+    {
+      "ordinal": 18,
+      "source_page": 3,
+      "stem": "What should teams do with conflicting stakeholder needs?",
+      "options": [
+        "Use only hypothetical surveys as measured facts",
+        "Document and assess tradeoffs rather than conceal them",
+        "Select a chatbot before investigating the cause",
+        "Ignore service staff and nondigital users"
+      ],
+      "correct_mask": 2,
+      "rationale": "The source explains that document and assess tradeoffs rather than conceal them. This is the relevant research, prototype or pilot-design principle from the described case. Source: MAIC Design Thinking for Innovation, page 3."
+    },
+    {
+      "ordinal": 19,
+      "source_page": 3,
+      "stem": "What should not be assumed from staff queue complaints?",
+      "options": [
+        "Treat data privacy as irrelevant",
+        "Assume every delay is a technical button problem",
+        "Use only hypothetical surveys as measured facts",
+        "That every delay results from the same cause"
+      ],
+      "correct_mask": 8,
+      "rationale": "The source explains that that every delay results from the same cause. This is the relevant research, prototype or pilot-design principle from the described case. Source: MAIC Design Thinking for Innovation, page 3."
+    },
+    {
+      "ordinal": 20,
+      "source_page": 3,
+      "stem": "Why should problem framing include legal constraints?",
+      "options": [
+        "Some ideas may be infeasible or prohibited",
+        "Select a chatbot before investigating the cause",
+        "Ignore service staff and nondigital users",
+        "Treat data privacy as irrelevant"
+      ],
+      "correct_mask": 1,
+      "rationale": "The source explains that some ideas may be infeasible or prohibited. This is the relevant research, prototype or pilot-design principle from the described case. Source: MAIC Design Thinking for Innovation, page 3."
+    },
+    {
+      "ordinal": 21,
+      "source_page": 4,
+      "stem": "What is a neutral research interview question?",
+      "options": [
+        "Ask exclusively leading positive questions",
+        "Publish private participant details without permission",
+        "Discard contradictory observations",
+        "What happened last time you booked a session?"
+      ],
+      "correct_mask": 8,
+      "rationale": "The source explains that what happened last time you booked a session. This is the relevant research, prototype or pilot-design principle from the described case. Source: MAIC Design Thinking for Innovation, page 4."
+    },
+    {
+      "ordinal": 22,
+      "source_page": 4,
+      "stem": "What is a leading interview question?",
+      "options": [
+        "Convert six interviews to a precise population census",
+        "Wouldn't our new app make this much easier?",
+        "Mix interpretation with direct quotes",
+        "Ask exclusively leading positive questions"
+      ],
+      "correct_mask": 2,
+      "rationale": "The source explains that wouldn't our new app make this much easier. This is the relevant research, prototype or pilot-design principle from the described case. Source: MAIC Design Thinking for Innovation, page 4."
+    },
+    {
+      "ordinal": 23,
+      "source_page": 4,
+      "stem": "Why observe an actual service task?",
+      "options": [
+        "Behavior can reveal obstacles not recalled in interviews",
+        "Publish private participant details without permission",
+        "Discard contradictory observations",
+        "Convert six interviews to a precise population census"
+      ],
+      "correct_mask": 1,
+      "rationale": "The source explains that behavior can reveal obstacles not recalled in interviews. This is the relevant research, prototype or pilot-design principle from the described case. Source: MAIC Design Thinking for Innovation, page 4."
+    },
+    {
+      "ordinal": 24,
+      "source_page": 4,
+      "stem": "What should research notes separate?",
+      "options": [
+        "Mix interpretation with direct quotes",
+        "Ask exclusively leading positive questions",
+        "Publish private participant details without permission",
+        "Direct observations and analyst interpretations"
+      ],
+      "correct_mask": 8,
+      "rationale": "The source explains that direct observations and analyst interpretations. This is the relevant research, prototype or pilot-design principle from the described case. Source: MAIC Design Thinking for Innovation, page 4."
+    },
+    {
+      "ordinal": 25,
+      "source_page": 4,
+      "stem": "What does consent govern in research?",
+      "options": [
+        "Discard contradictory observations",
+        "Convert six interviews to a precise population census",
+        "Appropriate collection and use of participant information",
+        "Mix interpretation with direct quotes"
+      ],
+      "correct_mask": 4,
+      "rationale": "The source explains that appropriate collection and use of participant information. This is the relevant research, prototype or pilot-design principle from the described case. Source: MAIC Design Thinking for Innovation, page 4."
+    },
+    {
+      "ordinal": 26,
+      "source_page": 4,
+      "stem": "Why is a small sample not a population estimate?",
+      "options": [
+        "Ask exclusively leading positive questions",
+        "Publish private participant details without permission",
+        "Participants may not represent all users",
+        "Discard contradictory observations"
+      ],
+      "correct_mask": 4,
+      "rationale": "The source explains that participants may not represent all users. This is the relevant research, prototype or pilot-design principle from the described case. Source: MAIC Design Thinking for Innovation, page 4."
+    },
+    {
+      "ordinal": 27,
+      "source_page": 4,
+      "stem": "What is the role of an empathy map?",
+      "options": [
+        "Convert six interviews to a precise population census",
+        "Mix interpretation with direct quotes",
+        "Organize research perspectives as a working tool",
+        "Ask exclusively leading positive questions"
+      ],
+      "correct_mask": 4,
+      "rationale": "The source explains that organize research perspectives as a working tool. This is the relevant research, prototype or pilot-design principle from the described case. Source: MAIC Design Thinking for Innovation, page 4."
+    },
+    {
+      "ordinal": 28,
+      "source_page": 4,
+      "stem": "Why should contradictory feedback be retained?",
+      "options": [
+        "It may challenge the team's assumptions",
+        "Publish private participant details without permission",
+        "Discard contradictory observations",
+        "Convert six interviews to a precise population census"
+      ],
+      "correct_mask": 1,
+      "rationale": "The source explains that it may challenge the team's assumptions. This is the relevant research, prototype or pilot-design principle from the described case. Source: MAIC Design Thinking for Innovation, page 4."
+    },
+    {
+      "ordinal": 29,
+      "source_page": 4,
+      "stem": "What may explain a missing confirmation email?",
+      "options": [
+        "Mix interpretation with direct quotes",
+        "Mail delivery or workflow problems needing investigation",
+        "Ask exclusively leading positive questions",
+        "Publish private participant details without permission"
+      ],
+      "correct_mask": 2,
+      "rationale": "The source explains that mail delivery or workflow problems needing investigation. This is the relevant research, prototype or pilot-design principle from the described case. Source: MAIC Design Thinking for Innovation, page 4."
+    },
+    {
+      "ordinal": 30,
+      "source_page": 4,
+      "stem": "What should an observation log contain?",
+      "options": [
+        "Discard contradictory observations",
+        "Convert six interviews to a precise population census",
+        "Tasks, actions, evidence and follow-up questions",
+        "Mix interpretation with direct quotes"
+      ],
+      "correct_mask": 4,
+      "rationale": "The source explains that tasks, actions, evidence and follow-up questions. This is the relevant research, prototype or pilot-design principle from the described case. Source: MAIC Design Thinking for Innovation, page 4."
+    },
+    {
+      "ordinal": 31,
+      "source_page": 5,
+      "stem": "What is synthesis in design research?",
+      "options": [
+        "Treat one complaint as universal prevalence",
+        "Hide pending and confirmed status differences",
+        "Grouping observations into meaningful tentative patterns",
+        "Ignore observed exceptions"
+      ],
+      "correct_mask": 4,
+      "rationale": "The source explains that grouping observations into meaningful tentative patterns. This is the relevant research, prototype or pilot-design principle from the described case. Source: MAIC Design Thinking for Innovation, page 5."
+    },
+    {
+      "ordinal": 32,
+      "source_page": 5,
+      "stem": "Why should patterns preserve exceptions?",
+      "options": [
+        "Write the final technology into the problem statement",
+        "Not all participants experience one problem identically",
+        "Assume causal theories need no testing",
+        "Treat one complaint as universal prevalence"
+      ],
+      "correct_mask": 2,
+      "rationale": "The source explains that not all participants experience one problem identically. This is the relevant research, prototype or pilot-design principle from the described case. Source: MAIC Design Thinking for Innovation, page 5."
+    },
+    {
+      "ordinal": 33,
+      "source_page": 5,
+      "stem": "What is an appropriate problem statement?",
+      "options": [
+        "Hide pending and confirmed status differences",
+        "Ignore observed exceptions",
+        "Write the final technology into the problem statement",
+        "Visitors need dependable confirmation to avoid repeated uncertainty"
+      ],
+      "correct_mask": 8,
+      "rationale": "The source explains that visitors need dependable confirmation to avoid repeated uncertainty. This is the relevant research, prototype or pilot-design principle from the described case. Source: MAIC Design Thinking for Innovation, page 5."
+    },
+    {
+      "ordinal": 34,
+      "source_page": 5,
+      "stem": "What is a premature solution statement?",
+      "options": [
+        "Assume causal theories need no testing",
+        "Treat one complaint as universal prevalence",
+        "Hide pending and confirmed status differences",
+        "Visitors need a chatbot before causes are studied"
+      ],
+      "correct_mask": 8,
+      "rationale": "The source explains that visitors need a chatbot before causes are studied. This is the relevant research, prototype or pilot-design principle from the described case. Source: MAIC Design Thinking for Innovation, page 5."
+    },
+    {
+      "ordinal": 35,
+      "source_page": 5,
+      "stem": "What is the use of a How might we question?",
+      "options": [
+        "Ignore observed exceptions",
+        "Open a specific problem to possible solutions",
+        "Write the final technology into the problem statement",
+        "Assume causal theories need no testing"
+      ],
+      "correct_mask": 2,
+      "rationale": "The source explains that open a specific problem to possible solutions. This is the relevant research, prototype or pilot-design principle from the described case. Source: MAIC Design Thinking for Innovation, page 5."
+    },
+    {
+      "ordinal": 36,
+      "source_page": 5,
+      "stem": "Why should repeated why questions still use evidence?",
+      "options": [
+        "Treat one complaint as universal prevalence",
+        "Hide pending and confirmed status differences",
+        "Unverified causal assumptions may mislead the team",
+        "Ignore observed exceptions"
+      ],
+      "correct_mask": 4,
+      "rationale": "The source explains that unverified causal assumptions may mislead the team. This is the relevant research, prototype or pilot-design principle from the described case. Source: MAIC Design Thinking for Innovation, page 5."
+    },
+    {
+      "ordinal": 37,
+      "source_page": 5,
+      "stem": "What should a design problem include?",
+      "options": [
+        "Write the final technology into the problem statement",
+        "User group, need and relevant context",
+        "Assume causal theories need no testing",
+        "Treat one complaint as universal prevalence"
+      ],
+      "correct_mask": 2,
+      "rationale": "The source explains that user group, need and relevant context. This is the relevant research, prototype or pilot-design principle from the described case. Source: MAIC Design Thinking for Innovation, page 5."
+    },
+    {
+      "ordinal": 38,
+      "source_page": 5,
+      "stem": "What is a possible measure of confirmation confusion?",
+      "options": [
+        "Repeated inquiries under a defined method",
+        "Hide pending and confirmed status differences",
+        "Ignore observed exceptions",
+        "Write the final technology into the problem statement"
+      ],
+      "correct_mask": 1,
+      "rationale": "The source explains that repeated inquiries under a defined method. This is the relevant research, prototype or pilot-design principle from the described case. Source: MAIC Design Thinking for Innovation, page 5."
+    },
+    {
+      "ordinal": 39,
+      "source_page": 5,
+      "stem": "Why should a received-request message not imply acceptance?",
+      "options": [
+        "Assume causal theories need no testing",
+        "Treat one complaint as universal prevalence",
+        "Pending and confirmed are different service states",
+        "Hide pending and confirmed status differences"
+      ],
+      "correct_mask": 4,
+      "rationale": "The source explains that pending and confirmed are different service states. This is the relevant research, prototype or pilot-design principle from the described case. Source: MAIC Design Thinking for Innovation, page 5."
+    },
+    {
+      "ordinal": 40,
+      "source_page": 5,
+      "stem": "What should happen after identifying a probable pattern?",
+      "options": [
+        "Test whether the interpretation explains the observed issue",
+        "Ignore observed exceptions",
+        "Write the final technology into the problem statement",
+        "Assume causal theories need no testing"
+      ],
+      "correct_mask": 1,
+      "rationale": "The source explains that test whether the interpretation explains the observed issue. This is the relevant research, prototype or pilot-design principle from the described case. Source: MAIC Design Thinking for Innovation, page 5."
+    },
+    {
+      "ordinal": 41,
+      "source_page": 6,
+      "stem": "What does divergent ideation encourage?",
+      "options": [
+        "Declare the first idea the winner",
+        "Exclude quieter participants from ideation",
+        "Ignore legal and operational risks",
+        "Several distinct possible solutions"
+      ],
+      "correct_mask": 8,
+      "rationale": "The source explains that several distinct possible solutions. This is the relevant research, prototype or pilot-design principle from the described case. Source: MAIC Design Thinking for Innovation, page 6."
+    },
+    {
+      "ordinal": 42,
+      "source_page": 6,
+      "stem": "What does convergence aim to accomplish?",
+      "options": [
+        "Select promising options against explicit criteria",
+        "Use only expensive new software options",
+        "Treat an impact-effort score as objective proof",
+        "Declare the first idea the winner"
+      ],
+      "correct_mask": 1,
+      "rationale": "The source explains that select promising options against explicit criteria. This is the relevant research, prototype or pilot-design principle from the described case. Source: MAIC Design Thinking for Innovation, page 6."
+    },
+    {
+      "ordinal": 43,
+      "source_page": 6,
+      "stem": "Why may brainwriting help a group?",
+      "options": [
+        "Exclude quieter participants from ideation",
+        "Ignore legal and operational risks",
+        "It lets quieter members contribute ideas",
+        "Use only expensive new software options"
+      ],
+      "correct_mask": 4,
+      "rationale": "The source explains that it lets quieter members contribute ideas. This is the relevant research, prototype or pilot-design principle from the described case. Source: MAIC Design Thinking for Innovation, page 6."
+    },
+    {
+      "ordinal": 44,
+      "source_page": 6,
+      "stem": "What can an impact-effort matrix support?",
+      "options": [
+        "Treat an impact-effort score as objective proof",
+        "Declare the first idea the winner",
+        "A structured but imperfect selection discussion",
+        "Exclude quieter participants from ideation"
+      ],
+      "correct_mask": 4,
+      "rationale": "The source explains that a structured but imperfect selection discussion. This is the relevant research, prototype or pilot-design principle from the described case. Source: MAIC Design Thinking for Innovation, page 6."
+    },
+    {
+      "ordinal": 45,
+      "source_page": 6,
+      "stem": "Why should the first popular idea not be adopted automatically?",
+      "options": [
+        "Ignore legal and operational risks",
+        "Popularity does not prove user benefit or feasibility",
+        "Use only expensive new software options",
+        "Treat an impact-effort score as objective proof"
+      ],
+      "correct_mask": 2,
+      "rationale": "The source explains that popularity does not prove user benefit or feasibility. This is the relevant research, prototype or pilot-design principle from the described case. Source: MAIC Design Thinking for Innovation, page 6."
+    },
+    {
+      "ordinal": 46,
+      "source_page": 6,
+      "stem": "What might solve booking confusion without a new app?",
+      "options": [
+        "Declare the first idea the winner",
+        "Clearer pending status language",
+        "Exclude quieter participants from ideation",
+        "Ignore legal and operational risks"
+      ],
+      "correct_mask": 2,
+      "rationale": "The source explains that clearer pending status language. This is the relevant research, prototype or pilot-design principle from the described case. Source: MAIC Design Thinking for Innovation, page 6."
+    },
+    {
+      "ordinal": 47,
+      "source_page": 6,
+      "stem": "What should a team assess among proposed ideas?",
+      "options": [
+        "Value, cost, risk and access",
+        "Use only expensive new software options",
+        "Treat an impact-effort score as objective proof",
+        "Declare the first idea the winner"
+      ],
+      "correct_mask": 1,
+      "rationale": "The source explains that value, cost, risk and access. This is the relevant research, prototype or pilot-design principle from the described case. Source: MAIC Design Thinking for Innovation, page 6."
+    },
+    {
+      "ordinal": 48,
+      "source_page": 6,
+      "stem": "Why can a small process improvement be innovative?",
+      "options": [
+        "Exclude quieter participants from ideation",
+        "It may solve a meaningful user problem efficiently",
+        "Ignore legal and operational risks",
+        "Use only expensive new software options"
+      ],
+      "correct_mask": 2,
+      "rationale": "The source explains that it may solve a meaningful user problem efficiently. This is the relevant research, prototype or pilot-design principle from the described case. Source: MAIC Design Thinking for Innovation, page 6."
+    },
+    {
+      "ordinal": 49,
+      "source_page": 6,
+      "stem": "How many candidate ideas are generated in the fictional workshop?",
+      "options": [
+        "Twelve ideas",
+        "Treat an impact-effort score as objective proof",
+        "Declare the first idea the winner",
+        "Exclude quieter participants from ideation"
+      ],
+      "correct_mask": 1,
+      "rationale": "The source explains that twelve ideas. This is the relevant research, prototype or pilot-design principle from the described case. Source: MAIC Design Thinking for Innovation, page 6."
+    },
+    {
+      "ordinal": 50,
+      "source_page": 6,
+      "stem": "What should an ideation outcome include?",
+      "options": [
+        "A shortlist and unanswered validation questions",
+        "Ignore legal and operational risks",
+        "Use only expensive new software options",
+        "Treat an impact-effort score as objective proof"
+      ],
+      "correct_mask": 1,
+      "rationale": "The source explains that a shortlist and unanswered validation questions. This is the relevant research, prototype or pilot-design principle from the described case. Source: MAIC Design Thinking for Innovation, page 6."
+    },
+    {
+      "ordinal": 51,
+      "source_page": 7,
+      "stem": "What is an example of a low-fidelity prototype?",
+      "options": [
+        "Build a full paid platform to test one sentence",
+        "Avoid prototyping any error or pending state",
+        "Show users the expected answer before testing",
+        "A printed booking status card"
+      ],
+      "correct_mask": 8,
+      "rationale": "The source explains that a printed booking status card. This is the relevant research, prototype or pilot-design principle from the described case. Source: MAIC Design Thinking for Innovation, page 7."
+    },
+    {
+      "ordinal": 52,
+      "source_page": 7,
+      "stem": "Why should prototype fidelity fit the uncertainty?",
+      "options": [
+        "Present a mockup as a genuine database transaction",
+        "Change every word while hiding from reviewers",
+        "Build a full paid platform to test one sentence",
+        "Expensive detail may be unnecessary to test a message"
+      ],
+      "correct_mask": 8,
+      "rationale": "The source explains that expensive detail may be unnecessary to test a message. This is the relevant research, prototype or pilot-design principle from the described case. Source: MAIC Design Thinking for Innovation, page 7."
+    },
+    {
+      "ordinal": 53,
+      "source_page": 7,
+      "stem": "What must a simulated confirmation not claim?",
+      "options": [
+        "That a real authorized booking was saved",
+        "Avoid prototyping any error or pending state",
+        "Show users the expected answer before testing",
+        "Present a mockup as a genuine database transaction"
+      ],
+      "correct_mask": 1,
+      "rationale": "The source explains that that a real authorized booking was saved. This is the relevant research, prototype or pilot-design principle from the described case. Source: MAIC Design Thinking for Innovation, page 7."
+    },
+    {
+      "ordinal": 54,
+      "source_page": 7,
+      "stem": "Why include failed and pending states in prototype design?",
+      "options": [
+        "Change every word while hiding from reviewers",
+        "Users need truthful feedback in nonideal conditions",
+        "Build a full paid platform to test one sentence",
+        "Avoid prototyping any error or pending state"
+      ],
+      "correct_mask": 2,
+      "rationale": "The source explains that users need truthful feedback in nonideal conditions. This is the relevant research, prototype or pilot-design principle from the described case. Source: MAIC Design Thinking for Innovation, page 7."
+    },
+    {
+      "ordinal": 55,
+      "source_page": 7,
+      "stem": "What should a prototype test plan specify?",
+      "options": [
+        "Show users the expected answer before testing",
+        "Present a mockup as a genuine database transaction",
+        "Change every word while hiding from reviewers",
+        "Hypothesis, task and observation method"
+      ],
+      "correct_mask": 8,
+      "rationale": "The source explains that hypothesis, task and observation method. This is the relevant research, prototype or pilot-design principle from the described case. Source: MAIC Design Thinking for Innovation, page 7."
+    },
+    {
+      "ordinal": 56,
+      "source_page": 7,
+      "stem": "Why keep prototypes easy to revise?",
+      "options": [
+        "Build a full paid platform to test one sentence",
+        "Avoid prototyping any error or pending state",
+        "Show users the expected answer before testing",
+        "Testing may reveal a misunderstood design"
+      ],
+      "correct_mask": 8,
+      "rationale": "The source explains that testing may reveal a misunderstood design. This is the relevant research, prototype or pilot-design principle from the described case. Source: MAIC Design Thinking for Innovation, page 7."
+    },
+    {
+      "ordinal": 57,
+      "source_page": 7,
+      "stem": "What distinguishes a paper prototype from a live service?",
+      "options": [
+        "Present a mockup as a genuine database transaction",
+        "It does not make real database changes",
+        "Change every word while hiding from reviewers",
+        "Build a full paid platform to test one sentence"
+      ],
+      "correct_mask": 2,
+      "rationale": "The source explains that it does not make real database changes. This is the relevant research, prototype or pilot-design principle from the described case. Source: MAIC Design Thinking for Innovation, page 7."
+    },
+    {
+      "ordinal": 58,
+      "source_page": 7,
+      "stem": "What is a useful test comparison in the case?",
+      "options": [
+        "Two messages with different pending-state clarity",
+        "Avoid prototyping any error or pending state",
+        "Show users the expected answer before testing",
+        "Present a mockup as a genuine database transaction"
+      ],
+      "correct_mask": 1,
+      "rationale": "The source explains that two messages with different pending-state clarity. This is the relevant research, prototype or pilot-design principle from the described case. Source: MAIC Design Thinking for Innovation, page 7."
+    },
+    {
+      "ordinal": 59,
+      "source_page": 7,
+      "stem": "Why should test participants not be led toward a choice?",
+      "options": [
+        "Guidance could hide whether wording is understandable",
+        "Change every word while hiding from reviewers",
+        "Build a full paid platform to test one sentence",
+        "Avoid prototyping any error or pending state"
+      ],
+      "correct_mask": 1,
+      "rationale": "The source explains that guidance could hide whether wording is understandable. This is the relevant research, prototype or pilot-design principle from the described case. Source: MAIC Design Thinking for Innovation, page 7."
+    },
+    {
+      "ordinal": 60,
+      "source_page": 7,
+      "stem": "What should a prototype disclose about names and records?",
+      "options": [
+        "Show users the expected answer before testing",
+        "They are fictional classroom examples",
+        "Present a mockup as a genuine database transaction",
+        "Change every word while hiding from reviewers"
+      ],
+      "correct_mask": 2,
+      "rationale": "The source explains that they are fictional classroom examples. This is the relevant research, prototype or pilot-design principle from the described case. Source: MAIC Design Thinking for Innovation, page 7."
+    },
+    {
+      "ordinal": 61,
+      "source_page": 8,
+      "stem": "What should usability testing measure?",
+      "options": [
+        "Task outcome, errors and comprehension under stated conditions",
+        "Claim a small sample represents everyone",
+        "Reject all negative test evidence",
+        "Treat preference as proof of actual task completion"
+      ],
+      "correct_mask": 1,
+      "rationale": "The source explains that task outcome, errors and comprehension under stated conditions. This is the relevant research, prototype or pilot-design principle from the described case. Source: MAIC Design Thinking for Innovation, page 8."
+    },
+    {
+      "ordinal": 62,
+      "source_page": 8,
+      "stem": "Why report assisted completion separately?",
+      "options": [
+        "Count moderator-assisted cases as independent",
+        "Change several variables and claim one caused success",
+        "Claim a small sample represents everyone",
+        "Moderator help changes the observed result"
+      ],
+      "correct_mask": 8,
+      "rationale": "The source explains that moderator help changes the observed result. This is the relevant research, prototype or pilot-design principle from the described case. Source: MAIC Design Thinking for Innovation, page 8."
+    },
+    {
+      "ordinal": 63,
+      "source_page": 8,
+      "stem": "What is a limitation of an eight-person test?",
+      "options": [
+        "Reject all negative test evidence",
+        "It cannot establish precise whole-population performance",
+        "Treat preference as proof of actual task completion",
+        "Count moderator-assisted cases as independent"
+      ],
+      "correct_mask": 2,
+      "rationale": "The source explains that it cannot establish precise whole-population performance. This is the relevant research, prototype or pilot-design principle from the described case. Source: MAIC Design Thinking for Innovation, page 8."
+    },
+    {
+      "ordinal": 64,
+      "source_page": 8,
+      "stem": "What can a misunderstood status label require?",
+      "options": [
+        "Change several variables and claim one caused success",
+        "Revision and another comprehension test",
+        "Claim a small sample represents everyone",
+        "Reject all negative test evidence"
+      ],
+      "correct_mask": 2,
+      "rationale": "The source explains that revision and another comprehension test. This is the relevant research, prototype or pilot-design principle from the described case. Source: MAIC Design Thinking for Innovation, page 8."
+    },
+    {
+      "ordinal": 65,
+      "source_page": 8,
+      "stem": "Why should a test not change every variable simultaneously?",
+      "options": [
+        "Treat preference as proof of actual task completion",
+        "Count moderator-assisted cases as independent",
+        "Cause of observed differences becomes unclear",
+        "Change several variables and claim one caused success"
+      ],
+      "correct_mask": 4,
+      "rationale": "The source explains that cause of observed differences becomes unclear. This is the relevant research, prototype or pilot-design principle from the described case. Source: MAIC Design Thinking for Innovation, page 8."
+    },
+    {
+      "ordinal": 66,
+      "source_page": 8,
+      "stem": "What can testing reveal when cards are understood but approval stays slow?",
+      "options": [
+        "The remaining issue may be operational",
+        "Claim a small sample represents everyone",
+        "Reject all negative test evidence",
+        "Treat preference as proof of actual task completion"
+      ],
+      "correct_mask": 1,
+      "rationale": "The source explains that the remaining issue may be operational. This is the relevant research, prototype or pilot-design principle from the described case. Source: MAIC Design Thinking for Innovation, page 8."
+    },
+    {
+      "ordinal": 67,
+      "source_page": 8,
+      "stem": "What is a valuable response to a failed design hypothesis?",
+      "options": [
+        "Revise the explanation and investigate further",
+        "Count moderator-assisted cases as independent",
+        "Change several variables and claim one caused success",
+        "Claim a small sample represents everyone"
+      ],
+      "correct_mask": 1,
+      "rationale": "The source explains that revise the explanation and investigate further. This is the relevant research, prototype or pilot-design principle from the described case. Source: MAIC Design Thinking for Innovation, page 8."
+    },
+    {
+      "ordinal": 68,
+      "source_page": 8,
+      "stem": "What should a results report distinguish?",
+      "options": [
+        "Reject all negative test evidence",
+        "Direct observations, assumptions and limits",
+        "Treat preference as proof of actual task completion",
+        "Count moderator-assisted cases as independent"
+      ],
+      "correct_mask": 2,
+      "rationale": "The source explains that direct observations, assumptions and limits. This is the relevant research, prototype or pilot-design principle from the described case. Source: MAIC Design Thinking for Innovation, page 8."
+    },
+    {
+      "ordinal": 69,
+      "source_page": 8,
+      "stem": "Six of eight participants understand the message. What is the observed rate?",
+      "options": [
+        "Change several variables and claim one caused success",
+        "Claim a small sample represents everyone",
+        "75%",
+        "Reject all negative test evidence"
+      ],
+      "correct_mask": 4,
+      "rationale": "The source explains that 75%. This is the relevant research, prototype or pilot-design principle from the described case. Source: MAIC Design Thinking for Innovation, page 8."
+    },
+    {
+      "ordinal": 70,
+      "source_page": 8,
+      "stem": "What does a preference survey alone fail to show?",
+      "options": [
+        "Treat preference as proof of actual task completion",
+        "Count moderator-assisted cases as independent",
+        "Change several variables and claim one caused success",
+        "Whether the service task succeeds"
+      ],
+      "correct_mask": 8,
+      "rationale": "The source explains that whether the service task succeeds. This is the relevant research, prototype or pilot-design principle from the described case. Source: MAIC Design Thinking for Innovation, page 8."
+    },
+    {
+      "ordinal": 71,
+      "source_page": 9,
+      "stem": "What is co-creation in a service project?",
+      "options": [
+        "Make smartphone ownership mandatory for every resident",
+        "Let automated replies create fake confirmations",
+        "Use no responsibility or risk owner",
+        "Collaboration with affected users and staff"
+      ],
+      "correct_mask": 8,
+      "rationale": "The source explains that collaboration with affected users and staff. This is the relevant research, prototype or pilot-design principle from the described case. Source: MAIC Design Thinking for Innovation, page 9."
+    },
+    {
+      "ordinal": 72,
+      "source_page": 9,
+      "stem": "Why should consultation decisions be explained?",
+      "options": [
+        "Treat group consultation as consent to publish all remarks",
+        "Ignore staff process and accessibility",
+        "Participants need to know what can change",
+        "Make smartphone ownership mandatory for every resident"
+      ],
+      "correct_mask": 4,
+      "rationale": "The source explains that participants need to know what can change. This is the relevant research, prototype or pilot-design principle from the described case. Source: MAIC Design Thinking for Innovation, page 9."
+    },
+    {
+      "ordinal": 73,
+      "source_page": 9,
+      "stem": "Why should input from one group not erase minority barriers?",
+      "options": [
+        "Let automated replies create fake confirmations",
+        "Use no responsibility or risk owner",
+        "Some users may face unique exclusion",
+        "Treat group consultation as consent to publish all remarks"
+      ],
+      "correct_mask": 4,
+      "rationale": "The source explains that some users may face unique exclusion. This is the relevant research, prototype or pilot-design principle from the described case. Source: MAIC Design Thinking for Innovation, page 9."
+    },
+    {
+      "ordinal": 74,
+      "source_page": 9,
+      "stem": "What might a digital-only booking process exclude?",
+      "options": [
+        "People who rely on phone or in-person help",
+        "Ignore staff process and accessibility",
+        "Make smartphone ownership mandatory for every resident",
+        "Let automated replies create fake confirmations"
+      ],
+      "correct_mask": 1,
+      "rationale": "The source explains that people who rely on phone or in-person help. This is the relevant research, prototype or pilot-design principle from the described case. Source: MAIC Design Thinking for Innovation, page 9."
+    },
+    {
+      "ordinal": 75,
+      "source_page": 9,
+      "stem": "Why is privacy a design-thinking concern?",
+      "options": [
+        "Use no responsibility or risk owner",
+        "Treat group consultation as consent to publish all remarks",
+        "Service changes may collect sensitive user details",
+        "Ignore staff process and accessibility"
+      ],
+      "correct_mask": 4,
+      "rationale": "The source explains that service changes may collect sensitive user details. This is the relevant research, prototype or pilot-design principle from the described case. Source: MAIC Design Thinking for Innovation, page 9."
+    },
+    {
+      "ordinal": 76,
+      "source_page": 9,
+      "stem": "What should an automated confirmation system not invent?",
+      "options": [
+        "Make smartphone ownership mandatory for every resident",
+        "Approval that no authorized service has granted",
+        "Let automated replies create fake confirmations",
+        "Use no responsibility or risk owner"
+      ],
+      "correct_mask": 2,
+      "rationale": "The source explains that approval that no authorized service has granted. This is the relevant research, prototype or pilot-design principle from the described case. Source: MAIC Design Thinking for Innovation, page 9."
+    },
+    {
+      "ordinal": 77,
+      "source_page": 9,
+      "stem": "What can help reduce staff workload risk?",
+      "options": [
+        "Treat group consultation as consent to publish all remarks",
+        "Ignore staff process and accessibility",
+        "Make smartphone ownership mandatory for every resident",
+        "Operational testing and clear support responsibilities"
+      ],
+      "correct_mask": 8,
+      "rationale": "The source explains that operational testing and clear support responsibilities. This is the relevant research, prototype or pilot-design principle from the described case. Source: MAIC Design Thinking for Innovation, page 9."
+    },
+    {
+      "ordinal": 78,
+      "source_page": 9,
+      "stem": "Why must research participation not imply public disclosure consent?",
+      "options": [
+        "Let automated replies create fake confirmations",
+        "Those are separate information uses",
+        "Use no responsibility or risk owner",
+        "Treat group consultation as consent to publish all remarks"
+      ],
+      "correct_mask": 2,
+      "rationale": "The source explains that those are separate information uses. This is the relevant research, prototype or pilot-design principle from the described case. Source: MAIC Design Thinking for Innovation, page 9."
+    },
+    {
+      "ordinal": 79,
+      "source_page": 9,
+      "stem": "What should an ethical risk table include?",
+      "options": [
+        "Ignore staff process and accessibility",
+        "Make smartphone ownership mandatory for every resident",
+        "Let automated replies create fake confirmations",
+        "Affected people, risk, mitigation and owner"
+      ],
+      "correct_mask": 8,
+      "rationale": "The source explains that affected people, risk, mitigation and owner. This is the relevant research, prototype or pilot-design principle from the described case. Source: MAIC Design Thinking for Innovation, page 9."
+    },
+    {
+      "ordinal": 80,
+      "source_page": 9,
+      "stem": "What is a helpful alternative to one mandatory interface?",
+      "options": [
+        "More than one accessible service route",
+        "Use no responsibility or risk owner",
+        "Treat group consultation as consent to publish all remarks",
+        "Ignore staff process and accessibility"
+      ],
+      "correct_mask": 1,
+      "rationale": "The source explains that more than one accessible service route. This is the relevant research, prototype or pilot-design principle from the described case. Source: MAIC Design Thinking for Innovation, page 9."
+    },
+    {
+      "ordinal": 81,
+      "source_page": 10,
+      "stem": "What should an implementation pilot define?",
+      "options": [
+        "Scope, baseline, resources, measures and stop conditions",
+        "Publish without a baseline or monitoring",
+        "Ignore staff workload and privacy incidents",
+        "Keep no rollback or correction plan"
+      ],
+      "correct_mask": 1,
+      "rationale": "The source explains that scope, baseline, resources, measures and stop conditions. This is the relevant research, prototype or pilot-design principle from the described case. Source: MAIC Design Thinking for Innovation, page 10."
+    },
+    {
+      "ordinal": 82,
+      "source_page": 10,
+      "stem": "Why is positive prototype feedback not proof of impact?",
+      "options": [
+        "Treat a pilot as successful because staff likes its color",
+        "Production outcomes have not been measured",
+        "Assume a before-after difference proves causality",
+        "Publish without a baseline or monitoring"
+      ],
+      "correct_mask": 2,
+      "rationale": "The source explains that production outcomes have not been measured. This is the relevant research, prototype or pilot-design principle from the described case. Source: MAIC Design Thinking for Innovation, page 10."
+    },
+    {
+      "ordinal": 83,
+      "source_page": 10,
+      "stem": "What is a balancing measure in a booking pilot?",
+      "options": [
+        "Ignore staff workload and privacy incidents",
+        "Staff burden or additional support failures",
+        "Keep no rollback or correction plan",
+        "Treat a pilot as successful because staff likes its color"
+      ],
+      "correct_mask": 2,
+      "rationale": "The source explains that staff burden or additional support failures. This is the relevant research, prototype or pilot-design principle from the described case. Source: MAIC Design Thinking for Innovation, page 10."
+    },
+    {
+      "ordinal": 84,
+      "source_page": 10,
+      "stem": "Why should a before-after comparison be interpreted cautiously?",
+      "options": [
+        "Other events can influence the result",
+        "Assume a before-after difference proves causality",
+        "Publish without a baseline or monitoring",
+        "Ignore staff workload and privacy incidents"
+      ],
+      "correct_mask": 1,
+      "rationale": "The source explains that other events can influence the result. This is the relevant research, prototype or pilot-design principle from the described case. Source: MAIC Design Thinking for Innovation, page 10."
+    },
+    {
+      "ordinal": 85,
+      "source_page": 10,
+      "stem": "What should happen if an intervention introduces serious privacy risk?",
+      "options": [
+        "Keep no rollback or correction plan",
+        "Stop or correct it before expanding",
+        "Treat a pilot as successful because staff likes its color",
+        "Assume a before-after difference proves causality"
+      ],
+      "correct_mask": 2,
+      "rationale": "The source explains that stop or correct it before expanding. This is the relevant research, prototype or pilot-design principle from the described case. Source: MAIC Design Thinking for Innovation, page 10."
+    },
+    {
+      "ordinal": 86,
+      "source_page": 10,
+      "stem": "Why should service metrics define their denominators?",
+      "options": [
+        "Publish without a baseline or monitoring",
+        "Ignore staff workload and privacy incidents",
+        "Keep no rollback or correction plan",
+        "Changing counting methods can mislead"
+      ],
+      "correct_mask": 8,
+      "rationale": "The source explains that changing counting methods can mislead. This is the relevant research, prototype or pilot-design principle from the described case. Source: MAIC Design Thinking for Innovation, page 10."
+    },
+    {
+      "ordinal": 87,
+      "source_page": 10,
+      "stem": "What is a useful outcome for confirmation clarity?",
+      "options": [
+        "Treat a pilot as successful because staff likes its color",
+        "Assume a before-after difference proves causality",
+        "Fewer repeat status inquiries under a stable measure",
+        "Publish without a baseline or monitoring"
+      ],
+      "correct_mask": 4,
+      "rationale": "The source explains that fewer repeat status inquiries under a stable measure. This is the relevant research, prototype or pilot-design principle from the described case. Source: MAIC Design Thinking for Innovation, page 10."
+    },
+    {
+      "ordinal": 88,
+      "source_page": 10,
+      "stem": "Why should a pilot retain an old fallback route where needed?",
+      "options": [
+        "Some visitors may not use the new channel",
+        "Ignore staff workload and privacy incidents",
+        "Keep no rollback or correction plan",
+        "Treat a pilot as successful because staff likes its color"
+      ],
+      "correct_mask": 1,
+      "rationale": "The source explains that some visitors may not use the new channel. This is the relevant research, prototype or pilot-design principle from the described case. Source: MAIC Design Thinking for Innovation, page 10."
+    },
+    {
+      "ordinal": 89,
+      "source_page": 10,
+      "stem": "What is a responsibility of a change owner?",
+      "options": [
+        "Track rollout, quality and necessary corrections",
+        "Assume a before-after difference proves causality",
+        "Publish without a baseline or monitoring",
+        "Ignore staff workload and privacy incidents"
+      ],
+      "correct_mask": 1,
+      "rationale": "The source explains that track rollout, quality and necessary corrections. This is the relevant research, prototype or pilot-design principle from the described case. Source: MAIC Design Thinking for Innovation, page 10."
+    },
+    {
+      "ordinal": 90,
+      "source_page": 10,
+      "stem": "Why document the pilot version?",
+      "options": [
+        "Keep no rollback or correction plan",
+        "Treat a pilot as successful because staff likes its color",
+        "Reviewers must know what was actually tested",
+        "Assume a before-after difference proves causality"
+      ],
+      "correct_mask": 4,
+      "rationale": "The source explains that reviewers must know what was actually tested. This is the relevant research, prototype or pilot-design principle from the described case. Source: MAIC Design Thinking for Innovation, page 10."
+    },
+    {
+      "ordinal": 91,
+      "source_page": 11,
+      "stem": "What is the fictional service problem?",
+      "options": [
+        "Present invented results as actual center operations",
+        "Use an expensive app without verifying the real bottleneck",
+        "Visitors mistake received requests for confirmed enrollment",
+        "Change only button color regardless of workflow"
+      ],
+      "correct_mask": 4,
+      "rationale": "The source explains that visitors mistake received requests for confirmed enrollment. This is the relevant research, prototype or pilot-design principle from the described case. Source: MAIC Design Thinking for Innovation, page 11."
+    },
+    {
+      "ordinal": 92,
+      "source_page": 11,
+      "stem": "What operational constraint may remain?",
+      "options": [
+        "Staff approval can be delayed",
+        "Treat request received as permanent booking confirmation",
+        "Ignore the participant sample size",
+        "Present invented results as actual center operations"
+      ],
+      "correct_mask": 1,
+      "rationale": "The source explains that staff approval can be delayed. This is the relevant research, prototype or pilot-design principle from the described case. Source: MAIC Design Thinking for Innovation, page 11."
+    },
+    {
+      "ordinal": 93,
+      "source_page": 11,
+      "stem": "How many idea alternatives are discussed in the case?",
+      "options": [
+        "Three tested directions",
+        "Use an expensive app without verifying the real bottleneck",
+        "Change only button color regardless of workflow",
+        "Treat request received as permanent booking confirmation"
+      ],
+      "correct_mask": 1,
+      "rationale": "The source explains that three tested directions. This is the relevant research, prototype or pilot-design principle from the described case. Source: MAIC Design Thinking for Innovation, page 11."
+    },
+    {
+      "ordinal": 94,
+      "source_page": 11,
+      "stem": "What is one suggested low-cost intervention?",
+      "options": [
+        "Ignore the participant sample size",
+        "Present invented results as actual center operations",
+        "Clarify pending confirmation wording",
+        "Use an expensive app without verifying the real bottleneck"
+      ],
+      "correct_mask": 4,
+      "rationale": "The source explains that clarify pending confirmation wording. This is the relevant research, prototype or pilot-design principle from the described case. Source: MAIC Design Thinking for Innovation, page 11."
+    },
+    {
+      "ordinal": 95,
+      "source_page": 11,
+      "stem": "What is another suggested intervention?",
+      "options": [
+        "Change only button color regardless of workflow",
+        "Treat request received as permanent booking confirmation",
+        "Ignore the participant sample size",
+        "Provide a booking status lookup"
+      ],
+      "correct_mask": 8,
+      "rationale": "The source explains that provide a booking status lookup. This is the relevant research, prototype or pilot-design principle from the described case. Source: MAIC Design Thinking for Innovation, page 11."
+    },
+    {
+      "ordinal": 96,
+      "source_page": 11,
+      "stem": "What is the third candidate change?",
+      "options": [
+        "Present invented results as actual center operations",
+        "Use an expensive app without verifying the real bottleneck",
+        "Change only button color regardless of workflow",
+        "Improve staff-process assignment"
+      ],
+      "correct_mask": 8,
+      "rationale": "The source explains that improve staff-process assignment. This is the relevant research, prototype or pilot-design principle from the described case. Source: MAIC Design Thinking for Innovation, page 11."
+    },
+    {
+      "ordinal": 97,
+      "source_page": 11,
+      "stem": "How many participants are in the hypothetical comprehension test?",
+      "options": [
+        "Treat request received as permanent booking confirmation",
+        "Ignore the participant sample size",
+        "Eight participants",
+        "Present invented results as actual center operations"
+      ],
+      "correct_mask": 4,
+      "rationale": "The source explains that eight participants. This is the relevant research, prototype or pilot-design principle from the described case. Source: MAIC Design Thinking for Innovation, page 11."
+    },
+    {
+      "ordinal": 98,
+      "source_page": 11,
+      "stem": "How many understand the pending state without help?",
+      "options": [
+        "Use an expensive app without verifying the real bottleneck",
+        "Change only button color regardless of workflow",
+        "Treat request received as permanent booking confirmation",
+        "Six participants"
+      ],
+      "correct_mask": 8,
+      "rationale": "The source explains that six participants. This is the relevant research, prototype or pilot-design principle from the described case. Source: MAIC Design Thinking for Innovation, page 11."
+    },
+    {
+      "ordinal": 99,
+      "source_page": 11,
+      "stem": "What is the observed comprehension rate?",
+      "options": [
+        "Ignore the participant sample size",
+        "Present invented results as actual center operations",
+        "75%",
+        "Use an expensive app without verifying the real bottleneck"
+      ],
+      "correct_mask": 4,
+      "rationale": "The source explains that 75%. This is the relevant research, prototype or pilot-design principle from the described case. Source: MAIC Design Thinking for Innovation, page 11."
+    },
+    {
+      "ordinal": 100,
+      "source_page": 11,
+      "stem": "Why could a new app fail to resolve the issue?",
+      "options": [
+        "Change only button color regardless of workflow",
+        "Treat request received as permanent booking confirmation",
+        "Staff approval and ambiguous status may remain unchanged",
+        "Ignore the participant sample size"
+      ],
+      "correct_mask": 4,
+      "rationale": "The source explains that staff approval and ambiguous status may remain unchanged. This is the relevant research, prototype or pilot-design principle from the described case. Source: MAIC Design Thinking for Innovation, page 11."
+    }
+  ]
+}
