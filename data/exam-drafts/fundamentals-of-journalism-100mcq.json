@@ -1,0 +1,1312 @@
+{
+  "course_id": "fundamentals-of-journalism",
+  "source_manuscript": "data/course-manuscripts/fundamentals-of-journalism.md",
+  "source_manuscript_blob_sha": "acd5d1986b416dde8af8da5775c3b281bccd5460",
+  "source_pdf_sha256": null,
+  "bank_version": "draft-manuscript-20261122-v1",
+  "approval_status": "editorial_draft_pending_independent_review",
+  "number_of_questions": 100,
+  "note": "Staged editorial draft only; a verified and independently reviewed PDF must be registered in MAIC before bank review/activation. Not an active exam.",
+  "questions": [
+    {
+      "ordinal": 1,
+      "source_page": 2,
+      "stem": "Which action best represents journalism?",
+      "options": [
+        "Verify a public-interest question using appropriate evidence",
+        "Republish a press release without checking it",
+        "Make an eyewitness quotation sound more fluent",
+        "Choose a headline only from audience reactions"
+      ],
+      "correct_mask": 1,
+      "rationale": "Journalism examines evidence before presenting claims. Source: MAIC Fundamentals of Journalism, page 2."
+    },
+    {
+      "ordinal": 2,
+      "source_page": 2,
+      "stem": "Why should a beginner distinguish facts from interpretations?",
+      "options": [
+        "Readers need to know what is established and what is inferred",
+        "Interpretations are always more reliable than records",
+        "Facts do not require any source",
+        "A reader can never distinguish those categories"
+      ],
+      "correct_mask": 1,
+      "rationale": "The manual teaches careful separation of evidence and inference. Source: MAIC Fundamentals of Journalism, page 2."
+    },
+    {
+      "ordinal": 3,
+      "source_page": 2,
+      "stem": "Which objective belongs to this introductory course?",
+      "options": [
+        "Produce advertising without disclosure",
+        "Write and check a short attributed news report",
+        "Replace sources with generated dialogue",
+        "Claim an academic qualification after reading"
+      ],
+      "correct_mask": 2,
+      "rationale": "The learning outcomes include producing verified, clearly attributed reports. Source: MAIC Fundamentals of Journalism, page 2."
+    },
+    {
+      "ordinal": 4,
+      "source_page": 2,
+      "stem": "What does a reporting process need to be accountable?",
+      "options": [
+        "Only a finished image file",
+        "Notes and source details sufficient to reconstruct claims",
+        "Only a preferred headline",
+        "Only a sponsor's written approval"
+      ],
+      "correct_mask": 2,
+      "rationale": "An evidence trail enables review and corrections. Source: MAIC Fundamentals of Journalism, page 2."
+    },
+    {
+      "ordinal": 5,
+      "source_page": 2,
+      "stem": "Why can an appealing news story still be unsuitable for publication?",
+      "options": [
+        "It has too few dramatic adjectives",
+        "Its subject is a local service",
+        "It includes a dated primary source",
+        "Its central allegation may not be verified"
+      ],
+      "correct_mask": 8,
+      "rationale": "Engagement does not outweigh the requirement for accuracy. Source: MAIC Fundamentals of Journalism, page 2."
+    },
+    {
+      "ordinal": 6,
+      "source_page": 2,
+      "stem": "How should a learner use the fictional exercises?",
+      "options": [
+        "Practice identifying evidence without portraying examples as actual events",
+        "Submit the invented people as verified interview sources",
+        "Treat every scenario as a current news report",
+        "Publish simulated claims as confirmed facts"
+      ],
+      "correct_mask": 1,
+      "rationale": "Training scenarios are explicitly fictional. Source: MAIC Fundamentals of Journalism, page 2."
+    },
+    {
+      "ordinal": 7,
+      "source_page": 2,
+      "stem": "What makes a journalistic question useful to residents?",
+      "options": [
+        "It creates maximum emotional pressure",
+        "A verifiable answer could inform their decisions",
+        "It has no relation to a public need",
+        "It cannot be answered from any source"
+      ],
+      "correct_mask": 2,
+      "rationale": "Useful reporting serves a specific information need. Source: MAIC Fundamentals of Journalism, page 2."
+    },
+    {
+      "ordinal": 8,
+      "source_page": 2,
+      "stem": "Why are journalistic facts checked independently?",
+      "options": [
+        "Because statements can be sincere and still be incomplete or wrong",
+        "Because every witness deliberately lies",
+        "Because primary records never contain mistakes",
+        "Because emotional confidence confirms truth"
+      ],
+      "correct_mask": 1,
+      "rationale": "Verification tests the claim rather than the speaker's confidence. Source: MAIC Fundamentals of Journalism, page 2."
+    },
+    {
+      "ordinal": 9,
+      "source_page": 2,
+      "stem": "What is a suitable outcome of an introductory self-check?",
+      "options": [
+        "Automatic eligibility for a degree",
+        "Permission to invent missing sources",
+        "Identifying which reporting skills need further practice",
+        "A claim of completed independent academic review"
+      ],
+      "correct_mask": 4,
+      "rationale": "Self-assessment is practice rather than formal certification. Source: MAIC Fundamentals of Journalism, page 2."
+    },
+    {
+      "ordinal": 10,
+      "source_page": 2,
+      "stem": "Which sequence most closely matches responsible reporting?",
+      "options": [
+        "Question, evidence, check, contextualize, publish and correct if needed",
+        "Headline, invent quotes, publish, then seek sources",
+        "Accept claims, add photographs, omit attribution",
+        "Publish first and reject subsequent evidence"
+      ],
+      "correct_mask": 1,
+      "rationale": "The process builds from inquiry through checked publication. Source: MAIC Fundamentals of Journalism, page 2."
+    },
+    {
+      "ordinal": 11,
+      "source_page": 3,
+      "stem": "What makes a transport timetable change potentially newsworthy?",
+      "options": [
+        "It necessarily produces national controversy",
+        "It guarantees higher advertising revenue",
+        "It affects travelers who need accurate practical information",
+        "It must involve a famous public figure"
+      ],
+      "correct_mask": 4,
+      "rationale": "Timely service changes can be useful to a defined audience. Source: MAIC Fundamentals of Journalism, page 3."
+    },
+    {
+      "ordinal": 12,
+      "source_page": 3,
+      "stem": "Which is a neutral news question?",
+      "options": [
+        "Why has management ruined the library?",
+        "When does the new library schedule begin and which services change?",
+        "Who is certainly responsible for every problem?",
+        "How can the notice sound more alarming?"
+      ],
+      "correct_mask": 2,
+      "rationale": "Neutral questions can be checked against actual announcements. Source: MAIC Fundamentals of Journalism, page 3."
+    },
+    {
+      "ordinal": 13,
+      "source_page": 3,
+      "stem": "What is a risk of writing a dramatic headline before checking the record?",
+      "options": [
+        "It guarantees better investigation",
+        "It makes source identification unnecessary",
+        "It can bias which evidence the reporter accepts",
+        "It prevents conflicting accounts"
+      ],
+      "correct_mask": 4,
+      "rationale": "Premature framing can steer the reporting. Source: MAIC Fundamentals of Journalism, page 3."
+    },
+    {
+      "ordinal": 14,
+      "source_page": 3,
+      "stem": "Which detail is critical to a report about extended weekend opening?",
+      "options": [
+        "The reporter's preferred font",
+        "The exact start date and hours in the official notice",
+        "The number of likes on an unrelated post",
+        "The reader's favorite book genre"
+      ],
+      "correct_mask": 2,
+      "rationale": "Practical schedule details deliver public value. Source: MAIC Fundamentals of Journalism, page 3."
+    },
+    {
+      "ordinal": 15,
+      "source_page": 3,
+      "stem": "Which news value describes the extent of effects on people?",
+      "options": [
+        "Paragraph length",
+        "Impact",
+        "Brand loyalty",
+        "Webpage theme"
+      ],
+      "correct_mask": 2,
+      "rationale": "Impact considers who is affected and how. Source: MAIC Fundamentals of Journalism, page 3."
+    },
+    {
+      "ordinal": 16,
+      "source_page": 3,
+      "stem": "How should a reporter handle an appealing but unverified claim?",
+      "options": [
+        "Publish it as a fact because it is unusual",
+        "Treat repost counts as evidence",
+        "Investigate it and identify its current uncertainty",
+        "Remove contradictory source information"
+      ],
+      "correct_mask": 4,
+      "rationale": "Unverified claims should not be presented as established. Source: MAIC Fundamentals of Journalism, page 3."
+    },
+    {
+      "ordinal": 17,
+      "source_page": 3,
+      "stem": "Why should a story proposal name its intended audience?",
+      "options": [
+        "An audience definition proves the story true",
+        "It guarantees the source will cooperate",
+        "It replaces identifying missing facts",
+        "Different readers need different relevant information"
+      ],
+      "correct_mask": 8,
+      "rationale": "Audience relevance helps shape the reporting question. Source: MAIC Fundamentals of Journalism, page 3."
+    },
+    {
+      "ordinal": 18,
+      "source_page": 3,
+      "stem": "What is inappropriate about claiming a temporary service is permanent?",
+      "options": [
+        "It is acceptable because the word is shorter",
+        "It is a harmless stylistic choice",
+        "It becomes true if widely shared",
+        "It overstates the scope established by the source"
+      ],
+      "correct_mask": 8,
+      "rationale": "Headlines must match the supported timeframe. Source: MAIC Fundamentals of Journalism, page 3."
+    },
+    {
+      "ordinal": 19,
+      "source_page": 3,
+      "stem": "When should a journalist amend a proposed news angle?",
+      "options": [
+        "When verified evidence changes the understanding of events",
+        "Whenever the first headline gets few likes",
+        "Only after an advertiser requests a change",
+        "Never once the pitch is written"
+      ],
+      "correct_mask": 1,
+      "rationale": "The investigation should follow evidence. Source: MAIC Fundamentals of Journalism, page 3."
+    },
+    {
+      "ordinal": 20,
+      "source_page": 3,
+      "stem": "What should a beginner's story proposal include?",
+      "options": [
+        "Only a promotional slogan",
+        "Only an accusation against a named person",
+        "Only an attractive photograph",
+        "Public relevance, sources and a testable central question"
+      ],
+      "correct_mask": 8,
+      "rationale": "A reporting plan needs purpose and verifiability. Source: MAIC Fundamentals of Journalism, page 3."
+    },
+    {
+      "ordinal": 21,
+      "source_page": 4,
+      "stem": "What distinguishes an allegation from an established fact?",
+      "options": [
+        "The allegation must always be false",
+        "The allegation cannot be quoted with attribution",
+        "The allegation is a claim that has not yet been adequately verified",
+        "The fact is whatever the loudest person says"
+      ],
+      "correct_mask": 4,
+      "rationale": "Evidence and attribution determine the supported status. Source: MAIC Fundamentals of Journalism, page 4."
+    },
+    {
+      "ordinal": 22,
+      "source_page": 4,
+      "stem": "What does a signed proposal show without further records?",
+      "options": [
+        "Full implementation is complete",
+        "All spending has been approved",
+        "A proposal exists, not necessarily an adopted policy",
+        "Every affected person agrees"
+      ],
+      "correct_mask": 4,
+      "rationale": "Document status controls the conclusion. Source: MAIC Fundamentals of Journalism, page 4."
+    },
+    {
+      "ordinal": 23,
+      "source_page": 4,
+      "stem": "Which is an example of an opinion?",
+      "options": [
+        "The new service is the best improvement in years",
+        "The notice is dated 18 November",
+        "The posted opening hour is 9 a.m.",
+        "The council voted in a recorded meeting"
+      ],
+      "correct_mask": 1,
+      "rationale": "Evaluative judgments differ from verifiable recorded details. Source: MAIC Fundamentals of Journalism, page 4."
+    },
+    {
+      "ordinal": 24,
+      "source_page": 4,
+      "stem": "What is a forecast?",
+      "options": [
+        "A statement about a possible future result",
+        "A completed transaction",
+        "A firsthand observation of past events",
+        "An authenticated photograph"
+      ],
+      "correct_mask": 1,
+      "rationale": "Forecasts express future expectations rather than established outcomes. Source: MAIC Fundamentals of Journalism, page 4."
+    },
+    {
+      "ordinal": 25,
+      "source_page": 4,
+      "stem": "A school has authorized funding for computers. What remains unproven?",
+      "options": [
+        "That the computers have been physically delivered",
+        "That a funding decision took place",
+        "That the proposal covered equipment",
+        "That the council considered the issue"
+      ],
+      "correct_mask": 1,
+      "rationale": "Approval does not demonstrate fulfillment. Source: MAIC Fundamentals of Journalism, page 4."
+    },
+    {
+      "ordinal": 26,
+      "source_page": 4,
+      "stem": "Why is the word according to useful when accurately applied?",
+      "options": [
+        "It converts every allegation into fact",
+        "It removes a need to read the underlying document",
+        "It proves all reported causes",
+        "It identifies the source supporting the reported assertion"
+      ],
+      "correct_mask": 8,
+      "rationale": "Source attribution clarifies who states a claim. Source: MAIC Fundamentals of Journalism, page 4."
+    },
+    {
+      "ordinal": 27,
+      "source_page": 4,
+      "stem": "Which statement is justified by a dated meeting agenda alone?",
+      "options": [
+        "The proposal passed unanimously",
+        "All the work has been completed",
+        "The plan was permanently funded",
+        "The proposal appears on the agenda"
+      ],
+      "correct_mask": 8,
+      "rationale": "An agenda alone does not establish decisions. Source: MAIC Fundamentals of Journalism, page 4."
+    },
+    {
+      "ordinal": 28,
+      "source_page": 4,
+      "stem": "How should journalists report an unknown cause?",
+      "options": [
+        "State a likely cause as certain",
+        "Describe verified effects while noting the cause is unconfirmed",
+        "Infer the cause solely from public anger",
+        "Invent a specialist quotation"
+      ],
+      "correct_mask": 2,
+      "rationale": "Transparent uncertainty prevents invented explanations. Source: MAIC Fundamentals of Journalism, page 4."
+    },
+    {
+      "ordinal": 29,
+      "source_page": 4,
+      "stem": "A witness reports a single late bus. What broader claim is not yet established?",
+      "options": [
+        "That the witness experienced a delay",
+        "That every bus on the route is routinely late",
+        "That a bus route exists",
+        "That the witness made a statement"
+      ],
+      "correct_mask": 2,
+      "rationale": "A single observation cannot establish a system-wide pattern. Source: MAIC Fundamentals of Journalism, page 4."
+    },
+    {
+      "ordinal": 30,
+      "source_page": 4,
+      "stem": "Why distinguish a quote of an assertion from endorsement of it?",
+      "options": [
+        "Reporting what was said does not automatically verify its content",
+        "All quoted words must be true",
+        "Quotes are exempt from contextual checking",
+        "Attribution allows inventing missing records"
+      ],
+      "correct_mask": 1,
+      "rationale": "Quotation and independent verification are separate. Source: MAIC Fundamentals of Journalism, page 4."
+    },
+    {
+      "ordinal": 31,
+      "source_page": 5,
+      "stem": "What should a reporter assess about an expert source?",
+      "options": [
+        "How many followers the expert has alone",
+        "Whether expertise applies to the particular claim",
+        "Whether the expert agrees with the headline",
+        "Only how confidently the expert speaks"
+      ],
+      "correct_mask": 2,
+      "rationale": "Source relevance is claim-specific. Source: MAIC Fundamentals of Journalism, page 5."
+    },
+    {
+      "ordinal": 32,
+      "source_page": 5,
+      "stem": "Why are two websites copying one rumor not two confirmations?",
+      "options": [
+        "They derive from a single unverified origin",
+        "The web addresses are different",
+        "The articles use different fonts",
+        "The sites have different publication times"
+      ],
+      "correct_mask": 1,
+      "rationale": "Independent corroboration requires independent evidence. Source: MAIC Fundamentals of Journalism, page 5."
+    },
+    {
+      "ordinal": 33,
+      "source_page": 5,
+      "stem": "What best documents a proposed claim during investigation?",
+      "options": [
+        "A claim-source-status table with unresolved questions",
+        "A draft headline with no references",
+        "A collection of unrelated screenshots",
+        "Only a tally of social views"
+      ],
+      "correct_mask": 1,
+      "rationale": "A source table exposes verification status. Source: MAIC Fundamentals of Journalism, page 5."
+    },
+    {
+      "ordinal": 34,
+      "source_page": 5,
+      "stem": "A notice announces a planned opening. What does it establish?",
+      "options": [
+        "The institution announced the plan",
+        "The opening has already occurred",
+        "All services are permanently available",
+        "Residents have attended the opening"
+      ],
+      "correct_mask": 1,
+      "rationale": "An announcement need not prove completion. Source: MAIC Fundamentals of Journalism, page 5."
+    },
+    {
+      "ordinal": 35,
+      "source_page": 5,
+      "stem": "Why check an original notice rather than an isolated screenshot?",
+      "options": [
+        "All screenshots are false",
+        "The image may omit amendments or important context",
+        "Only printed media can provide evidence",
+        "An image cannot include accurate words"
+      ],
+      "correct_mask": 2,
+      "rationale": "Original context clarifies document status and meaning. Source: MAIC Fundamentals of Journalism, page 5."
+    },
+    {
+      "ordinal": 36,
+      "source_page": 5,
+      "stem": "What should a reporter do when official and ticketing attendance numbers differ?",
+      "options": [
+        "Choose the larger number without explanation",
+        "Clarify counting definitions before selecting a figure",
+        "Take the average automatically",
+        "Describe the figures as identical"
+      ],
+      "correct_mask": 2,
+      "rationale": "Different metrics can yield different legitimate counts. Source: MAIC Fundamentals of Journalism, page 5."
+    },
+    {
+      "ordinal": 37,
+      "source_page": 5,
+      "stem": "When should a firsthand witness be used for a regional statistic?",
+      "options": [
+        "Only with appropriate supporting population-level evidence",
+        "Whenever the witness seems sincere",
+        "Whenever the post has many likes",
+        "When the witness declines to supply records"
+      ],
+      "correct_mask": 1,
+      "rationale": "One experience is not automatically representative. Source: MAIC Fundamentals of Journalism, page 5."
+    },
+    {
+      "ordinal": 38,
+      "source_page": 5,
+      "stem": "What is a primary record for a council vote?",
+      "options": [
+        "A generic marketing campaign",
+        "An unlinked anonymous comment",
+        "The authenticated minutes or official recorded decision",
+        "An unrelated stock photograph"
+      ],
+      "correct_mask": 4,
+      "rationale": "Primary records directly document formal decisions. Source: MAIC Fundamentals of Journalism, page 5."
+    },
+    {
+      "ordinal": 39,
+      "source_page": 5,
+      "stem": "Why record the date of each source document?",
+      "options": [
+        "Its relevance and accuracy may change with revisions",
+        "Dates are only design elements",
+        "An old version is always definitive",
+        "The date confirms all predictions"
+      ],
+      "correct_mask": 1,
+      "rationale": "Version and timing are essential evidence context. Source: MAIC Fundamentals of Journalism, page 5."
+    },
+    {
+      "ordinal": 40,
+      "source_page": 5,
+      "stem": "How should conflicting credible accounts be presented when unresolved?",
+      "options": [
+        "Invent a compromise quotation",
+        "Ignore the less convenient account",
+        "Identify the disputed point and evidence limits",
+        "Describe one as false without checking"
+      ],
+      "correct_mask": 4,
+      "rationale": "Disagreement should be described with transparent support. Source: MAIC Fundamentals of Journalism, page 5."
+    },
+    {
+      "ordinal": 41,
+      "source_page": 6,
+      "stem": "Which field note is a direct observation?",
+      "options": [
+        "The city must be hiding an accident",
+        "A barrier was visible outside the station at 9:15 a.m.",
+        "Every driver was negligent",
+        "The delays will continue indefinitely"
+      ],
+      "correct_mask": 2,
+      "rationale": "Direct observation records what the reporter actually saw. Source: MAIC Fundamentals of Journalism, page 6."
+    },
+    {
+      "ordinal": 42,
+      "source_page": 6,
+      "stem": "What is the problem with the question Why did you intentionally neglect residents?",
+      "options": [
+        "It requests a date",
+        "It leaves room for several explanations",
+        "It embeds a contested accusation in the wording",
+        "It identifies a document for checking"
+      ],
+      "correct_mask": 4,
+      "rationale": "Neutral questions avoid assuming a disputed motive. Source: MAIC Fundamentals of Journalism, page 6."
+    },
+    {
+      "ordinal": 43,
+      "source_page": 6,
+      "stem": "What should an interviewer ask after an uncertain date is mentioned?",
+      "options": [
+        "May we replace it with a more interesting date?",
+        "Can we treat the estimate as exact?",
+        "Should the article omit all dates?",
+        "Can you confirm the date from a record or calendar?"
+      ],
+      "correct_mask": 8,
+      "rationale": "Specific follow-up improves accuracy. Source: MAIC Fundamentals of Journalism, page 6."
+    },
+    {
+      "ordinal": 44,
+      "source_page": 6,
+      "stem": "What should a source be told at the beginning of an interview?",
+      "options": [
+        "Who the journalist is and the intended reporting purpose",
+        "That every reply must be favorable",
+        "That recording is always permitted in every location",
+        "That the source cannot request clarification"
+      ],
+      "correct_mask": 1,
+      "rationale": "Transparent purpose supports ethical interviewing. Source: MAIC Fundamentals of Journalism, page 6."
+    },
+    {
+      "ordinal": 45,
+      "source_page": 6,
+      "stem": "Why is it inappropriate to infer an official cause from seeing a barrier?",
+      "options": [
+        "Barriers can never be observed accurately",
+        "Official records are never useful",
+        "The reporter already knows all causes",
+        "The observed object does not establish why it was installed"
+      ],
+      "correct_mask": 8,
+      "rationale": "Evidence for a cause differs from evidence of a condition. Source: MAIC Fundamentals of Journalism, page 6."
+    },
+    {
+      "ordinal": 46,
+      "source_page": 6,
+      "stem": "What should be preserved for accurate quotation?",
+      "options": [
+        "Only a polished paraphrase",
+        "Original notes or recordings subject to suitable safeguards",
+        "Only the source's preferred headline",
+        "Only the shortest possible quote"
+      ],
+      "correct_mask": 2,
+      "rationale": "Original records support later verification. Source: MAIC Fundamentals of Journalism, page 6."
+    },
+    {
+      "ordinal": 47,
+      "source_page": 6,
+      "stem": "What should a reporter do after an ambiguous technical term in an interview?",
+      "options": [
+        "Replace it with an invented synonym",
+        "Ask for clarification and verify its spelling and meaning",
+        "Omit attribution entirely",
+        "Assume transcription software is perfect"
+      ],
+      "correct_mask": 2,
+      "rationale": "Technical misunderstandings can materially change a story. Source: MAIC Fundamentals of Journalism, page 6."
+    },
+    {
+      "ordinal": 48,
+      "source_page": 6,
+      "stem": "Which approach is preferable with a distressed interviewee?",
+      "options": [
+        "Press for the most dramatic retelling",
+        "Provide clear communication and avoid coercive repetition",
+        "Publish unnecessary personal information",
+        "Ignore appropriate consent expectations"
+      ],
+      "correct_mask": 2,
+      "rationale": "Vulnerable sources require sensitive treatment. Source: MAIC Fundamentals of Journalism, page 6."
+    },
+    {
+      "ordinal": 49,
+      "source_page": 6,
+      "stem": "How should an interviewer deal with a source who declines comment?",
+      "options": [
+        "Treat refusal as admission of wrongdoing",
+        "Write a hypothetical quote under their name",
+        "Record the refusal accurately without inventing an explanation",
+        "Delete the original question from all records"
+      ],
+      "correct_mask": 4,
+      "rationale": "A refusal does not establish a cause. Source: MAIC Fundamentals of Journalism, page 6."
+    },
+    {
+      "ordinal": 50,
+      "source_page": 6,
+      "stem": "Why should time and place be recorded alongside interview material?",
+      "options": [
+        "They replace checking the words spoken",
+        "They support identification and contextual validation of the account",
+        "They guarantee the source is independent",
+        "They make all private details publishable"
+      ],
+      "correct_mask": 2,
+      "rationale": "Provenance matters for source reliability. Source: MAIC Fundamentals of Journalism, page 6."
+    },
+    {
+      "ordinal": 51,
+      "source_page": 7,
+      "stem": "What is the role of a news lead?",
+      "options": [
+        "Include every historical detail before the news",
+        "Hide the current change until the final paragraph",
+        "Start with the most dramatic unsupported accusation",
+        "Present the essential verified development early"
+      ],
+      "correct_mask": 8,
+      "rationale": "The lead prioritizes the main established fact. Source: MAIC Fundamentals of Journalism, page 7."
+    },
+    {
+      "ordinal": 52,
+      "source_page": 7,
+      "stem": "What is the inverted pyramid?",
+      "options": [
+        "An approach that puts important facts before less essential detail",
+        "A requirement to end with the only verified detail",
+        "A method of placing ads above news",
+        "A plan to avoid source attribution"
+      ],
+      "correct_mask": 1,
+      "rationale": "The structure supports rapid understanding. Source: MAIC Fundamentals of Journalism, page 7."
+    },
+    {
+      "ordinal": 53,
+      "source_page": 7,
+      "stem": "What does the W in who ask?",
+      "options": [
+        "The report's word count",
+        "The website name only",
+        "The people or organization involved",
+        "The width of a photograph"
+      ],
+      "correct_mask": 4,
+      "rationale": "Who identifies relevant actors. Source: MAIC Fundamentals of Journalism, page 7."
+    },
+    {
+      "ordinal": 54,
+      "source_page": 7,
+      "stem": "What if the why of an event has not been verified?",
+      "options": [
+        "State known circumstances without inventing a cause",
+        "Make the most plausible cause categorical",
+        "Assume the first witness knows the full reason",
+        "Omit all other verified details"
+      ],
+      "correct_mask": 1,
+      "rationale": "The five Ws do not justify speculation. Source: MAIC Fundamentals of Journalism, page 7."
+    },
+    {
+      "ordinal": 55,
+      "source_page": 7,
+      "stem": "Which lead fits a planned weekend-opening trial?",
+      "options": [
+        "The library has permanently expanded all services",
+        "The city ordered every school to open on Sunday",
+        "The library will test Sunday opening beginning next month, according to its notice",
+        "The library already served record crowds today"
+      ],
+      "correct_mask": 4,
+      "rationale": "A lead must preserve planned status and source. Source: MAIC Fundamentals of Journalism, page 7."
+    },
+    {
+      "ordinal": 56,
+      "source_page": 7,
+      "stem": "Why should background usually follow the main verified development?",
+      "options": [
+        "Historic context is never useful",
+        "The beginning may contain any invented fact",
+        "Readers first need to understand what changed",
+        "A lead must include every quote"
+      ],
+      "correct_mask": 4,
+      "rationale": "Story structure prioritizes consequence and clarity. Source: MAIC Fundamentals of Journalism, page 7."
+    },
+    {
+      "ordinal": 57,
+      "source_page": 7,
+      "stem": "What does a direct quote contribute most appropriately?",
+      "options": [
+        "Proof that the story needs no corroboration",
+        "A replacement for every numerical check",
+        "Source-specific evidence or perspective with accurate attribution",
+        "A guarantee that the reported claim is true"
+      ],
+      "correct_mask": 4,
+      "rationale": "Quotations add evidence but do not independently prove all content. Source: MAIC Fundamentals of Journalism, page 7."
+    },
+    {
+      "ordinal": 58,
+      "source_page": 7,
+      "stem": "How should chronology be managed in a story?",
+      "options": [
+        "Describe every future plan as completed",
+        "Use a different event date in each paragraph",
+        "Keep planned, current and completed events distinct",
+        "Remove dates to reduce precision"
+      ],
+      "correct_mask": 4,
+      "rationale": "Temporal accuracy is part of a coherent report. Source: MAIC Fundamentals of Journalism, page 7."
+    },
+    {
+      "ordinal": 59,
+      "source_page": 7,
+      "stem": "Which paragraph is most useful after a verified library-hours lead?",
+      "options": [
+        "A speculative history of unrelated institutions",
+        "The exact opening dates and services available",
+        "A source's unverified personal accusation",
+        "An unrelated product advertisement"
+      ],
+      "correct_mask": 2,
+      "rationale": "Follow-up details should answer the reader's practical questions. Source: MAIC Fundamentals of Journalism, page 7."
+    },
+    {
+      "ordinal": 60,
+      "source_page": 7,
+      "stem": "Why may a beginner choose inverted-pyramid reporting for a short announcement?",
+      "options": [
+        "It removes the need for verification",
+        "It guarantees every headline is legally safe",
+        "It makes central facts accessible even if readers stop early",
+        "It prevents the use of original records"
+      ],
+      "correct_mask": 4,
+      "rationale": "A clear order improves service-news readability. Source: MAIC Fundamentals of Journalism, page 7."
+    },
+    {
+      "ordinal": 61,
+      "source_page": 8,
+      "stem": "What is wrong with a headline saying Council builds lanes based on an agenda item?",
+      "options": [
+        "The headline contains a location",
+        "The sentence is short",
+        "The agenda shows consideration, not completed construction",
+        "The subject is public infrastructure"
+      ],
+      "correct_mask": 4,
+      "rationale": "A headline must match the recorded status. Source: MAIC Fundamentals of Journalism, page 8."
+    },
+    {
+      "ordinal": 62,
+      "source_page": 8,
+      "stem": "What do quotation marks around an interview statement signify?",
+      "options": [
+        "They indicate an approximate paraphrase",
+        "They prove the words are true",
+        "They permit invented speech in context",
+        "They represent the person's actual words"
+      ],
+      "correct_mask": 8,
+      "rationale": "Quotes require fidelity to recorded speech. Source: MAIC Fundamentals of Journalism, page 8."
+    },
+    {
+      "ordinal": 63,
+      "source_page": 8,
+      "stem": "Why must a reporter check captions for old file photographs?",
+      "options": [
+        "Archive photos are always prohibited",
+        "A caption cannot contain factual assertions",
+        "Image date never affects interpretation",
+        "Readers may mistake them for images of the current event"
+      ],
+      "correct_mask": 8,
+      "rationale": "Caption provenance prevents temporal misrepresentation. Source: MAIC Fundamentals of Journalism, page 8."
+    },
+    {
+      "ordinal": 64,
+      "source_page": 8,
+      "stem": "What is an appropriate way to shorten a quotation?",
+      "options": [
+        "Remove all qualifiers that weaken the point",
+        "Combine sentences from different speakers",
+        "Remove nonessential words without changing its meaning",
+        "Add the reporter's wording inside quote marks"
+      ],
+      "correct_mask": 4,
+      "rationale": "Editing must preserve substantive meaning. Source: MAIC Fundamentals of Journalism, page 8."
+    },
+    {
+      "ordinal": 65,
+      "source_page": 8,
+      "stem": "Which wording is appropriate for a not-yet-approved proposal?",
+      "options": [
+        "The council has completed the project",
+        "The proposal is permanently operating",
+        "The council is considering the proposal",
+        "The plan has already achieved its results"
+      ],
+      "correct_mask": 4,
+      "rationale": "Status words convey the difference between proposal and implementation. Source: MAIC Fundamentals of Journalism, page 8."
+    },
+    {
+      "ordinal": 66,
+      "source_page": 8,
+      "stem": "An arrest is reported but no verdict exists. Which headline is unwarranted?",
+      "options": [
+        "Court convicts suspect of the alleged crime",
+        "Police report an arrest in the investigation",
+        "Authorities say an arrest was made",
+        "Investigation continues after arrest"
+      ],
+      "correct_mask": 1,
+      "rationale": "Arrest and conviction are separate legal stages. Source: MAIC Fundamentals of Journalism, page 8."
+    },
+    {
+      "ordinal": 67,
+      "source_page": 8,
+      "stem": "What makes a headline accurate?",
+      "options": [
+        "It receives the most views",
+        "It uses the strongest possible verbs",
+        "Every significant assertion is supported by the article's evidence",
+        "It omits all qualifications"
+      ],
+      "correct_mask": 4,
+      "rationale": "Headlines are factual statements requiring support. Source: MAIC Fundamentals of Journalism, page 8."
+    },
+    {
+      "ordinal": 68,
+      "source_page": 8,
+      "stem": "What should a caption do when an image is illustrative rather than from the event?",
+      "options": [
+        "Let viewers infer it was taken today",
+        "Clearly identify it as an illustrative or file image",
+        "Include a fabricated eyewitness location",
+        "Remove any relevant date"
+      ],
+      "correct_mask": 2,
+      "rationale": "Labeling prevents false documentary inference. Source: MAIC Fundamentals of Journalism, page 8."
+    },
+    {
+      "ordinal": 69,
+      "source_page": 8,
+      "stem": "A recorded source says service might expand. Which paraphrase is fair?",
+      "options": [
+        "The source confirmed expansion was complete",
+        "The source promised permanent expansion",
+        "The source denied any potential change",
+        "The source said an expansion was possible"
+      ],
+      "correct_mask": 8,
+      "rationale": "Paraphrase must preserve uncertainty and scope. Source: MAIC Fundamentals of Journalism, page 8."
+    },
+    {
+      "ordinal": 70,
+      "source_page": 8,
+      "stem": "Why should journalists avoid changing a quote into more fluent invented language?",
+      "options": [
+        "It attributes words to someone who did not say them",
+        "Grammar is more important than source accuracy",
+        "It is required for short articles",
+        "Verbatim speech is never usable"
+      ],
+      "correct_mask": 1,
+      "rationale": "Journalistic quotations must represent actual speech. Source: MAIC Fundamentals of Journalism, page 8."
+    },
+    {
+      "ordinal": 71,
+      "source_page": 9,
+      "stem": "What can make an otherwise true article misleading?",
+      "options": [
+        "Any mention of a date",
+        "Omission of necessary context or counterevidence",
+        "An attributed statement",
+        "A short paragraph structure"
+      ],
+      "correct_mask": 2,
+      "rationale": "Whole-story accuracy includes context. Source: MAIC Fundamentals of Journalism, page 9."
+    },
+    {
+      "ordinal": 72,
+      "source_page": 9,
+      "stem": "What should a newsroom do with a material published numerical error?",
+      "options": [
+        "Hide the corrected figure only in internal records",
+        "Keep the wrong figure if engagement was high",
+        "Correct the figure promptly and explain the change",
+        "Describe both numbers as equally accurate"
+      ],
+      "correct_mask": 4,
+      "rationale": "Visible corrections maintain accountability. Source: MAIC Fundamentals of Journalism, page 9."
+    },
+    {
+      "ordinal": 73,
+      "source_page": 9,
+      "stem": "Why must sponsored content be labeled?",
+      "options": [
+        "To guarantee the sponsor's statements are true",
+        "To exempt it from any laws",
+        "To remove all editorial review",
+        "To prevent commercial messages being mistaken for independent reporting"
+      ],
+      "correct_mask": 8,
+      "rationale": "Transparency reveals commercial influence. Source: MAIC Fundamentals of Journalism, page 9."
+    },
+    {
+      "ordinal": 74,
+      "source_page": 9,
+      "stem": "What is fair response to a serious allegation?",
+      "options": [
+        "Give the accused person control of every published fact",
+        "Seek a relevant reply when feasible and report material evidence accurately",
+        "Ignore the underlying documents",
+        "Publish an invented denial if no reply arrives"
+      ],
+      "correct_mask": 2,
+      "rationale": "Fairness permits response without requiring false balance. Source: MAIC Fundamentals of Journalism, page 9."
+    },
+    {
+      "ordinal": 75,
+      "source_page": 9,
+      "stem": "What is an important privacy question before publishing a witness's address?",
+      "options": [
+        "Will the address attract more clicks?",
+        "Can the address fit in the headline?",
+        "Is disclosure necessary for public understanding and proportionate to harm?",
+        "Does the witness own a social account?"
+      ],
+      "correct_mask": 4,
+      "rationale": "An accurate private detail may still pose unjustified risk. Source: MAIC Fundamentals of Journalism, page 9."
+    },
+    {
+      "ordinal": 76,
+      "source_page": 9,
+      "stem": "How should a correction for 41 versus 14 permits be written?",
+      "options": [
+        "Both counts are equally correct without explanation",
+        "The numerical difference is merely stylistic",
+        "No correction is needed when the subject is local",
+        "The earlier figure was incorrect; the verified figure is 14"
+      ],
+      "correct_mask": 8,
+      "rationale": "Corrections should identify exactly what changed. Source: MAIC Fundamentals of Journalism, page 9."
+    },
+    {
+      "ordinal": 77,
+      "source_page": 9,
+      "stem": "What is a conflict of interest in reporting?",
+      "options": [
+        "A reporter verifying two sources",
+        "A person declining an interview",
+        "A factual headline referencing a public notice",
+        "A financial relationship that could affect independent editorial judgment"
+      ],
+      "correct_mask": 8,
+      "rationale": "Competing private incentives may threaten independence. Source: MAIC Fundamentals of Journalism, page 9."
+    },
+    {
+      "ordinal": 78,
+      "source_page": 9,
+      "stem": "Why should strong evidence and unsupported denial not receive equal weight?",
+      "options": [
+        "All disputes must be split evenly",
+        "Official statements cannot ever be questioned",
+        "False equivalence can mislead readers about the strength of support",
+        "Factual accuracy requires choosing the most popular view"
+      ],
+      "correct_mask": 4,
+      "rationale": "Evidence strength should guide presentation. Source: MAIC Fundamentals of Journalism, page 9."
+    },
+    {
+      "ordinal": 79,
+      "source_page": 9,
+      "stem": "When may specialist review be especially appropriate?",
+      "options": [
+        "Whenever a source uses a long sentence",
+        "Before publishing high-risk legal or sensitive allegations",
+        "Only for sports news",
+        "Whenever a caption is short"
+      ],
+      "correct_mask": 2,
+      "rationale": "Greater potential harm requires proportionate review. Source: MAIC Fundamentals of Journalism, page 9."
+    },
+    {
+      "ordinal": 80,
+      "source_page": 9,
+      "stem": "Which behavior best supports correction-ready journalism?",
+      "options": [
+        "Delete all past published versions silently",
+        "Record only the latest headline",
+        "Preserve the original sources and a revision history",
+        "Avoid documenting any changed number"
+      ],
+      "correct_mask": 4,
+      "rationale": "Traceability makes corrections more credible. Source: MAIC Fundamentals of Journalism, page 9."
+    },
+    {
+      "ordinal": 81,
+      "source_page": 10,
+      "stem": "Why should a viral post not be treated as verified just because it has many views?",
+      "options": [
+        "View counts are always fake",
+        "Only national outlets can publish truth",
+        "High views are proof of an eyewitness",
+        "Popularity does not establish source accuracy"
+      ],
+      "correct_mask": 8,
+      "rationale": "Independent evidence is still necessary. Source: MAIC Fundamentals of Journalism, page 10."
+    },
+    {
+      "ordinal": 82,
+      "source_page": 10,
+      "stem": "What should a journalist check about a supposed current stadium-fire image?",
+      "options": [
+        "Original event, date, place and subsequent repost context",
+        "Only whether flames look realistic",
+        "Only how many emojis accompany it",
+        "Only which filter makes it more dramatic"
+      ],
+      "correct_mask": 1,
+      "rationale": "An old real photo can be miscaptioned as current. Source: MAIC Fundamentals of Journalism, page 10."
+    },
+    {
+      "ordinal": 83,
+      "source_page": 10,
+      "stem": "What is a valid use of AI transcription?",
+      "options": [
+        "Draft notes that are checked against the actual audio",
+        "Create a quotation not present in the recording",
+        "Add a missing interview subject",
+        "Convert uncertain numbers into exact results"
+      ],
+      "correct_mask": 1,
+      "rationale": "AI-assisted output needs original-source verification. Source: MAIC Fundamentals of Journalism, page 10."
+    },
+    {
+      "ordinal": 84,
+      "source_page": 10,
+      "stem": "How should a short caption handle a tentative estimate?",
+      "options": [
+        "Remove the qualifier for brevity",
+        "Preserve that the quantity is estimated",
+        "Describe it as audited fact",
+        "Replace it with an invented larger figure"
+      ],
+      "correct_mask": 2,
+      "rationale": "Format length does not remove meaningful uncertainty. Source: MAIC Fundamentals of Journalism, page 10."
+    },
+    {
+      "ordinal": 85,
+      "source_page": 10,
+      "stem": "What should the term sponsored identify?",
+      "options": [
+        "Content supported or paid for by an advertiser",
+        "An independent newsroom correction",
+        "A verified eyewitness account",
+        "A public agenda"
+      ],
+      "correct_mask": 1,
+      "rationale": "Labels help distinguish promotional from editorial content. Source: MAIC Fundamentals of Journalism, page 10."
+    },
+    {
+      "ordinal": 86,
+      "source_page": 10,
+      "stem": "Why check where a photo first appeared?",
+      "options": [
+        "The first post is always true",
+        "Photo origins never matter to location",
+        "It proves every subsequent caption accurate",
+        "It helps establish provenance and whether it matches the claimed event"
+      ],
+      "correct_mask": 8,
+      "rationale": "Original context may reveal repurposing. Source: MAIC Fundamentals of Journalism, page 10."
+    },
+    {
+      "ordinal": 87,
+      "source_page": 10,
+      "stem": "What is wrong with declaring a claim true based only on online engagement?",
+      "options": [
+        "All popular stories are intentionally false",
+        "Engagement is not independent factual corroboration",
+        "Only unpopular claims can be news",
+        "Engagement is the same as an official record"
+      ],
+      "correct_mask": 2,
+      "rationale": "Public reaction cannot substitute for evidence. Source: MAIC Fundamentals of Journalism, page 10."
+    },
+    {
+      "ordinal": 88,
+      "source_page": 10,
+      "stem": "How should multimedia summaries relate to a full verified article?",
+      "options": [
+        "Preserve its core facts and important qualifications",
+        "Replace cautious words with categorical claims",
+        "Discard relevant source attribution",
+        "Invent material omitted from the original"
+      ],
+      "correct_mask": 1,
+      "rationale": "Short formats must remain faithful to evidence. Source: MAIC Fundamentals of Journalism, page 10."
+    },
+    {
+      "ordinal": 89,
+      "source_page": 10,
+      "stem": "When should a reporter challenge an AI-generated summary?",
+      "options": [
+        "Only when the style is dull",
+        "Never when the output is grammatically polished",
+        "Only after it is reposted",
+        "When it contains a detail absent from the original source"
+      ],
+      "correct_mask": 8,
+      "rationale": "Generated details must be checked against actual evidence. Source: MAIC Fundamentals of Journalism, page 10."
+    },
+    {
+      "ordinal": 90,
+      "source_page": 10,
+      "stem": "What is the first step when verifying a suspicious 15-second clip?",
+      "options": [
+        "Select a headline based on reactions",
+        "Assume the uploader has permission to identify victims",
+        "Treat every visible person as a verified witness",
+        "Seek the original footage and relevant context"
+      ],
+      "correct_mask": 8,
+      "rationale": "Video provenance is essential before assigning time and place. Source: MAIC Fundamentals of Journalism, page 10."
+    },
+    {
+      "ordinal": 91,
+      "source_page": 11,
+      "stem": "What does the fictional library notice establish?",
+      "options": [
+        "The library has permanently shifted to seven-day opening",
+        "Every facility is available all week",
+        "A six-week experiment in Sunday opening is planned",
+        "The experiment has already been evaluated"
+      ],
+      "correct_mask": 4,
+      "rationale": "The scenario describes a temporary trial, not a permanent change. Source: MAIC Fundamentals of Journalism, page 11."
+    },
+    {
+      "ordinal": 92,
+      "source_page": 11,
+      "stem": "Why is the social post claiming permanent opening unsupported?",
+      "options": [
+        "It names the correct institution",
+        "It was posted on a social network",
+        "It uses the word library",
+        "It extends a six-week plan into an indefinite commitment"
+      ],
+      "correct_mask": 8,
+      "rationale": "The source notice does not support permanence. Source: MAIC Fundamentals of Journalism, page 11."
+    },
+    {
+      "ordinal": 93,
+      "source_page": 11,
+      "stem": "What is an appropriate source for the planned start date?",
+      "options": [
+        "An unrelated social argument",
+        "The dated original library notice",
+        "An anonymous prediction about future budgets",
+        "An old file photograph of the building"
+      ],
+      "correct_mask": 2,
+      "rationale": "The original notice states the schedule. Source: MAIC Fundamentals of Journalism, page 11."
+    },
+    {
+      "ordinal": 94,
+      "source_page": 11,
+      "stem": "Which service status is left unanswered by the case facts?",
+      "options": [
+        "Whether ordinary borrowing is announced",
+        "Whether computer rooms are available during Sunday opening",
+        "Whether the notice is temporary",
+        "Whether it was published by the library"
+      ],
+      "correct_mask": 2,
+      "rationale": "The scenario specifically leaves ancillary services unresolved. Source: MAIC Fundamentals of Journalism, page 11."
+    },
+    {
+      "ordinal": 95,
+      "source_page": 11,
+      "stem": "What should the reporter do if the library has not responded about room bookings?",
+      "options": [
+        "State the question remains unconfirmed rather than inventing an answer",
+        "Write that the rooms definitely remain open",
+        "Claim the library refused to provide any services",
+        "Assume that permanent booking policies changed"
+      ],
+      "correct_mask": 1,
+      "rationale": "No response does not establish an operational fact. Source: MAIC Fundamentals of Journalism, page 11."
+    },
+    {
+      "ordinal": 96,
+      "source_page": 11,
+      "stem": "Which lead accurately describes the fictional case?",
+      "options": [
+        "The library now operates permanently seven days a week",
+        "The library has closed all Sunday services",
+        "The library's budget was permanently increased",
+        "The library will test Sunday opening for six weeks next month"
+      ],
+      "correct_mask": 8,
+      "rationale": "The verified notice concerns a temporary opening trial. Source: MAIC Fundamentals of Journalism, page 11."
+    },
+    {
+      "ordinal": 97,
+      "source_page": 11,
+      "stem": "What should a claim-source matrix show about the permanent-opening assertion?",
+      "options": [
+        "It is fully proven by the social post",
+        "It should be used as the main headline",
+        "It needs no follow-up because it is popular",
+        "The source notice does not verify it"
+      ],
+      "correct_mask": 8,
+      "rationale": "A matrix exposes unsupported extrapolation. Source: MAIC Fundamentals of Journalism, page 11."
+    },
+    {
+      "ordinal": 98,
+      "source_page": 11,
+      "stem": "What action is necessary if a published opening date is wrong?",
+      "options": [
+        "Leave it uncorrected until the six-week trial ends",
+        "Remove all mention of the library",
+        "Replace it with a speculative time range silently",
+        "Correct the public-facing date and document the change"
+      ],
+      "correct_mask": 8,
+      "rationale": "A date affects readers' ability to use the service. Source: MAIC Fundamentals of Journalism, page 11."
+    },
+    {
+      "ordinal": 99,
+      "source_page": 11,
+      "stem": "Why should borrowing-service information be included in the story?",
+      "options": [
+        "It proves computer rooms are open",
+        "It guarantees permanent Sunday opening",
+        "It makes the start date irrelevant",
+        "It helps residents know what is actually available"
+      ],
+      "correct_mask": 8,
+      "rationale": "Practical public-service details are newsworthy. Source: MAIC Fundamentals of Journalism, page 11."
+    },
+    {
+      "ordinal": 100,
+      "source_page": 11,
+      "stem": "What is the central editorial lesson of the library exercise?",
+      "options": [
+        "Choose whichever social-media claim is most popular",
+        "Treat all scheduled changes as completed",
+        "Avoid asking the institution for clarification",
+        "Report exactly what the notice supports and label remaining uncertainties"
+      ],
+      "correct_mask": 8,
+      "rationale": "The worked case trains boundary-setting between evidence and inference. Source: MAIC Fundamentals of Journalism, page 11."
+    }
+  ]
+}
