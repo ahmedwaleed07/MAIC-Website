@@ -21,6 +21,9 @@ test('real reviewer and owner attestation required for the exact PDF hash',()=>{
  assert.match(api,/academic_signoffs/);
  assert.match(api,/isAdmin\(request,env\)/);
  assert.match(api,/validOrigin\(request\)/);
+ const ui=read('admin/material-signoff.js');
+ assert.match(ui,/\/api\/admin\/material-preview\?course=/);
+ assert.match(ui,/sourceSha256/);
  const schema=read('migrations/0013_independent_material_academic_signoff.sql');
  assert.match(schema,/PRIMARY KEY\(course_id,source_sha256\)/);
  assert.match(schema,/reviewer_review_date/);
