@@ -35,4 +35,8 @@ test('owner view separates published and preparing course counts and never revea
  assert.match(nav,/course-readiness.html/);
  assert.doesNotMatch(js,/correct_mask|option_a|option_b|option_c|option_d/);
  assert.match(html,/تقرير مباشر من قاعدة بيانات الأكاديمية/);
+ assert.match(read('functions/api/admin/course-readiness.js'),/reviewBankVersion:reviewDraft/);
+ assert.match(js,/\/admin\/exam-banks\.html\?course=/);
+ assert.match(js,/reviewedDraftQuestions/);
+ assert.match(js,/draftOpenBlockers/);
 });
