@@ -42,13 +42,15 @@ test('first PDF upload is possible for an eligible catalog course without existi
  assert.match(ui,/إضافة أول نسخة/);
  assert.doesNotMatch(ui,/source\.find\(m=>m\.course_id===course\.value\)/);
 });
-test('candidate manual renderer and CI enforce the same PDF upload limit',()=>{
+test('PDF builder preserves review formatting while public source manuscript pipeline protects originals',()=>{
  const render=read('tools/render_maic_manuscript.py');
  const workflow=read('.github/workflows/maic-manuscripts.yml');
+ const upload=read('functions/api/admin/course-material.js');
  assert.match(render,/format="JPEG", quality=82, optimize=True/);
  assert.match(render,/original crest/);
- assert.match(workflow,/1_250_000/);
- assert.match(workflow,/len\(reader\.pages\) != 12/);
+ assert.match(workflow,/check_no_public_manuscripts.py/);
+ assert.match(upload,/MAX=1250000/);
+ assert.match(upload,/expected_12_pages/);
 });
 
 test('catalog cannot newly publish unreviewed self-paced courses',()=>{
