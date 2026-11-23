@@ -1,5 +1,23 @@
 # MAIC — academic content completion and release gate, 23 November 2026
 
+## Updated live state — supersedes the earlier snapshot below (23 November 2026)
+
+**Catalog:** 78 total: **20 published, 50 preparing, 8 archived**. 
+**Production material storage:** **70 registered PDF files**; every one of the **50 preparing courses** now has a 12-page PDF registered with a matching source hash.
+**Source-matched exam review banks:** all **50 preparing courses** now have a 100-question `draft` bank associated with their currently registered PDF. This includes **22 new, separate private-review versions** added during the later continuation. Those 22 drafts have **2,200 open `PUBLIC_EXPOSED_KEY` academic blocker issues**, exactly one per original question. No exam was activated by these draft registrations.
+
+**Confidential storage:** the original 34 offline draft banks (3,400 candidate items) were moved from the public Git working tree into restricted Cloudflare D1 table `learning_exam_private_candidates`; verification found all 34 and all 3,400 items present. The folder `data/exam-drafts/` now contains only a policy README; CI prevents reintroduction of public answer-key files. Historical public Git commits remain exposed: the original keys must never be reused for a live student exam.
+
+**Independent academic review:** The 34 recent material revision records identify **OpenAI Codex** as reviewer. That means an automated PDF/content check and is **not independent human academic signoff**. The separately protected `learning_material_academic_signoffs` table and authenticated `/admin/material-signoff.html` workflow now record a real human review for the exact PDF SHA-256 with the owner attesting that it occurred. No such real human review is to be invented by an AI. Likewise, the 20 previously active exam banks have **no per-item reviews recorded** in the newer `learning_exam_item_reviews` table, requiring retrospective academic quality confirmation rather than an unsupported claim of current independent signoff.
+
+**New owner dashboards:** `/admin/course-readiness.html` (direct catalog, PDF, bank and review state); `/admin/exam-candidates.html` (private unapproved bank inventory); `/admin/material-signoff.html` (actual reviewer/owner attestation). First publication of a self-paced course is guarded by a reviewed format, real human PDF signoff, source-matched approved and individually reviewed exam, and no open blocking exam issue.
+
+**Not yet accomplished:** publishing the 50 preparing courses; independent human item validation and remediation of public-key exposure; independent human material signoff; real learner journey testing. The available public previews and automated CI do not constitute release approval.
+
+### Earlier snapshot
+
+
+
 ## Summary of verified status
 
 - Live Cloudflare D1: **78** catalog items: **20 published**, **50 preparing**, **8 archived**.
