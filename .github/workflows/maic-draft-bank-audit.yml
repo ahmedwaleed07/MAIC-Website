@@ -1,33 +1,31 @@
-name: Audit MAIC staged exam drafts
+name: Protect MAIC exam keys in public source
 
 on:
   push:
     branches: [main]
     paths:
       - 'data/exam-drafts/**'
-      - 'data/course-manuscripts/**'
-      - 'tools/audit_staged_exam_drafts.py'
+      - '.gitignore'
+      - 'tools/check_no_public_exam_keys.py'
       - '.github/workflows/maic-draft-bank-audit.yml'
   pull_request:
     paths:
       - 'data/exam-drafts/**'
-      - 'data/course-manuscripts/**'
-      - 'tools/audit_staged_exam_drafts.py'
-      - '.github/workflows/maic-draft-bank-audit.yml'
+      - 'tools/check_no_public_exam_keys.py'
   workflow_dispatch:
 
 permissions:
   contents: read
 
 jobs:
-  structural-audit:
+  exam-key-confidentiality:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-      - name: Verify 100-item banks and source manuscript versioning
+      - name: Reject question banks with answer keys in the public tree
         run: |
-          python -m py_compile tools/audit_staged_exam_drafts.py
-          python tools/audit_staged_exam_drafts.py
+          python -m py_compile tools/check_no_public_exam_keys.py
+          python tools/check_no_public_exam_keys.py
