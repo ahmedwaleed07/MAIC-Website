@@ -60,6 +60,13 @@ async function openDraft(courseId,version){
  const data=await api(null,'?course='+encodeURIComponent(courseId)+'&version='+encodeURIComponent(version));
  details.replaceChildren();
  details.append(node('h3','مراجعة جميع الأسئلة — '+courseId),node('p','المُعدّ: '+data.bank.prepared_by));
+ // The PDF is served only after checking the existing admin session. The SHA
+ // parameter guards against accidentally reviewing a different PDF revision.
+ const sourceLink=node('a','فتح كتاب المادة المعتمدة (PDF) للتحقق من صفحات الأسئلة');
+ sourceLink.href='/api/admin/material-preview?course='+encodeURIComponent(courseId)+'&sha='+encodeURIComponent(data.bank.source_sha256);
+ sourceLink.target='_blank';sourceLink.rel='noopener noreferrer';
+ const pdfLine=node('p');pdfLine.append(sourceLink);details.append(pdfLine);
+ if(!data.sourceMatch)details.append(node('p','تحذير: ملف المصدر تغيّر عن النسخة التي أُعدّت عليها الأسئلة. يجب تحديث البنك قبل اعتماده.','review-status'));
  const reviewName=node('input');
  reviewName.required=true;reviewName.maxLength=150;reviewName.placeholder='اسم المراجع المستقل — يختلف عن المُعدّ';
  const reviewerLabel=node('label','اسم المراجع الأكاديمي المسؤول عن التحقق من كل سؤال');
@@ -77,6 +84,23 @@ async function openDraft(courseId,version){
  const health=node('p','بصمة المادة: '+(data.sourceMatch?'مطابقة':'مختلفة')+' · الأسئلة المتشابهة: '+(quality?.nearPairs??'غير متاح')+' زوج · تكرار 3 خيارات: '+(quality?.optionOverlapPairs??'غير متاح')+' زوج · صياغات مسودة مولدة: '+(quality?.draftingDisclaimers??'-')+' · خيارات توحي بالإجابة: '+(quality?.stronglyCueDominatedItems??'-')+' · أسئلة تستفسر عن موضع النص: '+(quality?.sourceRecallItems??'-')+' · الحد الأعلى لتكرار البداية: '+(quality?.maxOpening??'-'),'review-status');
  details.append(health);
  if(!data.sourceMatch||!quality?.canApprove)details.append(node('p','لا يمكن اعتماد هذا البنك: ملف المصدر غير مطابق أو توجد أسئلة/خيارات نمطية أو تلميحات للإجابات أو مبررات موسومة كمسودة. يلزم تصحيح البنود ومراجعتها علمياً.','review-status'));
+ // Show ten questions at a time so reviewing a 100-item bank is practical on
+ // desktop and mobile, while keeping the original item-level review forms.
+ const pageSize=10,questionBlocks=[];
+ let pageIndex=0;
+ const pager=node('nav');pager.setAttribute('aria-label','التنقل بين مجموعات أسئلة المراجعة');
+ const prior=node('button','الأسئلة السابقة'),next=node('button','الأسئلة التالية');
+ prior.type='button';next.type='button';
+ const pageLabel=node('span',null,'review-status');
+ const showPage=()=>{
+  for(let i=0;i<questionBlocks.length;i++)questionBlocks[i].hidden=Math.floor(i/pageSize)!==pageIndex;
+  const start=pageIndex*pageSize+1,end=Math.min(data.questions.length,(pageIndex+1)*pageSize);
+  pageLabel.textContent=' · عرض '+start+'–'+end+' من '+data.questions.length+' سؤالاً · ';
+  prior.disabled=pageIndex===0;next.disabled=end>=data.questions.length;
+ };
+ prior.addEventListener('click',()=>{if(pageIndex>0){pageIndex--;showPage();pager.scrollIntoView({block:'start',behavior:'smooth'});}});
+ next.addEventListener('click',()=>{if((pageIndex+1)*pageSize<data.questions.length){pageIndex++;showPage();pager.scrollIntoView({block:'start',behavior:'smooth'});}});
+ pager.append(prior,pageLabel,next);details.append(pager);
  for(const q of data.questions){
   const block=node('section',null,'question');block.append(node('h3','السؤال '+q.ordinal),node('p',q.stem));
   q.options.forEach((value,i)=>block.append(node('p',String.fromCharCode(65+i)+'. '+value+(q.correct.includes(i)?' ✓':''),q.correct.includes(i)?'answer':'muted')));
@@ -129,8 +153,9 @@ async function openDraft(courseId,version){
     await openDraft(courseId,version);
    }));
   }
-  details.append(block);
+  details.append(block);questionBlocks.push(block);
  }
+ showPage();
  if(!data.sourceMatch||!quality?.canApprove)return;
  const form=node('form');form.setAttribute('aria-label','اعتماد مراجعة أكاديمية مستقلة');
  
