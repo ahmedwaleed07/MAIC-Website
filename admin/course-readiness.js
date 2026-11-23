@@ -24,7 +24,14 @@ function render(){
   section.append(details);
   if(item.activeExamOpenBlockers)section.append(el('p','ملاحظات أكاديمية مفتوحة: '+item.activeExamOpenBlockers));
   const next=el('p','الخطوة التالية: '+item.nextAction);next.className='muted';
-  section.append(next);list.append(section);
+  section.append(next);
+  if(item.status==='preparing'&&item.reviewBankVersion){
+   const review=el('a','فتح بنك الـ100 سؤال للمراجعة ('+item.reviewedDraftQuestions+'/100 موثّقة؛ '+item.draftOpenBlockers+' ملاحظات مانعة)');
+   review.href='/admin/exam-banks.html?course='+encodeURIComponent(item.id)+'&version='+encodeURIComponent(item.reviewBankVersion);
+   review.setAttribute('aria-label','فتح المراجعة المستقلة لأسئلة '+item.title);
+   section.append(review);
+  }
+  list.append(section);
  }
  if(!rows.length)list.append(el('p','لا توجد دورات في هذه الفئة.'));
 }
