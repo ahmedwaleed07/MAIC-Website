@@ -48,6 +48,7 @@ export async function onRequestGet({request,env}){
    const material=materialBy.get(course.id),allBanks=bankBy.get(course.id)||[];
    const active=allBanks.find(b=>b.active===1);
    const drafts=allBanks.filter(b=>b.status==='draft'&&b.question_count===100);
+   const reviewDraft=drafts.find(b=>b.source_sha256===material?.sha256)||drafts[0];
    const privateCandidate=privateBy.get(course.id);
    const hasActiveMatchingExam=!!(material&&active&&active.status==='approved'&&active.question_count===100&&active.source_sha256===material.sha256);
    const verifiedNewRelease=!!(material?.technical_pdf_review&&material?.academic_pdf_signoff&&hasActiveMatchingExam&&active.bank_reviewed&&active.reviewed_questions===100&&active.open_blockers===0);
@@ -68,7 +69,11 @@ export async function onRequestGet({request,env}){
     activeExam:hasActiveMatchingExam,
     activeExamHasItemReviews:!!(active&&active.reviewed_questions===100&&active.bank_reviewed),
     activeExamOpenBlockers:active?.open_blockers??0,
-    draftBanks:drafts.length,hasPrivateCandidate:!!privateCandidate,
+    draftBanks:drafts.length,
+    reviewBankVersion:reviewDraft?.version||null,
+    reviewedDraftQuestions:reviewDraft?.reviewed_questions||0,
+    draftOpenBlockers:reviewDraft?.open_blockers||0,
+    hasPrivateCandidate:!!privateCandidate,
     confidentialCandidateRequiresReplacement:!!privateCandidate,
     releaseCriteriaRecorded:verifiedNewRelease,nextAction
    };
