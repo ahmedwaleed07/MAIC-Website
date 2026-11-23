@@ -2,3 +2,8 @@
 node_modules/
 .DS_Store
 .env*
+
+# Exam answer keys are private learner-assessment data.
+# Store editorial candidates in authenticated MAIC D1, never public Git.
+data/exam-drafts/*-100mcq.json
+data/exam-drafts/*-answer*.json
