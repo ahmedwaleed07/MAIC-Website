@@ -11,9 +11,9 @@ const supported=new Set(languageOptions.map(row=>row[0]));if(!supported.has(lang
 const languageSelect=document.querySelector('#language');languageSelect.innerHTML=languageOptions.map(([id,name])=>`<option value="${E(id)}">${E(name)}</option>`).join('');
 let mode=new URLSearchParams(location.search).get('mode')==='register'?'register':'login',current=null,courses=[],enabledExamCourses=new Set();const target=new URL(location.href).searchParams.get('course')||'';
 const accountCopy = {
-  ar: ['تأكيد كلمة المرور','تذكّرني','يجب أن تتطابق كلمتا المرور.','تحقّق من بريدك الإلكتروني لتأكيد حسابك الجديد.','تم تأكيد الحساب. يمكنك تسجيل الدخول الآن.','انتهت صلاحية الرابط أو سبق استخدامه. سجّل الدخول أو أعد طلب التسجيل.'],
-  ku: ['دووبارەکردنەوەی وشەی نهێنی','بیرم بهێڵەوە','وشە نهێنییەکان دەبێت وەک یەک بن.','بۆ پشتڕاستکردنەوەی هەژمارەکەت ئیمەیڵەکەت بپشکنە.','هەژمارەکەت پشتڕاست کرایەوە.','بەستەرەکە بەسەرچووە یان بەکارهاتووە.'],
-  'en-US': ['Confirm password','Remember me','Passwords must match.','Check your email to confirm your new account.','Account confirmed. You can now sign in.','This link has expired or has already been used. Sign in or register again.']
+  ar: ['تأكيد كلمة المرور','تذكّرني لمدة ٣٠ يوماً','يجب أن تتطابق كلمتا المرور.','تحقّق من بريدك الإلكتروني لتأكيد حسابك الجديد.','تم تأكيد الحساب. يمكنك تسجيل الدخول الآن.','انتهت صلاحية الرابط أو سبق استخدامه. سجّل الدخول أو أعد طلب التسجيل.'],
+  ku: ['دووبارەکردنەوەی وشەی نهێنی','بۆ ٣٠ ڕۆژ بیرم بهێڵەوە','وشە نهێنییەکان دەبێت وەک یەک بن.','بۆ پشتڕاستکردنەوەی هەژمارەکەت ئیمەیڵەکەت بپشکنە.','هەژمارەکەت پشتڕاست کرایەوە.','بەستەرەکە بەسەرچووە یان بەکارهاتووە.'],
+  'en-US': ['Confirm password','Remember me for 30 days','Passwords must match.','Check your email to confirm your new account.','Account confirmed. You can now sign in.','This link has expired or has already been used. Sign in or register again.']
 };
 const copy = () => accountCopy[lang] || accountCopy['en-US'];
 const t=k=>words[lang][k];
@@ -57,13 +57,14 @@ function message(s,ok=false){const el=document.querySelector('#status');if(el){e
 async function refresh(){try{current=await call('/api/learner/session');}catch(e){current=null;if(e.status!==401){render();message(t('unavailable'));return;}}enabledExamCourses=new Set();if(current){try{const d=await call('/api/learner/exam-access');enabledExamCourses=new Set(Array.isArray(d.courses)?d.courses:[]);}catch{enabledExamCourses=new Set();}}render();}
 document.addEventListener('click',async e=>{const b=e.target.closest('[data-mode]');if(b){mode=b.dataset.mode;render();}if(e.target.closest('#logout')){try{await call('/api/learner/logout',{});current=null;enabledExamCourses=new Set();render();}catch{message(t('unavailable'));}}});
 function rememberLoginChecked() {
- try { return Number(localStorage.getItem('maic_remember_until')) > Date.now(); }
- catch { return false; }
+ // Explicitly opting out is respected; new learners default to a persistent 30-day session.
+ try { return localStorage.getItem('maic_remember_preference') !== 'off'; }
+ catch { return true; }
 }
 function saveRememberLogin(enabled) {
  try {
-  if(enabled) localStorage.setItem('maic_remember_until',String(Date.now()+30*86400000));
-  else localStorage.removeItem('maic_remember_until');
+  localStorage.setItem('maic_remember_preference', enabled ? 'on' : 'off');
+  localStorage.removeItem('maic_remember_until'); // Retire the previous misleading UI-only expiry marker.
  } catch {}
 }
 function matchPasswords(form) {
