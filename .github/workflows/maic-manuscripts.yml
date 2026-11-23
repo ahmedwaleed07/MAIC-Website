@@ -1,73 +1,33 @@
-name: Prepare MAIC candidate course manual PDFs
+name: Protect MAIC private course manuscripts
 
 on:
   push:
     branches: [main]
     paths:
       - 'data/course-manuscripts/**'
-      - 'tools/render_maic_manuscript.py'
+      - 'tools/check_no_public_manuscripts.py'
+      - 'functions/api/admin/manuscripts.js'
+      - 'admin/manuscripts.*'
+      - 'tests/private-manuscripts.cjs'
       - '.github/workflows/maic-manuscripts.yml'
+  pull_request:
+    paths:
+      - 'data/course-manuscripts/**'
+      - 'tools/check_no_public_manuscripts.py'
   workflow_dispatch:
 
 permissions:
   contents: read
 
 jobs:
-  candidate-pdf:
+  manuscript-confidentiality:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-node@v4
         with:
-          python-version: '3.11'
-      - name: Install PDF dependencies
-        run: |
-          sudo apt-get update -qq
-          sudo apt-get install -y fonts-croscore
-          python -m pip install --upgrade pip
-          python -m pip install reportlab Pillow pypdf
-      - name: Check renderer syntax
-        run: python -m py_compile tools/render_maic_manuscript.py
-      - name: Render all unapproved review candidates
-        shell: bash
-        run: |
-          set -euo pipefail
-          mkdir -p dist/maic
-          shopt -s nullglob
-          files=(data/course-manuscripts/*.md)
-          if [ "${#files[@]}" -eq 0 ]; then
-            echo 'No candidate manuscripts found'
-            exit 1
-          fi
-          for source in "${files[@]}"; do
-            stem="$(basename "${source%.md}")"
-            python tools/render_maic_manuscript.py \
-              --input "$source" \
-              --crest assets/maic-official-crest.png \
-              --montage assets/michigan-heritage-montage.webp \
-              --output "dist/maic/${stem}.pdf"
-          done
-      - name: Check all candidates fit the authenticated first-upload limit
-        run: |
-          python - <<'PY'
-          from pathlib import Path
-          from pypdf import PdfReader
-
-          paths = sorted(Path("dist/maic").glob("*.pdf"))
-          assert paths, "No candidate PDFs created"
-          for path in paths:
-              size = path.stat().st_size
-              if size > 1_250_000:
-                  raise SystemExit(f"{path.name}: {size:,} bytes exceeds MAIC's 1.25 MB upload gate")
-              reader = PdfReader(str(path))
-              if len(reader.pages) != 12 or any(not (page.extract_text() or "").strip() for page in reader.pages):
-                  raise SystemExit(f"{path.name}: requires 12 nonblank extractable pages")
-          print(f"PASS: {len(paths)} candidate PDFs meet first-upload size and text checks")
-          PY
-      - name: Upload candidate PDFs for academic review
-        uses: actions/upload-artifact@v4
-        with:
-          name: maic-academic-review-candidates
-          path: dist/maic/*.pdf
-          if-no-files-found: error
-          retention-days: 14
+          node-version: '22'
+      - name: Reject private full textbooks in public Git
+        run: python tools/check_no_public_manuscripts.py
+      - name: Check admin-only manuscript retrieval
+        run: node --test tests/private-manuscripts.cjs
