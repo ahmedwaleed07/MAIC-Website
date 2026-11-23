@@ -19,7 +19,16 @@ async function refresh(){
 }
 select.addEventListener('change',()=>{
  const m=materials.find(x=>x.courseId===select.value);
- source.textContent=m?'بصمة ملف PDF الحالي: '+m.sourceSha256+(m.academicReviewRecorded?' · المراجع: '+m.reviewerName:''):'';
+ source.replaceChildren();
+ if(m){
+  const caption=document.createElement('span');
+  caption.textContent='بصمة ملف PDF الحالي: '+m.sourceSha256+(m.academicReviewRecorded?' · المراجع: '+m.reviewerName:'')+' · ';
+  const link=document.createElement('a');
+  link.textContent='فتح هذه النسخة للتحقق قبل التوقيع';
+  link.href='/api/admin/material-preview?course='+encodeURIComponent(m.courseId)+'&sha='+encodeURIComponent(m.sourceSha256);
+  link.target='_blank';link.rel='noopener noreferrer';
+  source.append(caption,link);
+ }
 });
 form.addEventListener('submit',async event=>{
  event.preventDefault();
