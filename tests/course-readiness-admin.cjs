@@ -19,7 +19,8 @@ test('course readiness calculates state from D1 rather than assuming draft is re
  assert.match(api,/learning_exam_private_candidates/);
  assert.match(api,/reviewed_questions===100/);
  assert.match(api,/active\.source_sha256===material\.sha256/);
- assert.match(api,/!privateCandidate/);
+ assert.match(api,/active\.open_blockers===0/);
+ assert.doesNotMatch(api,/active\.open_blockers===0&&!privateCandidate/);
  assert.match(api,/isAdmin\(request,env\)/);
  assert.doesNotMatch(api,/questions_json/);
 });
