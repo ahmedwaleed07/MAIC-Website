@@ -14,31 +14,46 @@ async function refresh(){
  const data=await api();
  materials=data.materials;bankList.replaceChildren();courseSelect.replaceChildren();drafts.replaceChildren();
  const progress=data.summary||{};
- bankList.append(node('p','المواد: '+(progress.coursesWithMaterials??materials.length)+' دورة · البنوك الكاملة المرفوعة للمراجعة: '+(progress.completeDraftBanks??0)+' · الأسئلة المسودة: '+(progress.questionsInDrafts??0)+' · دورات بلا بنك أسئلة: '+(progress.coursesWithNoDraft??0)+' · اختبارات معتمدة: '+(progress.activatedBanks??0)+' · ملاحظات تمنع الاعتماد: '+(progress.unresolvedBlockingIssues??0),'review-status'));
+ bankList.append(node('p','المواد: '+(progress.coursesWithMaterials??materials.length)+' دورة · البنوك الحالية المطابقة للكتب والمرفوعة للمراجعة: '+(progress.completeDraftBanks??0)+' · أسئلة البنوك الحالية: '+(progress.questionsInDrafts??0)+' · دورات بلا بنك مطابق: '+(progress.coursesWithNoDraft??0)+' · اختبارات مفعّلة: '+(progress.activatedBanks??0)+' · ملاحظات مانعة في البنوك الحالية: '+(progress.unresolvedBlockingIssues??0),'review-status'));
+ bankList.append(node('p','الأرشيف: '+(progress.historicalDraftBanks??0)+' نسخة مسودة سابقة · ملاحظاتها التاريخية المفتوحة: '+(progress.historicalBlockingIssues??0)+' (لا تُحتسب ضمن جاهزية المسودات الحالية).','muted'));
  const blank=node('option','—');blank.value='';courseSelect.append(blank);
  for(const m of data.materials){
-  const candidate=(data.banks||[]).find(b=>b.course_id===m.course_id&&b.status==='draft');
+  const candidate=(data.banks||[]).find(b=>b.course_id===m.course_id&&b.status==='draft'&&b.question_count===100&&b.matches_published_pdf===1);
   const state=m.status==='approved'?'امتحان معتمد':candidate?'مسودة '+candidate.question_count+'/100'+(candidate.matches_published_pdf?' · المادة مطابقة':' · ملف Tinos المرشح لم يُعتمد بعد'):'الأسئلة غير مكتوبة';
   bankList.append(node('p',m.title+' — '+state));
   const o=node('option',m.title);o.value=m.course_id;courseSelect.append(o);
  }
  if(!materials.length)bankList.append(node('p','لا توجد مواد محفوظة'));
  const records=data.banks||[];
- for(const b of records){
+ const current=records.filter(b=>b.status==='draft'&&b.question_count===100&&b.matches_published_pdf===1);
+ const activated=records.filter(b=>b.status==='approved'&&b.is_active===1);
+ const historical=records.filter(b=>!current.includes(b)&&!activated.includes(b));
+ const appendBank=(b,parent,legacy=false)=>{
   const row=node('section',null,'question');
   row.append(node('p',b.course_id+' — '+b.question_count+'/100 — '+b.status+' — '+(b.matches_published_pdf?'نسخة PDF مطابقة':'نسخة PDF مختلفة عن المنشورة')+' — مشاكل جودة مفتوحة: '+(b.open_quality_issues??0)+' — المُعدّ: '+(b.prepared_by||'غير موثق')));
   if(b.status==='draft'&&b.question_count===100){
-   row.append(button('فتح المسودة للمراجعة',()=>openDraft(b.course_id,b.version)));
+   row.append(button(legacy?'عرض المسودة السابقة (غير معتمدة للنشر)':'فتح المسودة الحالية للمراجعة',()=>openDraft(b.course_id,b.version)));
   }
-  if(b.status==='approved'){
-   row.append(button('إيقاف هذا الامتحان',async()=>{
+  // Never show a withdraw action on a non-active approved version.
+  if(b.status==='approved'&&b.is_active===1){
+   row.append(button('إيقاف الامتحان المفعّل',async()=>{
     if(!confirm('هل تؤكد إيقاف الامتحان الحالي لهذا الكورس؟'))return;
     await api({action:'withdraw',courseId:b.course_id});await refresh();
    }));
   }
-  drafts.append(row);
- }
- if(!records.length)drafts.append(node('p','لا توجد مسودات أو بنوك أسئلة مسجّلة في القاعدة حالياً'));
+  parent.append(row);
+ };
+ drafts.append(node('h3','بنوك الأسئلة الحالية المطابقة للمواد — مراجعة الـ100 سؤال'));
+ for(const b of current)appendBank(b,drafts);
+ if(!current.length)drafts.append(node('p','لا توجد مسودات حالية من 100 سؤال تحتاج مراجعة.'));
+ const activeGroup=node('details');
+ const activeTitle=node('summary','الامتحانات المفعّلة: '+activated.length+' (إدارة وإيقاف عند الحاجة)');
+ activeGroup.append(activeTitle);for(const b of activated)appendBank(b,activeGroup);
+ drafts.append(activeGroup);
+ const historicalGroup=node('details');
+ historicalGroup.append(node('summary','النسخ السابقة أو غير المطابقة: '+historical.length+' — للرجوع التاريخي فقط'));
+ for(const b of historical)appendBank(b,historicalGroup,true);
+ drafts.append(historicalGroup);
 }
 upload.addEventListener('submit',async e=>{
  e.preventDefault();const submit=el('send');submit.disabled=true;stageMessage.textContent='';
