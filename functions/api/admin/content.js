@@ -45,6 +45,10 @@ export async function onRequestPut({request,env}){
        AND LENGTH(TRIM(COALESCE(r.reviewed_by,'')))>=3
      ) AS reviewed_material,
      EXISTS(
+      SELECT 1 FROM learning_material_academic_signoffs h
+      WHERE h.course_id=m.course_id AND h.source_sha256=m.sha256
+     ) AS human_academic_signoff,
+     EXISTS(
       SELECT 1 FROM learning_exam_active a
       JOIN learning_exam_banks b ON b.course_id=a.course_id AND b.version=a.version
       JOIN learning_exam_review_signoffs s ON s.course_id=b.course_id AND s.version=b.version
@@ -52,12 +56,16 @@ export async function onRequestPut({request,env}){
        AND b.source_sha256=m.sha256 AND s.reviewed_at IS NOT NULL
        AND (SELECT COUNT(*) FROM learning_exam_item_reviews i
             WHERE i.course_id=b.course_id AND i.version=b.version AND i.verdict='approved')=100
+       AND NOT EXISTS(SELECT 1 FROM learning_exam_quality_issues qi
+           WHERE qi.course_id=b.course_id AND qi.version=b.version
+             AND qi.severity='blocker' AND qi.resolved_at IS NULL)
      ) AS approved_exam
     FROM learning_materials m WHERE m.course_id=? AND m.pages=12
    `).bind(course.id).first();
-   if(!gate?.reviewed_material||!gate?.approved_exam)
+   if(!gate?.reviewed_material||!gate?.human_academic_signoff||!gate?.approved_exam)
     return json({error:'course_academic_release_required',courseId:course.id,
      missing:[...(!gate?.reviewed_material?['reviewed_12_page_pdf']:[]),
+      ...(!gate?.human_academic_signoff?['independent_human_pdf_signoff']:[]),
       ...(!gate?.approved_exam?['approved_source_matched_100_item_exam']:[])]},409);
   }
   const result=await env.MAIC_DB.prepare("UPDATE cms_documents SET content=?,version=version+1,updated_at=?,published_by=? WHERE id='published' AND version=?").bind(payload,now,actor,expected).run();
