@@ -59,4 +59,6 @@ test('reviewer UI supports exact PDF reference and ten questions per screen',()=
  assert.match(client,/questionBlocks\[i\]\.hidden/);
  assert.match(client,/review-item/);
  assert.match(client,/resolve-issue/);
+ assert.match(client,/new URLSearchParams\(window\.location\.search\)/);
+ assert.match(client,/await openDraft\(course,version\)/);
 });
