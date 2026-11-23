@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow"><meta name="theme-color" content="#071827">
+<title>MAIC | Course Readiness</title>
+<link rel="stylesheet" href="/maic-frames.css?v=1">
+<style>
+:root{color-scheme:dark}*{box-sizing:border-box}
+body{margin:0;background:#071827;color:#f7f0e5;font:16px/1.7 system-ui,Arial,sans-serif}
+header,main{max-width:1200px;margin:auto;padding:24px}
+header{border-bottom:1px solid #b89b68}h1,h2{color:#edd09b}
+a{color:#f4d89e}
+.summary{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:12px;margin-block:20px}
+.metric{background:#0e2a43;border:1px solid #b69b69;border-radius:10px;padding:14px}
+.metric b{display:block;font-size:1.8rem;color:#f4d08e;font-variant-numeric:tabular-nums}
+.metric small{color:#e1d2bc}
+.panel{border:1px solid #b69b69;border-radius:10px;padding:20px;background:#0c273d;margin-block:18px}
+.filter{display:flex;flex-wrap:wrap;gap:8px;margin-block:14px}
+button{border:1px solid #ceb684;background:#14354c;color:#f6f0e5;border-radius:8px;padding:10px 15px;font:inherit;cursor:pointer}
+button[aria-pressed="true"]{background:#e5ca93;color:#061827;font-weight:700}
+.item{border-top:1px solid #ab986653;padding:14px 2px}
+.item h3{margin:0;color:#e9c98f;font-size:1.05rem;overflow-wrap:anywhere;direction:ltr;text-align:left}
+.item p{margin:5px 0}
+.details{display:flex;gap:8px;flex-wrap:wrap;margin-block:5px}
+.details span{background:#19384c;border:1px solid #837454;border-radius:5px;padding:2px 8px;font-size:.88rem}
+.muted{color:#dbcebb;font-size:.88rem}
+.warning{border-inline-start:4px solid #d6b377;background:#1e3040;padding:12px 18px}
+@media(max-width:650px){header,main{padding:15px}.metric b{font-size:1.5rem}}
+</style></head>
+<body>
+<header>
+<p><a href="/admin/">لوحة الإدارة</a> · <a href="/admin/course-material.html">الكتب</a> · <a href="/admin/exam-banks.html">الامتحانات</a> · <a href="/admin/exam-candidates.html">المسودات الخاصة</a></p>
+<h1>جاهزية كورسات MAIC</h1>
+<p>تقرير مباشر من قاعدة بيانات الأكاديمية؛ الحالة المنشورة ليست دليلاً تلقائياً على مراجعة أكاديمية موثقة.</p>
+</header>
+<main>
+<div id="summary" class="summary" aria-label="ملخص حالة الكورسات"></div>
+<section class="panel">
+<h2>حالة الدورات</h2>
+<p class="warning">النشر الجديد يتطلب PDF مراجعاً وامتحاناً معتمداً ومطابقاً للمصدر. مسودات الأسئلة التي سبق كشف مفاتيحها تحتاج إعادة إعداد قبل استخدامها للطلاب.</p>
+<nav class="filter" aria-label="تصفية الدورات">
+<button type="button" data-status="preparing" aria-pressed="true">قيد التحضير</button>
+<button type="button" data-status="published" aria-pressed="false">المنشورة</button>
+<button type="button" data-status="archived" aria-pressed="false">المؤرشفة</button>
+<button type="button" data-status="all" aria-pressed="false">الكل</button>
+</nav>
+<p id="status" role="status">جارٍ تحميل بيانات الدورات…</p>
+<div id="courses"></div>
+</section>
+</main>
+<script src="/admin/course-readiness.js"></script>
+</body></html>
