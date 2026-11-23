@@ -14,7 +14,7 @@ function render(){
   section.append(el('h3',item.title));
   const details=el('div');details.className='details';
   for(const pair of [
-   ['PDF مسجّل',item.hasPdf],['مراجعة PDF موثّقة',item.pdfReviewed],
+   ['PDF مسجّل',item.hasPdf],['فحص تنسيق PDF موثّق',item.pdfTechnicalChecked],['مراجعة أكاديمية مستقلة',item.pdfReviewed],
    ['امتحان مفعّل ومطابق',item.activeExam],
    ['مراجعة كل أسئلته',item.activeExamHasItemReviews],
    ['بنك خاص',item.hasPrivateCandidate]
