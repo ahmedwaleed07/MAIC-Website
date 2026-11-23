@@ -17,7 +17,9 @@ export async function onRequestGet({request,env}){
       WHERE r.course_id=m.course_id AND r.new_sha256=m.sha256
        AND r.content_reviewed=1 AND r.black_white_tinos12_verified=1
        AND LENGTH(TRIM(COALESCE(r.reviewed_by,'')))>=3
-     ) AS reviewed_pdf
+     ) AS technical_pdf_review,
+     EXISTS(SELECT 1 FROM learning_material_academic_signoffs s
+       WHERE s.course_id=m.course_id AND s.source_sha256=m.sha256) AS academic_pdf_signoff
     FROM learning_materials m`).all(),
    db.prepare(`
     SELECT b.course_id,b.version,b.status,b.question_count,b.source_sha256,
@@ -48,11 +50,12 @@ export async function onRequestGet({request,env}){
    const drafts=allBanks.filter(b=>b.status==='draft'&&b.question_count===100);
    const privateCandidate=privateBy.get(course.id);
    const hasActiveMatchingExam=!!(material&&active&&active.status==='approved'&&active.question_count===100&&active.source_sha256===material.sha256);
-   const verifiedNewRelease=!!(material?.reviewed_pdf&&hasActiveMatchingExam&&active.bank_reviewed&&active.reviewed_questions===100&&active.open_blockers===0);
+   const verifiedNewRelease=!!(material?.technical_pdf_review&&material?.academic_pdf_signoff&&hasActiveMatchingExam&&active.bank_reviewed&&active.reviewed_questions===100&&active.open_blockers===0);
    let nextAction;
    if(course.status==='archived')nextAction='Archived; owner decision needed to restore';
    else if(!material)nextAction='Register reviewed 12-page PDF';
-   else if(!material.reviewed_pdf)nextAction='Verify material review record';
+   else if(!material.technical_pdf_review)nextAction='Verify PDF technical-format review record';
+   else if(!material.academic_pdf_signoff)nextAction='Record real independent academic reviewer for the exact PDF';
    else if(privateCandidate&&!drafts.length)nextAction='Replace exposed questions and prepare private reviewed bank';
    else if(!hasActiveMatchingExam)nextAction='Independent item review and exam activation required';
    else if(!verifiedNewRelease)nextAction='Verify exam item signoffs and release criteria';
@@ -60,7 +63,8 @@ export async function onRequestGet({request,env}){
    return {
     id:course.id,title:course.en,status:course.status,
     modes:Array.isArray(course.mode)?course.mode:[],
-    hasPdf:!!material,pdfReviewed:!!material?.reviewed_pdf,
+    hasPdf:!!material,pdfReviewed:!!material?.academic_pdf_signoff,
+    pdfTechnicalChecked:!!material?.technical_pdf_review,
     activeExam:hasActiveMatchingExam,
     activeExamHasItemReviews:!!(active&&active.reviewed_questions===100&&active.bank_reviewed),
     activeExamOpenBlockers:active?.open_blockers??0,
