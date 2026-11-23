@@ -2,6 +2,14 @@
 
 ## Updated live state — supersedes the earlier snapshot below (23 November 2026)
 
+**Latest security and deployment follow-up:** all 34 full editorial source manuscripts are additionally retained in `learning_material_private_manuscripts` (34 records, 12 sections each, 34/34 source blob hash matches). The current Git branch's `data/course-manuscripts/` and `data/exam-drafts/` contain policy READMEs only. The authenticated source-text editor/download panel is `/admin/manuscripts.html`, with corresponding security tests. Public Git history still contains earlier copies; it must not be mistaken for secure deletion.
+
+**Examination review registration:** all 50 preparing courses now have a 100-question `draft` in D1, matching the registered source PDF hash. Twenty-two of those drafts were imported from confidential candidate staging with 2,200 `PUBLIC_EXPOSED_KEY` blockers; none was activated or approved during this process. The remaining 28 draft banks await independent item review and required quality corrections.
+
+**Academic signoff separation:** new `learning_material_academic_signoffs` records a real human reviewer and the owner attestation, with an exact material SHA. The 34 `OpenAI Codex` PDF revision metadata entries are only automated format/content checks, not human academic approval. A first publication requires both human signoff and an approved, individually reviewed, blocker-free exam.
+
+
+
 **Catalog:** 78 total: **20 published, 50 preparing, 8 archived**. 
 **Production material storage:** **70 registered PDF files**; every one of the **50 preparing courses** now has a 12-page PDF registered with a matching source hash.
 **Source-matched exam review banks:** all **50 preparing courses** now have a 100-question `draft` bank associated with their currently registered PDF. This includes **22 new, separate private-review versions** added during the later continuation. Those 22 drafts have **2,200 open `PUBLIC_EXPOSED_KEY` academic blocker issues**, exactly one per original question. No exam was activated by these draft registrations.
