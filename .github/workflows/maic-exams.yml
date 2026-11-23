@@ -30,6 +30,8 @@ on:
       - 'tests/exam-two-stage-review-integration.cjs'
       - 'migrations/0008_exam_two_stage_review.sql'
       - 'admin/exam-banks.js'
+      - 'functions/api/admin/material-preview.js'
+      - 'tests/academic-material-preview.cjs'
       - 'functions/_lib/exam-quality.js'
       - 'tests/tinos-academic-release.cjs'
       - 'functions/data/_middleware.js'
@@ -68,6 +70,8 @@ on:
       - 'tests/exam-two-stage-review-integration.cjs'
       - 'migrations/0008_exam_two_stage_review.sql'
       - 'admin/exam-banks.js'
+      - 'functions/api/admin/material-preview.js'
+      - 'tests/academic-material-preview.cjs'
       - 'functions/_lib/exam-quality.js'
       - 'tests/tinos-academic-release.cjs'
       - 'functions/data/_middleware.js'
@@ -86,7 +90,7 @@ jobs:
         with:
           node-version: '22'
       - name: Check backend and learner-exam safeguards
-        run: node --test tests/exam-catalog-privacy.cjs tests/exam-item-signoff.cjs tests/exam-answer-cue-audit.cjs tests/academic-source-recall.cjs tests/academic-bank-status.cjs tests/course-bank-offline-audit.cjs tests/self-paced-exam.cjs tests/tinos-academic-release.cjs tests/protected-academic-assets.cjs tests/learner-exam-integration.cjs tests/exam-content-quality.cjs tests/exam-two-stage-review-integration.cjs
+        run: node --test tests/exam-catalog-privacy.cjs tests/exam-item-signoff.cjs tests/exam-answer-cue-audit.cjs tests/academic-source-recall.cjs tests/academic-bank-status.cjs tests/course-bank-offline-audit.cjs tests/self-paced-exam.cjs tests/tinos-academic-release.cjs tests/academic-material-preview.cjs tests/protected-academic-assets.cjs tests/learner-exam-integration.cjs tests/exam-content-quality.cjs tests/exam-two-stage-review-integration.cjs
       - name: Check Michigan photo gallery and accessibility
         run: node --check michigan-gallery.js && node --test tests/michigan-gallery.cjs
       - name: Validate Python PDF generator syntax
