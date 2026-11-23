@@ -229,4 +229,14 @@ async function openQuestionEditor(courseId,version,ordinal,target){
  target.append(form);
 }
 
-refresh().catch(error=>{bankList.textContent=error.status===401?'يلزم تسجيل دخول المدير أولاً':'تعذر تحميل حالة بنوك الأسئلة'});
+refresh().then(async()=>{
+ const u=new URLSearchParams(window.location.search);
+ const course=u.get('course'),version=u.get('version');
+ if(course&&version){
+  await openDraft(course,version);
+  details.scrollIntoView({block:'start'});
+ }
+}).catch(error=>{
+ reviewMessage.textContent=error.message||'تعذر فتح البنك المطلوب';
+ if(!bankList.children.length)bankList.textContent=error.status===401?'يلزم تسجيل دخول المدير أولاً':'تعذر تحميل حالة بنوك الأسئلة';
+});
