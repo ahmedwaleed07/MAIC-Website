@@ -121,11 +121,37 @@
     "دروستکردنی هەژمار"
   ]
 };
+  // The learner session is always validated by the server, not by localStorage.
+  let authenticated = false;
+  let checking = null;
   function translateAccountLinks() {
-    const [login, register] = labels[document.documentElement.lang] || labels['en-US'];
-    document.querySelector('#account-login').textContent = login;
-    document.querySelector('#account-register').textContent = register;
+    const lang = document.documentElement.lang;
+    const [login, register] = labels[lang] || labels['en-US'];
+    const signIn = document.querySelector('#account-login');
+    const signUp = document.querySelector('#account-register');
+    if (!signIn || !signUp) return;
+    const account = lang === 'ar' ? 'حسابي' : lang === 'en-US' ? 'My Account' :
+      globalThis.MAIC_LEARNER_LABELS?.[lang]?.learnerPortal || 'My Account';
+    signIn.textContent = authenticated ? account : login;
+    signUp.textContent = register;
+    signUp.hidden = authenticated;
+  }
+  async function checkLearnerSession() {
+    if (checking) return checking;
+    checking = fetch('/api/learner/session', {credentials: 'same-origin', cache: 'no-store'})
+      .then(response => {
+        if (response.status === 200) authenticated = true;
+        else if (response.status === 401) authenticated = false;
+        translateAccountLinks();
+      })
+      .catch(() => { /* Preserve the last known state on network failures. */ })
+      .finally(() => { checking = null; });
+    return checking;
   }
   translateAccountLinks();
   new MutationObserver(translateAccountLinks).observe(document.documentElement, {attributes: true, attributeFilter: ['lang']});
+  void checkLearnerSession();
+  window.addEventListener('pageshow', checkLearnerSession);
+  window.addEventListener('focus', () => { if (!document.hidden) void checkLearnerSession(); });
+  document.addEventListener('visibilitychange', () => { if (!document.hidden) void checkLearnerSession(); });
 })();
