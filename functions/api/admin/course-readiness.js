@@ -48,7 +48,7 @@ export async function onRequestGet({request,env}){
    const drafts=allBanks.filter(b=>b.status==='draft'&&b.question_count===100);
    const privateCandidate=privateBy.get(course.id);
    const hasActiveMatchingExam=!!(material&&active&&active.status==='approved'&&active.question_count===100&&active.source_sha256===material.sha256);
-   const verifiedNewRelease=!!(material?.reviewed_pdf&&hasActiveMatchingExam&&active.bank_reviewed&&active.reviewed_questions===100&&active.open_blockers===0&&!privateCandidate);
+   const verifiedNewRelease=!!(material?.reviewed_pdf&&hasActiveMatchingExam&&active.bank_reviewed&&active.reviewed_questions===100&&active.open_blockers===0);
    let nextAction;
    if(course.status==='archived')nextAction='Archived; owner decision needed to restore';
    else if(!material)nextAction='Register reviewed 12-page PDF';
