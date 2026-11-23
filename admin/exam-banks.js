@@ -86,11 +86,13 @@ async function openDraft(courseId,version){
  if(!data.sourceMatch||!quality?.canApprove)details.append(node('p','لا يمكن اعتماد هذا البنك: ملف المصدر غير مطابق أو توجد أسئلة/خيارات نمطية أو تلميحات للإجابات أو مبررات موسومة كمسودة. يلزم تصحيح البنود ومراجعتها علمياً.','review-status'));
  // Show ten questions at a time so reviewing a 100-item bank is practical on
  // desktop and mobile, while keeping the original item-level review forms.
+ const conciseExplanations=data.questions.filter(q=>q.rationale.trim().length<70).length;
+ if(conciseExplanations>0)details.append(node('p','ملاحظة تحريرية: '+conciseExplanations+' تفسيراً مختصراً (أقل من 70 حرفاً). الطول وحده ليس خطأً؛ تحقق من كفاية الدليل العلمي لكل سؤال.','review-status'));
  const pageSize=10,questionBlocks=[];
  let pageIndex=0;
  const pager=node('nav');pager.setAttribute('aria-label','التنقل بين مجموعات أسئلة المراجعة');
- const prior=node('button','الأسئلة السابقة'),next=node('button','الأسئلة التالية');
- prior.type='button';next.type='button';
+ const prior=node('button','الأسئلة السابقة'),next=node('button','الأسئلة التالية'),jump=node('button','أول سؤال غير مُراجع');
+ prior.type='button';next.type='button';jump.type='button';
  const pageLabel=node('span',null,'review-status');
  const showPage=()=>{
   for(let i=0;i<questionBlocks.length;i++)questionBlocks[i].hidden=Math.floor(i/pageSize)!==pageIndex;
@@ -100,11 +102,18 @@ async function openDraft(courseId,version){
  };
  prior.addEventListener('click',()=>{if(pageIndex>0){pageIndex--;showPage();pager.scrollIntoView({block:'start',behavior:'smooth'});}});
  next.addEventListener('click',()=>{if((pageIndex+1)*pageSize<data.questions.length){pageIndex++;showPage();pager.scrollIntoView({block:'start',behavior:'smooth'});}});
- pager.append(prior,pageLabel,next);details.append(pager);
+ jump.addEventListener('click',()=>{
+  const index=data.questions.findIndex(q=>!reviewed.has(q.ordinal)||reviewed.get(q.ordinal).verdict==='revise');
+  if(index<0){reviewMessage.textContent='جميع الأسئلة لها قرار مراجعة مسجّل؛ تحقق من النتيجة قبل اعتماد البنك.';return;}
+  pageIndex=Math.floor(index/pageSize);showPage();
+  pager.scrollIntoView({block:'start',behavior:'smooth'});
+ });
+ pager.append(prior,pageLabel,next,jump);details.append(pager);
  for(const q of data.questions){
   const block=node('section',null,'question');block.append(node('h3','السؤال '+q.ordinal),node('p',q.stem));
   q.options.forEach((value,i)=>block.append(node('p',String.fromCharCode(65+i)+'. '+value+(q.correct.includes(i)?' ✓':''),q.correct.includes(i)?'answer':'muted')));
   block.append(node('p','صفحة المصدر: '+q.page),node('p','التبرير: '+q.rationale));
+  if(q.rationale.trim().length<70)block.append(node('p','تنبيه تحريري: التفسير قصير؛ يُراجع مع الصفحة المصدرية للتحقق من كفايته، وليس مرفوضاً تلقائياً.','muted'));
   const current=reviewed.get(q.ordinal);
   const unresolved=openIssues.filter(flag=>flag.ordinal===q.ordinal);
   if(unresolved.length){
