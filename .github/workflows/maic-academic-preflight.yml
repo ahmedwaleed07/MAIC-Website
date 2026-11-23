@@ -5,6 +5,9 @@ on:
     branches: [main]
     paths:
       - 'admin/exam-candidates.*'
+      - 'admin/course-readiness.*'
+      - 'functions/api/admin/course-readiness.js'
+      - 'tests/course-readiness-admin.cjs'
       - 'functions/api/admin/exam-candidates.js'
       - 'migrations/0012_private_exam_candidate_staging.sql'
       - 'data/exam-drafts/**'
@@ -27,4 +30,4 @@ jobs:
       - name: Verify no exposed banks in current Git tree
         run: python tools/check_no_public_exam_keys.py
       - name: Verify private candidate route cannot release exams
-        run: node --test tests/private-exam-candidates.cjs
+        run: node --test tests/private-exam-candidates.cjs tests/course-readiness-admin.cjs
