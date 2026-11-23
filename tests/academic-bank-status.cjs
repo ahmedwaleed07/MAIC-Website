@@ -11,3 +11,16 @@ test('private admin exam overview shows real progress and source-PDF gate, with 
  assert.match(ui,/ملف Tinos المرشح لم يُعتمد بعد/);
  assert.match(ui,/نسخة PDF مختلفة عن المنشورة/);
 });
+
+test('review inventory separates current source-matched blockers from historical drafts',()=>{
+ const api=fs.readFileSync(path.join(base,'functions/api/admin/exam-banks.js'),'utf8');
+ const ui=fs.readFileSync(path.join(base,'admin/exam-banks.js'),'utf8');
+ assert.match(api,/currentDrafts=banks\.filter/);
+ assert.match(api,/b\.matches_published_pdf===1/);
+ assert.match(api,/historicalBlockingIssues/);
+ assert.match(api,/CASE WHEN a\.version=b\.version THEN 1 ELSE 0 END AS is_active/);
+ assert.match(ui,/ملاحظاتها التاريخية المفتوحة/);
+ assert.match(ui,/النسخ السابقة أو غير المطابقة/);
+ assert.match(ui,/b\.status==='approved'&&b\.is_active===1/);
+ assert.match(ui,/current\.includes\(b\)/);
+});
