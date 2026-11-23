@@ -17,7 +17,7 @@ test('owner preview is read-only, bound to a PDF hash, and has no shared cache',
   import(pathToFileURL(path.join(root,'functions/api/admin/material-preview.js')).href),
   import(pathToFileURL(path.join(root,'functions/_lib/cms.js')).href)
  ]);
- const bytes=Buffer.from('%PDF-1.7\nMinimal review PDF bytes for HTTP endpoint testing\n%%EOF');
+ const bytes=Buffer.from('%PDF-1.7\n'+('Academic review fixture, not a student course PDF. '.repeat(30))+'\n%%EOF');
  const calls=[];
  const meta={course_id:'ui-ux-design',version:'test-version',sha256:'a'.repeat(64),bytes:bytes.length,chunk_count:1,pages:12};
  const db={prepare(sql){
