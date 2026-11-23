@@ -7,3 +7,8 @@ node_modules/
 # Store editorial candidates in authenticated MAIC D1, never public Git.
 data/exam-drafts/*-100mcq.json
 data/exam-drafts/*-answer*.json
+
+# Original course manuscripts are stored in authenticated MAIC D1.
+# Do not publish complete course texts from this public website repository.
+data/course-manuscripts/*.md
+!data/course-manuscripts/README.md
