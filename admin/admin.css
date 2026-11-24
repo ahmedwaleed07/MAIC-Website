@@ -58,3 +58,28 @@ dialog{width:min(710px,95vw);max-height:90vh;overflow-y:auto;border:var(--maic-f
 .admin-filter{display:flex;flex-direction:column;gap:9px;max-width:520px;margin-bottom:22px}.admin-filter input{padding:12px;border:1px solid #bdc6cd;border-radius:6px;font:inherit;background:#fff;color:#142c3e}.workflow-steps{line-height:2.4;padding-inline-start:25px}.studio-top-actions{flex-wrap:wrap}.structure-tools{flex-wrap:wrap}.studio-brand img{object-fit:contain}.studio-side-bottom{line-height:1.8}.studio-alert{font-size:13px}.data-table td{vertical-align:middle}.data-table .actions{flex-wrap:nowrap}.studio-topbar{gap:16px}@media(max-width:650px){.studio-topbar{align-items:flex-start}.studio-top-actions{gap:6px}.studio-top-actions .btn{font-size:11px;padding:9px}.studio-top-title small{display:none}.structure-row{align-items:flex-start;gap:12px}}
 
 .admin-filter select{padding:11px;border:1px solid #bdc6cd;border-radius:6px;background:#fff;color:#142c3e;font:inherit}
+
+/* MAIC admin accessibility: the navigation must scroll INSIDE its navy sidebar.
+   Previously links overflowed below the sidebar onto the light page background. */
+.studio-sidebar{height:100vh;height:100dvh;min-height:0;overflow-y:auto;overflow-x:hidden;overscroll-behavior:contain;scrollbar-color:#b9975d #092638;scrollbar-width:thin}
+#studioNav{display:flex;flex-direction:column;align-items:stretch;flex-shrink:0;gap:5px}
+#studioNav button{min-height:48px;flex-shrink:0;text-align:start;color:#f4f5f4;font-weight:600;line-height:1.45}
+#studioNav button:hover,#studioNav button:focus-visible{background:#193a50;color:#fff}
+#studioNav button.is-active{background:#394034;color:#fff5df}
+.studio-sidebar-head,.studio-side-bottom{flex-shrink:0}
+.studio-sidebar-head{color:#e3d5bd;font-weight:700}
+.studio-side-bottom,.studio-sidebar .side-hint{color:#e1e8ea}
+.maic-admin-language{display:inline-flex;gap:7px;align-items:center;flex-shrink:0}
+.maic-admin-language label{font-size:12px;font-weight:700;color:inherit}
+.maic-admin-language select{min-width:96px;min-height:42px;padding:7px 11px;border-radius:8px;border:1px solid #b89960;background:#fff;color:#142839;font-weight:700}
+.maic-login-panel .maic-admin-language{justify-content:center;margin:0 auto 18px;display:flex}
+.maic-login-panel .maic-admin-language label{color:#fff0d0}
+html[dir="ltr"] .studio-shell{direction:ltr}
+html[dir="ltr"] .studio-sidebar{border-right:1px solid #253c49;border-left:none}
+html[dir="ltr"] #studioNav button.is-active{box-shadow:inset 3px 0 #dfb572}
+html[dir="ltr"] .maic-login-panel{text-align:left}
+html[dir="ltr"] .data-table,html[dir="ltr"] .data-table th{text-align:left}
+html[dir="ltr"] .course-mode-copy small{text-align:left}
+html[dir="ltr"] .studio-edit-form{text-align:left}
+@media(max-width:690px){html[dir="ltr"] .studio-sidebar{right:auto;left:0;transform:translateX(-102%)}html[dir="ltr"] .studio-sidebar.is-open{transform:translateX(0)}}
+@media(max-width:840px){.maic-admin-language select{min-width:80px}.studio-top-actions{gap:8px}}
