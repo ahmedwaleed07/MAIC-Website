@@ -83,3 +83,30 @@ html[dir="ltr"] .course-mode-copy small{text-align:left}
 html[dir="ltr"] .studio-edit-form{text-align:left}
 @media(max-width:690px){html[dir="ltr"] .studio-sidebar{right:auto;left:0;transform:translateX(-102%)}html[dir="ltr"] .studio-sidebar.is-open{transform:translateX(0)}}
 @media(max-width:840px){.maic-admin-language select{min-width:80px}.studio-top-actions{gap:8px}}
+
+
+/* MAIC Admin navigation accessibility: the navigation is taller than many laptop screens.
+   Scroll inside the navy rail so light labels never overflow onto the light workspace. */
+.studio-sidebar{height:100vh;height:100dvh;max-height:100dvh;overflow-y:auto;overflow-x:hidden;overscroll-behavior:contain;scrollbar-width:thin;scrollbar-color:#cba15e #092237}
+#studioNav{display:flex;flex-direction:column;flex-shrink:0;gap:3px;padding:0 11px 18px}
+#studioNav button{flex:0 0 auto;min-height:49px;text-align:start;line-height:1.45;white-space:normal;color:#f3f7fa;font-weight:650;opacity:1;border:1px solid transparent}
+#studioNav button .nav-icon{flex:0 0 25px;color:#efc780}
+#studioNav button:hover,#studioNav button:focus-visible{background:#234359;border-color:#ba955b;color:#fff}
+#studioNav button.is-active{background:#30465a;color:#fff8df;border-color:#b99356}
+.studio-sidebar-head{flex:0 0 auto;padding:18px 21px 10px;color:#d0dce5}
+.studio-side-bottom{flex:0 0 auto;margin-top:12px;background:#061b2b}
+.admin-language-select{min-height:44px;border:1px solid #b68c4d;border-radius:8px;padding:8px 12px;background:#fffdf8;color:#102b40;font-weight:700;cursor:pointer}
+.admin-login-language{display:flex;align-items:center;justify-content:flex-end;margin-bottom:18px}
+.maic-admin-login[hidden],.studio-shell[hidden]{display:none!important}
+html[lang="en"] .studio-shell{direction:ltr}
+html[lang="en"] .studio-sidebar{border-left:0;border-right:1px solid #253c49}
+html[lang="en"] .maic-login-panel,html[lang="en"] #studioNav button,html[lang="en"] .data-table,html[lang="en"] .data-table th{text-align:left}
+html[lang="en"] .maic-admin-login{direction:ltr}
+html[lang="en"] .studio-topbar,html[lang="en"] .page-head{direction:ltr}
+html[lang="en"] #studioNav button.is-active{box-shadow:inset 3px 0 #dfb572}
+html[lang="ar"] #studioNav button.is-active{box-shadow:inset -3px 0 #dfb572}
+@media(max-width:690px){
+  .studio-sidebar{height:100vh;height:100dvh}
+  html[lang="en"] .studio-sidebar{right:auto;left:0;transform:translateX(-102%)}
+  html[lang="en"] .studio-sidebar.is-open{transform:translateX(0)}
+}
