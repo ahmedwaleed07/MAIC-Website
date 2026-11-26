@@ -3,13 +3,30 @@ import {body,catalog,randomHex} from '../../_lib/learning.js';
 const modeSet=new Set(['self-paced','group','one-on-one']);
 function okId(x){return typeof x==='string'&&/^[a-zA-Z0-9-]{8,100}$/.test(x)}
 async function completion(db,id){return db.prepare("SELECT * FROM learning_completions WHERE id=?").bind(id).first()}
+// Never issue a Self-Paced completion credential without a real, fully submitted,
+ // source-matched active 100-question assessment. An administrator also attests
+ // that the score meets that course's applicable requirements; no universal pass
+ // threshold is guessed or silently invented here.
+async function submittedSelfPacedExam(db,studentId,courseId){
+ return db.prepare(`SELECT t.score_percent,t.correct_count,t.submitted_at
+ FROM learning_exam_attempts t
+ JOIN learning_exam_active a ON a.course_id=t.course_id AND a.version=t.version
+ JOIN learning_exam_banks b ON b.course_id=a.course_id AND b.version=a.version
+ JOIN learning_materials m ON m.course_id=t.course_id AND m.sha256=t.source_sha256 AND m.sha256=b.source_sha256
+ WHERE t.student_id=? AND t.course_id=? AND t.state='submitted'
+   AND t.current_question=101 AND t.correct_count IS NOT NULL
+   AND t.score_percent IS NOT NULL AND b.status='approved'
+   AND b.question_count=100 ORDER BY t.submitted_at DESC LIMIT 1`)
+ .bind(studentId,courseId).first();
+}
 export async function onRequestGet({request,env}){
  if(!await isAdmin(request,env))return json({error:'unauthorized'},401);
  try{
   const students=(await env.MAIC_DB.prepare("SELECT s.id,s.first_name,s.middle_name,s.last_name,s.country,e.course_id,e.status AS enrollment_status,e.agent_id,e.activated_at,COALESCE(m.delivery_mode,'self-paced') AS delivery_mode FROM learning_students s JOIN learning_enrollments e ON e.student_id=s.id LEFT JOIN learning_enrollment_modes m ON m.student_id=e.student_id AND m.course_id=e.course_id WHERE e.status='active' ORDER BY e.activated_at DESC LIMIT 500").all()).results;
   const completions=(await env.MAIC_DB.prepare("SELECT * FROM learning_completions ORDER BY created_at DESC LIMIT 500").all()).results;
+  const submittedExams=(await env.MAIC_DB.prepare("SELECT t.student_id,t.course_id,t.score_percent,t.correct_count FROM learning_exam_attempts t JOIN learning_exam_active a ON a.course_id=t.course_id AND a.version=t.version JOIN learning_exam_banks b ON b.course_id=a.course_id AND b.version=a.version AND b.status='approved' AND b.question_count=100 JOIN learning_materials m ON m.course_id=t.course_id AND m.sha256=t.source_sha256 AND m.sha256=b.source_sha256 WHERE t.state='submitted' AND t.current_question=101 AND t.score_percent IS NOT NULL ORDER BY t.submitted_at DESC LIMIT 500").all()).results;
   const certificates=(await env.MAIC_DB.prepare("SELECT id,certificate_number,completion_id,student_id,course_id,course_mode,certificate_type,graduate_full_name,course_title,verification_token,issued_at,status,CASE WHEN pdf_storage_key IS NULL THEN 0 ELSE 1 END AS pdf_ready FROM learning_certificates ORDER BY issued_at DESC LIMIT 500").all()).results;
-  return json({students,completions,certificates,issuanceConfigured:env.MAIC_CERTIFICATE_ISSUANCE_ENABLED!=='false',approvedTemplate:'MAIC-COMPLETION-2026-11-01'});
+  return json({students,completions,certificates,submittedExams,issuanceConfigured:env.MAIC_CERTIFICATE_ISSUANCE_ENABLED!=='false',approvedTemplate:'MAIC-COMPLETION-2026-11-01'});
  }catch{return json({error:'unavailable'},503)}
 }
 export async function onRequestPost({request,env}){
@@ -41,10 +58,13 @@ export async function onRequestPost({request,env}){
    return json({saved:true,status:'completed'});
   }
   if(!existing)return json({error:'completion_required'},409);
+  const submittedExam=d.mode==='self-paced'?await submittedSelfPacedExam(db,d.studentId,d.courseId):null;
+  if(d.mode==='self-paced'&&!submittedExam)return json({error:'submitted_course_exam_required'},409);
   if(d.action==='verify'){
+   if(d.mode==='self-paced'&&d.confirmPassCriteria!==true)return json({error:'verified_course_pass_requirements_required'},400);
    if(existing.status!=='completed')return json({error:'not_completed'},409);
    if(d.confirmEvidence!==true)return json({error:'confirmation_required'},400);
-   await db.prepare("UPDATE learning_completions SET status='verified',verified_at=?,verified_by='MAIC Admin' WHERE id=? AND status='completed'").bind(now,existing.id).run();
+   await db.prepare("UPDATE learning_completions SET status='verified',score=?,verified_at=?,verified_by='MAIC Admin' WHERE id=? AND status='completed'").bind(submittedExam?.score_percent??null,now,existing.id).run();
    return json({saved:true,status:'verified'});
   }
   if(existing.status!=='verified')return json({error:'verification_required'},409);
