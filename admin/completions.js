@@ -81,10 +81,18 @@ async function load(){
       await api('/api/admin/completions',{...payload,action:'complete',evidenceRef:evidence.value.trim()})
      }));
     }else if(completion.status==='completed'){
-     details.append(el('p','مرجع الإثبات: '+completion.evidence_ref),button('التحقق واعتماد الإكمال',async()=>{
-      if(!confirm('هل تحققت من أدلة التقييم والحضور بحسب شروط الدورة؟'))return;
-      await api('/api/admin/completions',{...payload,action:'verify',confirmEvidence:true})
-     }));
+     const examResult=select.value==='self-paced'?(model.submittedExams||[]).find(a=>a.student_id===s.id&&a.course_id===s.course_id):null;
+     if(select.value==='self-paced')details.append(el('p',examResult
+      ?'امتحان مكتمل: '+examResult.correct_count+'/100 · النتيجة: '+examResult.score_percent+'%. راجع متطلبات النجاح الخاصة بهذه الدورة قبل الاعتماد.'
+      :'لا يمكن اعتماد إكمال الدراسة الذاتية قبل تقديم امتحان الدورة المكوّن من 100 سؤال.'));
+     const verify=button('التحقق واعتماد الإكمال',async()=>{
+      if(!confirm('هل تحققت من إثبات الإكمال، ومن نتيجة الامتحان ومتطلبات النجاح المحددة لهذه الدورة؟'))return;
+      await api('/api/admin/completions',{...payload,action:'verify',confirmEvidence:true,confirmPassCriteria:select.value==='self-paced'})
+     });
+     if(select.value==='self-paced'&&!examResult){
+      verify.disabled=true;verify.title='يجب تقديم امتحان الدورة أولاً، ثم التحقق من النتيجة ومتطلبات النجاح.';
+     }
+     details.append(el('p','مرجع الإثبات: '+completion.evidence_ref),verify);
     }else if(completion.status==='verified'){
      const b=button('إصدار شهادة إكمال',async()=>{
       if(!confirm('إنشاء سجل شهادة الإكمال تمهيداً لإضافة التواقيع الثلاثة؟ لن تظهر للمتعلم ولن تصبح صالحة إلا بعد حفظ النسخة الموقعة.'))return;
