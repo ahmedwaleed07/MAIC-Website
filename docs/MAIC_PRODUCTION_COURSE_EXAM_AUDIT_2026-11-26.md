@@ -120,6 +120,13 @@ The **Academic signoff** and **Reviewed items** columns are zero for every cours
 - **Answer-length cue above 55% on single-answer items:** `adobe-indesign-tables-effects`, `brand-new-brand`, `design-and-make-infographics`, `diploma-in-journalism`, `diploma-in-social-media-marketing-and-strategy`, `fundamentals-of-journalism`, `global-institutions`, `graphic-design-fundamentals`, `introduction-to-typography`, `packaging-design-circular-economy`, `professional-communication-practice`, `workplace-team-collaboration`.
 - **Previously exposed candidate overlap:** `design-and-make-infographics` contains one exact question stem match with the previously staged public-history candidate. An independently authored replacement is required before trusting the confidentiality of that item.
 
+## Language and delivery-format coverage
+
+- All **70 registered learner PDFs** are recorded with an English language indicator: 36 using `en`, and 34 using `English`. No Arabic, French, Russian or other translated PDF is registered. The inconsistent metadata should be normalized after confirming supported locale codes.
+- All **4,900 active examination stems** contain Latin-script content and **0 contain Arabic, Cyrillic or Han-script stems**. The exam page currently provides localized interface strings only for English, Arabic and Kurdish; changing the interface language does not translate the question bank.
+- The catalog labels **36 courses** as `bilingual`, **34** as `other`, and leaves language unspecified on the **8 archived** entries. These labels do not establish student-ready bilingual or multilingual study materials.
+- All **49 published** and **21 preparing** courses currently advertise **self-paced** mode only. There are **0 configured live course sessions** and **0 saved course-format curriculum records** in the respective D1 tables. All 49 published courses have numeric duration-hours, but **0** have a named instructor or course fee entered in their catalog records; these are operational details, not evidence of exam completion.
+
 ## Next actions — do not falsely mark complete
 
 1. Correct the short, near-duplicated and highly cue-prone active questions. Replace the overlapping publicly exposed question. Re-run automated checks, and maintain a documented correction trail.
