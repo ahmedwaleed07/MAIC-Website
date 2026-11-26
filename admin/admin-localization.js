@@ -361,6 +361,12 @@
     ['بنوك خاصة للمراجعة','Private Banks for Review'],
     ['تعذر جلب حالة الدورات. تأكد من تسجيل دخول الإدارة أو جاهزية قاعدة البيانات.','Unable to Load Course Readiness. Check Admin Sign-in and Database Availability.']
   );
+  pairs.push(
+    ['كتب بمراجعة أكاديمية مستقلة','PDFs with Independent Academic Review'],
+    ['امتحانات مراجعة بالكامل','Fully Reviewed Active Exams'],
+    ['أسئلة قصيرة تتطلب معالجة','Short Questions Needing Correction'],
+    ['يحتاج الامتحان المفعّل إلى مراجعة واعتماد مستقل لجميع الأسئلة الـ100 قبل اعتباره جاهزاً أكاديمياً.','The active exam still needs independent review of all 100 questions before an academic release.']
+  );
   const toEN = new Map(pairs), toAR = new Map(pairs.map(([ar,en])=>[en,ar]));
   let locale = 'en';
   try { const saved=localStorage.getItem('maic_admin_locale'); if(saved==='ar'||saved==='en')locale=saved; } catch {}
@@ -377,6 +383,8 @@
       if(published) converted='Published website version '+published[1]+'. Restoring it replaces the local draft only.';
       const catalog=/^الكتالوج \((\d+)\)$/u.exec(core);
       if(catalog) converted='Catalog ('+catalog[1]+')';
+      const qa=/^ملاحظات صياغة الامتحان المفعّل: (\d+) سؤال قصير، (\d+) شرح قصير، (\d+) إحالة صفحة غير صحيحة\.$/u.exec(core);
+      if(qa) converted='Active exam wording flags: '+qa[1]+' short questions, '+qa[2]+' short rationales, '+qa[3]+' invalid source-page references.';
     }
     if (!converted && locale==='ar') {
       const version=/^(Updated|Published) · version (\d+)$/u.exec(core);
@@ -385,6 +393,8 @@
       if(published) converted='نسخة الموقع المنشورة رقم '+published[1]+'. استعادتها تستبدل المسودة المحلية فقط.';
       const catalog=/^Catalog \((\d+)\)$/u.exec(core);
       if(catalog) converted='الكتالوج ('+catalog[1]+')';
+      const qa=/^Active exam wording flags: (\d+) short questions, (\d+) short rationales, (\d+) invalid source-page references\.$/u.exec(core);
+      if(qa) converted='ملاحظات صياغة الامتحان المفعّل: '+qa[1]+' سؤال قصير، '+qa[2]+' شرح قصير، '+qa[3]+' إحالة صفحة غير صحيحة.';
     }
     return converted?lead+converted+tail:text;
   }
