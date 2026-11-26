@@ -23,6 +23,14 @@ function render(){
   }
   section.append(details);
   if(item.activeExamOpenBlockers)section.append(el('p','ملاحظات أكاديمية مفتوحة: '+item.activeExamOpenBlockers));
+  if(item.activeExam && !item.activeExamHasItemReviews){
+   const warning=el('p','يحتاج الامتحان المفعّل إلى مراجعة واعتماد مستقل لجميع الأسئلة الـ100 قبل اعتباره جاهزاً أكاديمياً.');
+   warning.className='warning';section.append(warning);
+  }
+  if(item.activeExamShortStems || item.activeExamShortRationales || item.activeExamInvalidSourcePages){
+   const issues=el('p','ملاحظات صياغة الامتحان المفعّل: '+(item.activeExamShortStems||0)+' سؤال قصير، '+(item.activeExamShortRationales||0)+' شرح قصير، '+(item.activeExamInvalidSourcePages||0)+' إحالة صفحة غير صحيحة.');
+   issues.className='warning';section.append(issues);
+  }
   const next=el('p','الخطوة التالية: '+item.nextAction);next.className='muted';
   section.append(next);
   if(item.status==='preparing'&&item.reviewBankVersion){
@@ -46,7 +54,10 @@ controls.forEach(b=>b.addEventListener('click',()=>{selected=b.dataset.status;re
    [counts.published,'منشورة'],[counts.preparing,'قيد التحضير'],
    [counts.archived,'مؤرشفة'],[counts.withPdf,'PDF مسجّل'],
    [counts.withActiveExam,'امتحانات مفعّلة ومطابقة'],
-   [counts.withPrivateCandidate,'بنوك خاصة للمراجعة']
+   [counts.withPrivateCandidate,'بنوك خاصة للمراجعة'],
+   [counts.withIndependentPdfSignoff,'كتب بمراجعة أكاديمية مستقلة'],
+   [counts.withFullyReviewedActiveExam,'امتحانات مراجعة بالكامل'],
+   [counts.activeExamShortStems,'أسئلة قصيرة تتطلب معالجة']
   ])counters.append(metric(n,t));
   render();
  }catch(e){
