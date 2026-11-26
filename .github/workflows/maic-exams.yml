@@ -18,6 +18,7 @@ on:
       - 'functions/graduates/[token].js'
       - 'admin/certificate-renderer.js'
       - 'tests/certificate-completion-gates.cjs'
+      - 'tests/graduate-verification-gates.cjs'
       - 'learner/exam.js'
       - 'tools/create_maic_course_pdf.py'
       - 'tests/self-paced-exam.cjs'
@@ -63,6 +64,7 @@ on:
       - 'functions/graduates/[token].js'
       - 'admin/certificate-renderer.js'
       - 'tests/certificate-completion-gates.cjs'
+      - 'tests/graduate-verification-gates.cjs'
       - 'learner/exam.js'
       - 'tools/create_maic_course_pdf.py'
       - 'tests/self-paced-exam.cjs'
@@ -100,7 +102,7 @@ jobs:
         with:
           node-version: '22'
       - name: Check backend and learner-exam safeguards
-        run: node --test tests/exam-catalog-privacy.cjs tests/exam-item-signoff.cjs tests/exam-answer-cue-audit.cjs tests/academic-source-recall.cjs tests/academic-bank-status.cjs tests/course-bank-offline-audit.cjs tests/self-paced-exam.cjs tests/tinos-academic-release.cjs tests/academic-material-preview.cjs tests/protected-academic-assets.cjs tests/learner-exam-integration.cjs tests/exam-content-quality.cjs tests/exam-two-stage-review-integration.cjs tests/certificate-completion-gates.cjs
+        run: node --test tests/exam-catalog-privacy.cjs tests/exam-item-signoff.cjs tests/exam-answer-cue-audit.cjs tests/academic-source-recall.cjs tests/academic-bank-status.cjs tests/course-bank-offline-audit.cjs tests/self-paced-exam.cjs tests/tinos-academic-release.cjs tests/academic-material-preview.cjs tests/protected-academic-assets.cjs tests/learner-exam-integration.cjs tests/exam-content-quality.cjs tests/exam-two-stage-review-integration.cjs tests/certificate-completion-gates.cjs tests/graduate-verification-gates.cjs
       - name: Check Michigan photo gallery and accessibility
         run: node --check michigan-gallery.js && node --test tests/michigan-gallery.cjs
       - name: Validate Python PDF generator syntax
